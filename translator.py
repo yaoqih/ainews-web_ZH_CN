@@ -11,7 +11,7 @@ TARGET_DIR = "src/content/issues"  # <--- 修改了这里，之前是 markdownsr
 OUTPUT_DIR = "docs"
 API_KEY = os.environ.get("LLM_API_KEY")
 BASE_URL = os.environ.get("LLM_BASE_URL", "https://api.openai.com/v1")
-MAX_WORKERS = 5  # 并行线程数，根据你的 API Rate Limit 调整
+MAX_WORKERS = 32  # 并行线程数，根据你的 API Rate Limit 调整
 
 client = OpenAI(api_key=API_KEY, base_url=BASE_URL)
 
