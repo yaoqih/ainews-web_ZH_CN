@@ -8,6 +8,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    environment: dev  # <--- 必须加上这一行！告诉 GitHub 我要用 dev 环境的密钥
     permissions:
       contents: write # 必须有写入权限才能 push 代码
 
