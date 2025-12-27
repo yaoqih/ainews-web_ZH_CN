@@ -22,7 +22,13 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install -r requirements.txt
+          pip install -r requirements.txt  
+# --- 插入：先运行调试脚本 ---
+      - name: Debug LLM Connection
+        env:
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+          LLM_BASE_URL: ${{ secrets.LLM_BASE_URL }}
+        run: python debug_llm.py
 
       - name: Run translation script
         env:
