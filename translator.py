@@ -78,7 +78,7 @@ def translate_text_chunk(text, is_metadata=False):
 
     try:
         response = client.chat.completions.create(
-            model="gpt-4o-mini", # 建议使用 mini 或 deepseek-chat 以节省成本
+            model="gemini-3-flash-preview", # 建议使用 mini 或 deepseek-chat 以节省成本
             messages=[
                 {"role": "system", "content": system_prompt},
                 {"role": "user", "content": text}
