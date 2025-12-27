@@ -7,7 +7,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 
 # --- 配置区域 ---
 UPSTREAM_REPO = "smol-ai/ainews-web-2025"
-TARGET_DIR = "markdownsrc/content/issues"
+TARGET_DIR = "src/content/issues"  # <--- 修改了这里，之前是 markdownsrc/content/issues
 OUTPUT_DIR = "docs"
 API_KEY = os.environ.get("LLM_API_KEY")
 BASE_URL = os.environ.get("LLM_BASE_URL", "https://api.openai.com/v1")
