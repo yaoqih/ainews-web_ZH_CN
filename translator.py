@@ -390,8 +390,10 @@ def update_index():
         if not chosen:
             chosen = clean_line(lines[0]) if lines else fallback
 
-        # Remove markdown emphasis markers and collapse whitespace.
+        # Remove markdown emphasis markers, normalize separators, and collapse whitespace.
         chosen = chosen.replace("**", "").replace("__", "")
+        chosen = chosen.replace("|", " / ")
+        chosen = chosen.replace("[", "(").replace("]", ")")
         chosen = re.sub(r"\s+", " ", chosen).strip()
 
         # Drop explanatory parentheticals used in translation notes.

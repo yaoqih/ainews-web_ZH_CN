@@ -21,7 +21,7 @@
 - [Mistral 3：Mistral Large 3 + Ministral 3B/8B/14B 开放权重模型](./25-12-02-mistral-3.html) *2025-12-02T05:44:39.731046Z*
 - [DeepSeek V3.2 与 3.2-Speciale：GPT-5 级别高性能开源权重、上下文管理及算力扩展计划](./25-12-01-deepseek-32.html) *2025-12-02T05:44:39.731046Z*
 - [今天没发生什么事。](./25-11-26-not-much.html) *2025-11-26T05:44:39.731046Z*
-- [Black Forest Labs FLUX.2 \[pro|flex|dev|klein\]：接近 Nano Banana 的质量，但采用开放权重。](./25-11-25-flux2.html) *2025-11-25T05:44:39.731046Z*
+- [Black Forest Labs FLUX.2 (pro / flex / dev / klein)：接近 Nano Banana 的质量，但采用开放权重。](./25-11-25-flux2.html) *2025-11-25T05:44:39.731046Z*
 - [Claude Opus 4.5：过去一周内发布的第三款 SOTA（最先进）级编程模型，价格仅为 Opus 的 1/3。](./25-11-24-opus-45.html) *2025-11-24T05:44:39.731046Z*
 - [AI 工程师代码峰会](./25-11-21-aie-code.html) *2025-11-21T05:44:39.731046Z*
 - [Nano Banana Pro (Gemini Image Pro) 解决了图像内文字生成、信息图表生成、2K-4K 分辨率以及 Google 搜索溯源（Grounding）等问题。](./25-11-20-nano-banana-pro.html) *2025-11-20T05:44:39.731046Z*
@@ -271,7 +271,7 @@
 - [Meta Llama 3.3：以 70B 的价格提供 405B/Nova Pro 级别的性能。](./24-12-06-ainews-meta-llama-33-405bnova-pro-performance-at-70b-price.html) *2024-12-06T22:44:07.580241Z*
 - [美元的 ChatGPT Pro 订阅及 o1-full/pro 模型：具备视觉功能，不含 API，且评价褒贬不一。](./24-12-05-ainews-dollar200-chatgpt-pro-and-o1-fullpro-with-vision-without-api-and-mixed-reviews.html) *2024-12-06T02:34:03.824924Z*
 - [今天没发生什么。](./24-12-04-ainews-not-much-happened-today.html) *2024-12-05T02:41:39.435306Z*
-- [Olympus 正式发布（即 Amazon Nova Micro|Lite|Pro|Premier|Canvas|Reel）](./24-12-03-ainews-olympus-has-dropped-aka-amazon-nova-microorliteorproorpremierorcanvasorreel.html) *2024-12-04T03:06:39.205571Z*
+- [Olympus 正式发布（即 Amazon Nova Micro / Lite / Pro / Premier / Canvas / Reel）](./24-12-03-ainews-olympus-has-dropped-aka-amazon-nova-microorliteorproorpremierorcanvasorreel.html) *2024-12-04T03:06:39.205571Z*
 - [今天没发生什么事。](./24-12-02-ainews-not-much-happened-today.html) *2024-12-02T23:49:20.748299Z*
 - [本周平淡收场。](./24-11-29-ainews-not-much-happened-to-end-the-week.html) *2024-11-29T23:07:35.341765Z*
 - [Qwen with Questions：32B 开源权重推理模型在 GPQA/AIME/Math500 表现上逼近 o1。](./24-11-27-ainews-qwen-with-questions-32b-open-weights-reasoning-model-nears-o1-in-gpqaaimemath500.html) *2024-11-28T01:23:25.425054Z*
@@ -358,7 +358,7 @@
 - [GPT-4o 八月更新 + 面向所有人的 100% 结构化输出（GPT-4o 八月版）](./24-08-06-ainews-gpt4o-august-100percent-structured-outputs-for-all-gpt4o-august-edition.html) *2024-08-07T02:40:09.048705Z*
 - [Carlini 如何使用 AI 或 卡里尼如何使用人工智能](./24-08-05-ainews-how-carlini-uses-ai.html) *2024-08-05T23:43:14.094795Z*
 - [Execuhires：挑战可汗之怒](./24-08-02-ainews-execuhires-tempting-the-wrath-of-khan.html) *2024-08-03T01:48:48.159187Z*
-- [Rombach 等人：发布 FLUX.1 \[pro|dev|schnell\]，Black Forest Labs 获 3100 万美元种子轮融资。](./24-08-01-ainews-rombach-et-al-flux1-proordevorschnell-dollar31m-seed-for-black-forest-labs.html) *2024-08-02T01:05:39.247788Z*
+- [Rombach 等人：发布 FLUX.1 (pro / dev / schnell)，Black Forest Labs 获 3100 万美元种子轮融资。](./24-08-01-ainews-rombach-et-al-flux1-proordevorschnell-dollar31m-seed-for-black-forest-labs.html) *2024-08-02T01:05:39.247788Z*
 - [今天没发生什么特别的事。](./24-07-31-ainews-not-much-happened-today.html) *2024-07-31T07:04:15.405372Z*
 - [Gemma 2 2B + Scope + Shield](./24-07-31-ainews-gemma-2-2b-scope-shield.html) *2024-08-01T01:33:32.753297Z*
 - [Apple Intelligence 测试版 + Segment Anything Model 2 (分割一切模型 2)](./24-07-29-ainews-apple-intelligence-beta-segment-anything-model-2.html) *2024-07-30T02:45:55.827150Z*
