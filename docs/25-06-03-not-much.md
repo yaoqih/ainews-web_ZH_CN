@@ -310,7 +310,7 @@ https://www.youtube.com/watch?v=z4zXicOAF28
    - 这一评论是针对有人提到他们获得了 **1 t/s CPU** 的回应，该工程师调侃道：*“那可真快”*。
 - **GRPO 训练受阻**：一些 Unsloth 用户在开始使用 **GRPO** 进行训练时遇到了 *Exception: Invalid prefix encountered* 错误。
    - 一位成员报告称，通过使用 `pip install unsloth vllm --no-deps` 进行安装，然后继续安装 accelerate、bitsandbytes 和 datasets 等依赖项，成功解决了问题。
-- **DeepSeek-R1 聊天模板引发波动**：用户报告了 **DeepSeek-R1-0528-Qwen3-8B** 和 **DeepSeek-Prover-V2-7B** 模型的 Tokenizer 错误，特别指出缺少 `{% if add_generation_prompt %}`。
+- **DeepSeek-R1 聊天模板引发波动**：用户报告了 **DeepSeek-R1-0528-Qwen3-8B** 和 **DeepSeek-Prover-V2-7B** 模型的 Tokenizer 错误，特别指出缺少 `&#123;% if add_generation_prompt %&#125;`。
    - 一位成员分享了一个针对 **DeepSeek-R1-0528-Qwen3-8B** 的[修改版聊天模板](https://huggingface.co/Erland/DeepSeek-R1-0528-Qwen3-8B)以解决该问题。
 - **WeightWatcher AI 的 LLM 分析工具浮出水面**：一位成员链接到了 [WeightWatcher AI](https://weightwatcher.ai/)，这是一个用于 **LLM 分析**的工具，它研究了*在不过拟合的情况下，有多少逐字数据是可以召回的*。
    - 一位成员提到，WeightWatchers 的 Discord 评论指出他们测量的是**饱和度 (saturation)**而非**记忆 (memorization)**，这引发了关于信任 *nvidia/cornell/deepmind* 论文的反向主张。
@@ -870,7 +870,7 @@ https://www.youtube.com/watch?v=z4zXicOAF28
 
 - **排查 Unsloth 安装错误**：一位用户在 `patch_vllm_compute_dtype()` 中遇到了 `TypeError`，在重新安装 **Unsloth** 和 **vLLM** 后，面临新的 `RuntimeError: Unsloth: vllm_process failed to load!`。
    - 成员建议使用 `pip install --force-reinstall git+https://github.com/unslothai/unsloth-zoo.git` 并设置 `export VLLM_LOGGING_LEVEL=DEBUG` 以进一步诊断问题。
-- **DeepSeek-R1-Qwen3 聊天模板故障**：用户报告了与 **DeepSeek-R1-0528-Qwen3-8B** 和 **DeepSeek-Prover-V2-7B** 模型 tokenizer 相关的错误，特别是缺少 `{% if add_generation_prompt %}`。
+- **DeepSeek-R1-Qwen3 聊天模板故障**：用户报告了与 **DeepSeek-R1-0528-Qwen3-8B** 和 **DeepSeek-Prover-V2-7B** 模型 tokenizer 相关的错误，特别是缺少 `&#123;% if add_generation_prompt %&#125;`。
    - 建议检查并修改聊天模板，一位成员分享了针对 **DeepSeek-R1-0528-Qwen3-8B** 的[修改后的聊天模板](https://huggingface.co/Erland/DeepSeek-R1-0528-Qwen3-8B)。
 - **Unsloth 的多 GPU 训练：热门话题**：一位用户询问关于在多个 GPU（特别是 4x H200s）上使用 **Unsloth** 的问题，注意到只有一个 GPU 被利用。
    - 建议探索非官方解决方案，如 [Accurate](https://github.com/thad0ctor/unsloth-5090-multiple) 以获取多 GPU 支持。
