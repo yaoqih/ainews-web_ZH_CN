@@ -2004,17 +2004,12 @@ pradeep1148: https://www.youtube.com/watch?v=xIDMPUYpd_0
 </div>
   
 
----
-
 
 
 ### **Datasette - LLM (@SimonW) ▷ #[ai](https://discord.com/channels/823971286308356157/1097032579812687943/1250899997029826722)** (2 messages): 
 
 - **Datasette 登上 Hacker News 首页**：一位成员庆祝某项工作登上了 Hacker News 的首页。另一位成员对该工作表示赞赏，特别提到了在处理替代方案时所采用的平衡方法。一位成员幽默地评论道：*"ChatGPT 实际上为数据工程师发布了一项永久性的充分就业法案。"*
   
-
----
-
 
 
 ### **DiscoResearch ▷ #[discolm_german](https://discord.com/channels/1178995845727785010/1197630242815213618/1251213554078711941)** (1 messages): 
@@ -2026,35 +2021,6 @@ pradeep1148: https://www.youtube.com/watch?v=xIDMPUYpd_0
 - **资源考量**：由于大模型的推理速度较慢，他们建议*保持使用适配 VRAM 的 q4/q6 量化以保证效率*。分享了一个链接供参考：[Hugging Face 上的 Spaetzle 集合](https://huggingface.co/collections/cstr/spaetzle-661e758857b1fa96731c43bc)。
   
 
----
-
-
-
----
-
-
-
----
-
-
-
----
-
-
-
----
-
-
-
----
-
-
-
----
-
-
-
-{% else %}
 
 
 > 完整的频道细分内容已为电子邮件格式进行截断。
@@ -2062,5 +2028,3 @@ pradeep1148: https://www.youtube.com/watch?v=xIDMPUYpd_0
 > 如果您想查看完整细分，请访问此邮件的网页版本：[{{ email.subject }}]({{ email_url }})!
 >
 > 如果您喜欢 AInews，请[分享给朋友](https://buttondown.email/ainews)！预谢支持！
-
-{% endif %}
