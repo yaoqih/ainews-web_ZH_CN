@@ -578,7 +578,7 @@ topics:
 - **Self-Reflection 面临二分性**：成员们讨论了 **Lecture 1** 和 **Lecture 2** 之间关于 LLM 中 **self-reflection 和 self-refinement** 的明显矛盾。一位用户指出，**Lecture 1** 提到需要*外部评估*，而 **Lecture 2** 则建议 LLM 可以通过奖励自己的输出来改进自身。
    - 附带了来自 **Lecture 1, slide 67**（[图片 1](https://cdn.discordapp.com/attachments/1282734248112947210/1351127068745928816/image.png?ex=67d9e763&is=67d895e3&hm=7d31b7a0583550a36a872d74bfaf765de39c6b1173333d2ce51174940c0aa522&)）和 **Lecture 2, slide 51**（[图片 2](https://cdn.discordapp.com/attachments/1282734248112947210/1351127069169418260/image.png?ex=67d9e764&is=67d895e4&hm=12bbe1810790f7f688b11fe093f693a2791e94bd9e74e71ec7c2cfa3264bd004&)）的截图，以说明这一明显的冲突。
 - **System Prompt 的可靠性受到质疑**：一位成员建议，依赖 system prompts 的特定行为可能并不可靠，因为*归根结底，所有这些都是文本输入，模型可以处理它，所以你应该能够绕过框架和服务*。
-   - 该成员补充说，训练数据可能包含格式 `<system> You are a helpful assistant </system> <user> {{Some example user prompt}} </user> <assistant> {{Expected LLM output}} </assistant>`。
+   - 该成员补充说，训练数据可能包含格式 `<system> You are a helpful assistant </system> <user> &#123;&#123;Some example user prompt&#125;&#125; </user> <assistant> &#123;&#123;Expected LLM output&#125;&#125; </assistant>`。
 - **高级 LLM Agent 课程报名仍开放**：成员们询问是否仍可以报名 **Advanced LLM agent course** 并在报名后获得 **certificate**。
    - 工作人员回复说，只需完成 **signup form** 即可！介绍幻灯片中的大部分信息仅适用于 **Berkeley 学生**，但任何人都可以参加 **MOOC** 并在结束时获得 **certificate**。
 
@@ -2835,7 +2835,7 @@ leiwang1999_53585: worked on my h100, maybe you should install nightly wheel🤣
 - **讨论自我反思的二分法困境**：一位成员指出 **Lecture 1** 与 **Lecture 2** 之间存在矛盾：Lecture 1 称 **self-reflection 和 self-refinement** 需要外部评估，而 Lecture 2 则建议 LLM 可以通过奖励自己的输出来改进。
    - 附上了 **Lecture 1 第 67 页幻灯片**和 **Lecture 2 第 51 页幻灯片**的截图来阐明这一明显的冲突。参见 [图片 1](https://cdn.discordapp.com/attachments/1282734248112947210/1351127068745928816/image.png?ex=67d9e763&is=67d895e3&hm=7d31b7a0583550a36a872d74bfaf765de39c6b1173333d2ce51174940c0aa522&) 和 [图片 2](https://cdn.discordapp.com/attachments/1282734248112947210/1351127069169418260/image.png?ex=67d9e764&is=67d895e4&hm=12bbe1810790f7f688b11fe093f693a2791e94bd9e74e71ec7c2cfa3264bd004&)。
 - **System Prompt 的可靠性受到质疑**：一位成员提出，虽然 System Prompts 应该起作用，但依赖特定行为可能并不稳健，因为*归根结底所有这些都是文本输入，所以模型可以处理它。你应该能够绕过框架和服务。*
-   - 他们补充说，训练数据看起来像 `<system> You are a helpful assistant </system> <user> {{Some example user prompt}} </user> <assistant> {{Expected LLM output}} </assistant>`，并且框架可能无法可靠地将 System Prompts 传递给所有 LLM。
+   - 他们补充说，训练数据看起来像 `<system> You are a helpful assistant </system> <user> &#123;&#123;Some example user prompt&#125;&#125; </user> <assistant> &#123;&#123;Expected LLM output&#125;&#125; </assistant>`，并且框架可能无法可靠地将 System Prompts 传递给所有 LLM。
 
 
   

@@ -1940,3 +1940,5 @@ dbreunig: https://www.dbreunig.com/2025/04/18/the-wisdom-of-artificial-crowds.ht
    - 她将重点关注如何识别需求、选择数据和方法。
 - **AI4Legislation 竞赛**：研讨会将包括 **2025 夏季 AI4Legislation 竞赛** 的项目构思，详情可在 [GitHub](https://github.com/svcaf/2025-AI4Legislation-Public/tree/main) 上找到。
    - 该竞赛旨在利用 **LLMs** 和 **NLP** 的最新进展来造福公民和选民。
+
+{% endif %}
