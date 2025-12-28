@@ -614,6 +614,8 @@ https://www.youtube.com/watch?v=QU9QLi1-VvU
 
 ---
 
+{% if medium == 'web' %}
+
 # 第 2 部分：按频道的详细摘要和链接
 
 ### **Cursor IDE ▷ #[general](https://discord.com/channels/1074847526655643750/1074847527708393565/1348973754817974374)** (1048 条消息 🔥🔥🔥): 
