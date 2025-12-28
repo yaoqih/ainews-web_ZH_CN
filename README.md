@@ -5,7 +5,9 @@
 >
 > 本项目通过 GitHub Actions 自动监控 [smol-ai/ainews-web-2025](https://github.com/smol-ai/ainews-web-2025)，利用大模型将最新的 AI 技术新闻翻译为中文，并发布到 GitHub Pages。
 
-[在线阅读最新一期](https://yaoqih.github.io/ainews-web_ZH_CN/) ## ✨ 项目亮点
+[在线阅读最新一期](https://yaoqih.github.io/ainews-web_ZH_CN/)。
+
+## ✨ 项目亮点
 
 * **零服务器成本**：完全基于 GitHub Actions (计算) + GitHub Pages (托管)，无需租赁服务器。
 * **智能并行翻译**：

@@ -333,9 +333,11 @@ def update_index():
             post = _load_frontmatter_from_file(os.path.join(OUTPUT_DIR, f))
             title = post.get('title', f.replace('.md', ''))
             date = post.get('date', '')
-            index_content += f"- [{title}](./{f}) *{date}*\n"
+            html_name = f[:-3] + ".html" if f.endswith(".md") else f
+            index_content += f"- [{title}](./{html_name}) *{date}*\n"
         except:
-            index_content += f"- [{f}](./{f})\n"
+            html_name = f[:-3] + ".html" if f.endswith(".md") else f
+            index_content += f"- [{f}](./{html_name})\n"
             
     with open(os.path.join(OUTPUT_DIR, "index.md"), "w", encoding="utf-8") as f:
         f.write(index_content)
