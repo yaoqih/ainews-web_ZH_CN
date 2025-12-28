@@ -324,20 +324,108 @@ def process_single_file(file_info):
 def update_index():
     """生成简单的 index.md"""
     if not os.path.exists(OUTPUT_DIR): return
-    
+
+    def fallback_from_filename(filename):
+        base = filename[:-3] if filename.endswith(".md") else filename
+        base = re.sub(r"^\d{2}-\d{2}-\d{2}-", "", base)
+        base = re.sub(r"^ainews-", "", base)
+        base = base.replace("-", " ").strip()
+        return base or (filename[:-3] if filename.endswith(".md") else filename)
+
+    def sanitize_title(raw_title, fallback):
+        """Clean title for markdown list rendering."""
+        if not raw_title:
+            return fallback
+
+        title = str(raw_title)
+        lines = [ln.strip() for ln in title.splitlines()]
+
+        label_prefix_re = re.compile(
+            r"^(标准翻译|更具文学性的翻译|更具冲击力（.*?）|更具冲击力|更口语化的表达|"
+            r"意译|侧重趋势的翻译|侧重趋势|或译为|或译|翻译为)[:：]\s*"
+        )
+        noise_re = re.compile(
+            r"^(以下是|根据语境|注：|词汇解析|在 AI 领域|如果是在描述报纸|原标题|原文|"
+            r"说明：|总结：)"
+        )
+        keyword_triggers = ["根据语境", "翻译供参考", "中文翻译", "翻译为", "翻译"]
+        explain_markers = ["最常用", "更口语", "侧重", "更具", "注："]
+        generic_prefixes = {"这句话可以", "这句话", "以下是", "根据语境", "翻译"}
+        generic_prefix_starts = ("以下是", "这句话", "根据语境")
+
+        def clean_line(ln):
+            ln = re.sub(r"^[-*•\d\.\)\s]+", "", ln).strip()
+            ln = ln.replace("**", "").replace("__", "").strip()
+            ln = label_prefix_re.sub("", ln).strip()
+            return ln
+
+        chosen = None
+        for ln in lines:
+            if not ln:
+                continue
+            cleaned = clean_line(ln)
+            if not cleaned:
+                continue
+            # If line contains translation boilerplate, try to extract a prefix.
+            extracted = None
+            for kw in keyword_triggers:
+                if kw in cleaned:
+                    prefix = cleaned.split(kw, 1)[0].strip()
+                    prefix = prefix.strip("“”\"'《》[]()（）")
+                    if prefix and prefix not in generic_prefixes and not prefix.startswith(generic_prefix_starts) and len(prefix) >= 2:
+                        extracted = prefix
+                    else:
+                        extracted = None
+                    break
+            if extracted:
+                chosen = extracted
+                break
+            if any(kw in cleaned for kw in keyword_triggers):
+                continue
+            if noise_re.match(cleaned):
+                continue
+            chosen = cleaned
+            break
+
+        if not chosen:
+            chosen = clean_line(lines[0]) if lines else fallback
+
+        # Remove markdown emphasis markers and collapse whitespace.
+        chosen = chosen.replace("**", "").replace("__", "")
+        chosen = re.sub(r"\s+", " ", chosen).strip()
+
+        # Drop explanatory parentheticals used in translation notes.
+        if "（" in chosen and any(mark in chosen for mark in explain_markers):
+            chosen = chosen.split("（", 1)[0].strip()
+
+        # Strip outer brackets if the whole title is bracketed.
+        if chosen.startswith("[") and chosen.endswith("]") and chosen.count("[") == 1 and chosen.count("]") == 1:
+            chosen = chosen[1:-1].strip()
+
+        # Escape markdown link brackets to avoid breaking link syntax.
+        chosen = chosen.replace("[", "\\[").replace("]", "\\]")
+
+        # Truncate overly long titles to keep index readable.
+        max_len = 120
+        if len(chosen) > max_len:
+            chosen = chosen[: max_len - 3].rstrip() + "..."
+        return chosen or fallback
+
     files = sorted([f for f in os.listdir(OUTPUT_DIR) if f.endswith('.md') and f != 'index.md'], reverse=True)
     index_content = "# AI News 中文同步版\n\n> 自动同步自 smol-ai/ainews-web-2025，由 AI 并行翻译。\n\n"
     
     for f in files:
         try:
             post = _load_frontmatter_from_file(os.path.join(OUTPUT_DIR, f))
-            title = post.get('title', f.replace('.md', ''))
+            fallback_title = fallback_from_filename(f)
+            title = sanitize_title(post.get('title', fallback_title), fallback_title)
             date = post.get('date', '')
             html_name = f[:-3] + ".html" if f.endswith(".md") else f
             index_content += f"- [{title}](./{html_name}) *{date}*\n"
         except:
             html_name = f[:-3] + ".html" if f.endswith(".md") else f
-            index_content += f"- [{f}](./{html_name})\n"
+            fallback_title = fallback_from_filename(f)
+            index_content += f"- [{fallback_title}](./{html_name})\n"
             
     with open(os.path.join(OUTPUT_DIR, "index.md"), "w", encoding="utf-8") as f:
         f.write(index_content)

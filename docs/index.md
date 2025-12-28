@@ -21,7 +21,7 @@
 - [Mistral 3：Mistral Large 3 + Ministral 3B/8B/14B 开放权重模型](./25-12-02-mistral-3.html) *2025-12-02T05:44:39.731046Z*
 - [DeepSeek V3.2 与 3.2-Speciale：GPT-5 级别高性能开源权重、上下文管理及算力扩展计划](./25-12-01-deepseek-32.html) *2025-12-02T05:44:39.731046Z*
 - [今天没发生什么事。](./25-11-26-not-much.html) *2025-11-26T05:44:39.731046Z*
-- [Black Forest Labs FLUX.2 [pro|flex|dev|klein]：接近 Nano Banana 的质量，但采用开放权重。](./25-11-25-flux2.html) *2025-11-25T05:44:39.731046Z*
+- [Black Forest Labs FLUX.2 \[pro|flex|dev|klein\]：接近 Nano Banana 的质量，但采用开放权重。](./25-11-25-flux2.html) *2025-11-25T05:44:39.731046Z*
 - [Claude Opus 4.5：过去一周内发布的第三款 SOTA（最先进）级编程模型，价格仅为 Opus 的 1/3。](./25-11-24-opus-45.html) *2025-11-24T05:44:39.731046Z*
 - [AI 工程师代码峰会](./25-11-21-aie-code.html) *2025-11-21T05:44:39.731046Z*
 - [Nano Banana Pro (Gemini Image Pro) 解决了图像内文字生成、信息图表生成、2K-4K 分辨率以及 Google 搜索溯源（Grounding）等问题。](./25-11-20-nano-banana-pro.html) *2025-11-20T05:44:39.731046Z*
@@ -82,11 +82,7 @@
 - [今天没发生什么特别的事。](./25-09-04-not-much.html) *2025-09-04T05:44:39.731046Z*
 - [今天没发生什么特别的事。](./25-09-03-not-much.html) *2025-09-03T05:44:39.731046Z*
 - [Anthropic 以 1830 亿美元的估值完成 130 亿美元的 F 轮融资。](./25-09-02-anthropic-f.html) *2025-09-02T05:44:39.731046Z*
-- [今天没发生什么特别的事。
-
-或者更口语化的表达：
-*   今天没什么事。
-*   今天过得挺平淡的。](./25-09-01-not-much.html) *2025-09-01T05:44:39.731046Z*
+- [今天没发生什么特别的事。](./25-09-01-not-much.html) *2025-09-01T05:44:39.731046Z*
 - [今天没发生什么事。](./25-08-29-not-much.html) *2025-08-29T05:44:39.731046Z*
 - [OpenAI Realtime API 正式发布，并推出全新 `gpt-realtime` 模型，价格比 GPT-4o 便宜 20%。](./25-08-28-gpt-realtime.html) *2025-08-28T08:44:39.731046Z*
 - [OpenAI 更新了 Codex，其 VSCode 扩展现可将任务与 Codex Cloud 进行同步。](./25-08-27-codex-2.html) *2025-08-27T05:44:39.731046Z*
@@ -112,11 +108,8 @@
 - [今天没发生什么事。](./25-07-30-not-much.html) *2025-07-30T05:44:39.731046Z*
 - [今天没发生什么特别的事。](./25-07-29-not-much.html) *2025-07-29T05:44:39.731046Z*
 - [GLM-4.5：比 Kimi/Qwen/DeepSeek 更深邃、更硬核、更出色（中国最先进的大模型？）](./25-07-28-glm-45.html) *2025-07-28T05:44:39.731046Z*
-- [今天没发生什么特别的事。
-
-或者更口语一点：
-今天没什么事。](./25-07-25-not-much.html) *2025-07-25T05:44:39.731046Z*
-- [3个月内增长3倍：Cursor 估值达 280 亿美元，Cognition + Windsurf 估值达 100 亿美元。](./25-07-24-cogsurf-cursor.html) *2025-07-24T05:44:39.731046Z*
+- [今天没发生什么特别的事。](./25-07-25-not-much.html) *2025-07-25T05:44:39.731046Z*
+- [个月内增长3倍：Cursor 估值达 280 亿美元，Cognition + Windsurf 估值达 100 亿美元。](./25-07-24-cogsurf-cursor.html) *2025-07-24T05:44:39.731046Z*
 - [今天没发生什么事。](./25-07-23-not-much.html) *2025-07-23T05:44:39.731046Z*
 - [今天没发生什么事。](./25-07-22-not-much.html) *2025-07-22T05:44:39.731046Z*
 - [OpenAI (OAI) 和 Google DeepMind (GDM) 宣布，在人类规定的时限内，无需专门的训练或工具，仅通过自然语言推理便取得了国际数学奥林匹克（IMO）金牌水平的成绩。](./25-07-21-imo-gold.html) *2025-07-21T05:44:39.731046Z*
@@ -135,30 +128,15 @@
 - [今天没发生什么特别的事。](./25-06-30-not-much.html) *2025-06-30T05:44:39.731046Z*
 - [今天没什么事发生。](./25-06-27-not-much.html) *2025-06-27T05:44:39.731046Z*
 - [OpenAI 发布 Deep Research API (o3/o4-mini)](./25-06-26-deepresearch-api.html) *2025-06-26T05:44:39.731046Z*
-- [**上下文工程：远不止于提示词**](./25-06-25-context-eng.html) *2025-06-25T05:44:39.731046Z*
+- [上下文工程：远不止于提示词](./25-06-25-context-eng.html) *2025-06-25T05:44:39.731046Z*
 - [Bartz 诉 Anthropic PBC —— “训练用途属于合理使用”](./25-06-24-fair-use.html) *2025-06-24T05:44:39.731046Z*
 - [今天没发生什么。](./25-06-23-not-much.html) *2025-06-23T05:44:39.731046Z*
-- [以下是几种翻译供参考：
-
-**标准翻译：**
-Claude Code 与 Codex：悄然兴起的对决
-
-**更具文学性的翻译：**
-Claude Code 对阵 Codex：静水流深般的崛起
-
-**侧重趋势的翻译：**
-Claude Code 对比 Codex：低调崛起的竞争态势
-
-**词汇解析：**
-*   **Quiet Rise**: 悄然崛起、低调兴起。
-*   **Claude Code**: Anthropic 推出的命令行 AI 编程工具。
-*   **Codex**: OpenAI 开发的编程模型（GitHub Copilot 的底层模型）。
-*   **vs**: 对比、对阵、与……的竞争。](./25-06-20-claude-code.html) *2025-06-20T05:44:39.731046Z*
+- [Claude Code 与 Codex：悄然兴起的对决](./25-06-20-claude-code.html) *2025-06-20T05:44:39.731046Z*
 - [AI 领域的一些后续小动态：多智能体 (MultiAgents)、Meta-SSI-Scale、Karpathy、AI 工程师。](./25-06-19-followups.html) *2025-06-19T05:44:39.731046Z*
 - [扎克伯格开启“超级智能创始人模式”：1亿美元奖金 + 1亿美元以上年薪 + NFDG收购？](./25-06-18-zuck-founder-mode.html) *2025-06-18T05:44:39.731046Z*
 - [Gemini 2.5 Pro/Flash 正式发布 (GA)，2.5 Flash-Lite 处于预览阶段。](./25-06-17-gemini-2-5.html) *2025-06-17T05:44:39.731046Z*
 - [中国大模型发布——MiniMax-M1、海螺 2“袋鼠”（Kangaroo）、月之暗面 Kimi-Dev-72B。](./25-06-16-chinese-models.html) *2025-06-16T05:44:39.731046Z*
-- [**Cognition 对阵 Anthropic：不要构建多智能体 / 如何构建多智能体**](./25-06-13-cognition-vs-anthropic.html) *2025-06-13T05:44:39.731046Z*
+- [Cognition 对阵 Anthropic：不要构建多智能体 / 如何构建多智能体](./25-06-13-cognition-vs-anthropic.html) *2025-06-13T05:44:39.731046Z*
 - [今天没发生什么特别的事。](./25-06-12-not-much.html) *2025-06-12T05:44:39.731046Z*
 - [高管变动第二期：Scale-Meta、Lamini-AMD 以及 Instacart-OpenAI](./25-06-11-execuhires-2.html) *2025-06-11T05:44:39.731046Z*
 - [推理模型价格战 2.0：Mistral Magistral + o3 降价 80% + o3-pro](./25-06-10-o3-cut.html) *2025-06-10T05:44:39.731046Z*
@@ -206,7 +184,7 @@ Claude Code 对比 Codex：低调崛起的竞争态势
 - [GPT 4.1：OpenAI 的新主力](./25-04-14-ainews-gpt-41-the-new-openai-workhorse.html) *2025-04-15T05:16:26.134697Z*
 - [今天没发生什么事。](./25-04-11-ainews-not-much-happened-today.html) *2025-04-11T20:07:39.735908Z*
 - [今天没发生什么事。](./25-04-10-ainews-not-much-happened-today.html) *2025-04-11T00:53:38.033308Z*
-- [谷歌的 **Agent2Agent (A2A) 协议**（或译为：谷歌智能体对智能体协议）](./25-04-09-ainews-googles-agent2agent-protocol-a2a.html) *2025-04-10T01:31:18.610701Z*
+- [谷歌的 Agent2Agent (A2A) 协议（或译为：谷歌智能体对智能体协议）](./25-04-09-ainews-googles-agent2agent-protocol-a2a.html) *2025-04-10T01:31:18.610701Z*
 - [DeepCoder：达到 O3-mini 级别的完全开源 14B 编程模型](./25-04-09-ainews-deepcoder-a-fully-open-source-14b-coder-at-o3-mini-level.html) *2025-04-09T19:51:30.081055Z*
 - [Llama 4 备受争议的周末发布](./25-04-07-ainews-llama-4s-controversial-weekend-release.html) *2025-04-08T01:55:40.760246Z*
 - [今天没发生什么特别的事。](./25-04-04-ainews-not-much-happened-today.html) *2025-04-05T01:50:06.395334Z*
@@ -234,39 +212,23 @@ Claude Code 对比 Codex：低调崛起的竞争态势
 - [Anthropic 的 615 亿美元 E 轮融资。](./25-03-03-ainews-anthropics-dollar615b-series-e.html) *2025-03-04T06:51:49.245801Z*
 - [今天没发生什么事。](./25-02-28-ainews-not-much-happened-today.html) *2025-03-01T03:41:57.593041Z*
 - [GPT 4.5 —— 巨型 Orion 发布！](./25-02-27-ainews-gpt-45-chonky-orion-ships.html) *2025-02-28T07:24:08.803473Z*
-- [根据语境，这句话可以翻译为：
-
-1.  **通用/产品发布：** 许多小型发布
-2.  **航天/火箭：** 大量小规模发射
-3.  **商业/项目：** 多次小规模启动](./25-02-26-ainews-lots-of-small-launches.html) *2025-02-27T04:09:12.976879Z*
+- [通用/产品发布： 许多小型发布](./25-02-26-ainews-lots-of-small-launches.html) *2025-02-27T04:09:12.976879Z*
 - [今天没发生什么特别的事。](./25-02-25-ainews-not-much-happened-today.html) *2025-02-26T02:19:12.201709Z*
 - [Claude 3.7 Sonnet （通常保留原名，也可译为：Claude 3.7 奏鸣曲）](./25-02-24-ainews-claude-37-sonnet.html) *2025-02-25T05:58:56.716932Z*
 - [今天没发生什么特别的事。](./25-02-21-ainews-not-much-happened-today.html) *2025-02-21T22:50:40.653089Z*
 - [AI工程师峰会 第一天](./25-02-21-ainews-ai-engineer-summit-day-1.html) *2025-02-22T02:50:34Z*
-- [**超大规模实战手册：在 GPU 集群上训练大语言模型**](./25-02-19-ainews-the-ultra-scale-playbook-training-llms-on-gpu-clusters.html) *2025-02-20T05:57:17.513081Z*
+- [超大规模实战手册：在 GPU 集群上训练大语言模型](./25-02-19-ainews-the-ultra-scale-playbook-training-llms-on-gpu-clusters.html) *2025-02-20T05:57:17.513081Z*
 - [X.ai 的 Grok 3 与 Mira Murati 的 Thinking Machines](./25-02-18-ainews-xai-grok-3-and-mira-muratis-thinking-machines.html) *2025-02-18T23:54:10.975706Z*
 - [LLaDA：大语言扩散模型](./25-02-17-ainews-llada-large-language-diffusion-models.html) *2025-02-18T03:27:47.627285Z*
 - [今天没发生什么事。](./25-02-14-ainews-not-much-happened-today.html) *2025-02-15T01:23:56.534351Z*
 - [推理模型已具备接近超人类的编程能力（OpenAI IOI、英伟达内核）](./25-02-13-ainews-reasoning-models-are-near-superhuman-coders-openai-ioi-nvidia-kernels.html) *2025-02-14T02:42:41.628781Z*
-- [根据语境，可以翻译为：
-
-1. **简讯** (最常用的术语)
-2. **短讯**
-3. **新闻简报**
-4. **零星新闻**
-5. **小条新闻**](./25-02-12-ainews-small-news-items.html) *2025-02-13T00:10:12.213344Z*
+- [简讯 (最常用的术语)](./25-02-12-ainews-small-news-items.html) *2025-02-13T00:10:12.213344Z*
 - [今天没发生什么特别的事。](./25-02-11-ainews-not-much-happened-today.html) *2025-02-12T01:24:43.684385Z*
 - [今天没发生什么特别的事。](./25-02-10-ainews-not-much-happened-today.html) *2025-02-11T03:56:45.222082Z*
 - [今天没什么事。](./25-02-07-ainews-not-much-happened-today.html) *2025-02-08T04:22:33.821856Z*
 - [s1：简单的测试时缩放（以及 Kyutai Hibiki）](./25-02-06-ainews-s1-simple-test-time-scaling-and-kyutai-hibiki.html) *2025-02-07T03:47:44.376508Z*
 - [Gemini 2.0 Flash 正式发布（GA），同步推出全新的 Flash Lite、2.0 Pro 以及 Flash Thinking。](./25-02-05-ainews-gemini-20-flash-ga-with-new-flash-lite-20-pro-and-flash-thinking.html) *2025-02-06T02:00:20.087119Z*
-- [以下是几种中文翻译供参考：
-
-1.  **如何扩展你的模型 —— DeepMind**（最简洁、常用）
-2.  **DeepMind：如何实现模型规模化**（更具专业感）
-3.  **如何进行模型缩放，DeepMind 出品**（侧重于“缩放”这一技术术语）
-
-在 AI 领域，“Scale” 通常翻译为 **“扩展”** 或 **“规模化”**。](./25-02-04-ainews-how-to-scale-your-model-by-deepmind.html) *2025-02-05T06:59:23.438232Z*
+- [如何扩展你的模型 —— DeepMind（最简洁、常用）](./25-02-04-ainews-how-to-scale-your-model-by-deepmind.html) *2025-02-05T06:59:23.438232Z*
 - [OpenAI 对标 Gemini 的 Deep Research。](./25-02-03-ainews-openai-takes-on-geminis-deep-research.html) *2025-02-04T02:44:29.143732Z*
 - [o3-mini 发布，OpenAI 站在“历史错误的一边”](./25-02-01-ainews-o3-mini-launches-openai-on-wrong-side-of-history.html) *2025-02-01T09:16:19.878807Z*
 - [Mistral Small 3 24B 和 Tulu 3 405B](./25-01-30-ainews-mistral-small-3-24b-and-tulu-3-405b.html) *2025-01-31T00:08:47.548368Z*
@@ -275,32 +237,21 @@ Claude Code 对比 Codex：低调崛起的竞争态势
 - [DeepSeek 登顶美国 App Store，英伟达股价暴跌 17%。](./25-01-27-ainews-deepseek-1-on-us-app-store-nvidia-stock-tanks-17percent.html) *2025-01-28T05:28:32.064176Z*
 - [TinyZero：只需 30 美元即可复现 DeepSeek R1-Zero。](./25-01-24-ainews-tinyzero-reproduce-deepseek-r1-zero-for-dollar30.html) *2025-01-25T02:32:28.760341Z*
 - [OpenAI 发布其首个 AI 智能体 Operator。](./25-01-23-ainews-openai-launches-operator-its-first-agent.html) *2025-01-24T03:34:34.136294Z*
-- [**Bespoke-Stratos + Sky-T1：推理领域的 Vicuna+Alpaca 时刻**](./25-01-22-ainews-bespoke-stratos-sky-t1-the-vicunaalpaca-moment-for-reasoning.html) *2025-01-23T07:08:27.294133Z*
+- [Bespoke-Stratos + Sky-T1：推理领域的 Vicuna+Alpaca 时刻](./25-01-22-ainews-bespoke-stratos-sky-t1-the-vicunaalpaca-moment-for-reasoning.html) *2025-01-23T07:08:27.294133Z*
 - [星际之门项目（Project Stargate）：耗资 5000 亿美元的数据中心（占美国 GDP 的 1.7%）以及 Gemini 2 Flash Thinking 2。](./25-01-21-ainews-project-stargate-dollar500b-datacenter-17percent-of-us-gdp-and-gemini-2-flash-thinking-2.html) *2025-01-22T01:56:21.007400Z*
 - [DeepSeek R1：性能媲美 o1 的权重开放模型，以及将 1.5B 模型提升至 Sonnet/4o 级别的简单方法。](./25-01-20-ainews-deepseek-r1-o1-level-open-weights-model-and-a-simple-recipe-for-upgrading-15b-models-to-sonnet4o-level.html) *2025-01-21T07:50:24.815688Z*
 - [今天没发生什么。](./25-01-17-ainews-not-much-happened-today.html) *2025-01-18T02:33:34.160647Z*
 - [今天没发生什么。](./25-01-16-ainews-not-much-happened-today.html) *2025-01-17T06:04:28.978541Z*
-- [**Titans：在测试时学习记忆**](./25-01-15-ainews-titans-learning-to-memorize-at-test-time.html) *2025-01-16T07:58:41.269179Z*
-- [根据语境，可以翻译为：
-
-1. **简讯**（最常用的正式表达）
-2. **零星的小新闻**（强调零散、琐碎）
-3. **短讯**
-4. **小条新闻**
-
-如果是在描述报纸或网页上的小板块，也可以译为：**新闻点滴**。](./25-01-14-ainews-small-little-news-items.html) *2025-01-15T02:19:30.206234Z*
+- [Titans：在测试时学习记忆](./25-01-15-ainews-titans-learning-to-memorize-at-test-time.html) *2025-01-16T07:58:41.269179Z*
+- [简讯](./25-01-14-ainews-small-little-news-items.html) *2025-01-15T02:19:30.206234Z*
 - [今天没发生什么特别的事。](./25-01-13-ainews-not-much-happened-today.html) *2025-01-14T06:08:22.078500Z*
 - [Moondream 2025.1.9：在 2B 模型中实现结构化文本、增强 OCR 与视线检测功能。](./25-01-10-ainews-moondream-202519-structured-text-enhanced-ocr-gaze-detection-in-a-2b-model.html) *2025-01-11T07:18:42.365063Z*
 - [今天没发生什么。](./25-01-09-ainews-not-much-happened-today.html) *2025-01-10T03:35:37.109683Z*
 - [今天没发生什么。](./25-01-08-ainews-not-much-happened-today.html) *2025-01-09T03:45:48.690704Z*
 - [今天没发生什么。](./25-01-07-ainews-not-much-happened-today.html) *2025-01-08T04:01:51.252491Z*
-- [**PRIME：基于隐式奖励的过程强化**](./25-01-06-ainews-prime-process-reinforcement-through-implicit-rewards.html) *2025-01-07T02:33:39.223056Z*
+- [PRIME：基于隐式奖励的过程强化](./25-01-06-ainews-prime-process-reinforcement-through-implicit-rewards.html) *2025-01-07T02:33:39.223056Z*
 - [今天没发生什么事。](./25-01-03-ainews-not-much-happened-today.html) *2025-01-04T07:58:51.225259Z*
-- [这句话可以翻译为：
-
-*   **年底没发生什么特别的事。** (最直接的翻译)
-*   **这一年平平淡淡地结束了。** (更具文学感，侧重于氛围)
-*   **岁末并没有什么大事发生。** (稍微正式一点)](./24-12-31-ainews-not-much-happened-to-end-the-year.html) *2024-12-31T23:55:07.995126Z*
+- [年底没发生什么特别的事。 (最直接的](./24-12-31-ainews-not-much-happened-to-end-the-year.html) *2024-12-31T23:55:07.995126Z*
 - [今天没发生什么特别的事。](./24-12-30-ainews-not-much-happened-today.html) *2024-12-31T02:24:45.402646Z*
 - [今天没发生什么事。](./24-12-27-ainews-not-much-happened-today.html) *2024-12-28T05:06:02.495266Z*
 - [DeepSeek v3：671B（6710亿）参数的细粒度混合专家模型（MoE），在 15T（15万亿）token 上训练而成，算力成本仅为 550 万美元。](./24-12-26-ainews-deepseek-v3-671b-finegrained-moe-trained-for-dollar55m-usd-of-compute-on-15t-tokens.html) *2024-12-27T01:18:46.567338Z*
@@ -314,21 +265,15 @@ Claude Code 对比 Codex：低调崛起的竞争态势
 - [o1 API、Realtime API + WebRTC 中的 4o/4o-mini、DPO 微调。](./24-12-17-ainews-o1-api-4o4o-mini-in-realtime-api-webrtc-dpo-finetuning.html) *2024-12-18T01:43:51.256632Z*
 - [Meta Apollo - 支持长达 1 小时的视频理解，SOTA 级开源权重。](./24-12-16-ainews-meta-apollo-video-understanding-up-to-1-hour-sota-open-weights.html) *2024-12-17T01:17:52.100442Z*
 - [Meta BLT：无需分词器的字节级大语言模型。](./24-12-13-ainews-meta-blt-tokenizer-free-byte-level-llm.html) *2024-12-14T05:38:19.544715Z*
-- [以下是几种不同语气的翻译供你参考：
-
-*   **标准直译：** 谷歌觉醒：Gemini 2.0 及其他
-*   **更具冲击力（新闻标题风）：** 谷歌发力：Gemini 2.0 及其系列产品
-*   **意译：** 谷歌苏醒：Gemini 2.0 等重磅发布](./24-12-11-ainews-google-wakes-up-gemini-20-et-al.html) *2024-12-12T03:16:07.864299Z*
-- [**ChatGPT Canvas 全面开放** (或 **正式发布**)
-
-注：“GA” 是 **General Availability** 的缩写，在软件行业意指产品结束测试阶段，向所有用户正式开放。](./24-12-10-ainews-chatgpt-canvas-ga.html) *2024-12-11T04:20:02.638516Z*
+- [标准直译： 谷歌觉醒：Gemini 2.0 及其他](./24-12-11-ainews-google-wakes-up-gemini-20-et-al.html) *2024-12-12T03:16:07.864299Z*
+- [ChatGPT Canvas 全面开放 (或 正式发布)](./24-12-10-ainews-chatgpt-canvas-ga.html) *2024-12-11T04:20:02.638516Z*
 - [OpenAI Sora Turbo 和 Sora.com](./24-12-09-ainews-openai-sora-turbo-and-soracom.html) *2024-12-10T02:21:42.861414Z*
 - [Meta Llama 3.3：以 70B 的价格提供 405B/Nova Pro 级别的性能。](./24-12-06-ainews-meta-llama-33-405bnova-pro-performance-at-70b-price.html) *2024-12-06T22:44:07.580241Z*
-- [200美元的 ChatGPT Pro 订阅及 o1-full/pro 模型：具备视觉功能，不含 API，且评价褒贬不一。](./24-12-05-ainews-dollar200-chatgpt-pro-and-o1-fullpro-with-vision-without-api-and-mixed-reviews.html) *2024-12-06T02:34:03.824924Z*
+- [美元的 ChatGPT Pro 订阅及 o1-full/pro 模型：具备视觉功能，不含 API，且评价褒贬不一。](./24-12-05-ainews-dollar200-chatgpt-pro-and-o1-fullpro-with-vision-without-api-and-mixed-reviews.html) *2024-12-06T02:34:03.824924Z*
 - [今天没发生什么。](./24-12-04-ainews-not-much-happened-today.html) *2024-12-05T02:41:39.435306Z*
 - [Olympus 正式发布（即 Amazon Nova Micro|Lite|Pro|Premier|Canvas|Reel）](./24-12-03-ainews-olympus-has-dropped-aka-amazon-nova-microorliteorproorpremierorcanvasorreel.html) *2024-12-04T03:06:39.205571Z*
 - [今天没发生什么事。](./24-12-02-ainews-not-much-happened-today.html) *2024-12-02T23:49:20.748299Z*
-- [这一周结束得比较平淡，没发生什么大事](./24-11-29-ainews-not-much-happened-to-end-the-week.html) *2024-11-29T23:07:35.341765Z*
+- [本周平淡收场。](./24-11-29-ainews-not-much-happened-to-end-the-week.html) *2024-11-29T23:07:35.341765Z*
 - [Qwen with Questions：32B 开源权重推理模型在 GPQA/AIME/Math500 表现上逼近 o1。](./24-11-27-ainews-qwen-with-questions-32b-open-weights-reasoning-model-nears-o1-in-gpqaaimemath500.html) *2024-11-28T01:23:25.425054Z*
 - [OLMo 2 —— 全新 SOTA 级完全开源大语言模型](./24-11-26-ainews-olmo-2-new-sota-fully-open-llm.html) *2024-11-27T05:17:18.239669Z*
 - [Anthropic 发布模型上下文协议 (Model Context Protocol)](./24-11-25-ainews-anthropic-launches-the-model-context-protocol.html) *2024-11-26T01:56:47.720158Z*
@@ -341,7 +286,7 @@ Claude Code 对比 Codex：低调崛起的竞争态势
 - [Gemini (Experimental-1114) 以 1344 的 Elo 分数重夺大语言模型（LLM）排行榜第一。](./24-11-14-ainews-gemini-experimental-1114-retakes-1-llm-rank-with-1344-elo.html) *2024-11-15T02:50:42.092528Z*
 - [Common Corpus：具有溯源信息的 2 万亿开放词元](./24-11-13-ainews-common-corpus-2t-open-tokens-with-provenance.html) *2024-11-14T01:54:53.118250Z*
 - [BitNet 是个谎言吗？](./24-11-12-ainews-bitnet-was-a-lie.html) *2024-11-13T01:36:06.890884Z*
-- [**FrontierMath：评估人工智能高级数学推理能力的基准测试**](./24-11-11-ainews-frontiermath-a-benchmark-for-evaluating-advanced-mathematical-reasoning-in-ai.html) *2024-11-12T01:33:12.109076Z*
+- [FrontierMath：评估人工智能高级数学推理能力的基准测试](./24-11-11-ainews-frontiermath-a-benchmark-for-evaluating-advanced-mathematical-reasoning-in-ai.html) *2024-11-12T01:33:12.109076Z*
 - [今天没发生什么事。](./24-11-08-ainews-not-much-happened-today.html) *2024-11-08T23:16:39.940280Z*
 - [今天没发生什么特别的事。](./24-11-07-ainews-not-much-happened-today.html) *2024-11-08T01:01:09.630174Z*
 - [今天没发生什么事。](./24-11-06-ainews-not-much-happened-today.html) *2024-11-07T02:54:09.545457Z*
@@ -353,42 +298,22 @@ Claude Code 对比 Codex：低调崛起的竞争态势
 - [GitHub Copilot 反击](./24-10-29-ainews-github-copilot-strikes-back.html) *2024-10-30T01:05:11.702248Z*
 - [这个周末没发生什么特别的事。](./24-10-28-ainews-not-much-happened-this-weekend.html) *2024-10-28T22:27:43.875190Z*
 - [今天没发生什么事。](./24-10-25-ainews-not-much-happened-today.html) *2024-10-26T00:52:03.375131Z*
-- [**简单、稳定、可扩展的一致性模型**
-
-(注：这是对 **s**imple、**s**table、**s**calable Consistency Models 的合称)](./24-10-24-ainews-simpleortableorcalable-consistency-models.html) *2024-10-25T02:36:02.241076Z*
+- [简单、稳定、可扩展的一致性模型](./24-10-24-ainews-simpleortableorcalable-consistency-models.html) *2024-10-25T02:36:02.241076Z*
 - [今天没什么事发生。](./24-10-23-ainews-not-much-happened-today.html) *2024-10-24T00:39:59.759230Z*
 - [Claude 3.5 Sonnet (新版) 获“电脑使用” (Computer Use) 功能。](./24-10-22-ainews-claude-35-sonnet-new-gets-computer-use.html) *2024-10-23T02:08:12.665635Z*
 - [DocETL：面向复杂文档处理的代理式查询重写与评估。](./24-10-21-ainews-docetl-agentic-query-rewriting-and-evaluation-for-complex-document-processing.html) *2024-10-22T00:04:21.441910Z*
 - [DeepSeek Janus 与 Meta SpiRit-LM：解耦的图像与表现力语音全模态。](./24-10-18-ainews-deepseek-janus-and-meta-spirit-lm-decoupled-image-and-expressive-voice-omnimodality.html) *2024-10-18T22:46:38.720062Z*
 - [今天没发生什么特别的事。](./24-10-17-ainews-not-much-happened-today.html) *2024-10-18T01:13:21.878974Z*
-- [目前没有证据表明英伟达（Nvidia）的 **Llama-3.1-Nemotron-70B-Instruct** 模型在测试集上进行了训练（即所谓的“数据污染”或“洗题”）。
-
-以下是关于这一争议的背景和详细说明：
-
-1.  **质疑的起因**：
-    这种质疑主要源于该模型在 **RewardBench**（一个衡量模型对人类偏好判断准确性的权威基准测试）上的惊人表现。Nemotron-70B 登顶了该排行榜，其得分（约 94.1）显著超过了 GPT-4o 和 Claude 3.5 Sonnet 等顶尖模型。由于其分数极高，一些开发者和研究人员怀疑是否存在数据泄露。
-
-2.  **英伟达的解释**：
-    英伟达官方表示，该模型的卓越表现归功于其**训练方法和高质量的数据集**。他们使用了：
-    *   **HelpSteer2 数据集**：这是一个开源的高质量偏好数据集，旨在帮助模型更好地理解人类的意图。
-    *   **RLHF（强化学习）优化**：英伟达采用了先进的对齐技术，使模型在处理复杂指令和评估回答质量方面表现更佳。
-
-3.  **社区评估**：
-    虽然社区中存在讨论，但目前并没有技术报告或证据证明英伟达违反了评估规范。在大型语言模型（LLM）领域，当一个模型在特定榜单上表现异常出色时，通常都会引发此类讨论，但英伟达通过开源其模型权重和部分训练数据集，展示了其研究的透明度。
-
-**总结：**
-官方立场和目前的技术分析都倾向于认为，Nemotron 70B 的高分是由于**模型对齐（Alignment）技术的进步和高质量合成数据的应用**，而非直接在测试集上进行训练。](./24-10-16-ainews-did-nvidias-nemotron-70b-train-on-test.html) *2024-10-17T00:44:43.747168Z*
+- [目前没有证据表明英伟达（Nvidia）的 Llama-3.1-Nemotron-70B-Instruct 模型在测试集上进行了训练（即所谓的“数据污染”或“洗题”）。](./24-10-16-ainews-did-nvidias-nemotron-70b-train-on-test.html) *2024-10-17T00:44:43.747168Z*
 - [今天没发生什么事。](./24-10-15-ainews-not-much-happened-today.html) *2024-10-15T21:33:05.037085Z*
 - [这个周末（AI 领域）没发生什么大事。](./24-10-14-ainews-not-much-in-ai-happened-this-weekend.html) *2024-10-14T22:52:37.794603Z*
 - [今天没发生什么特别的事。](./24-10-11-ainews-not-much-happened-today.html) *2024-10-11T23:00:43.056085Z*
-- [2024年人工智能现状 / 2024年人工智能报告](./24-10-10-ainews-state-of-ai-2024.html) *2024-10-10T22:35:38.089325Z*
+- [年人工智能现状 / 2024年人工智能报告](./24-10-10-ainews-state-of-ai-2024.html) *2024-10-10T22:35:38.089325Z*
 - [今天没什么事。](./24-10-09-ainews-not-much-happened-today.html) *2024-10-10T01:02:45.022514Z*
 - [AI 诺贝尔奖 或 人工智能诺贝尔奖](./24-10-08-ainews-the-ai-nobel-prize.html) *2024-10-09T01:33:48.218940Z*
 - [这个周末没什么特别的。](./24-10-07-ainews-not-much-happened-this-weekend.html) *2024-10-08T02:36:09.068096Z*
 - [上下文文档嵌入：`cde-small-v1`](./24-10-04-ainews-contextual-document-embeddings-cde-small-v1.html) *2024-10-05T01:38:06.226049Z*
-- [**Canvas：OpenAI 对标 Claude Artifacts 的产品**
-
-（或者：**Canvas：OpenAI 针对 Claude Artifacts 给出的回应**）](./24-10-03-ainews-canvas-openais-answer-to-claude-artifacts.html) *2024-10-03T23:22:37.798235Z*
+- [Canvas：OpenAI 对标 Claude Artifacts 的产品](./24-10-03-ainews-canvas-openais-answer-to-claude-artifacts.html) *2024-10-03T23:22:37.798235Z*
 - [今天技术方面没发生什么大事。](./24-10-02-ainews-not-much-technical-happened-today.html) *2024-10-02T22:45:37.315067Z*
 - [OpenAI 实时 API 及其他 Dev Day 精彩内容](./24-10-01-ainews-openai-realtime-api-and-other-dev-day-goodies.html) *2024-10-02T06:06:20.556230Z*
 - [液态基础模型：Transformer 的新替代方案 + AI 新闻播客第 2 期](./24-09-30-ainews-liquid-foundation-models-a-new-transformers-alternative-ainews-pod-2.html) *2024-10-01T01:34:19.663940Z*
@@ -402,11 +327,7 @@ Claude Code 对比 Codex：低调崛起的竞争态势
 - [o1 横扫 Lmsys Arena 榜单，Qwen 2.5 与 Kyutai Moshi 正式发布。](./24-09-18-ainews-o1-destroys-lmsys-arena-qwen-25-kyutai-moshi-release.html) *2024-09-18T21:51:26.650574Z*
 - [今天没发生什么特别的事。](./24-09-17-ainews-nothing-much-happened-today.html) *2024-09-18T00:27:31.736910Z*
 - [一个安静的周末](./24-09-16-ainews-a-quiet-weekend.html) *2024-09-17T00:28:09.999129Z*
-- [以下是“Learnings from o1 AMA”的中文翻译：
-
-**o1 AMA 总结**
-
-（或者：**从 o1 AMA 中获得的启发/学习心得**）](./24-09-13-ainews-learnings-from-o1-ama.html) *2024-09-14T00:55:34.586718Z*
+- [o1 AMA 总结](./24-09-13-ainews-learnings-from-o1-ama.html) *2024-09-14T00:55:34.586718Z*
 - [o1：OpenAI 全新的通用推理模型](./24-09-12-ainews-o1-openais-new-general-reasoning-models.html) *2024-09-13T01:18:57.613300Z*
 - [Pixtral 12B：Mistral 在多模态领域击败 Llama](./24-09-11-ainews-pixtral-12b-mistral-beats-llama-to-multimodality.html) *2024-09-12T00:30:22.330132Z*
 - [今天没发生什么 (Not Much Happened Today) + AI新闻播客？](./24-09-10-ainews-not-much-happened-today-ainews-podcast.html) *2024-09-11T02:24:16.042126Z*
@@ -421,40 +342,28 @@ Claude Code 对比 Codex：低调崛起的竞争态势
 - [CogVideoX：智谱的开源 Sora](./24-08-27-ainews-cogvideox-zhipus-open-source-sora.html) *2024-08-28T01:26:46.937370Z*
 - [这个周末没发生什么特别的事。](./24-08-26-ainews-not-much-happened-this-weekend.html) *2024-08-27T00:09:52.018820Z*
 - [Nvidia Minitron：针对 Llama 3.1 更新的大语言模型剪枝与蒸馏技术。](./24-08-23-ainews-nvidia-minitron-llm-pruning-and-distillation-updated-for-llama-31.html) *2024-08-23T22:14:15.426361Z*
-- [这句话可以翻译为：
-
-*   **非常安静的一天** （最常用）
-*   **超级安静的一天** （更口语化）
-*   **特别清静的一天** （强调没有打扰）](./24-08-22-ainews-super-quiet-day.html) *2024-08-23T00:55:37.537285Z*
+- [非常安静的一天](./24-08-22-ainews-super-quiet-day.html) *2024-08-23T00:55:37.537285Z*
 - [Ideogram 2 + 伯克利函数调用排行榜 V2](./24-08-21-ainews-ideogram-2-berkeley-function-calling-leaderboard-v2.html) *2024-08-22T00:05:05.366247Z*
 - [今天没发生什么。](./24-08-20-ainews-not-much-happened-today.html) *2024-08-21T00:22:36.551416Z*
 - [DSPy 路线图](./24-08-19-ainews-the-dspy-roadmap.html) *2024-08-20T05:06:22.742788Z*
 - [今天没什么事发生。](./24-08-16-ainews-not-much-happened-today.html) *2024-08-17T03:43:03.947952Z*
 - [今天没什么事。](./24-08-15-ainews-not-much-happened-today.html) *2024-08-16T04:05:53.457702Z*
 - [Grok 2! 和 ChatGPT-4o-latest 把大家都搞糊涂了。](./24-08-14-ainews-grok-2-and-chatgpt-4o-latest-confuses-everybody.html) *2024-08-15T00:51:40.557390Z*
-- [**Gemini Live**（通常直接保留英文名称，也可译为 **Gemini 实时对话** 或 **Gemini 实时语音**）。
-
-这是 Google 推出的一项功能，允许用户与 Gemini AI 进行流畅、自然的实时语音对话。](./24-08-13-ainews-gemini-live.html) *2024-08-14T01:23:26.876396Z*
+- [Gemini Live（通常直接保留英文名称，也可译为 Gemini 实时对话 或 Gemini 实时语音）。](./24-08-13-ainews-gemini-live.html) *2024-08-14T01:23:26.876396Z*
 - [一个安静的周末](./24-08-12-ainews-a-quiet-weekend.html) *2024-08-12T22:36:30.630631Z*
 - [今天没什么事。](./24-08-09-ainews-not-much-happened-today.html) *2024-08-10T05:51:12.824379Z*
-- [**便宜到无需计费：过去 30 天 AI 价格下调 50-70%**](./24-08-08-ainews-too-cheap-to-meter-ai-prices-cut-50-70percent-in-last-30-days.html) *2024-08-09T04:27:56.926040Z*
+- [便宜到无需计费：过去 30 天 AI 价格下调 50-70%](./24-08-08-ainews-too-cheap-to-meter-ai-prices-cut-50-70percent-in-last-30-days.html) *2024-08-09T04:27:56.926040Z*
 - [今天没发生什么事。](./24-08-07-ainews-not-much-happened-today.html) *2024-08-08T01:50:11.687874Z*
 - [GPT-4o 八月更新 + 100% 结构化输出全面开放（GPT-4o mini 版）](./24-08-06-ainews-gpt4o-august-100percent-structured-outputs-for-all-gpt4o-mini-edition.html) *2024-08-07T02:55:03.290831Z*
 - [GPT-4o 八月更新 + 面向所有人的 100% 结构化输出（GPT-4o 八月版）](./24-08-06-ainews-gpt4o-august-100percent-structured-outputs-for-all-gpt4o-august-edition.html) *2024-08-07T02:40:09.048705Z*
-- [**Carlini 如何使用 AI** 或 **卡里尼如何使用人工智能**](./24-08-05-ainews-how-carlini-uses-ai.html) *2024-08-05T23:43:14.094795Z*
-- [Execuhires：挑战可汗之怒
-
-（注：“The Wrath of Khan” 是《星际迷航》系列中的经典篇目，通常译为《可汗之怒》或《可汗怒吼》。）](./24-08-02-ainews-execuhires-tempting-the-wrath-of-khan.html) *2024-08-03T01:48:48.159187Z*
-- [Rombach 等人：发布 FLUX.1 [pro|dev|schnell]，Black Forest Labs 获 3100 万美元种子轮融资。](./24-08-01-ainews-rombach-et-al-flux1-proordevorschnell-dollar31m-seed-for-black-forest-labs.html) *2024-08-02T01:05:39.247788Z*
+- [Carlini 如何使用 AI 或 卡里尼如何使用人工智能](./24-08-05-ainews-how-carlini-uses-ai.html) *2024-08-05T23:43:14.094795Z*
+- [Execuhires：挑战可汗之怒](./24-08-02-ainews-execuhires-tempting-the-wrath-of-khan.html) *2024-08-03T01:48:48.159187Z*
+- [Rombach 等人：发布 FLUX.1 \[pro|dev|schnell\]，Black Forest Labs 获 3100 万美元种子轮融资。](./24-08-01-ainews-rombach-et-al-flux1-proordevorschnell-dollar31m-seed-for-black-forest-labs.html) *2024-08-02T01:05:39.247788Z*
 - [今天没发生什么特别的事。](./24-07-31-ainews-not-much-happened-today.html) *2024-07-31T07:04:15.405372Z*
-- [**Gemma 2 2B + Scope + Shield**
-
-（注：这些是 Google 发布的特定 AI 模型和工具的名称，在中文技术语境中通常保留英文原名。它们分别指：**Gemma 2 2B** 轻量化模型、**Gemma Scope** 模型可解释性工具，以及 **ShieldGemma** 安全分类器。）](./24-07-31-ainews-gemma-2-2b-scope-shield.html) *2024-08-01T01:33:32.753297Z*
+- [Gemma 2 2B + Scope + Shield](./24-07-31-ainews-gemma-2-2b-scope-shield.html) *2024-08-01T01:33:32.753297Z*
 - [Apple Intelligence 测试版 + Segment Anything Model 2 (分割一切模型 2)](./24-07-29-ainews-apple-intelligence-beta-segment-anything-model-2.html) *2024-07-30T02:45:55.827150Z*
 - [AlphaProof + AlphaGeometry2 距离 IMO 金牌仅差 1 分。](./24-07-25-ainews-alphaproof-alphageometry2-reach-1-point-short-of-imo-gold.html) *2024-07-26T01:15:56.829913Z*
-- [Mistral Large 2 + 再见（或：安息吧）Mistral 7B, 8x7B, 8x22B
-
-*(注：这里的 "RIP" 通常指新模型的发布使得旧模型（7B, 8x7B, 8x22B）不再具有竞争力或被取代。)*](./24-07-24-ainews-mistral-large-2-rip-mistral-7b-8x7b-8x22b.html) *2024-07-24T23:44:31.500890Z*
+- [Mistral Large 2 + 再见（或：安息吧）Mistral 7B, 8x7B, 8x22B](./24-07-24-ainews-mistral-large-2-rip-mistral-7b-8x7b-8x22b.html) *2024-07-24T23:44:31.500890Z*
 - [Llama 3.1：合成数据模型](./24-07-23-ainews-llama-31-the-synthetic-data-model.html) *2024-07-24T00:13:31.329222Z*
 - [Llama 3.1 爆料：8B 版本大幅提升，70B 版本小幅改进，以及 SOTA 级别的开源 405B 模型。](./24-07-22-ainews-llama-31-leaks-big-bumps-to-8b-minor-bumps-to-70b-and-sota-oss-405b-model.html) *2024-07-23T01:12:50.598107Z*
 - [DataComp-LM：最优秀的开源数据 7B 模型/基准/数据集。](./24-07-19-ainews-datacomp-lm-the-best-open-data-7b-modelbenchmarkdataset.html) *2024-07-20T02:08:36.357452Z*
@@ -487,72 +396,34 @@ Claude Code 对比 Codex：低调崛起的竞争态势
 - [Stable Diffusion 的最后辉煌？](./24-06-12-ainews-the-last-hurrah-of-stable-diffusion.html) *2024-06-12T22:08:29.963442Z*
 - [弗朗索瓦·肖莱（Francois Chollet）发起 100 万美元 ARC 奖金。](./24-06-11-ainews-francois-chollet-launches-dollar1m-arc-prize.html) *2024-06-11T23:42:03.241872Z*
 - [Talaria：苹果的新型 MLOps 超级武器](./24-06-10-ainews-talaria-apples-new-mlops-superweapon.html) *2024-06-11T06:41:05.024816Z*
-- [HippoRAG：首先，构建知识图谱。
-
-*(注：这句话模仿了医学界的希波克拉底誓言中的名言 "First, do no harm"——“首先，不要伤害”，这里将 "no harm" 巧妙地替换成了 "know(ledge) Graph"——“知识图谱”。)*](./24-06-07-ainews-hipporag-first-do-knowledge-graph.html) *2024-06-07T23:55:52.482883Z*
+- [HippoRAG：首先，构建知识图谱。](./24-06-07-ainews-hipporag-first-do-knowledge-graph.html) *2024-06-07T23:55:52.482883Z*
 - [Qwen 2 击败了 Llama 3（而我们不知道它是如何做到的）](./24-06-06-ainews-qwen-2-beats-llama-3-and-we-dont-know-how.html) *2024-06-06T22:33:41.101639Z*
-- [5 条新闻简讯](./24-06-05-ainews-5-small-news-items.html) *2024-06-06T02:50:37.633247Z*
+- [条新闻简讯](./24-06-05-ainews-5-small-news-items.html) *2024-06-06T02:50:37.633247Z*
 - [今天没什么事。](./24-06-04-ainews-not-much-happened-today.html) *2024-06-04T23:53:47.552835Z*
 - [Mamba-2：状态空间对偶性](./24-06-03-ainews-mamba-2-state-space-duality.html) *2024-06-03T21:31:26.119127Z*
-- [以下是“Ways to use Anthropic's Tool Use GA”的中文翻译：
-
-**Anthropic 工具使用功能（GA/正式版）的使用方式**
-
-（注：“GA”意为 General Availability，指功能已正式全面开放。）](./24-05-31-ainews-ways-to-use-anthropics-tool-use-ga.html) *2024-05-31T20:31:29.874216Z*
-- [**上下文位置编码 (CoPE)**](./24-05-30-ainews-contextual-position-encoding-cope.html) *2024-05-31T03:11:48.061328Z*
-- [1万亿 token 上下文，实时，端侧运行？](./24-05-29-ainews-1-trillion-token-context-real-time-on-device.html) *2024-05-29T23:01:07.584364Z*
+- [Anthropic 工具使用功能（GA/正式版）的使用方式](./24-05-31-ainews-ways-to-use-anthropics-tool-use-ga.html) *2024-05-31T20:31:29.874216Z*
+- [上下文位置编码 (CoPE)](./24-05-30-ainews-contextual-position-encoding-cope.html) *2024-05-31T03:11:48.061328Z*
+- [万亿 token 上下文，实时，端侧运行？](./24-05-29-ainews-1-trillion-token-context-real-time-on-device.html) *2024-05-29T23:01:07.584364Z*
 - [赶紧给安德烈（Andrej）整点 H100 吧。](./24-05-28-ainews-somebody-give-andrej-some-h100s-already.html) *2024-05-29T01:24:27.055047Z*
-- [**后 DPO 时代 (RewardBench)**
-
-或者更口语化的表达：
-**DPO 之后的发展 (RewardBench)**](./24-05-27-ainews-life-after-dpo-rewardbench.html) *2024-05-28T00:04:01.538810Z*
+- [后 DPO 时代 (RewardBench)](./24-05-27-ainews-life-after-dpo-rewardbench.html) *2024-05-28T00:04:01.538810Z*
 - [部署微调模型的十诫](./24-05-24-ainews-ten-commandments-for-deploying-fine-tuned-models.html) *2024-05-24T22:12:57.081028Z*
 - [Clémentine Fourrier 谈 LLM 评估（LLM evals）](./24-05-23-ainews-clementine-fourrier-on-llm-evals.html) *2024-05-23T23:34:22.485002Z*
-- [**AI 工程全集，尽在此处**
-
-（也可以翻译为：**AI 工程一站式汇总**）](./24-05-22-ainews-all-of-ai-engineering-in-one-place.html) *2024-05-23T01:22:53.232395Z*
+- [AI 工程全集，尽在此处](./24-05-22-ainews-all-of-ai-engineering-in-one-place.html) *2024-05-23T01:22:53.232395Z*
 - [Anthropic 的“LLM 基因组计划”：在 Claude Sonnet 上学习与钳制 3400 万个特征。](./24-05-21-ainews-anthropics-llm-genome-project-learning-and-clamping-34m-features-on-claude-sonnet.html) *2024-05-21T22:47:46.990001Z*
-- [“Skyfall” 根据语境有以下几种常见的中文翻译：
-
-1.  **电影名称**（第23部詹姆斯·邦德电影）：
-    *   中国大陆：**《007：大破天幕杀机》**
-    *   香港：**《新铁金刚：智破天凶城》**
-    *   台湾：**《007：空降危机》**
-
-2.  **字面意思**：
-    *   **天崩地裂**
-    *   **天塌**
-
-3.  **片中地名**（邦德在苏格兰的祖宅）：
-    *   **天幕庄园**
-
-4.  **同名主题曲**（阿黛尔演唱）：
-    *   通常直接称为 **《Skyfall》** 或 **《天幕杀机》**。](./24-05-20-ainews-skyfall.html) *2024-05-20T23:02:42.432305Z*
+- [Skyfall](./24-05-20-ainews-skyfall.html) *2024-05-20T23:02:42.432305Z*
 - [Chameleon：Meta 的（尚未发布的）类 GPT-4o 全模态模型。](./24-05-17-ainews-chameleon-metas-unreleased-gpt4o-like-omnimodal-model.html) *2024-05-17T20:46:44.950821Z*
 - [Cursor 通过微调 Llama3-70b，在快速文件编辑中实现了超过 1000 token/s 的速度。](./24-05-16-ainews-cursor-reaches-greater1000-toks-finetuning-llama3-70b-for-fast-file-editing.html) *2024-05-17T00:50:41.737343Z*
 - [今天没什么事。](./24-05-15-ainews-not-much-happened-today.html) *2024-05-15T21:20:08.374758Z*
-- [60秒看遍 Google I/O](./24-05-14-ainews-google-io-in-60-seconds.html) *2024-05-14T22:01:01.464489Z*
+- [秒看遍 Google I/O](./24-05-14-ainews-google-io-in-60-seconds.html) *2024-05-14T22:01:01.464489Z*
 - [GPT-4o：全新的全能型 SOTA 前沿模型（GPT-4 Turbo 版本）](./24-05-13-ainews-gpt-4o-the-new-sota-everything-frontier-model-gpt4t-version.html) *2024-05-13T23:14:50.739179Z*
 - [GPT-4o：全新的全能型 SOTA 前沿模型（GPT-4o 版本）](./24-05-13-ainews-gpt-4o-the-new-sota-everything-frontier-model-gpt4o-version.html) *2024-05-13T22:58:05.906872Z*
-- [这句话模仿了著名的拉丁语格言“*Quis custodiet ipsos custodes?*”（谁来监督监督者？）。
-
-在现代语境（尤其是人工智能领域）下，它的中文翻译为：
-
-**“谁来提示提示者自己？”**
-或
-**“谁来为提示词本身提供提示？”**](./24-05-10-ainews-quis-promptum-ipso-promptiet.html) *2024-05-11T06:34:12.398462Z*
+- [这句话模仿了著名的拉丁语格言“*Quis custodiet ipsos custodes?*”（谁来监督监督者？）。](./24-05-10-ainews-quis-promptum-ipso-promptiet.html) *2024-05-11T06:34:12.398462Z*
 - [LMSys 推进 Llama 3 评估分析。](./24-05-09-ainews-lmsys-advances-llama-3-eval-analysis.html) *2024-05-10T00:52:45.516571Z*
-- [OpenAI 的公关活动？
-
-（也可以翻译为：**OpenAI 的公关攻势？**）](./24-05-08-ainews-openais-pr-campaign.html) *2024-05-09T01:27:27.645324Z*
-- [**Kolmogorov-Arnold 网络：MLP 杀手，还是只是“加了料”的 MLP？**
-
-（注：MLP 指多层感知机，“spicy” 在此处意指“更有趣的变体”或“进阶版”。）](./24-05-07-ainews-kolmogorov-arnold-networks-mlp-killers-or-just-spicy-mlps.html) *2024-05-07T22:47:14.398752Z*
+- [OpenAI 的公关活动？](./24-05-08-ainews-openais-pr-campaign.html) *2024-05-09T01:27:27.645324Z*
+- [Kolmogorov-Arnold 网络：MLP 杀手，还是只是“加了料”的 MLP？](./24-05-07-ainews-kolmogorov-arnold-networks-mlp-killers-or-just-spicy-mlps.html) *2024-05-07T22:47:14.398752Z*
 - [DeepSeek-V2 性能超越 Mixtral 8x22B：拥有 160 多个专家，且成本仅需一半。](./24-05-06-ainews-deepseek-v2-beats-mixtral-8x22b-with-greater160-experts-at-half-the-cost.html) *2024-05-06T23:37:03.494203Z*
-- [10 万美元奖金：在 Kaggle 竞赛中预测 LMSYS 人类偏好。](./24-05-03-ainews-dollar100k-to-predict-lmsys-human-preferences-in-a-kaggle-contest.html) *2024-05-03T22:09:28.423042Z*
-- [**评测：下一代** 
-
-(或者：**评估：下一代**)](./24-05-02-ainews-evals-the-next-generation.html) *2024-05-02T23:54:22.767341Z*
+- [万美元奖金：在 Kaggle 竞赛中预测 LMSYS 人类偏好。](./24-05-03-ainews-dollar100k-to-predict-lmsys-human-preferences-in-a-kaggle-contest.html) *2024-05-03T22:09:28.423042Z*
+- [评测：下一代](./24-05-02-ainews-evals-the-next-generation.html) *2024-05-02T23:54:22.767341Z*
 - [今天没什么事。](./24-05-01-ainews-not-much-happened-today.html) *2024-05-02T00:47:12.556282Z*
 - [大语言模型作为陪审团 (LLMs-as-Juries)](./24-04-30-ainews-llms-as-juries.html) *2024-05-01T01:41:25.208668Z*
 - [一个安静的周末](./24-04-29-ainews-a-quiet-weekend.html) *2024-04-29T22:10:15.446084Z*
@@ -562,38 +433,28 @@ Claude Code 对比 Codex：低调崛起的竞争态势
 - [Perplexity，最新的人工智能独角兽。](./24-04-23-ainews-perplexity-the-newest-ai-unicorn.html) *2024-04-23T22:48:23.949413Z*
 - [FineWeb：15万亿 Token，12年的 CommonCrawl 数据（已去重和过滤，不客气）](./24-04-22-ainews-fineweb-15t-tokens-12-years-of-commoncrawl-deduped-and-filtered-youre-welcome.html) *2024-04-23T00:03:58.017305Z*
 - [Llama-3-70b 是 GPT-4 级别的开源模型。](./24-04-19-ainews-llama-3-70b-is-gpt-4-level-open-model.html) *2024-04-20T02:21:27.301127Z*
-- [Meta Llama 3 (8B, 70B)
-
-*(注：8B 和 70B 分别代表 80 亿和 700 亿参数)*](./24-04-18-ainews-meta-llama-3-8b-70b.html) *2024-04-19T04:28:01.540342Z*
+- [Meta Llama 3 (8B, 70B)](./24-04-18-ainews-meta-llama-3-8b-70b.html) *2024-04-19T04:28:01.540342Z*
 - [Mixtral 8x22B Instruct 引发了关于效率的梗。](./24-04-17-ainews-mixtral-8x22b-instruct-sparks-efficiency-memes.html) *2024-04-17T21:02:34.918866Z*
 - [Lilian Weng 谈视频扩散模型](./24-04-16-ainews-lilian-weng-on-video-diffusion.html) *2024-04-17T02:15:37.824011Z*
-- [**多模态、多维度、多形态 AI**](./24-04-15-ainews-multi-modal-multi-aspect-multi-form-factor-ai.html) *2024-04-15T22:42:55.173152Z*
-- [**从零到 GPT：一年进阶之路**
-
-（也可以翻译为：**一年时间，从零基础到掌握 GPT**）](./24-04-12-ainews-zero-to-gpt-in-1-year.html) *2024-04-12T23:27:50.881515Z*
+- [多模态、多维度、多形态 AI](./24-04-15-ainews-multi-modal-multi-aspect-multi-form-factor-ai.html) *2024-04-15T22:42:55.173152Z*
+- [从零到 GPT：一年进阶之路](./24-04-12-ainews-zero-to-gpt-in-1-year.html) *2024-04-12T23:27:50.881515Z*
 - [Mergestral、Meta MTIAv2、Cohere Rerank 3、Google Infini-Attention](./24-04-11-ainews-mergestral-meta-mtiav2-cohere-rerank-3-google-infini-attention.html) *2024-04-11T22:56:47.954323Z*
 - [音乐的 DALL-E 时刻](./24-04-10-ainews-musics-dall-e-moment.html) *2024-04-10T22:07:48.484098Z*
 - [Gemini Pro 和 GPT4T Vision 在同一天正式发布（GA），纯属巧合。](./24-04-09-ainews-gemini-pro-and-gpt4t-vision-go-ga-on-the-same-day-by-complete-coincidence.html) *2024-04-10T01:05:31.512776Z*
 - [一位动漫头像的匿名用户在 1 万美元的 A::B 提示词（prompting）挑战中刷新了纪录。](./24-04-08-ainews-anime-pfp-anon-eclipses-dollar10k-ab-prompting-challenge.html) *2024-04-09T01:18:42.938105Z*
-- [**深度混合：基于 Transformer 的语言模型中的动态计算分配**](./24-04-05-ainews-mixture-of-depths-dynamically-allocating-compute-in-transformer-based-language-models.html) *2024-04-05T22:44:29.761385Z*
+- [深度混合：基于 Transformer 的语言模型中的动态计算分配](./24-04-05-ainews-mixture-of-depths-dynamically-allocating-compute-in-transformer-based-language-models.html) *2024-04-05T22:44:29.761385Z*
 - [Cohere Command R+、Anthropic Claude 工具使用、OpenAI 微调](./24-04-04-ainews-cohere-command-r-anthropic-claude-tool-use-openai-finetuning.html) *2024-04-04T22:21:15.996359Z*
-- [**ReALM：将指代消解视作语言建模**](./24-04-03-ainews-realm-reference-resolution-as-language-modeling.html) *2024-04-04T00:00:20.574613Z*
+- [ReALM：将指代消解视作语言建模](./24-04-03-ainews-realm-reference-resolution-as-language-modeling.html) *2024-04-04T00:00:20.574613Z*
 - [今天没什么事。](./24-04-02-ainews-not-much-happened-today.html) *2024-04-02T21:04:12.327421Z*
 - [AdamW 变成 AaronD 了？](./24-04-01-ainews-adamw-greater-aarond.html) *2024-04-01T19:58:53.959019Z*
-- [**基于评估的 AI 工程**
-
-（或者：**评估驱动的 AI 工程**）](./24-03-29-ainews-evals-based-ai-engineering.html) *2024-03-29T22:20:49.586743Z*
+- [基于评估的 AI 工程](./24-03-29-ainews-evals-based-ai-engineering.html) *2024-03-29T22:20:49.586743Z*
 - [Jamba：混合架构超越 Mixtral](./24-03-28-ainews-jamba-mixture-of-architectures-dethrones-mixtral.html) *2024-03-28T23:43:23.713718Z*
 - [DBRX：最强开源模型（只是效率并非最高）](./24-03-27-ainews-dbrx-best-open-model-just-not-most-efficient.html) *2024-03-27T22:33:19.363427Z*
-- [Claude 3 正式成为了“全美超模”（America's Next Top Model）。
-
-*(注：这句话套用了美国知名真人秀节目《全美超模大赛》的名称，以此幽默地表示 Claude 3 已成为目前美国最顶尖的 AI 模型。)*](./24-03-26-ainews-claude-3-is-officially-americas-next-top-model.html) *2024-03-27T00:11:55.849429Z*
+- [Claude 3 正式成为了“全美超模”（America's Next Top Model）。](./24-03-26-ainews-claude-3-is-officially-americas-next-top-model.html) *2024-03-27T00:11:55.849429Z*
 - [安德鲁喜欢智能体。](./24-03-25-ainews-andrew-likes-agents.html) *2024-03-26T01:11:50.136366Z*
 - [今天没什么事。](./24-03-22-ainews-not-much-happened-today.html) *2024-03-22T23:55:31.644920Z*
 - [欢迎来到 /r/LocalLlama！](./24-03-21-ainews-welcome-rlocalllama.html) *2024-03-21T23:33:53.811566Z*
-- [**发布与深潜：拐点 + 稳定篇**
-
-*(注：“Shipping” 在科技语境中指发布产品或功能，“Dipping” 通常指深入探讨或研究。)*](./24-03-20-ainews-shipping-and-dipping-inflection-stability-edition.html) *2024-03-21T00:59:01.276091Z*
+- [发布与深潜：拐点 + 稳定篇](./24-03-20-ainews-shipping-and-dipping-inflection-stability-edition.html) *2024-03-21T00:59:01.276091Z*
 - [世界模拟.exe](./24-03-19-ainews-worldsimexe.html) *2024-03-20T00:46:48.498362Z*
 - [Grok-1 在生物学领域](./24-03-18-ainews-grok-1-in-bio.html) *2024-03-19T00:07:45.515064Z*
 - [MM1：苹果首个多模态大模型](./24-03-15-ainews-mm1-apples-first-large-multimodal-model.html) *2024-03-15T23:34:51.378733Z*
@@ -606,33 +467,23 @@ Claude Code 对比 Codex：低调崛起的竞争态势
 - [今天没发生什么特别的事。](./24-03-06-ainews-not-much-happened-today.html) *2024-03-07T01:15:26.009590Z*
 - [Stable Diffusion 3 —— Rombach 和 Esser 再次做到了！](./24-03-05-ainews-stable-diffusion-3-rombach-and-esser-did-it-again.html) *2024-03-05T22:30:03.649594Z*
 - [Claude 3 刚刚完爆了 GPT-4（不信你看）。](./24-03-04-ainews-claude-3-just-destroyed-gpt-4-see-for-yourself.html) *2024-03-04T23:59:02.180354Z*
-- [**1比特大语言模型时代**](./24-03-01-ainews-the-era-of-1-bit-llms.html) *2024-03-01T22:33:03.450029Z*
+- [比特大语言模型时代](./24-03-01-ainews-the-era-of-1-bit-llms.html) *2024-03-01T22:33:03.450029Z*
 - [续集之日 (StarCoder, The Stack, Dune, SemiAnalysis)](./24-02-29-ainews-dia-de-las-secuelas-starcoder-the-stack-dune-semianalysis.html) *2024-03-01T00:14:08.280260Z*
 - [……欢迎来到 AI 推特圈！](./24-02-28-ainews-and-welcome-ai-twitter.html) *2024-02-29T00:50:17.713944Z*
 - [欢迎 Interconnects 和 OpenRouter。](./24-02-27-ainews-welcome-interconnects-and-openrouter.html) *2024-02-27T20:03:47.279106Z*
 - [Mistral Large 令人失望。](./24-02-26-ainews-mistral-large-disappoints.html) *2024-02-26T21:59:34.252178Z*
-- [**Latent Space 一周年** 
-
-或者
-
-**潜空间的一年**](./24-02-23-ainews-one-year-of-latent-space.html) *2024-02-24T01:05:00.357006Z*
-- [**Ring Attention：支持超过 100 万上下文**](./24-02-22-ainews-ring-attention-for-greater1m-context.html) *2024-02-23T00:51:56.427034Z*
+- [Latent Space 一周年](./24-02-23-ainews-one-year-of-latent-space.html) *2024-02-24T01:05:00.357006Z*
+- [Ring Attention：支持超过 100 万上下文](./24-02-22-ainews-ring-attention-for-greater1m-context.html) *2024-02-23T00:51:56.427034Z*
 - [谷歌 AI：有得有失（Gemma 和 1.5 Pro 表现出色，图像生成遭遇挫折）](./24-02-21-ainews-google-ai-win-some-gemma-15-pro-lose-some-image-gen.html) *2024-02-22T02:21:19.724902Z*
-- [Karpathy 结束“隐身模式”了？
-
-（注：在创业圈中，“emerge from stealth” 指的是一家初创公司或项目结束秘密研发阶段，正式向外界公开。）](./24-02-20-ainews-karpathy-emerges-from-stealth.html) *2024-02-21T01:54:38.604352Z*
+- [Karpathy 结束“隐身模式”了？](./24-02-20-ainews-karpathy-emerges-from-stealth.html) *2024-02-21T01:54:38.604352Z*
 - [公司为 AI 幻觉承担责任，对 AI 工程师来说其实是好事。](./24-02-19-ainews-companies-liable-for-ai-hallucination-is-good-actually-for-ai-engineers.html) *2024-02-20T00:05:26.401101Z*
 - [Sora 刷新了 SOTA（行业最高水平）。](./24-02-16-ainews-sora-pushes-sota.html) *2024-02-16T11:15:03.174687Z*
 - [AI 获得记忆](./24-02-14-ainews-ai-gets-memory.html) *2024-02-15T00:47:59.492420Z*
-- [**Smaug (72B) 的剖析** 或 **对 Smaug (72B) 的深度解析**](./24-02-12-ainews-the-dissection-of-smaug-72b.html) *2024-02-13T01:40:29.456403Z*
+- [Smaug (72B) 的剖析 或 对 Smaug (72B) 的深度解析](./24-02-12-ainews-the-dissection-of-smaug-72b.html) *2024-02-13T01:40:29.456403Z*
 - [Gemini Ultra 已发布，评价褒贬不一。](./24-02-08-ainews-gemini-ultra-is-out-to-mixed-reviews.html) *2024-02-09T05:58:08.478444Z*
 - [MetaVoice 与 告别 Bard (或：别了，Bard)](./24-02-07-ainews-metavoice-and-rip-bard.html) *2024-02-07T22:41:50.157897Z*
 - [Qwen 1.5 发布](./24-02-06-ainews-qwen-15-released.html) *2024-02-06T23:40:32.776669Z*
-- [“Less Lazy AI” 可以翻译为：
-
-*   **更勤奋的人工智能**
-*   **没那么懒的人工智能**
-*   **拒绝偷懒的人工智能**](./24-02-05-ainews-less-lazy-ai.html) *2024-02-06T00:50:28.809972Z*
+- [Less Lazy AI” 可以](./24-02-05-ainews-less-lazy-ai.html) *2024-02-06T00:50:28.809972Z*
 - [AI工程的核心技能](./24-02-03-ainews-the-core-skills-of-ai-engineering.html) *2024-02-04T00:54:29.799988Z*
 - [AI2 发布 OLMo —— 第四个全开放（open-everything）大语言模型。](./24-02-02-ainews-ai2-releases-olmo-the-4th-open-everything-llm.html) *2024-02-03T03:35:10.019799Z*
 - [对 GPT 的信任度降至历史最低点。](./24-02-01-ainews-trust-in-gpts-at-all-time-low.html) *2024-02-02T03:25:24.640203Z*
@@ -646,42 +497,42 @@ Claude Code 对比 Codex：低调崛起的竞争态势
 - [再见潜扩散，你好沙漏扩散。](./24-01-23-ainews-rip-latent-diffusion-hello-hourglass-diffusion.html) *2024-01-24T01:38:15.342406Z*
 - [奥特曼（Sam Altman）表示：GPT-5 很快就来。](./24-01-22-ainews-sama-says-gpt-5-soon.html) *2024-01-22T20:51:23.366064Z*
 - [Nightshade 毒害了 AI 艺术……算是吧？](./24-01-22-ainews-nightshade-poisons-ai-art-kinda.html) *2024-01-22T21:09:56.120967Z*
-- [2024年1月17日：助力函数调用数据集的众包工作](./24-01-18-ainews-1172024-help-crowdsource-function-calling-datasets.html) *2024-01-18T21:20:01.765780Z*
-- [2024年1月16日：ArtificialAnalysis —— 一个全新的模型/托管服务基准测试网站。](./24-01-17-ainews-1162024-artificialanalysis-a-new-modelhost-benchmark-site.html) *2024-01-17T22:14:53.491208Z*
-- [2024年1月16日：TIES-Merging（或 TIES 合并）](./24-01-16-ainews-1162024-ties-merging.html) *2024-01-16T20:51:01.991703Z*
-- [2024年1月13-14日：别小看 #提示工程 (#prompt-engineering)](./24-01-15-ainews-113-142024-dont-sleep-on-prompt-engineering.html) *2024-01-16T00:58:42.745727Z*
-- [2024年1月12日：Anthropic 提出了“潜伏特工”（Sleeper Agents）这一概念。](./24-01-13-ainews-1122024-anthropic-coins-sleeper-agents.html) *2024-01-13T22:06:35.094843Z*
-- [2024年1月11日：混合专家 vs 模型合并](./24-01-12-ainews-1112024-mixing-experts-vs-merging-models.html) *2024-01-12T18:49:15.256645Z*
-- [2024年1月10日：AI工程师必读的最佳论文汇总。](./24-01-11-ainews-1102024-all-the-best-papers-for-ai-engineers.html) *2024-01-11T08:35:15.099429Z*
-- [2024年1月9日：Nous Research 获得 500 万美元融资，用于开源人工智能。](./24-01-10-ainews-192024-nous-research-lands-dollar5m-for-open-source-ai.html) *2024-01-11T00:53:13.633860Z*
-- [2024年1月8日：AI 技术栈的四场战争](./24-01-08-ainews-182024-the-four-wars-of-the-ai-stack.html) *2024-01-09T07:39:51.817056Z*
-- [2024年1月6-7日：LlaMA Pro —— PEFT/RAG 的替代方案？？](./24-01-07-ainews-16-72024-llama-pro-an-alternative-to-peftrag.html) *2024-01-08T00:51:41.330707Z*
-- [2024年1月4日：杰夫·贝佐斯投资了 Perplexity 总额 5.2 亿美元的 B 轮融资。](./24-01-05-ainews-142024-jeff-bezos-backs-perplexitys-dollar520m-series-b.html) *2024-01-05T08:29:59.746847Z*
-- [2024年1月3日：愿 Coqui 安息](./24-01-03-ainews-132024-rip-coqui.html) *2024-01-04T06:56:46.257833Z*
-- [2024年1月2日：对 Smol Talk 进行了一些微调。](./24-01-02-ainews-122024-smol-tweaks-to-smol-talk.html) *2024-01-03T07:38:24.484214Z*
-- [2024年1月1日：如何开启开源 AI 之路](./24-01-02-ainews-112024-how-to-start-with-open-source-ai.html) *2024-01-03T07:23:06.742443Z*
-- [2023年12月31日：新年快乐](./23-12-31-ainews-12312023-happy-new-year.html) *2024-01-01T05:33:14.937445Z*
-- [2023年12月30日：所有大语言模型 (LLMs) 超全清单](./23-12-31-ainews-12302023-mega-list-of-all-llms.html) *2023-12-31T10:23:31.628480Z*
-- [2023年12月29日：TinyLlama 即将到来。](./23-12-30-ainews-12292023-tinyllama-on-the-way.html) *2023-12-30T11:06:56.557602Z*
-- [2023年12月28日：Smol Talk 更新](./23-12-29-ainews-12282023-smol-talk-updates.html) *2023-12-29T10:32:18.263166Z*
-- [2023年12月27日：纽约时报 诉 OpenAI](./23-12-29-ainews-12272023-nyt-vs-openai.html) *2023-12-29T10:14:01.623905Z*
-- [2023年12月26日：今天没发生什么特别的事。](./23-12-29-ainews-12262023-not-much-happened-today.html) *2023-12-29T10:07:18.273087Z*
-- [2023年12月25日：圣诞节发布的 Nous Hermes 2 Yi 34B](./23-12-25-ainews-12252023-nous-hermes-2-yi-34b-for-christmas.html) *2023-12-26T07:45:27.644769Z*
-- [2023年12月24日：Dolphin Mixtral 8x7b 太疯狂了。](./23-12-25-ainews-12242023-dolphin-mixtral-8x7b-is-wild.html) *2023-12-26T07:23:04.603056Z*
-- [2023年12月23日：2023年 NeurIPS 最佳论文](./23-12-23-ainews-12232023-neurips-best-papers-of-2023.html) *2023-12-24T07:45:58.983278Z*
-- [2023年12月22日：Anyscale 对基准测试的批评](./23-12-22-ainews-12222023-anyscales-benchmark-criticisms.html) *2023-12-23T01:16:52.465251Z*
-- [2023年12月21日：AI 现状（LangChain 视角）](./23-12-21-ainews-12212023-the-state-of-ai-according-to-langchain.html) *2023-12-22T00:20:28.238274Z*
-- [2023年12月20日：Project Obsidian —— 来自 Nous 的多模态 Mistral 7B](./23-12-20-ainews-12202023-project-obsidian-multimodal-mistral-7b-from-nous.html) *2023-12-21T03:20:57.056468Z*
-- [2023年12月19日：人人都爱 OpenRouter](./23-12-20-ainews-12192023-everybody-loves-openrouter.html) *2023-12-20T08:10:20.249651Z*
-- [2023年12月18日：为了好玩和获利而对 Mistral 进行煤气灯操控 (Gaslighting)](./23-12-18-ainews-12182023-gaslighting-mistral-for-fun-and-profit.html) *2023-12-19T03:35:50.162274Z*
-- [2023年12月16日：字节跳动被 OpenAI 暂停使用权限。](./23-12-16-ainews-12162023-bytedance-suspended-by-openai.html) *2023-12-16T19:41:52.447379Z*
-- [2023年12月15日：Mixtral-Instruct 击败了 Gemini Pro（并与 GPT3.5 持平）](./23-12-15-ainews-12152023-mixtral-instruct-beats-gemini-pro-and-matches-gpt35.html) *2023-12-15T22:33:20.436628Z*
-- [2023年12月14日：1000万美元用于超级对齐 (Superalignment)](./23-12-14-ainews-12142023-dollar1e7-for-superalignment.html) *2023-12-14T22:51:28.552831Z*
-- [2023年12月13日，SOLAR 10.7B 性能超越了 Mistral 7B？](./23-12-13-ainews-12132023-solar107b-upstages-mistral7b.html) *2023-12-13T23:29:29.946888Z*
-- [2023年12月12日：迈向 LangChain 0.1](./23-12-12-ainews-12122023-towards-langchain-01.html) *2023-12-13T03:45:12.627715Z*
-- [2023年12月11日：Mixtral 击败了 GPT3.5 和 Llama2-70B。](./23-12-11-ainews-12112023-mixtral-beats-gpt35-and-llama2-70b.html) *2023-12-11T20:11:07.966684Z*
-- [2023年12月10日：今天没发生什么特别的事。](./23-12-10-ainews-12102023-not-much-happened-today.html) *2023-12-10T23:49:57.169413Z*
-- [2023年12月9日：Mixtral 狂潮](./23-12-09-ainews-1292023-the-mixtral-rush.html) *2023-12-09T23:30:00.926075Z*
-- [2023年12月8日 - Mamba vs Mistral vs Hyena](./23-12-08-ainews-1282023-mamba-v-mistral-v-hyena.html) *2023-12-08T22:40:04.800968Z*
-- [2023年12月7日：Anthropic 表示这是“技能问题”（skill issue）。](./23-12-07-ainews-1272023-anthropic-says-skill-issue.html) *2023-12-07T20:49:01.544973Z*
+- [年1月17日：助力函数调用数据集的众包工作](./24-01-18-ainews-1172024-help-crowdsource-function-calling-datasets.html) *2024-01-18T21:20:01.765780Z*
+- [年1月16日：ArtificialAnalysis —— 一个全新的模型/托管服务基准测试网站。](./24-01-17-ainews-1162024-artificialanalysis-a-new-modelhost-benchmark-site.html) *2024-01-17T22:14:53.491208Z*
+- [年1月16日：TIES-Merging（或 TIES 合并）](./24-01-16-ainews-1162024-ties-merging.html) *2024-01-16T20:51:01.991703Z*
+- [年1月13-14日：别小看 #提示工程 (#prompt-engineering)](./24-01-15-ainews-113-142024-dont-sleep-on-prompt-engineering.html) *2024-01-16T00:58:42.745727Z*
+- [年1月12日：Anthropic 提出了“潜伏特工”（Sleeper Agents）这一概念。](./24-01-13-ainews-1122024-anthropic-coins-sleeper-agents.html) *2024-01-13T22:06:35.094843Z*
+- [年1月11日：混合专家 vs 模型合并](./24-01-12-ainews-1112024-mixing-experts-vs-merging-models.html) *2024-01-12T18:49:15.256645Z*
+- [年1月10日：AI工程师必读的最佳论文汇总。](./24-01-11-ainews-1102024-all-the-best-papers-for-ai-engineers.html) *2024-01-11T08:35:15.099429Z*
+- [年1月9日：Nous Research 获得 500 万美元融资，用于开源人工智能。](./24-01-10-ainews-192024-nous-research-lands-dollar5m-for-open-source-ai.html) *2024-01-11T00:53:13.633860Z*
+- [年1月8日：AI 技术栈的四场战争](./24-01-08-ainews-182024-the-four-wars-of-the-ai-stack.html) *2024-01-09T07:39:51.817056Z*
+- [年1月6-7日：LlaMA Pro —— PEFT/RAG 的替代方案？？](./24-01-07-ainews-16-72024-llama-pro-an-alternative-to-peftrag.html) *2024-01-08T00:51:41.330707Z*
+- [年1月4日：杰夫·贝佐斯投资了 Perplexity 总额 5.2 亿美元的 B 轮融资。](./24-01-05-ainews-142024-jeff-bezos-backs-perplexitys-dollar520m-series-b.html) *2024-01-05T08:29:59.746847Z*
+- [年1月3日：愿 Coqui 安息](./24-01-03-ainews-132024-rip-coqui.html) *2024-01-04T06:56:46.257833Z*
+- [年1月2日：对 Smol Talk 进行了一些微调。](./24-01-02-ainews-122024-smol-tweaks-to-smol-talk.html) *2024-01-03T07:38:24.484214Z*
+- [年1月1日：如何开启开源 AI 之路](./24-01-02-ainews-112024-how-to-start-with-open-source-ai.html) *2024-01-03T07:23:06.742443Z*
+- [年12月31日：新年快乐](./23-12-31-ainews-12312023-happy-new-year.html) *2024-01-01T05:33:14.937445Z*
+- [年12月30日：所有大语言模型 (LLMs) 超全清单](./23-12-31-ainews-12302023-mega-list-of-all-llms.html) *2023-12-31T10:23:31.628480Z*
+- [年12月29日：TinyLlama 即将到来。](./23-12-30-ainews-12292023-tinyllama-on-the-way.html) *2023-12-30T11:06:56.557602Z*
+- [年12月28日：Smol Talk 更新](./23-12-29-ainews-12282023-smol-talk-updates.html) *2023-12-29T10:32:18.263166Z*
+- [年12月27日：纽约时报 诉 OpenAI](./23-12-29-ainews-12272023-nyt-vs-openai.html) *2023-12-29T10:14:01.623905Z*
+- [年12月26日：今天没发生什么特别的事。](./23-12-29-ainews-12262023-not-much-happened-today.html) *2023-12-29T10:07:18.273087Z*
+- [年12月25日：圣诞节发布的 Nous Hermes 2 Yi 34B](./23-12-25-ainews-12252023-nous-hermes-2-yi-34b-for-christmas.html) *2023-12-26T07:45:27.644769Z*
+- [年12月24日：Dolphin Mixtral 8x7b 太疯狂了。](./23-12-25-ainews-12242023-dolphin-mixtral-8x7b-is-wild.html) *2023-12-26T07:23:04.603056Z*
+- [年12月23日：2023年 NeurIPS 最佳论文](./23-12-23-ainews-12232023-neurips-best-papers-of-2023.html) *2023-12-24T07:45:58.983278Z*
+- [年12月22日：Anyscale 对基准测试的批评](./23-12-22-ainews-12222023-anyscales-benchmark-criticisms.html) *2023-12-23T01:16:52.465251Z*
+- [年12月21日：AI 现状（LangChain 视角）](./23-12-21-ainews-12212023-the-state-of-ai-according-to-langchain.html) *2023-12-22T00:20:28.238274Z*
+- [年12月20日：Project Obsidian —— 来自 Nous 的多模态 Mistral 7B](./23-12-20-ainews-12202023-project-obsidian-multimodal-mistral-7b-from-nous.html) *2023-12-21T03:20:57.056468Z*
+- [年12月19日：人人都爱 OpenRouter](./23-12-20-ainews-12192023-everybody-loves-openrouter.html) *2023-12-20T08:10:20.249651Z*
+- [年12月18日：为了好玩和获利而对 Mistral 进行煤气灯操控 (Gaslighting)](./23-12-18-ainews-12182023-gaslighting-mistral-for-fun-and-profit.html) *2023-12-19T03:35:50.162274Z*
+- [年12月16日：字节跳动被 OpenAI 暂停使用权限。](./23-12-16-ainews-12162023-bytedance-suspended-by-openai.html) *2023-12-16T19:41:52.447379Z*
+- [年12月15日：Mixtral-Instruct 击败了 Gemini Pro（并与 GPT3.5 持平）](./23-12-15-ainews-12152023-mixtral-instruct-beats-gemini-pro-and-matches-gpt35.html) *2023-12-15T22:33:20.436628Z*
+- [年12月14日：1000万美元用于超级对齐 (Superalignment)](./23-12-14-ainews-12142023-dollar1e7-for-superalignment.html) *2023-12-14T22:51:28.552831Z*
+- [年12月13日，SOLAR 10.7B 性能超越了 Mistral 7B？](./23-12-13-ainews-12132023-solar107b-upstages-mistral7b.html) *2023-12-13T23:29:29.946888Z*
+- [年12月12日：迈向 LangChain 0.1](./23-12-12-ainews-12122023-towards-langchain-01.html) *2023-12-13T03:45:12.627715Z*
+- [年12月11日：Mixtral 击败了 GPT3.5 和 Llama2-70B。](./23-12-11-ainews-12112023-mixtral-beats-gpt35-and-llama2-70b.html) *2023-12-11T20:11:07.966684Z*
+- [年12月10日：今天没发生什么特别的事。](./23-12-10-ainews-12102023-not-much-happened-today.html) *2023-12-10T23:49:57.169413Z*
+- [年12月9日：Mixtral 狂潮](./23-12-09-ainews-1292023-the-mixtral-rush.html) *2023-12-09T23:30:00.926075Z*
+- [年12月8日 - Mamba vs Mistral vs Hyena](./23-12-08-ainews-1282023-mamba-v-mistral-v-hyena.html) *2023-12-08T22:40:04.800968Z*
+- [年12月7日：Anthropic 表示这是“技能问题”（skill issue）。](./23-12-07-ainews-1272023-anthropic-says-skill-issue.html) *2023-12-07T20:49:01.544973Z*
 - [谷歌的 Gemini……靠谱吗？](./23-12-06-ainews-is-googles-gemini-legit.html) *2023-12-06T22:22:18.156000Z*
