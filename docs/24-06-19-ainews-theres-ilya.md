@@ -55,12 +55,12 @@ topics:
 </blockquote>
 <p>技术细节较少，但无可争议的是，当天的头条新闻是 <a href="https://x.com/ilyasut/status/1803472978753303014?s=46&t=Ld13-WcFG_cohsr6h-BdcQ">Ilya 终于再次露面</a>，共同创立了 <a href="https://ssi.inc/">Safe Superintelligence Inc</a>。这距离他<a href="https://buttondown.email/ainews/archive/ainews-to-be-named-3669/">离开 OpenAI</a> 已经一个月了，值得注意的是，Jan Leike 并没有加入，而是<a href="https://x.com/janleike/status/1795497960509448617">去了 Anthropic</a>（为什么？）。他接受了 <a href="https://www.bloomberg.com/news/articles/2024-06-19/openai-co-founder-plans-new-ai-focused-research-lab?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTcxODgxNjU5NywiZXhwIjoxNzE5NDIxMzk3LCJhcnRpY2xlSWQiOiJTRkM3ODJUMEcxS1cwMCIsImJjb25uZWN0SWQiOiI5MTM4NzMzNDcyQkY0QjlGQTg0OTI3QTVBRjY1QzBCRiJ9.9s8N3QuUytwRVZ6dzDwZ6tPOGDsV8u05fpTrUdlHcXg">Bloomberg 的一次采访</a>，透露了更多细节。</p>
 <hr>
-<p>{% if medium == &#39;web&#39; %}</p>
+{% if medium == 'web' %}
 <p><strong>目录</strong></p>
 <p>[TOC] </p>
-<p>{% else %}</p>
+{% else %}
 <p><strong>目录</strong>和<strong>频道摘要</strong>已移至此邮件的网页版：<a href="{{ email_url }}">{{ email.subject }}</a>！</p>
-<p>{% endif %}</p>
+{% endif %}
 <hr>
 <h1>AI Twitter 摘要</h1>
 <blockquote>
@@ -537,7 +537,7 @@ topics:
 <p><strong>YAIG (a16z Infra) Discord</strong> 没有新消息。如果该频道长时间沉寂，请告知我们，我们将移除它。</p>
 <hr>
 <h1>PART 2: 按频道的详细摘要和链接</h1>
-<p>{% if medium == &#39;web&#39; %}</p>
+{% if medium == 'web' %}
 <h3><strong>Stability.ai (Stable Diffusion) ▷ #<a href="https://discord.com/channels/1002292111942635562/1002292112739549196/1252699631679180901">general-chat</a></strong> (594 messages🔥🔥🔥):</h3>
 <ul>
 <li><p><strong>SDXL 受到称赞但在某些领域仍有不足</strong>：成员们强调 <strong>SDXL</strong> 是一个强大的模型，并突出了它的多功能性。一位成员指出：<em>“皮肤和眼睛的细节在 SD15 中表现最好，背景在 SD3 中表现最好，其余部分在 SDXL 中表现最好。”</em> 其他人建议使用来自 CivitAI 等平台的微调模型以获得更好的效果。</p>
@@ -1707,10 +1707,10 @@ topics:
 <p>rajib2189: <a href="https://youtu.be/Kw3FtreHgOw">https://youtu.be/Kw3FtreHgOw</a></p>
 <hr>
 <hr>
-<p>{% else %}</p>
+{% else %}
 <blockquote>
 <p>完整的频道明细已为邮件格式截断。</p>
 <p>如果您想查看完整明细，请访问此邮件的网页版本：<a href="{{ email_url }}">{{ email.subject }}</a>！</p>
 <p>如果您喜欢 AInews，请<a href="https://buttondown.email/ainews">分享给朋友</a>！提前感谢！</p>
 </blockquote>
-<p>{% endif %}</p>
+{% endif %}

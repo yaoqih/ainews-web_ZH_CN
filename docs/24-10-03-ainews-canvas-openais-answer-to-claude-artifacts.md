@@ -196,7 +196,7 @@ topics:
   - 传闻 **Strix Halo** APU 使用 **256-bit LPDDR5X-8000** 内存，提供 **256GB/s** 的理论带宽。有人推测其带宽可能达到 **500GB/s** 范围，可能还得益于针对游戏负载的 **3D cache**。
   - 目前的 **AMD APU** 在 **VRAM** 分配方面面临限制，仅允许最多 **8GB** 作为专用 **VRAM**。然而，一项名为 **Variable Graphics Memory** 的新功能允许 **AMD Ryzen™ AI 300 series** 处理器将高达 **75%** 的系统内存转换为“专用”显存。
 
-- **Qwen 2.5 Coder 7b 用于自动补全** ([Score: 37, Comments: 17](https://reddit.com//r/LocalLLaMA/comments/1fuenxc/qwen_25_coder_7b_for_autocompletion/)): **Qwen 2.5 Coder 7b** 模型在处理**数千个 token 的大上下文**时，表现出优于其他本地模型的自动补全能力。用户报告称其幻觉显著减少，代码风格延续性有所提高，性能足以媲美 **Copilot**。若要在 **IntelliJ 的 ContinueDev 插件**中使用，需要自定义模板覆盖：`"<|fim_prefix|>{{{ prefix }}}<|fim_suffix|>{{{ suffix }}}<|fim_middle|>"`，并且为了确保控制 token 和 **FIM 支持**正常工作，使用 instruct 模型变体至关重要。
+- **Qwen 2.5 Coder 7b 用于自动补全** ([Score: 37, Comments: 17](https://reddit.com//r/LocalLLaMA/comments/1fuenxc/qwen_25_coder_7b_for_autocompletion/)): **Qwen 2.5 Coder 7b** 模型在处理**数千个 token 的大上下文**时，表现出优于其他本地模型的自动补全能力。用户报告称其幻觉显著减少，代码风格延续性有所提高，性能足以媲美 **Copilot**。若要在 **IntelliJ 的 ContinueDev 插件**中使用，需要自定义模板覆盖：`"<|fim_prefix|>&#123;&#123;&#123; prefix &#125;&#125;&#125;<|fim_suffix|>&#123;&#123;&#123; suffix &#125;&#125;&#125;<|fim_middle|>"`，并且为了确保控制 token 和 **FIM 支持**正常工作，使用 instruct 模型变体至关重要。
   - **Qwen2.5-7b-coder-q8_0.gguf** 在 Neovim 的 **C++ 自动补全**中表现出色，对于短补全，**Q8 量化**仅比 Q4 慢约 5%。用户 **ggerganov** 正在使用 **256 行前缀和 128 行后缀**作为上下文。
   - **Qwen2.5 7b-coder** 与 **14b-instruct** 模型的对比表明，尽管后者并非专门为编程训练，但更大的模型可能提供更好的上下文理解和代码解释能力。7b-coder 版本则是针对带有特殊 token 的自动补全进行了微调。
   - 关于在 Fill-in-the-middle (FIM) 任务中使用 **base 还是 instruct 模型**存在困惑，原帖作者报告在使用 base 模型时遇到问题。Qwen 的官方文档建议在 FIM 任务中使用 base 模型，这与用户的实际体验相矛盾。

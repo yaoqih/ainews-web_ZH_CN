@@ -2114,7 +2114,7 @@ kimishpatel: 这正是我来这里的目的 🙂
 
 <ul>
 <li>
-<a href="https://github.com/nomic-ai/gpt4all/blob/main/gpt4all-chat/system_requirements.md">gpt4all/gpt4all-chat/system_requirements.md at main · nomic-ai/gpt4all</a>: GPT4All: 在任何设备上运行本地 LLM。开源且可商用。 - nomic-ai/gpt4all</li><li><a href="https://github.com/nomic-ai/gpt4all/pull/3173">Code interpreter by manyoso · Pull Request #3173 · nomic-ai/gpt4all</a>: 这是基于 jinja PR 的 Code Interpreter 工具调用的 WIP。这是我目前为 Qwen2.5-Coder-7B 使用的最新 jinja 模板:{{- &amp;#39;&amp;lt;|im_start|&amp;gt;system\n&amp;#39; }...
+<a href="https://github.com/nomic-ai/gpt4all/blob/main/gpt4all-chat/system_requirements.md">gpt4all/gpt4all-chat/system_requirements.md at main · nomic-ai/gpt4all</a>: GPT4All: 在任何设备上运行本地 LLM。开源且可商用。 - nomic-ai/gpt4all</li><li><a href="https://github.com/nomic-ai/gpt4all/pull/3173">Code interpreter by manyoso · Pull Request #3173 · nomic-ai/gpt4all</a>: 这是基于 jinja PR 的 Code Interpreter 工具调用的 WIP。这是我目前为 Qwen2.5-Coder-7B 使用的最新 jinja 模板:&#123;&#123;- &amp;#39;&amp;lt;|im_start|&amp;gt;system\n&amp;#39; }...
 </li>
 </ul>
 
