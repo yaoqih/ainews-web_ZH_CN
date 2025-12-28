@@ -108,7 +108,7 @@ topics:
 
 
 1. **探索 AI 模型能力与对比**：
-   - [Claude 3](https://www.youtube.com/watch?v=Zt73ka2Y8a8) 因其在各种认知任务中表现出的卓越性能而引发关注，据部分用户称其已超越 **GPT-4**。讨论围绕其在 coding、function calling 以及群聊中的自我调节能力展开，正如 [Twitter story](https://twitter.com/OpenRouterAI/status/1765470591836959061) 中所展示的那样。
+   - [Claude 3](https://www.youtube.com/watch?v=Zt73ka2Y8a8) 因其在各种认知任务中表现出的卓越性能而引发关注，据部分用户称其已超越 **GPT-4**。讨论围绕其在 coding、function calling 以及群聊中的自我调节能力展开，正如 [Twitter story](https://twitter.com/OpenRouterAI/status/1765470591836959061) 中所展示的那样。f.System
    - **Opus** 作为模型变体，因其 coding 实力（尤其是 function calling）而受到赞誉。它在 SAT 阅读部分取得了令人印象深刻的 800 分，引发了关于在大模型中[避免记忆化 (avoiding memorization)](https://twitter.com/wangzjeff/status/1764850689258451096) 的讨论。
    - 对于已发布的 benchmark 在捕捉 **GPT-4** 等较新模型全部潜力方面的可靠性，存在一些质疑。
 
@@ -852,7 +852,7 @@ sophiamyang: https://twitter.com/MistralAILabs/status/1765434559993123184
 
 ### Nous Research AI ▷ #[ask-about-llms](https://discord.com/channels/1053877538025386074/1154120232051408927/1214498234974609408) (47 条消息🔥): 
 
-- **寻求 Capybara-34b 使用指南**：`@oemd001` 询问了关于使用 **Capybara-34b 模型** 配合聊天模板的问题，但在使用 OpenAI 模板时遇到了困难。`.ben.com` 提供了一个特定模板格式的建议：`"template": "{{ .System }}\n\nUSER: {{ .Prompt }}\nASSISTANT:",`。
+- **寻求 Capybara-34b 使用指南**：`@oemd001` 询问了关于使用 **Capybara-34b 模型** 配合聊天模板的问题，但在使用 OpenAI 模板时遇到了困难。`.ben.com` 提供了一个特定模板格式的建议：`"template": "{% raw %}{{ .System }}\n\nUSER: {{ .Prompt }} \nASSISTANT:",{% endraw %}`。
 - **澄清 GENIE 的多功能性**：`@pier1337` 澄清说 **GENIE** 适用于任何交互式世界环境，而不不仅仅是 2D 游戏，这一点得到了 `@max_paperclips` 的支持，他提到它还可以用于热门 2D 游戏示例之外的其他事物。
 - **对 JEPA 应用的好奇**：`@max_paperclips` 考虑为 **JEPA** 创建一个功能演示，同时 `@pier1337` 讨论了 JEPA 的广泛潜力，例如处理图像补丁、文本和软件媒体。
 - **Striped-Hyena Tokenizer 的问题**：`@mrgonao` 提到在 **striped-hyena nous tokenizer** 上遇到了问题，该分词器默认使用 sentencepiece，随后会出现故障。
