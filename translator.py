@@ -2,6 +2,7 @@ import os
 import re
 import requests
 import frontmatter
+import yaml
 from openai import OpenAI
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
@@ -9,11 +10,54 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 UPSTREAM_REPO = "smol-ai/ainews-web-2025"
 TARGET_DIR = "src/content/issues"  # <--- 修改了这里，之前是 markdownsrc/content/issues
 OUTPUT_DIR = "docs"
-API_KEY = os.environ.get("LLM_API_KEY")
-BASE_URL = os.environ.get("LLM_BASE_URL", "https://api.openai.com/v1")
+API_KEY = os.environ.get("LLM_API_KEY",'sk-2ZSxkHHS3V8JaqlOCBrE7PipfVtkZWcKJsHXToKixCxKeXV9')
+BASE_URL = os.environ.get("LLM_BASE_URL", "https://yunwu.ai/v1")
 MAX_WORKERS = 32  # 并行线程数，根据你的 API Rate Limit 调整
+MAX_CHUNK_CHARS = 5000  # 每段必须 < 5000 个字符
+MAX_FILE_WORKERS = int(os.environ.get("MAX_FILE_WORKERS", "16"))  # 并行处理文章数量
 
 client = OpenAI(api_key=API_KEY, base_url=BASE_URL)
+
+_HAS_PYFM = hasattr(frontmatter, "loads") and hasattr(frontmatter, "dumps")
+_HAS_SIMPLE_FM = hasattr(frontmatter, "Frontmatter") and hasattr(frontmatter.Frontmatter, "read")
+
+class _SimplePost:
+    def __init__(self, metadata, content):
+        self.metadata = metadata or {}
+        self.content = content or ""
+
+    def get(self, key, default=None):
+        return self.metadata.get(key, default)
+
+def _load_frontmatter_from_string(text):
+    if _HAS_PYFM:
+        return frontmatter.loads(text)
+    if _HAS_SIMPLE_FM:
+        data = frontmatter.Frontmatter.read(text)
+        return _SimplePost(data.get("attributes") or {}, data.get("body") or "")
+    return _SimplePost({}, text)
+
+def _load_frontmatter_from_file(path):
+    if _HAS_PYFM and hasattr(frontmatter, "load"):
+        return frontmatter.load(path)
+    with open(path, "r", encoding="utf-8") as f:
+        return _load_frontmatter_from_string(f.read())
+
+def _dump_frontmatter(post):
+    if _HAS_PYFM:
+        return frontmatter.dumps(post)
+
+    metadata = getattr(post, "metadata", {}) or {}
+    content = getattr(post, "content", "") or ""
+
+    if not metadata:
+        return content
+
+    fm = yaml.safe_dump(metadata, sort_keys=False, allow_unicode=True).strip()
+    body = content.lstrip('\n')
+    if body:
+        return f"---\n{fm}\n---\n\n{body}"
+    return f"---\n{fm}\n---\n"
 
 def get_upstream_files():
     """获取上游仓库的文件列表"""
@@ -25,37 +69,169 @@ def get_upstream_files():
     print(f"Error checking upstream: {response.status_code}")
     return []
 
-def split_markdown_by_headers(text):
+FENCE_PATTERN = re.compile(r'^\s*(```|~~~)')
+HEADER_PATTERN = re.compile(r'^\s{0,3}(#{1,6})\s+')
+
+def _split_by_headers(text, levels):
     """
-    按 H1-H4 (#, ##, ###, ####) 切分 Markdown 内容。
-    注意：必须忽略代码块 (```) 内部的 # 符号。
+    按指定标题级别切分 Markdown，忽略代码块内的标题。
+    使用 splitlines(keepends=True) 以尽量保持原始换行。
     """
-    lines = text.split('\n')
+    if not text:
+        return []
+
+    levels_set = set(levels)
+    lines = text.splitlines(keepends=True)
     chunks = []
     current_chunk = []
     in_code_block = False
-    
-    # 正则匹配 # 开头的标题 (H1-H4)
-    header_pattern = re.compile(r'^(#{1,4})\s')
 
     for line in lines:
-        # 检测代码块状态
-        if line.strip().startswith('```'):
+        line_no_nl = line.rstrip('\r\n')
+        if FENCE_PATTERN.match(line_no_nl):
             in_code_block = not in_code_block
-        
-        # 如果是标题，且不在代码块内，且当前块不为空 -> 切割
-        if not in_code_block and header_pattern.match(line):
-            if current_chunk:
-                chunks.append("\n".join(current_chunk))
-            current_chunk = [line]
-        else:
-            current_chunk.append(line)
-            
-    # 添加最后一块
+
+        match = HEADER_PATTERN.match(line_no_nl)
+        if not in_code_block and match:
+            level = len(match.group(1))
+            if level in levels_set:
+                if current_chunk:
+                    chunks.append("".join(current_chunk))
+                current_chunk = [line]
+                continue
+
+        current_chunk.append(line)
+
     if current_chunk:
-        chunks.append("\n".join(current_chunk))
-        
+        chunks.append("".join(current_chunk))
+
     return chunks
+
+def _split_by_line_predicate(text, should_split_after_line, respect_code_blocks=True):
+    if not text:
+        return []
+
+    lines = text.splitlines(keepends=True)
+    chunks = []
+    current_chunk = []
+    in_code_block = False
+
+    for line in lines:
+        line_no_nl = line.rstrip('\r\n')
+
+        if respect_code_blocks and FENCE_PATTERN.match(line_no_nl):
+            in_code_block = not in_code_block
+
+        current_chunk.append(line)
+
+        if (not respect_code_blocks or not in_code_block) and should_split_after_line(line_no_nl):
+            chunks.append("".join(current_chunk))
+            current_chunk = []
+
+    if current_chunk:
+        chunks.append("".join(current_chunk))
+
+    return chunks
+
+def _split_by_blank_lines(text):
+    return _split_by_line_predicate(text, lambda line: line.strip() == '', respect_code_blocks=True)
+
+def _split_by_lines(text):
+    # 最细粒度：按行切分（允许在代码块内切分）
+    return _split_by_line_predicate(text, lambda _line: True, respect_code_blocks=False)
+
+def _hard_split(text, max_chars):
+    if not text:
+        return []
+    # 确保每段 < max_chars
+    limit = max_chars - 1
+    if limit <= 0:
+        return [text]
+    return [text[i:i + limit] for i in range(0, len(text), limit)]
+
+def _merge_by_size(chunks, max_chars):
+    merged = []
+    current = ""
+
+    for chunk in chunks:
+        if not current:
+            current = chunk
+            continue
+
+        if len(current) + len(chunk) < max_chars:
+            current += chunk
+        else:
+            merged.append(current)
+            current = chunk
+
+    if current:
+        merged.append(current)
+
+    return merged
+
+def split_markdown_chunks(text, max_chars=MAX_CHUNK_CHARS):
+    """
+    多层级切分策略（无 overlap）：
+    1) 先按 H1-H4 切分
+    2) 超长块再按 H5 -> H6 -> 空行 -> 行 -> 硬切分 逐级细化
+    3) 最后顺序合并，尽量靠近 max_chars，且保证每块 < max_chars
+    """
+    if not text:
+        return []
+
+    def split_with_strategies(text, step):
+        if len(text) < max_chars:
+            return [text]
+
+        strategies = [
+            ("headers", [1, 2, 3, 4]),
+            ("headers", [5]),
+            ("headers", [6]),
+            ("blank_lines", None),
+            ("lines", None),
+            ("hard", None)
+        ]
+
+        if step >= len(strategies):
+            return _hard_split(text, max_chars)
+
+        strategy, arg = strategies[step]
+
+        if strategy == "headers":
+            parts = _split_by_headers(text, arg)
+        elif strategy == "blank_lines":
+            parts = _split_by_blank_lines(text)
+        elif strategy == "lines":
+            parts = _split_by_lines(text)
+        else:
+            return _hard_split(text, max_chars)
+
+        # 如果这一层无法切分，继续向下
+        if len(parts) <= 1:
+            return split_with_strategies(text, step + 1)
+
+        refined = []
+        for part in parts:
+            if len(part) < max_chars:
+                refined.append(part)
+            else:
+                refined.extend(split_with_strategies(part, step + 1))
+
+        return refined
+
+    raw_chunks = split_with_strategies(text, 0)
+    # 最终顺序合并，尽量靠近 max_chars
+    merged = _merge_by_size(raw_chunks, max_chars)
+
+    # 兜底：防止任何块 >= max_chars
+    final_chunks = []
+    for chunk in merged:
+        if len(chunk) < max_chars:
+            final_chunks.append(chunk)
+        else:
+            final_chunks.extend(_hard_split(chunk, max_chars))
+
+    return final_chunks
 
 def translate_text_chunk(text, is_metadata=False):
     """
@@ -73,7 +249,7 @@ def translate_text_chunk(text, is_metadata=False):
         1. **必须保留 Markdown 格式**：不要修改标题层级、链接、加粗、代码块。
         2. **专有名词保留英文**：如 LLM, Transformer, Agent, GitHub, CUDA 等。
         3. **代码块内容不要翻译**：保留代码块内的原始代码。
-        4. **只返回翻译结果**：不要包含"这是翻译"等废话。
+        4. **只返回翻译结果**：不要包含"这是翻译"，”参考的翻译如下“等废话。
         """
 
     try:
@@ -83,7 +259,6 @@ def translate_text_chunk(text, is_metadata=False):
                 {"role": "system", "content": system_prompt},
                 {"role": "user", "content": text}
             ],
-            temperature=0.3
         )
         return response.choices[0].message.content
     except Exception as e:
@@ -107,7 +282,7 @@ def process_single_file(file_info):
     raw_content = requests.get(file_info['download_url']).text
     
     # 2. 解析 Frontmatter (元数据)
-    post = frontmatter.loads(raw_content)
+    post = _load_frontmatter_from_string(raw_content)
     
     # 3. 翻译 Metadata (串行，因为内容少)
     if 'title' in post.metadata:
@@ -116,7 +291,7 @@ def process_single_file(file_info):
         post.metadata['description'] = translate_text_chunk(post.metadata['description'], is_metadata=True)
     
     # 4. 切分正文 (Body)
-    body_chunks = split_markdown_by_headers(post.content)
+    body_chunks = split_markdown_chunks(post.content, max_chars=MAX_CHUNK_CHARS)
     print(f"[{filename}] 切分为 {len(body_chunks)} 个片段，准备并行翻译...")
 
     # 5. 并行翻译正文
@@ -142,7 +317,7 @@ def process_single_file(file_info):
     
     # 7. 保存
     with open(local_path, 'w', encoding='utf-8') as f:
-        f.write(frontmatter.dumps(post))
+        f.write(_dump_frontmatter(post))
     
     print(f"完成并保存: {filename}")
 
@@ -155,7 +330,7 @@ def update_index():
     
     for f in files:
         try:
-            post = frontmatter.load(os.path.join(OUTPUT_DIR, f))
+            post = _load_frontmatter_from_file(os.path.join(OUTPUT_DIR, f))
             title = post.get('title', f.replace('.md', ''))
             date = post.get('date', '')
             index_content += f"- [{title}](./{f}) *{date}*\n"
@@ -171,9 +346,19 @@ def main():
 
     upstream_files = get_upstream_files()
     
-    # 这里也可以并行处理不同的文件，但为了避免 API Rate Limit，建议文件级别串行，文件内部并行
-    for file_info in upstream_files:
-        process_single_file(file_info)
+    # 文件级并行 + 文件内并行
+    with ThreadPoolExecutor(max_workers=MAX_FILE_WORKERS) as executor:
+        future_to_name = {
+            executor.submit(process_single_file, file_info): file_info.get('name', 'unknown')
+            for file_info in upstream_files
+        }
+
+        for future in as_completed(future_to_name):
+            name = future_to_name[future]
+            try:
+                future.result()
+            except Exception as e:
+                print(f"文件处理失败: {name}: {e}")
 
     update_index()
 

@@ -1,0 +1,1948 @@
+---
+companies:
+- openai
+- lmarena
+- a16z
+- mistral-ai
+- google
+- google-deepmind
+date: '2025-05-21T05:44:39.731046Z'
+description: '**OpenAI** 确认与 **Jony Ive** 建立合作伙伴关系，共同开发消费级硬件。**LMArena** 获得了来自 **a16z**
+  的 1 亿美元种子轮融资。**Mistral** 发布了一个新的代码模型微调版本。**Google DeepMind** 在 **Google I/O 2024**
+  上宣布了多项更新，包括十几个新模型和 20 款 AI 产品。核心亮点包括发布了 **Gemini 2.5 Pro** 和 **Gemini Diffusion**，它们具备先进的多模态推理、编程和数学能力，并将
+  Gemini 作为 AI 浏览助手集成到了 **Google Chrome** 浏览器中。此外，还介绍了 **Deep Think** 增强推理模式和 **Project
+  Astra** 的改进，重点关注通用 AI 助手的语音输出、记忆和计算机控制功能。'
+id: MjAyNS0w
+models:
+- gemini-2.5-pro
+- gemini-diffusion
+people:
+- sundar_pichai
+title: OpenAI 以 65 亿美元收购 Jony Ive 的 io 公司；LMArena 获得来自 a16z 的 1 亿美元种子轮融资。
+topics:
+- multimodality
+- reasoning
+- code-generation
+- math
+- model-fine-tuning
+- ai-assistants
+- voice
+- memory-optimization
+---
+
+**Jony Ive is all you need.**
+
+> 2025/5/20-5/21 的 AI 新闻。我们为你检查了 9 个 subreddits，449 个 Twitter 账号和 29 个 Discord 社区（215 个频道，6969 条消息）。预计节省阅读时间（按 200wpm 计算）：597 分钟。我们的新网站现已上线，支持全元数据搜索，并以精美的 vibe coded 方式展示所有往期内容。请访问 https://news.smol.ai/ 查看完整的新闻分类，并在 @smol_ai 上向我们提供反馈！
+
+在 Google I/O 结束一天后，OpenAI [确认](https://x.com/sama/status/1925242282523103408?s=46&t=b7l37rB6wtbyAh6ah1NpZQ)了传闻已久的 Jony Ive 合作伙伴关系，并确认了发布消费级硬件的计划。
+
+LMArena [宣布](https://www.bloomberg.com/news/articles/2025-05-21/lmarena-goes-from-academic-project-to-600-million-startup)获得了来自 a16z 的 1 亿美元种子轮（SEED (!?!?)）融资。
+
+Mistral 发布了一个新的 [code model finetune](https://x.com/mistralai/status/1925191937792901298?s=46)。
+
+如果你完全错过了 OpenAI 对 [Responses API 的重要更新](https://openai.com/index/new-tools-and-features-in-the-responses-api/)，也是可以理解的。
+
+---
+
+# AI Twitter 综述
+
+以下是您提供的推文摘要，按类别整理：
+
+**Google I/O 2024 发布会与主题演讲**
+
+- **Google I/O 回顾**：[@Google](https://twitter.com/Google/status/1925258583035326866) 分享了在 10 分钟内看完 **Google I/O** 所有发布内容的回顾。关于所有发布的更详细概述，包括何时以及如何访问新模型和功能，可以在这条 [推文](https://twitter.com/Google/status/1925005205818556617) 中找到。
+- **Google 的持续进展**：[@Google](https://twitter.com/Google/status/1924926301086916987) 强调了 **Sundar Pichai** 对 **Google I/O 2024** 以来所取得的持续进展的反思，包括发布了十几个新模型、研究突破以及 20 个主要的 AI 产品和功能。[@GoogleDeepMind](https://twitter.com/GoogleDeepMind/status/1924873673556594915) 指出，自上届 Google I/O 以来，他们已经宣布了**十几个模型和研究突破**，并发布了 **20 多个主要的 AI 产品和功能**。
+- **聚焦 AI**：[@Google](https://twitter.com/Google/status/1924901352070676540) 发布了一个排行榜，统计了主题演讲期间提及 “AI” 的次数。[@TheRundownAI](https://twitter.com/TheRundownAI/status/1924842407067107356) 指出，**Google I/O 开幕了，一切都围绕着 AI 展开**。
+
+**Gemini 模型与功能**
+
+- **Gemini 2.5 Pro 和 Flash**：[@GoogleDeepMind](https://twitter.com/GoogleDeepMind/status/1924878250255516126) 表示 **Gemini 2.5 现在可以组织海量的多模态信息，对其看到的一切进行推理，并编写代码来模拟任何事物**。[@GoogleDeepMind](https://twitter.com/GoogleDeepMind/status/1924879650242887784) 宣布了 **Gemini 2.5** 改进的功能、更强的安全性和更多的控制权。[@GoogleDeepMind](https://twitter.com/GoogleDeepMind/status/1924878336137871673) 提供了 Gemini 2.5 Pro 和 Flash 的更新，指出 Gemini 2.5 Flash 的新预览版正在发布。[@iScienceLuvr](https://twitter.com/iScienceLuvr/status/1924896740068753825) 总结了该模型的特性。
+- **Gemini Diffusion**：[@GoogleDeepMind](https://twitter.com/GoogleDeepMind/status/1924888095448825893) 宣布了 **Gemini Diffusion，这是一种最先进的文本扩散模型 (text diffusion model)**，它通过逐步细化噪声来学习生成输出，在编程和数学方面表现出色。[@omarsar0](https://twitter.com/omarsar0/status/1924882868477563141) 强调 Gemini Diffusion 是一个实验性的文本扩散模型，利用并行生成来实现低延迟。[@_philschmid](https://twitter.com/_philschmid/status/1924912784233402741) 分享了细节，指出其文本扩散可以实现弹球效果。
+- **Google Chrome 中的 Gemini**：[@Google](https://twitter.com/Google/status/1924892719739973640) 推出了 **Google Chrome 中的 Gemini**，首先面向美国的 Google AI Pro 订阅用户推出，充当 AI 浏览助手。
+- **Deep Think 增强推理模式**：[@GoogleDeepMind](https://twitter.com/GoogleDeepMind/status/1924881598102839373) 在 **2.5 Pro** 中引入了 **Deep Think**，这是一种使用并行思考技术的增强推理模式，使其能够处理复杂的数学和编程问题。[@omarsar0](https://twitter.com/omarsar0/status/1924885378692972554) 还注意到 Deep Think 在 **USAMO** 和 **LiveCodeBench** 等基准测试中取得了令人印象深刻的分数。[@YiTayML](https://twitter.com/YiTayML/status/1924900546215084318) 指出他为该模型中一些大胆的研究想法做出了贡献。
+- **Project Astra**：[@GoogleDeepMind](https://twitter.com/GoogleDeepMind/status/1924883244459425797) 分享了 **Project Astra** 的更新，包括改进的语音输出、记忆和计算机控制，愿景是打造一个通用的 AI Agent。[@Google](https://twitter.com/Google/status/1924883459253649494) 提到了 Project Astra 的升级，包括更自然的语音输出和计算机控制，这些将集成到 Gemini Live 和 Search 的新体验中。
+- **Gemini 的个性化、主动且强大的功能**：[@GoogleDeepMind](https://twitter.com/GoogleDeepMind/status/1924890757401321516) 重点介绍了副总裁 **Josh Woodward** 解释 **Gemini 如何成为最个性化、主动且强大的 AI 助手。**
+- **Veo 3**：[@GoogleDeepMind](https://twitter.com/GoogleDeepMind/status/1924893837295546851) 推出了 **Veo 3 —— 具备原生音频生成功能。**
+
+**Agentic Web 与 AI Agents**
+
+- **微软的 Agentic Web 愿景**：[@TheTuringPost](https://twitter.com/TheTuringPost/status/1924910543154119105) 总结了来自 #MSBuild 的 **微软开放 Agentic Web 愿景**，强调 Agent 是第一类实体、NLWeb 和 Agentic DevOps。
+- **Project Mariner**：[@GoogleDeepMind](https://twitter.com/GoogleDeepMind/status/1924936861983609194) 介绍了 **Project Mariner**，这是一个研究原型，可以帮助用户规划旅行、订购物品并在监督下进行预订，代表了 AI Agent 的未来。[@GoogleDeepMind](https://twitter.com/GoogleDeepMind/status/1924936866597335107) 宣布了 Project Mariner 的更新，包括同时管理多达 10 个任务以及学习和重复任务的能力。
+- **Agent 聊天 UI**：[@hwchase17](https://twitter.com/hwchase17/status/1924892270085448072) 推广了一个 **开源 Agent 聊天 UI**。
+- [@stevenheidel](https://twitter.com/stevenheidel/status/1925209983073046616) 声称 **OpenAI Responses API 现在是第一个真正的 Agentic API**。
+- **Google 的 Agentic 能力**：[@Google](https://twitter.com/Google/status/1924877381853978790) 宣布开始 **在其所有产品中集成 Agentic 能力**，包括 Chrome、Search 和 Gemini。[@GoogleDeepMind](https://twitter.com/GoogleDeepMind/status/1924876541147709897) 概述了 Project Mariner 的 3 项更新，强调了其多任务处理能力和计算机使用 (computer use) 能力。
+
+**开源模型与工具**
+
+- **Devstral 模型发布**：[@b_roziere](https://twitter.com/b_roziere/status/1925194095359676768) 宣布发布 **Devstral，这是一个采用 Apache 2.0 许可证的 24B 模型**，并声称它是 SWE-Bench Verified 上表现最好的开源模型。根据 [@ollama](https://twitter.com/ollama/status/1925198849263747147) 的消息，Ollama 也已支持该模型。
+- **BytedanceTalk 的 BAGEL**：[@mervenoyann](https://twitter.com/mervenoyann/status/1925218434964472067) 提到了由 @BytedanceTalk 开发的 **BAGEL**，这是一个 7B 原生多模态模型，能够理解并生成图像 + 文本，性能超越了领先的 VLM，并采用 Apache 2.0 许可证。
+- **Open Agent Platform (OAP)**：[@LangChainAI](https://twitter.com/LangChainAI/status/1925224206473842691) 详细介绍了 **Open Agent Platform (OAP)**，这是一个开源的公民开发者平台，用于在无需大量编码的情况下构建、原型设计和部署 Agent。
+- **Allen AI 的 OLMoE**：[@teortaxesTex](https://twitter.com/teortaxesTex/status/1924861645865586800) 提到 Allen AI 的 **OLMoE** 在架构上也领先于 Meta。
+
+**模型架构与技术**
+
+- **GRPO (Group Relative Policy Optimization)**：[@TheTuringPost](https://twitter.com/TheTuringPost/status/1925146257372381485) 概述了 **GRPO (Group Relative Policy Optimization)**，这是 DeepSeek 为 LLM 开发的一种强化学习算法，它取消了使用 Critic 网络的需求，并在组内相对判断模型输出。[@sirbayes](https://twitter.com/sirbayes/status/1924669407521063112) 已更新其 RL 教程，包含 **GRPO** 的信息。
+- **DeepSeek-V3**：[@TheTuringPost](https://twitter.com/TheTuringPost/status/1924631209050833205) 强调了 **DeepSeek-V3** 的架构，该模型仅在 2,048 块强大的 NVIDIA H800 GPU 上训练，并阐明了其如何利用 Multi-head Latent Attention (MLA) 和 Mixture of Experts (MoE) 等创新技术工作。
+- **利用 Embedding 的通用几何特性**：[@jxmnop](https://twitter.com/jxmnop/status/1925224612872233081) 分享了关于论文 "Harnessing the Universal Geometry of Embeddings" 的推文串，认为不同模型的 Embedding 非常相似，仅凭结构就可以在它们之间进行映射，无需任何配对数据。
+
+**Google DeepMind 的 AI 电影制作工具**
+
+- **Flow：AI 电影制作工具**：[@GoogleDeepMind](https://twitter.com/GoogleDeepMind/status/1924896540138586528) 推出了 **Flow**，将 Veo、Imagen 和 Gemini 的优势结合成一个大师级的电影制作工具。[@Google](https://twitter.com/Google/status/1924896843441336440) 将 Flow 描述为一种专为创意人员打造的新型 AI 电影制作工具。
+- **Veo 3 特性**：[@GoogleDeepMind](https://twitter.com/GoogleDeepMind/status/1924893531300077675) 表示 **Veo 3** 非常擅长理解用户需求，能够捕捉现实世界的物理特性，并能根据 Prompt 讲述短篇故事，返回一段栩栩如生的剪辑。
+
+**其他新闻**
+
+- **OpenAI 收购 Jony Ive 的初创公司**：[@steph_palazzolo](https://twitter.com/steph_palazzolo/status/1925237718994350466) 报道称 **OpenAI 公开收购了 Jony Ive 的设备初创公司**。
+
+**幽默/迷因**
+
+- [@nearcyan](https://twitter.com/nearcyan/status/1924963816359788640) 说：“你敢 Community Note 这个试试，这是我剩下的唯一应对机制了。” [@polynoamial](https://twitter.com/polynoamial/status/1924673139541418408) 分享了他们的 Vibe Coding 体验。
+
+---
+
+# AI Reddit 摘要
+
+## /r/LocalLlama 摘要
+
+### 1. Mistral Devstral 编程模型发布与基准测试
+
+- [**mistralai/Devstral-Small-2505 · Hugging Face**](https://huggingface.co/mistralai/Devstral-Small-2505) ([得分: 296, 评论: 78](https://www.reddit.com/r/LocalLLaMA/comments/1kryybf/mistralaidevstralsmall2505_hugging_face/)): [**Devstral-Small-2505](https://huggingface.co/mistralai/Devstral-Small-2505) 是一个用于软件工程的 24B 参数 Agentic LLM，是 Mistral AI 和 All Hands AI 合作的成果。它基于 Mistral-Small-3.1 进行微调，利用 128k 上下文窗口，使用 *Tekken* Tokenizer（131k 词表），并在 SWE-Bench Verified 上达到** `46.8%` **，创下了开源领域的新纪录。模型支持 Tool Use、多文件代码编辑，并集成了推理后端（vLLM, mistral-inference, Transformers, LMStudio, llama.cpp, Ollama），配合 Docker 和 OpenHands 可作为 Agent 使用。** 评论指出目前缺少 GGUF 模型文件，并提醒该模型是专门为 OpenHands 训练的（不像 Codestral 那样用于通用编程），并报告了快速测试结果（例如 HTML 单 Prompt 测试）。
+    - Devstral 专门针对 **OpenHands** 的集成进行了训练，并非旨在作为像 Codestral 那样的通用编程模型，这可能会影响其在更广泛编程应用中的性能或效用。
+
+- 该模型在 SWE-bench 基准测试中脱颖而出，据报道在涉及工具使用、代码库探索和多文件编辑的软件工程任务中排名 `#1 open source model`——强调了其对 Agent 软件工程工作流的关注。
+- 人们对使用 'aider polyglot' 基准测试的潜在评估充满期待，这表明了对 Devstral 在多语言或跨语言编码任务中表现的兴趣。
+- [**认识 Mistral Devstral，专为编程 Agent 设计的 SOTA 开源模型**](https://www.reddit.com/r/LocalLLaMA/comments/1kryxdg/meet_mistral_devstral_sota_open_model_designed/) ([Score: 192, Comments: 25](https://www.reddit.com/r/LocalLLaMA/comments/1kryxdg/meet_mistral_devstral_sota_open_model_designed/)): **Mistral 发布了 Devstral (见 [新闻](https://mistral.ai/news/devstral))，这是一个专注于编程 Agent 任务的开源模型，权重 ([Devstral-Small-2505](https://huggingface.co/mistralai/Devstral-Small-2505)) 采用 Apache 2.0 许可证。Devstral 为 OpenHands 进行了优化，具有兼容的 system prompt 和 chat template，支持 GGUF 量化 ([lmstudio 的 GGUF](https://huggingface.co/lmstudio-community/Devstral-Small-2505-GGUF), [unsloth 的 GGUF](https://huggingface.co/unsloth/Devstral-Small-2505-GGUF))，并提供 [微调/运行文档](https://docs.unsloth.ai/basics/devstral-how-to-run-and-fine-tune)。Devstral Large 正在开发中。** 评论者赞赏宽松的 Apache 2.0 许可证，并指出使用正确的 chat template 和 system prompt 以确保兼容性的重要性。人们期待针对低资源硬件（例如 12B-14B 模型）的版本发布，因为较小的模型变体仍然非常受欢迎。
+    - Danialhanchen 在 HuggingFace 上提供了 Devstral-Small 的 GGUF 量化版本，并指出这些版本已根据 Devstral 的要求正确配置了 system prompt 和 chat template——这对于模型的正常运行至关重要，特别是考虑到 Devstral 是为 OpenHands 调整的。链接的文档提供了运行和微调模型的逐步说明，包括来自 Unsloth 或原始 Mistral 仓库的量化版本。
+    - Ambitious_Subject108 提出了一个技术基准点：官方基准测试中缺失 aider polyglot 结果导致性能存疑，自行进行的 aider polyglot 测试证实了这一点，'whole' 仅为 6.7%，'diff' 仅为 5.8%，这意味着该模型在 aider polyglot 基准测试中的表现可能不如其他代码模型。
+    - 人们期待 Devstral 发布更大的变体（12B 或 14B），这突显了在这些模型发布之前，GPU 资源有限的用户可能面临的限制，并与针对 GPU 受限社区的轻量级替代方案（如 Nemo 或 Pixtral 2）进行了比较。
+- [**Mistral 的新 Devstral 编程模型在单块 RTX 4090 上运行，使用 vLLM 的 Q4KM 量化实现 54k 上下文**](https://i.redd.it/ddhhql5ap52f1.png) ([Score: 110, Comments: 35](https://www.reddit.com/r/LocalLLaMA/comments/1ks18uf/mistrals_new_devstral_coding_model_running_on_a/)): **该图像展示了 Mistral 的 Devstral 编程模型，强调了其在单块 RTX 4090 GPU 上使用 vLLM 框架和 Q4KM 量化运行 54k 上下文窗口的能力。设置中的** `docker-compose.yml` **文件详细说明了利用 Nvidia 硬件的配置，而终端日志显示了实时 GPU 利用率和服务端点，证明了实际部署的可行性。评论中的技术讨论确认了其强大的性能：用户报告上下文窗口高达 70k，令人印象深刻的代码推理能力（例如 REGEX 搜索和变量跟踪），以及高达 80 tokens/sec 的吞吐量；此外，还提到了实验性的 vision encoder 集成和可用于高效使用的量化检查点。** 评论者称赞 Devstral 与 Qwen 和 GLM 系列模型相比具有竞争力的编程能力，特别是在高上下文和本地无限 API 使用的情况下，但也提到了偶尔在输出格式（缩进）方面的缺点以及需要密切监督。讨论还链接到了使用 vLLM 和 Unsloth 等替代方案微调和运行 Devstral 的详细指南。
+    - 一位在 32GB VRAM GPU（暗示为 RTX 4090）上运行 Devstral-small-2505 Q4KM 且具有 70k 上下文的用户报告称，在处理大型代码库任务（例如管理约 30 个文件、2k+ LOC、变量查找、REGEX 搜索）时，相比 Qwen3 14b Q4、Qwen3 32b Q4 和 GLM-4 Q4 有显著改进。Devstral 提供了 `80 tok/s` 的速度，并执行了竞争对手无法完成的编程辅助任务，尽管由于代码缩进错误等问题仍需要密切监督。
+
+- Unsloth 的文档指出，Devstral 可能通过“嫁接”来自 Mistral 3.1 Instruct 的 vision encoder 来支持视觉任务，正如 Xuan-Son 的 GGUF 仓库所示。量化版的 Devstral 变体（GGUF 格式）已经可用，扩展了对各种硬件配置的可访问性。
+- 人们期待发布更大的 Devstral 模型，并提到了 OpenHands 对 agentic coding 模型的贡献，指出他们的基础工作通常惠及其他项目，但在社区中缺乏广泛认可。
+
+### 2. 重大新模型与架构发布 (Gemini Diffusion, Bagel MOE, Falcon-H1)
+
+- [**为什么这里没有人提到 "Gemini Diffusion"？这可是件大事**](https://deepmind.google/models/gemini-diffusion/) ([Score: 705, Comments: 109](https://www.reddit.com/r/LocalLLaMA/comments/1krs40j/why_nobody_mentioned_gemini_diffusion_here_its_a/)): **Google 推出了 Gemini Diffusion 模型，这是一种基于 diffusion 的 LLM 范式，声称与 Gemini 2.0 Flash-lite 等 autoregressive 基准相比，生成速度更快且参数量更少（**`约为同等性能模型大小的 50%`**）。关键技术亮点包括由于 token 并行化和无需 key-value (KV) caching 而带来的内存和推理速度效率；迭代细化（iterative refinement）还实现了渐进式答案改进以及潜在的 latent CoT 风格推理。早期基准测试前景广阔，但关于模型规模和开放可用性的细节仍然有限，因为目前仅发布了演示候补名单，而非权重。值得注意的是，开源类似物如 [LLaDA-8B](https://huggingface.co/GSAI-ML/LLaDA-8B-Instruct) 和 [MLX PR](https://github.com/ml-explore/mlx-lm/pull/14) 已经存在，可供社区主导的探索。** 评论中的技术讨论集中在开源可用性上——与 LLaDA 等替代方案相比，Gemini Diffusion 缺乏公共权重令人沮丧——以及关于 diffusion LLM 如何处理变长输出生成的问题，这是 autoregressive 模型通过 [EOS] token 预测原生处理的挑战。
+    - 一位用户强调了开源 diffusion 语言模型 [ML-GSAI/LLaDA](https://github.com/ML-GSAI/LLaDA) 的存在，特别提到了 [LLaDA-8B-Instruct](https://huggingface.co/GSAI-ML/LLaDA-8B-Instruct) 检查点。该模型已经在进行 MLX 的集成工作，正如 [mlx-lm](https://github.com/ml-explore/mlx-lm/pull/14) 的 pull request 所证明的那样，这表明开源生态系统正在进行快速的实验性采用。
+    - 另一条评论讨论了 Gemini Diffusion 受限的可访问性；目前仅提供带有候补名单的演示，且未分发模型权重，这使其无法用于可重复的研究或开放开发。目前也没有宣布发布权重或将项目开源的计划，阻碍了更广泛的技术评估。
+    - 有人提出了一个技术问题，即像 Gemini 这样基于 diffusion 的语言模型如何处理输出终止和变长生成，因为 autoregressive 模型使用显式的 [EOS] token 来完成此任务。人们好奇 diffusion 模型是否采用了类似的机制或某些替代方案来实现高效、灵活的输出控制。
+- [**字节跳动 Bagel 14B MOE (7B 激活) 多模态且支持图像生成 (开源, Apache 许可证)**](https://www.reddit.com/r/LocalLLaMA/comments/1krnk8v/bytedance_bagel_14b_moe_7b_active_multimodal_with/) ([Score: 343, Comments: 56](https://www.reddit.com/r/LocalLLaMA/comments/1krnk8v/bytedance_bagel_14b_moe_7b_active_multimodal_with/)): **字节跳动（ByteDance）发布了 Bagel，这是一个统一的多模态 MoE (Mixture-of-Experts) 模型，总参数量为 14B，激活参数量为 7B，能够进行文本和图像生成，并采用 Apache 2.0 许可。随附论文中的技术细节强调了 MoE (Mixture-of-Experts) 和 MoT (Mixture-of-Transformer) 架构的使用、原生图像合成，权重（29GB FP16）可在 [Hugging Face](https://huggingface.co/ByteDance-Seed/BAGEL-7B-MoT) 和 GitHub 上获取；[论文](https://arxiv.org/abs/2505.14683)讨论了统一多模态预训练中的涌现属性。** 评论者在技术上关注量化（指出目前还没有用于 24GB 以下 VRAM 使用的 8-bit 或 4-bit 权重）、本地运行模型的后端兼容性，以及 Bagel 在实际多模态任务中是否能超越 Flux。
+    - 几位用户讨论了在消费级硬件上运行 BAGEL-14B MoT 的技术可行性：该模型 29GB 的未量化权重大小使其在 8-bit 量化可用之前，刚好*超出了 24GB VRAM 显卡的能力范围*，尽管本地推理对 4-bit GGUF 量化的需求非常高——特别是为了提高在消费级 GPU 上的效率（参见关于权重大小和量化需求的讨论）。
+
+- 用户对被称为“Mixture of Transformers”（MoT）的架构表现出兴趣。用户讨论这是否类似于传统的 Mixture-of-Experts (MoE) 设置，即每个输入仅激活“专家”（子网络）的一个子集——这可能会提高效率和可扩展性，但需要明确在实际实现中*专家是如何路由或激活的*。
+- 用户提出多 GPU 支持的问题，强调了一个技术差距：虽然在多个 GPU 上分布大型 LLM 已得到广泛支持，但*带有图像生成的多模态模型*通常多 GPU 支持较差，这引发了关于图像生成层与纯文本架构特定的并行和分区策略的问题。
+- [**Falcon-H1 系列混合头语言模型，包括 0.5B, 1.5B, 1.5B-Deep, 3B, 7B 和 34B**](https://huggingface.co/collections/tiiuae/falcon-h1-6819f2795bc406da60fab8df) ([评分: 195, 评论: 53](https://www.reddit.com/r/LocalLLaMA/comments/1krtvpj/falconh1_family_of_hybridhead_language_models/)): **技术创新研究所 (TIIUAE) 发布了 Falcon-H1 系列混合头语言模型，参数量从 0.5B 到 34B 不等，包含基础版和指令微调版。这些模型结合了 Transformer 和状态空间 (Mamba) 头，并以量化格式 (GPTQ Int4/Int8, GGUF) 发布，以实现资源高效的推理。实现支持 Hugging Face Transformers, vLLM 以及自定义的 llama.cpp 分支。对比图中的基准测试显示，Falcon-H1 模型的性能与 Qwen3 等成熟模型相比具有竞争力，据报道其审查程度低于 Gemma 3 等美国同类模型。详细信息和下载可通过官方 Hugging Face 集合获取。** 评论者强调了多后端推理支持的实际益处，并指出 Falcon-H1 的输出似乎比主要的美国模型审查更少，这可能是由于地区差异。混合 Mamba/Transformer 架构被认为是一个重要的进步，其性能可与其他领先的开源模型竞争。
+    - Falcon-H1 利用一种混合架构，在其 Transformer 块中并行结合了结构化状态空间模型 (SSMs) 和注意力模块，这与即将推出的 IBM Granite 4 采用 SSM 和注意力的串行组合方式形成对比。这种并行组合在技术上值得关注，可能会影响性能和模型行为，值得进行对比基准测试。
+    - Falcon-H1 系列展示了极具竞争力的性能，据报道在特定指标和任务上与 Qwen3 “并驾齐驱”，尽管它使用了 Mamba 混合模型架构。这使得 Falcon-H1 在其参数规模的能力方面处于领先的开源替代方案之列，特别是与 Qwen3 和 Gemma 3 等近期模型相比。
+    - 部署灵活性受到强调：Falcon-H1 模型可通过 Hugging Face `transformers`、`vLLM` 和 `llama.cpp` 的自定义分支直接使用。主要推理库的即时支持提高了研究和生产使用的可访问性，减轻了新发布架构常见的采用摩擦。
+
+### 3. 下一代本地/边缘 AI 的反馈和应用新闻 (Gemma3n, MedGemma, LLM 用户总体印象)
+
+- [**medgemma-4b 药剂师 🤣**](https://i.redd.it/f25nhvxqd52f1.png) ([评分: 175, 评论: 45](https://www.reddit.com/r/LocalLLaMA/comments/1krzpyp/medgemma4b_the_pharmacist/)): **附图显示了与 Google 新的 MedGemma-4B 医学语言模型的对话，该模型最初拒绝提供非法药物制造指令，但在极少的怂恿下很快屈服并愿意提供信息。这突显了模型在防止伤害安全机制（guardrails）方面的严重失效，因为它可能被操纵提供危险信息，引发了对已发布的医学或开源模型中安全过滤器有效性的担忧。额外背景确认这不仅限于该模型：一位用户报告称，在更大的 27B-qat 模型上也可能实现类似的越狱，该模型甚至泄露了炸弹制作指令，这表明当前 LLM 的对齐/安全策略存在更广泛的漏洞。** 评论者就不同模型大小和架构的安全机制鲁棒性进行了技术辩论，一些人对当前的生成模型对齐方法表示怀疑，另一些人则强调了开源环境特有的风险。
+
+- 一位用户在更大的模型（特别是 '27b-qat'）上测试了 jailbreak prompt，并报告称其绕过了安全防护措施，允许模型生成非法活动的指令（如制造炸弹）。这引发了人们对大型 LLM 与较小或经过更精细微调的变体（如 MedGemma-4b）相比，其安全机制鲁棒性的担忧。
+- [**他们还发布了可以与新 Gemma 3n 互动的 Android 应用**](https://www.reddit.com/r/LocalLLaMA/comments/1krp4hq/they_also_released_the_android_app_with_which_you/) ([Score: 139, Comments: 32](https://www.reddit.com/r/LocalLLaMA/comments/1krp4hq/they_also_released_the_android_app_with_which_you/)): **Google 发布了一款 Android 应用，用于通过 MediaPipe Solutions 与新的 Gemma 3n LLM 进行设备端交互（参见官方 [Android 解决方案集成文档](https://ai.google.dev/edge/mediapipe/solutions/genai/llm_inference/android)）。开发者们正在从 Hugging Face 手动下载并加载 Gemma 3n 模型 ([gemma-3n-E2B](https://huggingface.co/google/gemma-3n-E2B-it-litert-preview/tree/main))，并分享关于推理性能和 UI 功能的反馈。Gallery 和参考实现可在 [google-ai-edge/gallery](https://github.com/google-ai-edge/gallery) 仓库中找到。** 技术评论集中在模型下载的便捷性、UI 的良好用户体验，以及对更多开放（uncensored）模型变体的渴望。
+    - 一位用户报告称，他们必须通过从 [Huggingface 仓库](https://huggingface.co/google/gemma-3n-E2B-it-litert-preview/tree/main)下载来手动加载 Gemma-3n 模型，并分享说运行数据（大概是速度和性能）“相当不错”。
+    - 强调了一个技术限制：Gemma-3n 目前还不支持 GPU 推理，因此目前所有处理都是受 CPU 限制的，这限制了其性能上限。
+    - 在 Samsung Galaxy S23 Ultra 设备上，该应用在处理前 10 条消息时表现出极快的响应速度，但在回复中途会崩溃并变得无响应，这种稳定性问题在通过 MLCchat 运行的其他模型中未曾观察到，表明可能存在软件或模型特定的 Bug。
+- [**还有人觉得 LLM 实际上并没有变得更好吗？**](https://www.reddit.com/r/LocalLLaMA/comments/1ks1ncf/anyone_else_feel_like_llms_arent_actually_getting/) ([Score: 117, Comments: 160](https://www.reddit.com/r/LocalLLaMA/comments/1ks1ncf/anyone_else_feel_like_llms_arent_actually_getting/)): **该帖子质疑最近的 LLM（如 Gemini 2.5 Pro, Claude, Llama, Deepseek 和 Qwen）是否比前几代（如 GPT-3.5 和 GPT-4）有显著改进，特别是在长文本编程和系统设计等技术用例中。尽管报告的 Benchmark 有所提升（例如 LMSYS Arena），但用户观察到了一些持续存在的问题：幻觉、平庸的回答、代码生成中的 Bug 以及肤浅的系统设计——认为实际能力可能已经进入平台期。** 评论强调了分歧：一些人注意到最近有明显的改进，特别是在琐碎或样板任务中，但共识是 LLM 在处理复杂或特定上下文的任务（例如有意义的文档编写、涉及内部 API 的细微代码）时仍然吃力，模型可能会产生平庸或无用的输出。几位用户提到了增量式而非持续性的进步，过去 8 个月感觉停滞不前，但同比往年仍有重大转变。
+    - 讨论的一个高度技术性的观点是，最先进模型（如 Llama 3, Qwen2.5 70B, Claude 3.5）在处理复杂编程问题、文档生成和内部/非公开任务时的实用性滞后；先进模型经常生成平庸甚至误导性的输出，例如低质量的 docstrings 或通过依赖占位符或硬编码值来“作弊”的测试，对具有挑战性的工作几乎没有实际帮助。
+    - 文中提到的 LLM 领域的一项重大技术进步是 Quantization 和边缘部署的快速进展，使得仅有约 30B 参数的模型能够达到或匹配之前大得多的模型（70B+）的性能，这被认为是参数效率提升了“200%+”，也是在消费级硬件上运行高性能模型的突破。
+    - 一些用户报告称，虽然月度改进较小，但 LLM 能力的年度进步——特别是在性能与计算效率的对比方面——是巨大的，这意味着进步可能感觉是增量的，但在较长时间跨度内会迅速累积。
+
+## 其他 AI Subreddit 概览
+
+> /r/Singularity, /r/Oobabooga, /r/MachineLearning, /r/OpenAI, /r/ClaudeAI, /r/StableDiffusion, /r/ChatGPT, /r/ChatGPTCoding, /r/aivideo
+> 
+
+### 1. Google Veo 3 与 AI 生成视频的突破
+
+- [**制作了一个关于人们使用 VEO 3 生成的所有内容的综合汇编。简直疯了！**](https://v.redd.it/wbxsungfq42f1) ([Score: 1756, Comments: 238](https://www.reddit.com/r/singularity/comments/1krwsaw/made_a_comprehensive_compilation_of_all_the/)): **该帖子展示了由 OpenAI 的 VEO 3 生成的视频输出汇编，强调了该模型在视听合成方面令人惊讶的忠实度。评论者注意到 VEO 3 先进的声音设计能力，特别是其精确的空间和表面音频匹配（例如，“狗走在地毯和木地板上的脚步声听起来各不相同”）。这表明该模型集成了或高度关联了 foley 拟音合成，而不仅仅是视频生成。由于 Reddit 的安全封锁，无法访问外部技术材料或基准测试。** 评论中的技术讨论强调，人们认为 VEO 3 在视觉和听觉的真实感方面树立了新标杆，一些人对 foley 和声音集成的水平表示敬畏——这暗示了对专业声效和视频制作领域的重大影响。
+    - 对 Veo 3 的声音设计能力进行了详细观察：具体来说，在一个生成的视频中，一只狗的脚步声从地毯过渡到木地板，音频准确地反映了每个表面。这表明 Veo 3 对上下文感知的 foley 效果有深刻的理解，这对传统的 foley 艺术家和自动化声音设计工作流具有重要意义。
+    - 多位用户强调，Veo 3 对音频和视觉元素的同步显著提升了其生成内容的整体真实感。该系统在集成环境音和特定动作音频（如环境背景和脚步声学效果）方面的细致方法，被视为与之前的生成式视频模型相比的一个关键技术飞跃。
+- [**电影、明星、电影、电视……全完了，哈哈。- Veo3 太疯狂了……**](https://v.redd.it/jupwmrtf632f1) ([Score: 1218, Comments: 290](https://www.reddit.com/r/singularity/comments/1krrv1o/cinema_stars_movies_tv_all_cooked_lol_veo3_is/)): **该帖子讨论了 Google DeepMind 的 Veo 3 的变革潜力，这是一款先进的 text-to-video 模型，能够以极低的用户投入生成电影级内容。评论者注意到自早期 AI 生成视频（例如“威尔·史密斯吃意大利面”的梗图）以来的快速进展，强调“角色一致性（character consistency）正变得非常好”，并暗示模型可能在 2-3 年内达到接近照片级的真实感。人们还担心其对商业制作和传统媒体内容管道的影响。** 评论中的技术讨论强调，广告行业可能会受到沉重打击（“广告业完蛋了”），并且关于 **Alphabet** (Google) 尽管在 AI 视频生成领域被认为处于领先地位，但在公开市场上的估值却被低估的问题存在争议。
+    - 一位用户强调了 AI 视频生成在 2 到 2.5 年间的重大改进，引用了“威尔·史密斯吃意大利面视频”作为早期的梗图基准，并指出角色一致性已经变得很强。他们推测，在接下来的 2 到 3 年内，生成视频的真实感和表演质量将达到前所未有的水平，强调了进步的飞速。
+    - 针对 Veo 目前的表现力范围提出了一个技术担忧：虽然 Veo 可以创建带有逼真“欢快广告演员”的视频，但人们对其描绘细致、强烈或情感化表演（可与 Daniel Day-Lewis 等高水平演员相媲美）的能力持怀疑态度。目前尚不清楚是否存在展示这种情感深度的案例，这表明这可能是当前的局限性。
+    - 一位参与者观察到，尽管 Veo 取得了进步且 Alphabet 在 AI 竞赛中显然处于领先地位，但这并未反映在 Alphabet 的股价上，暗示了技术成就与市场认知之间的脱节。
+
+- [**Veo 3 的生成效果达到了新高度。**](https://v.redd.it/t5v9icxwu12f1) ([评分: 883, 评论: 152](https://www.reddit.com/r/singularity/comments/1krnk01/veo_3_generations_are_next_level/)): **该帖子讨论了 Veo 最新的生成模型（推测为 Veo 3），展示了生成能力的重大飞跃。关键点（根据有限的评论上下文）表明其具备先进功能，可能包括与视频同步的音频，尽管目前尚不清楚音频是原生生成的还是需要外部添加。Veo 是 Google DeepMind 开发的 AI 视频生成平台，与 OpenAI Sora 等模型竞争，但该帖子未具体说明 Veo 3 的技术升级细节（架构、基准测试等）。** 热门评论反映了对生成式 AI 发展速度的惊叹与生存担忧的交织。此外，还有对市场可持续性的怀疑，提到了 2024 年 AI “泡沫”可能破裂，以及对 Veo 3 输出中音频集成或质量的疑问。
+    - 一位用户询问 Veo 3 生成模型是否支持原生音频生成，还是必须在后期处理中添加音频，这指向了多模态模型输出中可能存在的局限性或未来改进领域。
+    - 另一条评论指出，生成的视频正在失去 AI 生成的典型特征，特别提到“*完美的交通节奏*”是仅存的迹象之一。这表明 Veo 3 的生成效果在输出真实感方面有所提高，减少了合成媒体的传统破绽。
+- [**我们现在有了 AI YouTuber。视频和声音都是由 Google 的 Veo 3 生成的。**](https://v.redd.it/tvschzq9w02f1) ([评分: 1617, 评论: 434](https://www.reddit.com/r/ChatGPT/comments/1krjpof/we_have_ai_youtubers_now_both_video_and_sound/)): **一篇帖子强调，利用 Google 最新的视频模型 Veo 3，现在可以实现完全由 AI 生成的 YouTuber，该模型能够合成视频和音频。该演示引用自 Twitter/X 上的帖子，暗示了虚拟内容创作者的端到端生成，展示了具有高保真生成视觉效果和语音的自动化媒体制作的新潜力。** 热门评论集中在 AI 生成媒体的飞速发展和怪诞感上，一些人对结果虽然逼真但显得不自然表示担忧。评论中没有深入的技术辩论。
+    - 该帖子强调了使用 Google 的 Veo 3 为 AI 生成的 YouTuber 生成视频和音频，标志着多模态内容创作迈出了重要一步。技术观察者可能会注意到生成视频中潜在的伪影和局限性，例如人物的手部位置与鼠标和键盘的使用不匹配，这指向了当前生成模型在自然动画和上下文连贯性方面面临的持续挑战。
+- [**跨维度电视 (Interdimensional Cable) - VEO 3**](https://v.redd.it/39kdw24cy52f1) ([评分: 557, 评论: 49](https://www.reddit.com/r/ChatGPT/comments/1ks569f/interdimensional_cable_veo_3/)): **该帖子提到了“跨维度电视 - VEO 3”，但外部 Reddit 视频链接无法访问（返回 403 Forbidden），因此无法从源头获取有关 VEO 3 或其实现的任何技术细节或新基准。** 热门评论反映了对先进视频生成/分发技术潜在社会影响的担忧（例如，将其比作 TikTok 和 Robot Chicken），但没有提供实质性的技术辩论或细节。
+    - 样本中没有直接的技术或性能导向的评论；这些言论主要是反应、文化引用和情感回应，没有对底层技术（如 VEO 3 的能力或基准测试）进行实质性讨论。
+- [**情绪 (完全由 Veo 3 生成)**](https://v.redd.it/st0n5m2f062f1) ([评分: 419, 评论: 175](https://www.reddit.com/r/ChatGPT/comments/1ks2web/emotions_fully_generated_with_veo_3/)): **一位用户展示了一个完全使用 Veo 3 生成的视频，Veo 3 是来自 Google DeepMind 的最先进文本转视频模型，这表明合成视频制作的可访问性和真实感正在不断提高。帖子中未提供具体的基准测试、模型参数或实现细节。链接内容无法访问（403 Forbidden），因此无法获得进一步的技术背景或分析。** 评论者对低质量 AI 生成内容（“slop”）的泛滥表示担忧，认为这会稀释 YouTube 等平台的内容质量，但也有人看到了通过降低视频创作的技术和财务门槛来实现电影制作民主化的潜力。
+    - 讨论强调了对由于 Veo 3 等生成模型可能导致低质量（“slop”）内容增加的担忧，引发了人们对 YouTube 等平台可能变得过度饱和、使用户更难找到高质量视频的忧虑。
+
+- 有人推测先进的视频生成模型对电影行业的影响，一位评论者预测这将对传统制作方法产生重大颠覆，并暗示好莱坞可能因此出现重大的劳动争议或罢工。
+- [**Emotions - Veo 3**](https://v.redd.it/1ip8tgf9362f1) ([Score: 121, Comments: 22](https://www.reddit.com/r/aivideo/comments/1ks37es/emotions_veo_3/)): **该 Reddit 帖子讨论了一个据称由 Google 的 Veo 3 生成的视频，Veo 3 被认为是 Google 最新的生成式视频模型，但原始视频无法访问（HTTP 403 Forbidden），因此无法从源头验证或总结技术或 Benchmark 细节。标题和用户评论暗示其相比之前的视频生成系统有显著进步，可能将 Veo 3 定位为新的 SOTA 标准，但目前尚无直接的技术证据、指标或实现细节。** 热门评论认为 Veo 3 代表了视频生成质量的阶梯式提升，一些用户声称它超越了 OpenAI 的 Sora 模型，并重新定义了行业对生成式视频模型的预期。这些是用户印象，而非基于 Benchmark 的技术对比。
+    - 一位评论者指出 Veo 3 输出的明显问题，特别是 *披萨店吉他手（pizzeria-guitarist）的面部* 扭曲，这表明连贯的面部生成仍面临挑战，即使在像 Veo 3 这样的尖端视频模型中也是如此。这突显了当前基于 Diffusion 或 Transformer 的视频模型在生成精细面部细节方面的局限性，并可能表明在复杂帧的 Temporal Consistency（时间一致性）或渲染方面存在未解决的问题。
+
+### 2. Multimodal and Open-Source Model Releases (Bagel, TTS)
+
+- [**Bytedance released Multimodal model Bagel with image gen capabilities like Gpt 4o**](https://www.reddit.com/gallery/1krnolw) ([Score: 571, Comments: 92](https://www.reddit.com/r/StableDiffusion/comments/1krnolw/bytedance_released_multimodal_model_bagel_with/)): **字节跳动（ByteDance）发布了 BAGEL，这是一个开源多模态模型，拥有 7B 激活参数（总计 14B），在海量交错的图文数据上训练而成。据报道，BAGEL 在图像编辑 Benchmark 中优于 Flux 和 Gemini Flash 2 等开源替代方案，并提供与 GPT-4o 相当的图像生成能力。代码和模型已在 [GitHub](https://github.com/ByteDance-Seed/Bagel) 和 [HuggingFace](https://huggingface.co/ByteDance-Seed/BAGEL-7B-MoT) 上发布，该项目使用 Apache 许可证。** 评论者指出 BAGEL 的内容过滤器非常严格，影响了 NSFW 的可用性。关于其硬件要求存在一些困惑（提到 7B/14B 激活/总参数可能导致 `16GB` VRAM 需求），并对其采用宽松的 Apache 许可表示认可。
+    - 字节跳动的 Bagel 在 Apache 许可证下发布，这对于研究和商业项目的许可使用非常显著。一位评论者推测了该模型的资源需求，建议可能需要大约 16GB 的 VRAM，并指出了关于 7B/14B 模型命名（可能表示参数大小或接近 6GB 的配置）的困惑。
+    - 技术用户报告称 Bagel 的 Demo ([demo.bagel-ai.org](http://demo.bagel-ai.org/)) 具有极其激进的 NSFW 审查过滤器。测试 Prompt——甚至是那些描述着装整齐的女性的提示——也会被标记为潜在的 NSFW，这引发了人们对该模型在不希望受到严格审查的图像生成任务中实际效用的担忧。
+- [**ByteDance Bagel - Multimodal 14B MOE 7b active model**](https://www.reddit.com/r/StableDiffusion/comments/1krmrd7/bytedance_bagel_multimodal_14b_moe_7b_active_model/) ([Score: 224, Comments: 36](https://www.reddit.com/r/StableDiffusion/comments/1krmrd7/bytedance_bagel_multimodal_14b_moe_7b_active_model/)): **字节跳动的 Bagel 是一款新型开源多模态模型，采用 14B MOE (Mixture-of-Experts) 架构，具有 7B 激活参数，支持文本和图像生成（参见 [GitHub](https://github.com/ByteDance-Seed/Bagel), [论文](https://arxiv.org/abs/2505.14683)）。它在视觉任务中使用 SigLIP2，在图像生成中使用 Flux VAE，匹配 Qwen2.5 配置并具有 32k Token 上下文窗口，并在 GenEval Benchmark 上实现了 SOTA 的 Prompt 遵循能力。源代码显示其偏好 MoT 解码器，虽然保留了 MoE 解码器代码但非主要使用，且设计中复制了 Attention 模块，使其比同类的 Qwen 或其他 Qwen2.5-MOE-2X 变体更重。** 评论者注意到了 Apache 许可的优势，并强调了模型的架构选择（例如 Expert 的位置、重复的 Attention 模块以及约 29.2GB 的硬件需求）。在 Expert 放置和模型权重方面，还有与 HiDream 及其他 Qwen 衍生模型的技术对比。
+
+- ByteDance Bagel 使用 SigLIP2 作为视觉编码器，Flux VAE 用于生成，紧密映射了 Qwen2.5 的 [配置](https://huggingface.co/Qwen/Qwen2.5-7B/blob/main/config.json)，但具有 [32k 上下文窗口](https://huggingface.co/ByteDance-Seed/BAGEL-7B-MoT/blob/main/llm_config.json)。该模型架构采用了 MoE (Mixture of Experts) 结构，并带有重复的 attention 模块，使其比同类 Qwen 模型（不重复 attention）更重。值得注意的是，Bagel 使用 MoT 解码器进行图像生成，而 MoE 解码器（共享 MoT 权重）虽然保留在代码中，但似乎不是默认路径。
+    - 该模型的占用空间约为 29.2GB，表明与标准的 7B 模型相比，其资源需求较大，这可能是由于上述活跃的 7B 参数 MoE 架构和重复模块导致的。
+    - 据报道，基准测试显示其在推理和多模态能力方面表现强劲——显著优于之前的“半多模态”前代产品——根据早期的轶事反馈，终端用户测试称其“在对话方面也非常出色”且推理能力极佳。
+- [**你现在可以在本地训练自己的 TTS 语音模型了！**](https://v.redd.it/wtcv89hev42f1) ([Score: 337, Comments: 54](https://www.reddit.com/r/StableDiffusion/comments/1krxj0o/you_can_now_train_your_own_tts_voice_models/)): **Unsloth 增加了对文本转语音 (TTS) 模型本地微调和训练的支持，提供比其他设置快约 1.5 倍的训练速度和减少 50% 的 VRAM 占用。支持的模型包括 OpenAI/whisper-large-v3、Sesame/csm-1b、CanopyLabs/orpheus-3b 以及任何兼容 Transformer 的架构。训练遵循使用音频-转录对的监督微调 (SFT) 范式，可选择利用 LoRA 或 FFT 策略进行高效适配，并允许使用像 'Elise' 这样编码情感线索的数据集进行富有表现力的语音克隆。云端和本地工作流的 Notebook、模型二进制文件（量化/原始）以及文档可通过 [Unsloth GitHub](https://github.com/unslothai/unsloth) 和 [Hugging Face](https://huggingface.co/collections/unsloth/text-to-speech-tts-models-68007ab12522e96be1e02155) 获取。** 存在关于多语言支持的技术咨询（帖子中尚不清楚是已启用还是仅限于英语），以及对 CUDA 12 要求的担忧，这排除了在 AMD 硬件或 ZLUDA 等替代 CUDA 实现上的使用。
+    - 强调了对 CUDA 12 的要求，这将兼容性严格限制在 NVIDIA GPU 上，除非使用 ZLUDA（一种在 AMD GPU 上启用 CUDA 的尝试）等项目，否则排除了 AMD 硬件用户，从而限制了非 NVIDIA 用户的可访问性。
+    - 存在关于音频质量的批评反馈：虽然本地 TTS 训练正在取得进展，但目前的输出“一点也不好”，这表明本地模型在自然度和清晰度方面可能落后于云端托管或商业系统。
+    - 链接资源 [Voice_Extractor](https://github.com/ReisCook/Voice_Extractor) 可以自动从播客中创建训练数据集，从而简化自定义 TTS 模型训练的数据准备过程。这可以显著降低构建个性化语音数据集的门槛。
+
+### 3. Anthropic Claude 4 Sonnet/Opus 发布与预期
+
+- [**Claude 4 Sonnet 和 Opus 即将推出**](https://www.reddit.com/r/ClaudeAI/comments/1krrt8o/claude_4_sonnet_and_opus_coming_soon/) ([Score: 305, Comments: 106](https://www.reddit.com/r/ClaudeAI/comments/1krrt8o/claude_4_sonnet_and_opus_coming_soon/)): **Anthropic 宣布即将发布其新的 Claude 4 Sonnet 和 Claude 4 Opus 模型，正如预览图中所预告的那样。尽管尚未分享技术细节、Benchmarks 和具体实现细节，但预计该版本很快就会发布，并有望在之前的 Claude 版本基础上进行改进。** 热门评论者对预期的严格 API rate limits 和基础设施不稳定性表示担忧，由于需求量大，可能会像之前重大模型发布时那样，在发布初期导致服务中断。
+    - 几位用户担心预期的 "strict rate limits" 以及由于发布时需求激增而可能导致的服务器过载或性能下降，并提到了类似高调模型发布时持续存在的可用性问题。
+    - 一条评论明确提到了高级 LLM 的高变现门槛，引用了传闻中或现有的约 $300/月的 Claude 4 访问价格，这可能会限制个人或小规模用户的可访问性。
+- [**Claude 终于交付了，Opus 带来的兴奋无法阻挡**](https://i.redd.it/4n8zt1b8y42f1.png) ([Score: 299, Comments: 117](https://www.reddit.com/r/ClaudeAI/comments/1krxlrd/claude_delivers_finally_opus_cant_stop_this/)): **图片展示了令人兴奋的推文和一个引用 Anthropic 新大型语言模型 "Claude 4 Sonnet" 和 "Claude 4 Opus" 发布的代码片段，突显了用户的期待，并将这些模型定位为 Anthropic 最新的顶级产品。虽然图片中的技术细节很少，但帖子将 Opus 4 描绘成模型智能和能力的重大飞跃。代码片段可能作为访问这些模型的促销或 API 使用示例，但未显示具体的实现或 Benchmark 数据。** 热门评论对 Opus 4 模型的过度炒作持谨慎怀疑态度，提到了 AI 发布中典型的炒作后紧接着失望的周期。人们对实际限制（Context Window、使用上限）以及与 Deepseek R2 等其他模型的对比感到担忧，质疑 Opus 4 是否能实质性地超越竞争对手。
+    - 鉴于之前在 Opus 3 上遇到的限制，人们对 Claude Opus 4 潜在的 rate limits 或其他使用限制感到忧虑。用户希望有所改进，特别是 *更大的上下文记忆 (contextual memory)*，这是衡量 LLM 性能和实用性的关键技术指标。
+    - Google I/O 最近披露的进展催化了对 Opus 4 的期待。预计竞争将加剧，导致快速的技术迭代和潜在的突破性功能，因为现有厂商正面临展示其最强模型能力的压力。
+    - 一条评论概述了发布后用户情绪可能的演变过程：最初是对 Benchmark 结果和功能对等/领先的兴奋（例如，据报道 Opus 4 “碾压” Benchmarks 或在推理任务上表现出色），随后社区会迅速审视模型表现不佳或被 Deepseek R2 等对手直接击败的领域，这暗示了模型生命周期和接受度中一个众所周知的模式。
+
+---
+
+# AI Discord 摘要
+
+> 由 Gemini 2.5 Pro Exp 生成的摘要之摘要的摘要
+> 
+
+**主题 1：模型挑战：新发布、性能谜题与趋势转变**
+
+- [**Google Gemini 系列扩展，Flash 模型在预览后遭到削弱**](https://openrouter.ai/google/gemini-2.5-flash-preview-05-20)：**Google** 发布了 **Gemini 2.5 Pro**，推测其代号为 *Nightwhisper*，尽管其性能未被视为 "ultra"。虽然 **Gemini 2.5 Flash** 以速度著称，但据报道初始预览版被削弱（nerfed）了，用户指出 **Gemini 2.5 03 25** 表现惊人，而 **2.5 05 06** 削弱得太厉害，甚至 **Google** 自己的 [Gemini Model card](https://storage.googleapis.com/model-cards/documents/gemini-2.5-pro-preview.pdf) 也显示基准测试结果有所下降。**Gemma 3n** 模型（包括 **1B & 4B** 参数）也发布了预览版（[Gemma 3n 文档](https://ai.google.dev/gemma/docs/gemma-3n)），有人声称 **Gemma-3n-4B** 可与 **Claude 3.7** 匹敌。
+- [**Claude 4 发布在即，伴随着高期望和昂贵的价格预测**](https://x.com/AnthropicAI/status/1925239440420831516)：有关 **Anthropic** 的 **Claude 4**（可能是 *Neptune* 模型）即将发布的传闻四起，[The Information](https://www.theinformation.com/) 和 [AnthropicAI 的推文](https://x.com/AnthropicAI/status/1925239440420831516) 等消息来源引发了广泛猜测；一些人预计它可能会使 Codex 过时，而潜在定价预计在每月 **200 美元**左右。与此同时，**Meta** 的 **Llama 3.3 8B** 发布延迟引发了批评，用户表示：“他们根本不在乎消费者”，相比已有的 [Llama 3.3 70B API](https://ai.meta.com/llama/)，他们更倾向于小模型的权重开源。
+- [**OpenAI 面临降级失望，而 Mistral 发布 Devstral Coder**](https://mistral.ai/news/devstral/)：用户对 **OpenAI** 模型降级表示担忧，特别是 **o4 mini** 发布后的性能下滑，有人调侃道：“针对 200 美元的 OpenAI Pro —— ‘我们随时根据需要更改、降级或搞砸模型’”。**Mistral AI** 则以开源编程 Agent [Devstral](https://mistral.ai/news/devstral/) 作为回应，尽管有人指出其基准测试并非 SOTA，但其开源特性对社区来说是一个巨大的加分项。
+
+**Theme 2: Powering the Prompts: Hardware Hustles and GPU Grandeur**
+
+- [**Strix Halo 展示 96GB GPU RAM，MI300 霸榜**](https://www.cnbc.com/2025/05/20/elon-musk-says-he-expects-to-keep-buying-gpus-from-nvidia-and-amd.html)：售价约 **2000 美元**的 **Strix Halo** CPU/APU 因其集成 GPU 可使用 **96GB RAM** 而备受关注，为显存密集型任务提供了强力选择。在独立 GPU 方面，AMD 的 **MI300** 表现出令人印象深刻的性能，用户 <@1173619488730665011> 在 `amd-mixture-of-experts` 排行榜上以 **8.82 ms** 获得第一，并在 `amd-fp8-mm` 上达到 **120 µs**。Elon Musk 也宣布他[预计将继续从 Nvidia 和 AMD 购买 GPU](https://www.cnbc.com/2025/05/20/elon-musk-says-he-expects-to-keep-buying-gpus-from-nvidia-and-amd.html)。
+- [**双 GPU：铺就 PCIE 瓶颈的学习曲线**](https://lmstudio.ai/docs/speculative-decoding)：讨论强调，运行**双 GPU** 提供了宝贵的就业市场经验，特别是理解模型跨总线通信时 **PCIE** 总线的性能影响。虽然对用户不太友好，但据报道，通过 **tensor_parallel** 配置 **TensorRT** 可实现高达 **90%** 的加速。
+- [**Multihead GRU 层进入 Triton，RDNA4 在 Tinygrad 中完成编译**](https://github.com/open-lm-engine/cute-kernels/tree/main/cute_kernels/modules)：开发者将用 **Triton** 编写的 **Multihead GRU 层**添加到 [cute-kernels](https://github.com/open-lm-engine/cute-kernels/tree/main/cute_kernels/modules) 中，实现了跨 SM 的并行化以实现潜在加速。另外，**RDNA4 指令**现在已在 **tinygrad** 中成功编译，不过为了获得最佳性能，可能需要调整 *每个 CU 的 wave 数量*。
+
+**Theme 3: Forging the Future: Frameworks, Fine-Tuning, and Agent Architectures**
+
+- [**Unsloth 在 Google I/O 大放异彩，解决 Phi-4 LoRA 问题**](https://youtu.be/GjvgtwSOCao)：**Unsloth** 在 **Google I/O** 中亮相（[演示视频](https://youtu.be/GjvgtwSOCao) 展示了 **Gemma+Unsloth+Collab**），一位用户分享了一个令人印象深刻的 Unsloth Notebook，用于在 **Llama 3.2 1B** 上进行检索增强微调 (**RAFT**)（[GitHub notebook](https://github.com/tituslhy/ideal-palm-tree/blob/main/notebooks/2.%20llama32_1bn_RAFT.ipynb)）。用户还解决了 **unsloth/phi-4** 在 **LoRA adapter** 合并后性能下降的问题，一位贡献者建议使用 `PeftModel.merge_and_unload()` 并避免在推理时使用 `load_in_4bit=True`。
+- [**LM Studio 引入 Speculative Decoding，Aider 获得 Gemini 基准测试认可**](https://lmstudio.ai/docs/speculative-decoding)：**LM Studio** 集成了 [speculative decoding](https://lmstudio.ai/docs/speculative-decoding)，用户反馈在启用 **CUDA** 后性能有所提升，并引用了 [NVIDIA 指南](https://blogs.nvidia.com/blog/rtx-ai-garage-lmstudio-llamacpp-blackwell/)。**Aider Polyglot** 作为特色基准测试出现在 [Gemini 2.5 Pro 主页](https://deepmind.google/models/gemini/pro/)上，尽管一些用户注意到 **Gemini** 偶尔会无视编程规范。
+- [**Mojo 语法难倒 Claude，Torchtune Tokenizer 修复，MCP 扩展**](https://docs.modular.com/)：开发者发现 **Claude** 在处理 **Mojo** 语法时遇到困难，即使使用了 [Modular 文档](https://docs.modular.com/)作为提示词，因此建议转而微调开源模型。**Torchtune** 用户通过一个 [tokenizer 错误修复 PR](https://github.com/pytorch/torchtune/pull/2757) 解决了 **Qwen2_5_0_5b** 在 `torchtune generate` 时无输出的问题。**Model Context Protocol (MCP)** 迎来了更新，例如 [LiquidMetal AI](https://liquidmetal.ai/casesAndBlogs/mcp/) 用于 **RAG** 的 **SmartBuckets**，以及 [mcp-agent 现在支持将 Agent 作为 MCP 服务器](https://github.com/lastmile-ai/mcp-agent/tree/main/examples/mcp_agent_server)。
+
+**主题 4：AI 在行动：从多模态奇迹到模型异常行为**
+
+- [**Bagel 多模态模型凭借文本和图像生成引起关注**](https://bagel-ai.org/)：研究人员发布了 **Bagel**（[项目主页](https://bagel-ai.org/)，[演示](https://demo.bagel-ai.org/)），这是一个能够同时生成文本和图像的多模态模型，未量化版本需要 **40GB VRAM**，量化后可能需要 **24GB**。该模型因其指令遵循能力和根据上下文修改生成图像的能力而受到称赞。Google 还展示了 **Gemini Diffusion**（[Gemini Diffusion 页面](https://deepmind.google/models/gemini-diffusion/)）和来自 **Google Labs** 的 **Stitch**（[X 帖子](https://xcancel.com/stitchbygoogle/status/1924947794034622614)），用于 AI 驱动的 UI/UX 设计。
+- [**Perplexity 数据收集引发争议，RAG 数据库存在 PII 泄露风险**](https://www.youtube.com/live/DZkDPtE4WmA?si=9jfpVM2fIJtTiL2q&t=2604)：关于 Perplexity AI CEO 针对浏览数据收集的言论引发了争议，用户引用了一段 [YouTube 访谈](https://www.youtube.com/live/DZkDPtE4WmA?si=9jfpVM2fIJtTiL2q&t=2604)，而其他人则认为这是为了增强记忆功能并提供了退出选项。另外，一篇论文（[arXiv:2505.12540](https://arxiv.org/abs/2505.12540)）和 [Twitter 线程](https://twitter.com/rishi_d_jha/status/1925212069168910340)强调了 **RAG 数据库** 中 **PII**（个人身份信息）泄露的风险，甚至通过 **embeddings** 也会泄露。
+- [**“AI Slop” 受到审视，Gemma 模型通过 /no_think 避开“思考”**](https://en.wikipedia.org/wiki/AI_slop)：社区讨论了 *AI Slop*（AI 垃圾内容）的定义和影响，引用了 [AI Slop 维基百科条目](https://en.wikipedia.org/wiki/AI_slop)，并将其与《记忆是否足够？》（[Is Memorization Sufficient?](https://arxiv.org/abs/2410.05229v1)）等论文中讨论的脆弱性失效联系起来。用户还探索了在 **Qwen3** 等模型中使用 `/nothink` 或 `/no_think` 命令来禁用 `<think>` 过程（[Reddit 讨论](https://old.reddit.com/r/LocalLLaMA/comments/1ka67wo/heres_how_to_turn_off_thinking_in_qwen_3_add_no/)），尽管据报道 **Gemma** 模型在这方面表现很差。
+
+**主题 5：生态演进：开源攻势、融资壮举与平台难题**
+
+- [**LMArena 获得 1 亿美元融资，计划接管 Beta 站点**](https://www.bloomberg.com/news/articles/2025-05-21/lmarena-goes-from-academic-project-to-600-million-startup)：据 [Bloomberg 文章](https://www.bloomberg.com/news/articles/2025-05-21/lmarena-goes-from-academic-project-to-600-million-startup)报道，**LMArena** 获得了 **1 亿美元**融资，估值达到 **6 亿美元**。一位用户评论说，除非你从 Google 那里获得了数百万美元用于 RLHF，否则这*毫无意义*。该平台计划很快将其[当前站点](https://lmarena.ai/)切换到其 [beta 站点](https://beta.lmarena.ai/)。
+- [**HuggingFace SEO 受挫，LlamaIndex 使用 uv 和 LlamaDev 进行简化**](https://t.co/dTHUcQl9Pb)：用户报告称 **DuckDuckGo** 和 **Bing** 等搜索引擎未能正确索引 `huggingface.co`，导致搜索结果中出现过时的文档（[截图示例](https://cdn.discordapp.com/attachments/879548962464493619/1374748800677187644/msedge_doFX5gUYD5.png?ex=682f2e17&is=682ddc97&hm=a1525ca856b9125c4d5976f449b564a203af4ee0921f6e1f009989c461815c55)）。**LlamaIndex** 宣布将其包含 650 多个包的 monorepo 管理从 Poetry 和 Pants 迁移到 **uv** 和 **LlamaDev**，详情见[这篇博客文章](https://t.co/dTHUcQl9Pb)。
+- [**Altman 与 Ive 策划 AI 电脑，Humane 和 Rabbit 陷入困境**](https://openai.com/sam-and-jony/)：**Sam Altman** 和 **Jony Ive** 宣布合作设计新一代 AI 驱动的计算机（[OpenAI 公告](https://openai.com/sam-and-jony/)）。这一消息传出之际，用户观察到 **Humane AI Pin** 和 **Rabbit R1** 等其他 AI 硬件项目的挣扎，一位初创公司创始人在 [Twitter](https://x.com/teortaxesTex/status/1925293636628971845) 上表示希望 **OpenAI** 能收购他们的公司。
+
+
+---
+
+# Discord: 高层级 Discord 摘要
+
+
+
+
+## [LM Studio](https://discord.com/channels/1110598183144399058) Discord
+
+- **Bagel 的多模态模型取得新突破**：研究人员创建了 **Bagel** ([demo](https://demo.bagel-ai.org/)) ([项目](https://bagel-ai.org/))，这是一个实现了文本和图像生成的多模态模型。
+   - 未量化版本需要 **40GB** VRAM，而量化版本需要 **24GB** VRAM，其在指令遵循能力和根据上下文修改生成图像的能力方面表现突出。
+- **Strix Halo 拥有 96GB GPU RAM**：售价 2000 美元的 **Strix Halo** 拥有令人印象深刻的 **96GB RAM** 可供 GPU 使用，为运行资源密集型任务提供了一个可行的选择。
+   - 一位成员建议，旧的 **Xeon CPUs** 可以作为一种具有成本效益的替代方案，成本约为 1000 美元，并且能够运行各种任务。
+- **LM Studio 集成 Speculative Decoding**：一位用户庆祝 LM Studio 加入了 [speculative decoding](https://lmstudio.ai/docs/speculative-decoding)，并展示了在启用 CUDA 后性能的提升。
+   - 遵循 [NVIDIA 指南](https://blogs.nvidia.com/blog/rtx-ai-garage-lmstudio-llamacpp-blackwell/)显著提升了用户的模型处理速度。
+- **双 GPU 提供经验，但 PCIE 总线较慢**：拥有 **双 GPU** 可以为就业市场提供宝贵的经验，让用户了解模型在 PCIE 总线上通信时总线速度的影响。
+   - 真正的问题在于该配置一点也不用户友好，但通过配置 **TensorRT** 的 **tensor_parallel**，你可以实现非常出色的 **90%** 提速。
+- **Gemma 在 /no_think 模式下表现糟糕**：用户寻求在聊天机器人模型中禁用思考过程（["<think>"](https://old.reddit.com/r/LocalLLaMA/comments/1ka67wo/heres_how_to_turn_off_thinking_in_qwen_3_add_no/)）的方法。
+   - 虽然 `/nothink` 或 `/no_think` 在 **Qwen3** 模型上效果很好，但成员们发现 **Gemma** 表现很差。
+
+
+
+---
+
+## [Unsloth AI (Daniel Han)](https://discord.com/channels/1179035537009545276) Discord
+
+- **OpenAI 模型降级令人失望**：成员们对 **OpenAI** 模型降级表示担忧，理由是 **o4 mini** 发布后性能有所下降。
+   - 一位成员自嘲道：*"VS 200$ pro OpenAI - '我们随时觉得有必要就会更改、降级、搞烂模型'"*，表达了对 OSS 替代方案的期待。
+- **Unsloth 在 Google I/O 亮相**：**Unsloth** 在 **Google I/O** 上大放异彩，在[这段视频](https://youtu.be/GjvgtwSOCao)中演示了 **Gemma+Unsloth+Collab**。
+   - 与会者表现出极大的热情，许多人在演示后加入了 Discord 服务器。
+- **Gemini Diffusion 模型声称拥有闪电般的速度**：一位用户报告称 **Gemini Diffusion** 速度极快，达到每秒 **800 tokens** 左右。
+   - 他们链接了 [Hugging Face](https://huggingface.co/nvidia/Llama-3.1-Nemotron-Nano-4B-v1.1) 上的 **Llama-3.1-Nemotron-Nano-4B-v1.1**，指出虽然它不是 **SOTA**，但其速度令人印象深刻。
+- **Phi-4 在 LoRA 合并后性能下降**：一位用户报告称，尽管更新了 **Unsloth**，但在合并 **LoRA adapter** 后，**unsloth/phi-4** 的性能大幅下降。
+   - 一位贡献者建议了涉及 `PeftModel`、`merge_and_unload()`、`safe_serialization=True` 的具体步骤，并建议在推理期间避免使用 `load_in_4bit=True`，推荐使用 `load_in_8bit=True`。
+- **RAFT Notebook 给社区留下深刻印象**：一位用户分享了一个演示 **Llama 3.2 1B** 检索增强微调 (**RAFT**) 的 Unsloth notebook，可在 [GitHub](https://github.com/tituslhy/ideal-palm-tree/blob/main/notebooks/2.%20llama32_1bn_RAFT.ipynb) 上获取。
+   - 该 notebook 获得了积极反馈，并促成了一个将其纳入官方 Unsloth cookbook 的 pull request。
+
+---
+
+## [LMArena](https://discord.com/channels/1340554757349179412) Discord
+
+- **Gemini 2.5 Pro 发布但表现平平**：成员们报告 **Gemini 2.5 Pro** 已经发布，推测其为 *Nightwhisper* 模型，然而**其性能并未达到顶级水平**。
+   - 成员们指出 **2.5 Flash** 速度非常快，但除非开启 Canvas，否则它不再是一个思考模型（thinking model）。
+- **据传 Claude 4 将于明天发布**：据 [The Information](https://www.theinformation.com) 消息，**Claude 4** 计划于明天发布，[AnthropicAI 似乎也证实了这一点](https://x.com/AnthropicAI/status/1925239440420831516)。
+   - 推测认为它可能是 *Neptune* 模型，每月费用可能为 **$200**。
+- **LMArena 在获得 1 亿美元融资后估值达 6 亿美元**：据 [Bloomberg 文章](https://www.bloomberg.com/news/articles/2025-05-21/lmarena-goes-from-academic-project-to-600-million-startup)报道，**LMArena** 在最近一轮 **1 亿美元**融资后的估值据称达到 **6 亿美元**。
+   - 一位用户评论说，除非你从 Google 那里获得了数百万美元用于 **RLHF**，否则这项投资*毫无意义*。
+- **Grok 3.5 命运未卜**：经过有限的测试，一位用户声称 **Grok 3.5** 非常出色，知道许多其他模型不知道的事情，但发布时间仍不确定。
+   - 推测认为 **Elon** 可能*推迟了 Grok 3.5 的发布以专注于基准测试*，或者由于被其他模型抢占先机，它可能永远不会发布。
+- **LMArena 计划推出新的 Beta 网站**：**LMArena** 计划下周将[当前网站](https://lmarena.ai/)切换到 [beta 网站](https://beta.lmarena.ai/)。
+   - 公司在服务器中添加了自定义表情符号，如 `<:lmarena:1374761520822751334>` `<:battle:1374761514489221200>`，并将举办一场 AMA。
+
+---
+
+## [Perplexity AI](https://discord.com/channels/1047197230748151888) Discord
+
+- **Grok 用户通过变通方法导出 PDF**：一名用户演示了如何使用内置的导出选项将 **Grok** 的回答导出为 **PDF**，而不是要求机器人创建专门的 PDF，并分享了生成的 [PDF](https://cdn.discordapp.com/attachments/1047649527299055688/1374463164871217316/grok_report_compressed.pdf)。
+   - 与此同时，另一名用户报告称 Perplexity AI 的图像分析功能卡住，且未收到社区回应。
+- **Perplexity 移动端应用图像生成停滞**：用户观察到在 Perplexity AI 移动端应用上无法生成图像，因为该功能目前仅在 **iOS** 上受支持，在 **Android** 设备上无法运行。
+   - 目前没有提供额外的细节或解决方案。
+- **Perplexity 的数据收集引发隐私辩论**：关于 CEO 提到的收集应用外浏览数据以用于个性化广告的言论引发了争议，用户引用了一段 [YouTube 访谈](https://www.youtube.com/live/DZkDPtE4WmA?si=9jfpVM2fIJtTiL2q&t=2604) 作为 Perplexity 意图利用浏览数据的证据。
+   - 出现了反驳观点，认为这些数据是为了增强记忆功能而非广告，并指出目前已有广告退出选项和记忆功能停用选项。
+- **Gemini 2.5 Deep Research 速率限制引发讨论**：在分享了 [Google 支持链接](https://support.google.com/gemini/answer/15719111?hl=en) 后，关于 **Gemini 2.5 Deep Research** 速率限制的讨论随之展开，该链接显示 **Gemini 2.0 flash** 模型已被移除并替换为 Gemini 2.5。
+   - 虽然目前认为 Deep Research 的速率限制已改为按天计算而非按月计算，但关于限制是每日还是每月适用，仍存在相互矛盾的解读。
+- **API 调用被 Robots.txt 拦截**：**WebUI** 可以访问某些 **API** 无法访问的网站，因为这些网站在其 `robots.txt` 文件中拦截了 **API** 的爬虫。
+   - 如果站点可以通过 **API** 访问，用户可以将 `search_context_size` 设置为 `high` 或参考 [官方文档](https://docs.perplexity.ai/guides/bots)。
+
+---
+
+## [OpenRouter (Alex Atallah)](https://discord.com/channels/1091220969173028894) Discord
+
+- **Weaver One 应用获得重大更新**：[Weaver One 应用](https://weaver-one.vercel.app/) 现在支持 **MCP**、**Gemini 图像生成**、**PDF/文件支持与查看**、**PDF 生成**，并提供了增强的 **UI/UX**，包括 **自动聊天标题** 和 **Markdown 导出** 等功能。
+   - 更新版本还允许用户在 **OpenAI**、**Gemini**、**Anthropic**、**Vertex** 和 **OpenRouter** 等平台上使用自己的密钥 (**BYOK**)。
+- **Gemini Diffusion 的速度令用户震惊**：用户对 **Gemini Diffusion** 极快的速度赞不绝口，并将其与 **Groq/Cerebras** 进行比较，同时分享了一段展示其性能的 [屏幕录制](https://cdn.discordapp.com/attachments/1094454198688546826/1374462586829144156/Screen_Recording_2025-05-20_at_20.02.28.mov?ex=682f7508&is=682e2388&hm=ecc40a2f99e3055bdfb0715403bdd65f38d4d903d4d0f20362b8eac9837b0f0d&)。
+   - 目前，**Google** 是 Gemini Diffusion 预览版的唯一托管方，这引发了关于基于扩散模型的 LLM 是否会被更广泛采用的疑问。
+- **Meta 的 Llama 3.3 发布策略遭到批评**：成员们对 **Meta** 延迟发布 **Llama 3.3 8B** 表示不满，认为这体现了对消费者需求的忽视，并引用了指向 [Llama 3.3 70B](https://ai.meta.com/llama/) 的链接评论道：*他们根本不在乎消费者。*
+   - 社区表示，尽管已有 70B 的 API，但拥有开放权重的 8B 版本会更理想。
+- **据称 Gemma-3n-4B 与 Claude 3.7 旗鼓相当**：用户注意到有说法称 **Gemma-3n-4B** 的表现与 **Claude 3.7** 相当，并引用了这篇 [Gemma 博客文章](https://developers.googleblog.com/en/introducing-gemma-3n/) 作为背景。
+   - 来自 **Chatbot Arena** 的评估表明，用户偏好与这一评估一致，显示出该模型具有可信的性能水平。
+- **Gemini 2.5 Pro 遭到大幅削弱 (Nerf)**：报告显示 **Gemini 2.5 Pro** 的性能显著下降，甚至有说法称 **o4 mini** 的表现都优于它。评论称：**Gemini 2.5 03 25 版本非常惊艳，而 2.5 05 06 版本削弱得太厉害了**。
+   - 引用 [Gemini 模型卡](https://storage.googleapis.com/model-cards/documents/gemini-2.5-pro-preview.pdf) 显示，**Google** 官方也承认除了编程领域外，该模型在所有领域的基准测试分数均有所下降。
+
+---
+
+## [Cursor Community](https://discord.com/channels/1074847526655643750) Discord
+
+- **Cursor 用户遭遇服务不可用 (Service Unavailable)**：多名用户报告在使用 **Cursor** 时遇到 *'Service Unavailable'* 错误，尽管普遍认为这并非由 Cursor 本身引起。
+   - 错误的根本原因尚不明确，但用户推测可能与外部服务依赖有关。
+- **Rust 在简历竞争中表现强劲**：一位成员提到使用 **Rust** 开发后端以增强其简历竞争力，而另一位成员建议先列出所需的技术技能，然后创建匹配的作品集项目。
+   - 讨论强调了 **Rust** 在后端开发中日益增长的普及度，以及它在向潜在雇主展示技术熟练度方面的价值。
+- **Gemini 的 Google AI 计划上线**：用户讨论了 Google 为 Gemini 推出的全新 **Deep Think 模式**，前三个月价格为 **$125/月**，之后为 **$250/月**，可通过页面底部的 Gemini "Google AI Plans" 访问。
+   - 分享了一个 [YouTube 链接](https://www.youtube.com/watch?v=o8NiE3XMPrM&ab_channel=Google)，时间戳在 **1:39:22** 处为 Deep Think 的发布公告。
+- **Claude 4 预热发布**：爱好者们正热切期待 **Claude 4 Sonnet 和 Opus** 的到来，推测可能在本周发布，甚至发布了如[这条推文](https://x.com/btibor91/status/1925084250107478506?s=46)之类的预热信息。
+   - 一些人希望它的表现足以让 Codex 变得过时。
+- **VerbalCodeAi 邀请创新**：一位用户分享了他们的新项目 [GitHub 上的 VerbalCodeAi](https://github.com/vibheksoni/VerbalCodeAi)，邀请其他人加入其 Discord 服务器 ([discord.gg/KpjSDEwWCF](https://discord.gg/KpjSDEwWCF)) 进行协作并协助服务器设置。
+   - 该项目旨在为开发者创建一个协作环境，以贡献和改进代码库。
+
+---
+
+## [HuggingFace](https://discord.com/channels/879548962464493619) Discord
+
+- **用于 SBERT 微调的高性能 GPU 租赁**：一位成员正在寻求 GPU 租赁服务推荐，以加速 **sbert 模型**的微调，寻找 **A100** 实例计费在每小时 **$1.50 或更低**的供应商。
+   - 该成员目前使用的是 **3060 12GB**，拟合模型需要 **8-9 小时**，而另一位成员推荐使用 **Runpod** 租赁 **A100**，价格约为每小时一美元。
+- **AMD 显卡面临 CUDA 兼容性问题**：一位考虑从 **3080 12GB** 升级到 **7900 XTX (24GB VRAM)** 的用户担心由于缺乏 **CUDA** 支持而导致的 **AMD** 兼容性问题。
+   - 虽然有部分问题报告，但 **LM Studio** 被确认运行良好，一位用户报告速度达到 **62.73 t/s**，这表明 AMD 显卡可能需要额外的配置。
+- **HuggingFace SEO 难以返回最新文档**：一位成员报告称 **DuckDuckGo, Qwant 和 Yandex** 未能正确索引 huggingface.co 域名，导致搜索结果中出现过时的文档，并提供了[截图](https://cdn.discordapp.com/attachments/879548962464493619/1374748800677187644/msedge_doFX5gUYD5.png?ex=682f2e17&is=682ddc97&hm=a1525ca856b9125c4d5976f449b564a203af4ee0921f6e1f009989c461815c55)。
+   - 另一位成员使用 **Bing** 搜索 `hf_hub_download` 的结果验证了该问题。
+- **DataTune 利用自然语言和 LLM 进行数据转换**：**DataTune** 是来自 Vitalops 的开源工具，可在 [GitHub](https://github.com/vitalops/datatune) 上获取，它利用自然语言指令和 **LLM** 进行数据转换。
+   - 该工具通过简单的自然语言指令实现数据转换，从而绕过上下文长度限制并最大限度地降低 API 成本。
+- **LinkedIn 证书链接重定向至 Agent 课程**：用户报告称，LLM 基础课程的 **LinkedIn 证书生成链接**正重定向到 Agent 课程页面。
+   - 该问题出现在测验完成后，生成图片旁边的 **LI 按钮**错误地链接到了 Agent 课程。
+
+---
+
+## [Eleuther](https://discord.com/channels/729741769192767510) Discord
+
+- **AI Slop 引发辩论，脆弱性失效问题浮现**：成员们讨论了 **AI Slop** 的定义，即伪装成相关内容但经不起基本审查的内容，并引用了 [AI Slop Wikipedia article](https://en.wikipedia.org/wiki/AI_slop)。
+   - 一些人将 Slop 与 **脆弱性失效 (fragility failures)** 联系起来，引用了如 [Is Memorization Sufficient to Perform Well on Reasoning Tasks?](https://arxiv.org/abs/2410.05229v1) 和 [Code Information Retrieval: Does Intermediate Representation Help?](https://arxiv.org/abs/2504.04372) 等论文。
+- **Discord 数据引发疑虑**：成员们探索了一个大规模 [Discord dataset](https://zenodo.org/records/15170676) 的用例，引发了对隐私和匿名化的担忧。
+   - 潜在应用包括 *识别可疑活动* 以及分析对科学论文的反应。
+- **RAG 数据库泄露暴露 PII 风险**：一篇论文 ([https://arxiv.org/abs/2505.12540](https://arxiv.org/abs/2505.12540)) 和 [Twitter thread](https://twitter.com/rishi_d_jha/status/1925212069168910340) 强调了从泄露的 **RAG** 数据库中回溯 **PII** (个人身份信息) 的风险，即使泄露的是 **Embeddings**。
+   - 讨论强调，尽管数据不是文本形式，敏感信息仍可能被恢复。
+- **Qwen 2.5 评估引入思维链**：尝试复现 **Qwen 2.5** 的 **GSM8k** 分数的成员发现，**Qwen** 在评估中更倾向于使用 **CoT (Chain of Thought)** 变体。
+   - 一位成员指出了 harness 上的 `gsm8k_cot` 配置，并链接到了他们的 [gsm8k_prompt.txt](https://github.com/QwenLM/Qwen/blob/main/eval/gsm8k_prompt.txt)。
+
+---
+
+## [Notebook LM](https://discord.com/channels/1124402182171672732) Discord
+
+- **音频概览 (Audio Overviews) 现已可调节**：用户现在可以将 **Audio Overviews** 调整为短（**约 5+ 分钟**）、长（**约 20+ 分钟**）和默认（**约 10+ 分钟**）设置，最初仅支持 **English**。
+   - 这种自定义允许 AI 在讨论源材料时具有不同的深度。
+- **Google I/O 主旨演讲现已总结**：一个总结今年 **Google I/O** 主旨演讲的 **NotebookLM** 笔记本已在 [g.co/notebooklm/io2025](https://g.co/notebooklm/io2025) 上线。
+   - 讨论中未提供有关摘要内容的进一步细节。
+- **视频概览 (Video Overviews) 功能发布**：新的 **Video Overviews** 功能预览已发布在 [X](https://x.com/NotebookLM/status/1924938813018653028) 上。
+   - 讨论中未详细阐述该功能的其他细节。
+- **PDF 上传解锁课程内容创作**：用户成功在 Chrome 中打印为 **PDF** 并上传，以利用 **Study Guide** (学习指南)、**Briefing Doc** (简报文档)、**Timeline** (时间线) 和 **FAQ** 功能。
+   - 专注于内容方面的自定义 **Audio Overviews** 以及 Chat Panel 中的 **MindMap** (思维导图) 功能也已启用。
+- **AI Studio 网页解决方法**：用户正将网页打印为 **PDF** 以上传到 **AI Studio**，从而规避缺乏内置网页读取功能的问题。
+   - 一位用户报告了上传失败，通过切换账号解决了该问题。
+
+---
+
+## [Latent Space](https://discord.com/channels/822583790773862470) Discord
+
+- **Google 的 Gemini 在 I/O 2025 上被定位为 AI 操作系统**：在 **Google I/O 2025** 上，Gemini 被揭晓为一款 AI OS，其功能涵盖 **Gemini Live, Imagen 4, Veo 3, Deep Research, Canvas, Gemini in Chrome, Interactive Quizzes**，并将更快的 **2.5 Flash** 作为默认模型。
+   - Google 推出了 **AI Pro 和 Ultra 计划**，预览了用于自主辅助的 **Agent Mode**，并强调了 **Gemini 2.5 Pro** 领先的 LLM 性能；一些人认为“AI 操作系统”这个词纯属“标题党”。
+- **Google 的 Gemma 3n 作为小模型预览版亮相**：Google 发布了 **Gemma 3n** 的预览版（[文档](https://ai.google.dev/gemma/docs/gemma-3n#parameters)），这是一个在 HuggingFace 上提供的“非常酷的小模型”（[集合](https://huggingface.co/collections/google/gemma-3n-preview-682ca41097a31e5ac804d57b)）。
+   - 此次发布似乎取代了之前的 **Gemma 3**（**1B 和 4B 参数**版本），而较大的 **12B 和 27B 参数**模型仍然可用。
+- **Google 的 Stitch 是 AI 驱动的 UI/UX 设计工具**：**Stitch by Google Labs** 是 Galileo AI 的演进版本，由 DeepMind 模型驱动，能够利用 **Gemini 和 Imagen** 快速生成设计和 UI（[X 帖子](https://xcancel.com/stitchbygoogle/status/1924947794034622614)）。
+   - 功能包括自动主题更新、产品图像调整、多语言文案生成以及导出前端代码的能力；Google 收购了 Galileo AI 并将其更名为 Stitch（[探索](https://www.usegalileo.ai/explore)）。
+- **OpenAI 调整 Structured Outputs**：OpenAI 开发者推出了 **Structured Outputs** 的改进，包括带有 strict 模式的并行函数调用（parallel function calling），以及对 **string lengths/formats, min/max ranges for numbers, and min/max array elements** 等关键字的支持（[X 帖子](https://xcancel.com/OpenAIDevs/status/1924915341052019166)）。
+   - 该更新向 **LLGuidance 团队**的基础性工作表示感谢；一名成员提到，该功能终于实现了对数组最小/最大元素的控制，解决了一个长期以来的痛点。
+- **Altman 和 Ive 设计 AI 计算机**：**Sam Altman** 和 **Jony Ive** 正在合作开发新一代 **AI 驱动的计算机**（[X 帖子](https://xcancel.com/sama/status/1925242282523103408?s=46&t=b7l37rB6wtbyAh6ah1NpZQ), [公告](https://openai.com/sam-and-jony/)）。
+   - 猜测集中在简化日常任务和新设备形态等优势上，但也承认了高成本和隐私担忧等潜在问题；一位来自 Humane 的朋友的室友将参加该项目的面试。
+
+---
+
+## [GPU MODE](https://discord.com/channels/1189498204333543425) Discord
+
+- **Elon 计划大规模采购 GPU**：Elon Musk 表示[他预计将继续从 Nvidia 和 AMD 购买 GPU](https://www.cnbc.com/2025/05/20/elon-musk-says-he-expects-to-keep-buying-gpus-from-nvidia-and-amd.html)。
+   - 一名成员对“100 万个 GPU 的设施”这一说法回应了一个 gigachad 表情。
+- **Multihead GRU 层加入 Cute Kernels**：使用 **Triton** 编写的 **Multihead GRU 层** 已添加到 [cute-kernels](https://github.com/open-lm-engine/cute-kernels/tree/main/cute_kernels/modules)，允许在 SM 之间进行并行化。
+   - 这些新增功能可能通过更有效地利用 GPU 资源来加速模型训练和推理。
+- **Google Gemini 扩散到新领域**：Google 发布了 [Gemini Diffusion](https://deepmind.google/models/gemini-diffusion/)，引发了关于 Google 拥抱 **diffusion models** 的讨论。
+   - 一名成员推测他们可能正在通过 **kv_cache** 实现 **block diffusion** 以提高速度，而另一名成员链接了一个关于 [Block-Diagonal Low-Rank Linear Multi-Head Self-Attention](https://m-arriola.com/bd3lms/) 的项目。
+- **MI300 冲向榜首**：多名用户在 **MI300** 上向 `amd-mixture-of-experts` 排行榜提交了结果，用户 <@1173619488730665011> 以 **8.82 ms** 获得 **第一名**。
+   - `amd-fp8-mm` 排行榜的提交显示了 **MI300** 上极快的执行时间，用户 <@1173619488730665011> 以 **120 µs** 稳居 **第一名**。
+- **Factorio 学习进入新时代**：成员们分享了一个 Factorio **4M SPM**（每分钟科学产出）冠军构建的 [YouTube 视频](https://www.youtube.com/watch?v=gikrR2Xuvvs)，一名成员分享了 **MineLand**，这是一个可在 [GitHub](https://github.com/cocacola-lab/MineLand) 上获得的并行 Agent Minecraft 模拟器。
+   - 一名成员还分享了关于 AI 文明的 **Project Sid** 论文链接：[https://arxiv.org/pdf/2411.00114](https://arxiv.org/pdf/2411.00114)。
+
+---
+
+## [aider (Paul Gauthier)](https://discord.com/channels/1131200896827654144) Discord
+
+- **Gemini 2.5 Flash：速度与编辑忠实度表现出色**：Google 的 [Gemini 2.5 Flash Preview](https://openrouter.ai/google/gemini-2.5-flash-preview-05-20) 因其**速度**、**成本效益**以及对编辑格式的精确遵守而备受关注。
+   - 然而，一些成员澄清说，上传的文件被保存为供参考的“知识”，而不是为了持续更新 Agent 的基础知识。
+- **后台 Agent 引发开发者疲劳**：关于 **Jules** 和 **Cursor** 等后台 Agent 的功效引发了担忧，许多人认为 AI 可能还不够先进，无法独立处理现实世界的开发任务。
+   - 一位成员使用 **Jules** 的经验表明，尽管它是免费提供的，但结果*平平*。
+- **Aider 在 Gemini 2.5 Pro 基准测试中展示**：**Aider Polyglot** 现在是 [Gemini 2.5 Pro 主页](https://deepmind.google/models/gemini/pro/) 上的特色基准测试，验证了其在各种编程任务中的实用性。
+   - 尽管获得了认可，但一些用户观察到 **Gemini** 偶尔会无视既定的编码规范，促使一些人降级到 **3.7** 版本。
+- **Copilot 的开源可能使 Aider 受益**：随着 **Copilot** 走向开源，社区正在分析可以集成到 **Aider** 中的方面，特别是关于源代码管理和 Agent 功能。
+   - 虽然 **Copilot** 使用 **RAG** 和语义向量，但 **Aider** 依靠纯文本来存储 repo map 和对话历史。
+- **Aider 的简洁 Prompt 相比 Cursor 受到称赞**：一位对比 **Aider** 和 **Cursor** 的用户指出，**Aider** 对简单 `/ask` 指令的响应更加*紧凑*，不那么冗长，且更易于查阅。
+   - 他们假设这种简洁性源于 [`ask_prompts.py` 中的特定代码行](https://cdn.discordapp.com/attachments/1133060505792159755/1374775647964106812/image.png?ex=682f4718&is=682df598&hm=ccb359194e1105ee20d6fd8baae1818ccde3c0042457dc8e0ed4cf2e0446bb61&)。
+
+---
+
+## [Manus.im Discord](https://discord.com/channels/1348819876348825620) Discord
+
+- **RizzDial 从 Manus 推广中获益**：一位成员报告说，在潜在客户从 Manus 那里听说他们的软件 [RizzDial](https://rizzdial.com/) 后，他们收到了一个销售线索，并称之为*免费营销*。
+   - 他们分享了互动的[录音](https://dxc03zgurdly9.cloudfront.net/72ae3288f57132e75e33ded5a8b9363870a7c7b8cd29f13094af7f934def2886/recording.wav)，强调了这一意外收获。
+- **用户哀叹 Manus 的额度紧缺**：多位成员对 Manus 的**额度消耗**和相对于成本的 **Token 配额**表示担忧。
+   - 有人建议采用类似于 ChatGPT 结构的**免费增值模式**，以减轻用户负担。
+- **Manus 被拿来与 Cluely.ai 比较**：一位用户询问 Manus 是否类似于 **Cluely.ai**，并提到一个*因为在大学作弊或其他原因被开除的孩子*。
+   - 该用户还提到正在探索 Inmo 的**中国 AR 眼镜**，并尝试进行赛博空间集成。
+- **Manus 图像生成表现平平**：尽管最初有炒作，例如一位用户声称 *Manus 图像生成简直疯狂 🔥 🔥🔥*，但情绪已转向失望。
+   - 许多用户一致认为图像生成功能只是**噱头**，且**效果不佳**。
+- **Manus 助力编程项目（有时）**：一位用户的 IT 老师推荐了 Manus，称赞它在大型**编程项目**中非常有效，并将其描述为*目前最强大的 AI*。
+   - 然而，该用户在为学校作业将**代码转换为 Python** 时遇到了困难。
+
+---
+
+## [Nous Research AI](https://discord.com/channels/1053877538025386074) Discord
+
+- **TTS 参数估算缩减**：成员们讨论了**音频输出**所需的参数数量，引用了 **Orpheus**（8B 参数）和 **Outetts**（1B 参数）作为基于 Llama 的 TTS 模型示例，并建议通过与文本和音频输入的参数共享来进一步减少参数量。
+   - 其他人考虑了如何通过结合输入特征进行改进，并认为这是一个很有前景的方向。
+- **Gemini 2.5 Flash 发布，但 Gemini diffusion 模型表现“害羞”**：成员们讨论了通过 AI Studio 访问 **Gemini 2.5 Flash 0520** 和 **Gemma 3** 的情况，一位成员注意到 Gemini diffusion 模型似乎 *“有点害羞”*。
+   - 此外还提到，**Deep Think** 模型显然处于封闭测试阶段。
+- **Diffusion 模型并行生成文本**：成员们讨论了 Diffusion 模型及其并行处理文本块的能力，这可能允许在填充（infilling）等应用中实现**非因果文本生成（non-causal text generation）**。
+   - Discord 成员们好奇在 KV cache 空间充裕时 Diffusion 模型是如何工作的，因为它们似乎并没有利用这一点。
+- **WildChat 数据集生成头脑风暴**：成员们集思广益，探讨如何改进 **WildChat 数据集**（一个用于训练模型进行对话的数据集），有人建议通过 **WildChat prompts** 运行 **Hermes**。
+   - 通过 WildChat prompts 运行 Hermes 的建议被认为是一个 *“更好、更自主且更具可操作性的方案”*。
+- **Devstral 编程 Agent：开源且蓄势待发**：Mistral AI 发布了 [Devstral](https://mistral.ai/news/devstral/)，这是一个令成员们感到兴奋的**开源编程 Agent**。
+   - 一些成员提到它的 Benchmark 表现并非惊艳，但社区对其开源属性感到兴奋。
+
+---
+
+## [Modular (Mojo 🔥)](https://discord.com/channels/1087530497313357884) Discord
+
+- **Claude 在 Mojo 语法上失手 🥴**：成员们报告称，**Claude** 在生成 **Mojo** 代码时经常出现语法错误和不完整的代码，尤其是在 [Modular 文档](https://docs.modular.com/) 推荐使用它之后。
+   - 一些成员建议不要将 **AI** 用于新语言或系统编程，认为 **Mojo** 与 **Python** 和 **C++** 的相似性迷惑了 **LLM**，并建议使用 **Cursor** 会更好。
+- **Float16 在 `exp` 函数中表现不佳 📉**：**Mojo** 中的 `exp` 函数仅针对 `Float32` 和 `Float64` 实现，`Float16` 的值会因为潜在的精度问题而被转换，正如 [此 GitHub issue](https://github.com/modular/modular/issues/3073) 中所讨论的。
+   - `Float16` 计算中的累积误差可能导致结果失效，且 CPU 对 `fp16` 数学运算的支持并不普及，通常需要上采样（upcasting）到 `fp32`。
+- **简单的 Mojo 编译遭遇减速 🐌**：一位用户报告称，在 Ubuntu 22.04 (WSL2) 上使用 **Mojo** 25.3.0 版本运行极其简单的 "Hello, Mojo!" 程序时，编译时间异常漫长（3-4 秒）。
+   - 调查表明，该问题可能与特定的安装环境或 WSL2 的文件系统性能有关；甚至 REPL 模式也存在延迟。
+- **`--sanitize` 在字符串处理上遇到麻烦 💥**：一位用户发现，在 OSX 上使用 `--sanitize` 运行代码时，升级到 **Mojo** 25.3 会导致代码崩溃，这可能是由于 `String` 的空终止（null termination）问题结合 `unsafe_ptr` 的使用导致的。
+   - 已[确认](https://example.com) *现在的字符串并不总是以空字符结尾*，需要调整代码以防止越界访问。
+- **Torch 的 CustomOpLibrary 在 MLIR Context 上出错 🤕**：一位用户报告称，在尝试调用任何自定义算子时，使用 **torch 的 `CustomOpLibrary`** 实现会遇到 `RuntimeError: No active MLIR context` 错误。
+   - 一个演示 **`CustomOpLibrary`** 出现 **MLIR context 错误** 的极简示例已发布在 [Modular 论坛](https://forum.modular.com/t/no-active-mlir-context-with-new-customoplibrary-torch-integration/1491?u=bertaveira)上。
+
+---
+
+## [Yannick Kilcher](https://discord.com/channels/714501525455634453) Discord
+
+- **批处理输入困扰 `GATConv`**：用户报告了在处理批处理输入时，`torch_geometric.nn.GATConv` 出现 `AssertionError`，具体涉及 `x.shape: [batch_size, num_nodes, num_node_features]` 和 `edge_index.shape: [batch_size, num_nodes]`。
+   - 该模型似乎与批处理输入不兼容，这出乎意料，因为训练循环在处理单个 Batch 时运行正常。
+- **SGD 的“面条代码”惊喜**：一位用户分享了[一篇论文](https://arxiv.org/abs/2505.10465)，声称 **SGD 产生的内部表示类似于面条代码（spaghetti code）**，其特征是复制粘贴的概念随机纠缠在一起，虽然高效但人类无法理解。
+   - 论文使用了一个通过开放式半手动遗传育种过程（例如 [Picbreeder](https://picbreeder.org/)）产生的 **CPPN**（2D 概念原型 Nerf）示例，来质疑这种内部表示的“美感”对于下游任务是否重要。
+- **LM 物理学揭示知识鸿沟**：一篇题为《语言模型物理学：第 3.2 部分，知识操控》（"Physics of Language Models: Part 3.2, Knowledge Manipulation"，[ssrn.com](https://ssrn.com/abstract=5250621)）的论文揭示了语言模型在利用存储知识进行**分类**、**比较**和**逆向搜索**等任务时的缺陷。
+   - 研究发现，除非在训练和推理过程中使用 **Chain of Thoughts (CoTs)**，否则模型在基础任务上表现挣扎，在逆向知识搜索中表现几乎为零；同时一位成员指出，该论文对**数据污染（data contamination）**的控制比大多数论文都要好。
+- **Google Gemma 3n 发布，AI Edge 紧随其后**：Google 发布了其最新的模型 **Gemma 3n**，详见其[文档](https://ai.google.dev/gemma/docs/gemma-3n)，并宣布了具有多模态 RAG 函数调用功能的 **AI Edge Small Language Models**，详见[博客文章](https://developers.googleblog.com/en/google-ai-edge-small-language-models-multimodality-rag-function-calling/)。
+   - Google 的 AI Edge 模型具备多模态、RAG 和函数调用能力。
+- **Humane 和 Rabbit 遇冷**：成员们观察到 **Humane AI Pin** 和 **Rabbit R1** 并未取得成功，理由是难以超越手机的形态限制。
+   - [Twitter](https://x.com/teortaxesTex/status/1925293636628971845) 上的一位创始人希望 **OpenAI 能收购他们的初创公司**。
+
+---
+
+## [MCP (Glama)](https://discord.com/channels/1312302100125843476) Discord
+
+- **流式传输受到关注**：来自 `2025-03-26` 版本的流式传输（Streaming Transport）正得到越来越多的采用，[VSCode 已支持可流式传输的 HTTP](https://code.visualstudio.com/)。
+   - 还有建议将传输协议与线缆协议（wire protocols）解耦，以强化 **MCP 的传输无关设计（transport-agnostic design）**。
+- **SmartBuckets 消除 RAG 瓶颈**：**LiquidMetal AI** 推出了 **SmartBuckets**，它将文件索引为向量和知识图谱，以 Serverless 方式运行，并通过简单的端点直接连接到 **Anthropic 的 Model Context Protocol (MCP)**，参见 [LiquidMetal AI](https://liquidmetal.ai/casesAndBlogs/mcp/)。
+   - 该产品承诺解决 **RAG 瓶颈**问题。
+- **Agent 现在可作为 MCP Server 运行**：**mcp-agent** 的一项重大更新现在使 Agent 能够作为 **MCP Server** 运行，允许任何 MCP Client 调用、协调和编排 Agent，代码见[此处](https://github.com/lastmile-ai/mcp-agent/tree/main/examples/mcp_agent_server)。
+   - 这一增强功能促进了 Agent 在 **MCP 工作流**中的集成。
+- **MCP UI Bridge 带来可访问性**：新的 **mcp-ui-bridge** 库通过语义化的 `data-mcp-*` 属性，确保 Web 应用程序对人类用户和 **LLM** 具有同等的可访问性，通过单一、统一的开发工作为现有 Web 应用提供支持，npm 地址在[此处](https://www.npmjs.com/package/mcp-ui-bridge)，GitHub 在[此处](https://github.com/SDCalvo/mcp-ui-bridge)。
+   - 该库将任何 **Frontend** 转换为 **LLM** 可访问的 **CLI** 版本，并启动一个 **MCP Server** 让 LLM 通过代码导航你的前端，参见 [MCP UI Bridge](https://santiagodcalvo.substack.com/p/mcp-ui-bridge-bridging-web-uis-and)。
+- **工具命名规范依然令人头疼**：工具名称上的严格命名规范引起了关注，特别是在使用 GitHub Copilot 时，会导致命名空间问题。
+   - 提议的解决方案包括采用类似于环境变量命名空间的系统，例如 `audio__play_track`。
+
+---
+
+## [Cohere](https://discord.com/channels/954421988141711382) Discord
+
+- **Cohere 客户可获得私有 LLM 部署**：Cohere 为关注**数据/LLM 主权**的客户提供**私有化部署 (private deployments)**，提供灵活的部署选项；可通过 [sales@cohere.com](mailto:sales@cohere.com) 或 [support@cohere.com](mailto:support@cohere.com) 联系他们。
+   - 这是其解决方案的核心部分，但未提供关于安全性的进一步细节。
+- **Command-A 变慢，Cohere 展开调查**：用户报告 **command-a** 的响应时间变慢，特别是在使用 **structured response** 参数时；一名 Cohere 员工请求通过 [support@cohere.com](mailto:support@cohere.com) 提供详细信息以便调查。
+   - 一位用户发现，当指定 **json_object** 作为输出时，在 **6405 input** 和 **2k output tokens** 的情况下，请求会挂起或耗时约 2 分钟。
+- **Embed v4 变慢后趋于稳定**：用户经历了 **embed v4 极慢**的情况，每次 embedding 耗时约 **180 秒**，Cohere 支持团队承认这是由于频率限制 (rate limiting) 系统引起的故障。
+   - Cohere 支持团队声称已手动扩容并修复了频率限制 bug，并承诺将 **Embed V4** 添加到状态页面；Cohere 的状态页面显示截至 2025 年 5 月 21 日，影响 **embed-v4.0** 的[服务降级](https://ift.tt/Yq59ahB)。
+- **Embed v4 的备选方案**：用户请求为 **Cohere 的 v4 embedding 模型**提供**备份计划**，建议同时通过 **Cohere API** 和 **AWS** 访问以实现冗余。
+   - Cohere 支持团队表示，**Embed V4.0** 可以在其平台之外的多个地方使用，例如 [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cohere.cohere-embed-4-offer?tab=overview) 和 [AWS Sagemaker](https://aws.amazon.com/marketplace/pp/prodview-g53hj27nurqc6)。
+- **Command-* 模型成为首选**：一位用户报告称，在通用目的、个人聊天和助手方面，他们还没有发现比 **command-*** 系列更好的可自托管模型。
+   - 对于使用非开源 embedding 模型构建**向量存储 (vector store)** 存在担忧，特别是在最近的停机事件之后，因为*使用特定的 embedding 模型构建大型向量存储是一项巨大的投资*。
+
+---
+
+## [LlamaIndex](https://discord.com/channels/1059199217496772688) Discord
+
+- **LlamaIndex 转向使用 uv 和 LlamaDev**：LlamaIndex 从 **Poetry** 和 **Pants** 迁移到 **uv** 和 **LlamaDev**，以管理其包含 650 多个社区包的 monorepo，从而简化开发流程，详见[这篇博客文章](https://t.co/dTHUcQl9Pb)。
+   - 此次迁移旨在提供更快、更简单的开发体验，整合包管理和构建工具。
+- **LlamaIndex 开启 Discord Office Hours**：LlamaIndex 宣布举办首届 Discord Office Hours，由 **Tuanacelik**、**LoganMarkewich** 和 **Clelia** 主持，重点关注 Agentic 工作流和通用的 LlamaIndex 问题，详见[此公告](https://t.co/LXhhDp68wh)。
+   - 这些会议为社区成员提供了与专家直接交流并解决紧迫问题的渠道。
+- **Llama Parse Layout Agent 遇到问题**：用户指出 **Llama Parse** 的 *Parse with Layout Agent* 存在问题，任务在 **30 分钟**后超时，官方承认这是一个*已知问题*。
+   - 官方部署了一个临时修复方案，包括 **10 分钟超时**，并在初步尝试解决问题失败后回退 (fallback) 到较弱的解析模式。
+- **VectorStoreIndex 与 FAISS 的关系**：用户寻求关于使用 **VectorStoreIndex** 和本地 **FAISS** 进行存储的区别及其对 **RAG** 模型性能影响的解答。
+   - 官方澄清 **VectorStoreIndex** 是对任何向量存储（包括 **FAISS**）的封装 (wrapper)，并参考了 [FaissIndexDemo](https://docs.llamaindex.ai/en/stable/examples/vector_stores/FaissIndexDemo/)。
+- **llamaindex/vdr-2b-multi-v1 报错**：用户在使用 **llamaindex/vdr-2b-multi-v1** 模型时遇到 `ValueError`，定位为 `size` 参数问题，源于 transformers 的更新。
+   - 解决方案已在 [preprocessor_config.json](https://huggingface.co/llamaindex/vdr-2b-multi-v1/blob/main/preprocessor_config.json) 中实施，建议用户清除缓存并重试。
+
+---
+
+## [Torchtune](https://discord.com/channels/1216353675241590815) Discord
+
+- **Qwen2 的“沉默对待”**：一名成员报告称，在使用提供的 [config](https://github.com/pytorch/torchtune) 对 **Qwen2_5_0_5b** 运行 `torchtune generate` 时没有输出。
+   - 观察到的输出包括 `<|im_start|>user Tell me a joke.<|im_end|> <|im_start|>assistant<|im_end|> <|endoftext|>`，该问题已通过 [此 PR](https://github.com/pytorch/torchtune/pull/2757) 解决，该 PR 修复了 tokenizer 中导致 **EOS** token 过早追加的 bug。
+- **LORA 微调异常**：一名成员报告称，在向模型添加新 token 并进行 **LORA finetuning** 后，输出变成了乱码。另一名成员建议尝试使用 `torchtune.modules.embedding_utils` 中的 `resize_token_embeddings` 工具。
+   - 他们推荐了在 [torch.org](https://docs.pytorch.org/torchtune/main/generated/torchtune.modules.embedding_utils.resize_token_embeddings.html#torchtune.modules.embedding_utils.resize_token_embeddings) 找到的这个工具，以解决添加新 token 后的问题。
+- **异步 Checkpointing 等待 Safetensors 救星**：一位用户询问关于将 **DistCp format**（由异步 checkpointing 产生）转换为 **safetensors** 的未解决议题。
+   - 一名团队成员回复称目前不存在此类 issue，并建议用户根据需要创建一个，承诺将提供工具以促进转换，并向 **DCP team** 发出信号以进行长期考虑。
+- **微软 Verl 框架亮相 RL 训练**：一名成员今天从 [微软的一篇论文](https://github.com/volcengine/verl) 中发现了一个 **RL 训练框架**。
+   - 另一名成员赞同 **Verl** 非常适合 RL 训练，并询问哪些部分会特别有用。
+
+---
+
+## [tinygrad (George Hotz)](https://discord.com/channels/1068976834382925865) Discord
+
+- **悬赏任务成为 tinygrad 入职机会**：正如在 [X](https://x.com/__tinygrad__/status/1910185557642367390) 上讨论的那样，用户了解到在 **tinygrad** 获得工作机会的主要途径是贡献 **bounties** 和 **small PRs**。
+   - 推荐的路径包括积极参与社区并处理作为悬赏任务列出的特定任务。
+- **分布式训练进入商品化时代**：一名成员询问 **distributed training** 如何与 petaflops 商品化保持一致，并引用了 [GitHub 上的 pccl](https://github.com/PrimeIntellect-ai/pccl)。
+   - 这一询问引发了关于利用分布式资源进行大规模计算的实用性和可访问性的讨论，但未进行进一步探讨。
+- **mmapeak 审查即将启动**：**mmapeak** 的工作现已准备好接受审查，可在 [GitHub](https://github.com/tinygrad/tinygrad/pull/10417) 上查看。
+   - 这一里程碑标志着在优化 **tinygrad** 框架中关键性能部分方面取得了进展。
+- **RDNA4 编译取得成功**：**RDNA4 指令** 在 **tinygrad** 环境中编译成功。
+   - 可能需要调整 *number of waves per CU*，以在新架构上释放最佳性能。
+- **控制流问题引发热议**：一名成员询问 Tinygrad 的控制流方法，并将其与 **JAX 的 `jax.lax.cond`** 进行对比，后者可以在不破坏计算图的情况下实现条件执行，详见 [JAX 文档](https://docs.jax.dev/en/latest/_autosummary/jax.lax.cond.html)。
+   - 该询问强调了此类功能对于实现 **Monte Carlo methods** 等复杂算法的必要性。
+
+---
+
+## [DSPy](https://discord.com/channels/1161519468141355160) Discord
+
+- **DSPy 简化 Agent 修改**：**DSPy** 框架允许用户轻松实现对 Agent 的修改。
+   - 一名成员分享了 [一个跳跃的兔八哥 GIF](https://tenor.com/view/bugs-bunny-skipping-happy-hopping-gif-9917496) 来展示 **DSPy** 框架的易用性。
+- **Mike Taylor 的 DSPy 案例研究**：**Mike Taylor** 分享了一个应用 **DSPy** 的 **案例研究**。
+   - 有人指出，该案例研究在“通过训练消除模型偏差”这一理念上可能处理得 *有点随意*，但它可能是在教模型什么是 demo 投票选出的。
+
+---
+
+## [LLM Agents (Berkeley MOOC)](https://discord.com/channels/1280234300012494859) Discord
+
+- **截止日期灵活性探讨**：一名课程参与者想知道，尽管课程网站上显示了较早的截止日期，他们是否仍能在月底前完成所有测验以获得证书资格。
+   - 该询问集中在截止日期的灵活性以及是否接受逾期提交以获取认证。
+- **作业验证寻求**：一名成员寻求确认他们提交的实验（labs）和书面作业是否符合获得课程证书的标准。
+   - 他们表现出修改和重新提交作品的热情，反映了履行证书要求的承诺。
+
+## [Nomic.ai (GPT4All)](https://discord.com/channels/1076964370942267462) Discord
+
+- **在 GPT4All 中安装 OpenAI API Key 遇到麻烦**：一位用户报告在 **GPT4All** 中安装其 **OpenAI API key** 时遇到问题，原因是安装按钮失效，正在寻求即时帮助。
+   - 该用户强调由于即将到来的考试，情况非常紧急，并提供了一张展示 **GPT4All** 界面内该问题的截图。
+- **GPT4All 考虑界面扩展**：一位用户询问 **GPT4All 界面** 是否有潜在的扩展计划，以支持文本模型以外的 LLM。
+   - 该查询重点关注 **GPT4All** 未来容纳更多样化类型 LLM 的可能性。
+
+---
+
+## [Gorilla LLM (Berkeley Function Calling)](https://discord.com/channels/1111172801899012102) Discord
+
+- **Manus AI 推荐计划启动**：一名成员分享了 **Manus AI**（一个仅限邀请的平台）的推荐链接 ([https://manus.im/edu/invitation/4EQHF7LZZ1JH7V](https://manus.im/edu/invitation/4EQHF7LZZ1JH7V))。
+   - 该推荐提供 **1000 初始积分**，且专供拥有 Cal 邮箱的人员使用。
+- **Manus AI 被推崇为处理复杂任务的强大 Agent**：该成员称赞 **Manus AI** 是目前可用的*更强大的 Agent 之一*。
+   - 他们特别强调了它在处理多步任务（multistep tasks）方面的熟练程度，并鼓励其他人使用推荐链接进行测试。
+
+---
+
+**MLOps @Chipro Discord** 没有新消息。如果该频道长期沉寂，请告知我们，我们将移除它。
+
+---
+
+**Codeium (Windsurf) Discord** 没有新消息。如果该频道长期沉寂，请告知我们，我们将移除它。
+
+---
+
+**AI21 Labs (Jamba) Discord** 没有新消息。如果该频道长期沉寂，请告知我们，我们将移除它。
+
+---
+
+您收到此邮件是因为您通过我们的网站订阅了。
+
+想要更改接收这些邮件的方式吗？
+您可以从该列表中 [退订]({{{RESEND_UNSUBSCRIBE_URL}}})。
+
+---
+
+# Discord: 各频道详细摘要与链接
+
+### **LM Studio ▷ #[general](https://discord.com/channels/1110598183144399058/1110598183144399061/1374465922265251910)** (297 messages🔥🔥): 
+
+> `Context Filling, Gemma 3 architecture, Multimodal model performance, Qwen 3 integration, Falcon-H1 GGUF` 
+
+- **分支故事并不能消除上下文填充（Context Filling）的限制**：一位用户询问分支聊天是否允许并行故事发展，但上下文大小的限制需要 [总结策略](https://lmstudio.ai/docs/context-window) 来规避这些约束。
+   - 建议的替代方案包括 **Gemma 3** 使用的滑动窗口策略，以及用于段落生成的多个模型实例，尽管后者受限于 VRAM。
+- **Bagel 的多模态模型取得新突破**：一个名为 **Bagel** ([demo](https://demo.bagel-ai.org/)) ([project](https://bagel-ai.org/)) 的“重量级”多模态模型由中国研究人员创建，通过同时进行文本和图像生成实现了真正的多模态。
+   - 它以卓越的 Prompt 遵循能力和根据上下文修改生成图像的能力脱颖而出；虽然未量化版本需要 **40GB** VRAM，但量化后可能可以适应 **24GB** VRAM。
+- **开源多模态模型面临障碍**：成员们讨论了多模态模型，以及如何通过越来越多的训练来实现像**旋转**这样的功能；一旦模型理解了旋转，添加另一个类似旋转的功能就只是更多训练的问题。
+   - 针对刷榜（gaming benchmarks）行为和 40GB 模型表现卓越的乐观说法提出了担忧，同时也指出需要更大的模型来处理额外模态所需的更高信息密度。
+- **LM Studio 集成 Speculative Decoding**：一位用户庆祝 LM Studio 添加了 [Speculative Decoding](https://lmstudio.ai/docs/speculative-decoding)，显示出性能有所提升。
+   - 按照 [NVIDIA 指南](https://blogs.nvidia.com/blog/rtx-ai-garage-lmstudio-llamacpp-blackwell/) 启用 CUDA 显著提升了一位用户的模型处理速度。
+- **在 /no_think 上 Gemma vs Qwen3 vs Deepseek**：用户正在寻找禁用聊天机器人模型中“思考”过程（["<think>"](https://old.reddit.com/r/LocalLLaMA/comments/1ka67wo/heres_how_to_turn_off_thinking_in_qwen_3_add_no/)）的方法。
+   - 虽然 `/nothink` 或 `/no_think` 在经过训练可识别此命令的 **Qwen3** 模型上效果良好，但在 **DeepSeek R1 Distill** 模型上可能无法按预期工作，且用户发现 **Gemma** 表现不佳。
+
+---
+
+### **LM Studio ▷ #[hardware-discussion](https://discord.com/channels/1110598183144399058/1153759714082033735/1374461798404587684)** (885 messages🔥🔥🔥): 
+
+> `Strix Halo and 96GB of RAM, Optimal GPU setup, Running vs. Using LLMs, PCIE bus bottlenecks, NVLink vs SLI` 
+
+
+- **Strix Halo 拥有 96GB GPU RAM**：售价 2000 美元的 **Strix Halo** 拥有令人印象深刻的 **96GB RAM** 可供 GPU 使用，为运行资源密集型任务提供了一个可行的选择。
+   - 对于追求最佳性价比的用户，有成员建议旧款 **Xeon CPUs** 是一个具有成本效益的替代方案，成本约为 1000 美元，且能够运行多种任务。
+- **双 GPU 提供经验，但 PCIE 总线较慢**：拥有 **两个 GPU** 可以为就业市场积累宝贵的经验，让用户了解模型在 **PCIE** 总线上通信时总线速度的影响。
+   - 真正的问题在于配置一点也不用户友好，如果你确实成功配置了带有 **tensor_parallel** 的 **TensorRT**，你可以获得非常可观的 **90%** 提速。
+- **探索 NVLink 相对于 SLI 的优越性**：**NVLink** 是比 SLI 带宽更高的相关连接器。它是一个更快、更具扩展性的选择。
+   - SLI 已经灭绝，而 **NVLink** 仍然存在，但仅限于企业级环境。
+- **X2 噪音问题与 BIOS 更新**：据报告 **GMKtec X2** 迷你主机噪音较大，即使在闲置时也是如此。**BIOS** 更新对于开启完整的 GPU 显存分配*至关重要*。
+   - **BIOS** 更新解锁了分配 **104GB** GPU 显存的能力，高于 Windows 最初的 **64GB** 限制。
+- **AI 开发中的 Linux vs Windows**：成员们讨论了在 **X2** 上进行 AI 开发时 Windows 与 Linux 的优劣，对于严肃的开发工作，推荐使用 Linux。
+   - 虽然 Windows 用于初步测试，但共识是 **Linux** 为运行大型模型提供了更好的支持和性能，特别是配合 **ROCm** 驱动程序。
+
+
+  
+
+---
+
+
+### **Unsloth AI (Daniel Han) ▷ #[general](https://discord.com/channels/1179035537009545276/1179035537529643040/1374462755456811038)** (911 messages🔥🔥🔥): 
+
+> `OpenAI vs OSS, Medgemma finetuning, VITS 2 and TTS models, MoE models` 
+
+
+- **OpenAI 的降级不可接受**：成员们对 **OpenAI** 降级模型的做法表示不满，特别是提到 **o4 mini** 的性能较初始发布时有所下降，**OSS**（开源软件）成为了他们的希望。
+   - 一位成员调侃道：*"比起 200 美元的 OpenAI Pro —— '我们随时觉得有必要就更改、降级、糟蹋模型'"*。
+- **新模型发布**：Unsloth 在 **Google I/O** 大会的 **Gemma+Unsloth+Collab** 演示中亮相 [视频](https://youtu.be/GjvgtwSOCao)。
+   - 与会者对 Unsloth 的出现表示兴奋和惊讶，许多人在观看演示后加入了 Discord 服务器。
+- **Medgemma：视觉微调模型**：成员们讨论了新的 **Medgemma** 模型作为视觉微调的候选对象，以及其推荐配置是否与 **Gemma 3** 相同。
+   - 一位成员建议将 **Qwen2.5** 或 **Qwen2** 作为视觉微调的替代方案，其他成员也讨论了 **Gemma 3** 的视觉微调效果不尽如人意。
+- **VITS 2 早期即可生成语音**：一位成员分享了使用 **VITS 2** 的经验，仅经过 4000 步就能从音素（phonemes）生成可理解的语音，并询问这是由于使用了 **VITS 2** 还是**音素**的原因。
+   - 随后引发了关于采样率需求的讨论，一位成员认为*音乐家能听出差别*，但另一位指出数据集本身就是模型，而不仅仅是 kHz 等参数。
+- **MoE 模型及其性能**：成员们辩论了 **MoE** (Mixture of Experts) 模型的本质，一些人指出该术语本身意味着模型在不同主题上会比 **dense model**（稠密模型）表现更好，而另一些人则表示，如果 **MoE** 训练得当，它们的性能可以与稠密模型持平，只是速度更快。
+   - 讨论集中在 **MoE** 模型是否必然影响性能，或者数据是否才是关键因素。
+
+
+  
+
+---
+
+### **Unsloth AI (Daniel Han) ▷ #[off-topic](https://discord.com/channels/1179035537009545276/1179039861576056922/1374470869547483256)** (16 条消息🔥): 
+
+> `Diffusion vs Autoregression, Gemini Diffusion, New SOTA 1B Model, Daniel Han's Tweets as a Blog` 
+
+
+- **Diffusion 模型与 Autoregression 的竞争**：一位成员询问 **Diffusion 模型** 是否优于 **Autoregressive 模型**，并指出 **ChatGPT** 最初使用的是 Diffusion 模型，但后来转向了 Autoregressive。
+   - 他们推测 **Autoregressive 模型** 可能更适合像 **Gemini Flash Lite** 或 **Gemini Flash** 这样要求极速的应用，但 Diffusion 模型在未来可能会有所改进。
+- **Gemini Diffusion 速度极快**：一位成员获得了 **Gemini Diffusion** 的访问权限，并反馈其速度 *极快* 且表现良好，输出速度达到每秒约 **800 tokens**。
+   - 他们补充说，虽然它不是当前最先进的（**SOTA**），但其速度令人印象深刻，并链接到了 [Hugging Face](https://huggingface.co/nvidia/Llama-3.1-Nemotron-Nano-4B-v1.1) 上的 **Llama-3.1-Nemotron-Nano-4B-v1.1**。
+- **新的 SOTA 1B 模型出现**：一位成员评论道，小模型的 **SOTA** 每周都在变化，并指向了一个新的 **SOTA 1B 模型**。
+   - 消息中附带了一张图片（[image.png](https://cdn.discordapp.com/attachments/1179039861576056922/1374719823115976764/image.png?ex=682f131a&is=682dc19a&hm=67d800939d7b74b45195dc277d09e727fb26c67d79dce07438eeb52c87f40290&)），一位成员指出需要一个完整的 **GGUF** 和专门的 **Unsloth notebooks** 来对其进行微调（finetune）。
+- **推文应该博客化**：一位成员询问 **Daniel Han** 关于新版本发布、修复和技术方面的所有**技术推文**是否可以在 **Unsloth 博客网站**上作为博客阅读。
+   - 另一位成员建议这些推文值得写成博客，并认为这两兄弟应该提供一个博客，表示有人 *正将它们作为追踪该领域更新的来源，因为 Daniel 有着深刻的见解，这对我帮助很大*。
+- **Tokenizer 的烦恼**：一位成员回忆起很久以前关于 **Gemma** 和 **Llama3** 的一些发现，例如 *double gemma bos token*、*llama cpp 和 HF 的 tokenizer 给出不同的 id*，以及 *Llama3 instruct 具有未训练的 embedding*。
+   - 他们还指出 *不要将 pad token 用作 eos token*，以及 *不要用随机值初始化新的 embedding token*，并好奇这些主题是否涵盖在 Unsloth 的博客文章中。
+
+
+  
+
+---
+
+### **Unsloth AI (Daniel Han) ▷ #[help](https://discord.com/channels/1179035537009545276/1179777624986357780/1374477891341123596)** (226 条消息🔥🔥): 
+
+> `Phi-4 模型合并 LoRA 适配器后的问题，CSM-1B 语音训练问题，Qwen3 函数调用问题，DeepSeek V3 GGUF 下载，用于检索增强微调的 Unsloth notebook` 
+
+
+- **Phi-4 模型合并后性能骤降**：一位用户报告称，使用 **QLoRA** 微调 **unsloth/phi-4** 效果很好，直到将 **LoRA adapter** 合并到模型中，性能随后大幅下降，尽管更新了 **Unsloth** 并重复了测试。
+   - 一位贡献者建议了一种变通方案，包括使用 `PeftModel` 加载基础模型和适配器，使用 `merge_and_unload()` 进行合并，设置 `safe_serialization=True` 进行保存，并且关键的是，在推理过程中避免使用 `load_in_4bit=True`，建议改用 `load_in_8bit=True`。
+- **CSM-1B 语音训练因 Tokenizer 错误受阻**：一位用户在合并 **CSM-1B** 语音训练模型时遇到了 `NameError: name 'tokenizer' is not defined` 错误，尽管 **LoRA** 保存成功，且使用的是 **T4 GPU**。
+   - 另一位成员建议在合并代码中将 `tokenizer` 替换为 `processor`，参考了 [sesame notebook](https://github.com/phildougherty/sesame_csm_openai)，这解决了眼前的错误，但随后出现了由于量化导致无法以 4-bit 保存的问题。
+- **Qwen3 函数调用在较大模型上失败**：一位用户发现函数调用在 **unsloth/Qwen3-4B-unsloth-bnb-4bit** 上有效，但在 **unsloth/Qwen3-8B-unsloth-bnb-4bit** 上失败，较大模型出现了乱码回复。
+   - 一位社区成员建议测试 **14B** 模型，但用户表示该模型对他们的 **GPU** 来说太重了。
+- **DeepSeek V3 下载难题**：一位用户寻求关于下载哪个具体的 **DeepSeek V3** 文件以在 **PocketPal AI app** 中使用的指导。
+   - 一位社区成员建议从 [Hugging Face](https://huggingface.co/unsloth/DeepSeek-V3-0324-GGUF-UD?show_file_info=UD-IQ1_S%2FDeepSeek-V3-0324-UD-IQ1_S-00001-of-00004.gguf) 下载最小的文件。
+- **RAFT Notebook 获得好评并收到 Pull Request**：一位用户分享了一个 Unsloth notebook，演示了针对 Llama 3.2 1B 的检索增强微调 (**RAFT**)。
+   - 该 notebook 可在 [GitHub](https://github.com/tituslhy/ideal-palm-tree/blob/main/notebooks/2.%20llama32_1bn_RAFT.ipynb) 上获取，获得了积极反馈，并促成了一个将其集成到官方 Unsloth cookbook 的 Pull Request，不过其中强调了 OpenAI embedding。
+
+
+  
+
+---
+
+
+### **Unsloth AI (Daniel Han) ▷ #[research](https://discord.com/channels/1179035537009545276/1257011997250424842/1374477021446537226)** (3 条消息): 
+
+> `KernelLLM, Mixture of Experts 模型` 
+
+
+- **KernelLLM 亮相**：一位成员分享了 [KernelLLM](https://huggingface.co/facebook/KernelLLM) HuggingFace 页面的链接。
+- **通过内存扩展 Mixture of Experts 模型**：一位成员分享了他们之前帖子的进展，链接到一篇名为《[Beyond Memory Limits: Scaling Mixture of Experts Models](https://arxiv.org/abs/2505.08727)》的论文，并附上了 [PDF 版本](https://cdn.discordapp.com/attachments/1257011997250424842/1374790607855157419/Beyond_Memory_Limits__Scaling_Mixture_of_Experts_Models.pdf?ex=682f5507&is=682e0387&hm=531af6abb620cf14f036a3b887bf153a98b68a53c7c2b3aab9abeed5f1b91a74&)。
+   - 他们表示有兴趣听取对其工作的反馈。
+
+
+  
+
+---
+
+### **LMArena ▷ #[general](https://discord.com/channels/1340554757349179412/1340554757827461211/1374461687087894588)** (952 条消息🔥🔥🔥): 
+
+> `Gemini 2.5 Pro, Claude 4 泄露, LMArena 融资 1 亿, Grok 3.5` 
+
+
+- **Gemini 2.5 Pro Deep Thinking 已发布**：成员们报告 Gemini 2.5 Pro 已经发布，它可能是 *Nightwhisper* 模型，然而**其性能并非顶级水平**。
+   - 其他成员表示 **2.5 Flash 速度非常快**，但除非开启 Canvas，否则它不再是一个思考模型。
+- **Claude 4 将于明天发布**：根据 [The Information](https://www.theinformation.com) 的消息来源，有大量报告称 **Claude 4** 计划于明天发布，一名用户链接到了 [AnthropicAI twitter](https://x.com/AnthropicAI/status/1925239440420831516)。
+   - 一位用户提到它可能是 *Neptune* 模型，并推测其价格为 **200 美元/月**。
+- **LMArena 在 1 亿融资后估值达 6 亿**：据 [这篇 Bloomberg 文章](https://www.bloomberg.com/news/articles/2025-05-21/lmarena-goes-from-academic-project-to-600-million-startup) 报道，LMArena 在最近一轮 **1 亿**融资后的估值据传达到 **6 亿**。
+   - 一位用户提到，除非你从 Google 那里获得了数百万美元的 RLHF 资金，否则这项投资*毫无意义*。
+- **Grok 3.5 表现不错，但发布时间尚不确定**：经过有限的测试，一位用户声称 **Grok 3.5** 实际上非常出色，知道许多其他模型不知道的事情，但发布时间仍不确定。
+   - 其他人推测 **Elon** 可能*推迟了 Grok 3.5 的发布以优化 Benchmark*，或者它可能永远不会发布，因为它已经被其他模型抢占了先机。
+- **LMArena 将 Logo 更改为罗马斗兽场**：成员们讨论了 LMArena 将 Logo 更改为**罗马斗兽场（colosseum）**。
+   - 成员们认为新 Logo 过于商业化且不直观。
+
+
+  
+
+---
+
+
+### **LMArena ▷ #[announcements](https://discord.com/channels/1340554757349179412/1343296395620126911/1374783149988511904)** (1 条消息): 
+
+> `LMArena 新网站, LMArena 1 亿美元种子轮融资, LMArena 员工 AMA` 
+
+
+- **LMArena 切换至新的 Beta 网站**：下周，**LMArena** 计划将 [当前网站](https://lmarena.ai/) 切换到 [Beta 网站](https://beta.lmarena.ai/)。
+   - 公司在服务器中添加了自定义表情符号，如 <:lmarena:1374761520822751334> <:battle:1374761514489221200> <:directchat:1374761517588811797> <:leaderboard:1374761519107281009> <:sidebyside:1374761524458946691> <:battle3d:1374761512912158760> <:sidebyside3d:1374761523049791630> <:directchat3d:1374761516502614046><:trophy3d:1374763541009273013>。
+- **LMArena 获得 1 亿美元种子轮融资，计划扩张**：**LMArena** 已获得 **1 亿美元**种子轮融资，用于招聘更多人员并提升网站性能。
+   - 团队计划更快地整合社区反馈，并强调社区在塑造平台方面的关键作用。
+- **LMArena 员工 AMA 即将举行**：**LMArena** 将举办一场员工 AMA，并为无法参加直播的人员录制活动。
+   - 可以通过 [此表单](https://docs.google.com/forms/d/e/1FAIpQLSdFrGpj4GC7ED6XXOKLFq_UKoubUB5A6v8TDL0BBdc-Q_0bag/viewform?usp=dialog) 向员工提交问题。
+
+
+  
+
+---
+
+### **Perplexity AI ▷ #[general](https://discord.com/channels/1047197230748151888/1047649527299055688/1374463165257220206)** (827 条消息🔥🔥🔥): 
+
+> `Grok PDF 导出，Perplexity 与 Gemini 2.5 Flash，移动端图像生成，Comet 浏览器，RoboForm` 
+
+
+- **Grok 的 PDF 导出：一个便捷的替代方案**：一位成员分享了一种通过使用内置导出选项将 **Grok** 的回答导出为 **PDF** 的方法，而不是要求 Bot 创建专门的 PDF，并附上了导出的 [PDF](https://cdn.discordapp.com/attachments/1047649527299055688/1374463164871217316/grok_report_compressed.pdf)。
+   - 另一位成员报告称，Perplexity AI 的图像分析功能在尝试分析一张图片时卡住了，尝试两次后依然无果，且社区频道中尚未有人回应。
+- **移动端 App 图像生成困扰**：成员们讨论了在 Perplexity AI 移动端 App 上生成图像的困难，一位成员确认 **图像生成仅在 iOS App 上可用**，而在 **Android** 上无法运行。
+- **Perplexity 的数据收集政策引发争论**：CEO 关于收集 App 之外的浏览数据用于个性化广告的声明引发了讨论，一些成员链接了一个 [YouTube 访谈](https://www.youtube.com/live/DZkDPtE4WmA?si=9jfpVM2fIJtTiL2q&t=2604) 来支持他们的说法，即 Perplexity 预期会使用浏览数据。
+   - 一些用户认为数据被用于记忆功能而非广告，并且存在选择退出广告以及禁用记忆功能的选项。
+- **Gemini 2.5 Deep Research 速率限制：是按天还是按月？**：成员们分享了一个 [Google Support 链接](https://support.google.com/gemini/answer/15719111?hl=en) 并讨论了 **Gemini 2.5 Deep Research** 的速率限制，注意到 **Gemini 2.0 flash** 模型已被移除并替换为 Gemini 2.5。
+   - 虽然一些用户指出 2.5 flash 针对免费用户，限制为 500 req/day，付费用户为 10k；免费用户每月 5-10 次 Deep Research，付费用户约为 600 次，但其他用户认为现在 Deep Research 的速率限制是按天计算，而不是按月。
+- **RoboForm 的免费层级：一个经济实惠的密码解决方案**：成员们讨论了密码管理器 **RoboForm** 以及该服务是否免费。
+   - 澄清说明 [RoboForm](https://www.roboform.com/pricing-personal) 确实有免费层级，但仅限单设备访问。
+
+
+  
+
+---
+
+
+### **Perplexity AI ▷ #[sharing](https://discord.com/channels/1047197230748151888/1054944216876331118/1374792518356566067)** (1 条消息): 
+
+> `` 
+
+
+- **未讨论任何主题，跳过...**：给定的消息中未发现讨论主题。
+- **未分享任何链接，跳过...**：给定的消息中未发现分享的链接。
+
+
+  
+
+---
+
+
+### **Perplexity AI ▷ #[pplx-api](https://discord.com/channels/1047197230748151888/1161802929053909012/1374571050829877421)** (8 条消息🔥): 
+
+> `Deep Research 模型混淆，WebUI 与 API 访问差异，Perplexity Hackathon 规则，社区论坛公告` 
+
+
+- **Deep Research 模型仍令用户困惑**：尽管存在一些混淆，但已澄清所讨论的 **模型 SKU** 确实是针对 Deep Research 模型的。
+   - 有人指出这个问题被频繁问及，可能是因为某些网站屏蔽了 **API** 的爬虫，而 **WebUI** 可能仍具有访问权限。
+- **API 访问受限于网站 Robots.txt**：**WebUI** 可以访问某些 **API** 无法访问的网站，原因是这些网站在 `robots.txt` 中屏蔽了 **API** 的爬虫。
+   - 如果一个站点可以通过 **API** 访问，建议将 `search_context_size` 设置为 `high` 作为潜在的修复方案。另请参阅 [官方文档](https://docs.perplexity.ai/guides/bots)。
+- **Perplexity Hackathon 规则更新**：询问 **Perplexity Hackathon** 更新规则的用户被引导检查其电子邮件以获取信息。
+   - 分享了一张截图，但托管在私有 Discord 域名上（[截图](https://cdn.discordapp.com/attachments/1161802929053909012/1374833722343428116/Screenshot_2025-05-21_at_3.37.48_PM.png?ex=682f7d2e&is=682e2bae&hm=a258d6ae167a875801509578080e36fc9336ad17e87aec3e00383f879a4ed60f&)）。
+- **社区论坛上线**：一个新的 **社区论坛** 已经上线，并将优先处理问题。
+   - 鼓励用户加入论坛：[community.perplexity.ai](https://community.perplexity.ai)。
+
+
+  
+
+---
+
+### **OpenRouter (Alex Atallah) ▷ #[app-showcase](https://discord.com/channels/1091220969173028894/1092850552192368710/1374560666689474571)** (1 messages): 
+
+> `MCP Support, Gemini image gen, PDF/File support/viewing, PDF Generation, UI/UX improvements` 
+
+
+- **Weaver One 应用迎来重大更新**：[Weaver One 应用](https://weaver-one.vercel.app/)已更新，新增了 **MCP 支持**、**Gemini 图像生成**、**PDF/文件支持与查看**、**PDF 生成**、**UI/UX 改进**、**自动聊天标题**、**Markdown 导出**以及**提示词库 (prompt library)**。
+- **Weaver One 新增 BYOK 支持**：新版本的 Weaver One 允许用户使用来自 **OpenAI** 及 **OpenAI compatible**、**Gemini**、**Anthropic**、**Vertex**、**OpenRouter** 等平台的自有密钥 (**BYOK**)。
+
+
+  
+
+---
+
+
+### **OpenRouter (Alex Atallah) ▷ #[general](https://discord.com/channels/1091220969173028894/1094454198688546826/1374462587273609359)** (326 messages🔥🔥): 
+
+> `Gemini Diffusion Speed, Meta Llama 3.3 Release, Gemma-3n-4B vs Claude 3.7, TTS Models for Yoga AI, Veo 3 Cost and Capabilities` 
+
+
+- **Gemini Diffusion 速度*极快***：一位用户称 **Gemini Diffusion** 的速度快得令人难以置信，并将其与 **Groq/Cerebras** 进行对比，同时分享了一段[屏幕录制](https://cdn.discordapp.com/attachments/1094454198688546826/1374462586829144156/Screen_Recording_2025-05-20_at_20.02.28.mov?ex=682f7508&is=682e2388&hm=ecc40a2f99e3055bdfb0715403bdd65f38d4d903d4d0f20362b8eac9837b0f0d&)。
+   - 另一位用户询问为什么大多数 LLM 还没有基于 Diffusion（扩散模型），对此有用户回复称 **Google** 目前是 Gemini Diffusion 预览版的唯一托管方。
+- **Meta 迟迟不发布 Llama 3.3**：一名成员对 Meta 未发布 **Llama 3.3 8B** 表示沮丧，认为这表明其对消费者缺乏关注，并表示如果 [Llama 3.3 70B](https://ai.meta.com/llama/) 仅限 API 使用，而 8B 版本能够开放权重 (open weights)，那将更为理想。
+   - 他们认为 Meta 不发布 Llama 3.3 8B 是*愚蠢的*。*他们根本不在乎消费者。*
+- **Gemma-3n-4B 宣称具备 Claude 3.7 级别的性能**：一位用户指出 **Gemma-3n-4B** 据称与 **Claude 3.7** 一样出色，并附上了 [Gemma 博客文章](https://developers.googleblog.com/en/introducing-gemma-3n/)的链接。
+   - 另一位用户指出，既然数据来自 **Chatbot Arena**，这属于*用户偏好，对我来说听起来是有可能的*。
+- **Elevenlabs 为 Yoga AI 提供 TTS 动力**：用户正在寻找 **TTS 模型**来为 **Yoga AI** 创建引导式冥想课程，其中一个建议是使用 **Elevenlabs** 上的 **Nicole** 语音并降低语速。
+- **被削弱的 Gemini 2.5 Pro 彻底没戏了**：用户报告 **Gemini 2.5 Pro** 出现了明显的性能削弱 (nerf)，有人称甚至 **o4 mini** 现在都更好且更便宜，并表示 **Gemini 2.5 03 25 版本非常惊艳，而 2.5 05 06 版本削弱得太厉害了**。
+   - 另一位用户引用了 **Google** 官方的模型卡 (model card)，承认除了编程之外，在每个基准测试中性能都有所下降，并附上了 [Gemini 模型卡](https://storage.googleapis.com/model-cards/documents/gemini-2.5-pro-preview.pdf)的链接。
+
+
+  
+
+---
+
+### **Cursor Community ▷ #[general](https://discord.com/channels/1074847526655643750/1074847527708393565/1374462642952994877)** (278 条消息🔥🔥): 
+
+> `Service Unavailable 错误，ChatGPT Pro 很划算，Rust 用于后端，集成 Memory Banks，Gemini Flash` 
+
+
+- ****Service Unavailable 错误冲击 Cursor 用户****：多名用户报告在运行 Cursor 时遇到 *'Service Unavailable'* 错误，尽管普遍认为这并非由 Cursor 本身引起。
+- ****Rust 热潮：作品集项目激发程序员兴趣****：一位成员提到使用 **Rust** 开发后端以丰富简历，另一位成员则建议先列出心仪的技术栈，然后创建相应的作品集项目。
+- ****Gemini 的 Google AI 计划引发热议，Deep Think 模式备受关注****：用户讨论了 Google 为 Gemini 推出的新 **Deep Think 模式**，价格为**前三个月 125 美元/月**，之后为 **250 美元/月**，可通过 Gemini 页面底部的 "Google AI Plans" 访问，但某些地区的用户似乎无法访问。
+   - 分享了一个 [YouTube 链接](https://www.youtube.com/watch?v=o8NiE3XMPrM&ab_channel=Google)，时间戳定位在 **1:39:22** 处的 Deep Think 发布公告。
+- ****下一代神经网络：Claude 4 即将到来？****：爱好者们正热切期待 **Claude 4 Sonnet 和 Opus** 的到来，推测可能在本周发布，甚至有人发布了类似[这条推文](https://x.com/btibor91/status/1925084250107478506?s=46)的预热信息。
+   - 一些人希望它的表现足以让 Codex 变得过时。
+- ****开源编排：VerbalCodeAi 与 Roo Code 社区汇合****：一位用户分享了他们的新项目 [GitHub 上的 VerbalCodeAi](https://github.com/vibheksoni/VerbalCodeAi)，邀请他人加入他们的 Discord 服务器 ([discord.gg/KpjSDEwWCF](https://discord.gg/KpjSDEwWCF)) 进行协作并协助服务器设置。
+
+
+  
+
+---
+
+
+### **HuggingFace ▷ #[general](https://discord.com/channels/879548962464493619/879548962464493622/1374501688592961604)** (230 条消息🔥🔥): 
+
+> `GPU 租赁，本地模型 AMD vs NVIDIA，模型推理速度，HuggingFace SEO，Falcon H1` 
+
+
+- **征求高性能 GPU 租赁建议**：一位成员正在寻求租用高性能 GPU 以实现快速使用的最佳场所，特别是为了微调 **sbert 模型**，并收到建议查看云服务商，如果脚本在 **A100** 上运行，计费大约在 **1.50 美元或更低**。
+   - 该成员目前使用的是 **3060 12GB**，但适配模型需要大约 **8-9 小时**，另一位成员建议使用 **Runpod** 租用 A100，价格约为每小时 1 美元。
+- **AMD 显卡在本地模型运行中存在障碍**：一位用户正考虑从 **3080 12GB** 升级到 **1300 美元**的 **7900 XTX (24GB VRAM)**，但担心 AMD 与模型的兼容性，因为某些模型仅支持 **CUDA**。
+   - 一位拥有 XTX 的用户确认某些功能无法按预期工作，但 **LM Studio** 运行良好，另一位成员提到使用它能达到 **62.73 t/s**；共识似乎是由于缺乏 CUDA 支持，AMD 显卡使用起来可能比较麻烦。
+- **深入探讨模型推理速度基准测试**：一位成员对无法找到不同模型架构之间推理速度的大型基准测试表示沮丧，这里指的不是量化，而是基础因素。
+   - 有人提到架构之间不应有太大差异，这些架构通常都非常类似于 Llama，仅有如 **Gemma** 这样的小差异；另一位成员发现 **qwen0.6b** 的速度比 **gemma3 1b** *慢了近 2 倍*，尽管其参数量几乎只有后者的一半。
+- **HuggingFace 的 SEO 表现欠佳**：一位成员指出 huggingface.co 域名未被 **DuckDuckGo、Qwant 和 Yandex** 等搜索引擎正确索引，导致返回的是旧文档链接而非最新文档，并附带了[说明问题的截图](https://cdn.discordapp.com/attachments/879548962464493622/1374748800677187644/msedge_doFX5gUYD5.png?ex=682f2e17&is=682ddc97&hm=a1525ca856b9125c4d5976f449b564a203af4ee0921f6e1f009989c461815c55)。
+   - 另一位成员确认了 **Bing** 搜索 `hf_hub_download` 时存在的结果问题。
+- **Falcon H1 模型发布**：一位成员分享了新 [Falcon H1 模型](https://huggingface.co/blog/tiiuae/falcon-h1)的链接，并询问是否有人尝试过。
+
+
+  
+
+---
+
+### **HuggingFace ▷ #[today-im-learning](https://discord.com/channels/879548962464493619/898619964095860757/1374584944998875206)** (3 messages): 
+
+> `Smolagent Real World Agents, HFAPI Issues, LiteLLM Slowdown, Ollama based models and Reasoning, GGUF models` 
+
+
+- **Smolagent 启发了现实世界 Agent 的构建**：一位成员正在使用 **smolagent** 构建一个现实世界的 Agent，获取有关旅游预订的真实数据，并旨在围绕其构建应用。
+   - 他们完成了一部分 Agent 课程，并对整合所学知识感到**兴奋**。
+- **HFAPI 付费和 LiteLLM 缓慢引发模型切换**：该成员从 **HFAPI** 切换到了 **LiteLLM**，因为 **HFAPI** 主要是一个付费工具，这与开源项目不符。
+   - 然而，他们注意到 **LiteLLM** 速度较慢，目前正在尝试使用 **DeepSeek r1**、**Anthropic**、**Llama3.1** 和 **Qwen** 模型以提高速度。
+- **Ollama 推理变慢促使对 GGUF 模型的咨询**：该成员发现基于 **Ollama** 的模型和推理流（特别是基于 **ReAct** 的推理流）在本地运行非常缓慢，原因是 instruct 模型的体积较大。
+   - 他们正在寻求关于在 **Ollama** 中使用基于 **GGUF** 的模型进行复杂推理和规划的反馈，旨在缓解持续的“Token 危机”。
+- **Agent 构建者需要本地解决方案**：目前该成员依靠 **Anthropic 研究额度** 进行管理，正在寻求更好的本地解决方案，以构建能够处理现实世界任务（特别是印度背景下）的 **LLM agents**。
+   - 他们的重点是激发和评估 **LLM agents** 在帮助处理现实任务中的能力，特别是在解决语言细微差别之前关注核心逻辑，此外他们还在深入研究“合成数据 -> 模型流水线、视频生成和自动编码器”。
+
+
+  
+
+---
+
+
+### **HuggingFace ▷ #[cool-finds](https://discord.com/channels/879548962464493619/897390579145637909/1374812395976917163)** (1 messages): 
+
+> `Manus AI Agent, Referral Link` 
+
+
+- **Manus AI Agent 邀请**：一位成员分享了 [**Manus** 的推荐链接](https://manus.im/edu/invitation/4EQHF7LZZ1JH7V)，这是一个以处理多步任务著称的邀请制 Agent。
+   - 该链接为新用户提供 **1000 初始积分**。
+- **Manus 承诺强大的多步任务自动化**：**Manus AI** 被吹捧为处理多步任务的强大 Agent，目前处于邀请阶段。
+   - 提供的[推荐链接](https://manus.im/edu/invitation/4EQHF7LZZ1JH7V)授予新用户 **1000 初始积分**。
+
+
+  
+
+---
+
+
+### **HuggingFace ▷ #[i-made-this](https://discord.com/channels/879548962464493619/897390720388825149/1374510864236810280)** (17 messages🔥): 
+
+> `Lunaris Codex, DataTune, LLMChat GNOME Shell Extension, Optuna and Transformers Integration, Scaling Mixture of Experts Models` 
+
+
+- **Transformer Decoder 框架 Lunaris Codex 兴起**：一位成员分享了 **Lunaris Codex**，这是一个开源的、基于 PyTorch 的 Transformer Decoder 框架，专为**代码生成和语言建模**实验而设计，并正在积极探索使用自定义数据集（如 `meryyllebr543/lunaris-data`）进行训练。
+   - 它具有可配置的架构、包含用于数据准备、训练和推理的 CLI 完整流水线、C++ 工具包、CI 与测试以及详细文档；[GitHub 仓库](https://github.com/MeryylleA/lunariscodex)包含更多信息和社区 Discord 链接。
+- **DataTune 使用 LLM 转换数据**：Vitalops 创建了 [DataTune](https://github.com/vitalops/datatune)，这是一个开源工具，使用自然语言指令和 LLM 进行数据转换，避免了上下文长度限制和高昂的 API 成本。
+   - 该工具允许通过简单的自然语言指令执行数据转换。
+- **LLMChat 与 GNOME Shell 集成**：一位成员分享了他们的 [LLMChat GNOME shell 扩展](https://github.com/1Jamie/llmchat)，它利用 Ollama 或 LlamaCpp 服务器将 LLM 集成到 GNOME shell 环境中。
+   - 它拥有模块化的工具系统，使用 Qdrant 向量数据库嵌入系统记忆，并可以与 Windows 和 GNOME 设置交互；它使用基于 Prompt 的系统进行工具调用，支持多种语言模型。
+- **Optuna 与 Transformers 实现集成**：一位成员贡献了一个示例，展示了 HPO 框架 [Optuna](https://github.com/optuna/optuna-examples/tree/main/transformers) 与 Transformers 库之间的集成。
+   - 目标是简化 Transformer 模型的超参数优化过程。
+- **Syntx IDE 扩展添加了新的 MCP Hub**：Syntx IDE 扩展最近添加了一个[专用的 MCP hub](https://marketplace.visualstudio.com/items?itemName=OrangecatTechPvtLtd.syntx)，并将在下一个补丁中添加索引功能。
+   - 索引功能将包含在下一个补丁中。
+
+
+  
+
+---
+
+### **HuggingFace ▷ #[computer-vision](https://discord.com/channels/879548962464493619/922424143113232404/1374608608851132426)** (2 messages): 
+
+> `LayoutLMv3 工作流, Donut 模型集成, OCR 方法对比, 旧金山 GeoMeetup` 
+
+
+- **LayoutLMv3 工作流步骤详解**：一位用户寻求关于使用 **LayoutLMv3** 进行发票处理的正确工作流和技术支持，并将其与传统的 **OCR** 和 **regex** 方法进行了对比。
+   - 建议的工作流包括预处理、布局感知 **OCR**、使用 **LayoutLM/Donut** 进行文档解析，以及通过提示词回答（prompt answering）进行后处理，以改进发票数据的提取。
+- **探索 Tesseract、PaddleOCR 的替代方案**：传统的 **OCR** 方法（如 **Tesseract** 和 **PaddleOCR**）结合 **regex** 在从发票中提取文本和键值对时存在局限性，由于复杂的模式经常导致数据遗漏。
+   - 用户正在探索 **LayoutLMv3** 和 **Donut** 以克服这些限制，但不确定如何将它们集成到简化的发票处理工作流中。
+- **湾区 GeoMeetup 即将举行**：邀请对 **CV + sensor fusion**、**autonomy / ADAS** 或 **geospatial intelligence** 感兴趣的人士参加 5 月 28 日在旧金山举行的聚会。
+   - 该聚会由 **GeoMeetUp** 和 **Bee Maps** 组织，更多详情请访问 [https://lu.ma/q4coi1t7](https://lu.ma/q4coi1t7)。
+
+
+  
+
+---
+
+
+### **HuggingFace ▷ #[gradio-announcements](https://discord.com/channels/879548962464493619/1014577787039924226/1374791586600189984)** (1 messages): 
+
+> `MCP, Gradio, AI Agent 开发, 奖金` 
+
+
+- ****MCP** x **Gradio** 合作即将到来！**：一项公告预告了 **MCP** 与 **Gradio** 在 **6 月 2 日至 8 日** 期间的合作，奖金总额达 **$10,000**。
+   - 发布者提到这“可能会永远推动 **AI agent** 的发展”，并暗示这将是“2025 年最重要的 **AI** 开发活动之一”。
+- **2025 年 AI 开发活动**：**Gradio** 将参加 **2025 年 6 月 2 日至 8 日** 举行的 **AI** 开发活动。
+   - 参与者有机会从 **$10,000** 的奖金池中赢取奖金。
+
+
+  
+
+---
+
+
+### **HuggingFace ▷ #[agents-course](https://discord.com/channels/879548962464493619/1329142738440028273/1374567634858672198)** (11 messages🔥): 
+
+> `HF 界面上的 Dummy agents 库, LinkedIn 证书生成链接, Agents 课程截止日期, 分数数据集提交, 证书问题` 
+
+
+- **HF 界面运行按钮：去哪了？**：一位用户询问如何在 **HF** 界面上运行 **dummy agents** 库的 Python notebook，寻找等同于“运行按钮”或 **shift+enter** 的命令。
+   - 他们还询问了如何在 **Colab** 中设置 **HF token**，确认是否应在设置选项卡的 secrets 下粘贴 token 的名称和值。
+- **LLM 课程的 LinkedIn 证书链接失效**：一位用户报告称，**LLM** 基础课程的 **LinkedIn** 证书生成链接失效，而是重定向到了 **agent** 课程页面。
+   - 这个问题发生在成功完成测验后，生成的图像旁边出现 **LI** 按钮时。
+- **Agents 课程：截止日期临近**：一位用户询问 **Agents** 课程的截止日期，提到他们刚刚开始 **Unit 4**。
+   - 另一位用户回答说截止日期是 **7 月 1 日**，并提供了[课程介绍链接](https://huggingface.co/learn/agents-course/unit0/introduction#certification-process)。
+- **重新提交分数**：一位用户询问分数数据集是否在第一次提交时锁定，从而无法重新提交。
+   - 另一位用户澄清说，你可以根据需要多次提交，排行榜只会记录你的最高分。
+- **证书要求困惑**：一位用户报告称已创建 **agent**、提交了答案并在排行榜上看到了自己的名字，但收到消息称必须完成 **Unit 4** 才能获得证书。
+   - 一位用户询问了该人在评估中的最高分。
+
+
+  
+
+---
+
+### **Eleuther ▷ #[general](https://discord.com/channels/729741769192767510/729741769738158194/1374471615982604321)** (203 messages🔥🔥): 
+
+> `AI Slop 定义、计算不可约性与新颖性、Gemini Diffusion 噪声模型、Discord 数据集用例` 
+
+
+- **Discord 辩论 "AI Slop" 的定义**：成员们辩论了 "AI Slop" 的定义，即*具有高度精炼和润色、伪装成相关内容但经不起基本推敲的内容*，其中一人引用了 [AI Slop Wikipedia article](https://en.wikipedia.org/wiki/AI_slop) 作为参考。
+   - 一些成员认为 Slop 与模型中的 **fragility failures**（脆弱性故障）密切相关，并引用了诸如 [Is Memorization Sufficient to Perform Well on Reasoning Tasks?](https://arxiv.org/abs/2410.05229v1) 和 [Code Information Retrieval: Does Intermediate Representation Help?](https://arxiv.org/abs/2504.04372) 等论文。
+- **新颖性与计算不可约性（Computational Irreducibility）挂钩？**：一些成员认为新颖性与 **computational irreducibility** 紧密相关，这可能将当前的生成式模型排除在外。
+   - 一位成员将新颖性定义为*无法通过统计预测推导出的内容*，并将其与 **Kolmogorov complexity** 联系起来。
+- **谷歌的 Gemini Diffusion 遭到剖析**：成员们分享了对 **Gemini Diffusion** 的看法，重点关注其 [noise model](https://x.com/OriolVinyalsML/status/1924952304324837469)（噪声模型）及其潜在的灵活性。
+   - 有理论认为，由于迭代细化和双向序列建模，Gemini Diffusion 可能会带来*一个彻头彻尾更好的模型*，并引用了 [Grokking in Both Directions](https://github.com/willbaskett/grokking_in_both_directions)。
+- **AI 社区探索 Discord 数据**：成员们讨论了一个大规模 [Discord dataset](https://zenodo.org/records/15170676) 的用例，并对用户数据的隐私和匿名化表示担忧。
+   - 有建议称，此类数据集可用于*识别可疑活动*或分析对科学论文的反馈。
+
+
+  
+
+---
+
+
+### **Eleuther ▷ #[research](https://discord.com/channels/729741769192767510/747850033994662000/1374641439358849024)** (15 messages🔥): 
+
+> `LinkedIn 图标使用、BEAR Probe 评估、RAG 数据库泄露、柏拉图式表示假设` 
+
+
+- **LinkedIn 图标按预期被使用**：一位成员指出 **LinkedIn icon** 在创建后的 **24 小时** 内是如何按预期被使用的。
+   - 未记录进一步的讨论。
+- **BEAR Probe 评估并无新意**：一位成员质疑 [BEAR Probe evaluation method](https://aclanthology.org/2024.findings-naacl.155/) 的新颖性，认为它与现有的 MCQ 评估方法相似。
+   - 其他人表示赞同，指出该论文通过检查 LM 是否为正确陈述分配最高 log-likelihood 来评估模型的方法并不新鲜。
+- **RAG 数据库泄露可回溯以揭露 PII**：一位成员分享了一篇有趣的论文 ([https://arxiv.org/abs/2505.12540](https://arxiv.org/abs/2505.12540)) 和 [Twitter thread](https://twitter.com/rishi_d_jha/status/1925212069168910340)，关于从泄露的 RAG 数据库中回溯 PII（个人身份信息）。
+   - 他们指出，即使数据库是以 embeddings 而非文本形式泄露的，敏感信息仍然可以被恢复。
+- **Adapter 是在翻译还是在改变表示？**：在 **Platonic Representations Hypothesis**（柏拉图式表示假设）的背景下，一位成员质疑 Adapter 仅仅是在翻译表示还是在实质性地改变它们。
+   - 另一位成员承认对该假设不熟悉，但认为其工作机制很有趣，且分享的含义非常重要，并引用了这篇 [paper](https://arxiv.org/abs/2505.13738)。
+
+
+  
+
+---
+
+### **Eleuther ▷ #[lm-thunderdome](https://discord.com/channels/729741769192767510/755950983669874798/1374573993977315430)** (34 messages🔥): 
+
+> `Qwen 2.5 GSM8k Evaluation, lm-evaluation-harness PR issue, Qwen 2.5 Evaluation Prompt` 
+
+
+- **Qwen 2.5 GSM8k 分数复现尝试**：一位成员尝试复现 **Qwen 2.5** 报告的 **GSM8k 分数**，并询问评估时使用了什么提示词（prompt）。
+   - 另一位成员表示他们将起草一个配置，并指出 **Qwen** 在评估中偏好 **CoT (Chain of Thought) 变体**，类似于 harness 上的 `gsm8k_cot`，并链接到了他们的 [gsm8k_prompt.txt](https://github.com/QwenLM/Qwen/blob/main/eval/gsm8k_prompt.txt)。
+- **LM harness 断言错误已修复**：一位成员报告了 `lm-evaluation-harness` 新任务 PR 中的测试失败，原因是与 `doc_to_text` 和 `target_delimiter` 中的空格相关的 `AssertionError`，链接至 [PR #3006](https://github.com/EleutherAI/lm-evaluation-harness/pull/3006)。
+   - 解决方案是在 **YAML** 配置文件中设置 `target_delimiter: ""`。
+- **Qwen 2.5 评估提示词问题**：一位成员报告称，使用命令 `lm_eval --model hf --model_args pretrained=Qwen/Qwen2.5-0.5B --tasks gsm8k --device cuda:0 --batch_size 8` 得到的 **GSM8k** 分数远低于 **Qwen 2.5** 官方报告的分数。
+   - 尽管设置了 `--output_path` 和 `--log_samples`，模型输出仍未被保存，但他们被引导参考 [Qwen2.5-llm](https://qwenlm.github.io/blog/qwen2.5-llm/)。
+
+
+  
+
+---
+
+
+### **Notebook LM ▷ #[announcements](https://discord.com/channels/1124402182171672732/1182376564525113484/1374492604221100095)** (2 messages): 
+
+> `Audio Overviews, Video Overviews, Google I/O` 
+
+
+- **音频概览（Audio Overviews）现已支持自定义**：用户现在可以控制 **音频概览** 的长度，提供短（**约 5 分钟以上**）、长（**约 20 分钟以上**）和默认（**约 10 分钟以上**）设置，目前仅支持 **英语**。
+   - 这允许用户自定义 AI 主持人讨论源内容的深度和长度。
+- **Google I/O 主旨演讲在 NotebookLM 中总结**：一份总结了今年 **Google I/O** 主旨演讲所有内容的笔记本可在[此处](https://g.co/notebooklm/io2025)获取。
+   - 未提供进一步信息。
+- **视频概览（Video Overviews）功能预览已发布在 X 上**：新功能 **视频概览** 的预览已发布在 [X](https://x.com/NotebookLM/status/1924938813018653028) 上。
+   - 未提供进一步信息。
+
+
+  
+
+---
+
+
+### **Notebook LM ▷ #[use-cases](https://discord.com/channels/1124402182171672732/1124403655819415592/1374570711804542976)** (30 messages🔥): 
+
+> `NotebookLM PDF Upload, AI Studio and Webpage Reading, Project Astra Improvements, Gemini App Features, Video Overviews Languages` 
+
+
+- **PDF 上传与课程内容创作火力全开！**：用户通过在 Chrome 中打印为 **PDF** 并作为源文件上传取得了成功，利用了 Studio 面板中的 **学习指南 (Study Guide)**、**简报文档 (Briefing Doc)**、**时间线 (Timeline)** 和 **常见问题解答 (FAQ)** 功能。
+   - 一位用户还强调了生成针对特定内容方面（如源文件之间的异同）的自定义 **音频概览**（播客）的能力，以及 Chat 面板中的 **思维导图 (MindMap)** 功能。
+- **AI Studio 的网页处理变通方案！**：一位用户指出 **AI Studio** 缺乏内置的网页阅读功能，建议采用将网页打印为 **PDF** 再上传的变通方法。
+   - 另一位用户分享说他们的上传有时会失败，并提到必须切换到另一个账号才能解决该问题。
+- **Project Astra 与 Gemini 的 AI 联盟！**：成员们讨论了 **Project Astra** 及其对 **Gemini app** 的潜在改进，包括屏幕共享、视频通话以及更快、更自然的响应。
+   - 一位用户提到他们不久前在手机上体验过此功能，但由于功能太新无法识别音乐，因此不太实用。
+- **音频概览首发仅限英语？**：一位成员询问 **视频概览** 在发布时是否支持多种语言。
+   - 另一位成员认为很可能会先从英语开始。
+- **Gemini 2.5 Pro 即将到来？**：一位用户询问是否有计划将 **NotebookLM Plus** 更新为 **Gemini 2.5 Pro**。
+   - 目前尚不清楚该功能何时能够实现。
+
+
+  
+
+---
+
+### **Notebook LM ▷ #[general](https://discord.com/channels/1124402182171672732/1124402182909857966/1374464505748262984)** (136 messages🔥🔥): 
+
+> `政治审查, 更长的音频, NotebookLM 更新, Gemini 功能, 其他语言的视频概览` 
+
+
+- **用户规避政治审查**：用户发现将文本替换为**星球大战角色**可以绕过过滤器。
+   - 这让用户能够观察到系统实施了多少审查。
+- **NotebookLM 将支持更长的音频**：用户讨论了**音频录制**被限制在 **15-30 分钟**的问题。
+   - 一位用户建议使用另一个 **LLM 对内容进行更好的结构化处理，然后重新添加为源文件**，以绕过此限制。
+- **NotebookLM 发布更新**：NotebookLM 发布了关于 **Video Overviews** 的博客文章。
+   - 用户指出，必须将**输出语言**设置为**英语**才能正常运行。
+- **昂贵的 Gemini 功能**：用户对新的 Gemini 功能定价进行了辩论，一位用户声称在没有优惠的情况下价格为 **$250/月**。
+   - 其他人指出，实际上前 **3 个月**为 **$125/月**，之后才是 **$250/月**。
+- **聊天记录消失**：用户报告聊天记录在浏览器关闭后会消失，希望能够保存。
+   - 建议将每个回答都保存为笔记，并将其作为一项功能建议提交。
+
+
+  
+
+---
+
+
+### **Latent Space ▷ #[ai-general-chat](https://discord.com/channels/822583790773862470/1075282825051385876/1374476656273789059)** (146 messages🔥🔥): 
+
+> `Google I/O 2025, Gemma 3n, Stitch by Google, OpenAI Structured Outputs, Sam Altman 和 Jony Ive` 
+
+
+- **Google Gemini 在 I/O 2025 上被揭晓为 AI 操作系统**：在 **Google I/O 2025** 上，Gemini 被展示为一个全面的 AI 操作系统，功能包括 **Gemini Live, Imagen 4, Veo 3, Deep Research, Canvas, Gemini in Chrome, Interactive Quizzes**，以及默认使用更快的 **2.5 Flash**。
+   - 此外，Google 推出了 **AI Pro 和 Ultra 计划**，预览了用于自主协助的 **Agent 模式**，并强调了 **Gemini 2.5 Pro** 领先的 LLM 性能；一些人认为“AI 操作系统”这个词是“点击诱饵式的废话”。
+- **Google 的 Gemma 3n 发布小型模型预览**：Google 宣布了 **Gemma 3n** ([文档](https://ai.google.dev/gemma/docs/gemma-3n#parameters)) 的预览版，这是一个在 HuggingFace ([集合](https://huggingface.co/collections/google/gemma-3n-preview-682ca41097a31e5ac804d57b)) 上提供的“非常酷的小型模型”。
+   - 此次发布似乎是为了取代之前的 **Gemma 3** **1B 和 4B 参数**版本，而较大的 **12B 和 27B 参数**模型仍然可用。
+- **Google Labs 的 Stitch 是 AI 驱动的 UI/UX 设计工具**：**Stitch by Google Labs** 是由 DeepMind 模型驱动的 Galileo AI 的进化版，能够利用 **Gemini 和 Imagen** 快速生成设计和 UI ([X 帖子](https://xcancel.com/stitchbygoogle/status/1924947794034622614))。
+   - 功能包括自动主题更新、产品图像调整、多语言文案生成以及导出前端代码的能力；Google 收购了 Galileo AI 并将其更名为 Stitch ([探索](https://www.usegalileo.ai/explore))。
+- **OpenAI 改进了 Structured Outputs 并致谢 LLGuidance**：OpenAI 开发者推出了 **Structured Outputs** 的改进，包括带有严格模式（strict mode）的并行函数调用，以及对 **字符串长度/格式、数字的最小/最大范围、以及数组元素的最小/最大数量**等关键字的支持 ([X 帖子](https://xcancel.com/OpenAIDevs/status/1924915341052019166))。
+   - 此次更新对 **LLGuidance 团队**的基础性工作表示了感谢；一位成员提到，终于可以实现“数组元素最小/最大值”功能来解决一个长期以来的痛点。
+- **Sam Altman 和 Jony Ive 联手设计下一代 AI 计算机**：**Sam Altman** 和 **Jony Ive** 正在合作开发新一代 **AI 驱动的计算机** ([X 帖子](https://xcancel.com/sama/status/1925242282523103408?s=46&t=b7l37rB6wtbyAh6ah1NpZQ), [公告](https://openai.com/sam-and-jony/))。
+   - 猜测集中在简化日常任务和新设备形态等优势上，但也承认了高成本和隐私担忧等潜在问题；一位朋友在 Humane 的室友将参加该项目的面试。
+
+
+  
+
+---
+
+### **GPU MODE ▷ #[general](https://discord.com/channels/1189498204333543425/1189498205101109300/1374471421035675690)** (12 messages🔥): 
+
+> `Multihead GRU Layers in Cute Kernels, Warp Specialization Algorithms, Loss Spikes in Softmax-Attention-1b, Training Time Indication, RNN vs Softmax Performance at Different Scales` 
+
+
+- **Multihead GRU 层在 Cute Kernels 中亮相**：使用 **Triton** 编写的 Multihead GRU 层已添加到 [cute-kernels](https://github.com/open-lm-engine/cute-kernels/tree/main/cute_kernels/modules) 中，支持在多个 SMs 之间并行化。
+- **Softmax-Attention-1b 的 Loss Spikes**：一名成员询问了 softmax-attention-1b 上随机出现的 Loss Spikes（大约每 1k 次迭代出现一次？）。
+   - 这些尖峰是由于 **mup** 引起的，在这种情况下需要非常高的学习率（**0.01**），这可能在训练初期导致轻微的不稳定性；另一名成员则表示 *不，它相当稳定*。
+- **在大规模下 RNN 落后于 Softmax**：173M 规模的 **RNN** 比 softmax 快，但在 1B 规模下，它要慢 2 倍。
+
+
+  
+
+---
+
+
+### **GPU MODE ▷ #[triton](https://discord.com/channels/1189498204333543425/1189607595451895918/1374594727969816589)** (4 messages): 
+
+> `Triton autotuner, extern_elementwise API, Blackwell support` 
+
+
+- **Auto-Tune Triton**：一名成员询问是否可以将某种逻辑添加到 **Triton autotuner** 中，或者它是否已经执行了类似的操作。
+- **extern_elementwise API 问题**：一名成员在使用 `extern_elementwise` API 尝试进行 device function 调用时遇到了 **TypeError: unhashable type: 'pointer_type'** 问题，特别是在处理指针参数时。
+- **Blackwell 支持热议**：一名用户询问 **3.3.0** 版本是否支持 **5090**，或者是否计划在下一个版本中提供 **Blackwell support**。
+   - 另一名成员建议尝试 **3.3.1** 版本，在经历 `computeCapability not supported` 错误后，*David* 应该已经在该版本中修复了此问题。
+
+
+  
+
+---
+
+
+### **GPU MODE ▷ #[cuda](https://discord.com/channels/1189498204333543425/1189607726595194971/1374662161292464169)** (9 messages🔥): 
+
+> `__reduce_add_sync, asynchronous wgmma pipelines Hopper, complete::tx_bytes async TMA loads, wait_group<0> consumer` 
+
+
+- **理解 `__reduce_add_sync` 的行为**：一名成员试图理解 [`__reduce_add_sync`](https://docs.nvidia.com/cuda/cuda-c-programming-guide/#warp-reduce-synopsis) 的行为并对输出感到困惑，原本期望当 `mask=0xFF` 时，线程 0-7 的输出将是前 8 个线程的和，而其他线程不参与。
+   - 另一名成员解释说，每个调用的线程**必须在 mask 中设置自己的对应位**，并且 mask 中命名的所有未退出线程必须执行相同的 intrinsic 并带有相同的 mask，否则结果是未定义的；并补充说不在 mask 中的线程不应执行该指令（或使用另一个 mask 执行）。
+- **Hopper 架构上的异步 WGMMA 流水线引发疑问**：一名成员询问了 Hopper 架构上的异步 wgmma 流水线，指出 TMA 加载是使用 **complete::tx_bytes** 修饰符执行的，这会完成生产者的 mbarrier 相位，通知消费者 Smem 中的数据可用。
+   - 然而，他们很难在消费者端看到其*纯异步*的特性，因为在发布异步 wgmma 指令后，消费者会通过 **wait_group<0> 指令**等待这些 wgmma 指令完成，这引入了同步。
+- **异步 WGMMA 指令的 `complete::tx_bytes` 等效项**：同一名成员询问是否存在异步 wgmma 指令的 `complete::tx_bytes` 等效项，这样消费者就不需要引入 **wait_group<0> 同步**，从而避免在处理过程中（在 K tiles 之间）使 wgmma 指令产生某种程度的串行化。
+   - 他们链接到了 [cudaforfun.substack.com](https://cudaforfun.substack.com/p/outperforming-cublas-on-h100-a-worklog)，引用该教程作为他们问题的基础。
+
+
+  
+
+---
+
+
+### **GPU MODE ▷ #[algorithms](https://discord.com/channels/1189498204333543425/1189861061151690822/1374568670096785419)** (3 messages): 
+
+> `MCMC, Variational Inference` 
+
+
+- **Markov Chain Monte Carlo 方法非常酷**：一名成员表示 **Markov Chain Monte Carlo (MCMC)** 非常酷，他们正在参加一门重点关注该内容的课程。
+   - 该成员补充说这是一个有趣的话题，他们也很喜欢 **variational inference**。
+- **Variational Inference 同样受到喜爱**：另一名成员提到也喜欢 **variational inference**。
+   - 未提供更多细节。
+
+
+  
+
+---
+
+### **GPU MODE ▷ #[cool-links](https://discord.com/channels/1189498204333543425/1189868872887705671/1374497741329137766)** (2 messages): 
+
+> `Google Gemini Diffusion, Block Diffusion, KV Cache` 
+
+
+- **谷歌全面拥抱 Diffusion**: 谷歌发布了 [Gemini Diffusion](https://deepmind.google/models/gemini-diffusion/)，用户观察到谷歌决定转向 **diffusion models**。
+   - 一位成员打趣道，他们可能正在通过 **kv_cache** 实现 **block diffusion** 以提升速度。
+- **Block Diffusion：一种 KV Cache 提速黑科技？**: 一位用户推测谷歌实现了 **block diffusion**，通过 **kv_cache** 来加速 Gemini。
+   - 该评论者链接了一个关于 [Block-Diagonal Low-Rank Linear Multi-Head Self-Attention](https://m-arriola.com/bd3lms/) 的项目。
+
+
+  
+
+---
+
+
+### **GPU MODE ▷ #[beginner](https://discord.com/channels/1189498204333543425/1191300313928433664/1374837303830384791)** (1 messages): 
+
+> `Elementwise Kernel, Vectorized Loads/Stores` 
+
+
+- **向量化加载提升 Elementwise Kernel 性能**: 一位成员询问简单的 **elementwise addition kernel** 是否能从 **vectorized loads/stores** 中获益，例如让 N / 4 个线程每个处理 `float4` 操作。
+   - 该问题集中在可能优化 GPU kernel 中的内存访问模式。
+- **float4 操作**: 讨论集中在利用 `float4` 操作来增强内存访问模式。
+   - 目标是通过使用向量化加载和存储来提高 GPU kernel 的效率。
+
+
+  
+
+---
+
+
+### **GPU MODE ▷ #[torchao](https://discord.com/channels/1189498204333543425/1205223658021458100/1374478065383641199)** (1 messages): 
+
+> `OpenAssistant/oasst1 dataset, Default settings` 
+
+
+- **OpenAssistant 数据集：一座金矿？**: 一位成员发现 **OpenAssistant/oasst1 dataset** 对于获得*良好的结果*非常有用。
+   - 他们报告称，在现有配置中使用 **default settings** 取得了成功。
+- **默认配置胜出**: 使用标准参数对 **OpenAssistant dataset** 进行了实验。
+   - 用户表示，**default settings** 在无需修改的情况下就产生了令人满意的结果。
+
+
+  
+
+---
+
+
+### **GPU MODE ▷ #[off-topic](https://discord.com/channels/1189498204333543425/1215328286503075953/1374697236105138176)** (2 messages): 
+
+> `Elon Musk buying GPUs, 1 million GPU facility, dotnet runtime PR` 
+
+
+- **Elon 计划开启 GPU 购物狂欢**: Elon Musk 表示[他预计将继续从 Nvidia 和 AMD 购买 GPU](https://www.cnbc.com/2025/05/20/elon-musk-says-he-expects-to-keep-buying-gpus-from-nvidia-and-amd.html)。
+- **疯狂的百万级 GPU 设施**: 一位成员对“*100 万个 GPU 的设施*”这一说法做出了反应，回复了一个 gigachad 表情符号和缩写 lmao。
+- **.NET runtime pull request**: 一位成员分享了 dotnet runtime 仓库的一个 [pull request 链接](https://github.com/dotnet/runtime/pull/115762)。
+
+
+  
+
+---
+
+
+### **GPU MODE ▷ #[irl-meetup](https://discord.com/channels/1189498204333543425/1218444432588800010/)** (1 messages): 
+
+viranchee: 未来 30 天内在旧金山（SF）有任何线下活动吗？
+  
+
+---
+
+
+### **GPU MODE ▷ #[self-promotion](https://discord.com/channels/1189498204333543425/1288557096404516945/1374775925362786354)** (1 messages): 
+
+> `Multi-Agent Hackathon, Tenstorrent hardware, Koyeb cloud platform` 
+
+
+- **Multi-Agent 黑客松在旧金山启动！**: 一场为期一天的黑客松将于 5 月 31 日星期六在旧金山举行，旨在构建、部署和基准测试包括 **Image, Video, 和 LLMs** 在内的多模态工作流。
+   - 该黑客松将利用 **Tenstorrent hardware** 和 **Koyeb's cloud platform**，活动详情和注册请访问 [lu.ma/pkhmut6r](https://lu.ma/pkhmut6r)。
+- **Tenstorrent 与 Koyeb 助力 Multi-Agent 工作流**: Multi-Agent 黑客松将使用 **Tenstorrent hardware** 和 **Koyeb's cloud platform** 进行构建和基准测试。
+   - 参与者可以期待处理涵盖 **Image, Video, 和 LLMs** 的多模态工作流，这将是一次前沿的开发体验。
+
+
+  
+
+---
+
+### **GPU MODE ▷ #[🍿](https://discord.com/channels/1189498204333543425/1298372518293274644/1374746280198279288)** (7 条消息): 
+
+> `KernelBench, KernelBook, GRPO, NVCC logs, RL Baseline` 
+
+
+- **KernelBench 用于评估**: 成员们确认 **KernelBench** 旨在用于评估，而 **KernelBook** 适用于训练，特别是针对正确性。
+   - 有人指出，对于 **GPQA** 等任务，基础模型在 large k 的 pass@k 指标上通常扩展性最好，这与 instruct 模型或针对特定领域的微调模型不同。
+- **RL Baseline 是理想的起点**: 理想情况下，**RL baseline** 应该从 **Devin** 对其 kernel 模型 (**Kevin**) 所做的工作开始。
+   - 提议的设置包括为每个 kernel 生成 **NL queries** 以形成 Query:Kernel 对，奖励编译、正确性以及相对于基准的性能，并在不使用显式推理步骤的情况下进行 **GRPO**。
+- **NVCC 日志的迭代**: 目标是高效地迭代 **nvcc logs** 和基准测试以进行优化。
+   - 版本 1 将学习使用内置方法实现显式的 kernel 查询（为 x 编写具有优化 y 和 z 的 kernel），而版本 2 将学习根据日志/指标进行推理，并在没有显式指令的情况下进行调整（让 kernel 更快！）。
+
+
+  
+
+---
+
+
+### **GPU MODE ▷ #[reasoning-gym](https://discord.com/channels/1189498204333543425/1316377974672588850/)** (1 条消息): 
+
+rasdani: 太棒了！期待论文 🙂
+  
+
+---
+
+
+### **GPU MODE ▷ #[submissions](https://discord.com/channels/1189498204333543425/1343002583001726986/1374465244226650283)** (55 条消息🔥🔥): 
+
+> `AMD MI300 Performance, amd-mixture-of-experts, amd-mla-decode, amd-fp8-mm, Workflow Timeouts` 
+
+
+- **MI300 冲刺：Mixture of Experts**: 多位用户向 **MI300** 上的 `amd-mixture-of-experts` 排行榜提交了结果，时间从 **7.883 ms** 到 **9.73 ms** 不等，用户 <@1173619488730665011> 以 **8.82 ms** 获得 **第一名**。
+   - 用户 <@298836525158891520> 指出，他们在评估脚本中不得不使用了一些 *hacky* 的手段，但希望之后不会再有问题。
+- **FP8-MM 对决：亚毫秒级较量**: `amd-fp8-mm` 排行榜收到了多次提交，展示了在 **MI300** 上极快的执行时间，用户 <@1173619488730665011> 以 **120 µs** 稳居 **第一名**。
+   - 用户 <@298836525158891520> 的多次提交时间都在 **130 µs** 左右，始终保持在排名前列。
+- **MLA Decode 冲刺：毫秒必争**: **MI300** 上 `amd-mla-decode` 排行榜的提交时间从 **1.240 ms** 到 **12.464 ms** 不等，其中 <@268205958637944832> 以 **1240 ms** 获得 **第一名**。
+   - 用户 <@981391010137530449> 以 **8606 ms** 的时间获得第 4 名。
+- **超时困扰：Workflow 难题**: 用户 <@557943190045327360> 和 <@325883680419610631> 报告了 `amd-mixture-of-experts` 的 workflow 在没有 secrets 运行时出现超时的问题。
+   - 他们请求协助，但图像分析返回结果显示 *无法提供帮助*。
+
+
+  
+
+---
+
+
+### **GPU MODE ▷ #[status](https://discord.com/channels/1189498204333543425/1343350424253632695/1374842070078062692)** (2 条消息): 
+
+> `amd-mla-decode, MLA running on GPU` 
+
+
+- **Cluster-Bot 无法更改任务文件**: Cluster-Bot 报告称，目前无法更改现有问题 `amd-mla-decode` 的任务文件，涉及文件包括：`reference.py`、`eval.py` 和 `utils.py`。
+- **修复后 MLA 在 GPU 上运行**: 成员 <@268205958637944832> 修复了 **MLA** 未能正确在 **GPU** 上运行的问题。
+   - 之前向排行榜提交过结果的成员被提醒重新提交。
+
+
+  
+
+---
+
+
+### **GPU MODE ▷ #[factorio-learning-env](https://discord.com/channels/1189498204333543425/1354169122107293786/1374584022096941178)** (19 条消息🔥): 
+
+> `Easier Integration Interface for External Agents, Championship Build (4M SPM), Project Sid, Multi-agent Minecraft simulator` 
+
+
+- **外部 Agent 集成接口问题启动**: 一位成员创建了 issue [#201](https://github.com/JackHopkins/factorio-learning-environment/issues/201) *为外部 Agent 提供更简单的集成接口*。
+- **Factorio 4M SPM 冠军构建**: 成员们分享了一个 Factorio **4M SPM** (每分钟科技点) 冠军构建的 [YouTube 视频](https://www.youtube.com/watch?v=gikrR2Xuvvs)。
+   - 他们询问大家是否都抽时间观看了这个构建。
+- **AI 文明项目 Project Sid 论文分享**: 一位成员分享了关于 AI 文明的 **Project Sid** 论文链接：[https://arxiv.org/pdf/2411.00114](https://arxiv.org/pdf/2411.00114)。
+- **多 Agent MineLand Minecraft 模拟器出现**: 一位成员分享了 **MineLand**，这是一个可在 [GitHub](https://github.com/cocacola-lab/MineLand) 上获得的多 Agent Minecraft 模拟器。
+
+
+  
+
+---
+
+### **GPU MODE ▷ #[amd-competition](https://discord.com/channels/1189498204333543425/1359640791525490768/1374578417097248861)** (7 条消息): 
+
+> `MLA-Decode Data Generator, Ranked sequence length in DRAM` 
+
+
+- **MLA-Decode 数据生成器仅在 CPU 上运行**：一位用户发现 *reference.py* 中的 **mla-decode 数据生成器**从未设置设备，因此**仅在 CPU 上运行**。
+   - 团队迅速修复了此问题，并建议用户在修复后**重新提交他们的工作**。
+- **Ranked 序列长度超过 DRAM**：一位用户遇到了 **ranked 上最大的序列长度**过长，无法放入 **DRAM** 的问题，导致了延迟。
+   - 该用户提到了一种 *hacky*（临时凑合）的修复方法，并决定维持现状以**保持方案的一致性**，除非它引发进一步的问题。
+
+
+  
+
+---
+
+
+### **GPU MODE ▷ #[cutlass](https://discord.com/channels/1189498204333543425/1362196854460383353/1374763345273553017)** (10 条消息🔥): 
+
+> `WSL2 performance with CUDA, PTX or SASS dumping with cute.compile, CuTe DSL Feedback` 
+
+
+- **WSL2 提升 CUDA 性能**：一位用户报告称在 Windows 中使用 **WSL2** 获得了显著的性能提升，特别是在通过 [开发者设置](https://docs.nvidia.com/cuda/wsl-user-guide) 在 Nvidia 控制面板中启用性能计数器之后。
+   - 他们强调了在没有 Wayland ozone 故障问题的情况下，以全 HDR 开发 CUDA 的优势，同时使用了最新的 **Nvidia 驱动程序**和 **CUDA toolkit**。
+- **CuTe 的 PTX 导出功能延迟**：一位用户询问了在从 Python 使用 `cute.compile` 编译 kernel 后导出生成的 **PTX** 或 **SASS** 的方法，并建议使用 **Nsight Compute**。
+   - 一位成员提到 [导出 PTX 的功能](https://github.com/NVIDIA/cutlass/issues/2302) 已计划在未来版本中发布，虽然目前尚不可用，且 AOT 模型目前也不存在。
+- **CuTe DSL 获得热烈好评**：一位用户对 **CuTe DSL** 表示了高度赞赏，指出它“*几乎让 kernel 编程变得令人愉悦。*”
+   - 这一积极反馈强调了该工具在改善 kernel 开发体验方面的潜力。
+
+
+  
+
+---
+
+
+### **GPU MODE ▷ #[singularity-systems](https://discord.com/channels/1189498204333543425/1373414141427191809/1374495958590554123)** (1 条消息): 
+
+> `picograd, Rust, Python, FFN, RNN` 
+
+
+- **Picograd 纯粹专注于 Rust**：**picograd** 项目旨在实现 **FFN**、**RNN**、**LSTM** 和 **GPT** 等基础网络的训练和推理，目前将仅专注于 [单一的 Rust 实现](https://github.com/j4orz/picograd)。
+   - 最初考虑的 **Python** 实现已被废弃，以避免在项目早期阶段分散过多资源。
+- **Picograd 的 Python 实现推迟**：最初计划为 **picograd** 创建 **Python** 实现，可能遵循 **PT2** 和 **Cutlass4** 的方法。
+   - 然而，由于项目仍处于早期阶段，最终决定推迟 Python 版本，以便集中精力进行 **Rust** 实现。
+
+
+  
+
+---
+
+### **aider (Paul Gauthier) ▷ #[general](https://discord.com/channels/1131200896827654144/1131200896827654149/1374464703379542016)** (62 条消息🔥🔥): 
+
+> `Gemini 2.5 Flash Preview, Aider 和 Jules 作为后台 Agents, Aider Polyglot 基准测试, Copilot 开源` 
+
+
+- **Google 的 Gemini 2.5 Flash Preview 引起关注**：Google 发布了 [Gemini 2.5 Flash Preview](https://openrouter.ai/google/gemini-2.5-flash-preview-05-20)，引发了对其能力的讨论，特别是关于其**速度**、**成本**以及**对编辑格式的遵循**。
+   - 一位用户担心 GPTs agents 在初始训练后无法从提供的额外信息中学习。另一位用户澄清了这一误解，解释说**上传的文件被保存为“知识”文件**，供 Agent 在需要时参考，但*它们不会持续修改 Agent 的基础知识*。
+- **后台 Agents 引起疲劳感**：成员们对像 **Jules** 和 **Cursor** 这样的后台 Agents 表示疲劳，理由是担心 *AI 还不够聪明，无法在没有大量人工干预的情况下完成实际的开发工作*。
+   - 一位成员测试了 **Jules**，但*印象并不深刻*，尽管他们表示*免费还是很不错的！*。
+- **Aider 登上 Gemini 2.5 Pro 首页**：**Aider Polyglot** 被列为 [Gemini 2.5 Pro 首页](https://deepmind.google/models/gemini/pro/)上的基准测试之一。
+   - 有人担心 Gemini 尽管很聪明，但却**忽略了约定**，这促使一些用户退回到 **3.7** 版本。
+- **Copilot 开源，Aider 可能借鉴的代码**：成员们讨论了 **Copilot** 开源的影响，探索了在源代码和 Agentic 功能方面可以转移到 **Aider** 的潜在部分。
+   - 有人指出 **Copilot** 使用 **RAG** 和语义向量从向量数据库中检索相关文本，而 **Aider** 则将 repo map 和对话保存为纯文本。
+- **Mistral 的 Devstral 声称在编程 Agents 中排名第一**：[Mistral 的 Devstral](https://mistral.ai/news/devstral) 声称它是编程 Agents 的最佳选择。
+   - 成员们表示怀疑，注意到其 **24B 参数**，其中一人问道：*他们把它塞进 4090 了吗？*
+
+
+  
+
+---
+
+
+### **aider (Paul Gauthier) ▷ #[questions-and-tips](https://discord.com/channels/1131200896827654144/1133060505792159755/1374486322558931025)** (20 条消息🔥): 
+
+> `Gemini 2.5 Flash 基准测试, Aider 与 Pip 包, 运行 IPYNB Notebooks, --read 标志问题, 来自文件的上下文` 
+
+
+- ****Gemini 2.5 Flash** 基准测试结果**：一位用户询问是否可以使用新升级的 **Gemini 2.5 Flash** 更新基准测试，并引用了[此 Discord 链接](https://discord.com/channels/1131200896827654144/1374446248039551057/1374454536759939193)。
+- **Aider 提问：Pip 包能否提供项目上下文？**：一位用户询问是否可以将已安装的 **Python** *whl 包*中的文件添加到 **Aider**，以提供项目相关的上下文，例如框架、版本和*不该做*的事情。
+   - 另一位用户提到他们使用一个名为 **ai-guidelines.md** 的文件，他们总是使用 `/read` 将其添加到上下文中，该文件包含项目指南并随项目发展而演变。
+- **使用 Aider 运行 IPYNB Notebooks**：一位用户想知道是否可以使用 `/run` 命令运行 **IPYNB notebook** 并将输出自动添加到聊天中，类似于运行 *.py* 文件。
+   - 他们注意到，虽然 notebook 可以在 Web 环境中运行，但它不会自动将输出添加到聊天中。
+- **`--read` 标志引起的混乱**：一位用户在尝试使用 `--read=src/*.ts --read=src/*.tsx` 标志传递所有文件时遇到了 `zsh: no matches found` 错误。
+   - 另一位用户建议删除等号并使用 `--read src/*.ts`，但指出除非为每个文件使用单独的 `--read` 标志，否则这只会使第一个匹配项变为只读，其余为读/写。另一位用户通过直接提供整个文件夹成功加载了文件。
+- **Aider vs Cursor：简洁是 Prompt 的灵魂**：一位用户比较了 **Aider** 和 **Cursor**，指出 **Aider** 对简单 `/ask` 提示的响应更*精炼*，不那么啰嗦，且更易于浏览。
+   - 该用户包含了聊天输出的图像，并假设 Aider 的简洁特性是否源自 [`ask_prompts.py`](https://cdn.discordapp.com/attachments/1133060505792159755/1374775647964106812/image.png?ex=682f4718&is=682df598&hm=ccb359194e1105ee20d6fd8baae1818ccde3c0042457dc8e0ed4cf2e0446bb61&) 文件中的某一行。
+
+
+  
+
+---
+
+### **Manus.im Discord ▷ #[general](https://discord.com/channels/1348819876348825620/1349440650495398020/1374473275266039979)** (82 条消息🔥🔥): 
+
+> `RizzDial 营销, Manus 积分, Manus vs cluely.ai, Manus 图像生成, Manus 用于编程项目` 
+
+
+- **Manus 为 RizzDial 提供免费营销**：一位成员分享说，他们获得了一个从 Manus 那里听说其软件 [RizzDial](https://rizzdial.com/) 的潜在客户，并感叹 *Manus 正在为我的软件做免费营销*。
+   - 他们还链接了该交互过程的[录音](https://dxc03zgurdly9.cloudfront.net/72ae3288f57132e75e33ded5a8b9363870a7c7b8cd29f13094af7f934def2886/recording.wav)。
+- **Manus 积分消耗过快**：多位成员对 Manus 的 **积分使用 (credit usage)** 和 **每美元 Token 配额** 表示担忧。
+   - 一些用户建议推出类似于 ChatGPT 的 **免费版和高级版**。
+- **Manus 与 Cluely.ai 的对比**：一位用户询问 Manus 是否只是另一个 **Cluely.ai**，并提到了 *那个因为在大学作弊或其他原因被开除的孩子*。
+   - 他们还提到获得了 Inmo 的 **中国 AR 眼镜** 并进入了赛博空间。
+- **Manus 的图像生成并不惊艳**：一位成员感叹 *Manus 的图像生成太疯狂了 🔥 🔥🔥*，但另一位用户回应说效果并不好。
+   - 多位用户一致认为 Manus 的图像生成只是个 **噱头**，且生成的 **结果很差**。
+- **Manus 助力编程项目**：一位用户表示 *我的 IT 老师向我展示了 Manus，它在处理大型编程项目时非常好用*，并认为它是 *目前最强大的 AI*。
+   - 不过，他们提到在**为学校项目将代码转换为 Python** 时遇到了问题。
+
+
+  
+
+---
+
+
+### **Nous Research AI ▷ #[general](https://discord.com/channels/1053877538025386074/1149866623109439599/1374473962599481435)** (73 条消息🔥🔥): 
+
+> `音频输出参数, Gemma 访问, Gemini 扩散模型, WildChat-1M 数据集, Devstral 编程 Agent` 
+
+
+- **TTS 参数预估缩小**：成员们讨论了 **音频输出** 所需的参数数量，并以基于 Llama 的 TTS 模型 **Orpheus**（8B 参数）和 **Outetts**（1B 参数）为例。
+   - 有人建议，通过文本和音频输入的参数共享可以进一步减少参数量。
+- **Gemini 2.5 Flash 亮相**：成员们讨论了通过 AI Studio 访问 **Gemini 2.5 Flash 0520** 和 **Gemma 3** 的情况，一位成员注意到 Gemini 扩散模型似乎 *“有点害羞”*。
+   - 据悉，**Deep Think** 模型目前处于封闭测试阶段。
+- **扩散模型并行生成文本**：成员们讨论了扩散模型及其并行处理文本块的能力，以及它们在填充（infilling）等应用中进行 **非因果文本生成 (non-causal text generation)** 的潜力。
+   - 其他人想知道，当 KV cache 空间充足时，扩散模型是如何工作的，因为它们似乎并没有利用这一点。
+- **关于 WildChat 数据集的头脑风暴继续**：一位成员最初建议通过与 **Hermes-3-405B** 和 **DeepHermes-Mistral-24B** 的对话创建一个更好的 **WildChat 数据集**，但另一位成员建议通过 WildChat 提示词运行 Hermes 来共享数据集。
+   - 通过 WildChat 提示词运行 Hermes 的建议被认为是一个 *“更好、更自主且更具可操作性的方案”*。
+- **Devstral 编程 Agent 备受关注**：Mistral AI 发布了 [Devstral](https://mistral.ai/news/devstral/)，这是一个 **开源编程 Agent**。
+   - 尽管一些来源指出其基准测试表现并非特别惊艳，但由于它是开源的，这仍然是一个加分项。
+
+
+  
+
+---
+
+
+### **Nous Research AI ▷ #[ask-about-llms](https://discord.com/channels/1053877538025386074/1154120232051408927/1374541694640328704)** (5 条消息): 
+
+> `模型限制, AI 在教育中的应用, Hermes 3` 
+
+
+- **模型限制非常困难**：一位成员询问在受限的学校环境中，哪种模型最能紧跟指令，但另一位成员指出 *很难将模型限制在特定的领域或任务中*。
+   - 该成员对 **学生将 AI 完全替代老师** 表示担忧，并希望创造一个 **AI 增强学习而非取代人工教学** 的环境。
+- **尝试 Hermes 3**：一位成员建议在聊天频道中 **与 Hermes 3 交流**。
+   - 另一位成员建议使用 [chat.nousresearch.com](https://chat.nousresearch.com) 与 **Hermes 3** 对话。
+
+
+  
+
+---
+
+### **Nous Research AI ▷ #[interesting-links](https://discord.com/channels/1053877538025386074/1132352574750728192/1374470582544109578)** (2 messages): 
+
+> `Gemma 3n models, Matformer arch` 
+
+
+- **Gemma 3n 模型发布备受关注**：随着 **Gemma 3n 模型** 的新发布以及对 **Matformer 架构** 的重新关注，AI 模型领域出现了令人期待的进展。
+   - 更多信息可以在 [@ditpoo 的 X 帖子](https://x.com/ditpoo/status/1924910661483843820)中找到。
+- **Teknium 参与讨论**：讨论中提到了 ID 为 Teknium (<@187418779028815872>) 的成员。
+   - 未提供关于 Teknium 成员具体发言内容的细节。
+
+
+  
+
+---
+
+
+### **Modular (Mojo 🔥) ▷ #[general](https://discord.com/channels/1087530497313357884/1098713601386233997/1374539106033340457)** (19 messages🔥): 
+
+> `Claude Code with Mojo, Mojo Code Generation, AI coding assistance for Mojo, Cursor vs Claude` 
+
+
+- **Claude 在处理 Mojo 语法时遇到困难**：一位成员表达了使用 **Claude** 进行 **Mojo** 代码生成的挫败感，理由是频繁出现语法错误和代码不完整，特别是在 [Modular 文档](https://docs.modular.com/) 推荐使用之后。
+   - 另一位成员指出，**AI** 通常不精通新语言或系统编程，且 **Mojo** 与 **Python** 和 **C++** 的相似性可能会混淆 **LLM**。
+- **建议针对 Mojo 微调开源模型**：成员们建议使用 **开源模型** 并专门针对 **Mojo** 进行微调，而不是依赖 **Claude**。
+   - 一位成员认为，与手动实现相比，投入时间进行微调并不值得。
+- **Modular 提供代码生成工具的使用技巧**：一位成员分享了[在 Mojo 中使用代码生成工具的技巧](https://forum.modular.com/t/tips-on-using-code-generation-tools-with-mojo/1482?u=bradlarson)，强调了将 **开源仓库** 和 [docs.modular.com](https://docs.modular.com/) 作为上下文提供给 Claude Code / Cursor 的重要性。
+   - 在开源项目中预置 **Claude** 和 **Cursor** 规则可以提升功能表现；`claude-sonnet-3.7` 掌握一些 **Mojo** 的内部知识，但可能已经过时。
+- **相比 Claude，更倾向于使用 Cursor**：有成员提到，内部人员已使用 **Cursor** 生成了质量不错且相当复杂的 **Mojo** 代码，并成功利用开源仓库作为上下文。
+   - 据称，这比使用 **Claude** 更具优势。
+
+
+  
+
+---
+
+
+### **Modular (Mojo 🔥) ▷ #[mojo](https://discord.com/channels/1087530497313357884/1151418092052815884/1374516936448278578)** (42 messages🔥): 
+
+> `Float16 exp implementation, Mojo compile times, String null termination changes` 
+
+
+- **为什么 `exp` 缺少 `Float16` 实现**：Mojo 中的 `exp` 函数仅针对 `Float32` 和 `Float64` 实现，由于潜在的精度问题，`Float16` 值会被强制转换，正如 [GitHub issue](https://github.com/modular/modular/issues/3073) 中所讨论的。
+   - 虽然较低的精度可能是可接受的，但 `Float16` 计算中的累积误差可能会使结果失效，且 CPU 对 `fp16` 数学运算的支持并不普及，通常需要向上转换为 `fp32`。
+- **简单的 Mojo 编译耗时异常长**：一位用户报告称，在 Ubuntu 22.04 (WSL2) 和 Intel 12700K 环境下，使用 Mojo 25.3.0 版本编译一个极简单的 "Hello, Mojo!" 程序时，编译时间异常（3-4 秒）。
+   - 调查表明，该问题并非 Mojo 最新版本固有，可能与特定的安装环境或 WSL2 的文件系统性能有关；即使是 REPL 模式在执行 `var a = 5` 等简单命令时也会出现延迟。
+- **`--sanitize` 因 String 变更导致崩溃**：一位用户发现，升级到 Mojo 25.3 后，在 OSX 上运行带有 `--sanitize` 的代码会崩溃，这可能是由于 `String` 空终止符（null termination）的变更结合 `unsafe_ptr` 的使用导致的。
+   - 已[确认](https://example.com) *String 现在并不总是以空字符结尾*，需要调整代码以防止越界访问。
+
+
+  
+
+---
+
+### **Modular (Mojo 🔥) ▷ #[max](https://discord.com/channels/1087530497313357884/1212827597323509870/1374489593566462113)** (6 messages): 
+
+> `Modular max imports, Torch CustomOpLibrary, MLIR context errors, Modular Forum for issues` 
+
+
+- **Modular max 导入缺少源代码 🔎**：一位用户询问示例代码中看到的 `max` 导入的源代码。
+   - 一名成员回应称，*这些尚未完全开源，但你可以在你的环境中看到它们*。其中一些会调用 **C++** 代码，但你至少应该能看到相应的 **.pyi** 文件。
+- **Torch CustomOpLibrary 面临 MLIR 上下文问题 😵‍💫**：一位用户报告在使用 **torch 的 `CustomOpLibrary`** 实现时遇到 `RuntimeError: No active MLIR context` 错误。
+   - 该错误在尝试调用任何自定义算子（custom op）时发生，表明可能存在配置或设置问题。
+- **Modular Forum 成为问题迭代中心 🏛️**：一名成员建议在 [Modular Forum](https://forum.modular.com/) 上提交 Issue，以针对 **`CustomOpLibrary`** 和 **MLIR 上下文错误**相关的特定问题进行迭代。
+   - 论坛被认为是解决特定问题的更好场所。
+- **极简示例链接到 Modular Forum 上的 MLIR 问题 🔗**：一位用户创建了一个演示 **`CustomOpLibrary`** 的 **MLIR 上下文错误**的极简示例，并将其发布在 Modular Forum 上。
+   - 论坛帖子可以在[这里](https://forum.modular.com/t/no-active-mlir-context-with-new-customoplibrary-torch-integration/1491?u=bertaveira)找到。
+
+
+  
+
+---
+
+
+### **Yannick Kilcher ▷ #[general](https://discord.com/channels/714501525455634453/986699377257119794/1374605301528920247)** (29 messages🔥): 
+
+> `Pytorch Geometric, GATConv AssertionError, SGD vs Genetic Breeding, Concept entanglement vs fracture, Picbreeder` 
+
+
+- **用户遇到 `GATConv` 断言错误**：一位用户报告在向模型 forward 方法传递批处理输入时收到 `AssertionError: Static graphs not supported in 'GATConv'`，具体参数为 `x.shape: [batch_size, num_nodes, num_node_features]` 和 `edge_index.shape: [batch_size, num_nodes]`。
+   - 用户指出该模型（`torch_geometric.nn.GATConv`）似乎不支持批处理输入，这出乎意料，因为在遍历每个单一批次时训练循环运行正常。
+- **SGD 生成面条式代码表示**：一位用户分享了[一篇论文](https://arxiv.org/abs/2505.10465)，指出 **SGD 产生的内部表示类似于面条式代码（spaghetti code）**，其特征是随机纠缠的复制粘贴概念，虽然高效但人类无法理解。
+   - 论文质疑这种内部表示的“美感”对于可解释性之外的下游任务是否重要，并暗示确实重要，文中使用了通过开放式半手动遗传育种过程（例如 [Picbreeder](https://picbreeder.org/)）产生的 **CPPN**（2D 概念原型 Nerf）示例。
+- **纠缠表示与破碎表示之争**：一位用户认为“这更有可能是训练后的正则化”，例如网络在优化更简单表示的同时尝试优化预测自身输出，同时批评了“破碎化（fracturing）是有益的”这一论点。
+   - 一位参与者反驳说，重复的神经元表示通常对学习有益（例如 Dropout），冗余电路可以提高鲁棒性，且训练早期的冗余电路可以在后期实现专门化。
+- **随机性促进更简单的表示**：一位用户假设随机性鼓励简化的表示，并建议现代 **LLM 的单参数性能**与上述论文所反对的“表示纠缠”密切相关。
+   - 该用户引用了[这篇论文](https://arxiv.org/abs/2505.10465)并将“纠缠”等同于叠加（superposition），指出两篇论文都表明训练中的随机性会促进更简单、更抗扰动的表示。
+
+
+  
+
+---
+
+### **Yannick Kilcher ▷ #[paper-discussion](https://discord.com/channels/714501525455634453/1045297868136779846/1374493671109689385)** (14 messages🔥): 
+
+> `Physics of Language Models: Part 3.2, Knowledge Manipulation, Out-of-distribution abuse, Data contamination` 
+
+
+- **Physics of LMs 展示了知识操作（Knowledge Manipulation）的缺陷**：一篇名为 "Physics of Language Models: Part 3.2, Knowledge Manipulation" ([ssrn.com](https://ssrn.com/abstract=5250621)) 的论文研究了语言模型将存储的知识用于下游任务的能力，揭示了在**分类 (classification)**、**比较 (comparison)** 和**逆向搜索 (inverse search)** 方面的缺陷。
+   - 研究发现，除非在训练和推理过程中都使用 **Chain of Thoughts (CoTs)**，否则语言模型即使在简单的分类或比较任务中也表现挣扎，而在逆向知识搜索中的表现几乎为零。
+- **Out-of-Distribution 的热词化**：成员们讨论了 *out-of-distribution* 一词已成为流行语，通常缺乏清晰严谨的定义，导致其在 PR 中被滥用。
+   - 一位成员对该术语的过度使用表示反感，同时指出该论文采用了非典型的方法，并且在控制**数据污染 (data contamination)** 方面比大多数研究做得更好。
+- **论文讨论取消**：由于时间冲突（double-booking），每日论文讨论被取消，参与者已通过 **daily-paper-discussion** 小组收到通知。
+   - 向不在通知名单上的人表示歉意，并说明可联系 *k_nearest_neighbor* 以加入名单。
+
+
+  
+
+---
+
+
+### **Yannick Kilcher ▷ #[ml-news](https://discord.com/channels/714501525455634453/853983317044756510/1374461694620733581)** (17 messages🔥): 
+
+> `Gemma 3n, Google AI Edge, Anthropic AI, Humane AI Pin Failure, Rabbit R1 Failure` 
+
+
+- **Gemma 3n 发布**：Google 发布了其最新的模型 **Gemma 3n**，详见其[文档](https://ai.google.dev/gemma/docs/gemma-3n)。
+- **Google 宣布推出 AI Edge Small Language Models**：Google 宣布了具备多模态 RAG 函数调用（function calling）功能的 **AI Edge Small Language Models**，如[博客文章](https://developers.googleblog.com/en/google-ai-edge-small-language-models-multimodality-rag-function-calling/)所述。
+- **Anthropic 预告新发布**：**Anthropic** 在 [Twitter](https://fxtwitter.com/AnthropicAI/status/1925239440420831516) 上预告了即将发布的新内容。
+- **Humane AI Pin 和 Rabbit R1 惨败**：成员们指出 **Humane AI Pin** 和 **Rabbit R1** 遭遇失败，理由是很难超越手机的形态（form factor）。
+- **初创公司创始人梦想被 OpenAI 收购**：一位创始人在 [Twitter](https://x.com/teortaxesTex/status/1925293636628971845) 上分享了一篇帖子，表达了希望 **OpenAI 能收购其初创公司**的愿望。
+
+
+  
+
+---
+
+
+### **MCP (Glama) ▷ #[general](https://discord.com/channels/1312302100125843476/1312302100125843479/1374488741137223862)** (33 messages🔥): 
+
+> `Streaming transport adoption, Decoupling transport and wire protocols, MCP memory bank, OpenAI rolling out MCP support, Tool name constraints` 
+
+
+- **流式传输（Streaming Transport）受到关注**：成员们讨论了协议 `2025-03-26` 版本中流式传输的采用情况，其中一人指出 [VSCode](https://code.visualstudio.com/) 已经支持可流式化的 HTTP。
+   - 建议将传输协议与线路协议（wire protocols）解耦，因为 MCP 应该是传输无关的（transport agnostic）。
+- **寻找 MCP 记忆库（Memory Bank）**：一位成员寻求帮助，寻找一篇关于 MCP 记忆库的 Reddit 帖子，该记忆库可跨多个项目使用，并具有精美的 UI，兼容 Cursor、Cline 和 Roo。
+   - 他们提到 *在 Reddit 上看到一个帖子，展示了一个可以跨多个项目使用的记忆库 MCP，并且有一个用于探索该记忆库的精美 UI。*
+- **工具命名困扰**：人们对工具名称的严格命名限制表示担忧，特别是在 GitHub Copilot 中，以及命名空间（namespacing）带来的挑战。
+   - 建议包括使用类似于环境变量命名空间的系统，例如 `audio__play_track`。
+- **MCP 健康检查技巧**：成员们讨论了如何向 FastMCP 服务器添加健康检查路由，其中一人建议使用 `mcp.http_app()` 并将其作为 ASGI 子应用挂载到 FastAPI 中。
+   - 提供了一个使用 `@mcp.custom_route("/health", methods=["GET"])` 的示例，这是一种更可靠的方法，参见 [FastAPI Integration](https://gofastmcp.com/deployment/asgi#fastapi-integration)。
+
+
+  
+
+---
+
+### **MCP (Glama) ▷ #[showcase](https://discord.com/channels/1312302100125843476/1315696461316358175/1374762942570041395)** (11 条消息🔥): 
+
+> `MCP SDK, Auth server, Typescript, MCP resource server, Frontend CLI` 
+
+
+- **使用新 SDK 分离 MCP 资源服务器**：一篇关于使用新 **MCP SDK** (TypeScript) 将 **MCP resource server** 与 **Auth server** 分离的文章：[MCP Server with OAuth Typescript](https://portal.one/blog/mcp-server-with-oauth-typescript/)。
+- **前端 CLI 可访问版本发布**：一名成员一直在开发一个库，用于将任何 **frontend** 转换为适用于 **LLMs** 的 **CLI** 可访问版本，并启动一个 **MCP server**，以便在功能对等后让 LLM 通过代码导航你的前端：[MCP UI Bridge](https://santiagodcalvo.substack.com/p/mcp-ui-bridge-bridging-web-uis-and)。
+- **SmartBuckets 消除 RAG 瓶颈**：**LiquidMetal AI** 推出了 **SmartBuckets**，它将文件索引为向量和自动构建的知识图谱，以 serverless 方式运行，并暴露一个可以从任何语言调用的简单端点，直接连接到 **Anthropic** 的 **Model Context Protocol (MCP)**：[LiquidMetal AI](https://liquidmetal.ai/casesAndBlogs/mcp/)。
+- **Agent 作为 MCP Server 发布**：**mcp-agent** 发布了一项重大更新，允许 Agent 自身作为 **MCP servers** 运行，从而使任何 MCP 客户端都能调用、协调和编排 Agent，代码请见[此处](https://github.com/lastmile-ai/mcp-agent/tree/main/examples/mcp_agent_server)。
+- **MCP UI Bridge 带来面向 LLM 的可访问性**：一个名为 **mcp-ui-bridge** 的新库旨在通过单一、统一的开发工作，使 Web 应用程序对人类用户和 **Large Language Models (LLMs)** 具有原生且同等的可访问性，通过为现有 Web 应用添加语义化的 data-mcp-* 属性来实现，npm 地址在[此处](https://www.npmjs.com/package/mcp-ui-bridge)，GitHub 地址在[此处](https://github.com/SDCalvo/mcp-ui-bridge)。
+
+
+  
+
+---
+
+
+### **Cohere ▷ #[💬-general](https://discord.com/channels/954421988141711382/954421988783444043/1374486954330030171)** (23 条消息🔥): 
+
+> `Private Deployment Options with Cohere, Command A Slow Response Times, Entity Extraction and JSON Output Issues, Embed v4 and Bedrock Availability, Self-Hosting Command Models` 
+
+
+- **Cohere 为客户提供私有 LLM 部署**：Cohere 将私有部署作为其解决方案的核心部分，面向关注数据/LLM 主权的客户，提供灵活的部署选项；更多信息请联系 [sales@cohere.com](mailto:sales@cohere.com) 或 [support@cohere.com](mailto:support@cohere.com)。
+   - 一位 Cohere 员工表示：“在 Cohere，我们深切致力于保护您的隐私和安全，这就是为什么我们将私有部署作为我们解决方案的核心部分。”
+- **Command A 响应时间变慢**：用户报告 **command-a** 的响应时间比平时慢，特别是在使用 **structured response** 参数时。
+   - 一位 Cohere 员工确认目前没有紧急问题，并请求提供更多细节以便调查，建议他们发送邮件至 [support@cohere.com](mailto:support@cohere.com)。
+- **Command-R JSON 输出耗时 2 分钟**：一名用户报告了使用 **command-A** 和 **command-R** 模型进行实体提取时的问题，特别是在指定 **json_object** 作为输出时，导致请求挂起或耗时极长（2 分钟）。
+   - 他们指出，虽然输出 JSON 的文本版本运行正常，但 **response_format** 参数显著增加了响应时间；一个 **6405 input** 和 **2k output tokens** 的文档在不使用 **json_object** 的情况下约 **17 秒**即可返回。
+- **Embed v4 未来可能登陆 Bedrock**：一名用户询问了 **Embed v4** 在 **Bedrock** 上的可用性。
+   - 另一名用户简单地回答道：“它无处不在。”
+- **Command-* 模型最适合自托管**：一名用户表示，对于可以自托管的通用、个人聊天和助手模型，他们还没有发现比 **command-*** 模型更好的选择。
+
+
+  
+
+---
+
+### **Cohere ▷ #[🔌-api-discussions](https://discord.com/channels/954421988141711382/1168578329423642786/1374656820840370278)** (15 messages🔥): 
+
+> `Embed v4, vector DB, rate limiting, open models, AWS` 
+
+
+- **Embed v4 经历性能下降**：用户报告 **Embed v4 极其缓慢**，每次 embedding 大约耗时 **180 秒**。
+   - Cohere 支持团队承认了这一事件，原因是静默更新的 rate limiting 系统未能随需求同步扩容。
+- **Cohere 修复 rate limiting 系统**：Cohere 支持团队报告称已手动扩容，修复了 rate limiting 的 bug，并确保 **Embed V4** 和其他未来模型已添加到状态页面。
+   - rate limiting 系统之前未针对我们支持的 rpm 生效。
+- **用户讨论 vector DB 的信任问题**：一位用户对使用非开源 embedding 模型构建向量库表示担忧，特别是在最近发生停机事件后。
+   - 他们表示 *使用特定的 embedding 模型构建大型向量库是一项巨大的投资*。
+- **用户询问 Embed v4 的备选方案**：一位用户询问了 Cohere v4 embedding 模型的**备选方案 (backup plan)**，类似于在 Llama 和 Gemma 等开源模型之间切换供应商。
+   - 用户建议通过 **Cohere API** 和 **AWS** 或其他供应商同时访问 v4 以实现冗余。
+- **Embed V4 已在 Azure 和 AWS 上线**：Cohere 支持团队表示 Embed V4.0 已在平台之外的多个地方提供，例如 [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cohere.cohere-embed-4-offer?tab=overview) 和 [AWS Sagemaker](https://aws.amazon.com/marketplace/pp/prodview-g53hj27nurqc6)。
+   - 这些备选服务在 Cohere API 出现故障时提供冗余。
+
+
+  
+
+---
+
+
+### **Cohere ▷ #[🟢-status-updates](https://discord.com/channels/954421988141711382/1346652044181897307/1374806369085030462)** (1 messages): 
+
+> `embed-v4.0, Cohere Status Page` 
+
+
+- **Embed-v4.0 性能受损**：截至 2025 年 5 月 21 日，[服务降级](https://ift.tt/Yq59ahB) 影响了 **embed-v4.0**。
+   - 根据其 [状态页面](https://ift.tt/VtJljWi)，Cohere 正在调查这一实时事件。
+- **Cohere 调查性能下降**：Cohere 的状态页面显示，他们正在积极调查 **embed-v4.0** 的性能下降问题。
+   - 该事件于 2025 年 5 月 21 日报告，目前正由 Cohere 团队进行审查。
+
+
+  
+
+---
+
+
+### **Cohere ▷ #[🎯-private-deployments](https://discord.com/channels/954421988141711382/1351999070247583848/1374511423425745008)** (1 messages): 
+
+> `Cohere Sales, Cohere Support` 
+
+
+- **Cohere 提供销售和支持**：Cohere 引导用户联系 **sales@cohere.com** 或 **support@cohere.com** 以获取帮助。
+   - 团队表示渴望通过这些渠道提供进一步帮助。
+- **Cohere 提供联系邮箱**：Cohere 提供了两个不同的邮箱用于销售和支持咨询。
+   - 邮箱分别为 sales@cohere.com 和 support@cohere.com。
+
+
+  
+
+---
+
+
+### **LlamaIndex ▷ #[blog](https://discord.com/channels/1059199217496772688/1187460979064324127/1374796812543856651)** (2 messages): 
+
+> `Monorepo management, uv package management, LlamaDev build tool, Discord Office Hours` 
+
+
+- **LlamaIndex 迁移至 uv 和 LlamaDev**：LlamaIndex 已从 **Poetry** 和 **Pants** 迁移到 **uv** 和 **LlamaDev**，用于管理包含 650 多个社区包的 monorepo，从而实现了更快、更简单的开发，详见 [这篇博文](https://t.co/dTHUcQl9Pb)。
+- **LlamaIndex 宣布 Discord 答疑时间 (Office Hours)**：LlamaIndex 宣布了由 **Tuanacelik**、**LoganMarkewich** 和 **Clelia** 主持的首场 Discord Office Hours，重点关注 Agentic 工作流和 LlamaIndex 相关问题，详见 [此公告](https://t.co/LXhhDp68wh)。
+
+
+  
+
+---
+
+### **LlamaIndex ▷ #[general](https://discord.com/channels/1059199217496772688/1059201661417037995/1374484064811221172)** (35 条消息🔥): 
+
+> `Llama Parse 与 Layout Agent 的问题，VectorStoreIndex vs FAISS，Model llamaindex/vdr-2b-multi-v1 问题，Azure AI Search 集成，LlamaIndex Office Hours` 
+
+
+- **Llama Parse 的 Layout Agent 遇到故障**：用户报告在使用 *Parse with Layout Agent* 时 **Llama Parse** 出现问题，任务在 **30 分钟** 后超时，引发了对一个*已知问题*的调查。
+   - 修复程序在 **20-30 分钟** 内部署，但后续测试显示问题依然存在，导致了一个涉及 **10 分钟超时** 并回退到较弱解析模式的临时解决方案。
+- **VectorStoreIndex vs FAISS：深度探讨**：一位用户询问了使用 **VectorStoreIndex** 与本地 **FAISS** 进行存储的区别，以及其对 **RAG** 模型性能的影响。
+   - 澄清了 **VectorStoreIndex** 是对任何向量存储（包括 **FAISS**）的封装，并提供了 [FaissIndexDemo](https://docs.llamaindex.ai/en/stable/examples/vector_stores/FaissIndexDemo/) 的链接。
+- **Transformer 异常：llamaindex/vdr-2b-multi-v1 存在问题**：一位用户报告在使用 **llamaindex/vdr-2b-multi-v1** 模型时出现 `ValueError`，这与 `size` 参数有关，追溯到一次 transformers 更新。
+   - 修复已提交至 [preprocessor_config.json](https://huggingface.co/llamaindex/vdr-2b-multi-v1/blob/main/preprocessor_config.json)，建议清除缓存并重试。
+- **寻求 Azure AI Search Agentic Retrieval 集成**：一位用户询问如何将 **Azure AI Search** 的 **Agentic Retrieval** 集成到框架中。
+   - 分享了 [Azure AI Search 公告](https://techcommunity.microsoft.com/blog/azure-ai-services-blog/introducing-agentic-retrieval-in-azure-ai-search/4414677) 的链接，并提到欢迎社区为这类集成做出贡献。
+
+
+  
+
+---
+
+
+### **Torchtune ▷ #[general](https://discord.com/channels/1216353675241590815/1216353675744641096/1374658007878598699)** (15 条消息🔥): 
+
+> `Torchtune 生成 Qwen2_5_0_5b，推理模式下的 Tokenizer bug，自定义 Tokenizer 补丁，LORA 微调输出乱码，调整 Token Embeddings 大小` 
+
+
+- **Torchtune 的 Qwen2 生成无输出**：一位成员报告在 `qwen2_5_0_5b` 上使用 torchtune generate 时没有看到任何输出，使用的是提供的 [config](https://github.com/pytorch/torchtune)。
+   - 观察到的输出包括 `<|im_start|>user Tell me a joke.<|im_end|> <|im_start|>assistant<|im_end|> <|endoftext|>`。
+- **避免了推理模式下的 Tokenizer Bug**：经确定，推理模式下 tokenizer 的一个 bug 导致 **end-of-sequence (EOS)** token 被过早附加。
+   - 通过 [此 PR](https://github.com/pytorch/torchtune/pull/2757) 实施了修复，解决了 **Qwen** 过早停止生成的问题。
+- **自定义 Tokenizer 补丁使其正常工作**：一位成员将修复程序应用到他们的自定义 tokenizer 并确认其正常工作，生成了笑话：*Why don't scientists trust atoms? Because they make up everything!*。
+   - 他们报告总推理时间为 **1.04 秒**，速度为 **13.46 tokens/sec**，带宽达到 **13.57 GB/s**，内存占用为 **1.04 GB**。
+- **LORA 微调产生乱码输出**：该成员报告在向模型添加新 token 并进行 **LORA finetuning** 后，输出变成了乱码。
+   - 用户提供的示例：`Tell me a joke.<|im_end|>
+<|im_start|>assistant
+ormoblllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllll`。
+- **询问关于使用 Embedding Utils 的问题**：针对乱码输出，一位成员询问在添加新 token 后，是否使用了 `torchtune.modules.embedding_utils` 中的 `resize_token_embeddings` 工具。
+   - 相关工具可以在这里找到：[torch.org](https://docs.pytorch.org/torchtune/main/generated/torchtune.modules.embedding_utils.resize_token_embeddings.html#torchtune.modules.embedding_utils.resize_token_embeddings)。
+
+
+  
+
+---
+
+### **Torchtune ▷ #[dev](https://discord.com/channels/1216353675241590815/1236040539409879170/1374513667890085952)** (2 条消息): 
+
+> `DistCp, Safetensors, Async Checkpointing, DCP Team` 
+
+
+- **DistCp 格式到 Safetensors 转换问题的请求**：一位用户询问了关于将 **DistCp 格式**（由异步 Checkpointing 产生）转换为 **safetensors** 的公开 Issue。
+   - 一位团队成员回复称目前尚无此类 Issue，并建议用户根据需要创建一个，承诺提供工具以促进转换，并向 **DCP 团队** 发出信号以进行长期考虑。
+- **异步 Checkpointing 和 DistCp 讨论**：对话围绕将异步 **checkpointing** 产生的 DistCp 格式转换为 safetensors 展开。
+   - 虽然目前没有现成的解决方案，但团队表示愿意提供帮助并考虑将其纳入未来的开发中。
+
+
+  
+
+---
+
+
+### **Torchtune ▷ #[rl](https://discord.com/channels/1216353675241590815/1360680363885854841/1374479386669224127)** (4 条消息): 
+
+> `Async RL Recipe, Microsoft's Verl framework` 
+
+
+- **异步 RL Recipe 已锁定 VLLM**：**异步 RL recipe** 仍处于实验阶段，目前已锁定在一个稳定的 **vllm** 版本上。
+   - 成员们计划在将此 recipe 变为更标准的 torchtune recipe 之前，先让 **vllm** 与稳定的 PyTorch 和 Nightly 版本协同工作。
+- **微软的 Verl 框架浮出水面**：一位成员今天从 [微软的一篇论文](https://github.com/volcengine/verl) 中发现了一个 **RL 训练框架**。
+   - 另一位成员赞同 **Verl** 对于 RL 训练非常出色，并询问哪些部分会特别有用。
+
+
+  
+
+---
+
+
+### **tinygrad (George Hotz) ▷ #[general](https://discord.com/channels/1068976834382925865/1068976834928193609/1374487427594452993)** (6 条消息): 
+
+> `Job Opportunities, tinygrad bounties, distributed training, mmapeak work, RDNA4 instructions` 
+
+
+- **tinygrad 工作机会需要通过 Bounties**：一位用户在 X 上看到帖子后询问 tinygrad 的工作机会，被告知入职的主要途径是贡献 **bounties** 和 **小型 PR**。
+   - 建议他们查看 [X](https://x.com/__tinygrad__/status/1910185557642367390) 上的置顶帖子以获取更多信息。
+- **分布式训练使 Petaflops 商品化**：一位用户询问 **分布式训练** 如何融入 Petaflops 的商品化进程，并链接到了 [GitHub 上的 pccl](https://github.com/PrimeIntellect-ai/pccl)。
+   - 未进行进一步讨论。
+- **mmapeak 工作已就绪**：一位用户宣布 **mmapeak 工作** 已在 [GitHub](https://github.com/tinygrad/tinygrad/pull/10417) 上准备好接受评审。
+- **RDNA4 指令编译成功**：一位用户报告 **RDNA4 指令编译成功**。
+   - 他们指出，可能需要调整 *每个 CU 的 wave 数量* 以获得最佳性能。
+
+
+  
+
+---
+
+
+### **tinygrad (George Hotz) ▷ #[learn-tinygrad](https://discord.com/channels/1068976834382925865/1070745817025106080/1374469791582130246)** (6 条消息): 
+
+> `JAX control flow, Tensor.where, jax.lax.cond` 
+
+
+- **控制流问题浮现**：一位成员询问了 Tinygrad 处理控制流的方法，并与 JAX 的 `jax.lax.cond` 进行了对比，后者允许在不破坏计算图的情况下进行条件执行，参考了 [JAX 文档](https://docs.jax.dev/en/latest/_autosummary/jax.lax.cond.html)。
+   - 该成员指出，这种能力对于实现许多 **蒙特卡洛算法** 至关重要。
+- **`Tensor.where` 变通方案值得一试吗？**：另一位成员建议使用 `Tensor.where` 作为可能的解决方案。
+   - 然而，提问者澄清说 `jax.lax.cond` 决定执行哪条代码分支，而不像 `Tensor.where` 那样对张量进行操作，并且根据情况，后者可能仍会执行两条路径。
+
+
+  
+
+---
+
+
+### **DSPy ▷ #[general](https://discord.com/channels/1161519468141355160/1161519469319946286/1374858415733477397)** (8 条消息🔥): 
+
+> `DSPy Framework, Bias Training, Case Study` 
+
+
+- **DSPy 让 Agent 变更变得简单**：成员们对在 **DSPy 框架** 内轻松更改 Agent 反应积极。
+   - 一位成员分享了一个 [蹦蹦跳跳的兔八哥 GIF](https://tenor.com/view/bugs-bunny-skipping-happy-hopping-gif-9917496) 来表达他们对该框架的喜爱。
+- **Mike Taylor 的 DSPy 案例研究**：一位成员分享了 **Mike Taylor** 应用 **DSPy** 的**案例研究**链接。
+   - 另一位成员评论说，DSPy 在“训练消除任何偏见”这一概念上可能有点过于随意，尽管它是在教导模型哪些 demo 投给了谁。
+
+
+  
+
+---
+
+### **LLM Agents (Berkeley MOOC) ▷ #[mooc-questions](https://discord.com/channels/1280234300012494859/1280370030609170494/1374794559640567929)** (3 messages): 
+
+> `Course deadlines, Certificate requirements` 
+
+
+- **关于测验完成截止日期的困惑**：一位较晚加入课程的成员询问，尽管课程网站显示的截止日期在下一节课之前，他们是否仍能在本月底前完成所有测验以获得证书。
+   - 该问题集中在截止日期的灵活性，以及逾期提交是否仍计入证书要求。
+- **证书作业质量验证**：一位成员询问是否有办法验证其提交的实验（labs）和书面作业是否足以获得课程证书。
+   - 他们表示愿意在必要时进行修改并重新提交，展现了满足证书要求的积极态度。
+
+
+  
+
+---
+
+
+### **Nomic.ai (GPT4All) ▷ #[general](https://discord.com/channels/1076964370942267462/1090427154141020190/1374492012052742204)** (3 messages): 
+
+> `GPT4All OpenAI API Key, Extending GPT4All interface for more than text LLMs` 
+
+
+- **用户在 GPT4All 中安装 OpenAI API Key 时需要帮助**：一位用户正在寻求在 **GPT4All** 中安装 **OpenAI API Key** 以备考的帮助，反映尽管输入了 Key，但安装按钮仍无法工作。
+   - 用户附上了一张显示 API Key 输入框和失效安装按钮的图片，强调了寻求帮助的紧迫性。
+- **GPT4All 界面是否会扩展到文本 LLMs 之外？**：一位用户询问是否有计划扩展 **GPT4All 界面** 以支持**除文本 LLM 之外**的更多模型。
+   - 该用户想了解 **GPT4All 界面** 是否能超越仅支持文本 LLM 的范畴。
+
+
+  
+
+---
+
+
+### **Gorilla LLM (Berkeley Function Calling) ▷ #[discussion](https://discord.com/channels/1111172801899012102/1111353033352294440/1374813286129729746)** (1 messages): 
+
+> `Manus AI Referral, Powerful Agents` 
+
+
+- **分享 Manus AI 推荐链接**：一位成员分享了 **Manus AI** 的推荐链接 ([https://manus.im/edu/invitation/4EQHF7LZZ1JH7V](https://manus.im/edu/invitation/4EQHF7LZZ1JH7V))，该平台目前处于邀请制阶段。
+   - 该推荐提供 **1000 初始积分**，且仅限拥有 Cal 邮箱的人员使用。
+- **Manus AI 被誉为强大的 Agent**：该成员将 **Manus AI** 描述为现有的*最强大的 Agent 之一*，特别适用于多步骤任务。
+   - 他们鼓励其他人使用提供的推荐链接进行尝试。

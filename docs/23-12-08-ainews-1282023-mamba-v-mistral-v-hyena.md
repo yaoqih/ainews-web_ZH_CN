@@ -1,0 +1,532 @@
+---
+companies:
+- mistral-ai
+- togethercompute
+- stanford
+- anthropic
+- google
+- hugging-face
+date: '2023-12-08T22:40:04.800968Z'
+description: 文中重点介绍了三个新的 AI 模型：**Mistral 的 8x7B MoE 模型 (Mixtral)**、Together 推出的最高
+  3B 参数的 **Mamba 模型**，以及来自斯坦福大学 Hazy Research 的 **StripedHyena 7B**（一个极具竞争力的亚二次方注意力模型）。关于
+  **Anthropic 的 Claude 2.1** 的讨论主要集中在其提示词技术和对齐挑战上。谷歌的 **Gemini AI** 被认为可能优于 **GPT-4**。社区还在探索用于图像训练的
+  **Dreambooth**，并分享了 Hugging Face 上的 **DialogRPT-human-vs-machine** 模型等资源。此外，文中还结合
+  **Falcon 180B** 和 Transformer 批处理技术，讨论了大语言模型的部署挑战，包括 CPU 性能和 GPU 需求。用户参与形式还包括分享梗图和幽默互动。
+id: 2bb42a5c-ee60-4fe5-8167-fb6b53efaad4
+models:
+- mistral-8x7b-moe
+- mamba-3b
+- stripedhyena-7b
+- claude-2.1
+- gemini
+- gpt-4
+- dialogrpt-human-vs-machine
+- cybertron-7b-v2-gguf
+- falcon-180b
+original_slug: ainews-1282023-mamba-v-mistral-v-hyena
+people:
+- andrej-karpathy
+- tri-dao
+- maxwellandrews
+- raddka
+title: 2023年12月8日 - Mamba vs Mistral vs Hyena
+topics:
+- mixture-of-experts
+- attention-mechanisms
+- prompt-engineering
+- alignment
+- image-training
+- model-deployment
+- gpu-requirements
+- cpu-performance
+- model-inference
+- long-context
+- model-evaluation
+- open-source
+- chatbots
+---
+
+<!-- buttondown-editor-mode: plaintext -->周五快乐。今天有 3 个新模型成为了热门话题：
+
+- Mistral 的新 [8x7B MoE 模型](https://news.ycombinator.com/item?id=38570537)（又名 "Mixtral"）——一个表现出色的经典 Attention 模型。Andrej 的总结见[这里](https://twitter.com/karpathy/status/1733181701361451130)。
+- [Mamba 模型](https://twitter.com/tri_dao/status/1731728602230890895)，由（前嘉宾）[Together 的 Tri Dao](https://www.latent.space/p/flashattention) 发布的一系列最高达 3B 的模型。
+- [StripedHyena 7B](https://fxtwitter.com/omarsar0/status/1733223272412594501) —— 它是斯坦福大学 Hazy Research 实验室今年早些时候发布的亚二次方 Attention 替代方案 [Hyena](https://arxiv.org/abs/2302.10866) 的后代，终于能够与 Llama-2、Yi 和 Mistral 7B 竞争。
+
+这些进展都非常扎实，展示了发布模型权重而非重度剪辑的营销视频所带来的影响。
+
+[TOC] 
+
+## [Nous Research AI](https://discord.com/channels/1053877538025386074) Discord 总结
+
+- 深入探讨了 **Anthropic 的 Claude 2.1** 等 AI 模型，包括对其 Prompting 技术的探索、将 AI 模型评估为“大海捞针（needle in haystack）”场景的评价，以及 Claude 2.1 所需的 Alignment 方法的变通方案。还讨论了用户 `@maxwellandrews` 和 `@raddka` 之间的会议计划。
+
+- 关于 **Dreambooth** 图像训练应用和 Hacking 的对话，以及对此过程的协助请求。分享了 Google 新 AI **Gemini** 的发布消息，据信其可能优于 **GPT-4**。
+
+- 分享了 AI 相关的推文、资源和模型，例如 Hugging Face 上的 `DialogRPT-human-vs-machine` 模型，该模型可预测回复更像是来自人类还是机器。提供了一个 [Colab Notebook Demo](https://colab.research.google.com/drive/1cAtfkbhqsRsT59y3imjR1APw3MHDMkuV?usp=sharing) 用于该模型的实际操作。
+
+- 讨论了 AI 模型构建和维护过程中的众多因素，包括数据提取、模型发布（特别是 **"cybertron 7b v2 GGUF"** 和 **Mistral 8x7B MoE** 模型）、聊天机器人模型 **StripedHyena-Nous-7B**、**StripedHyena 的训练代码**开源计划，以及运行 **Mistral 8x7B MoE** 模型的 GPU 需求、内存需求评估和模型 Inference 调试等其他话题。
+
+- 关于 **Large Language Models (LLMs)** 部署的各种问题和可能性。要点包括在 CPU 上部署 LLM 模型、此类项目的设置、LLM 在考试阅卷和评分方面的潜力，以及 Embedding 模型的托管。提供了诸如 [Falcon 180B 初始 CPU 性能数据](https://www.reddit.com/r/LocalLLaMA/comments/16bynin/falcon_180b_initial_cpu_performance_numbers/) 和 [Transformer Batching](https://le.qun.ch/en/blog/2023/05/13/transformer-batching/) 等资源参考。
+
+- 用户在 memes 频道的互动，`@nonameusr` 分享了一个 [Twitter 链接](https://vxtwitter.com/vega_holdings/status/1727368097869488292)，并对链接帖子的内容表达了幽默的困惑。
+
+**Nous Research AI 频道总结**
+
+### ▷ #[ctx-length-research](https://discord.com/channels/1053877538025386074/1108104624482812015/) (8 条消息🔥): 
+        
+- 关于 **Anthropic Claude 2.1** 的讨论：`@if_a` 分享了 [Anthropic Claude 2.1 的 Prompting 技术](https://www.anthropic.com/index/claude-2-1-prompting) 研究链接，强调了 Claude 2.1 在其 200,000 token 上下文窗口中召回信息的能力。然而，`@if_a` 也认为测试长上下文能力需要在 **Prompt Engineering** 上做更多工作。
+- 评估 AI 模型：`@gabriel_syme` 对 AI 模型的评估发表了评论，特别是批评此类评估为“大海捞针（needle in haystack）”场景，可能无法提供准确的性能衡量。
+- Alignment 方法：`@intervitens` 发现 Anthropic 团队不得不使用变通方法来绕过他们自己为 Claude 2.1 设计的 Alignment 方案，这很有趣。`@raddka` 认为考虑到可能阻碍模型开发的严格合规限制，这是必然的发展。
+- 即将举行的会议：`@maxwellandrews` 和 `@raddka` 计划下周举行会议，暂定会议时间为下午 12-5 点。进一步细节稍后敲定。
+
+### ▷ #[off-topic](https://discord.com/channels/1053877538025386074/1109649177689980928/) (8 messages🔥): 
+        
+- **Dreambooth 讨论**：`@gezegen` 和 `@wlrd` 讨论了 **Dreambooth** 在图像训练中的用法，以及获取结果所需时间的可能原因。
+- **深入研究 Dreambooth**：`@yorth_night` 分享了过去一周深入研究 **Dreambooth** 以进行长提示词（long prompt）训练的经验，并指出代码中一些复杂的方面。
+- **请求协助**：`@gezegen` 建议 `@yorth_night` 分享他们深入研究 **Dreambooth** 的过程，并提供潜在的帮助。
+- **Gemini 发布公告**：`@pradeep1148` 分享了一个 [YouTube 视频](https://youtu.be/mAGLD5598cs)，宣布了 **Gemini**，这是来自 Google 的一款可能优于 **GPT-4** 的新 AI，具有跨文本、图像、视频、音频和代码的多模态推理功能。
+- **一般互动**：`@gabriel_syme` 在频道中发布了早安问候。
+
+
+### ▷ #[benchmarks-log](https://discord.com/channels/1053877538025386074/1131747216244092928/) (1 messages): 
+        
+nonameusr: https://huggingface.co/allenai/tulu-2-dpo-70b
+
+
+### ▷ #[interesting-links](https://discord.com/channels/1053877538025386074/1132352574750728192/) (5 messages): 
+        
+- **分享 AI 相关推文**：`@yorth_night` 和 `@nonameusr` 分享了关于 AI 负责任技术和 CAIS 理论的 [推文](https://fxtwitter.com/apples_jimmy/status/1732553640215495109) 和 [推文](https://vxtwitter.com/ChatGPTapp/status/1732979491071549792)。
+  
+- **DialogRPT-human-vs-machine**：`@euclaise` 发布了 Hugging Face 上 `DialogRPT-human-vs-machine` 模型的链接，该模型旨在预测回复更可能来自人类还是机器。他们提供了一个 [Colab Notebook Demo](https://colab.research.google.com/drive/1cAtfkbhqsRsT59y3imjR1APw3MHDMkuV?usp=sharing) 供用户与模型进行交互。
+
+### ▷ #[general](https://discord.com/channels/1053877538025386074/1149866623109439599/) (375 messages🔥🔥): 
+        
+- 开发者们讨论了开发类似的 **GitHub 仓库** 和 **.tex 文件** 的 **数据提取流水线**。用户 `@zakkor` 提到通过 **额外的 LLM (Language Learning Model) 过滤环节** 来改进输出。用户 `@wlrd` 表示有兴趣在此项工作中进行协作，并提出了一个相关的正在进行的讨论线程。[讨论线程链接](https://discord.com/channels/1053877538025386074/1178740658136162395)
+
+- 用户 `@nonameusr` 宣布发布 **"cybertron 7b v2 GGUF"** 模型，并称其性能接近 **"yi-34b"** 模型。会议还讨论了该模型的测试情况。
+
+- 关于新模型 **Mistral 8x7B MoE** 的显著讨论，用户询问了其显存需求、如何运行推理，并讨论了运行该模型所需的电脑硬件。
+
+- 用户 `@weyaxi` 发布了聊天机器人模型 **StripedHyena-Nous-7B**，引发了用户间的讨论，随后 `@theemozilla` 解释了该模型的架构、开发过程，并分享了该模型未来迭代的计划。
+
+- 用户讨论了在 **Huggingface** 上发布 **Nous Research 的模型**，其中 `@nonameusr` 讨论了将 **"una-xaberius-34b-v1beta"** 作为潜在的最佳模型，并明确提到了 **"xaberius"**。
+
+- 用户 `@theemozilla` 提到计划在获得 Together Research 批准后 **开源他们的自定义训练代码**。该训练代码与 **StripedHyena-Nous-7B (SH-N 7B)** 模型相关。
+
+- 关于 **MoE (Mixture-of-Experts) 分布** 和运行 **Mistral 8x7B MoE** 模型显存需求的进一步对话，结论是 `@bjoernp` 建议 2 张 80GB 的 A100 似乎足够了。
+
+- 用户讨论了 **解码方法**，`@gabriel_syme` 引用了一个 Twitter 链接，阐明了最近的进展和新的解码方法。随后展开了关于这些方法的兼容性和必要性的讨论。
+
+- 讨论了 **OpenHermes 的 Gradio 图像推理错误**。在遇到服务器错误后，`@qnguyen3` 建议使用 GitHub 中的代码并编辑 `llava/model/multimodal_encoder/builder.py` 文件以包含 'ikala'。
+
+- 用户 `@euclaise` 分享了他使用 **Echo-3B** 的经验，这是他为 RP/创意任务创建的模型。提到了一些导致模型输出乱码的技术问题。
+
+- `@jaredquek` 提出了用于生成数据集的 **Gemini API**，随后讨论了由于 Google 和 OpenAI 的账号封禁政策而使用该 API 可能带来的后果。
+
+- 用户 `@raddka` 对新发布的 Mistral 8x7B MoE 模型发表了评论，推测它是开发轻量级模型以改进 LLM (Language Learning Model) 缺点的候选者，并建议创建一个专门针对编程的模型来评估/改进其回答。
+
+- 讨论并解决了 `openhermes vision` 服务器启动的问题，得到了 `@qnguyen3` 的帮助。
+
+- 成员们简要提到了 **在对话数据集上训练 Mixtral MoE** 的计划，并比较了模型的基准测试性能。他们还推测基准测试可能存在偏差，因为发布的数据值过于极端，难以被认为是真实的。
+
+- 用户讨论了 **Mistral 8x7B MoE 模型** 可能的 GPU 配置，包括争论是否收集多张 Nvidia RTX 3090 显卡、PCIe 通道的必要性以及如何优化 GPU 散热。
+
+- **StripedHyena-Nous-7B 的评估** 效用受到用户高度赞扬，理由是其显存占用更低且性能更好。还讨论了将其与各种 API 和部署平台集成的游说工作。
+
+- 围绕运行 `Mixtral 模型` 推理的 **持续调试和讨论** 及其相关问题。还强调了对其代码库的需求以及用户尝试以各种方式运行推理的努力。
+
+### ▷ #[ask-about-llms](https://discord.com/channels/1053877538025386074/1154120232051408927/) (80 messages🔥🔥): 
+        
+- **LLMs (large language models) 与 CPU**：`@.beowulfbr` 发起了关于在纯 CPU 上部署 7B 或 70B LLM 模型的讨论。`@raddka` 提到这会非常缓慢。`@coffeebean6887` 和 `@decruz` 重申，商业上可行的 LLM 需要 GPU，并讨论了 GPU 上批处理基础设施（batched infra）的优势。他们引用了 [Falcon 180B initial CPU performance numbers](https://www.reddit.com/r/LocalLLaMA/comments/16bynin/falcon_180b_initial_cpu_performance_numbers/) 和 [Transformer Batching](https://le.qun.ch/en/blog/2023/05/13/transformer-batching/) 的相关讨论。
+- **LLMs 项目设置**：`@akhxl` 讨论了在使用 `Litellm` 和 `Ollama` 时遇到 404 错误的问题。该问题通过忽略 `api_base` 行得以解决。
+- **LLMs 学习能力**：`@akhxl` 发起了一场关于 LLM 是否以及如何理解其训练数据中未曾出现的新信息和主题的实质性辩论。`@adamsvoboda` 解释说，这可以通过 RAG 将外部信息作为 Context 整合进 Prompt 中来实现。然而，用户对于 LLM 的解释和上下文理解能力仍有进一步疑问，在本次对话中未得到完全解决。
+- **LLMs 在考试阅卷中的应用**：用户 `@.___init___` 建议将 LLM 用于考试阅卷和评分，而 `@coffeebean6887` 指出数学部分可能会比较复杂。
+- **托管 Embedding 模型**：`@coco.py` 询问是否存在类似于 vLLM 托管语言模型的方式来托管 Embedding 模型的工具。`@decruz` 推荐了像 `gte-small` 这样的开源解决方案，它可以托管在 Edge Function 上。不过，没有提供关于以兼容 OpenAI API 方式托管 Embedding 模型的具体信息。
+
+
+### ▷ #[memes](https://discord.com/channels/1053877538025386074/1166105758635655270/) (2 messages): 
+        
+- 用户 `@nonameusr` 在频道中分享了一个来自 Vega Holdings 的 [Twitter 链接](https://vxtwitter.com/vega_holdings/status/1727368097869488292)。此外，该用户通过评论 "*wtf is this 😭*" 对链接帖子的内容表达了困惑或惊讶。
+
+
+        
+
+---
+
+## [OpenAI](https://discord.com/channels/974519864045756446) Discord Summary
+
+- 跨频道讨论突显了围绕 Google 的 **Gemini AI 模型** 和 OpenAI 未来版本 **GPT 模型** 的期待、怀疑和讨论。用户对 Google 的 Gemini 发布视频发表了看法，并对 OpenAI 已经为 GPT-7 之前的版本奠定基础进行了推测（引用自 `@DawidM` 和 `@aiden4729`）。
+- 多个频道的用户报告了 OpenAI 产品（如 **ChatGPT** 和 **GPT-4**）的**服务器问题**、**性能问题**和**沟通挑战**。这包括消息消失、性能下降（尤其是带有奇怪对话名称的情况）、获取支持回复的等待时间过长、支付系统问题以及 Chatbot 无响应（引用自 `@_steeven_`、`@maybedara`、`@dabuscusman`、`@mrcrack_`、`@seliathas`、`@bubbarob19`、`@ryanxcharles`、`@spider7124`、`@exobyt` 和 `@solbus`）。
+- 社区还讨论了 **AI 对科学研究的潜在影响**，并辩论了其超越人类研究人员的能力，特别是在数学发现方面（`@axiomaticself` 与 `@feltsteam0` 之间的对话）。
+- 各频道出现了关于使用 OpenAI 技术时 **VPN 使用** 的讨论，用户表示他们的 VPN 未被检测或封锁，并进一步澄清了来自同一 IP 的多个用户可能会被过滤（由 `@youraveragedev`、`@satanhashtag`、`@lugui` 和 `@olympusdev` 讨论）。
+- 各频道提出了许多**技术问题、建议和澄清**，涵盖了 GPT Token 限制、自定义 GPT（custom GPTs）之间的交互、使用 VPN 访问特定 AI 模型、引导 ChatGPT 输出特定响应格式、用于 Web 搜索能力的 API 使用、长 Token 长度下 GPT-4 的性能，以及从图像中提取 DALLE Prompt 等主题。
+- 用户分享并评价了相关资源，特别是 `@zelia13` 征求了关于 AI 知识管理 [视频](https://www.youtube.com/watch?v=au1Yznvx2Io) 的反馈，`@iyioio` 分享了 [OpenAI 的 Function-calling 文档](https://platform.openai.com/docs/assistants/tools/function-calling) 链接。此外还通过链接分享了一些探索性的 Prompt 及其输出结果。
+- 最后，出现了关于 OpenAI 通用行为准则的提醒，详细说明了违反发布规则的事件及其潜在后果。
+
+### ▷ #[ai-discussions](https://discord.com/channels/974519864045756446/998381918976479273/) (92 messages🔥🔥): 
+        
+- **Gemini vs GPT-4**: 用户对 Google 预期的 Gemini AI 模型发布表达了复杂的情绪，一些人对其潜力感到兴奋，而另一些人则因 Google [在演示视频中涉嫌虚假陈述](https://www.techcrunch.com/the-gemini-video)而表示怀疑。`@DawidM` 声称该视频经过后期编辑，以过度正面的方式展示产品，称其为“阴暗的营销手段”。
+
+- **OpenAI 模型更新**: 关于 OpenAI GPT 模型未来版本的发布存在各种猜测，用户 `@aiden4729` 指出，根据商标注册申请，OpenAI 已经为直到 GPT-7 的版本奠定了基础。`@thepitviper` 预测 GPT-4.5 的发布将与 Google 的 Gemini 展开竞争。
+
+- **对 AI 在科学研究中应用的担忧**: 用户 `@axiomaticself` 表达了对 AI 在数学领域可能超越人类研究者的担忧。`@feltsteam0` 提供了安慰，表示距离 AI 完全自动化科学发现还有数年时间，未来的方向很可能是增强型人类-AI 研究团队。
+
+- **关于 AI 知识管理视频的反馈请求**: 用户 `@zelia13` 分享了一个关于项目经理如何使用 AI 进行知识管理的[视频](https://www.youtube.com/watch?v=au1Yznvx2Io)，并征求反馈。 
+
+- **AI/Chatbot 访问挑战**: 一些用户讨论了由于地区限制而难以访问某些 AI 和 Chatbot 模型的问题。用户 `@offline` 建议使用 VPN 作为变通方案。
+
+
+### ▷ #[openai-chatter](https://discord.com/channels/974519864045756446/977697652147892304/) (246 messages🔥🔥): 
+        
+- **ChatGPT 服务器问题**: 包括 `@_steeven_`、`@maybedara` 和 `@dabuscusman` 在内的多位用户报告了 ChatGPT 的服务器问题。用户 `@_steeven_` 提到消息在按下回车键后消失，几位用户猜测可能是服务器过载导致的。然而，`@pruo` 和 `@dabuscusman` 等用户随后确认他们已成功访问 ChatGPT。
+- **ChatGPT 性能**: `@mrcrack_` 对 ChatGPT 的现状表示不满，提到过去几个月性能有所下降，并特别引用了奇怪的对话名称，如“埃博拉病毒与流感”。
+- **VPN 使用**: `@youraveragedev` 询问 OpenAI 现在是否允许使用 VPN，因为他们的 VPN 未被检测或封锁。`@satanhashtag` 确认了这一点，`@lugui` 和 `@olympusdev` 澄清说 VPN 一直是被允许的，但来自同一 IP 的多个用户可能会被过滤掉。
+- **OpenAI 支持**: 用户 `@seliathas` 对 OpenAI 的支持系统表示沮丧，称他们的沟通长时间未得到回复。`@elektronisade` 解释说，根据主题的不同，回复可能需要相当长的时间。
+- **产品可用性与使用**: `@Foufou` 指出了网站上的一个翻译错误，引用了法语中关于对话限制的沟通误导。用户 `@theyonatan` 寻求关于让 ChatGPT 重新粘贴完整代码的建议。同时，`@goni0755` 询问了 DALLE 图像生成 API 与其他 API 相比的可靠性。此外，`@zyrqlo` 和 `@thepitviper` 讨论了将 “Bard” 与 “Gemini Pro” 结合使用的问题。
+
+
+### ▷ #[openai-questions](https://discord.com/channels/974519864045756446/974519864045756454/) (69 messages🔥🔥): 
+        
+- **API 使用与 Web Search 功能**: 用户 `@shikhar1209` 询问了是否可以通过 API 在 GPT-4 中使用 Web Search，但未得到明确答复。
+- **GPT-4 性能与功能问题**: 包括 `@spider7124`、`@exobyt` 和 `@solbus` 在内的几位用户报告了 ChatGPT 出现错误和无响应的情况。此外，用户 `@yoruiopz` 对 GPT-4 性能下降和反复出现的浏览超时表示不满。
+- **GPT 微调 Token 限制**: `@pearlyeti` 提出了关于微调时每个示例的 Token 限制问题，特别是 GPT-4 是否仍维持在 4096，但未得到明确回应。 
+- **ChatGPT 的误解与沟通误导**: 包括 `@treytay` 和 `@maguiresfuture` 在内的几位用户对 ChatGPT 在某些交互中给出的误导性信息或承诺表示担忧。
+- **账单与订阅问题**: 用户 `@bubbarob19` 和 `@ryanxcharles` 报告了平台上支付系统持续出现的问题，阻碍了对服务的访问。
+
+### ▷ #[gpt-4-discussions](https://discord.com/channels/974519864045756446/1001151820170801244/) (31 条消息🔥): 
+        
+- **自定义 GPT 消失的问题**：
+    - 用户 `@_interstitialism_`、`@a2jhagrhbm92awno` 和 `@budadude` 报告了他们的自定义 GPT 消失的问题。该问题似乎已自行解决，因为 `@a2jhagrhbm92awno` 随后报告称他们的 GPT 已恢复。
+- **在 GPT 中利用图像**：
+     - `@thermaltf` 询问是否存在可以从上传的图像生成 Dalle 提示词的 GPT，但未收到直接回复。
+     - `@demo_02817` 在使用 OpenAI 进行图像编辑方面需要帮助并分享了代码片段，但在此聊天记录中未提供解决方案。
+- **自定义 GPT 之间的交互**：
+     - `@moraj123` 询问了在自定义 GPT 之间创建交互的可能性，`@rjkmelb` 回复称这目前无法直接实现。
+- **清除对话历史**：
+     - `@sjjj.` 询问是否有办法删除部分聊天对话。`@pietman` 透露目前还没有这样的功能，并分享了一个用于此目的的有用 Chrome extension 的信息。
+- **更长的 Token 长度与模型性能**：
+     - `@the_unbeatable_gusty_chatterbox` 提出了关于具有 128K Token 长度的 GPT4 性能的问题，评论称在输入较长时输出质量较低。讨论记录中未给出答案。
+- **设置公开 GPT**：
+    - `@serenejay` 询问创建公开 GPT 是否仅限托管它们的人。`@solbus` 澄清说，可以通过验证网站或在用户的 Builder profile 上添加账单名称来启用。目前还没有官方的 GPT 中央仓库，但预计明年会有一个。
+
+
+### ▷ #[prompt-engineering](https://discord.com/channels/974519864045756446/1046317269069864970/) (11 条消息🔥): 
+        
+- **为特定响应格式编写 Assistant API 提示词**：用户 `.jkyle` 询问如何提示 Assistant API 提供格式化为 JSON 的响应，以便进行解析和输出。用户 `iyioio` 建议使用 functions 并提供 [OpenAI 的 function-calling 文档](https://platform.openai.com/docs/assistants/tools/function-calling)作为资源。`.jkyle` 打算将模型输出作为实际所需的输出。
+
+- **关于 API 中 Functions 功能的讨论**：在 `.jkyle` 和 `iyioio` 之间，讨论了对 functions 功能的理解。对话涉及 Assistant 如何为外部函数定义输入规范、确保输出符合格式以及执行过程如何发生。
+
+- **有趣的提示词**：用户 `mindfultatiana` 和 `eskcanta` 分享并探索了有趣的提示词，包括“像对 AI 解释一样”、“像我是一条鱼一样”或“像我是一本诗集一样”来解释概念。他们在模型上实验了这些提示词，并通过 OpenAI chat 分享链接分享了结果输出。
+
+- **引导 AI 的行为**：用户 `clumsylulz` 通过要求 AI 像患有分裂情感性障碍的人类一样做出反应，来实验引导 AI 的行为。
+
+
+### ▷ #[api-discussions](https://discord.com/channels/974519864045756446/1046317269069864970/) (11 条消息🔥): 
+        
+- **API 提示词以获取 JSON 输出**：用户 `@jkyle` 征求关于提示 Assistant API 始终提供 JSON 响应的建议。用户 `@iyioio` 建议使用 API 的 function 功能并描述了其工作原理。`@jkyle` 随后将此功能理解为它提供了一个可以喂给外部函数的输出对象，然后返回以闭合循环。`@iyioio` 确认这基本正确，并强调从 Assistant 接收到的 function call 只是 thread 中另一个具有特殊格式的消息。
+- **指令式提示词**：用户 `@mindfultatiana` 分享了一个有效的提示词：`"你能像我 5 岁一样向我解释..."`。
+- **交互式提示词**：用户 `@eskcanta` 展示了使用提示词指示模型以各种视角提供解释，例如“像对 AI 解释一样”、“像我是一条鱼一样”和“像我是一本诗集一样”，并为每个视角提供了相应的聊天链接。
+- **条件化提示词**：用户 `@clumsylulz` 提出了一个条件响应场景，指示模型表现得像一个患有分裂情感性障碍的人类。
+- 链接：
+    - [Function Calling](https://platform.openai.com/docs/assistants/tools/function-calling)
+    - [解释“像对 AI 解释一样”](https://chat.openai.com/share/52861eab-31b9-4a27-81b9-ec22a9435cdf)
+    - [解释“像我是一条鱼一样”](https://chat.openai.com/share/4b7b2d7f-5414-4490-bb27-7557edf486e6)
+    - [解释“像我是一本诗集一样”](https://chat.openai.com/share/5948aac4-bba7-4172-9fb6-5a1d6abadcea)
+
+---
+
+## [OpenAccess AI Collective (axolotl)](https://discord.com/channels/1104757954588196865) Discord 总结
+
+- **AI 模型训练**：用户 `@noobmaster29`、`@le_mess`、`@nanobitz`、`@metaldragon01`、`@casper_ai` 和 `@yamashi` 讨论了各种 AI 模型。重点讨论了 Mamba 与 Mistral 相比性能迟缓的问题，并确定了 Mamba 的一个评估问题。大家对 Mistral 发布新模型的公告表示了兴趣。用户还比较了 **Llama 模型** 和 **GPT-3.5** 的性能。
+- **不同语言的 AI**：指出了对包括法语和荷兰语在内的不同语言的有效 AI 模型的需求。
+- **统一内存与 Mac M 系列处理器的优势**：讨论了使用 Mac 的 M 系列处理器和统一内存系统进行 AI 推理（以及可能的训练）的优势。提到了 Apple 最近发布的内容，展示了如何在他们的机器上训练模型。
+- **模型部署与调整中的挑战**：围绕部署和调整 AI 模型（特别是来自 Mistral 的模型）所面临的问题展开了对话。暗示用户将无法对新的 70B 模型进行 finetune。
+- **Mistral 新模型发布**：广泛讨论了新 **Mistral 模型** 的发布，推测该模型可能采用混合专家模型（MoE）架构。提到了使用该模型的过渡步骤，包括将模型转换为 PyTorch 以及将 megablocks 作为必要依赖项。
+- **Token 对模型训练的影响**：展开了一场关于在模型训练期间，包含 120 个 token 的回复是否比包含 60 个 token 的回复具有更大影响力的讨论。有人建议，已训练的 token 数量可能是衡量对模型影响的更好指标。
+- **DPO 微调支持**：提出了关于 axolotl 是否支持 DPO 微调的问题。通过 [Hugging Face 上的 DPOpenHermes-7B 链接](https://huggingface.co/openaccess-ai-collective/DPOpenHermes-7B/blob/main/configs/dpo.yml) 提供了 DPO 可行的证据，并附带了详细的 YAML 配置代码。
+- **用户输入中的分段（Segmenting）**：对用户输入中的分段表示了兴趣，并确认了将相同过程用于 **检索文档分段（segmenting retrieved docs）** 的可能性。
+- **多 GPU 训练问题**：报告了在 **runpod** 上使用 8 个 A40 GPU 进行训练时出现的问题。问题似乎出在 finetune 阶段，在第一次 eval pass 后挂起，所有 8 个 GPU 的利用率均显示为 100%。PyTorch distributed 中集体通信操作（collective operations）之间的不匹配被认为是可能的原因。
+- **相关 URL**：分享了各种链接以辅助讨论并提供资源：
+   - [Pearl GitHub](https://github.com/facebookresearch/pearl)
+   - [Huggingface Dataset](https://huggingface.co/Q-bert/Optimus-7B)
+   - [YouTube Interview - Mistral AI](https://www.youtube.com/watch?v=auQBhg692Js)
+   - [OpenAI backend UI Chat interface on GitHub](https://github.com/huggingface/chat-ui)
+   - [Twitter post by Mistral AI](https://twitter.com/MistralAI/status/1733150512395038967)
+   - [Mistral Model on GitHub](https://huggingface.co/someone13574/mixtral-8x7b-32kseqlen/tree/main) 
+   - [Implementation of Mixtral in Llama](https://github.com/dzhulgakov/llama-mistral/tree/main)
+   - [Content Detailing New Model](https://github.com/mistralai/megablocks-public/tree/main/megablocks/layers)
+   - [Detailed Paper on New Model](https://arxiv.org/abs/2309.02411)
+   - [DPOpenHermes-7B on Hugging Face](https://huggingface.co/openaccess-ai-collective/DPOpenHermes-7B/blob/main/configs/dpo.yml)
+- **社区行为准则提醒**：提醒成员注意社区行为准则，并特别提到了重复广告的问题。
+
+**OpenAccess AI Collective (axolotl) 频道总结**
+
+### ▷ #[general](https://discord.com/channels/1104757954588196865/1104757955204743201/) (179 条消息🔥🔥): 
+        
+- **关于训练各种 AI 模型的讨论**：在这次对话中，包括 `@noobmaster29`、`@le_mess`、`@nanobitz`、`@metaldragon01`、`@casper_ai` 和 `@yamashi` 在内的多位用户讨论了训练各种人工智能模型，如 **Mamba** 和 **Mistral**。`@caseus_` 指出 Mamba 似乎比 Mistral 慢，`@nanobitz` 提到了它的评估问题。此外，还讨论了 **Llama 模型** 与 **GPT-3.5** 的性能对比。参与者对 Mistral 发布新模型的公告表示关注。
+- **AI 在不同语言中的应用**：多位用户讨论了 AI 模型在不同语言中的应用。`@yamashi` 指出需要一个有效的模型来处理法语和荷兰语。
+- **Unified Memory 和 Mac M 系列处理器在训练中的优势**：`@yamashi` 和 `@noobmaster29` 之间的对话强调了使用 Mac 的 M 系列处理器和 Unified Memory 系统进行 AI 推理甚至训练的好处。`@yamashi` 提到了 Apple 最近发布的一份演示，展示了如何在他们的机器上训练模型。
+- **模型部署和调整的挑战**：包括 `@faldore`、`@yamashi` 和 `@noobmaster29` 在内的几位用户讨论了他们在部署和调整 AI 模型（特别是来自 Mistral 的模型）时面临的挑战。`@faldore` 提到与一位 Mistral 开发者的交流，对方表示用户将无法对新的 70B 模型进行 finetune。
+- **相关 URL**：
+    - Meta 开发的生产级 Reinforcement Learning AI Agent 库的 GitHub 仓库：[https://github.com/facebookresearch/pearl](https://github.com/facebookresearch/pearl)
+    - Huggingface 上可能影响模型排名的数据集：[https://huggingface.co/Q-bert/Optimus-7B](https://huggingface.co/Q-bert/Optimus-7B)
+    - Arthur Mensch 关于 Mistral AI 的 YouTube 采访：[https://www.youtube.com/watch?v=auQBhg692Js](https://www.youtube.com/watch?v=auQBhg692Js)
+    - 可与 OpenAI 后端配合使用的开源 UI 聊天界面：[https://github.com/huggingface/chat-ui](https://github.com/huggingface/chat-ui)
+    - Mistral AI 宣布发布新模型的 Twitter 帖子：[https://twitter.com/MistralAI/status/1733150512395038967](https://twitter.com/MistralAI/status/1733150512395038967)
+    - Mistral 模型的 GitHub 仓库（实际指向 Huggingface）：[https://huggingface.co/someone13574/mixtral-8x7b-32kseqlen/tree/main](https://huggingface.co/someone13574/mixtral-8x7b-32kseqlen/tree/main)
+
+
+### ▷ #[axolotl-dev](https://discord.com/channels/1104757954588196865/1104758010959634503/) (56 条消息🔥🔥): 
+        
+- **Mistral 新模型发布**：团队讨论了由 `@casper_ai` 分享的新 **Mistral 模型** 的发布 [^Twitter 链接^](https://twitter.com/MistralAI/status/1733150512395038967)。成员们推测这个名为 **8x7b** 的模型可能采用了 Mixture of Experts (MoE) 架构。
+
+- **模型规格与下载**：`@yamashi` 分享了该模型的规格，指出其具有 32k 的 sequence length，并且似乎采用了 MoE。模型的下载速度各不相同，`@casper_ai` 最初报告下载速度较慢，仅为 239 kb/s，而 `@yamashi` 的下载速度达到了 11MB/s。
+
+- **模型的转换与使用**：包括 `@caseus_` 在内的多位成员讨论了使用新模型可能需要的步骤，包括将模型转换为 PyTorch 格式，并将 megablocks 添加为依赖项。`@bjoernp` 正在开发转换脚本，并邀请任何有兴趣的人通过他的 [Discord](https://discord.gg/kgXkgcdy) 加入通话来提供帮助。
+
+- **在 Llama 中实现 Mixtral**：`@casper_ai` 分享了一个 fork 的 Llama 仓库的 [GitHub 链接](https://github.com/dzhulgakov/llama-mistral/tree/main)，其中有人已经将 Mixtral 实现到了该仓库中，这可能对转换过程有所帮助。
+
+- **关于新模型的详细内容**：分享了多个包含新模型详细内容的链接，包括 `@_jp1_` 分享的 [GitHub 链接](https://github.com/mistralai/megablocks-public/tree/main/megablocks/layers) 和 `@c.gato` 分享的 [arXiv 链接](https://arxiv.org/abs/2309.02411)。
+
+### ▷ #[general-help](https://discord.com/channels/1104757954588196865/1110594519226925137/) (12 messages🔥): 
+        
+- **关于 train_loss 的澄清**：`@nanobitz` 解释说，标记为 'train/loss' 的单个点代表最终的 train_loss，这与 'train/train_loss' 不同。后者在训练过程中以图表形式展示。
+- **Token 对模型训练的影响**：`@c.gato` 讨论了在模型训练期间，包含 120 个 Token 的响应是否比 60 个 Token 的响应具有更大的影响力。`@le_mess` 建议，已训练的 Token 数量（tokens trained）可能是衡量对模型影响的更好指标。
+- **持续改进**：`@c.gato` 还表示理解需要不断优化，以跟上其模型的改进步伐。
+
+
+### ▷ #[rlhf](https://discord.com/channels/1104757954588196865/1112023522039058553/) (3 messages): 
+        
+- **DPO 微调支持的可能性**：用户 `@josh.sematic.dev` 询问了 axolotl 提供 DPO 微调支持的可能性。
+- **目前尚未实现**：用户 `@le_mess` 表示该话题已被讨论多次，但指出目前还没有相关实现。
+- **DPO 能力的证据**：`@noobmaster29` 分享了 DPO 实际上已经可行且得到支持的观点，并提供了 [Hugging Face 上的 DPOpenHermes-7B 链接](https://huggingface.co/openaccess-ai-collective/DPOpenHermes-7B/blob/main/configs/dpo.yml) 以及详细的 YAML 配置代码作为证明。
+
+
+### ▷ #[community-showcase](https://discord.com/channels/1104757954588196865/1117851527143493664/) (2 messages): 
+        
+- **关于分段（Segmenting）的讨论**：用户 `@gabriel_syme` 对用户输入分段表现出兴趣，并推测同样的过程是否可以用于**检索文档的分段（segmenting retrieved docs）**。作为回应，`@le_mess` 确认了这种可能性。
+
+
+### ▷ #[runpod-help](https://discord.com/channels/1104757954588196865/1162430527215763569/) (10 messages🔥): 
+        
+- **多 GPU 训练问题**：用户 `@vastolorde95` 报告了在 **runpod** 上使用 8 个 A40 GPU 进行训练时遇到的问题。问题表现为微调在第一次评估（eval pass）后卡死，且所有 8 个 GPU 的利用率均显示为 100%。
+- **错误分析**：`@vastolorde95` 怀疑是 NCCL 错误。在通过环境变量 `TORCH_DISTRIBUTED_DEBUG=DETAIL NCCL_DEBUG=INFO NCCL_DEBUG_SUBSYS=INIT,P2P` 激活详细调试信息后，发现 PyTorch 分布式集合通信操作（collective operations）之间存在不匹配：`RuntimeError: Detected mismatch between collectives on ranks. Rank 0 is running collective: CollectiveFingerPrint(OpType=ALLGATHER, TensorShape=[4], TensorDtypes=Float, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_gr ad=false (default), pinned_memory=false (default), memory_format=(nullopt))), but Rank 2 is running collective: CollectiveFingerPrint(OpType=ALLGATHER)`。
+- **单 GPU 训练成功**：`@vastolorde95` 注意到相同的设置在单个 H100 GPU 上可以运行，尽管速度太慢，这表明问题主要出在多 GPU 设置上。
+- **Checkpointing 延迟**：`@casper_ai` 建议这可能也与 8 个 GPU 上的 Checkpointing（检查点保存）速度缓慢有关，可能是由于机器的磁盘速度较低。
+
+
+### ▷ #[docs](https://discord.com/channels/1104757954588196865/1167137552470392842/) (1 messages): 
+        
+le_mess: 兄弟，别再给这个打广告了。我之前已经说过了 😅
+
+
+        
+
+---
+
+## [Latent Space](https://discord.com/channels/822583790773862470) Discord 总结
+
+- **Jetbrains AI Assistant** 受到 `@slono` 的赞赏，强调其一致的 docstring 风格节省了大量时间。
+- 从 `@swyxio` 关于即将发布的技术讨论中，表达了对 Google 的 **Duet AI** 的期待，并提到了 Mistral 8x7B 的发布。
+- **AI compression** 的重要性以及 **Mixture of Experts (MoE)** 范式的介绍，由 `@coffeebean6887` 分享的关于压缩 1.6 万亿参数 SwitchTransformer-c2048 模型的链接和 YouTube 视频引发。
+- `@slono` 提到了法国前景看好的 **AI startup 景象**。
+- 关于 **Cursor vs VS Code** 的辩论意见不一：tollbooth 提供了一个 OpenAI API ([@btdubbins](https://discord.com/users/325599707743510528))，有益的 AI 搜索功能 ([@guardiang](https://discord.com/users/765625752364941313))，VS Code 是为考虑数据安全的企业用户设计的 ([@mitch3x3](https://discord.com/users/172398079356026881))，以及这类工具的有效性归功于与代码库和周边 UI 的集成 ([@slono](https://discord.com/users/765625752364941313))。
+- `@swyxio` 宣布了 **新播客节目**，在 `ai-event-announcement` 频道分享了 [Twitter 链接](https://fxtwitter.com/latentspacepod/status/1733160841997070683)。
+- `@swyxio` 分享了 **Latent Space University Day 4** 关于 *Image Generation* 的内容，见[链接](https://buttondown.email/ai4eng/archive/ai-for-engineers-beta-day-4-image-generation/)。
+- 详细讨论了 **格式对模型训练的影响**，特别提到了 `@eugeneyan` 的轶事中关于空格符号影响模型输出的内容。
+- `@slono` 阐述了 **代码中 whitespace 的作用及其对 tokenization 和学习的影响**。还指出由于 whitespace 使用不同导致的 token counts 显著差异。
+- `@slono` 询问并由 `@eugeneyan` 澄清了关于 **`[INST]` context** 的用法。
+- `@__chef__` 幽默地评论了训练大型模型的复杂性，推测“学习一个空格需要多少参数？超过 70 亿个”。
+
+**Latent Space 频道总结**
+
+### ▷ #[ai-general-chat](https://discord.com/channels/822583790773862470/1075282825051385876/) (45 条消息🔥): 
+        
+- **Jetbrains AI Assistant**: 用户 `@slono` 提到他们很欣赏 Jetbrains AI 聊天助手，并强调它经过微调以保持一致的 docstring 风格，从而节省了大量时间。 
+- **AI 即将发布的技术和现状**: `@swyxio` 讨论了 Mistral 8x7B 的发布，间接暗示了 Google 的 **Duet AI** 的发布，并将一条推文称为现代数据的有趣人工制品。 
+- **AI Compression 和新研究论文**: 用户 `@coffeebean6887` 分享了一些关于压缩 1.6 万亿参数 SwitchTransformer-c2048 模型的链接，以及一段关于 **Mixture of Experts (MoE)** 范式的 YouTube 视频。
+- **法国的 AI Startup 景象**: 用户 `@slono` 提到由于法国 AI startup 领域潜在的有趣机会，正考虑搬回法国。
+- **Cursor vs VS Code 讨论**: 关于 Cursor 与 VS Code 的优缺点正在进行辩论。`@btdubbins` 对 Cursor 持怀疑态度，认为它只是一个提供 OpenAI API 的收费站。尽管如此，`@guardiang` 发现其 AI 搜索功能具有优势，而 `@mitch3x3` 强调微软为企业用户制作 VS Code，并考虑了数据安全。`@slono` 认为这类工具的实用性更多地与代码库的集成以及周边的 UI 相关。
+
+
+### ▷ #[ai-event-announcements](https://discord.com/channels/822583790773862470/1075282504648511499/) (2 条消息): 
+        
+- **新播客节目**: `@swyxio` 通过分享 [Twitter 链接](https://fxtwitter.com/latentspacepod/status/1733160841997070683) 宣布了新一集的发布。
+- **Latent Space University Day 4**: `@swyxio` 分享了来自 Latent Space University 关于 **Image Generation** 的第四天内容。提供的 [链接](https://buttondown.email/ai4eng/archive/ai-for-engineers-beta-day-4-image-generation/) 涵盖了如何利用 DALL-E API 进行图像生成。
+
+### ▷ #[llm-paper-club](https://discord.com/channels/822583790773862470/1107320650961518663/) (8 messages🔥): 
+        
+- **格式对模型训练的影响**：`@eugeneyan` 描述了一个场景，在对一个 7B 模型进行微调以生成特定 JSON 格式的响应时，出现了意想不到的结果。模型输出的差异非常大，具体取决于起始训练数据在起始语法后是否带有空格（例如 `<s> [INST]` 与 `<s>[INST]` 的区别）。
+- **关于代码中空格作用的讨论**：`@slono` 指出，代码中的空格（例如在空格具有重要意义的语言中）可能产生与 `{` 等关键符号相当的强烈影响，从而可能影响 Tokenization 和学习过程。
+- **Token 数量与空格**：`@slono` 还注意到，改变空格的使用会导致 Token 数量出现显著差异。
+- **关于 "[INST]" 上下文的困惑**：`@slono` 询问了 `@eugeneyan` 使用的 `[INST]` 上下文的含义，后者解释说这是 Mistral 的 Prompt 格式的一部分。
+- **学习参数空间**：`@__chef__` 幽默地思考道：“学习一个空格需要多少个参数？超过 70 亿个”，暗示了训练大型模型所涉及的复杂性和规模。
+
+
+        
+
+---
+
+## [LangChain AI](https://discord.com/channels/1038097195422978059) Discord 总结
+
+- 讨论了关于 LangChain 的**技术难题**，包括 JS/TS 的 Embedding 模型、查看旧文档的问题、Llama2 模型与 SQLDatabaseToolkit 的兼容性查询、网页抓取和源检索问题，以及在 Python 3.10 及以下版本安装 langchain Python 包的问题。一位用户还提出了对 Milvus standalone 稳定文档检索的担忧。另一位用户在 Conversational Retrieval Chain 中遇到了 `InMemoryCache()` 或 `SQLAlchemyCache` 的缓存问题。由于序列化问题，有人寻求将 Document 转换为 JSON 的解决方案。
+- 观察到了关于**数据库偏好**的热烈交流，用户们表达了对 LanceDB 的支持。 
+- 在 share-your-work 频道中，用户 `@marvinbraga` 展示了他的 **[WhatsApp 语音虚拟助手](https://www.youtube.com/watch?v=1k4ADq0quBI)**，并为其书籍提供了折扣，还推荐了他的 [GitHub 仓库](https://github.com/marvinbraga/marvin)。
+- 另一位用户 `@bigansh` 宣布发布 **myGPTBrain 第 2 版**，包含大量新功能、更新的落地页、文档解析器以及订阅模式的引入。随之发布的还有 [Loom](https://www.loom.com/share/dcf1977fffbf413186d6b199151924f4?sid=15c40271-7ccd-4731-ac9f-78cac326c650) 上的用户指南和[公开发布的博客文章](https://open.substack.com/pub/mygptbrain/p/launching-mygptbrain-20?r=2ir30o&utm_campaign=post&utm_medium=web)。他征求了关于潜在新功能的反馈和设计建议。
+
+**LangChain AI 频道总结**
+
+### ▷ #[general](https://discord.com/channels/1038097195422978059/1038097196224086148/) (40 条消息🔥): 
+        
+- **对 Embedding Models 的支持**：用户 `@jungle_jo` 最初不确定 JS/TS 对 embedding models 的支持情况。然而，该用户随后更新了咨询，表示发现 langchain 对此有大量支持。
+- **查看旧版本文档**：用户 `@ellen0609` 询问如何查看 langchain 文档的历史版本。`@.trouble_` 提出通过私信（Direct Message）帮助该用户。
+- **Llama2 模型与 SQLDatabaseToolkit 的兼容性**：用户 `@daksana_40937` 询问了 Llama2 模型与 SQLDatabaseToolkit 的兼容性。
+- **网页抓取与源检索**：用户 `@abed7053` 询问在 langchain 中是否有使用 TypeScript/JavaScript 进行网页抓取的方法。该用户还表示无法在 API 响应中找到检索源上下文（source context）的方法。
+- **Langchain 在 Python v3.10 及以下版本的安装问题**：用户 `@infinityexists.` 在 Python 3.8.0 版本上遇到了 langchain python 包无法安装 0.0.27 以上版本的问题。`@quantumqueenxox` 建议将 Python 升级到 3.10 及以上版本。
+- **一致性文档检索问题**：用户 `@ranjith8249` 在使用 langchain 对话链（conversational chain）从 Mivus 独立版检索一致性文档时遇到问题。
+- **Conversational Retrieval Chain 中的缓存问题**：用户 `@seththunder` 遇到了 `InMemoryCache()` 或 `SQLAlchemyCache` 的问题，称在 LangChain 中使用 Conversational Retrieval Chain 时，两者都无法将提供的答案存储在缓存中。
+- **宣布支持 LanceDB**：用户 `@hucki_rawen.io` 和 `@timcarambat` 讨论了他们对 LanceDB 的偏好，认为这是一个更符合他们需求的解决方案。
+- **将 Document 转换为 JSON**：用户 `@b0otable` 寻求将 Document 转换为 JSON 的帮助，并提到了报错信息 "Object of type Document is not JSON serializable"。
+
+
+### ▷ #[share-your-work](https://discord.com/channels/1038097195422978059/1038097372695236729/) (2 条消息): 
+        
+- **创建语音虚拟助手**：`@marvinbraga` 分享了一个 [YouTube 视频](https://www.youtube.com/watch?v=1k4ADq0quBI)，解释了他如何创建一个通过 WhatsApp 进行交互的语音虚拟助手。视频涵盖了 OpenAI 集成、构建按 ID 存储对话的 API、通过 Facebook API 与 WhatsApp 集成以及使用 Pygame 进行音频处理等主题。
+    - 此外，Marvin 分享了他的书籍 'Python, ChatGPT e Django REST' 的折扣优惠券，并建议访问包含项目源代码的 [GitHub 仓库](https://github.com/marvinbraga/marvin)。
+- **myGPTBrain 更新发布**：`@bigansh` 宣布了 myGPTBrain 第 2 版的发布，包括新功能、更新的落地页、文档解析器以及引入用户订阅。产品更新指南可在 [Loom](https://www.loom.com/share/dcf1977fffbf413186d6b199151924f4?sid=15c40271-7ccd-4731-ac9f-78cac326c650) 查看，还有一篇[公开上线博客文章](https://open.substack.com/pub/mygptbrain/p/launching-mygptbrain-20?r=2ir30o&utm_campaign=post&utm_medium=web)。该用户还征求了关于潜在新功能和设计建议的反馈。
+
+
+        
+
+---
+
+## [LLM Perf Enthusiasts AI](https://discord.com/channels/1168579740391710851) Discord 总结
+
+- 由用户 `@jeffreyw128`、`@res6969` 和 `@pantsforbirds` 发起的关于 **ChatGPT 性能**的讨论。提出了三种可能性：严重的“脑叶切除术”（lobotomization）、旨在优先使用更少 token 的更新，或者是导致参数丢失的基础设施问题。 
+- `@robhaisfield` 在 `#finetuning` 频道询问关于获取用于微调 3.5-turbo 模型的 JSON 文件。
+- 围绕 **UNA 在神经网络任何层级对齐 Mixture of Experts (MoE)** 能力的对话。特别提到了表现突出的模型 **Xaberius 34B v1 "BETA"**。`@the.palmik` 提出了未来关注 **Mixtral** 的进一步讨论。`@the.palmik` 还询问是否有人成功运行了 **Mixtral**，随后 `@robhaisfield` 询问了运行 Mixtral 的要求。[Hacker News 帖子](https://news.ycombinator.com/item?id=38570537)
+- `#irl` 频道中的用户活动通知和互动；`@thisisnotawill` 宣布暂时离开，`@psychickoala` 检查活跃用户，`@frandecam` 确认在场但宣布离开，以及 `@res6969` 对度过的时光表达了积极的回顾。
+
+**LLM Perf Enthusiasts AI 频道总结**
+
+### ▷ #[gpt4](https://discord.com/channels/1168579740391710851/1168582188950896641/) (8 messages🔥): 
+        
+- **ChatGPT 性能讨论**：用户 `@jeffreyw128`、`@res6969` 和 `@pantsforbirds` 对 ChatGPT 感知到的性能下降表示担忧。`@res6969` 推测 **ChatGPT 已被严重“切除脑叶”（lobotomized）**。`@pantsforbirds` 提出，系统可能已更新为**优先使用更少的 token**，或者可能存在导致参数丢失的基础设施问题。
+
+
+### ▷ #[finetuning](https://discord.com/channels/1168579740391710851/1168582249738944532/) (1 messages): 
+        
+robhaisfield: 有没有人可以提供一个 JSON 文件，让我可以用来微调 3.5-turbo，纯粹为了看看它是如何运作的？
+
+
+### ▷ #[opensource](https://discord.com/channels/1168579740391710851/1168606773595349082/) (3 messages): 
+        
+- **UNA 对齐 MoE**：`@the.palmik` 提到 UNA 可以在神经网络的几乎任何层级对齐 Mixture of Experts (MoE)。他们特别提到了 **Xaberius 34B v1 "BETA"** 作为一个值得注意的例子。他们还表示未来将重点关注 **Mixtral**。[Hacker News 上的相关帖子](https://news.ycombinator.com/item?id=38570537)
+- **关于 Mixtral 实现的咨询**：`@the.palmik` 询问是否有人成功运行了 **Mixtral**。随后 `@robhaisfield` 询问了运行 Mixtral 所需的配置要求。
+
+
+### ▷ #[irl](https://discord.com/channels/1168579740391710851/1171569983688560732/) (4 messages): 
+        
+- 用户 `@thisisnotawill` 宣布将离开一会儿。
+- 用户 `@psychickoala` 随后询问是否还有人在聊天室。
+- `@frandecam` 回应明确表示大家确实还很活跃，但他们即将离开。
+- 用户 `@res6969` 回顾并表达了他们在聊天室度过的愉快时光。
+
+
+        
+
+---
+
+## [Skunkworks AI](https://discord.com/channels/1131084849432768614) Discord 总结
+
+- 由 `@ufghfigchv` 发起的关于 **Bf16 的 GPU 要求**的讨论指出，为了获得最佳性能，需要使用较新的 GPU，如 a6000 或 a100。
+- `@teknium` 在 general 频道分享了一个 [Twitter 链接](https://fxtwitter.com/teknium1/status/1733233296962953567?s=46)，未提供更多上下文。
+- 对 `@.mrfoo` 分享的 **Megablocks 研究论文**进行了探讨，并对与 Megablocks 相关的不同 GitHub 仓库提供了额外见解：[MistralAI 的版本](https://github.com/mistralai/megablocks-public) 包含自定义代码，而 [Stanford Futuredata 的官方版本](https://github.com/stanford-futuredata/megablocks) 据称更新更频繁。
+- `@moonlightgarden` 在 moe-main 频道宣布了 **Mistral 新的 8x7B 模型**。
+- `@huevosabio` 分享了一个[指向 Mistral AI 状态的链接](https://x.com/mistralai/status/1733150512395038967?s=46&t=HxvRqfgufhVJ4z1puB-WHg)，但不幸的是，该链接指向了一个错误页面。
+- Pradeep1148 在 off-topic 频道分享了一个 [YouTube 视频](https://youtu.be/mAGLD5598cs)，未提供任何额外上下文。
+
+**Skunkworks AI 频道总结**
+
+### ▷ #[general](https://discord.com/channels/1131084849432768614/1131084849906716735/) (2 messages): 
+        
+- **Bf16 的 GPU 要求**：`@ufghfigchv` 提到 Bf16 速度更快，但需要使用较新的 GPU，如 a6000 或 a100。
+- **teknium 分享的 Twitter 链接**：`@teknium` 分享了一个 [Twitter 链接](https://fxtwitter.com/teknium1/status/1733233296962953567?s=46)，未提供进一步上下文。
+
+
+### ▷ #[papers](https://discord.com/channels/1131084849432768614/1131305311714672710/) (3 messages): 
+        
+- **Megablocks 研究论文**：`@.mrfoo` 分享了一篇名为 **Megablocks** 的研究论文，可以通过[此链接](https://arxiv.org/pdf/2211.15841.pdf)找到。
+- **MistralAI 的 Megablocks GitHub 仓库**：`@.mrfoo` 分享了 MistralAI 的 Megablocks [仓库](https://github.com/mistralai/megablocks-public)。
+- **官方 Megablocks GitHub 仓库**：`@stereoplegic` 指出官方 Megablocks 仓库（由 Stanford Futuredata 所有）更新更近。仓库可以通过[此链接](https://github.com/stanford-futuredata/megablocks)找到。
+- **Mistral 版 Megablocks 中的自定义代码**：`@.mrfoo` 指出 Mistral 的 Megablocks 仓库包含专注于他们新 MoE 的自定义代码。他还提到为此还有一个独立的分支。
+
+### ▷ #[moe-main](https://discord.com/channels/1131084849432768614/1139310171076706464/) (2 messages): 
+        
+- **Mistral 的新型 8x7B 模型**：用户 `@moonlightgarden` 告知频道 **Mistral** 发布了一个新的 8x7B 模型。
+- **Mistral AI 状态链接**：用户 `@huevosabio` 分享了一个 [Mistral AI 状态链接](https://x.com/mistralai/status/1733150512395038967?s=46&t=HxvRqfgufhVJ4z1puB-WHg)，但页面显示错误信息："*Something went wrong, but don’t fret — let’s give it another shot.*"。
+
+
+### ▷ #[off-topic](https://discord.com/channels/1131084849432768614/1140423597454807179/) (1 messages): 
+        
+pradeep1148: https://youtu.be/mAGLD5598cs
+
+
+        
+
+---
+
+## [MLOps @Chipro](https://discord.com/channels/814557108065534033) Discord 总结
+
+- `@jaskirat` 分享了一个名为 **Novus #14** 的即将举行的活动，并附带了[详情和注册链接](https://lu.ma/novus14)，随后 `@Raigon` 询问了活动录制的可能性。
+- 关于分割模型选择的讨论中，`@mattrixoperations` 推荐了 `FastSAM`、`MobileSAM`、`SAM` 和 `Yolo-seg` 等模型，并特别推崇 `YOLOV8-seg` 模型。他特别警告不要在显微镜任务中使用 `SAM`，敦促使用较小的模型并针对标注数据进行 Fine-tuning，并提到了[来源](https://docs.ultralytics.com/tasks/segment/#models)。
+- `@erisianrite` 宣布计划使用 `YOLO` 作为 Baseline（基准）与其自身模型进行性能对比，同时表示有兴趣研究分割模型，并对 `@mattrixoperations` 的建议表示感谢。
+
+**MLOps @Chipro 频道总结**
+
+### ▷ #[events](https://discord.com/channels/814557108065534033/869270934773727272/) (2 messages): 
+        
+- `@jaskirat` 发布了一个指向名为 **Novus #14** 活动的[链接](https://lu.ma/novus14)。帖子包含一张[封面图片](https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=2,quality=75,width=400,height=400/event-covers/1e/b4acf364-1850-4e27-a7c8-2e3a7d99a152)。
+- 随后，`@Raigon` 询问该活动是否会被录制，但本数据集中未提供回复。
+
+
+### ▷ #[general-ml](https://discord.com/channels/814557108065534033/828325357102432327/) (2 messages): 
+        
+- **分割模型建议**：用户 `@mattrixoperations` 分享了关于分割模型选择的一些见解，建议使用 `FastSAM`、`MobileSAM`、`SAM` 和 `Yolo-seg`。他特别推荐 `YOLOV8-seg` 模型，但建议不要在显微镜任务中使用 `SAM`。他建议使用较小的模型并针对一些标注数据进行 Fine-tuning（[来源](https://docs.ultralytics.com/tasks/segment/#models)）。
+- **使用 YOLO 进行基准对比**：用户 `@erisianrite` 提到他们计划利用 `YOLO` 作为 Baseline，以对比他们开发的模型的性能。他们还表达了研究分割模型的意图，并对 `@mattrixoperations` 的建议表示感谢。
+
+
+        
+
+---
+
+## [Alignment Lab AI](https://discord.com/channels/1087862276448595968) Discord 总结
+
+- `@severus_27` 向社区介绍了 **OpenML Guide**。该指南提供了一系列与 AI 相关的*开源*、*免费资源*，涵盖了计算机视觉、NLP、深度学习、医疗 AI、机器人以及支撑 AI 核心原理的数学基础等各种主题。
+- OpenML Guide 可通过其[网站](https://www.openmlguide.org/)访问，其 [GitHub 仓库](https://github.com/severus27/OpenML-Guide) 也可供贡献或通过 GitHub Star 表示支持。
+
+**Alignment Lab AI 频道总结**
+
+### ▷ #[open-orca-community-chat](https://discord.com/channels/1087862276448595968/1124000038205530182/) (1 messages): 
+        
+- **OpenML Guide 介绍**：用户 `@severus_27` 介绍了 OpenML Guide，提到它提供了丰富的免费资源，如书籍、课程、论文、指南、文章、教程、Notebooks 等，用于学习计算机视觉、NLP、深度学习、医疗 AI、机器人以及 AI 核心原理背后的数学等相关主题。此外，所有资源均为开源且可免费访问。
+- **OpenML Guide 网站和 GitHub 仓库**：可以通过其[网站](https://www.openmlguide.org/)访问 OpenML Guide，同时它还有一个 [GitHub 仓库](https://github.com/severus27/OpenML-Guide)，用户可以在那里进行贡献或通过点亮 Star 来表示支持。
+
+### ▷ #[looking-for-workers](https://discord.com/channels/1087862276448595968/1142242166677192774/) (1 条消息): 
+        
+- **OpenML Guide 简介**: `@severus_27` 介绍了 **OpenML Guide**，这是一个开源、免费的资源库，提供了大量 AI 相关内容，如书籍、课程、论文、指南、文章、教程、notebooks 等。该指南涵盖了多种 AI 兴趣领域，包括 computer vision、NLP、deep learning、医疗 AI、机器人学以及 AI 核心原理背后的数学。分享了 [OpenML Guide 网站](https://www.openmlguide.org/) 和该项目的 [GitHub](https://github.com/severus27/OpenML-Guide) 仓库。
+
+
+        
+
+---
+Ontocord (MDEL discord) Discord 没有新消息。如果该频道长期处于沉寂状态，请告知我们，我们将将其移除。
+
+---
+AI Engineer Foundation Discord 没有新消息。如果该频道长期处于沉寂状态，请告知我们，我们将将其移除。
+
+---
+Perplexity AI Discord 没有新消息。如果该频道长期处于沉寂状态，请告知我们，我们将将其移除。
+
+---
+YAIG (a16z Infra) Discord 没有新消息。如果该频道长期处于沉寂状态，请告知我们，我们将将其移除
