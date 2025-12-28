@@ -632,7 +632,7 @@ https://www.youtube.com/watch?v=z4zXicOAF28
 您收到此电子邮件是因为您通过我们的网站订阅了该服务。
 
 想更改接收这些电子邮件的方式吗？
-您可以从该列表中 [取消订阅]({{{RESEND_UNSUBSCRIBE_URL}}})。
+您可以从该列表中 [取消订阅](&#123;&#123;&#123;RESEND_UNSUBSCRIBE_URL&#125;&#125;&#125;)。
 
 ---
 

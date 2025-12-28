@@ -1790,4 +1790,4 @@ dbreunig: https://www.dbreunig.com/2025/04/18/the-wisdom-of-artificial-crowds.ht
 您收到此邮件是因为您在我们的网站上选择了订阅。
 
 想要更改接收这些邮件的方式吗？
-您可以从该列表中 [取消订阅]({{{RESEND_UNSUBSCRIBE_URL}}})。
+您可以从该列表中 [取消订阅](&#123;&#123;&#123;RESEND_UNSUBSCRIBE_URL&#125;&#125;&#125;)。

@@ -638,7 +638,7 @@ Google 今天[大显身手](https://developers.googleblog.com/en/introducing-gem
 您收到此邮件是因为您通过我们的网站订阅了此内容。
 
 想要更改接收此类邮件的方式？
-您可以从该列表中 [取消订阅]({{{RESEND_UNSUBSCRIBE_URL}}})。
+您可以从该列表中 [取消订阅](&#123;&#123;&#123;RESEND_UNSUBSCRIBE_URL&#125;&#125;&#125;)。
 
 ---
 

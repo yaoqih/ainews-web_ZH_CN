@@ -498,7 +498,7 @@ topics:
 ## [Nomic.ai (GPT4All)](https://discord.com/channels/1076964370942267462) Discord
 
 - **为 Hermes 模型请求 Jinja 模板**：一位成员请求用于 **Nous-Hermes-2-Mistral-7B-DPO** 的 **Jinja 模板**，以便配合 **GPT4All custom API** 在服务器上运行。
-   - 一位成员分享了以下 Jinja 模板代码：`{% for message in messages %}{{'<|im_start|>' + message['role'] + '\n' + message['content'] + '<|im_end|>' + '\n'}}{% if add_generation_prompt %}{{ '<|im_start|>assistant\n' }}{% endif %}`。
+   - 一位成员分享了以下 Jinja 模板代码：`&#123;% for message in messages %&#125;&#123;&#123;'<|im_start|>' + message['role'] + '\n' + message['content'] + '<|im_end|>' + '\n'&#125;&#125;&#123;% if add_generation_prompt %&#125;&#123;&#123; '<|im_start|>assistant\n' &#125;&#125;&#123;% endif %&#125;`。
 - **PrivateGPT 被标记为 RAG 模型**：一位成员提到发现了一个名为 **PrivateGPT** 的 **RAG 模型**。
    - 该成员表示*这个项目看起来已经停止维护了*。
 - **询问 Qwen3 支持情况**：一位成员询问关于 **Qwen3** 的支持情况。
@@ -567,7 +567,7 @@ topics:
 您收到此邮件是因为您通过我们的网站订阅了。
 
 想要更改接收这些邮件的方式吗？
-您可以从该列表中 [退订]({{{RESEND_UNSUBSCRIBE_URL}}})。
+您可以从该列表中 [退订](&#123;&#123;&#123;RESEND_UNSUBSCRIBE_URL&#125;&#125;&#125;)。
 
 ---
 
@@ -1736,7 +1736,7 @@ burnytech: https://fxtwitter.com/AndrewZ45732491/status/1919920459748909288
 - **PrivateGPT 被标记为 RAG 模型**：一名成员提到发现了一个名为 **PrivateGPT** 的 **RAG model**，但指出*该项目看起来已经停止维护*。
    - 未提供关于该项目的更多细节或链接。
 - **提供了 Hermes 模型的 Jinja Template**：一名成员分享了 **Nous-Hermes-2-Mistral-7B-DPO** 模型的 **Jinja template**。
-   - 提供的模板为 `{% for message in messages %}{{'<|im_start|>' + message['role'] + '\n' + message['content'] + '<|im_end|>' + '\n'}}{% endfor %}{% if add_generation_prompt %}{{ '<|im_start|>assistant\n' }}{% endif %}`。
+   - 提供的模板为 `&#123;% for message in messages %&#125;&#123;&#123;'<|im_start|>' + message['role'] + '\n' + message['content'] + '<|im_end|>' + '\n'&#125;&#125;&#123;% endfor %&#125;&#123;% if add_generation_prompt %&#125;&#123;&#123; '<|im_start|>assistant\n' &#125;&#125;&#123;% endif %&#125;`。
 - **Qwen3 支持？**：一名成员询问关于 **Qwen3** 的支持情况。
    - 未提供进一步细节。
 

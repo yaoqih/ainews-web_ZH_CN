@@ -527,7 +527,7 @@ AIE CODE 的套票和[酒店](https://www.ai.engineer/code)即将[售罄](https:
 您收到此邮件是因为您通过我们的网站订阅了。
 
 想要更改接收这些邮件的方式吗？
-您可以从该列表中 [退订]({{{RESEND_UNSUBSCRIBE_URL}}})。
+您可以从该列表中 [退订](&#123;&#123;&#123;RESEND_UNSUBSCRIBE_URL&#125;&#125;&#125;)。
 
 
 ---

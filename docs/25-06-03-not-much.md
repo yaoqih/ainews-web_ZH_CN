@@ -648,7 +648,7 @@ https://www.youtube.com/watch?v=z4zXicOAF28
 你收到这封邮件是因为你通过我们的网站订阅了。
 
 想要更改接收这些邮件的方式吗？
-你可以从该列表中 [退订]({{{RESEND_UNSUBSCRIBE_URL}}})。
+你可以从该列表中 [退订](&#123;&#123;&#123;RESEND_UNSUBSCRIBE_URL&#125;&#125;&#125;)。
 
 
 ---

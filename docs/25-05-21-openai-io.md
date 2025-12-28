@@ -612,7 +612,7 @@ Mistral 发布了一个新的 [code model finetune](https://x.com/mistralai/stat
 您收到此邮件是因为您通过我们的网站订阅了。
 
 想要更改接收这些邮件的方式吗？
-您可以从该列表中 [退订]({{{RESEND_UNSUBSCRIBE_URL}}})。
+您可以从该列表中 [退订](&#123;&#123;&#123;RESEND_UNSUBSCRIBE_URL&#125;&#125;&#125;)。
 
 ---
 

@@ -679,7 +679,7 @@ Reddit 对 DSV3.1 的剖析特别深入，请继续向下滚动阅读。
 您收到此邮件是因为您通过我们的网站订阅了。
 
 想要更改接收这些邮件的方式吗？
-您可以从该列表中 [unsubscribe]({{{RESEND_UNSUBSCRIBE_URL}}})。
+您可以从该列表中 [unsubscribe](&#123;&#123;&#123;RESEND_UNSUBSCRIBE_URL&#125;&#125;&#125;)。
 
 
 ---
