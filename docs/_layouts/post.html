@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{ page.title }} | {{ site.title }}</title>
+    <meta name="description" content="{{ page.description | default: site.description }}" />
+    <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}" />
+  </head>
+  <body class="theme-post">
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="logo">AINews 中文</div>
+        <nav class="nav">
+          <a href="{{ '/' | relative_url }}">首页</a>
+          <a href="https://github.com/smol-ai/ainews-web-2025">上游</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <article class="post">
+        <div class="post-hero">
+          <p class="eyebrow">{{ page.original_slug | default: "AI News" }}</p>
+          <h1>{{ page.title }}</h1>
+          <div class="post-meta">
+            {% if page.date %}
+            <time datetime="{{ page.date }}">{{ page.date | date: "%Y-%m-%d" }}</time>
+            {% endif %}
+            {% if page.id %}
+            <span class="meta-dot">·</span>
+            <span>{{ page.id }}</span>
+            {% endif %}
+          </div>
+          {% if page.description %}
+          <div class="post-desc">
+            {{ page.description | markdownify }}
+          </div>
+          {% endif %}
+
+          <div class="chip-row">
+            {% if page.topics %}
+              {% for item in page.topics %}
+                <span class="chip">#{{ item }}</span>
+              {% endfor %}
+            {% endif %}
+            {% if page.models %}
+              {% for item in page.models %}
+                <span class="chip chip-alt">{{ item }}</span>
+              {% endfor %}
+            {% endif %}
+            {% if page.companies %}
+              {% for item in page.companies %}
+                <span class="chip chip-muted">{{ item }}</span>
+              {% endfor %}
+            {% endif %}
+          </div>
+        </div>
+
+        <div class="post-body">
+          {{ content }}
+        </div>
+
+        <div class="post-footer">
+          <a class="back-link" href="{{ '/' | relative_url }}">← 返回首页</a>
+        </div>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>© {{ site.time | date: "%Y" }} AINews 中文同步</div>
+        <div>Powered by Jekyll + GitHub Pages</div>
+      </div>
+    </footer>
+  </body>
+</html>

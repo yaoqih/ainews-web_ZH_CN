@@ -1,5 +1,6 @@
 import os
 import re
+from datetime import datetime, timezone
 import requests
 import frontmatter
 import yaml
@@ -325,6 +326,25 @@ def update_index():
     """生成简单的 index.md"""
     if not os.path.exists(OUTPUT_DIR): return
 
+    def format_date(value):
+        if not value:
+            return ""
+        if isinstance(value, datetime):
+            return value.strftime("%Y-%m-%d")
+        text = str(value).strip().strip("'").strip('"')
+        if not text:
+            return ""
+        # Normalize Zulu timestamps.
+        if text.endswith("Z"):
+            text = text[:-1] + "+00:00"
+        try:
+            dt = datetime.fromisoformat(text)
+        except ValueError:
+            return str(value)
+        if dt.tzinfo is None:
+            dt = dt.replace(tzinfo=timezone.utc)
+        return dt.strftime("%Y-%m-%d")
+
     def fallback_from_filename(filename):
         base = filename[:-3] if filename.endswith(".md") else filename
         base = re.sub(r"^\d{2}-\d{2}-\d{2}-", "", base)
@@ -414,14 +434,20 @@ def update_index():
         return chosen or fallback
 
     files = sorted([f for f in os.listdir(OUTPUT_DIR) if f.endswith('.md') and f != 'index.md'], reverse=True)
-    index_content = "# AI News 中文同步版\n\n> 自动同步自 smol-ai/ainews-web-2025，由 AI 并行翻译。\n\n"
+    index_content = (
+        "---\n"
+        "layout: home\n"
+        "title: AI News 中文同步版\n"
+        "description: 自动同步自 smol-ai/ainews-web-2025，由 AI 并行翻译。\n"
+        "---\n\n"
+    )
     
     for f in files:
         try:
             post = _load_frontmatter_from_file(os.path.join(OUTPUT_DIR, f))
             fallback_title = fallback_from_filename(f)
             title = sanitize_title(post.get('title', fallback_title), fallback_title)
-            date = post.get('date', '')
+            date = format_date(post.get('date', ''))
             html_name = f[:-3] + ".html" if f.endswith(".md") else f
             index_content += f"- [{title}](./{html_name}) *{date}*\n"
         except:

@@ -1,0 +1,15 @@
+title: AI News 中文同步版
+description: 自动同步自 smol-ai/ainews-web-2025，由 AI 并行翻译。
+markdown: kramdown
+permalink: /:basename:output_ext
+
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter: rouge
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: post
