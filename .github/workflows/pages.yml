@@ -31,7 +31,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          ref: ${{ github.event.workflow_run.head_sha || github.ref }}
+          ref: ${{ github.event.workflow_run.head_branch || github.ref }}
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
