@@ -4,6 +4,7 @@ title: AI News 中文同步版
 description: 自动同步自 smol-ai/ainews-web-2025，由 AI 并行翻译。
 ---
 
+- [“Meta Superintelligence Labs 以约 40 亿美元收购 Manus AI；此时距离该产品发布仅 9 个月，其年度经常性收入（ARR）已达 1 亿美元。”](./25-12-29-meta-manus.html) *2025-12-29*
 - [今天没发生什么事。](./25-12-26-not-much.html) *2025-12-26*
 - [英伟达以 200 亿美元现金收购 Groq（大部分业务）；系史上规模最大的“高管雇佣式收购”（execuhire）。](./25-12-24-nvidia-groq.html) *2025-12-24*
 - [今天没发生什么事。](./25-12-23-not-much.html) *2025-12-23*
