@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,600&family=Space+Grotesk:wght@400;500;600;700&display=swap");
 
 :root {
-  color-scheme: light;
+  color-scheme: light dark;
   --bg: #f7f5f0;
   --bg-alt: #f0ede6;
   --surface: #ffffff;
@@ -230,6 +230,9 @@ a:hover {
 
 .post-body {
   margin-top: 30px;
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .post-body h1,
@@ -245,6 +248,13 @@ a:hover {
   padding-left: 16px;
   color: var(--muted);
   margin-left: 0;
+}
+
+.post-body img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 18px auto;
 }
 
 pre {
@@ -288,6 +298,41 @@ pre code {
   justify-content: space-between;
   gap: 12px;
   flex-wrap: wrap;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0f1216;
+    --bg-alt: #151a22;
+    --surface: #151b23;
+    --surface-alt: #1a212b;
+    --text: #f2efe8;
+    --muted: #b4aea4;
+    --border: rgba(242, 239, 232, 0.12);
+    --accent: #6aa4ff;
+    --accent-dark: #8fb8ff;
+    --chip: #1d2a3f;
+    --chip-alt: #1a3128;
+    --chip-muted: #24201a;
+    --shadow: 0 20px 50px rgba(0, 0, 0, 0.45);
+  }
+
+  body {
+    background: radial-gradient(circle at 10% 10%, #1b2330 0%, var(--bg) 45%, #0b0e13 100%);
+  }
+
+  .site-header {
+    background: rgba(15, 18, 22, 0.8);
+  }
+
+  pre {
+    background: #0c0f14;
+    color: #f6f3ee;
+  }
+
+  code {
+    background: #1f1c17;
+  }
 }
 
 @media (max-width: 900px) {
