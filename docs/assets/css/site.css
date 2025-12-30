@@ -170,7 +170,8 @@ a:hover {
   background: var(--surface);
   border-radius: var(--radius-lg);
   padding: 36px;
-  margin: 40px 0 80px;
+  width: min(960px, 100%);
+  margin: 40px auto 80px;
   border: 1px solid var(--border);
   box-shadow: var(--shadow);
 }
@@ -230,9 +231,6 @@ a:hover {
 
 .post-body {
   margin-top: 30px;
-  max-width: 760px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .post-body h1,
