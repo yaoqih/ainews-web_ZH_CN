@@ -4,6 +4,7 @@ title: AI News 中文同步版
 description: 自动同步自 smol-ai/ainews-web-2025，由 AI 并行翻译。
 ---
 
+- [今天没发生什么特别的事。](./25-12-31-not-much.html) *2025-12-31*
 - [今天没发生什么特别的事。](./25-12-30-not-much.html) *2025-12-30*
 - [“Meta Superintelligence Labs 以约 40 亿美元收购 Manus AI；此时距离该产品发布仅 9 个月，其年度经常性收入（ARR）已达 1 亿美元。”](./25-12-29-meta-manus.html) *2025-12-29*
 - [今天没发生什么事。](./25-12-26-not-much.html) *2025-12-26*
