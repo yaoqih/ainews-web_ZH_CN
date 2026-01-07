@@ -26,14 +26,7 @@ models:
 people:
 - _philschmid
 - demishassabis
-title: '这句话可以翻译为：
-
-
-  *   **今天没发生什么特别的事。**（标准翻译）
-
-  *   **今天没啥事儿。**（口语化）
-
-  *   **今天过得挺平淡的。**（更侧重于心情或氛围）'
+title: '今天没发生什么特别的事。'
 topics:
 - agentic-coding
 - agent-harnesses
