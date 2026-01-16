@@ -4,6 +4,8 @@ title: AI News 中文同步版
 description: 自动同步自 smol-ai/ainews-web-2025，由 AI 并行翻译。
 ---
 
+- [今天没发生什么特别的事。](./26-01-14-not-much.html) *2026-01-15*
+- [Anthropic Labs：Cowork、Claude Code、MCP，以及由 Mike Krieger 和 Ben Mann 领导的技能孵化器。](./26-01-13-not-much.html) *2026-01-13*
 - [苹果公司选择谷歌的 Gemini 为下一代 Siri 提供支持。](./26-01-12-gemini-apple.html) *2026-01-12*
 - [今天没发生什么特别的事。](./26-01-09-not-much.html) *2026-01-09*
 - [今天没发生什么事。](./26-01-08-not-much.html) *2026-01-08*
