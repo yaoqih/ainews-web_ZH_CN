@@ -4,6 +4,7 @@ title: AI News 中文同步版
 description: 自动同步自 smol-ai/ainews-web-2025，由 AI 并行翻译。
 ---
 
+- [今天没发生什么特别的事。](./26-01-19-not-much.html) *2026-01-19*
 - [ChatGPT 开始在免费版中测试广告，并在美国推出每月 8 美元的全新 Go 订阅计划。](./26-01-16-chatgpt-ads.html) *2026-01-16*
 - [Open Responses：OpenAI 响应 API 的明确规范，支持 OpenRouter、Ollama、Huggingface、vLLM 等平台。](./26-01-15-openresponses.html) *2026-01-15*
 - [今天没发生什么特别的事。](./26-01-14-not-much.html) *2026-01-15*
