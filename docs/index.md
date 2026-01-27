@@ -4,6 +4,8 @@ title: AI News 中文同步版
 description: 自动同步自 smol-ai/ainews-web-2025，由 AI 并行翻译。
 ---
 
+- [Anthropic 在 Claude.ai 中发布 MCP Apps 开放规范。](./26-01-26-mcp-apps.html) *2026-01-26*
+- [今天没发生什么特别的事。](./26-01-22-not-much.html) *2026-01-22*
 - [OpenEvidence（被称为“医生版 ChatGPT”）以 120 亿美元的估值融资 2.5 亿美元，较去年 2 月 10 亿美元的估值增长了 12 倍。](./26-01-21-openevidence.html) *2026-01-21*
 - [今天没发生什么特别的事。](./26-01-20-not-much.html) *2026-01-20*
 - [今天没发生什么特别的事。](./26-01-19-not-much.html) *2026-01-19*
