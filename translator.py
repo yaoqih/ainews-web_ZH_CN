@@ -11,7 +11,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 UPSTREAM_REPO = "smol-ai/ainews-web-2025"
 TARGET_DIR = "src/content/issues"  # <--- 修改了这里，之前是 markdownsrc/content/issues
 OUTPUT_DIR = "docs"
-API_KEY = os.environ.get("LLM_API_KEY",'sk-2ZSxkHHS3V8JaqlOCBrE7PipfVtkZWcKJsHXToKixCxKeXV9')
+API_KEY = os.environ.get("LLM_API_KEY")
 BASE_URL = os.environ.get("LLM_BASE_URL", "https://yunwu.ai/v1")
 MAX_WORKERS = 32  # 并行线程数，根据你的 API Rate Limit 调整
 MAX_CHUNK_CHARS = 5000  # 每段必须 < 5000 个字符

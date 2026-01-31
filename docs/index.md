@@ -4,6 +4,8 @@ title: AI News 中文同步版
 description: 自动同步自 smol-ai/ainews-web-2025，由 AI 并行翻译。
 ---
 
+- [MoltBook 占领了时间线。](./26-01-30-moltbook.html) *2026-01-30*
+- [xAI Grok Imagine API —— 排名第一的视频模型，拥有最优的价格与延迟表现 —— 并且正在与 SpaceX 合并。](./26-01-29-xai-grok-imagine-api.html) *2026-01-29*
 - [今天没什么事。](./26-01-28-not-much.html) *2026-01-28*
 - [Moonshot Kimi K2.5 —— 性能超越 Sonnet 4.5 且成本仅需一半；全球领先（SOTA）开源模型；首款原生图像+视频模型；支持 100 路并行智能体集群（Agent Swarm）管理。](./26-01-27-kimi-k25.html) *2026-01-27*
 - [Anthropic 在 Claude.ai 中发布 MCP Apps 开放规范。](./26-01-26-mcp-apps.html) *2026-01-26*
