@@ -4,6 +4,8 @@ title: AI News 中文同步版
 description: 自动同步自 smol-ai/ainews-web-2025，由 AI 并行翻译。
 ---
 
+- [上下文图谱：是噱头还是真正的万亿美元机遇？](./26-02-03-not-much.html) *2026-02-03*
+- [OpenAI Codex 应用：VSCode 分支的终结、多任务工作树、技能自动化。](./26-02-02-openai-codex-app.html) *2026-02-02*
 - [MoltBook 占领了时间线。](./26-01-30-moltbook.html) *2026-01-30*
 - [xAI Grok Imagine API —— 排名第一的视频模型，拥有最优的价格与延迟表现 —— 并且正在与 SpaceX 合并。](./26-01-29-xai-grok-imagine-api.html) *2026-01-29*
 - [今天没什么事。](./26-01-28-not-much.html) *2026-01-28*
