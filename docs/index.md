@@ -4,6 +4,8 @@ title: AI News 中文同步版
 description: 自动同步自 smol-ai/ainews-web-2025，由 AI 并行翻译。
 ---
 
+- [OpenAI 与 Anthropic 开战：Claude Opus 4.6 对阵 GPT 5.3 Codex](./26-02-05-claude-opus-openai-codex.html) *2026-02-05*
+- [ElevenLabs 以 110 亿美元估值完成 5 亿美元 D 轮融资；Cerebras 以 230 亿美元估值完成 10 亿美元 H 轮融资；从 Vibe Coding（氛围编码）转向 Agentic Engineering（智能...](./26-02-04-elevenlabs-cerebras.html) *2026-02-04*
 - [上下文图谱：是噱头还是真正的万亿美元机遇？](./26-02-03-not-much.html) *2026-02-03*
 - [OpenAI Codex 应用：VSCode 分支的终结、多任务工作树、技能自动化。](./26-02-02-openai-codex-app.html) *2026-02-02*
 - [MoltBook 占领了时间线。](./26-01-30-moltbook.html) *2026-01-30*
