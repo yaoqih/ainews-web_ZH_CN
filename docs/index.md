@@ -568,3 +568,4 @@ description: 自动同步自 smol-ai/ainews-web-2025，由 AI 并行翻译。
 - [年12月8日 - Mamba vs Mistral vs Hyena](./23-12-08-ainews-1282023-mamba-v-mistral-v-hyena.html) *2023-12-08*
 - [年12月7日：Anthropic 表示这是“技能问题”（skill issue）。](./23-12-07-ainews-1272023-anthropic-says-skill-issue.html) *2023-12-07*
 - [谷歌的 Gemini……靠谱吗？](./23-12-06-ainews-is-googles-gemini-legit.html) *2023-12-06*
+- [今天没发生什么特别的事。](./2026-02-09-not-much.html) *2026-02-09*
