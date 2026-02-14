@@ -568,6 +568,7 @@ description: 自动同步自 smol-ai/ainews-web-2025，由 AI 并行翻译。
 - [年12月8日 - Mamba vs Mistral vs Hyena](./23-12-08-ainews-1282023-mamba-v-mistral-v-hyena.html) *2023-12-08*
 - [年12月7日：Anthropic 表示这是“技能问题”（skill issue）。](./23-12-07-ainews-1272023-anthropic-says-skill-issue.html) *2023-12-07*
 - [谷歌的 Gemini……靠谱吗？](./23-12-06-ainews-is-googles-gemini-legit.html) *2023-12-06*
+- [新款 Gemini 3 Deep Think（深度思考版），Anthropic 以 3800 亿美元估值融资 300 亿美元，GPT-5.3-Codex Spark，MiniMax M2.5。](./2026-02-12-anthropic-gemini-deepthink.html) *2026-02-12*
 - [Z.ai GLM-5：全新 SOTA 开源权重型大语言模型](./2026-02-11-glm-5.html) *2026-02-11*
 - [Qwen-Image 2.0 和 Seedance 2.0](./2026-02-10-qwenimage-seedance-2.html) *2026-02-10*
 - [今天没发生什么特别的事。](./2026-02-09-not-much.html) *2026-02-09*
