@@ -326,31 +326,55 @@ def update_index():
     """生成简单的 index.md"""
     if not os.path.exists(OUTPUT_DIR): return
 
-    def format_date(value):
+    def parse_datetime(value):
         if not value:
-            return ""
+            return None
         if isinstance(value, datetime):
-            return value.strftime("%Y-%m-%d")
-        text = str(value).strip().strip("'").strip('"')
-        if not text:
-            return ""
-        # Normalize Zulu timestamps.
-        if text.endswith("Z"):
-            text = text[:-1] + "+00:00"
-        try:
-            dt = datetime.fromisoformat(text)
-        except ValueError:
-            return str(value)
+            dt = value
+        else:
+            text = str(value).strip().strip("'").strip('"')
+            if not text:
+                return None
+            # Normalize Zulu timestamps.
+            if text.endswith("Z"):
+                text = text[:-1] + "+00:00"
+            try:
+                dt = datetime.fromisoformat(text)
+            except ValueError:
+                return None
         if dt.tzinfo is None:
             dt = dt.replace(tzinfo=timezone.utc)
-        return dt.strftime("%Y-%m-%d")
+        return dt.astimezone(timezone.utc)
+
+    def format_date(value):
+        dt = parse_datetime(value)
+        if dt is not None:
+            return dt.strftime("%Y-%m-%d")
+        if value is None:
+            return ""
+        text = str(value).strip().strip("'").strip('"')
+        return text
 
     def fallback_from_filename(filename):
         base = filename[:-3] if filename.endswith(".md") else filename
-        base = re.sub(r"^\d{2}-\d{2}-\d{2}-", "", base)
+        base = re.sub(r"^\d{2,4}-\d{2}-\d{2}-", "", base)
         base = re.sub(r"^ainews-", "", base)
         base = base.replace("-", " ").strip()
         return base or (filename[:-3] if filename.endswith(".md") else filename)
+
+    def date_from_filename(filename):
+        base = filename[:-3] if filename.endswith(".md") else filename
+        m = re.match(r"^(\d{2,4})-(\d{2})-(\d{2})-", base)
+        if not m:
+            return None
+        year_text, month_text, day_text = m.groups()
+        year = int(year_text) if len(year_text) == 4 else int(f"20{year_text}")
+        month = int(month_text)
+        day = int(day_text)
+        try:
+            return datetime(year, month, day, tzinfo=timezone.utc)
+        except ValueError:
+            return None
 
     def sanitize_title(raw_title, fallback):
         """Clean title for markdown list rendering."""
@@ -433,7 +457,34 @@ def update_index():
             chosen = chosen[: max_len - 3].rstrip() + "..."
         return chosen or fallback
 
-    files = sorted([f for f in os.listdir(OUTPUT_DIR) if f.endswith('.md') and f != 'index.md'], reverse=True)
+    files = [f for f in os.listdir(OUTPUT_DIR) if f.endswith('.md') and f != 'index.md']
+    entries = []
+    min_sort_date = datetime(1970, 1, 1, tzinfo=timezone.utc)
+
+    for f in files:
+        html_name = f[:-3] + ".html" if f.endswith(".md") else f
+        fallback_title = fallback_from_filename(f)
+        filename_date = date_from_filename(f)
+        title = fallback_title
+        date = filename_date.strftime("%Y-%m-%d") if filename_date else ""
+        sort_dt = filename_date if filename_date else min_sort_date
+
+        try:
+            post = _load_frontmatter_from_file(os.path.join(OUTPUT_DIR, f))
+            title = sanitize_title(post.get('title', fallback_title), fallback_title)
+            raw_date = post.get('date', '')
+            date = format_date(raw_date) or date
+            parsed_date = parse_datetime(raw_date)
+            if parsed_date:
+                sort_dt = parsed_date
+        except Exception:
+            pass
+
+        entries.append((sort_dt, f, title, html_name, date))
+
+    # Use parsed date first; fallback to filename for deterministic ordering.
+    entries.sort(key=lambda item: (item[0], item[1]), reverse=True)
+
     index_content = (
         "---\n"
         "layout: home\n"
@@ -442,18 +493,11 @@ def update_index():
         "---\n\n"
     )
     
-    for f in files:
-        try:
-            post = _load_frontmatter_from_file(os.path.join(OUTPUT_DIR, f))
-            fallback_title = fallback_from_filename(f)
-            title = sanitize_title(post.get('title', fallback_title), fallback_title)
-            date = format_date(post.get('date', ''))
-            html_name = f[:-3] + ".html" if f.endswith(".md") else f
+    for _sort_dt, _filename, title, html_name, date in entries:
+        if date:
             index_content += f"- [{title}](./{html_name}) *{date}*\n"
-        except:
-            html_name = f[:-3] + ".html" if f.endswith(".md") else f
-            fallback_title = fallback_from_filename(f)
-            index_content += f"- [{fallback_title}](./{html_name})\n"
+        else:
+            index_content += f"- [{title}](./{html_name})\n"
             
     with open(os.path.join(OUTPUT_DIR, "index.md"), "w", encoding="utf-8") as f:
         f.write(index_content)
