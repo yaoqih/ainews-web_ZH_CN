@@ -623,7 +623,7 @@ https://www.youtube.com/watch?v=7Dtu2bilcFs&pp=2AbMBw%3D%3D
 您收到这封电子邮件是因为您通过我们的网站选择了订阅。
 
 想更改接收这些电子邮件的方式吗？
-您可以从该列表中 [退订]({{{RESEND_UNSUBSCRIBE_URL}}})。
+您可以从该列表中 [退订](&#123;&#123;&#123;RESEND_UNSUBSCRIBE_URL&#125;&#125;&#125;)。
 
 ---
 
