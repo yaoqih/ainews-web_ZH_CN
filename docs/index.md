@@ -4,6 +4,8 @@ title: AI News 中文同步版
 description: 自动同步自 smol-ai/ainews-web-2025，由 AI 并行翻译。
 ---
 
+- [Claude Sonnet 4.6：4.5 版本的利落升级，整体表现更佳，但仍有一些注意事项。](./2026-02-17-sonnet-46.html) *2026-02-17*
+- [Qwen3.5-397B-A17B：Open-Opus 级别中最小且非常高效的模型。](./2026-02-16-qwen35.html) *2026-02-16*
 - [Qwen3.5-397B-A17B：Open-Opus 系列中最小的级别，是一款非常高效的模型。](./2026-02-16-not-much.html) *2026-02-16*
 - [MiniMax-M2.5：顶尖（SOTA）级编程、搜索、工具调用能力，仅需 $1/小时。](./2026-02-13-minimax25.html) *2026-02-13*
 - [新款 Gemini 3 Deep Think（深度思考版），Anthropic 以 3800 亿美元估值融资 300 亿美元，GPT-5.3-Codex Spark，MiniMax M2.5。](./2026-02-12-anthropic-gemini-deepthink.html) *2026-02-12*
