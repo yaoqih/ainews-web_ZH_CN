@@ -4,6 +4,7 @@ title: AI News 中文同步版
 description: 自动同步自 smol-ai/ainews-web-2025，由 AI 并行翻译。
 ---
 
+- [今天没发生什么特别的事。](./2026-02-18-not-much.html) *2026-02-18*
 - [Claude Sonnet 4.6：4.5 版本的利落升级，整体表现更佳，但仍有一些注意事项。](./2026-02-17-sonnet-46.html) *2026-02-17*
 - [Qwen3.5-397B-A17B：Open-Opus 级别中最小且非常高效的模型。](./2026-02-16-qwen35.html) *2026-02-16*
 - [Qwen3.5-397B-A17B：Open-Opus 系列中最小的级别，是一款非常高效的模型。](./2026-02-16-not-much.html) *2026-02-16*
