@@ -5,6 +5,7 @@ description: 自动同步自 smol-ai/ainews-web-2025，由 AI 并行翻译。
 ---
 
 - [Gemini Nano 香蕉 2](./2026-02-26-note.html) *2026-02-26*
+- [Nano Banana 2 aka Gemini 3.1 Flash Image Preview: the new SOTA Imagegen model](./2026-02-26-nanobanana2.html) *2026-02-26*
 - [智能体工程：2025年12月到底发生了什么？](./2026-02-25-wtf-happened.html) *2026-02-25*
 - [Claude Code 周年庆 + 新品发布：Qwen 3.5、Cursor 演示、Cognition Devin 2.2、Inception Mercury 2。](./2026-02-24-claude-code.html) *2026-02-24*
 - [Anthropic 指控 DeepSeek（深度求索）、Moonshot（月之暗面）和 MiniMax 进行了“工业级规模的蒸馏攻击”。](./2026-02-23-not-much.html) *2026-02-24*
