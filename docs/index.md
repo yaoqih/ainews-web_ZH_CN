@@ -4,6 +4,7 @@ title: AI News 中文同步版
 description: 自动同步自 smol-ai/ainews-web-2025，由 AI 并行翻译。
 ---
 
+- [OpenAI 完成了来自亚马逊、英伟达（NVIDIA）和软银（SoftBank）的 1100 亿美元融资，这是历史上规模最大的初创公司融资，投后估值达到 8400 亿美元。](./2026-02-27-openai-g.html) *2026-02-27*
 - [Gemini Nano 香蕉 2](./2026-02-26-note.html) *2026-02-26*
 - [Nano Banana 2 aka Gemini 3.1 Flash Image Preview: the new SOTA Imagegen model](./2026-02-26-nanobanana2.html) *2026-02-26*
 - [智能体工程：2025年12月到底发生了什么？](./2026-02-25-wtf-happened.html) *2026-02-25*
