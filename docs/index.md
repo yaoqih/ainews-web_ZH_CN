@@ -4,23 +4,40 @@ title: AI News 中文同步版
 description: 自动同步自 smol-ai/ainews-web-2025，由 AI 并行翻译。
 ---
 
+- [今天没什么事。](./26-03-03-not-much.html) *2026-03-03*
+- [今天没发生什么特别的事。](./26-03-02-not-much.html) *2026-03-02*
+- [OpenAI 完成了来自亚马逊（Amazon）、英伟达（NVIDIA）和软银（SoftBank）的 1100 亿美元融资。这是历史上规模最大的初创公司融资，投后估值高达 8400 亿美元。](./26-02-27-openai-g.html) *2026-02-27*
 - [OpenAI 完成了来自亚马逊、英伟达（NVIDIA）和软银（SoftBank）的 1100 亿美元融资，这是历史上规模最大的初创公司融资，投后估值达到 8400 亿美元。](./2026-02-27-openai-g.html) *2026-02-27*
+- [Nano Banana 2（又名 Gemini 3.1 Flash 图像预览版）：全新的 SOTA（最先进）图像生成模型。](./26-02-26-nanobanana2.html) *2026-02-26*
 - [Gemini Nano 香蕉 2](./2026-02-26-note.html) *2026-02-26*
 - [Nano Banana 2 aka Gemini 3.1 Flash Image Preview: the new SOTA Imagegen model](./2026-02-26-nanobanana2.html) *2026-02-26*
+- [Agentic Engineering: WTF Happened in December 2025?](./26-02-25-wtf-happened.html) *2026-02-25*
 - [智能体工程：2025年12月到底发生了什么？](./2026-02-25-wtf-happened.html) *2026-02-25*
+- [Claude Code Anniversary + Launches from: Qwen 3.5, Cursor Demos, Cognition Devin 2.2, Inception Mercury 2](./26-02-24-claude-code.html) *2026-02-24*
+- [Anthropic 指控 DeepSeek、月之暗面（Moonshot）以及 MiniMax 进行了“工业级规模的蒸馏攻击”。](./26-02-23-anthropic-distillation.html) *2026-02-24*
 - [Claude Code 周年庆 + 新品发布：Qwen 3.5、Cursor 演示、Cognition Devin 2.2、Inception Mercury 2。](./2026-02-24-claude-code.html) *2026-02-24*
 - [Anthropic 指控 DeepSeek（深度求索）、Moonshot（月之暗面）和 MiniMax 进行了“工业级规模的蒸馏攻击”。](./2026-02-23-not-much.html) *2026-02-24*
 - [Anthropic 指控 DeepSeek、月之暗面（Moonshot AI）和 MiniMax 进行了“工业规模的蒸馏攻击”。](./2026-02-23-anthropic-distillation.html) *2026-02-24*
+- [今天没发生什么特别的事。](./26-02-20-not-much.html) *2026-02-21*
 - [今天没发生什么事。](./2026-02-20-not-much.html) *2026-02-21*
+- [Gemini 3.1 Pro：在 ARC-AGI 2 测试中表现是 3.0 的两倍。](./26-02-19-gemini31.html) *2026-02-19*
 - [Gemini 3.1 Pro：在 ARC-AGI 2 测试中表现达到 3.0 的两倍。](./2026-02-19-gemini31.html) *2026-02-19*
+- [今天没发生什么特别的事。](./26-02-18-not-much.html) *2026-02-18*
 - [今天没发生什么特别的事。](./2026-02-18-not-much.html) *2026-02-18*
+- [Claude Sonnet 4.6：4.5 版本的稳步升级，整体表现更佳，但仍有一些注意事项。](./26-02-17-sonnet-46.html) *2026-02-17*
 - [Claude Sonnet 4.6：4.5 版本的利落升级，整体表现更佳，但仍有一些注意事项。](./2026-02-17-sonnet-46.html) *2026-02-17*
+- [Qwen3.5-397B-A17B: the smallest Open-Opus class, very efficient model](./26-02-16-qwen35.html) *2026-02-16*
 - [Qwen3.5-397B-A17B：Open-Opus 级别中最小且非常高效的模型。](./2026-02-16-qwen35.html) *2026-02-16*
 - [Qwen3.5-397B-A17B：Open-Opus 系列中最小的级别，是一款非常高效的模型。](./2026-02-16-not-much.html) *2026-02-16*
+- [MiniMax-M2.5: SOTA coding, search, toolcalls, $1/hour](./26-02-13-minimax25.html) *2026-02-13*
 - [MiniMax-M2.5：顶尖（SOTA）级编程、搜索、工具调用能力，仅需 $1/小时。](./2026-02-13-minimax25.html) *2026-02-13*
+- [new Gemini 3 Deep Think, Anthropic $30B @ $380B, GPT-5.3-Codex Spark, MiniMax M2.5](./26-02-12-anthropic-gemini-deepthink.html) *2026-02-12*
 - [新款 Gemini 3 Deep Think（深度思考版），Anthropic 以 3800 亿美元估值融资 300 亿美元，GPT-5.3-Codex Spark，MiniMax M2.5。](./2026-02-12-anthropic-gemini-deepthink.html) *2026-02-12*
+- [Z.ai GLM-5: New SOTA Open Weights LLM](./26-02-11-glm-5.html) *2026-02-11*
 - [Z.ai GLM-5：全新 SOTA 开源权重型大语言模型](./2026-02-11-glm-5.html) *2026-02-11*
+- [Qwen-Image 2.0 and Seedance 2.0](./26-02-10-qwenimage-seedance-2.html) *2026-02-10*
 - [Qwen-Image 2.0 和 Seedance 2.0](./2026-02-10-qwenimage-seedance-2.html) *2026-02-10*
+- [今天没发生什么特别的事。](./26-02-09-not-much.html) *2026-02-09*
 - [今天没发生什么特别的事。](./2026-02-09-not-much.html) *2026-02-09*
 - [今天没什么事。](./26-02-06-not-much.html) *2026-02-06*
 - [OpenAI 与 Anthropic 开战：Claude Opus 4.6 对阵 GPT 5.3 Codex](./26-02-05-claude-opus-openai-codex.html) *2026-02-05*
