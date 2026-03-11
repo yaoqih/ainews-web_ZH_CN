@@ -134,7 +134,7 @@ https://youtu.be/zP8P7hJXwE0
 
 ### 1. Qwen3-Coder-Next 发布
 
-  - **[Qwen/Qwen3-Coder-Next · Hugging Face](https://www.reddit.com/r/LocalLLaMA/comments/1quvqs9/qwenqwen3codernext_hugging_face/)** (热度: 842): **Qwen3-Coder-Next** 是一款专为编程设计的尖端语言模型，在总计 `80B` 的参数中拥有 `3B 激活参数`，实现了与激活参数量多出 `10-20x` 的模型相当的性能。它支持长程推理（long-horizon reasoning）等高级功能，并具备 `256k` 的上下文长度，非常适合与 IDE 集成。该架构包含 `48 层`、门控注意力机制（gated attention）和专家混合（mixture of experts），适用于动态编码任务。可以使用 **SGLang** 或 **vLLM** 进行部署，为了获得最佳性能需要特定版本。更多详情可以在 [原文章](https://huggingface.co/Qwen/Qwen3-Coder-Next) 中查看。一位评论者对该模型的性能表示怀疑，质疑一个 `3B 激活参数` 的模型是否真的能匹配像 Sonnet 4.5 这样更大型模型的质量，这表明这些说法还需要进一步验证。
+  - **[Qwen/Qwen3-Coder-Next（Hugging Face）](https://www.reddit.com/r/LocalLLaMA/comments/1quvqs9/qwenqwen3codernext_hugging_face/)** (热度: 842): **Qwen3-Coder-Next** 是一款专为编程设计的尖端语言模型，在总计 `80B` 的参数中拥有 `3B 激活参数`，实现了与激活参数量多出 `10-20x` 的模型相当的性能。它支持长程推理（long-horizon reasoning）等高级功能，并具备 `256k` 的上下文长度，非常适合与 IDE 集成。该架构包含 `48 层`、门控注意力机制（gated attention）和专家混合（mixture of experts），适用于动态编码任务。可以使用 **SGLang** 或 **vLLM** 进行部署，为了获得最佳性能需要特定版本。更多详情可以在 [原文章](https://huggingface.co/Qwen/Qwen3-Coder-Next) 中查看。一位评论者对该模型的性能表示怀疑，质疑一个 `3B 激活参数` 的模型是否真的能匹配像 Sonnet 4.5 这样更大型模型的质量，这表明这些说法还需要进一步验证。
 
     - danielhanchen 讨论了为 Qwen3-Coder-Next 发布动态 Unsloth GGUF 的事宜，重点介绍了即将发布的 Fp8-Dynamic 和 MXFP4 MoE GGUF。这些格式旨在优化模型性能和效率，特别是在资源受限的环境中。链接的指南提供了在本地使用 Claude Code 和 Codex 配合 Qwen3-Coder-Next 的说明，这对于希望将这些模型集成到工作流中的开发者非常有益。
     - Ok_Knowledge_8259 对 30 亿激活参数模型能匹配 Sonnet 4.5 等更大模型质量的说法表示怀疑。这一评论反映了 AI 社区对模型大小与性能权衡的普遍担忧，认为虽然较小的模型效率更高，但并不总能达到大型模型的质量水平。
@@ -186,12 +186,12 @@ https://youtu.be/zP8P7hJXwE0
 
 ### 1. Claude Sonnet 5 与 Gemini 3.5 发布讨论
 
-  - **[Sonnet 5 release on Feb 3](https://www.reddit.com/r/ClaudeAI/comments/1qtm9ix/sonnet_5_release_on_feb_3/)** (活跃度: 2328): **关于代号为 “Fennec” 的 Claude Sonnet 5 的泄露细节表明，它比之前的模型有显著进步。正如 Vertex AI 错误日志所示，潜在发布日期为 2026 年 2 月 3 日。传闻其价格比 Claude Opus 4.5 便宜 50%，同时保持 `1M token` 的上下文窗口并提供更快的性能，这可能归功于在 Google TPUs 上的优化。据称该模型还具有 “Dev Team” 模式，允许自主子 Agent 协作构建功能。基准测试声称其在 SWE-Bench 上超过了 `80.9%`，表现优于目前的编程模型。** 人们对发布时间持怀疑态度，一些用户认为错误日志并不能结论性地证明该模型的存在或其发布日期。此外，人们还对大上下文窗口中的准确度下降表示担忧，这是之前模型中存在的问题。
+  - **[Sonnet 5 将于 2 月 3 日发布](https://www.reddit.com/r/ClaudeAI/comments/1qtm9ix/sonnet_5_release_on_feb_3/)** (活跃度: 2328): **关于代号为 “Fennec” 的 Claude Sonnet 5 的泄露细节表明，它比之前的模型有显著进步。正如 Vertex AI 错误日志所示，潜在发布日期为 2026 年 2 月 3 日。传闻其价格比 Claude Opus 4.5 便宜 50%，同时保持 `1M token` 的上下文窗口并提供更快的性能，这可能归功于在 Google TPUs 上的优化。据称该模型还具有 “Dev Team” 模式，允许自主子 Agent 协作构建功能。基准测试声称其在 SWE-Bench 上超过了 `80.9%`，表现优于目前的编程模型。** 人们对发布时间持怀疑态度，一些用户认为错误日志并不能结论性地证明该模型的存在或其发布日期。此外，人们还对大上下文窗口中的准确度下降表示担忧，这是之前模型中存在的问题。
 
     - andrew_kirfman 对 Sonnet 5 的发布时间表示怀疑，提到 Vertex API 端点的 404 错误并不能确认该模型的存在。他们强调 Anthropic 的模型 ID 通常反映模型 checkpoint 的创建日期，而不是发布日期，并以 Opus 4.5 的 ID `20251101` 为例。他们对在发布标签中使用未来日期表示怀疑，这在软件发布中并不常见。
     - andrew_kirfman 还提到了 Sonnet 5 具有 100 万 token 上下文的潜力，并指出之前的模型如 Sonnet 4 和 4.5 已经通过 API 提供了这一功能。然而，他们指出准确度下降是这些模型的一个问题，这表明在该领域的改进对于赢得对新版本的信任是必要的。
 
-  - **[Claude Sonnet 5: The “Fennec” Leaks](https://www.reddit.com/r/Bard/comments/1qtnkhu/claude_sonnet_5_the_fennec_leaks/)** (活跃度: 193): **这张图片是 Pankaj Kumar 讨论关于代号为 “Fennec” 的 “Claude Sonnet 5” 泄露信息的推文。它强调了 2026 年 2 月 3 日的潜在发布日期、极具竞争力的价格以及 TPU 加速和专门的子 Agent 等先进功能。传闻该模型比其前代产品更便宜、更快，具有巨大的上下文窗口和极高的基准测试性能。此外，它还暗示该模型已经整合到 Google 的基础设施中。[图片链接](https://i.redd.it/lmphdjb601hg1.png)** 评论者对泄露的可信度以及声称的 “100 万上下文” 能力的可行性表示怀疑，并指出当前模型在处理小得多的上下文大小时都表现吃力。
+  - **[Claude Sonnet 5：“Fennec” 泄露信息](https://www.reddit.com/r/Bard/comments/1qtnkhu/claude_sonnet_5_the_fennec_leaks/)** (活跃度: 193): **这张图片是 Pankaj Kumar 讨论关于代号为 “Fennec” 的 “Claude Sonnet 5” 泄露信息的推文。它强调了 2026 年 2 月 3 日的潜在发布日期、极具竞争力的价格以及 TPU 加速和专门的子 Agent 等先进功能。传闻该模型比其前代产品更便宜、更快，具有巨大的上下文窗口和极高的基准测试性能。此外，它还暗示该模型已经整合到 Google 的基础设施中。[图片链接](https://i.redd.it/lmphdjb601hg1.png)** 评论者对泄露的可信度以及声称的 “100 万上下文” 能力的可行性表示怀疑，并指出当前模型在处理小得多的上下文大小时都表现吃力。
 
     - DavidAdamsAuthor 对 Claude 模型的 “100 万上下文” 说法表示怀疑，并指出在实际使用中，即使在 “250k” 上下文下，也会出现明显的 “能力退化和对关键数据的遗忘”。这表明该模型在处理大上下文大小时可能存在性能局限，这可能会影响其在需要大量记忆的任务中的有效性。
 
@@ -275,7 +275,7 @@ https://youtu.be/zP8P7hJXwE0
   - 在其他地方，研究人员指出了 Agent 平台的安全性影响（机器上的 auth tokens、机器人真实性担忧），并将该数据集视为分析涌现行为（emergent behavior）的素材——无需在原始日志之外进行推测。
 
 
-**4. GPU/Kernel Engineering: Faster Attention, Better Profiling, Weirder PTX**
+**4. GPU/内核工程：更快的 Attention、更好的性能剖析、更奇特的 PTX**
 
 - ****FlashAttention v3 登陆 RDNA：AMD 用户迎来福音****：FlashAttention 的更新通过 [flash-attention PR #2178](https://github.com/Dao-AILab/flash-attention/pull/2178) 中持续进行的工作增加了 **RDNA GPU 支持**，旨在减少 AMD 显卡上的 Attention 瓶颈。
   - 各个服务器上的基调基本上是：这正是那种能够真正解锁非 NVIDIA 硬件上本地推理和微调的“枯燥的基础设施工作”——尤其是当它与权重开放模型（open-weight models）和桌面级 Agent 工具链结合时。
@@ -287,7 +287,7 @@ https://youtu.be/zP8P7hJXwE0
   - 在调试方面，通过在 MMA 之后、预取下一个 TMA 之前插入 `__syncthreads()`，修复了一个 CUDA/PTX 死锁问题，将挂起转化为可衡量的性能提升——这正是内核工程师们不断重新学习到的“一个 barrier 统领全局”的教训。
 
 
-**5. Security, Determinism, and Agent Misbehavior (the Practical Kind)**
+**5. 安全性、确定性与 Agent 异常行为（实战层面）**
 
 - ****Prompt Injection 防御军备竞赛：Embeddings + 语法约束解码****：红队人员分享了一个用于对抗练习的结构化演练网站——[“Adversarial Design Thinking”](https://luisladino.github.io/adversarial-design-thinking/)，并用它来为 **prompt injection** 提出具体的缓解措施。
   - 一种提议的“双重保险”防御方案结合了 **基于 embedding 的过滤** 与 **语法约束解码 (Grammar Constrained Decoding)**，其明确目标是通过约束模型的输出空间（而不仅仅是监管输入）来减少注入攻击面。
@@ -301,7 +301,7 @@ https://youtu.be/zP8P7hJXwE0
 
 ---
 
-# Discord: High level Discord summaries
+# Discord：高层级 Discord 摘要
 
 ## [BASI Jailbreaking](https://discord.com/channels/1105891499641684019) Discord
 

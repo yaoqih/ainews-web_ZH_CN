@@ -1,29 +1,29 @@
 ---
 date: '2026-03-04T05:44:39.731046Z'
 id: MjAyNi0w
-title: 在此处填写标题
+title: 今天也没什么大事。
 ---
 
-**TODO: ONELINE SUBTITLE**
+**前沿模型、Qwen 动荡与 Agent 工具继续堆叠的一天**
 
-> AI News for 3/3/2026-3/4/2026. We checked 12 subreddits, [544 Twitters](https://twitter.com/i/lists/1585430245762441216) and 24 Discords (**264** channels, and **14242** messages) for you. Estimated reading time saved (at 200wpm): **1397** minutes. [AINews' website](https://news.smol.ai/) lets you search all past issues. As a reminder, [AINews is now a section of Latent Space](https://www.latent.space/p/2026). You can [opt in/out](https://support.substack.com/hc/en-us/articles/8914938285204-How-do-I-subscribe-to-or-unsubscribe-from-a-section-on-Substack) of email frequencies!
-
-
+> 2026/3/3-2026/3/4 的 AI 新闻。我们为您检查了 12 个 subreddits、[544 个 Twitter 账号](https://twitter.com/i/lists/1585430245762441216) 和 24 个 Discord（**264** 个频道，**14242** 条消息）。预计为您节省的阅读时间（按 200wpm 计算）：**1397** 分钟。[AINews 网站](https://news.smol.ai/) 允许您搜索所有往期内容。提醒一下，[AINews 现在是 Latent Space 的一个板块](https://www.latent.space/p/2026)。您可以[选择加入/退出](https://support.substack.com/hc/en-us/articles/8914938285204-How-do-I-subscribe-to-or-unsubscribe-from-a-section-on-Substack)邮件发送频率设置！
 
 
----
 
-# AI Twitter Recap
-
-**Frontier model shipping: Gemini 3.1 Flash-Lite, GPT-5.4 rumors, and “agent-first” product positioning**
-
-- **Gemini 3.1 Flash-Lite positioning (speed/$)**: Demis Hassabis teased **Gemini 3.1 Flash-Lite** as “incredibly fast and cost-efficient” for its performance—clearly framing the model line around latency and cost per capability rather than raw frontier scores ([tweet](https://x.com/demishassabis/status/2029047252275060895)). Related product chatter highlights **NotebookLM** as a “favorite AI tool” ([tweet](https://x.com/demishassabis/status/2029355691933085731)) and a major new **NotebookLM Studio** feature: **Cinematic Video Overviews** that generate bespoke, immersive videos from user sources for Ultra users ([tweet](https://x.com/NotebookLM/status/2029240601334436080)).
-- **GPT-5.4 leak narrative (The Information)**: Multiple tweets amplify a report that **GPT-5.4** is coming with a **~1M token context window** and a new **“extreme reasoning mode”** that can “think for hours,” targeting long-horizon agentic workflows and lower complex-task error rates ([tweet](https://x.com/kimmonismus/status/2029213568155992425), [tweet](https://x.com/steph_palazzolo/status/2029212039760023941), [tweet](https://x.com/scaling01/status/2029215437922169254)). There’s also speculation that OpenAI is shifting to **more frequent (monthly) model updates** ([tweet](https://x.com/kimmonismus/status/2029223828677599244)). Separately, one arena watcher claims “GPT-5.4 landed in the arena,” implying an imminent release window ([tweet](https://x.com/kimmonismus/status/2029325405212070200)). Treat all of this as **unconfirmed** unless corroborated by OpenAI.
-- **Claude as “agent behavior” leader, not just coding**: Nat Lambert argues the discussion should shift from Anthropic “going all-in on code” to their lead on **general agent behavior**, implying coding capability will commoditize but agent robustness will not ([tweet](https://x.com/natolambert/status/2029212769648836806)). MathArena evaluation adds a datapoint: **Claude Opus 4.6** is strong overall but weak on **visual mathematics**, and costly to evaluate (claimed ~$8k) ([tweet](https://x.com/j_dekoninck/status/2029160582687985727)).
 
 ---
 
-**Alibaba Qwen “shakeup”: org design, compute access, and open-model dependency**
+# AI Twitter 回顾
+
+**前沿模型继续上新：Gemini 3.1 Flash-Lite、GPT-5.4 传闻，以及“Agent 优先”的产品定位**
+
+- **Gemini 3.1 Flash-Lite 的定位（速度 / 成本）**：Demis Hassabis 预告称 **Gemini 3.1 Flash-Lite** 以其表现来看“快得惊人、性价比极高”，明显将这一模型线定位在延迟和单位能力成本上，而不是单纯追求前沿分数（[tweet](https://x.com/demishassabis/status/2029047252275060895)）。相关产品讨论还提到 **NotebookLM** 是“最喜欢的 AI 工具”之一（[tweet](https://x.com/demishassabis/status/2029355691933085731)），以及 **NotebookLM Studio** 的一项新功能：为 Ultra 用户生成定制、沉浸式视频的 **Cinematic Video Overviews**（[tweet](https://x.com/NotebookLM/status/2029240601334436080)）。
+- **GPT-5.4 爆料叙事（The Information）**：多条推文放大了一则报道，称 **GPT-5.4** 将带来 **约 100 万 token 上下文窗口**，以及一种新的**“极限推理模式”**，可以“思考数小时”，目标是长时程智能体工作流和更低的复杂任务错误率（[tweet](https://x.com/kimmonismus/status/2029213568155992425)，[tweet](https://x.com/steph_palazzolo/status/2029212039760023941)，[tweet](https://x.com/scaling01/status/2029215437922169254)）。还有猜测认为 OpenAI 正转向**更高频（月更）**的模型更新（[tweet](https://x.com/kimmonismus/status/2029223828677599244)）。另外，一位 Arena 观察者声称“GPT-5.4 已进入竞技场”，暗示发布时间窗口已经很近（[tweet](https://x.com/kimmonismus/status/2029325405212070200)）。除非 OpenAI 官方确认，否则这些都应视为**未证实信息**。
+- **Claude 的强项不只是写代码，而是“Agent 行为”**：Nat Lambert 认为，讨论重点应从 Anthropic 是否“全面押注代码”转向其在**通用智能体行为**上的领先地位，这意味着编程能力会逐渐商品化，但智能体鲁棒性不会（[tweet](https://x.com/natolambert/status/2029212769648836806)）。MathArena 的评测也补充了一个数据点：**Claude Opus 4.6** 总体很强，但在**视觉数学**上较弱，而且评测成本很高（据称约 **8000 美元**）（[tweet](https://x.com/j_dekoninck/status/2029160582687985727)）。
+
+---
+
+**阿里巴巴 Qwen 震荡：组织设计、算力获取，以及生态对开放模型的依赖**
 
 
 
@@ -101,43 +101,43 @@ title: 在此处填写标题
     - PaMRxR 讨论了他们创建的一张图表，显示了 Qwen3.5-27B 模型的量化大小与 KL 散度 (KLD) 之间的关系。他们提到移除离群值以更好地拟合数据，表明靠近最佳拟合线的模型更具优势。该图表是使用 `unsloth_Qwen3.5-27B-UD-Q4_K_XL` 模型生成的，表明其重点在于理解模型大小与 KLD 等性能指标之间的权衡。
     - munkiemagik 表示有兴趣对不同参数和量化水平的模型进行定性对比。他们强调了模型测试中的一个常见问题：通常只报告 perplexity（困惑度）或 throughput（吞吐量）等特定指标，这可能与用户的实际需求不符。他们还提到了理解 KL 散度等技术概念的挑战，表明需要更深入地参与大语言模型背后的学术原理。
 
-### 2. Qwen Model Usability and Applications
+### 2. Qwen 模型的易用性与应用
 
-  - **[Qwen3.5-0.8B - Who needs GPUs?](https://www.reddit.com/r/LocalLLaMA/comments/1rkjsaj/qwen3508b_who_needs_gpus/)** (Activity: 646): **The image highlights the impressive capability of the `Qwen3.5-0.8B` model, which can run efficiently on outdated hardware, specifically a 2nd generation i5 processor with 4GB DDR3 RAM. This model is executed using `llama.cpp`, a tool for running large language models on local machines, and is shown to handle complex topics like string theory. The system information is displayed using `fastfetch` on an Arch Linux setup, emphasizing the model's low resource requirements and accessibility for users without high-end GPUs.** Commenters express amazement at the model's performance on such old hardware, comparing it to the capabilities of GPT-3 and noting the open-source nature of the model. There's also a nostalgic mention of semi-transparent terminals, reflecting on past desktop environments.
+  - **[Qwen3.5-0.8B - 谁还需要 GPU？](https://www.reddit.com/r/LocalLLaMA/comments/1rkjsaj/qwen3508b_who_needs_gpus/)** (活跃度: 646): **图中重点展示了 `Qwen3.5-0.8B` 模型令人惊讶的能力：它可以在相当老旧的硬件上高效运行，具体是一台配备 4GB DDR3 内存的第二代 i5 处理器。这一模型通过 `llama.cpp` 在本地运行，并被展示可以处理诸如弦理论这样的复杂主题。图中还使用 Arch Linux 环境下的 `fastfetch` 展示系统信息，突出它对硬件资源要求极低，对没有高端 GPU 的用户也很友好。** 评论者对它在老旧硬件上的表现感到惊讶，将其与 GPT-3 的能力相比较，并提到该模型是开源的。还有人怀念起半透明终端的桌面时代。
 
-    - The Qwen3.5-0.8B model is notable for its ability to run efficiently without the need for a GPU, which is a significant advancement in making AI more accessible. This model is open-source, allowing for broader experimentation and use in various applications without the high cost of GPU resources.
-    - A user suggests using the Qwen3 8B model instead, highlighting its superior performance and the fact that it also does not require a GPU. This suggests that the Qwen3 series is optimized for performance on lower-end hardware, making it a practical choice for developers without access to high-end computing resources.
-    - The Qwen3.5-0.8B model includes a vision component, which allows it to analyze images and generate workflows that can produce images or videos. This feature expands its utility beyond text-based tasks, enabling it to function as a sub-agent in multimedia applications.
+    - `Qwen3.5-0.8B` 最突出的一点是它**无需 GPU 也能高效运行**，这对提升 AI 可及性是一个重要进展。由于它是开源模型，开发者能够在各种场景里低成本实验和使用，而不必承担昂贵 GPU 资源的代价。
+    - 有用户建议直接使用 **Qwen3 8B**，认为它性能更强，同时也不依赖 GPU。这说明 Qwen3 系列在低端硬件上的性能优化做得不错，对没有高性能计算资源的开发者很实用。
+    - `Qwen3.5-0.8B` 还包含视觉组件，能够分析图像并生成可进一步产出图像或视频的工作流。这使其能力不再局限于文本任务，也能充当多媒体场景中的子智能体。
 
-  - **[Qwen 3.5 4b is so good, that it can vibe code a fully working OS web app in one go.](https://www.reddit.com/r/LocalLLaMA/comments/1rkb8en/qwen_35_4b_is_so_good_that_it_can_vibe_code_a/)** (Activity: 718): **The post discusses the capabilities of **Qwen 3.5 4b**, a compact AI model, which successfully created a fully functional web-based operating system (OS) from a single prompt. The OS includes features such as two games, a text editor, an audio player, a file browser, customizable wallpaper, and a special feature chosen by the model itself. The model's ability to generate a working OS with these specifications highlights significant advancements in AI model efficiency and information density, particularly for a model of only `4 billion parameters`. The OS can be accessed [here](https://qwen4bwebos.tiiny.site/).** Commenters express skepticism about the test's validity, suggesting it may be a common benchmark scenario potentially optimized for success. Others are impressed by the model's performance, noting the significant progress in AI capabilities beyond mere scaling.
+  - **[Qwen 3.5 4b 强到可以一把 vibe code 出完整可用的 OS Web App](https://www.reddit.com/r/LocalLLaMA/comments/1rkb8en/qwen_35_4b_is_so_good_that_it_can_vibe_code_a/)** (活跃度: 718): **这篇帖子讨论了紧凑型模型 **Qwen 3.5 4b** 的能力。它通过单条提示词成功生成了一个功能完整的网页版操作系统（OS），包含两个游戏、文本编辑器、音频播放器、文件浏览器、可自定义壁纸，以及一个由模型自行选择的特殊功能。对于仅有 `40 亿参数` 的模型来说，能生成这样一个可运行的系统，体现了模型效率和信息密度的显著提升。该 OS 可在[这里](https://qwen4bwebos.tiiny.site/)访问。** 评论者对测试是否足够严谨持保留态度，认为这可能是一个已经被优化过的常见 benchmark 场景；也有人对其表现印象深刻，认为这表明 AI 能力已不只是简单靠参数堆叠提升。
 
-    - **tinny66666** highlights the impressive performance of the Qwen 3.5 4b model, noting that its intelligence surpasses the original GPT-3.5 despite its smaller size. This suggests a significant improvement in information density and model efficiency, raising questions about the potential limits of such advancements.
-    - **msixtwofive** expresses skepticism about the validity of the test, suggesting that the task of creating a fully working OS web app is a common benchmark that may have been optimized for by AI influencers. This raises concerns about the authenticity of the model's performance in real-world, unseeded scenarios.
-    - **simracerman** points out that while the Qwen 3.5 4b model's ability to complete the task is impressive, especially compared to larger models, there is a possibility that the code for such tasks might be included in the training data, which could influence the model's performance.
-
-
+    - **tinny66666** 认为 Qwen 3.5 4b 的表现非常惊人，指出它虽然体积更小，但智能程度已经超过早期的 GPT-3.5。这说明模型的信息密度和效率有了明显进步，也让人开始思考这种提升还能走到多远。
+    - **msixtwofive** 对测试有效性表示怀疑，认为“一次生成完整可用的 OS Web App”可能本身就是一个常见基准，因此很可能已被 AI influencer 圈层反复使用和优化。这引出了对模型在真实、未预设场景中表现是否同样可靠的担忧。
+    - **simracerman** 指出，Qwen 3.5 4b 完成这一任务本身确实令人印象深刻，尤其是相比更大的模型，但也不能排除相关代码模式本来就出现在训练数据中的可能性，这会影响对其真实泛化能力的判断。
 
 
-### 3. Tech Industry Developments and Reactions
-
-  - **[Apple unveils M5 Pro and M5 Max, citing up to 4× faster LLM prompt processing than M4 Pro and M4 Max](https://www.reddit.com/r/LocalLLaMA/comments/1rjqsv6/apple_unveils_m5_pro_and_m5_max_citing_up_to_4/)** (Activity: 998): **The image illustrates the capabilities of Apple's newly announced M5 Pro and M5 Max chips, which are claimed to process large language model (LLM) prompts up to 4 times faster than their predecessors, the M4 Pro and M4 Max. The M5 Pro supports up to 64GB of unified memory with a bandwidth of 307GB/s, while the M5 Max supports up to 128GB of unified memory with a bandwidth of 614GB/s. Additionally, these chips feature up to 2× faster SSD speeds at 14.5GB/s and include the Apple N1 wireless chip for Wi-Fi 7, enhancing download speeds if compatible with the router.** Some commenters express a desire for a Mac Studio equipped with the new chips, while others note the lack of mention of AI-specific silicon improvements, such as a Neural Accelerator.
-
-    - The M5 Pro and M5 Max chips feature significant improvements in memory capabilities, with the M5 Pro supporting up to 64GB of unified memory and 307GB/s of memory bandwidth, while the M5 Max supports up to 128GB of unified memory and 614GB/s of memory bandwidth. These enhancements are crucial for handling large-scale machine learning models and intensive computational tasks.
-    - The new chips also boast up to 2× faster SSD speeds, reaching 14.5GB/s, which can significantly reduce data access times and improve overall system performance. Additionally, the inclusion of the Apple N1 wireless chip for Wi-Fi 7 support offers faster download speeds, provided the network infrastructure can support it, enhancing connectivity for data-intensive applications.
-    - Despite expectations for more advanced AI-specific silicon, the M5 series still offers substantial performance gains, particularly in LLM prompt processing, which is up to 4× faster than the previous M4 series. This improvement is likely due to a combination of increased memory bandwidth and faster SSD speeds, which together enhance the chips' ability to handle complex AI workloads efficiently.
-
-  - **[ChatGPT uninstalls surged by 295% after Pentagon deal](https://www.reddit.com/r/LocalLLM/comments/1rjlzgy/chatgpt_uninstalls_surged_by_295_after_pentagon/)** (Activity: 418): **The image is a meme and does not provide any technical insights or verifiable data. It humorously suggests a significant increase in ChatGPT uninstalls following a supposed deal with the Pentagon, but lacks any credible sources or detailed information to support this claim. The comments reflect skepticism about the validity of the claim, questioning the source and the actual impact on user numbers.** Commenters express skepticism about the claim, questioning the source and the actual impact on user numbers, suggesting it might be exaggerated or unsourced.
-
-    - A user questions the validity of the claim regarding the surge in uninstalls, asking if the statistic is unsourced, which raises concerns about the reliability of the data. This highlights the importance of verifying claims with credible sources, especially when discussing significant changes in user behavior.
-    - Another comment critiques the shift in OpenAI's mission from a 'non-profit research lab' to potentially acting as a 'Defense Contractor.' This reflects a broader debate on the ethical implications of AI development and its alignment with military applications, suggesting a tension between original mission statements and current business practices.
-    - A user discusses the inevitability of AI's integration into military applications, arguing that technological advancements naturally lead to such outcomes to maintain competitive advantage. This comment underscores the strategic importance of AI in defense and the potential consequences of falling behind in technological capabilities.
 
 
-## Less Technical AI Subreddit Recap
+### 3. 科技行业动态与社区反应
+
+  - **[Apple 发布 M5 Pro 与 M5 Max，称其 LLM 提示词处理速度最高可达 M4 Pro / M4 Max 的 4 倍](https://www.reddit.com/r/LocalLLaMA/comments/1rjqsv6/apple_unveils_m5_pro_and_m5_max_citing_up_to_4/)** (活跃度: 998): **图片展示了 Apple 新发布的 M5 Pro 和 M5 Max 芯片能力。官方声称，这两款芯片在处理大语言模型（LLM）提示词时，速度最高可达前代 M4 Pro 和 M4 Max 的 4 倍。M5 Pro 支持最高 64GB 统一内存，带宽 307GB/s；M5 Max 则支持最高 128GB 统一内存，带宽 614GB/s。此外，它们还提供最高 2 倍、达到 14.5GB/s 的 SSD 速度，并集成了支持 Wi‑Fi 7 的 Apple N1 无线芯片，在路由器支持的前提下可提升下载速度。** 一些评论者表示希望看到搭载这些新芯片的 Mac Studio，另一些则指出官方并未提及更明确的 AI 专用硅改进，例如 Neural Accelerator。
+
+    - M5 Pro 和 M5 Max 在内存能力上的提升很明显：前者最高支持 64GB 统一内存和 307GB/s 带宽，后者则达到 128GB 和 614GB/s。这对处理大规模机器学习模型和高强度计算任务都很关键。
+    - 新芯片还提供了最高 **2 倍更快的 SSD 速度**，达到 14.5GB/s，可显著减少数据访问时间并提高整体系统性能。同时，Apple N1 无线芯片带来的 Wi‑Fi 7 支持，也会在网络基础设施匹配时改善数据密集型场景下的连接表现。
+    - 尽管不少人期待 Apple 能拿出更强的 AI 专用硬件，但 M5 系列仍然在 LLM 提示词处理上带来了实质性提升，较 M4 系列最高可快 **4 倍**。这大概率来自更高的内存带宽和更快的 SSD，共同提升了芯片对复杂 AI 负载的处理能力。
+
+  - **[与五角大楼达成合作后，ChatGPT 卸载量暴涨 295%](https://www.reddit.com/r/LocalLLM/comments/1rjlzgy/chatgpt_uninstalls_surged_by_295_after_pentagon/)** (活跃度: 418): **这张图本质上是个梗图，并未提供任何技术洞察或可验证数据。它用调侃的方式暗示，ChatGPT 在与五角大楼达成所谓合作后，卸载量大幅上涨，但没有给出可信来源或足够详细的信息来支撑这一说法。评论区的基调也同样是怀疑，大家主要在质疑该数据的来源，以及它对总用户规模究竟意味着什么。** 评论者普遍认为这一说法可能被夸大，或者根本没有可靠出处。
+
+    - 有用户直接质疑“卸载量暴涨”的说法是否根本没有来源，这提醒我们，在讨论用户行为显著变化时，必须有可信数据作为支撑。
+    - 另一条评论批评 OpenAI 从“非营利研究实验室”逐渐转向可能更像“国防承包商”的角色，反映出人们对 AI 发展伦理边界以及其与军事用途关系的更广泛焦虑。
+    - 也有用户认为，AI 最终进入军事领域几乎是技术发展中的必然结果，因为维持竞争优势会推动这种集成。这一观点强调了 AI 在国防中的战略意义，以及落后的潜在代价。
+
+
+## 偏非技术类 AI Subreddit 回顾
 
 > /r/Singularity, /r/Oobabooga, /r/MachineLearning, /r/OpenAI, /r/ClaudeAI, /r/StableDiffusion, /r/ChatGPT, /r/ChatGPTCoding, /r/aivideo, /r/aivideo
 
-### 1. AI Model and Benchmark Releases
+### 1. AI 模型与基准测试发布
 
 
 
@@ -153,21 +153,21 @@ title: 在此处填写标题
     - **ExpertPerformer** 提供了各种模型的详细成本对比，显示 3.1 Flash Lite 与 MinMax M2.5 和 Grok 4.1 等替代方案相比，性价比更低。3.1 Flash Lite 的 input/output 成本为 $0.25/$1.50，而 MinMax M2.5 为 $0.295/$1.20，Grok 4.1 为 $0.20/$0.50，表明后两款模型物超所值。
     - **ThomasMalloc** 讨论了 3.1 Flash Lite 在 "High" 思考模式下的低效，指出其耗时比 2.5 Flash Lite 长 14 倍，且 output tokens 达到了 65,436 的上限，而 2.5 Lite 仅为 6,980。该评论者建议使用 "Minimal" 或 "Low" 思考模式以减少 token 使用和成本，因为由于过度的 token 消耗和不完整的输出，目前 "High" 模式并不实用。
 
-  - **[Ostris is testing Lodestones ZetaChroma (Z-Image x Chroma merge) for LORA training 👀](https://www.reddit.com/r/StableDiffusion/comments/1rkky97/ostris_is_testing_lodestones_zetachroma_zimage_x/)** (Activity: 254): **The image is a screenshot of a chat conversation where a user named Ostris discusses testing a LoRA (Low-Rank Adaptation) model using Lodestones ZetaChroma. ZetaChroma is a new model that combines the Chroma dataset with Z-Image, focusing on pixelspace inference. This model is being tested for integration into an AI toolkit for training. The discussion highlights that ZetaChroma is not a simple model merge but a retraining of Z-Image using the Chroma dataset, aiming to create a powerful open-source model. The conversation also includes a file link to a safetensor file, indicating active testing and development.** Comments clarify that ZetaChroma is not a model merge but a retraining effort, emphasizing the use of the Chroma dataset to train a pixelspace model from scratch on top of Z-Image.
+  - **[Ostris 正在测试 Lodestones ZetaChroma（Z-Image x Chroma 合并）用于 LORA 训练 👀](https://www.reddit.com/r/StableDiffusion/comments/1rkky97/ostris_is_testing_lodestones_zetachroma_zimage_x/)** (Activity: 254): **图片是一张聊天记录截图，用户 Ostris 在其中讨论使用 Lodestones ZetaChroma 测试一个 LoRA（Low-Rank Adaptation）模型。ZetaChroma 是一个结合了 Chroma 数据集与 Z-Image 的新模型，重点面向 pixelspace inference（像素空间推理）。该模型正被测试以集成进一个用于训练的 AI 工具包中。讨论强调，ZetaChroma 并不是简单的模型合并，而是使用 Chroma 数据集对 Z-Image 重新训练，目标是打造一个强大的开源模型。对话中还包含了一个 safetensor 文件链接，说明相关测试和开发正在积极推进。** 评论补充说明，ZetaChroma 并非模型 merge，而是一项重新训练工作，重点是利用 Chroma 数据集在 Z-Image 之上从零训练一个 pixelspace 模型。
 
-    - Far_Insurance4191 clarifies that Zeta is not a model merge but a retraining of the Z-Image model using the same dataset initially used for Chroma. This indicates a focus on refining the model's capabilities by leveraging existing data rather than combining model weights.
-    - PetiteKawa00x emphasizes that Zeta involves training a pixelspace model from scratch on top of Z-Image with the Chroma dataset, highlighting that no weights from Chroma are merged with Z-Image for Zeta. This suggests a distinct approach in model development, focusing on foundational training rather than integration of existing models.
-
-
-### 2. Anthropic and OpenAI Leadership Changes
-
-  - **[OpenAI VP Max Schwarzer joins Anthropic amid recent kerfuffle](https://www.reddit.com/r/OpenAI/comments/1rkrj20/openai_vp_max_schwarzer_joins_anthropic_amid/)** (Activity: 1121): **The image is a meme featuring a surprised Pikachu, humorously depicting the reaction to **OpenAI VP Max Schwarzer** leaving OpenAI to join **Anthropic**. This move is part of a broader trend where several key figures from OpenAI have transitioned to Anthropic, a company founded by former OpenAI employees. The meme suggests a sense of surprise or shock from OpenAI at this departure, reflecting ongoing tensions and shifts within the AI industry.** Commenters express skepticism about the leadership at OpenAI, with some suggesting a lack of trust in the company's direction under its current leadership. There is also a sentiment of customers switching allegiance to Anthropic, indicating a potential shift in market preference.
+    - Far_Insurance4191 澄清，Zeta 不是模型合并，而是使用最初为 Chroma 所用的同一套数据集，对 Z-Image 模型进行重新训练。这表明其重点在于利用现有数据进一步打磨模型能力，而不是直接拼接模型权重。
+    - PetiteKawa00x 强调，Zeta 是在 Z-Image 的基础上，使用 Chroma 数据集从零训练一个 pixelspace 模型，并没有把 Chroma 的权重与 Z-Image 进行合并。这说明其开发路径更偏向基础训练，而非整合现有模型。
 
 
-  - **[OpenAI VP for Post Training defects to Anthropic](https://www.reddit.com/r/OpenAI/comments/1rk6xnw/openai_vp_for_post_training_defects_to_anthropic/)** (Activity: 1839): **The image is a tweet from Max Schwarzer, who was the Vice President for Post Training at **OpenAI**. He announced his departure to join **Anthropic**, a company known for its focus on AI safety and research. Max highlights his contributions at OpenAI, including leading the post-training team and working on models like GPT-5. His move to Anthropic is framed as a return to research, suggesting a shift in focus towards more foundational AI work.** One comment humorously misreads his title as 'VP of Post Training Defects,' while another suggests his move might be due to OpenAI's challenges, metaphorically described as 'jumping off a sinking ship.'
+### 2. Anthropic 与 OpenAI 高层变动
+
+  - **[OpenAI 副总裁 Max Schwarzer 在近期风波中跳槽至 Anthropic](https://www.reddit.com/r/OpenAI/comments/1rkrj20/openai_vp_max_schwarzer_joins_anthropic_amid/)** (Activity: 1121): **图片是一张使用“惊讶皮卡丘”梗图制作的 meme，调侃 **OpenAI 副总裁 Max Schwarzer** 离开 OpenAI、加入 **Anthropic** 一事引发的反应。这一变动属于更大趋势的一部分，即多位 OpenAI 关键人物转投 Anthropic，而后者本身就是由前 OpenAI 员工创立的公司。这个梗图传达出 OpenAI 对这次离职感到意外或震惊的意味，也反映出 AI 行业内持续存在的紧张关系与人员流动。** 评论者对 OpenAI 领导层表达了怀疑，一些人认为外界对其当前管理方向缺乏信任；也有人提到客户正在倒向 Anthropic，暗示市场偏好可能正在发生变化。
 
 
-  - **[OpenAI's post-training lead leaves and joins Anthropic: he helped ship GPT-5, 5.1, 5.2, 5.3-Codex, o3 and o1 and will return to hands-on RL research at Anthropic](https://www.reddit.com/r/ClaudeAI/comments/1rk7fwq/openais_posttraining_lead_leaves_and_joins/)** (Activity: 1818): ****Max Schwarzer**, a key figure in OpenAI's post-training team, has announced his departure to join **Anthropic**. Schwarzer played a significant role in the development and deployment of several major models at OpenAI, including GPT-5, 5.1, 5.2, 5.3-Codex, and others. His move to Anthropic marks a return to hands-on research in reinforcement learning, highlighting a shift from leadership to direct research involvement. This transition underscores the competitive landscape in AI research talent, with Anthropic being noted for its strong values and talent pool.** Commenters are impressed by Schwarzer's rapid career progression and note the potential implications of his departure on OpenAI's projects, including possible impacts on revenue and strategic direction.
+  - **[OpenAI 负责 Post-Training 的 VP 跳槽至 Anthropic](https://www.reddit.com/r/OpenAI/comments/1rk6xnw/openai_vp_for_post_training_defects_to_anthropic/)** (Activity: 1839): **图片是一条来自 Max Schwarzer 的推文，他此前担任 **OpenAI** 的 Post-Training 副总裁。在推文中，他宣布离职并加入 **Anthropic**，这家公司以强调 AI 安全和研究著称。Max 提到了自己在 OpenAI 的贡献，包括领导 post-training 团队以及参与 GPT-5 等模型的工作。他此次转投 Anthropic 被描述为“回归研究”，意味着他的重心将从管理转向更基础性的 AI 研究。** 有评论者调侃地把他的职位看成了 “VP of Post Training Defects”，也有人认为他的离开可能与 OpenAI 目前面临的挑战有关，甚至形容其为“从一艘正在下沉的船上跳走”。
+
+
+  - **[OpenAI 的 post-training 负责人离职加入 Anthropic：曾参与 GPT-5、5.1、5.2、5.3-Codex、o3 和 o1 的发布，并将在 Anthropic 回归一线 RL 研究](https://www.reddit.com/r/ClaudeAI/comments/1rk7fwq/openais_posttraining_lead_leaves_and_joins/)** (Activity: 1818): ****Max Schwarzer** 是 OpenAI post-training 团队中的关键人物，他现已宣布离职并加入 **Anthropic**。Schwarzer 在 OpenAI 多个重要模型的开发和发布中都扮演了重要角色，包括 GPT-5、5.1、5.2、5.3-Codex 等。他转投 Anthropic 代表其将重新回到强化学习的一线研究工作，体现出从领导岗位转向直接科研参与的变化。这一转变也凸显了 AI 研究人才竞争的激烈程度，而 Anthropic 则被视为一家拥有强价值观和顶尖人才储备的公司。** 评论者对 Schwarzer 如此快速的职业发展感到惊讶，同时也讨论了他离开可能对 OpenAI 项目带来的影响，包括对营收和战略方向的潜在冲击。
 
 
 
@@ -235,37 +235,37 @@ title: 在此处填写标题
 - **CUDA Agent 痛击 Kernel**：**ByteDance** 推出了一款 **CUDA Agent**，可以编写优化的 CUDA Kernel。论文称在简单/中等任务上比 **torch.compile** 提速约 **2 倍**：[CUDA Agent 论文 (arXiv)](https://arxiv.org/pdf/2603.02298)。
   - 社区评论指出，在更复杂的 Kernel 上，它的表现也比 **Claude Opus 4.5** 和 **Gemini 3 Pro** 高出约 **40%**，称其为迈向 **LLM 驱动的 Kernel 自动调优 (LLM-driven kernel autotuning)** 的实质性一步。
 
-- **MXFP8 MMA Mystifies Devs**: Kernel engineers flagged that **MXFP8 MMA** appears to support `MMA_K=64` only for sparse shapes (vs `K=256` for dense) per the **PTX** guide: [PTX matrix shapes (NVIDIA docs)](https://docs.nvidia.com/cuda/parallel-thread-execution/#tcgen05-matrix-shape).
-  - Threads also probed **inter-CTA** correctness via global memory and SASS fences (`MEMBAR`, `LDG/STG.STRONG`, `CCTL.IVALL`), pushing for architecture-specific guidance on **barrier semantics**.
+- **MXFP8 MMA 让开发者困惑**：Kernel 工程师指出，根据 **PTX** 指南，**MXFP8 MMA** 似乎只在稀疏形状下支持 `MMA_K=64`（而稠密场景是 `K=256`）：[PTX matrix shapes (NVIDIA docs)](https://docs.nvidia.com/cuda/parallel-thread-execution/#tcgen05-matrix-shape)。
+  - 讨论还延伸到了通过全局内存和 SASS 栅栏（`MEMBAR`、`LDG/STG.STRONG`、`CCTL.IVALL`）进行 **inter-CTA** 通信时的正确性问题，大家希望获得更具架构针对性的 **barrier semantics** 指导。
 
 
-**3. Agent Platforms, UX, and Dev Tooling**
+**3. Agent 平台、用户体验与开发工具**
 
-- **Codex Camps on Windows**: **OpenAI** shipped the **Codex app** on **Windows** with a native **agent sandbox** and **PowerShell** support, demoed here: [Codex on Windows demo (video)](https://video.twimg.com/amplify_video/2029252379347173377/vid/avc1/1280x720/5YaNsuJawfWhfyYG.mp4).
-  - Developers welcomed Windows-native flows, calling the **PowerShell** integration a pragmatic boost for **agentic dev environments** on enterprise desktops.
+- **Codex 进驻 Windows**：**OpenAI** 在 **Windows** 上推出了 **Codex 应用**，支持原生 **agent sandbox** 和 **PowerShell**，演示见：[Codex on Windows demo (video)](https://video.twimg.com/amplify_video/2029252379347173377/vid/avc1/1280x720/5YaNsuJawfWhfyYG.mp4)。
+  - 开发者普遍欢迎这种 Windows 原生工作流，认为 **PowerShell** 集成是企业桌面上构建 **agentic dev environment** 的一次务实升级。
 
-- **ACP Bridges IDEs and Agents**: The **Agent Communication Protocol (ACP)** now plugs into **Zed** and **IntelliJ**, letting agents drive multiple providers (e.g., Cursor) from one interface: [AgentCommunicationProtocol.dev](https://agentcommunicationprotocol.dev/introduction/welcome).
-  - Engineers reported smoother **multi-tool orchestration** and fewer context hops, saying ACP helps keep **provider sprawl** in check.
+- **ACP 在 IDE 与 Agent 之间搭桥**：**Agent Communication Protocol（ACP）** 现已接入 **Zed** 和 **IntelliJ**，允许在同一个界面中驱动多个提供方（例如 Cursor）：[AgentCommunicationProtocol.dev](https://agentcommunicationprotocol.dev/introduction/welcome)。
+  - 工程师反馈称，ACP 让**多工具编排**更加顺畅、上下文切换更少，有助于控制 **provider sprawl**。
 
-- **Six Agents Ship a Marketplace**: An **OpenClaw** squad of **6 parallel agents** built a functional marketplace in a weekend, with a `prompt-generator.ts` that emits platform-specific templates for **Cursor** and **v0**: [codebonito.com](https://codebonito.com), tools at [Cursor](https://cursor.sh/).
-  - Builders praised the **template compiler** pattern—*“write once, target many runtimes”*—for speeding agent deployments across heterogeneous **toolchains**.
+- **6 个 Agent 周末造出一个市场**：一个由 **6 个并行 Agent** 组成的 **OpenClaw** 小队，在一个周末内搭出了可用的 marketplace，并配有一个能为 **Cursor** 和 **v0** 生成平台特定模板的 `prompt-generator.ts`：[codebonito.com](https://codebonito.com)，工具见 [Cursor](https://cursor.sh/)。
+  - 开发者称赞这种 **template compiler** 模式是“**一次编写，适配多个运行时**”，能明显加快在异构 **toolchain** 上部署 Agent 的速度。
 
 
-**4. Inference Speed & Context-Efficiency Tricks**
+**4. 推理速度与上下文效率技巧**
 
-- **SSD Speeds Up Decoding**: Researchers previewed **Speculative Speculative Decoding (SSD)** by Tanishq Kumar, Tri Dao, and Avner May, claiming up to **2×** faster inference over leading engines: [Speculative Speculative Decoding (X)](https://x.com/tanishqkumar07/status/2029251146196631872).
-  - Practitioners flagged SSD as a practical win for **throughput-constrained** services, eyeing integrations with **router** and **MoE** stacks for compounding gains.
+- **SSD 加速解码**：研究人员预览了由 Tanishq Kumar、Tri Dao 和 Avner May 提出的 **Speculative Speculative Decoding (SSD)**，声称相较领先推理引擎可实现最高 **2 倍**加速：[Speculative Speculative Decoding (X)](https://x.com/tanishqkumar07/status/2029251146196631872)。
+  - 一线实践者认为，SSD 对于 **吞吐受限** 的服务是一个很实用的提升点，并开始设想将其与 **router** 和 **MoE** 技术栈结合，进一步叠加收益。
 
-- **User-Only Context Cuts Costs**: A shared study reported that passing only the user turns (not model replies) can reduce tokens by ~**70%** while keeping **>95%** of full-context quality: [Adaptive context management (AlphaXiv)](https://www.alphaxiv.org/overview/2602.24287).
-  - Builders proposed harness-level **sliding windows** and **prompt removal** strategies to systematically preserve **task-relevant** bits without bloating context.
+- **只保留用户上下文可显著降本**：一项被广泛转发的研究称，只传递用户轮次（不含模型回复）即可在保持 **95% 以上**完整上下文质量的同时，将 token 消耗降低约 **70%**：[Adaptive context management (AlphaXiv)](https://www.alphaxiv.org/overview/2602.24287)。
+  - 开发者据此提出了 harness 层面的 **滑动窗口** 和 **提示词剔除** 策略，用更系统的方法保留**任务相关**信息，同时避免上下文膨胀。
 
-- **Static Constraints Guide Generation**: Engineers referenced **YouTube’s** repo for constraint-aware decoding pipelines: [static-constraint-decoding (GitHub)](https://github.com/youtube/static-constraint-decoding), tying 2-stage passes to **gliner2 → Neo4j** graph construction.
-  - The link sparked experiments in **structure-first** generation, where constraint decoders ensure **schema safety** before free-form elaboration.
+- **静态约束指导生成**：工程师引用了 **YouTube** 的约束感知解码仓库：[static-constraint-decoding (GitHub)](https://github.com/youtube/static-constraint-decoding)，并将两阶段生成流程与 **gliner2 → Neo4j** 的图构建联系起来。
+  - 该链接激发了大家对 **结构优先（structure-first）生成** 的实验兴趣，即先用约束解码器保证 **schema 安全**，再进入自由展开阶段。
 
 
 ---
 
-# Discord: High level Discord summaries
+# Discord：高层摘要
 
 
 
@@ -428,16 +428,16 @@ title: 在此处填写标题
 
 ## [HuggingFace](https://discord.com/channels/879548962464493619) Discord
 
-- **AI Devs Hunt LLM/SaaS Gigs**: A senior full stack AI developer is seeking roles in **LLM/SaaS** projects, bringing experience in chatbots, AI agents, and automation workflows, with skills in **OpenAI, LangChain, Python, and JS**.
-   - The developer is open to building mobile/desktop apps, computer vision, and AR/VR solutions.
-- **Community Scratches Head at Product Try-On Workflows**: A user is struggling to replicate a **product try-on workflow**, citing difficulties similar to [shopatorie.com](https://shopatorie.com/)'s implementation.
-   - No specific solutions were provided in the discussion.
-- **NebTorch Framework built NumPy Deep**: A member developed **NebTorch**, a **PyTorch-like framework** built from scratch using **NumPy**, drawing inspiration from Karpathy's micrograd, available at [https://github.com/nebHailemariam/NebTorch](https://github.com/nebHailemariam/NebTorch).
-   - It allows developers to create and train neural networks using NumPy arrays, mirroring the structure of PyTorch but with a NumPy backend.
-- **MoC Collab-Compute Optimizer Hits the Scene**: **Lunaris MoC (Mixture-of-Collaboration)** routes tokens to collaborating experts through a learned mediator, outperforming standard MoE with a **59.97** val perplexity vs **62.89**, source code at [https://github.com/Auren-Research/lunaris](https://github.com/Auren-Research/lunaris).
-   - It uses adaptive compute allocation to optimize performance in collaborative expert systems, potentially improving model efficiency.
-- **User asks Llama 3.2 be used for Agent Course**: A member inquired if a lighter model like **Llama 3.2:3b** could replace **Qwen2:7b** in the agent course, citing RAM constraints.
-   - The user was following on-boarding instructions and seeking model selection advice.
+- **AI 开发者在寻找 LLM / SaaS 机会**：一位资深全栈 AI 开发者正在寻找 **LLM / SaaS** 项目岗位，拥有聊天机器人、AI Agent 和自动化工作流经验，技能覆盖 **OpenAI、LangChain、Python 与 JavaScript**。
+   - 这位开发者也愿意参与移动 / 桌面应用、计算机视觉以及 AR / VR 方向的构建。
+- **社区对商品试穿工作流一头雾水**：有用户在复现 **商品试穿（product try-on）工作流** 时遇到困难，表示问题与 [shopatorie.com](https://shopatorie.com/) 的实现很像。
+   - 这段讨论里没有给出明确解法。
+- **NebTorch：用 NumPy 从零写出的类 PyTorch 框架**：一位成员开发了 **NebTorch**，这是一个受 Karpathy 的 micrograd 启发、完全基于 **NumPy** 从零构建的 **类 PyTorch 框架**，项目地址：[https://github.com/nebHailemariam/NebTorch](https://github.com/nebHailemariam/NebTorch)。
+   - 它允许开发者使用 NumPy 数组来创建并训练神经网络，整体结构仿照 PyTorch，但底层后端是 NumPy。
+- **MoC 协同计算优化器登场**：**Lunaris MoC（Mixture-of-Collaboration）** 通过一个学习得到的中介器将 token 路由给协同专家，在验证困惑度上以 **59.97** 优于标准 MoE 的 **62.89**，源码见：[https://github.com/Auren-Research/lunaris](https://github.com/Auren-Research/lunaris)。
+   - 它利用自适应算力分配来优化协同专家系统的表现，理论上有望提升模型效率。
+- **有人问 Agent 课程能否改用 Llama 3.2**：一位成员询问，是否可以用更轻量的 **Llama 3.2:3b** 替换课程里用到的 **Qwen2:7b**，原因是本地 RAM 不够。
+   - 这位用户是在跟着入门流程学习，因此顺带请教了模型选择建议。
 
 
 
@@ -447,14 +447,14 @@ title: 在此处填写标题
 
 ## [GPU MODE](https://discord.com/channels/1189498204333543425) Discord
 
-- **AMD GPU Now Direct NVMe Access**: A user enabled P2P between an **NVMe** device and an **AMD GPU** using patches to the **amdgpu driver** in the Linux kernel based on [Jason Gunthorpe's RFC series](https://lore.kernel.org/dri-devel/0-v1-b5cab63049c0+191af-dmabuf_map_type_jgg@nvidia.com/).
-   - His implementation differs from **ROCm hipFile** because it enables direct GPU-SSD communication, circumventing the **CPU's involvement** in issuing commands.
-- **CUDA Agent Compiles Optimized Kernels**: **ByteDance** rolled out a **CUDA Agent**, a model trained to write fast and optimized **CUDA kernels**, achieving approximately **2x** better performance on simple/medium kernels compared to **torch.compile**, according to their [whitepaper](https://arxiv.org/pdf/2603.02298).
-   - The agent outperforms **Claude Opus 4.5** and **Gemini 3 Pro** by around **40%** on the most challenging tasks.
-- **Debate on Inter-CTA Communication**: A member sought resources detailing the performance and correctness implications of **inter-CTA communication** via **global memory**.
-   - They are specifically interested in practical correctness on given architectures/compiler versions, plus the implications of `MEMBAR`, `ERRBAR`, `LDG/STG.STRONG`, `CCTL.IVALL` at the SASS level.
-- **CamBot Project Open Sourced**: A member open-sourced their **6 DoF arm** design named **CamBot** (Apache 2) on [GitHub](https://github.com/open-thought/cambot), which enables remote viewing via **VR head tracking**.
-   - The project utilizes the [StereoLab's ZED Mini](https://www.stereolabs.com/en-de/store/products/zed-mini) for higher quality stereo vision at a material cost of around **110 EUR**.
+- **AMD GPU 现已可直接访问 NVMe**：一位用户基于 [Jason Gunthorpe 的 RFC 系列](https://lore.kernel.org/dri-devel/0-v1-b5cab63049c0+191af-dmabuf_map_type_jgg@nvidia.com/) 对 Linux 内核中的 **amdgpu driver** 打补丁，从而实现了 **NVMe 设备与 AMD GPU 之间的 P2P**。
+   - 他的实现与 **ROCm hipFile** 不同之处在于，它允许 GPU 与 SSD 直接通信，绕开了**CPU 发命令**这一环节。
+- **CUDA Agent 编译优化后的 Kernel**：**字节跳动** 推出了一个 **CUDA Agent**，这是一个专门训练来编写高性能、优化过的 **CUDA kernel** 的模型。根据其[白皮书](https://arxiv.org/pdf/2603.02298)，它在简单 / 中等难度 Kernel 上相比 **torch.compile** 实现了约 **2 倍**性能提升。
+   - 在最难的任务上，该 Agent 的表现比 **Claude Opus 4.5** 和 **Gemini 3 Pro** 还高出约 **40%**。
+- **围绕 Inter-CTA 通信的争论**：有成员在寻找资料，希望系统了解通过 **global memory** 实现 **inter-CTA communication** 时对性能和正确性的影响。
+   - 他们特别关注给定架构 / 编译器版本上的实际正确性，以及 SASS 层面上 `MEMBAR`、`ERRBAR`、`LDG/STG.STRONG`、`CCTL.IVALL` 等指令意味着什么。
+- **CamBot 项目开源**：一位成员将其名为 **CamBot** 的 **6 DoF 机械臂** 设计以 Apache 2 协议开源在 [GitHub](https://github.com/open-thought/cambot)，支持通过 **VR 头部追踪** 实现远程观察。
+   - 该项目使用了 [StereoLab 的 ZED Mini](https://www.stereolabs.com/en-de/store/products/zed-mini) 来提供更高质量的双目视觉，材料成本大约 **110 欧元**。
 
 
 
@@ -1047,14 +1047,14 @@ title: 在此处填写标题
 > `Transformers limitations, AI impact on jobs, AI text detectors, Tool calling` 
 
 
-- ****Transformers' Troubles**: Tool Calling to the Rescue!**: Members discussed the limitations of **transformers**, suggesting that they will always require **tool calls** to overcome certain skill issues.
-   - It was mentioned that even for what they're improving at, *it's only for really hard tasks* like **code improvement** and **super hard reasoning**.
-- ****AI Job Apocalypse** or Just a Tech Shakeup?**: The discussion covered the changing landscape of **IT jobs**, noting a decrease in new jobs since mid-2022, *not directly caused by AI*.
-   - One member expressed concern that **AI might be used as a scapegoat** for wrong bets in the tech sector, rather than a true indicator of productivity changes.
-- ****AI Text Detector Deception**: Human or Prompt Injection?**: Members dismissed the reliability of **AI text detectors**, with one suggesting that prompt injection could easily bypass them.
-   - It was highlighted that *AI text detectors aren't even able to count words*.
-- ****Tool Calling Tango**: XML vs MCP**: The conversation dove into the debate between **XML** and **MCP** for tool calling, noting that the token difference doesn't significantly impact performance.
-   - There was a shared sentiment that *the only difference is really in how much these models can handle*, suggesting that excessive tools can cause breakdowns.
+- ****Transformers** 的麻烦：还得靠 Tool Calling 来救场！**：成员们讨论了 **transformers** 的局限性，认为它们始终需要依赖 **tool calls** 来弥补某些能力短板。
+   - 有人提到，即便是它们正在改善的部分，*也主要只体现在真正困难的任务上*，比如 **代码改进** 和 **高难度推理**。
+- ****AI 岗位末日**，还是科技行业洗牌？**：讨论谈到了 **IT jobs** 的变化趋势，指出自 2022 年中以来新增岗位在减少，*但这并不直接是 AI 造成的*。
+   - 有成员担心，**AI 可能会被当作科技行业错误押注的替罪羊**，而不是真正生产率变化的体现。
+- ****AI 文本检测器** 的骗局：人类写的，还是 Prompt Injection？**：成员们普遍否定了 **AI text detectors** 的可靠性，有人认为 prompt injection 轻易就能绕过它们。
+   - 还有人指出，*AI 文本检测器甚至连字数都数不明白*。
+- ****Tool Calling** 大乱斗：XML vs MCP**：大家围绕 **XML** 和 **MCP** 在 tool calling 中的优劣展开争论，并指出二者的 token 差异并不会明显影响性能。
+   - 讨论中有一个共识：*真正的区别只在于这些模型到底能承受多少复杂度*，工具太多反而可能导致系统崩掉。
 
 
   
@@ -1067,11 +1067,11 @@ title: 在此处填写标题
 > `Hermes wrangling difficulties, Mythos alternative, Small Hermes 4 Model?, Qwen 3.5 vs Hermes` 
 
 
-- ****Hermes** is Headache for Corporates**: A member stated that trying to wrangle **Hermes** is a headache, and suggested **Mythos** as an alternative for personal projects.
-   - He added that if the AI assistant is for general shipping purposes, **Hermes** is the way to go.
-- **Small **Hermes 4** Model in the works?**: A member inquired about plans to release a *small* **Hermes 4** model, similar to the older **Hermes 3 Llama 3.2 3B** models.
-   - He noted that small **3B** models are perfect for Orin Nanos.
-- ****Qwen 3.5** might be better than **Hermes****: A member suggested that **Qwen 3.5** would probably be better than **Hermes**.
+- ****Hermes** 让企业用户头疼**：一位成员表示，想把 **Hermes** 调教顺手非常麻烦，并建议个人项目可以改用 **Mythos**。
+   - 他补充说，如果是为了通用交付场景做 AI 助手，**Hermes** 仍然是更合适的选择。
+- **会有小型版 **Hermes 4** 吗？**：一位成员询问是否计划发布一个*小型* **Hermes 4** 模型，类似更早期的 **Hermes 3 Llama 3.2 3B**。
+   - 他提到，小型 **3B** 模型对 Orin Nano 这类设备非常合适。
+- ****Qwen 3.5** 可能比 **Hermes** 更强**：一位成员认为，**Qwen 3.5** 大概率会比 **Hermes** 更好用。
 
 
   
@@ -1084,10 +1084,10 @@ title: 在此处填写标题
 > `NT Strategies, Coding NT Strategies, AI Collaboration` 
 
 
-- **NT Strategies Coder Connects**: An AI enthusiast expressed excitement for **NT (Neural Tangent) strategies** and offered to exchange ideas.
-   - The user mentioned years of coding **NT strategies**, seeking collaboration with similar minds.
-- **NT Strategy Collaboration Invitation**: A member shared their experience in coding **NT strategies** for years.
-   - Extending an invitation, they proposed exchanging ideas and collaborating with other interested individuals.
+- **NT Strategies 编码爱好者来交流**：一位 AI 爱好者表达了对 **NT（Neural Tangent）strategies** 的热情，并表示愿意交流想法。
+   - 该用户提到自己已经写了很多年 **NT strategies** 相关代码，希望找到志同道合的人合作。
+- **发起 NT Strategy 协作邀请**：另一位成员也分享了自己多年编写 **NT strategies** 的经验。
+   - 他进一步邀请其他感兴趣的人一起交流思路、展开合作。
 
 
   
@@ -1100,10 +1100,10 @@ title: 在此处填写标题
 > `Delve's Airport Marketing, TSA Tray Advertising, Server Anniversary Party Planning, Pie in the Sky Document Mix-Up` 
 
 
-- **Delve Dominates TSA Trays!**: Company **Delve** purchased advertising space on every **TSA tray at San Jose International Airport (SJC)**, as announced in [this tweet](https://x.com/karunkaushik_/status/2028906773084541329).
-- **Mixing up *Pie in the Sky* docs**: A member humorously recounted working off the *pie in the sky.md* document, mistaking it for the job's first deliverable.
-- **Saeris.gg Prepares for 5th Anniversary!**: **Saeris.gg** announced a poll to determine the timing and type of party for their server's **5th anniversary** this month.
-   - The [poll is available on Discord](https://discord.com/channels/822583790773862470/822583965009051668/1477825626114359379) for server members to vote.
+- **Delve 承包了 TSA 托盘广告位！**：公司 **Delve** 买下了 **San Jose International Airport (SJC)** 里所有 **TSA tray** 的广告位，消息来自[这条推文](https://x.com/karunkaushik_/status/2028906773084541329)。
+- **把 *Pie in the Sky* 文档搞混了**：一位成员打趣说，自己一直照着 *pie in the sky.md* 文档在做，还误以为那是工作的第一个正式交付物。
+- **Saeris.gg 为 5 周年庆典做准备**：**Saeris.gg** 发起了一项投票，用来决定本月服务器 **5 周年** 庆祝活动的时间和形式。
+   - 服务器成员可以在 Discord 中参与[这项投票](https://discord.com/channels/822583790773862470/822583965009051668/1477825626114359379)。
 
 
   
@@ -1167,16 +1167,16 @@ title: 在此处填写标题
 > `M3 Battery Life, AppleCare Worth, Nano Texture Display, Borland Turbo Series, MacBook Neo` 
 
 
-- **M3 Battery Drain Spurs Inquiry**: A user reported only getting **2 hours of battery life** on an **M3 MacBook**, prompting suggestions to check the energy usage tab for rogue **Docker containers** or consider it a defective battery.
-   - Others chimed in sharing their experiences with **M1 MacBooks**, noting great battery life and performance, while also speculating that newer models with more cores might be less efficient.
-- **AppleCare: To Buy or Not to Buy?**: Users debated the merits of **AppleCare**, with some regretting not purchasing it after expensive repairs, while others prefer to self-insure, finding that battery replacements are relatively affordable at around $80.
-   - One user mentioned receiving a significant discount on a maxed-out machine through a departing Apple employee's discount, saving them $1100, and planned to use the machine for local model experiments.
-- **Nano Texture Display: Love It or Hate It?**: The **nano texture display** sparked mixed reactions, with some users loving it for reducing glare in bright environments, while others regretted the purchase.
-   - Someone mentioned that 2 friends loved it and 2 friends regret it.
-- **Borland's Turbo Series: The GOAT?**: Users reminisced about **Borland's Turbo series**, particularly **Turbo Pascal** and **Turbo C**, praising the amazing editors and comprehensive manuals that facilitated learning programming.
-   - One user recalled using **Turbo Prolog** and some **Lisp** as their first software purchases for their PC in the mid-80s.
-- **$500 MacBook Neo with Edu Discount?**: Someone linked to the [Apple MacBook Neo page](https://www.apple.com/macbook-neo/), speculating that its low price with an education discount would lead to massive sales.
-   - One user added: *Seems like a great light workload daily driver*
+- **M3 电池掉电异常引发讨论**：一位用户表示自己的 **M3 MacBook** 续航只有 **2 小时**，于是有人建议他去查看能耗面板里是否有异常的 **Docker containers**，或者直接把它视为电池故障。
+   - 其他人也分享了自己使用 **M1 MacBook** 的体验，认为它续航和性能都很好，同时猜测更新款、核心更多的型号可能反而没那么省电。
+- **AppleCare 到底值不值得买？**：用户们围绕 **AppleCare** 展开讨论，有些人因维修费用高昂而后悔没买，也有人更倾向于自行承担风险，认为更换电池的价格其实不算高，大约 80 美元左右。
+   - 一位用户提到，他通过一位离职 Apple 员工的折扣，以很大优惠买到了一台顶配机器，省了 1100 美元，并打算拿来做本地模型实验。
+- **Nano Texture Display：真香还是后悔？**：**nano texture display** 引发了两极反应，有些用户喜欢它在强光环境下降低眩光的效果，也有人买完很后悔。
+   - 还有人说，自己有 2 个朋友很喜欢，另 2 个朋友则十分后悔。
+- **Borland Turbo 系列是神作吗？**：不少用户回忆起 **Borland's Turbo series**，尤其是 **Turbo Pascal** 和 **Turbo C**，称赞它们拥有极佳的编辑器和内容完整的手册，非常适合学习编程。
+   - 一位用户回忆，自己在 80 年代中期给 PC 购买的第一批软件里，就包括 **Turbo Prolog** 和一些 **Lisp**。
+- **教育优惠后只要 500 美元的 MacBook Neo？**：有人贴出了 [Apple MacBook Neo 页面](https://www.apple.com/macbook-neo/)，猜测其在教育优惠后的低价会带来爆炸式销量。
+   - 一位用户补充道：*看起来会是一台非常适合轻量日常工作的主力机。*
 
 
   
@@ -1189,10 +1189,10 @@ title: 在此处填写标题
 > `Revenue Fluctuation, Networking Introduction` 
 
 
-- **Revenue Surge Sparks Debate**: A member reported a spike in revenue, humorously suggesting that *sometimes being lucky is better than being good*, referencing a significant difference between today's revenue and a fairly normal day.
-   - The member shared a screenshot, likely depicting the revenue data, to illustrate the unexpected financial upswing.
-- **Networking Opportunity Presented**: A member indicated they would be connecting two individuals, mentioning that they would send an email with the necessary context for the introduction.
-   - The intention behind this action is to facilitate a professional relationship, with the email serving to provide background information.
+- **收入激增引发讨论**：一位成员提到收入突然暴涨，并打趣说，*有时候运气比能力更重要*，因为今天的收入和一个相当普通的工作日相比差距非常大。
+   - 这位成员还分享了一张截图，应该是用来展示这次意外收入跃升的数据。
+- **促成一场引荐合作**：一位成员表示自己会帮两个人牵线，并提到会发一封带背景信息的邮件来完成介绍。
+   - 这样做的目的是帮助双方建立专业联系，而邮件则用于补充必要的上下文。
 
 
   
@@ -1205,10 +1205,10 @@ title: 在此处填写标题
 > `Always Further Hiring Principal SWE, Tenex Labs Referral Program, Scapegoat Consulting LLC Services, AI Engineering World Fair` 
 
 
-- **Always Further Seeks Principal SWE**: [Always Further](https://www.alwaysfurther.ai/careers/principal-swe) is hiring a **Principal Software Engineer**, accepting senior-level applications only.
-- **Tenex Labs Launches Referral Program for AI Talent**: Alex Lieberman, founder of **Tenex Labs**, is initiating a referral program aiming to recruit over **120 AI engineers** and strategists by the end of 2026, offering a **$10,000 bounty** for each successful hire retained for **90 days**.
-- **Scapegoat Consulting LLC: We Take the Blame**: A member introduced their new venture, **Scapegoat Consulting LLC**, offering strategic AI consulting, programming with AI workshops, and project work, emphasizing a *systems thinking* approach to solving problems with LLMs.
-- **Strategic AI Consulting: Navigating Engineering in an LLM World**: A member's strategic AI consulting services focus on *what is engineering in a world of LLMs*, based on insights from articles like [LLMs: A Paradigm Shift for the Pragmatic Programmer](https://the.scapegoat.dev/llms-a-paradigm-shift-for-the-pragmatic-programmer/) and workshops at the [AI Engineering World Fair](https://www.youtube.com/watch?v=zwItokY087U).
+- **Always Further 招聘 Principal SWE**： [Always Further](https://www.alwaysfurther.ai/careers/principal-swe) 正在招聘一名 **Principal Software Engineer**，只接受资深级别候选人的申请。
+- **Tenex Labs 推出 AI 人才推荐计划**：**Tenex Labs** 创始人 Alex Lieberman 发起了一项推荐计划，希望在 2026 年底前招到 **120 多名 AI engineers 和 strategists**；每位成功入职并留任 **90 天** 的候选人，推荐人可获得 **1 万美元奖金**。
+- **Scapegoat Consulting LLC：我们来背锅**：一位成员介绍了自己的新公司 **Scapegoat Consulting LLC**，提供战略级 AI 咨询、借助 AI 的编程工作坊以及项目合作服务，强调用 *systems thinking* 的方式来解决 LLM 相关问题。
+- **战略 AI 咨询：在 LLM 世界里重新理解工程**：这位成员的咨询服务聚焦于 *在一个充满 LLM 的世界里，工程究竟意味着什么*，其思路来自 [LLMs: A Paradigm Shift for the Pragmatic Programmer](https://the.scapegoat.dev/llms-a-paradigm-shift-for-the-pragmatic-programmer/) 等文章，以及 [AI Engineering World Fair](https://www.youtube.com/watch?v=zwItokY087U) 的相关 workshop。
 
 
   
@@ -1582,14 +1582,14 @@ Readybot.io: **OpenRouter - 新模型**
 > `Texture Memory vs. Direct Load/Store, Ping-Pong Buffers for Kernel Iteration, Inter-CTA Communication, MXFP8 MMA Support` 
 
 
-- **Texture Memory Loses Perf Battle**: A member references the [NVIDIA CUDA documentation](https://docs.nvidia.com/cuda/cuda-programming-guide/02-basics/writing-cuda-kernels.html#texture-and-surface-memory) noting that **texture memory** no longer provides a performance benefit over **direct load and store instructions** on currently supported GPUs.
-   - Older CUDA code might still use texture memory due to historical performance benefits on older GPUs.
-- **Ping-Pong Buffers juggles arrays**: A member suggested using **ping-pong buffers** (swapping read and write pointers) to alternate between two arrays `a` and `b` in a loop: `std::swap(read_buf, write_buf);`
-   - This allows for alternating read/write access to the arrays without copying data which is good since *there are other kernels in between*.
-- **Quest for Global Memory Insights**: A member inquired about resources detailing the performance and correctness implications of **inter-CTA communication** via **global memory**.
-   - They were specifically interested in practical correctness on given architectures/compiler versions, plus the implications of `MEMBAR`, `ERRBAR`, `LDG/STG.STRONG`, `CCTL.IVALL` at the SASS level.
-- **MXFP8 MMA only supports MMA_K=64 for sparse?**: A member referenced the [PTX documentation](https://docs.nvidia.com/cuda/parallel-thread-execution/#tcgen05-matrix-shape) asking if **MXFP8 MMA** supports `MMA_K=64`.
-   - Another member clarified that `MMA_K=64` is likely only supported for **sparse matrices**, differing from the standard `MMA_K=256` for dense GEMM which is how *they felt like they were taking crazy pills*.
+- **Texture Memory 已不再有性能优势**：一位成员引用了 [NVIDIA CUDA 文档](https://docs.nvidia.com/cuda/cuda-programming-guide/02-basics/writing-cuda-kernels.html#texture-and-surface-memory)，指出在当前仍受支持的 GPU 上，**texture memory** 相比 **direct load and store instructions** 已经不再带来性能收益。
+   - 较老的 CUDA 代码里仍可能使用 texture memory，因为它在过去的老 GPU 上确实有过性能优势。
+- **Ping-Pong Buffers 用于交替操作数组**：一位成员建议使用 **ping-pong buffers**，也就是交换读写指针，在循环中交替使用两个数组 `a` 和 `b`：`std::swap(read_buf, write_buf);`
+   - 这样可以在不复制数据的前提下，让数组交替承担读写角色，这一点很有用，因为*中间还夹着其他 kernels*。
+- **寻找全局内存层面 inter-CTA 通信资料**：一位成员询问是否有资料系统讲解通过 **global memory** 进行 **inter-CTA communication** 时的性能与正确性影响。
+   - 他尤其关心在特定架构与编译器版本下的实际正确性，以及 SASS 层面的 `MEMBAR`、`ERRBAR`、`LDG/STG.STRONG`、`CCTL.IVALL` 分别意味着什么。
+- **MXFP8 MMA 里的 MMA_K=64 只支持 sparse 吗？**：一位成员参考 [PTX 文档](https://docs.nvidia.com/cuda/parallel-thread-execution/#tcgen05-matrix-shape) 询问，**MXFP8 MMA** 是否支持 `MMA_K=64`。
+   - 另一位成员澄清说，`MMA_K=64` 很可能只对 **稀疏矩阵** 受支持；对于 dense GEMM，标准形态仍然是 `MMA_K=256`，这也解释了为什么前者会让人感觉像是“怀疑人生”。
 
 
   
@@ -1602,10 +1602,10 @@ Readybot.io: **OpenRouter - 新模型**
 > `CUDA Agent, Kernel Optimization, ByteDance model` 
 
 
-- **ByteDance rolls out CUDA Agent!**: ByteDance has released a **CUDA Agent**, a model trained to write fast and optimized CUDA kernels, outlined in their [whitepaper](https://arxiv.org/pdf/2603.02298).
-   - The agent outperforms **torch.compile** by **2x** on simple/medium kernels and beats **Claude Opus 4.5** and **Gemini 3 Pro** by around **40%** on the most challenging tasks.
-- **Kernel Compilation Competition Heats Up**: The **CUDA Agent** achieves approximately **92%** better performance on complex kernels compared to **torch.compile**.
-   - A member announced a meetup for **vLLM** to discuss **torch.compile** integrations ([Luma link](https://luma.com/rk0a1lue?tk=qAta1VCuTe)).
+- **ByteDance 发布 CUDA Agent！**：ByteDance 发布了一个 **CUDA Agent**，这是一个专门训练来编写高性能、优化过的 CUDA kernel 的模型，详见他们的 [whitepaper](https://arxiv.org/pdf/2603.02298)。
+   - 在简单和中等难度 kernel 上，它的表现比 **torch.compile** 高出 **2 倍**；在最困难的任务上，也比 **Claude Opus 4.5** 和 **Gemini 3 Pro** 高约 **40%**。
+- **Kernel 编译竞赛持续升温**：这个 **CUDA Agent** 在复杂 kernel 上相较 **torch.compile** 实现了约 **92%** 的性能提升。
+   - 还有成员宣布将举办一次关于 **vLLM** 与 **torch.compile** 集成的 meetup（[Luma 链接](https://luma.com/rk0a1lue?tk=qAta1VCuTe)）。
 
 
   
@@ -1618,13 +1618,13 @@ Readybot.io: **OpenRouter - 新模型**
 > `AMD vs Nvidia Programming, RTX 5090 Project Ideas, Paged Attention with Triton, GPU Security` 
 
 
-- **AMD and Nvidia Programming Similarity Examined**: While both **AMD** and **Nvidia** use parallel processors with similar concepts like **HBM** and **L2/L1 caches**, coding for them differs significantly, with **Nvidia** offering better tooling, blog content, and papers, yet the underlying programming model isn't fundamentally distinct.
-   - One member noted basic kernels appear similar but yield basic performance, while another suggested treating them as entirely different devices, referencing [Stanford's Hazy Research blog](https://hazyresearch.stanford.edu/blog/2025-11-09-hk) and [YouTube video](https://www.youtube.com/watch?v=jsYyF03Fs3o) highlighting AMD's brittle software ecosystem and the need for hand-optimized assembly kernels.
-- **New RTX 5090s Spark Project Ideas**: A member with a cluster of **4x RTX 5090s** sought interesting project ideas with technical walkthroughs, prompting suggestions to "go wild" with kernel development or other ambitious projects.
-- **Triton Used for Paged Attention Implementations**: When implementing a custom serving engine a member inquired about using **Triton** for paged attention store and load kernels (for the kv cache).
-   - They noticed that other serving engines code a paged attention store and load kernel using **Triton**.
-- **GPU Security Discussions Initiated**: A member working on low-level GPU security sought a dedicated security channel, leading to a recommendation for the <#1189498205101109300> channel and a mention of the [pygpubench project on GitHub](https://github.com/ngc92/pygpubench) as a security-oriented resource.
-   - A member also criticized NVIDIA for lacking a proper security model for newer architectures.
+- **AMD 与 Nvidia 编程相似吗？**：讨论认为，虽然 **AMD** 和 **Nvidia** 都是并行处理器，也有 **HBM**、**L2/L1 caches** 等相似概念，但面向它们编程的实际体验差异很大；**Nvidia** 在工具链、博客资料和论文方面明显更强，不过底层编程模型本身并非完全不同。
+   - 一位成员指出，基础 kernel 写起来看似相近，但性能只会停留在基础水平；另一位则建议把两者当成完全不同的设备来对待，并引用了 [Stanford Hazy Research 博客](https://hazyresearch.stanford.edu/blog/2025-11-09-hk) 和 [YouTube 视频](https://www.youtube.com/watch?v=jsYyF03Fs3o)，强调 AMD 脆弱的软件生态以及手写汇编优化 kernel 的必要性。
+- **新到手的 RTX 5090 激发项目灵感**：一位拥有 **4x RTX 5090** 集群的成员想找一些有技术讲解的有趣项目点子，于是有人建议他大胆一点，去做 kernel 开发或其他更激进的项目。
+- **Paged Attention 实现里会用 Triton 吗？**：一位成员在实现自定义 serving engine 时，询问是否适合用 **Triton** 来写 paged attention 的 store/load kernels，也就是 KV cache 相关部分。
+   - 他注意到，其他 serving engine 确实会用 **Triton** 来编写 paged attention 的 store/load kernel。
+- **GPU 安全话题开始升温**：一位研究底层 GPU 安全的成员想找专门的安全频道，于是有人推荐他去 <#1189498205101109300>，并提到了 GitHub 上偏安全方向的项目 [pygpubench](https://github.com/ngc92/pygpubench)。
+   - 另有成员批评 NVIDIA 在较新架构上缺乏一套真正像样的安全模型。
 
 
   
@@ -1742,11 +1742,11 @@ m0ji_l: 鉴于这似乎是一个以 vllm minimals 为中心的频道，现进行
 > `Spectral muP, modula, feature learning, NERFIFY` 
 
 
-- **Spectral muP satisfies MODULA?**: A member thinks that the [MODULA paper](https://arxiv.org/abs/2405.14813) might already satisfy the **spectral muP** condition right out of the box.
-   - The spectral muP work is already connected to the MODULA work, through *muonoh*, with [MODULA's Github repo available here](https://github.com/modula-systems/modula).
-- **Spectral Norm scaling for feature learning**: A 2023 paper titled [Feature Learning via Spectral Regularity](https://arxiv.org/abs/2310.17813) shows that **feature learning** is achieved by scaling the spectral norm of weight matrices and their updates like √(𝚏𝚊𝚗-𝚘𝚞𝚝/𝚏𝚊𝚗-𝚒𝚗).
-   - This is in contrast to widely used but heuristic scalings based on **Frobenius norm** and entry size; this spectral scaling analysis also leads to an elementary derivation of maximal update parametrization (**muP**).
-- **NERFIFY site provided**: A member shared a link to [NERFIFY](https://seemandhar.github.io/NERFIFY/).
+- **Spectral muP 是否天然满足 MODULA？**：一位成员认为，[MODULA 论文](https://arxiv.org/abs/2405.14813) 也许一开始就已经满足 **spectral muP** 条件。
+   - 他还指出，spectral muP 相关工作已经通过 *muonoh* 与 MODULA 方向建立了联系，而 [MODULA 的 GitHub 仓库在这里](https://github.com/modula-systems/modula)。
+- **用 Spectral Norm 缩放来实现特征学习**：一篇 2023 年论文 [Feature Learning via Spectral Regularity](https://arxiv.org/abs/2310.17813) 表明，想实现 **feature learning**，可以将权重矩阵及其更新的 spectral norm 按 √(𝚏𝚊𝚗-𝚘𝚞𝚝/𝚏𝚊𝚗-𝚒𝚗) 的方式缩放。
+   - 这种方法不同于常见但偏经验主义的 **Frobenius norm** 或按元素大小缩放；这种 spectral scaling 分析也导出了对 maximal update parametrization（**muP**）的一个较为朴素的推导。
+- **有人分享了 NERFIFY 网站**：一位成员贴出了 [NERFIFY](https://seemandhar.github.io/NERFIFY/) 的链接。
 
 
   
@@ -1759,12 +1759,12 @@ m0ji_l: 鉴于这似乎是一个以 vllm minimals 为中心的频道，现进行
 > `Anthromorphising Claude, Figure 8 model, Gemini Code` 
 
 
-- **Anthropomorphising Claude**: A member noted that it's really interesting that someone is **anthropomorphising Claude**.
-   - This refers to an earlier message discussing how humans attribute human traits and emotions to AI models like **Claude**.
-- **Model tracks Figure 8 *sans* Loss Function**: A member reported creating a model that can **track a figure 8** without a loss function, succeeding only *10%* of the time, aiming to minimize noise within the system by following the figure 8's direction with only *30k params*.
-   - The model operates **backpropless**, getting only the input of what direction the figure 8 is at the moment.
-- **Gemini Code Creates Figure 8 Model**: A member created a *1-file version* of their Figure 8 model using **ugly Gemini code**, planning to clean it up later once they find a way to get rid of the sparsity.
-   - This was inspired by another example of [domain expert successfully steering LLM for new scientific discoveries](https://x.com/bowang87/status/2028935492977475623).
+- **把 Claude 拟人化很有意思**：一位成员表示，看到有人在**拟人化 Claude**这件事上走得这么远，确实挺有趣。
+   - 这指向更早前的一条消息，讨论的是人类如何把人的性格与情绪投射到 **Claude** 这类 AI 模型上。
+- **无损失函数追踪 Figure 8 的模型**：一位成员称自己做出了一个无需 loss function 也能**追踪 figure 8** 的模型，不过成功率只有 *10%*，目标是仅用 *3 万参数* 跟随 figure 8 的方向，以尽量降低系统内部噪声。
+   - 这个模型以 **backpropless** 方式运行，只接收 figure 8 当前方向这一输入。
+- **用 Gemini 写出 Figure 8 模型**：一位成员用有点“粗糙”的 **Gemini code** 写出了自己 Figure 8 模型的*单文件版本*，并表示等解决 sparsity 问题后再来清理代码。
+   - 这件事的灵感来自另一个案例：[领域专家成功引导 LLM 取得新的科学发现](https://x.com/bowang87/status/2028935492977475623)。
 
 
   
@@ -1777,10 +1777,10 @@ m0ji_l: 鉴于这似乎是一个以 vllm minimals 为中心的频道，现进行
 > `Anthropic's alignment research, 2026 Predictions, PSM` 
 
 
-- **Anthropic Aligns with 2026 Projections**: Anthropic is focusing on alignment research as detailed in their [2026 predictions](https://alignment.anthropic.com/2026/psm) document.
-   - The announcement was initially shared via a Google Share link ([https://share.google/bgh75ajJKUZXP6kp4](https://share.google/bgh75ajJKUZXP6kp4)).
-- **More on Anthropic's Alignment Initiatives**: Further details on Anthropic's approach to alignment can be found in their published [research](https://alignment.anthropic.com/).
-   - This includes methodologies and strategies for ensuring AI systems remain aligned with human values.
+- **Anthropic 的对齐研究呼应 2026 预测**：Anthropic 正在推进对齐研究，相关方向可见他们的 [2026 predictions](https://alignment.anthropic.com/2026/psm) 文档。
+   - 这则消息最初是通过一个 Google Share 链接分享出来的（[https://share.google/bgh75ajJKUZXP6kp4](https://share.google/bgh75ajJKUZXP6kp4)）。
+- **Anthropic 对齐计划的更多信息**：关于 Anthropic 如何做对齐，可以在他们公开的 [research](https://alignment.anthropic.com/) 中看到更多内容。
+   - 其中包括一系列确保 AI systems 持续与人类价值保持一致的方法与策略。
 
 
   
@@ -1793,10 +1793,10 @@ m0ji_l: 鉴于这似乎是一个以 vllm minimals 为中心的频道，现进行
 > `Cortical Labs BioLLM, SWE-atlas QNA Leaderboard` 
 
 
-- **Cortical Labs Cultivates BioLLM**: A member shared a [Reddit post](https://www.reddit.com/r/accelerate/comments/1rjswr9/cortical_labs_grew_200000_human_neurons_in_a_lab/) and a [YouTube video](https://youtu.be/tg7w0RzYrKY) about **Cortical Labs** growing **200,000 human neurons** in a lab.
-   - The project is named **BioLLM** and aims to create biological large language models.
-- **Scale AI Launches SWE-atlas QNA Leaderboard**: A member shared a link to the [SWE-atlas QNA Leaderboard](https://scale.com/leaderboard/sweatlas-qna) by **Scale AI**.
-   - This leaderboard ranks models based on their performance on a question-answering task related to software engineering.
+- **Cortical Labs 在实验室培养出 BioLLM**：一位成员分享了一篇 [Reddit 帖子](https://www.reddit.com/r/accelerate/comments/1rjswr9/cortical_labs_grew_200000_human_neurons_in_a_lab/) 和一个 [YouTube 视频](https://youtu.be/tg7w0RzYrKY)，内容是 **Cortical Labs** 在实验室中培养了 **20 万个神经元**。
+   - 这个项目名为 **BioLLM**，目标是构建生物学意义上的大语言模型。
+- **Scale AI 推出 SWE-atlas QNA 排行榜**：一位成员分享了 **Scale AI** 的 [SWE-atlas QNA Leaderboard](https://scale.com/leaderboard/sweatlas-qna) 链接。
+   - 这个榜单按照模型在软件工程相关问答任务上的表现进行排名。
 
 
   

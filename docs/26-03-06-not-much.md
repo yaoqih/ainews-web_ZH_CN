@@ -80,50 +80,50 @@ topics:
   - **Codex for Open Source**：OpenAI 为符合条件的开源维护者提供支持（ChatGPT Pro, Codex, API 额度，以及 Codex Security 访问权限），旨在减轻维护者负担并提高安全覆盖率 ([OpenAIDevs](https://x.com/OpenAIDevs/status/2029998191043911955), [reach_vb 说明](https://x.com/reach_vb/status/2029998272945717553), [kevinweil 总结](https://x.com/kevinweil/status/2030000508342272368))。
 - **安全宏观叙事（Security meta‑narrative）**：多条推文认为我们正在进入一个“默认复杂的公共软件已遭入侵”的时期 ([inerati](https://x.com/inerati/status/2029982375304908892))，并且随着 Agent 在缺乏人工审核的情况下推送代码，Prompt Injection 正蔓延到知名项目中 ([GergelyOrosz](https://x.com/GergelyOrosz/status/2029992079741304977))。AISI 的 Red Team 正在招聘，强调随着风险增加，需加强对滥用/控制/对齐（misuse/control/alignment）的红队测试 ([alxndrdavies](https://x.com/alxndrdavies/status/2029958417172021587))。
 
-**推理与内核工程：跨平台 Attention、vLLM v0.17 以及 Agent 式内核优化**
+**推理与内核工程：跨平台 Attention、vLLM v0.17，以及 Agent 式内核优化**
 
-- **vLLM Triton attention backend: “one kernel source across NVIDIA/AMD/Intel”**: vLLM describes a Triton attention backend (~**800 lines**) intended to avoid maintaining separate attention kernels per GPU platform, claiming H100 parity with SOTA and **~5.8× speedup** on MI300 vs earlier implementations. Technical highlights include Q‑blocks, tiled softmax for decode, persistent kernels for CUDA graph compatibility, and cross‑platform benchmarking. Now default on ROCm and available on NVIDIA/Intel ([vllm_project](https://x.com/vllm_project/status/2029919035924828234)).
-- **vLLM v0.17.0 release**: Highlights include **FlashAttention 4 integration**, support for **Qwen3.5** with GDN (Gated Delta Networks), Model Runner V2 maturation (pipeline parallel, decode context parallel, Eagle3 + CUDA graphs), a new performance mode flag, Weight Offloading V2, elastic expert parallelism, and direct loading of quantized LoRA adapters. The release also notes extensive kernel/hardware updates across NVIDIA SM100/120, AMD ROCm, Intel XPU, and CPU backends ([vllm_project](https://x.com/vllm_project/status/2030178775212671148), [more](https://x.com/vllm_project/status/2030178779331502497), [models/spec decode notes](https://x.com/vllm_project/status/2030178782259171382)).
-- **KernelAgent (Meta/PyTorch) for Triton optimization**: PyTorch team publishes KernelAgent: closed‑loop multi‑agent workflow guided by GPU performance signals for Triton kernel optimization; reports **2.02×** speedup vs a correctness-focused version, **1.56×** faster than out‑of‑box `torch.compile`, and **88.7% roofline efficiency** on H100; code and artifacts open sourced ([KaimingCheng](https://x.com/KaimingCheng/status/2030035314543317216)).
-- **Competitive kernel optimization**: GPU MODE announces a **$1.1M** AMD-sponsored kernel competition targeting MI355X for optimizing DeepSeek‑R1‑0528 and GPT‑OSS‑120B ([GPU_MODE](https://x.com/GPU_MODE/status/2029974019018244223)).
+- **vLLM Triton Attention 后端：“一套内核源码覆盖 NVIDIA / AMD / Intel”**：vLLM 介绍了一个约 **800 行**的 Triton Attention 后端，目标是避免为每个 GPU 平台分别维护独立的 Attention Kernel。其宣称在 H100 上可与当前 SOTA 持平，并且相较更早的实现，在 MI300 上实现了 **约 5.8 倍加速**。技术亮点包括 Q-block、用于 decode 的 tiled softmax、兼容 CUDA graph 的 persistent kernel，以及跨平台基准测试。该后端现已在 ROCm 上作为默认实现，并可在 NVIDIA / Intel 上使用（[vllm_project](https://x.com/vllm_project/status/2029919035924828234)）。
+- **vLLM v0.17.0 发布**：亮点包括集成 **FlashAttention 4**、支持带 GDN（Gated Delta Networks）的 **Qwen3.5**、进一步成熟的 Model Runner V2（流水线并行、decode 上下文并行、Eagle3 + CUDA graphs）、新的性能模式开关、Weight Offloading V2、弹性专家并行，以及直接加载量化 LoRA 适配器。发布说明还提到面向 NVIDIA SM100/120、AMD ROCm、Intel XPU 和 CPU 后端的一系列内核 / 硬件更新（[vllm_project](https://x.com/vllm_project/status/2030178775212671148)，[more](https://x.com/vllm_project/status/2030178779331502497)，[models/spec decode notes](https://x.com/vllm_project/status/2030178782259171382)）。
+- **用于 Triton 优化的 KernelAgent（Meta / PyTorch）**：PyTorch 团队发布了 KernelAgent，这是一个由 GPU 性能信号驱动的闭环多智能体工作流，用于优化 Triton Kernel。报告称，相比一个仅强调正确性的版本，其速度提升 **2.02 倍**；相比开箱即用的 `torch.compile` 快 **1.56 倍**；并在 H100 上达到 **88.7% roofline efficiency**。代码和实验产物均已开源（[KaimingCheng](https://x.com/KaimingCheng/status/2030035314543317216)）。
+- **Kernel 优化竞赛升温**：GPU MODE 宣布了一项由 AMD 赞助、总奖金 **110 万美元**的 Kernel 竞赛，目标是在 MI355X 上优化 DeepSeek‑R1‑0528 和 GPT‑OSS‑120B（[GPU_MODE](https://x.com/GPU_MODE/status/2029974019018244223)）。
 
-**Smaller/specialized models and post‑training recipes: Phi‑4‑RV, Databricks’ KARL, and continual adaptation ideas**
+**更小 / 更专用的模型与后训练配方：Phi‑4‑RV、Databricks 的 KARL，以及持续适应思路**
 
-- **Microsoft Phi‑4‑reasoning‑vision‑15B**: Released as a **15B multimodal reasoning** model (text+vision), framed as the “sweet spot” for practical agents where frontier models aren’t necessary ([omarsar0](https://x.com/omarsar0/status/2029926242640912429), and [dair_ai](https://x.com/dair_ai/status/2029927938259308905)).
-- **Databricks: RL + synthetic data to build task‑specialized, cheaper models**: Matei Zaharia outlines a recipe: generate synthetic data, apply efficient large-batch off-policy RL (OAPL), generate harder data with updated model, producing a smaller specialized model ([matei_zaharia](https://x.com/matei_zaharia/status/2029976438905208871)). Jamin Ball summarizes Databricks’ **KARL** as beating Claude 4.6 and GPT‑5.2 on enterprise knowledge tasks at **~33% lower cost** and **~47% lower latency**, with RL learning to search more efficiently (stop earlier, fewer wasted queries) and the pipeline being opened to customers—“data platforms becoming agent platforms” ([jaminball](https://x.com/jaminball/status/2030025385644282202)).
-- **Fine-tuning data efficiency via pretraining replay**: Suhas Kotha reports that replaying generic pretraining data during finetuning can reduce forgetting and *improve* finetuning-domain performance when finetuning data is scarce (with Percy Liang) ([kothasuhas](https://x.com/kothasuhas/status/2029983689988542742), [percyliang follow‑up](https://x.com/percyliang/status/2030084101559271490)).
-- **Sakana “Doc‑to‑LoRA / Text‑to‑LoRA” continual learning direction (via third-party summary)**: A hypernetwork generates LoRA adapters from documents or task descriptions at runtime (one forward pass), enabling memory/skill updates without full finetuning (high-level summary; original work attributed to Sakana AI Labs) ([TheTuringPost](https://x.com/TheTuringPost/status/2030085866069340638)).
+- **Microsoft Phi‑4‑reasoning‑vision‑15B**：微软发布了一款 **150 亿参数的多模态推理模型**（文本 + 视觉），将其定位为“前沿大模型不是必需品时，实用 Agent 的甜点区间”（[omarsar0](https://x.com/omarsar0/status/2029926242640912429)，以及 [dair_ai](https://x.com/dair_ai/status/2029927938259308905)）。
+- **Databricks：用 RL + 合成数据构建更便宜的任务专用模型**：Matei Zaharia 给出了一套配方：先生成合成数据，再应用高效的大批量离策略 RL（OAPL），再用更新后的模型生成更难的数据，最终产出一个更小的专用模型（[matei_zaharia](https://x.com/matei_zaharia/status/2029976438905208871)）。Jamin Ball 则总结称，Databricks 的 **KARL** 在企业知识任务上优于 Claude 4.6 和 GPT‑5.2，同时**成本约低 33%**、**延迟约低 47%**；其中 RL 学会了更高效地检索（更早停止、减少无效查询），且该流水线正向客户开放，“数据平台正在变成智能体平台”（[jaminball](https://x.com/jaminball/status/2030025385644282202)）。
+- **通过预训练回放提高微调数据效率**：Suhas Kotha 报告称，在微调过程中回放通用预训练数据，可以减少遗忘，并在微调数据稀缺时**提升目标领域表现**（与 Percy Liang 合作）（[kothasuhas](https://x.com/kothasuhas/status/2029983689988542742)，[percyliang follow‑up](https://x.com/percyliang/status/2030084101559271490)）。
+- **Sakana 的 “Doc‑to‑LoRA / Text‑to‑LoRA” 持续学习方向（来自第三方总结）**：一种超网络可在运行时根据文档或任务描述生成 LoRA 适配器（单次 forward pass），从而无需完整微调就能更新记忆 / 技能。（这是高层总结，原始工作归因于 Sakana AI Labs）（[TheTuringPost](https://x.com/TheTuringPost/status/2030085866069340638)）。
 
-**Top tweets (by engagement, technical-only)**
+**热门推文（按互动量排序，仅技术向）**
 
-- **Claude Opus 4.6 finds Firefox vulns**: 22 confirmed vulnerabilities in 2 weeks; 14 high severity; ~20% of Mozilla’s 2025 high-severity fixes ([AnthropicAI](https://x.com/AnthropicAI/status/2029978909207617634)).
-- **Codex Security launches**: OpenAI’s application security agent in research preview ([OpenAIDevs](https://x.com/OpenAIDevs/status/2029983809652035758); [OpenAI](https://x.com/OpenAI/status/2029985250512920743)).
-- **Claude Code scheduled tasks**: local scheduled tasks in Claude Code desktop ([trq212](https://x.com/trq212/status/2030019397335843288)).
-- **Codex for Open Source**: support package for OSS maintainers (ChatGPT Pro/Codex/API credits, security tooling access) ([OpenAIDevs](https://x.com/OpenAIDevs/status/2029998191043911955)).
-- **vLLM cross‑platform Triton attention backend**: single-source attention kernel strategy across NVIDIA/AMD/Intel with reported MI300 speedups ([vllm_project](https://x.com/vllm_project/status/2029919035924828234)).
+- **Claude Opus 4.6 发现 Firefox 漏洞**：2 周确认 **22 个漏洞**，其中 **14 个高危**，约占 Mozilla 2025 年高危修复总量的 **20%**（[AnthropicAI](https://x.com/AnthropicAI/status/2029978909207617634)）。
+- **Codex Security 上线**：OpenAI 的应用安全 Agent 进入研究预览（[OpenAIDevs](https://x.com/OpenAIDevs/status/2029983809652035758)；[OpenAI](https://x.com/OpenAI/status/2029985250512920743)）。
+- **Claude Code 定时任务**：Claude Code 桌面端加入本地定时任务（[trq212](https://x.com/trq212/status/2030019397335843288)）。
+- **Codex for Open Source**：面向开源维护者的支持包（ChatGPT Pro / Codex / API 额度，以及安全工具访问权限）（[OpenAIDevs](https://x.com/OpenAIDevs/status/2029998191043911955)）。
+- **vLLM 跨平台 Triton Attention 后端**：面向 NVIDIA / AMD / Intel 的单源码 Attention Kernel 策略，并报告了 MI300 上的加速效果（[vllm_project](https://x.com/vllm_project/status/2029919035924828234)）。
 
 
 ---
 
-# AI Reddit Recap
+# AI Reddit 回顾
 
 
 
-## /r/LocalLlama + /r/localLLM Recap
+## /r/LocalLlama + /r/localLLM 回顾
 
-### 1. Qwen3.5 Model Updates and Benchmarks
+### 1. Qwen3.5 模型更新与基准测试
 
-  - **[Open WebUI’s New Open Terminal + “Native” Tool Calling + Qwen3.5 35b = Holy Sh!t!!!](https://www.reddit.com/r/LocalLLaMA/comments/1rmplvs/open_webuis_new_open_terminal_native_tool_calling/)** (Activity: 815): ****Open WebUI** has introduced a new feature called **Open Terminal**, a Dockerized terminal with a live file browser and render canvas, enhancing the capabilities of AI models like **Qwen3.5 35b**. This setup allows models to perform tasks such as installing libraries and editing files within a sandboxed environment, effectively making previous tools obsolete. The terminal supports 'native' tool calling, and users can interact with files directly through a persistent volume setup, which maintains the environment state between sessions. The feature is designed for both single and potential multi-user setups, with a 'bare metal' install option for advanced users. [GitHub link](https://github.com/open-webui/open-terminal) and [setup instructions](https://docs.openwebui.com/features/extensibility/open-terminal/) are available for further details.** Users are impressed with the reduction in reliance on MCP and the enhanced proficiency of AI in executing Unix and CLI commands. The combination of Qwen3.5 35b and Open WebUI's terminal is noted for enabling agentic workflows on a single GPU, like the 3090.
+  - **[Open WebUI 的新 Open Terminal + “原生” Tool Calling + Qwen3.5 35b = 太猛了！！！](https://www.reddit.com/r/LocalLLaMA/comments/1rmplvs/open_webuis_new_open_terminal_native_tool_calling/)** (Activity: 815): ****Open WebUI** 新增了一项名为 **Open Terminal** 的功能，这是一个经过 Docker 化的终端，带有实时文件浏览器和渲染画布，进一步增强了 **Qwen3.5 35b** 这类 AI 模型的能力。该配置允许模型在沙箱环境中执行安装库、编辑文件等任务，几乎让很多旧工具显得过时。这个终端支持“原生” tool calling，用户还能通过持久化 volume 直接与文件交互，从而在多次会话间保留环境状态。该功能既支持单用户使用，也有潜在的多用户部署方案，并为高级用户提供了 “bare metal” 安装选项。更多信息可见其 [GitHub 链接](https://github.com/open-webui/open-terminal) 与[安装说明](https://docs.openwebui.com/features/extensibility/open-terminal/)。** 用户普遍对其显著降低对 MCP 的依赖，以及 AI 在执行 Unix 与 CLI 命令方面表现出的熟练度感到惊讶。Qwen3.5 35b 配合 Open WebUI terminal 被认为已经能在单张 GPU（如 3090）上跑出 agentic workflow。
 
-    - sean_hash highlights the integration of Qwen3.5 35b with Open WebUI's terminal, emphasizing its potential to enable agentic workflows on a single NVIDIA 3090 GPU. This setup suggests a significant advancement in running complex AI models efficiently on consumer-grade hardware, making it more accessible for individual developers or small teams.
-    - nonerequired_ notes the practical impact of the new Open WebUI terminal with native tool calling, stating it has reduced their reliance on MCP (Model Control Panel). The AI's proficiency with Unix and CLI tools is particularly noted, indicating a high level of command execution capability that enhances productivity for technical users.
-    - Fade78 mentions that only the paid version of the software supports multi-user functionality, contrasting it with their use of an alternative tool, Fileshed. This highlights a limitation in the free version of the software, which may affect collaborative workflows.
+    - sean_hash 强调，将 Qwen3.5 35b 与 Open WebUI terminal 结合后，有望在单张 NVIDIA 3090 上实现 agentic workflow。这意味着复杂 AI 模型在消费级硬件上的高效运行正变得更可行，也更适合个人开发者或小团队。
+    - nonerequired_ 提到，这个带原生 tool calling 的新 Open WebUI terminal 在实践中显著降低了他们对 MCP（Model Control Panel）的依赖。AI 在 Unix 与 CLI 工具上的熟练程度尤其令人印象深刻，说明其命令执行能力已足以明显提升技术用户的生产力。
+    - Fade78 表示，只有付费版本支持多用户功能，并将其与自己正在使用的替代工具 Fileshed 作了对比。这揭示了免费版在协作工作流上的一个限制。
 
-  - **[Final Qwen3.5 Unsloth GGUF Update!](https://www.reddit.com/r/LocalLLaMA/comments/1rlkptk/final_qwen35_unsloth_gguf_update/)** (Activity: 1573): **The image in the post is a technical announcement regarding the final update for the Qwen3.5 model, specifically focusing on the GGUF (Generalized Gaussian Unsloth Format) benchmarks. The update highlights improvements in the quantization method for Qwen3.5 MoEs (Mixture of Experts) to significantly reduce Maximum KLD (Kullback-Leibler Divergence), with the UD-Q4_K_XL variant showing a `51%` reduction in Maximum KLD despite being `8%` larger. The update also introduces a new imatrix calibration dataset, which is expected to enhance performance in chat, coding, long context, and tool-calling use-cases. Additionally, the update includes various model variants and improvements in inference speed by replacing BF16 layers with F16. The image visually represents these updates with a graph showing the relationship between KLD and model size for different quantizers.** Commenters express appreciation for the updates and improvements, though some humorously doubt the finality of the update, suggesting a potential for future revisions. There is also a suggestion to update Qwen3-Coder-Next-GGUFs and a mention of the ik_llama.cpp implementation being faster for certain configurations.
+  - **[最终版 Qwen3.5 Unsloth GGUF 更新！](https://www.reddit.com/r/LocalLLaMA/comments/1rlkptk/final_qwen35_unsloth_gguf_update/)** (Activity: 1573): **帖子中的图片是一则关于 Qwen3.5 最终更新的技术公告，重点聚焦 GGUF（Generalized Gaussian Unsloth Format）基准。此次更新强调改进了 Qwen3.5 MoE（Mixture of Experts）的量化方法，可显著降低 Maximum KLD（Kullback-Leibler Divergence）；其中 UD-Q4_K_XL 变体尽管体积增大了 `8%`，但 Maximum KLD 下降了 `51%`。更新还引入了新的 imatrix 校准数据集，预计将提升聊天、编程、长上下文与 tool-calling 场景下的表现。此外，它还包含多个模型变体，并通过将 BF16 层替换为 F16 来提升推理速度。图片则以图表形式展示了不同 quantizer 下 KLD 与模型大小之间的关系。** 评论者对这些更新和改进表达了认可，不过也有人半开玩笑地怀疑这次更新是否真的是“最终版”，暗示未来也许还会继续迭代。还有人建议同步更新 Qwen3-Coder-Next-GGUF，并提到在某些配置下 `ik_llama.cpp` 实现会更快。
 
-    - **VoidAlchemy** highlights the performance benefits of using the `ik_llama.cpp` chunked delta net implementation, especially for CPU-only or hybrid CPU+GPU setups. This implementation is noted to be significantly faster than the mainline, suggesting a potential performance boost for users working with Qwen3.5 quant models.
-    - **Small-Fall-6500** inquires about updates to the GGUFs for smaller Qwen3.5 models, specifically those 9 billion parameters and below. This suggests a focus on ensuring that optimizations and updates are not limited to larger models, which could be crucial for users with limited computational resources.
-    - **Lyuseefur** asks for opinions on the [SSD GitHub repository](https://github.com/tanishqkumar/ssd), indicating interest in alternative or complementary tools or implementations that might enhance or interact with the Qwen3.5 models. This could imply a search for more efficient storage or deployment solutions.
+    - **VoidAlchemy** 强调，`ik_llama.cpp` 的 chunked delta net 实现对纯 CPU 或 CPU+GPU 混合配置尤其有性能优势。它被认为明显快于主线版本，因此对运行 Qwen3.5 量化模型的用户来说，可能带来可观的速度提升。
+    - **Small-Fall-6500** 询问了更小尺寸的 Qwen3.5 GGUF（尤其是 90 亿参数及以下）是否也会同步得到更新。这说明用户关心优化不应只集中在大模型上，因为算力受限的用户同样需要这些改进。
+    - **Lyuseefur** 询问大家对 [SSD GitHub 仓库](https://github.com/tanishqkumar/ssd) 的看法，表明他们对可能增强 Qwen3.5 模型或与之配合使用的其他工具/实现感兴趣，也可能是在寻找更高效的存储或部署方案。
 
 
 
@@ -147,22 +147,22 @@ topics:
     - Old_Leshen 询问了 Qwen3.5-122B-A10B-int4-AutoRound 模型在 Asus Ascent GX10 上的设置时间和稳定性。这突显了了解初始设置复杂性和持续维护要求的重要性，这些是高性能硬件上 AI 模型实际部署中的关键因素。
     - dacydergoth 提到在执行编码任务时将模型 temperature（温度）调低至 0.7 以下，这表明微调超参数（如 temperature）对于在特定应用（如代码生成）中优化模型性能至关重要。
 
-### 3. Llama.cpp and Related Tools
+### 3. Llama.cpp 及相关工具
 
-  - **[Llama.cpp: now with automatic parser generator](https://www.reddit.com/r/LocalLLaMA/comments/1rmp3ep/llamacpp_now_with_automatic_parser_generator/)** (Activity: 333): ****Llama.cpp** has integrated an automatic parser generator into its mainline code, leveraging **ngxson's Jinja system** and **aldehir's PEG parser**. This novel autoparser solution extracts parsing logic directly from templates, supporting typical model templates without additional definitions or recompilation. While it doesn't eliminate the need for custom parsers for complex models like GPT OSS or Kimi 2.5, it centralizes parser support, enhancing maintainability and reliability. The upcoming **Qwen 3.5 update** will address issues with parameter ordering, resolving persistent `read_file` loop problems in models.** The community is optimistic about the autoparser's potential to resolve longstanding parser issues, particularly in agentic orchestration frameworks. However, there's debate on whether **LM Studio** will adopt this infrastructure, as their current parser lacks phase state tracking, leading to multiple bugs.
+  - **[Llama.cpp：现已支持自动解析器生成器](https://www.reddit.com/r/LocalLLaMA/comments/1rmp3ep/llamacpp_now_with_automatic_parser_generator/)** (Activity: 333): ****Llama.cpp** 已将自动解析器生成器集成进主线代码，底层利用了 **ngxson 的 Jinja 系统** 和 **aldehir 的 PEG parser**。这个新的 autoparser 方案可以直接从模板中提取解析逻辑，无需额外定义或重新编译，就能支持常见模型模板。虽然它还不能完全替代 GPT OSS 或 Kimi 2.5 这类复杂模型所需的自定义 parser，但它把 parser 支持集中到了一处，提升了可维护性和可靠性。即将到来的 **Qwen 3.5 更新** 还会处理参数顺序问题，从而解决模型里持续存在的 `read_file` 循环故障。** 社区普遍看好这个 autoparser 解决历史 parser 问题的潜力，尤其是在 agent orchestration 框架中。不过，大家也在讨论 **LM Studio** 是否会采用这套基础设施，因为它现有的 parser 缺乏 phase state tracking，已经引发了不少 bug。
 
-    - The introduction of an automatic parser generator in llama.cpp addresses significant issues with existing parsers, particularly those used by LM Studio. The current Harmony parser lacks phase state tracking, leading to bugs such as recursive traps and phase confusion. The new parser extracts logic from Jinja templates, ensuring phase-aware parsing and resolving these issues by construction, rather than relying on context-free pattern matching.
-    - The parser issues in LM Studio, such as the arbitrary order of optional parameters causing `read_file` loops, highlight the limitations of their current system. The new parser in llama.cpp could potentially resolve these issues by enforcing parameter ordering that aligns with model outputs. However, it remains uncertain if LM Studio will adopt this new infrastructure, which could limit the benefits to llama.cpp users only.
-    - The community is actively discussing whether LM Studio will integrate llama.cpp's parser infrastructure, as the current closed-source parser may not benefit from the recent improvements. This discussion has garnered significant attention, indicating a strong demand for a resolution that would allow LM Studio users to benefit from the advancements in llama.cpp's parsing capabilities.
+    - llama.cpp 引入自动 parser generator，直接瞄准了现有 parser，尤其是 LM Studio 所使用 parser 的核心问题。当前的 Harmony parser 缺少 phase state tracking，容易出现递归陷阱和阶段混乱等 bug；新的 parser 通过从 Jinja 模板直接提取逻辑，从构造上保证 phase-aware parsing，而不是继续依赖上下文无关的模式匹配。
+    - LM Studio 当前 parser 的一些问题，例如可选参数顺序随意导致 `read_file` 死循环，暴露了其现有系统的局限。llama.cpp 的新 parser 通过强制参数顺序与模型输出保持一致，理论上可以解决这类问题；但 LM Studio 是否会接入这套基础设施仍未确定，因此收益可能暂时只属于 llama.cpp 用户。
+    - 社区正在热烈讨论 LM Studio 是否会整合 llama.cpp 的 parser 基础设施，因为它目前的闭源 parser 很可能享受不到这次改进。这种讨论热度本身也说明，很多人都希望 LM Studio 用户同样能受益于 llama.cpp 最近在解析能力上的进步。
 
-  - **[To everyone using still ollama/lm-studio... llama-swap is the real deal](https://www.reddit.com/r/LocalLLaMA/comments/1rm7nq1/to_everyone_using_still_ollamalmstudio_llamaswap/)** (Activity: 606): **The post discusses the advantages of using **llama-swap** over traditional tools like **ollama/lm-studio** for serving multiple models. **Llama-swap** is highlighted for its ability to support any underlying provider, including `llama.cpp` and `ik_llama.cpp`, and its lightweight nature, requiring only one executable and one config file. It offers a user interface for testing models, checking performance, and viewing logs, which aids in debugging. The configuration file is described as powerful yet simple, allowing for model grouping, forced configuration settings, and policy definitions. The post provides a detailed setup guide for **Ubuntu amd64**, including systemd service configuration for automatic startup.** Commenters debate the necessity of **llama-swap** given that **llama-server** has a router mode, but it's noted that **llama-swap** supports multiple backends like `ik_llama.cpp`, unlike **llama-server** which is limited to `llama.cpp`. Another commenter finds **LMstudio** convenient and questions the need to switch unless there's a significant performance gain.
+  - **[还在用 ollama/lm-studio 的朋友们……llama-swap 才是真家伙](https://www.reddit.com/r/LocalLLaMA/comments/1rm7nq1/to_everyone_using_still_ollamalmstudio_llamaswap/)** (Activity: 606): **该帖子讨论了在多模型服务场景下，使用 **llama-swap** 相比传统工具 **ollama/lm-studio** 的优势。**Llama-swap** 最突出的特点是可以支持任意底层 provider，包括 `llama.cpp` 和 `ik_llama.cpp`，同时它本身也很轻量，只需要一个可执行文件和一个配置文件。它还提供了用于测试模型、查看性能和浏览日志的界面，有助于排障。帖子中还把它的配置文件描述为“强大但不复杂”，支持模型分组、强制配置和策略定义，并附上了 **Ubuntu amd64** 的完整部署说明，包括 systemd 自启动配置。** 评论者围绕 **llama-swap** 是否有必要展开争论，因为 **llama-server** 自身已经有 router mode；不过也有人指出，**llama-swap** 能支持 `ik_llama.cpp` 这类多后端，而 **llama-server** 仅限 `llama.cpp`。另有评论者认为 **LMstudio** 已经够方便了，除非性能提升非常明显，否则不一定值得切换。
 
-    - **MaxKruse96** questions the need for llama-swap when llama-server already offers router mode functionality. However, **Creative-Signal6813** clarifies that llama-server's router is limited to llama.cpp, whereas llama-swap can integrate with various backends, offering more flexibility in inference engine choices.
-    - **RealLordMathis** introduces an alternative tool, [llamactl](https://github.com/lordmathis/llamactl), which provides a web UI for managing models and supports llama-server router mode, vllm, mlx_lm, and remote deployments. However, it currently only supports simple LRU eviction for model swapping, which is less complex than llama-swap's capabilities.
-    - **thecalmgreen** highlights a potential mismatch between the complexity of llama-swap and the typical user base of Ollama/lm-studio, who may prefer simpler, more user-friendly solutions. This suggests that while llama-swap offers advanced features, it may not align with the needs of users seeking straightforward installation and operation.
+    - **MaxKruse96** 质疑，既然 llama-server 已经支持 router mode，为何还需要 llama-swap。对此，**Creative-Signal6813** 回应说，llama-server 的 router 只局限于 llama.cpp，而 llama-swap 能整合多个后端，因此在推理引擎选择上更灵活。
+    - **RealLordMathis** 提到了另一个替代工具 [llamactl](https://github.com/lordmathis/llamactl)，它提供 Web UI 来管理模型，并支持 llama-server router mode、vllm、mlx_lm 和远程部署。不过它目前只支持较简单的 LRU 驱逐策略，功能复杂度仍低于 llama-swap。
+    - **thecalmgreen** 指出，llama-swap 的复杂度可能与 Ollama/lm-studio 典型用户群并不匹配，因为后者往往更偏好简单、友好的使用方式。这说明虽然 llama-swap 功能更强，但未必适合那些只想要快速安装和直接使用的人。
 
 
-## Less Technical AI Subreddit Recap
+## 偏非技术向 AI Subreddit 摘要
 
 > /r/Singularity, /r/Oobabooga, /r/MachineLearning, /r/OpenAI, /r/ClaudeAI, /r/StableDiffusion, /r/ChatGPT, /r/ChatGPTCoding, /r/aivideo, /r/aivideo
 
@@ -177,7 +177,7 @@ topics:
 
   - **[GPT-5.4 Thinking 基准测试](https://www.reddit.com/r/singularity/comments/1rlovvj/gpt54_thinking_benchmarks/)** (活跃度: 777): **图片展示了一张 AI 模型的基准测试对比图，突出了 "GPT-5.4 Thinking" 在计算机使用、网络浏览和知识工作等各项任务中的表现。值得注意的是，GPT-5.4 Thinking 在 GDPval 和 BrowseComp 中获得了高分，分别为 `83.0%` 和 `82.7%`，表明其在这些领域表现强劲。图表还对比了其他模型，如 GPT-5.3 Codex 和 GPT-5.2 Thinking，以及来自 **Anthropic** 和 **Google** 的模型。这表明 AI 模型的改进重点在于特定能力，尤其是在需要复杂推理和信息检索的任务中。** 评论者指出，每月发布新版本有可能推动持续改进，但也有人担心软件工程 (SWE) 能力出现停滞，暗示需要在持续学习（continual learning）方面取得突破。一些人表示，从 GPT-5.3 到 GPT-5.4 的改进并没有预期的那么显著。
 
-Error summarizing comments.
+评论摘要生成失败。
 
   - **[突发：OpenAI 刚刚发布了 GPT-5.4](https://www.reddit.com/r/OpenAI/comments/1rlp3jg/breaking_openai_just_drppped_gpt54/)** (活跃度: 1381): **OpenAI 发布了 GPT-5.4，这是一款在推理、编程和 Agent 类任务中表现卓越的新模型。它在 OSWorld-Verified 任务上达到了 `75%` 的分数，超越了 `72.4%` 的人类基准，并在 BrowseComp 上达到了 `82.7%`，显示出强大的网络浏览和推理能力。该模型支持 `1M-token` 上下文，提供更好的可控性（steerability），并减少了 `47%` 的 Token 使用量，目标定位于复杂的知识工作和 Agent 工作流。[图片](https://i.redd.it/xpbjs93fq9ng1.png)显示了性能对比图，突出了 GPT-5.4 相对于先前版本和竞争对手的进步。** 评论者对基准测试的实际影响持怀疑态度，一些人指出，如果 `47%` 的 Token 效率在实践中证明有效，那将是一个重大改进。
 
@@ -250,38 +250,35 @@ Error summarizing comments.
 - **GPT‑5.4 预热列车进入 Arena**: AI 研究人员分享了 **GPT‑5.4** 的早期对比，包括推理测试和视觉演示，重点参考了 [Peter Gostev 的 GPT‑5.4 第一印象视频](https://www.youtube.com/watch?v=foEfcttIuiI)，以及在 [Arena 演示视频](https://www.youtube.com/watch?v=wwtMv4hPv54)中展示的 **GPT‑5.4‑High** 视觉效果，激发了人们对该模型推理和长 context 能力的兴奋。
   - 在 Perplexity 和 OpenClaw 等社区中，开发者称赞 **GPT‑5.4 Thinking** 相比 **5.2** 具有更好的推理能力和对话语气，而其他人则抱怨**响应缓慢且 Token 消耗巨大**，一些 Cursor 用户反映任务耗时长达 *“30 分钟”*，并称该模型为 *“Token 吞噬者”*。
 
-- **Codex Quandaries Cloud the 5.4 Coding Story**: Developers in the OpenAI community reported that **GPT‑5.4 Codex** appears weaker for coding than **GPT‑5.3**, raising doubts about whether a full Codex release will happen alongside the new model.
-  - The discussion coincided with OpenAI releasing new tooling including **Codex Security** and the **Codex for OSS** initiative to help maintainers review vulnerabilities and large repositories, announced in [OpenAI’s Codex Security research preview](https://openai.com/index/codex-security-now-in-research-preview/) and the [Codex for OSS program](https://developers.openai.com/codex/community/codex-for-oss).
+- **Codex 的疑云遮住了 5.4 的编码叙事**：OpenAI 社区中的开发者反馈，**GPT‑5.4 Codex** 在编码方面看起来反而弱于 **GPT‑5.3**，这让人开始怀疑新版模型是否真的会伴随一次完整的 Codex 发布。
+  - 这场讨论恰逢 OpenAI 同步推出新工具，包括 **Codex Security** 和 **Codex for OSS** 计划，帮助维护者审查漏洞和大型代码仓库，详见 [Codex Security 研究预览](https://openai.com/index/codex-security-now-in-research-preview/) 与 [Codex for OSS 项目](https://developers.openai.com/codex/community/codex-for-oss)。
 
+**2. 新模型、基准测试与多语言训练**
 
-**2. New Models, Benchmarks, and Multilingual Training**
+- **Sarvam 的 105B 开始“讲印度语言”了**：**Sarvam AI** 发布了新的开放模型 **Sarvam‑30B** 和 **Sarvam‑105B**，它们从零开始面向印度语言训练，同时也在全球基准上具备竞争力。权重通过 **Hugging Face** 与 **AIKosh** 分发，并由 **SGLang** 提供首发支持，详见 [Pratyush Kumar 的发布帖](https://xcancel.com/pratykumar/status/2029965547824431356)。
+  - 开发者提到，**vLLM 集成预计很快就会到来**，这将让这些模型更容易进行大规模部署；同时，这次发布也被视为聚焦印度语言生态的最大规模开源多语言模型尝试之一。
 
-- **Sarvam’s 105B Speaks India’s Languages**: **Sarvam AI** released new open models **Sarvam‑30B** and **Sarvam‑105B** trained from scratch for Indian languages and competitive global benchmarks, with weights distributed via **Hugging Face** and **AIKosh** and launch support from **SGLang** as announced in [Pratyush Kumar’s model launch thread](https://xcancel.com/pratykumar/status/2029965547824431356).
-  - Developers noted that **vLLM integration is expected soon**, making the models easier to deploy at scale, and the release drew interest as one of the largest open multilingual model efforts focused on the Indian language ecosystem.
+- **Qwen3.5‑27B 展现出超规格战斗力**：基准讨论显示，**Qwen3.5‑27B** 在编码表现上已经能追平体量更大的 **122B** 兄弟模型，同时在 Agentic index 上还高出 **2 分**，而且它并没有采用 Mixture‑of‑Experts 架构。
+  - 在本地运行模型的用户还提到一些基础设施层面的改进，例如 **LM Studio 新增的 MoE offload 参数**，使得 **Qwen‑3.5‑35B 4_K_M** 可以在 **4070Ti** 上以 **262k 上下文窗口**运行，从而在某些配置下不再依赖 **llama.cpp**。
 
-- **Qwen3.5‑27B Punches Above Its Weight**: Benchmark discussions showed **Qwen3.5‑27B** matching the coding performance of its much larger **122B** sibling while outperforming it by **2 points on the Agentic index**, despite not using a Mixture‑of‑Experts architecture.
-  - Users running the models locally highlighted infrastructure improvements like **LM Studio’s new MoE offload parameter**, which enabled running **Qwen‑3.5‑35B 4_K_M** with a **262k context window on a 4070Ti**, eliminating the need for **llama.cpp** in some setups.
+- **PixVerse 正在爬升 Video Arena 梯子**：**Video Arena** 排行榜已加入 **pixverse‑v5.6**，根据 [Arena 视频榜单](https://arena.ai/leaderboard/text-to-video)，它目前在 text-to-video 与 image-to-video 两项中都排到 **第 15 名**。
+  - 虽然相关讨论还不算多，但这一排名表明，在 **LMArena** 这类基准设施开始系统性比较多模态模型后，生成式视频赛道的竞争正在升温。
 
-- **PixVerse Climbs the Video Arena Ladder**: The **Video Arena** leaderboard added **pixverse‑v5.6**, which currently ranks **#15** for both text‑to‑video and image‑to‑video generation according to the [Arena video leaderboard](https://arena.ai/leaderboard/text-to-video).
-  - While discussion was still sparse, the ranking signals growing competition in generative video models as benchmarking infrastructure like **LMArena** begins systematically comparing multimodal models.
+**3. AI Agent 基础设施与工具大爆发**
 
+- **TanStack 把 Agent 技能直接装进 npm**：**TanStack** 推出了 **Intent（alpha）**，它允许把 **AI Agent 可读的“技能”** 直接嵌入 npm 包中，实现跨包管理器的分布式发现和自动知识更新，详见 [TanStack Intent 发布帖](https://xcancel.com/tan_stack/status/2029973163455766769)。
+  - 开发者指出，这可能让 agent 直接从依赖包本身动态加载文档和能力，从而形成一个**与依赖图绑定、可自更新的 agent 知识生态**。
 
-**3. AI Agent Infrastructure and Tooling Explosion**
+- **Greywall 和 Arksim 为开发者配上 Agent 测试武器**：两款提升 agent 可靠性的开源工具发布了：**Greywall** 是一个可实时监控并阻断 agent 网络访问的 CLI 沙箱（[GitHub](https://github.com/GreyhavenHQ/greywall)）；**Arksim** 则通过生成合成用户，自动用对话方式测试 agent（[GitHub](https://github.com/arklexai/arksim)）。
+  - 开发者认为，这类工具通过把**沙箱执行环境**和**自动化对抗测试用户**结合起来，能更早发现 agent 失效问题，弥补它们一接触真实系统就暴露出来的可靠性缺口。
 
-- **TanStack Ships Agent Skills Inside npm**: **TanStack** introduced **Intent (alpha)**, a system for embedding **AI‑agent‑readable “skills” directly inside npm packages**, enabling distributed discovery and automatic knowledge updates across package managers as announced in [the TanStack Intent post](https://xcancel.com/tan_stack/status/2029973163455766769).
-  - Developers highlighted that this could let agents dynamically load documentation and capabilities from packages themselves, potentially creating a **self‑updating agent knowledge ecosystem tied to dependency graphs.**
+- **Cursor Automations 把 IDE 推向常驻 Agent 时代**：Cursor 团队展示了 **Cursor Automations**，这是一个用于运行**持续在线 AI 编码 Agent** 的功能，发布演示见 [Cursor 公告帖](https://xcancel.com/cursor_ai/status/2029604182286856663)。
+  - 社区认为，这代表着 IDE 正朝着 **云端托管的 agent workflow** 演化：多个 agent 并行生成不同实现，再通过迭代比较来加速开发。
 
-- **Greywall and Arksim Arm Builders With Agent Testing Tools**: Two open‑source tools for agent reliability launched: **Greywall**, a CLI sandbox that monitors and blocks agent network access in real time ([GitHub](https://github.com/GreyhavenHQ/greywall)), and **Arksim**, which generates synthetic users to automatically test agents through conversations ([GitHub](https://github.com/arklexai/arksim)).
-  - Builders noted these tools help catch agent failures earlier by combining **sandboxed execution environments with automated adversarial test users**, addressing reliability gaps that appear once agents interact with real systems.
+**4. GPU Kernel、硬件 Hack 与高效训练**
 
-- **Cursor Automations Push IDEs Toward Always‑On Agents**: The Cursor team revealed **Cursor Automations**, a feature for running **persistent always‑on AI coding agents**, demonstrated in a launch clip shared via [Cursor’s announcement thread](https://xcancel.com/cursor_ai/status/2029604182286856663).
-  - Community discussion framed the feature as part of a broader shift toward **cloud‑hosted agent workflows**, where parallel agent runs generate competing implementations and accelerate development through iterative comparison.
-
-
-**4. GPU Kernels, Hardware Hacks, and Efficient Training**
-
-- **AMD’s $1.1M Kernel Competition Targets MI355X**: A major **AMD‑sponsored kernel optimization competition** launched with a **$1.1M prize pool**, challenging developers to optimize kernels for **DeepSeek‑R1‑0528** and **GPT‑OSS‑120B** on **MI355X GPUs**, with registration and details at [the competition page](https://luma.com/cqq4mojz).
-  - Phase 1 focuses on optimizing **MXFP4 MoE, MLA Decode, and MXFP4 GEMM kernels**, and participants can submit solutions through the **Popcorn CLI** without owning MI355X hardware using remote evaluation infrastructure.
+- **AMD 的 110 万美元 Kernel 竞赛瞄准 MI355X**：一项由 **AMD** 赞助的大型 kernel 优化竞赛正式启动，总奖池 **110 万美元**，挑战开发者为 **MI355X GPU** 上的 **DeepSeek‑R1‑0528** 和 **GPT‑OSS‑120B** 优化 kernel，详情和报名见[竞赛页面](https://luma.com/cqq4mojz)。
+  - 第一阶段聚焦 **MXFP4 MoE、MLA Decode 与 MXFP4 GEMM kernels** 的优化，参赛者无需自备 MI355X，也可以通过远程评测基础设施使用 **Popcorn CLI** 提交方案。
 
 
 
@@ -303,7 +300,7 @@ Error summarizing comments.
 
 ---
 
-# Discord: 高层级 Discord 摘要
+# Discord：高层级 Discord 摘要
 
 
 
@@ -421,16 +418,16 @@ Error summarizing comments.
 
 ## [OpenRouter](https://discord.com/channels/1091220969173028894) Discord
 
-- **OpenRouter Plagued by Account Breaches!**: Users reported **stolen accounts** and **unauthorized transactions**, urging others to check their accounts and notify `support@openrouter.ai`.
-   - Concerns arose regarding potential *bad actors* transferring funds through multiple accounts and the risks of **API key leaks**.
-- **Gemini Geoblocking Foils German?**: Users reported encountering a *403 Blocked by Google* error when accessing **Google Gemini models** through OpenRouter, due to **Google** blocking API access from Russia, as documented in their [available regions documentation](https://ai.google.dev/gemini-api/docs/available-regions).
-   - A user based in Germany using a VPN experienced this issue while trying to use **Google Gemini**.
-- **Models Turn Scripting Schemers**: A user observed LLMs writing python scripts to print their responses instead of directly outputting them, even when instructed not to.
-   - This behavior was attributed to models trained on **synthetic data**, and adding **examples** might alleviate the issue, referencing a [Manus article](https://manus.im/blog/Context-Engineering-for-AI-Agents-Lessons-from-Building-Manus) on agentic systems.
-- **Musk's Anthropic Snub?**: Members reacted negatively to [this tweet](https://x.com/elonmusk/status/2029833177368514831) by **Elon Musk**, with speculation that he is unhappy because **Anthropic** declined his offer to use his model without restrictions.
-   - The insinuation was *his model sucks* and they wanted no part of it.
-- **Zoltun Chat Web Client Hits the Scene**: A member introduced **Zoltun**, a customizable chat web client available at [zoltun.org](https://zoltun.org/) and [github.com/zoltun-org](https://github.com/zoltun-org), as an alternative to the **GLM Chat Web Client**, offering autosave and markdown functionality.
-   - The creator is aiming for a balance between modern and vintage design, allowing users to customize themes for a unique experience.
+- **OpenRouter 遭遇账号被盗潮**：用户报告称出现了**账号被盗**和**未经授权的交易**，并提醒其他人立即检查账户、联系 `support@openrouter.ai`。
+   - 社区担心存在 *恶意用户* 通过多个账户转移资金，也担忧 **API key 泄漏** 带来的更大风险。
+- **Gemini 的地区封锁把德国用户也挡住了？**：有用户表示，通过 OpenRouter 访问 **Google Gemini 模型** 时遇到了 *403 Blocked by Google* 错误，这是因为 **Google** 正如其[可用地区文档](https://ai.google.dev/gemini-api/docs/available-regions)中所述，屏蔽了来自俄罗斯的 API 访问。
+   - 一位身处德国、同时开启 VPN 的用户在尝试使用 **Google Gemini** 时就遇到了这个问题。
+- **模型开始耍花招，改用脚本输出答案**：有用户观察到，一些 LLM 即便被明确要求不要这么做，仍会编写 python 脚本来 `print` 它们的回答，而不是直接输出文本。
+   - 这种行为被归因于模型在 **synthetic data** 上训练过多；有人提到，加入更多 **examples** 也许能缓解这一问题，并引用了 [Manus 的文章](https://manus.im/blog/Context-Engineering-for-AI-Agents-Lessons-from-Building-Manus) 来说明 agent 系统中的类似现象。
+- **Musk 被 Anthropic 拒绝后心态炸了？**：成员们对 **Elon Musk** 的[这条推文](https://x.com/elonmusk/status/2029833177368514831)反应负面，并猜测他之所以不满，是因为 **Anthropic** 拒绝了他“无约束使用其模型”的提议。
+   - 帖子中隐含的嘲讽是：*他的模型太差，所以 Anthropic 根本不想沾边*。
+- **Zoltun 聊天网页客户端登场**：有成员介绍了 **Zoltun**，一个可高度自定义的聊天 Web 客户端，可在 [zoltun.org](https://zoltun.org/) 和 [github.com/zoltun-org](https://github.com/zoltun-org) 获取，作为 **GLM Chat Web Client** 的替代方案，支持自动保存和 Markdown。
+   - 开发者的目标是在现代感和复古感之间取得平衡，并允许用户自定义主题，打造更有个性的体验。
 
 
 
@@ -440,16 +437,16 @@ Error summarizing comments.
 
 ## [Nous Research AI](https://discord.com/channels/1053877538025386074) Discord
 
-- **GPT Pro Speculated to be AI Council**: Speculation suggests **GPT Pro** might be a council of **8 AIs**, with **7** generating responses and **1** deciding, leading to more reliable results.
-   - Priced **10x** higher than standard GPT, this model aligns with the council concept, though it remains speculative.
-- **Coursera Dodges Prompt Injection Attack**: A LinkedIn user found a prompt injection vulnerability in **Coursera's** system, where the AI should block assessment answers, but the exploit was ineffective.
-   - The AI assistant is now disabled on assessment pages, displaying a message about upholding Coursera's academic integrity policy.
-- **Seeking Extensible RL Framework**: A member seeks an extensible **RL framework** for integration into their software, exploring reward functions defined by **LLMs**.
-   - Their aim is to establish an end-to-end omnimodal annotation/training system, possibly leveraging **GRPO**.
-- **Hermes Agent Shows Off Custom Skins**: A member is developing custom **Hermes Agent skins**, presenting early versions with themed graphical user interfaces.
-   - The developer is synchronizing the TUI theme and refining GUI adjustments to align with user preferences.
-- **Sky-High GPU Prices Spark Concern**: A member voiced concerns over the prohibitively high cost of renting **GPUs** for finetuning, casting doubt on the practicality of such projects.
-   - They are actively seeking providers offering competitive rates due to the current inflated **GPU pricing**.
+- **GPT Pro 被猜测是一个 AI 委员会**：有人推测 **GPT Pro** 可能本质上是由 **8 个 AI** 组成的“委员会”，其中 **7 个负责生成**、**1 个负责裁决**，从而让输出更可靠。
+   - 由于它的价格比普通 GPT **高 10 倍**，这种“委员会模型”猜想在价格逻辑上似乎说得通，不过目前仍停留在猜测阶段。
+- **Coursera 躲过了一次 Prompt Injection 攻击**：一位 LinkedIn 用户发现了 **Coursera** 系统中的一个 prompt injection 漏洞，理论上 AI 本不该泄露考试答案，但这次利用最终并未成功。
+   - 现在，Coursera 已经在考试页面关闭了 AI 助手，并显示一条维护学术诚信政策的提示。
+- **有人在寻找可扩展的 RL 框架**：有成员在为自己的软件寻找一个可扩展的 **RL framework**，并想探索由 **LLM** 定义 reward function 的可能性。
+   - 他们的目标是构建一个端到端的全模态标注/训练系统，可能会用到 **GRPO**。
+- **Hermes Agent 晒出定制皮肤**：有成员正在开发 **Hermes Agent** 的自定义皮肤，并展示了几版带有主题化 GUI 的早期原型。
+   - 开发者正在同步调整 TUI 主题，并细化 GUI 细节，使其更贴合用户偏好。
+- **离谱的 GPU 租赁价格引发担忧**：一位成员抱怨如今租 **GPU** 来做 finetuning 的价格高得惊人，让人怀疑这类项目是否还现实可行。
+   - 因为当前 **GPU 定价** 过于膨胀，他们正在积极寻找报价更有竞争力的服务商。
 
 
 
@@ -1079,14 +1076,14 @@ Error summarizing comments.
 > `CSS dark/light mode, Trump's White House UFC Stadium Proposal, Iran-Saudi relations, Palantir's Maven Smart System, Anthropic AI contract with Department of War collapse` 
 
 
-- **CSS Debates Spark Over Dark Mode Implementation**: A discussion started over Twitter's move to OS-controlled dark mode, with members debating the need for separate assets vs. CSS variables for palette swaps and ways to counteract **blooming effects** in dark mode.
-   - One member recommended using the `light-dark()` CSS syntax with CSS variables to combine light and dark mode color pairings, as shown in [this article](https://web.dev/articles/light-dark), and another shared his sentiment *"anytime they do shit like this it makes me wonder, did Elon mandate this change? Or is it because Grok produces absolute slop?"*
-- **Trump Plans White House UFC Stadium**: Reports indicate **Donald Trump** plans to build a **100,000-seat stadium** near the White House to host a **UFC event** on his birthday in **June 2026**.
-   - The proposal, originally shared in [this tweet](https://xcancel.com/highbrow_nobrow/status/2029497418325086488), was met with mockery and sarcastic remarks.
-- **US Investigation Points to Likely Responsibility for Iran School Strike**: A US investigation suggests likely US responsibility in an **Iran school strike**, amid rising tensions and skepticism regarding the US's ability to defend its allies from Iran, according to [this Reuters article](https://www.reuters.com/world/middle-east/us-investigation-points-likely-us-responsibility-iran-school-strike-sources-say-2026-03-06/).
-   - Some members pointed out that the region is very upset with the US and cited macro analysis suggesting the potential of investment withdrawal from gulf countries, based on this [YouTube analysis](https://www.youtube.com/watch?v=jIS2eB-rGv0).
-- **Department of War and Anthropic AI Partnership Collapses**: An article shared [here](https://xcancel.com/piratewires/status/2029984469093118185?s=12) details how a major contract between the **Department of War** and **Anthropic AI** fell through due to restrictive terms prohibiting kinetic strikes, long ethics panel reviews, and concerns about ideological supply-chain risks.
-   - The member satirically noted *"seems like open ai is ahead of anthropic in vibe warcrime"*.
+- **围绕深色模式实现的 CSS 争论升温**：Twitter 改为由操作系统控制深色模式后，成员们围绕配色切换该使用独立资源还是 CSS variables 展开讨论，也谈到了如何缓解深色模式下的 **blooming effects**。
+   - 一位成员推荐使用 `light-dark()` CSS 语法配合 CSS variables 来组合明暗模式的配色，参考了[这篇文章](https://web.dev/articles/light-dark)；另一位则吐槽道：*每次他们搞这种改动，我都会想，这是 Elon 强推的吗？还是因为 Grok 产出的东西实在太烂？*
+- **特朗普计划在白宫附近建 UFC 体育场**：有报道称，**Donald Trump** 计划在白宫附近修建一座 **10 万座位** 的体育场，用于在 **2026 年 6 月** 他生日时举办一场 **UFC 赛事**。
+   - 这一提案最初出自[这条推文](https://xcancel.com/highbrow_nobrow/status/2029497418325086488)，随后引来不少嘲讽和挖苦。
+- **美国调查指向伊朗学校袭击责任归属**：根据[这篇 Reuters 报道](https://www.reuters.com/world/middle-east/us-investigation-points-likely-us-responsibility-iran-school-strike-sources-say-2026-03-06/)，一项美国调查认为，美国很可能要为一起**伊朗学校袭击**负责；与此同时，局势也在升温，外界对美国保护盟友免受伊朗威胁的能力表示怀疑。
+   - 一些成员指出，该地区对美国非常不满，并引用了[这段 YouTube 分析](https://www.youtube.com/watch?v=jIS2eB-rGv0)中的宏观判断，认为海湾国家可能会出现撤资风险。
+- **国防部与 Anthropic AI 的合作告吹**：一篇在[这里](https://xcancel.com/piratewires/status/2029984469093118185?s=12)分享的文章称，**Department of War** 与 **Anthropic AI** 之间的一项重大合同因多项限制条件而流产，包括禁止用于动能打击、漫长的伦理委员会审批，以及对意识形态供应链风险的担忧。
+   - 有成员讽刺道：*看起来 open ai 在“战争氛围”这件事上比 anthropic 更领先。*
 
 
   
@@ -1107,13 +1104,13 @@ swyxio: new Cursor pod! https://www.latent.space/p/cursor-third-era
 > `Multi-Agent Orchestration, Claude Code Reverse Engineering, Greptile Agent v4, Cursor Automations, ChatGPT for Excel` 
 
 
-- **Claude Code Cracked for Context Control**: A developer reverse-engineered the **Claude Code binary** to implement a surgical context management feature, allowing users to selectively strip tool calls, results, and thinking blocks while preserving the core message history, as detailed [on xcancel.com](https://xcancel.com/vicnaum/status/2029579972688379928).
-- **Greptile Agent v4 Slashes Bugs, Hikes Prices**: **Daksh Gupta** launched **Greptile Agent v4**, boasting improved bug detection and fewer false positives, but with a revised pricing structure aimed at power users, as seen [on xcancel.com](https://xcancel.com/dakshgup/status/2029587555268845692?s=12).
-   - A user commented that *those prices are eye-watering!*.
-- **Cursor Automates Always-On Agents**: **Cursor** unveiled **Cursor Automations**, a new feature to create and deploy persistent, always-on AI agents within the platform, according to [xcancel.com](https://xcancel.com/cursor_ai/status/2029604182286856663?s=12).
-- **Sarvam AI Drops Indian Language Models**: **Pratyush Kumar** announced the release of the **Sarvam 30B and 105B models**, trained from scratch to excel in Indian languages and global benchmarks, as detailed [on xcancel.com](https://xcancel.com/pratykumar/status/2029965547824431356?s=46&t=b7l37rB6wtbyAh6ah1NpZQ).
-   - Weights are available on **Hugging Face** and **AIKosh**, with **SGLang** providing launch day support, and **vLLM** integration expected soon.
-- **GitHub Bot Gets Promptly Hacked**: **Sash Zats** reported a security breach where an attacker obtained an npm token using a prompt injection in a GitHub issue title, exploiting a triage bot, as detailed [on xcancel.com](https://xcancel.com/zats/status/2029888470383051053?s=12).
+- **Claude Code 被逆向以实现上下文控制**：一位开发者逆向了 **Claude Code** 的二进制文件，实现了一种“外科手术式”的上下文管理功能，允许用户在保留核心消息历史的同时，有选择地剥离 tool calls、结果和 thinking blocks，详见 [xcancel.com](https://xcancel.com/vicnaum/status/2029579972688379928)。
+- **Greptile Agent v4 降低 bug 但也涨了价**：**Daksh Gupta** 发布了 **Greptile Agent v4**，号称提升了 bug 检测能力并减少了误报，但同时也更新了面向重度用户的定价方案，见 [xcancel.com](https://xcancel.com/dakshgup/status/2029587555268845692?s=12)。
+   - 有用户评论说：*这价格看得人眼晕。*
+- **Cursor 推出常驻型 Agent 自动化**：根据 [xcancel.com](https://xcancel.com/cursor_ai/status/2029604182286856663?s=12) 的消息，**Cursor** 发布了 **Cursor Automations**，允许用户在平台内创建并部署持续运行、始终在线的 AI Agent。
+- **Sarvam AI 发布印度语言模型**：**Pratyush Kumar** 宣布推出 **Sarvam 30B** 和 **105B models**，这些模型从零开始训练，主打印度语言能力与全球基准表现，详见 [xcancel.com](https://xcancel.com/pratykumar/status/2029965547824431356?s=46&t=b7l37rB6wtbyAh6ah1NpZQ)。
+   - 权重已上线 **Hugging Face** 和 **AIKosh**，并由 **SGLang** 提供首发日支持，**vLLM** 集成预计也将很快跟进。
+- **GitHub Bot 遭 prompt injection 攻破**：**Sash Zats** 报告了一起安全事件，攻击者利用 GitHub issue 标题中的 prompt injection 攻击了一个 triage bot，从而拿到了 npm token，详见 [xcancel.com](https://xcancel.com/zats/status/2029888470383051053?s=12)。
 
 
   

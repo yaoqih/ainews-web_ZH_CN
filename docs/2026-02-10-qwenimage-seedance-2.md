@@ -140,7 +140,7 @@ topics:
 
 ## /r/LocalLlama + /r/localLLM 摘要
 
-### 1. Qwen Model Releases and Comparisons
+### 1. Qwen 模型发布与对比
 
   - **[Qwen-Image-2.0 发布 - 7B 统一生成+编辑模型，支持原生 2K 和真实文本渲染](https://www.reddit.com/r/LocalLLaMA/comments/1r0w7st/qwenimage20_is_out_7b_unified_genedit_model_with/)** (Activity: 600): **Qwen-Image-2.0** 是 Qwen 团队发布的新型 7B 参数模型，可通过阿里云 API 和 Qwen Chat 的免费 Demo 使用。它在单一流水线中集成了图像生成与编辑功能，支持原生 2K 分辨率，并能根据最高 1K tokens 的提示词渲染文本，包括复杂的图表（infographics）和中国书法。模型尺寸从 20B 缩减至 7B，使其更易于本地使用，一旦权重发布，就有可能在消费级硬件上运行。它还支持具有一致角色渲染的多面板漫画生成。评论者对该模型的潜力表示乐观，注意到其在自然光影和面部渲染方面的改进，并希望发布开放权重以供更广泛的社区使用。
 
@@ -150,7 +150,7 @@ topics:
 
   - **[不要被 Qwen3-Coder-Next 中的 "Coder" 给骗了！它是同等规模中最智能的通用模型](https://www.reddit.com/r/LocalLLaMA/comments/1r0abpl/do_not_let_the_coder_in_qwen3codernext_fool_you/)** (Activity: 837): **该帖子讨论了本地 LLM **Qwen3-Coder-Next** 的能力，强调了尽管它带有“coder”标签，但作为通用模型的有效性。作者将其与 **Gemini-3** 进行了有利的对比，指出了其一致性和务实的问题解决能力，这使其适用于启发式对话和实用建议。该模型因能够自发建议相关的作者、书籍或理论而受到赞誉，提供了类似于本地运行的 Gemini-2.5/3 的体验质量。作者期待即将推出的 Qwen-3.5 模型能带来进一步的改进。评论者一致认为，“coder”标签增强了模型的结构化推理能力，使其在通用用途上表现出意想不到的高效。一些人注意到它能够根据使用的工具模仿 GPT 或 Claude 等其他模型的语调，并推荐将其作为优于 Qwen 3 Coder 30B-A3B 等其他本地模型的选择。
 
-### 2. Local LLM Trends and Hardware Considerations
+### 2. 本地 LLM 趋势与硬件考量
 
   - **[本地 LLM 是 AI 浪潮中的下一个趋势吗？](https://www.reddit.com/r/LocalLLM/comments/1r0swmh/is_local_llm_the_next_trend_in_the_ai_wave/)** (Activity: 330): **该帖子讨论了运行本地 Large Language Models (LLMs) 作为云端订阅服务高性价比替代方案的新兴趋势。对话强调了本地设置在隐私和长期成本节省方面的潜在优势，尽管初始硬件投资较高（`$5k-$10k`）。该帖子预见到用于简易本地 LLM 设置的工具和指南将会激增。评论者指出，虽然本地模型正在迅速改进，但在性能上仍落后于云端模型。然而，差距正在缩小，本地模型可能很快会为某些应用提供可行的替代方案，尤其是随着小型 LLM 变得更加高效。评论者对本地 LLM 的实用性展开了辩论，一些人认为高昂的硬件成本限制了其吸引力，而另一些人则认为本地模型的快速进步可能很快使其成为云端模型的高性价比替代方案。讨论还涉及了大型云端模型的改进收益递减，与本地模型快速进步之间的对比。
 
@@ -176,18 +176,18 @@ topics:
 
 ### 1. Seedance 2.0 视频与动画功能
 
-  - **["Will Smith Eating Spaghetti" By Seedance 2.0 Is Mind Blowing!](https://www.reddit.com/r/singularity/comments/1r1auy1/will_smith_eating_spaghetti_by_seedance_20_is/)** (热度: 1399): **Seedance 2.0** 在视频片段技术方面取得了重大里程碑，被称为 “nano banana pro 时刻”。这表明在视频处理或特效方面取得了突破或显著进步，可能涉及 **AI** 或机器学习技术。提到的 “Will Smith Eating Spaghetti” 暗示了幽默或病毒式传播的属性，可能使用了 **deepfake** 或类似技术来创建既真实又有趣的內容。评论者幽默地注意到将 “Will Smith” 作为基准，突显了该视频的荒诞感和娱乐价值，同时也对进食动画的真实感进行了评价，例如夸张的吞咽动作和不真实的意面擦拭动作。
+  - **[Seedance 2.0 生成的“Will Smith 吃意大利面”太惊人了！](https://www.reddit.com/r/singularity/comments/1r1auy1/will_smith_eating_spaghetti_by_seedance_20_is/)** (热度: 1399): **Seedance 2.0** 在视频片段技术方面取得了重大里程碑，被称为 “nano banana pro 时刻”。这表明在视频处理或特效方面取得了突破或显著进步，可能涉及 **AI** 或机器学习技术。提到的 “Will Smith Eating Spaghetti” 暗示了幽默或病毒式传播的属性，可能使用了 **deepfake** 或类似技术来创建既真实又有趣的內容。评论者幽默地注意到将 “Will Smith” 作为基准，突显了该视频的荒诞感和娱乐价值，同时也对进食动画的真实感进行了评价，例如夸张的吞咽动作和不真实的意面擦拭动作。
 
 
-  - **[Kobe Bryant in Arcane Seedance 2.0,  absolutely insane!](https://www.reddit.com/r/singularity/comments/1r0zckw/kobe_bryant_in_arcane_seedance_20_absolutely/)** (热度: 832): 该帖子讨论了将 **Kobe Bryant** 集成到 **Arcane Seedance 2.0** **AI** 模型中，并强调了其令人印象深刻的能力。该模型因其在有限的计算资源下执行复杂任务的能力而受到关注，这表明其使用了先进的算法。这与有关观察一致，即尽管计算能力较弱，但 **China** 在 **AI** 领域仍保持竞争力，这可能归功于卓越的算法策略。一条评论认为，该 **AI** 的表现可能源于优越的算法，反映了这样一种观点：**China** 的 **AI** 进步并非仅仅依赖于计算能力，还依赖于创新的算法方法。
+  - **[Arcane Seedance 2.0 里的 Kobe Bryant，简直离谱！](https://www.reddit.com/r/singularity/comments/1r0zckw/kobe_bryant_in_arcane_seedance_20_absolutely/)** (热度: 832): 该帖子讨论了将 **Kobe Bryant** 集成到 **Arcane Seedance 2.0** **AI** 模型中，并强调了其令人印象深刻的能力。该模型因其在有限的计算资源下执行复杂任务的能力而受到关注，这表明其使用了先进的算法。这与有关观察一致，即尽管计算能力较弱，但 **China** 在 **AI** 领域仍保持竞争力，这可能归功于卓越的算法策略。一条评论认为，该 **AI** 的表现可能源于优越的算法，反映了这样一种观点：**China** 的 **AI** 进步并非仅仅依赖于计算能力，还依赖于创新的算法方法。
 
-  - **[Seedance 2 anime fight scenes (Pokemon, Demon Slayer, Dragon Ball Super)](https://www.reddit.com/r/singularity/comments/1r0wr5l/seedance_2_anime_fight_scenes_pokemon_demon/)** (热度: 1011): 该帖子讨论了 **Seedance 2** 的发布，展示了来自 **Pokemon**、**Demon Slayer** 和 **Dragon Ball Super** 等热门系列的动画战斗场景。来源链接至 [Chetas Lua's Twitter](https://x.com/chetaslua)，展示了足以媲美甚至超越官方工作室作品的动画质量。提到 **Pokemon** 片段的动画质量优于原版动画，突显了独立或粉丝制作动画的技术实力和潜力。一位评论者幽默地预见到，未来可能会基于免费的在线文学创作出大量的动画系列，这反映了内容创作和分发的民主化。
-
-
-  - **[Seedance 2.0 Generates Realistic 1v1 Basketball Against Lebron Video](https://www.reddit.com/r/singularity/comments/1r09jmy/seedance_20_generates_realistic_1v1_basketball/)** (热度: 2483): **Seedance 2.0** 在生成真实的 1v1 篮球视频方面取得了重大进展，展示了在处理杂技物理学、身体稳定性和布料模拟方面的改进。该模型展示了精确的物理效果，没有早期版本中出现的 “漂浮感”，这表明 **AI** 生成的体育模拟在真实感上有了跨越。视频中出现了多个 **Lebron James**，这引发了人们的疑问：素材是完全由 **AI** 生成的，还是通过覆盖和编辑原始比赛画面将球员替换为 **AI** 生成的人物。评论者们正在争论视频是纯 **AI** 生成的，还是涉及将 **AI** 生成的人物叠加到现有素材上。多个 **Lebron James** 的出现暗示了潜在的克隆或编辑，如果完全由 **AI** 生成，一些人会觉得非常令人震撼。
+  - **[Seedance 2 动漫打斗场景（宝可梦、鬼灭之刃、龙珠超）](https://www.reddit.com/r/singularity/comments/1r0wr5l/seedance_2_anime_fight_scenes_pokemon_demon/)** (热度: 1011): 该帖子讨论了 **Seedance 2** 的发布，展示了来自 **Pokemon**、**Demon Slayer** 和 **Dragon Ball Super** 等热门系列的动画战斗场景。来源链接至 [Chetas Lua's Twitter](https://x.com/chetaslua)，展示了足以媲美甚至超越官方工作室作品的动画质量。提到 **Pokemon** 片段的动画质量优于原版动画，突显了独立或粉丝制作动画的技术实力和潜力。一位评论者幽默地预见到，未来可能会基于免费的在线文学创作出大量的动画系列，这反映了内容创作和分发的民主化。
 
 
-  - **[Seedance 2.0 can do animated fights really well](https://www.reddit.com/r/singularity/comments/1r0batz/seedance_20_can_do_animated_fights_really_well/)** (热度: 683): **Seedance 2.0** 在生成动画战斗序列方面展示了显著的进步，证明了其有效处理复杂动画的能力。然而，当前的实现仅限于 `15-second` 片段，这引发了关于将其扩展到更长时间（如 `five minutes`）可行性的质疑。动画质量很高，但正如用户指出的，序列末尾存在一些细微问题。评论者对动画质量印象深刻，但对 `15-second` 的限制表示沮丧，并询问何时能实现更长时间的视频生成。
+  - **[Seedance 2.0 生成逼真的 1v1 对战 Lebron 篮球视频](https://www.reddit.com/r/singularity/comments/1r09jmy/seedance_20_generates_realistic_1v1_basketball/)** (热度: 2483): **Seedance 2.0** 在生成真实的 1v1 篮球视频方面取得了重大进展，展示了在处理杂技物理学、身体稳定性和布料模拟方面的改进。该模型展示了精确的物理效果，没有早期版本中出现的 “漂浮感”，这表明 **AI** 生成的体育模拟在真实感上有了跨越。视频中出现了多个 **Lebron James**，这引发了人们的疑问：素材是完全由 **AI** 生成的，还是通过覆盖和编辑原始比赛画面将球员替换为 **AI** 生成的人物。评论者们正在争论视频是纯 **AI** 生成的，还是涉及将 **AI** 生成的人物叠加到现有素材上。多个 **Lebron James** 的出现暗示了潜在的克隆或编辑，如果完全由 **AI** 生成，一些人会觉得非常令人震撼。
+
+
+  - **[Seedance 2.0 非常擅长生成动画打斗场面](https://www.reddit.com/r/singularity/comments/1r0batz/seedance_20_can_do_animated_fights_really_well/)** (热度: 683): **Seedance 2.0** 在生成动画战斗序列方面展示了显著的进步，证明了其有效处理复杂动画的能力。然而，当前的实现仅限于 `15-second` 片段，这引发了关于将其扩展到更长时间（如 `five minutes`）可行性的质疑。动画质量很高，但正如用户指出的，序列末尾存在一些细微问题。评论者对动画质量印象深刻，但对 `15-second` 的限制表示沮丧，并询问何时能实现更长时间的视频生成。
 
 ### 2. Opus 4.6 模型发布及影响
 
@@ -275,7 +275,7 @@ topics:
   - 另外，用户抱怨 [OpenRouter 的模型目录](https://openrouter.ai/models) 变更可能会在 context 背后静默切换模型，而根据 [Vertex AI Gemini 文档](https://cloud.google.com/vertex-ai/generative-ai/docs/model-reference/gemini)，Claude+Gemini 的集成因无效的 *Thought signatures*（思维签名）而触发了 **400 错误**。
 
 
-**5. Infra, Funding, and Ecosystem Moves (Acquisitions, Grants, Hiring)**
+**5. 基础设施、融资与生态动态（收购、资助、招聘）**
 
 - **Modular 收购 BentoML：“一次编写，到处运行”的宣传**：Modular 宣布在 [“BentoML joins Modular”](https://www.modular.com/blog/bentoml-joins-modular) 中收购了 **BentoML**，旨在将 BentoML 的部署能力与 **MAX**/**Mojo** 结合，实现在 **NVIDIA/AMD/下一代加速器**上运行而无需重新构建。
   - 他们还安排了 **9 月 16 日**在论坛上与 **Chris Lattner** 和 **Chaoyu Yang** 进行 AMA 活动：[“Ask Us Anything”](https://forum.modular.com/t/modular-has-acquired-bentoml-ask-us-anything/2706)。

@@ -145,7 +145,7 @@ https://www.youtube.com/watch?v=7Dtu2bilcFs&pp=2AbMBw%3D%3D
     - International-Try467 对有关 GLM-5 信息的可靠性表示担忧，质疑非 GLM 官方人员来源的可信度。这突显了在技术社区中，官方沟通渠道和经过验证的信息的重要性，尤其是在涉及新模型发布公告时。
     - Septerium 幽默地指出他们的 GGUF 文件很快就过时了，这强调了 AI 模型开发的飞速节奏，以及为了紧跟最新进展而频繁更新的必要性。这反映了该领域的一个普遍挑战：用户必须不断更新资源以利用新功能。
 
-  - **[Mistral Vibe 2.0](https://www.reddit.com/r/LocalLLaMA/comments/1qt76qs/mistral_vibe_20/)** (热度: 387): **Mistral AI 发布了 **Mistral Vibe 2.0**，这是其终端原生编码 Agent 的增强版本，利用了 **Devstral 2** 模型家族。此更新引入了诸如用于任务专业化的自定义 Subagents、减少歧义的多选澄清以及简化工作流的斜杠命令技能等功能。它还支持统一的 Agent 模式，以实现无缝的上下文切换。该服务已集成到 **Le Chat Pro** 和 **Team 计划**中，Devstral 2 转向付费 API 模式，并为企业提供微调（Fine-tuning）和代码现代化等高级功能的选项。更多详情请参见[此处](https://mistral.ai/news/mistral-vibe-2-0)。** 评论者注意到了 Mistral Vibe 2.0 的欧洲血统，强调其为法国开发。有人将其与 OpenCode 进行对比，认为这两种工具都在模仿 ClaudeCode，一名用户提到通过配置 `~/.vibe/promps/cli.md` 文件中的工具列表可以提高工具性能。
+  - **[Mistral Vibe 2.0 发布](https://www.reddit.com/r/LocalLLaMA/comments/1qt76qs/mistral_vibe_20/)** (热度: 387): **Mistral AI 发布了 **Mistral Vibe 2.0**，这是其终端原生编码 Agent 的增强版本，利用了 **Devstral 2** 模型家族。此更新引入了诸如用于任务专业化的自定义 Subagents、减少歧义的多选澄清以及简化工作流的斜杠命令技能等功能。它还支持统一的 Agent 模式，以实现无缝的上下文切换。该服务已集成到 **Le Chat Pro** 和 **Team 计划**中，Devstral 2 转向付费 API 模式，并为企业提供微调（Fine-tuning）和代码现代化等高级功能的选项。更多详情请参见[此处](https://mistral.ai/news/mistral-vibe-2-0)。** 评论者注意到了 Mistral Vibe 2.0 的欧洲血统，强调其为法国开发。有人将其与 OpenCode 进行对比，认为这两种工具都在模仿 ClaudeCode，一名用户提到通过配置 `~/.vibe/promps/cli.md` 文件中的工具列表可以提高工具性能。
 
     - 一位用户强调了 Mistral Vibe 2.0 代码库的精简性，指出它只有 `19472` 行代码，而像 Codex 或 OpenCode 这样的替代方案通常超过 `100k` 行。这表明其专注于代码质量和效率，可能更易于维护和理解。
     - 另一位用户提到了 Mistral Vibe 2.0 的配置技巧，建议将工具列表显式添加到 `~/.vibe/promps/cli.md` 文件中，这样工具调用效果会更好。这暗示正确的配置可以增强工具的功能和用户体验。
@@ -229,7 +229,7 @@ https://www.youtube.com/watch?v=7Dtu2bilcFs&pp=2AbMBw%3D%3D
 
 ---
 
-# AI Discord Recap
+# AI Discord 摘要
 
 > 由 gpt-5.2 生成的摘要之摘要的摘要
 

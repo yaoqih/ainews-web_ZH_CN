@@ -156,13 +156,13 @@ https://www.youtube.com/watch?v=F_1oDPWxpFQ
 - Rascazzione 强调了 MiniMax-M2.5 模型取得的成就，指出其效率优于 GLM 等其他模型（GLM 需要双倍参数才能进化）以及拥有 `1T` 参数的 Kimi。他们强调，如果 MiniMax-M2.5 的质量和规模得到证实，它将代表 AI 模型开发的重大进步。
 - eviloni 指出，凭借仅 `10b` 的激活参数，MiniMax-M2.5 即使在非高端 GPU 上也应能达到不错的速度。他们建议，通过量化版本，性能可以进一步提升，使没有尖端硬件的用户也能更轻松地使用该模型。
 
-- **[Minimax M2.5 Officially Out](https://www.reddit.com/r/LocalLLaMA/comments/1r2xotu/minimax_m25_officially_out/)** (热度: 664): ****Minimax M2.5** 已正式发布，展示了令人印象深刻的基准测试结果：`SWE-Bench Verified` 达到 `80.2%`，`Multi-SWE-Bench` 达到 `51.3%`，`BrowseComp` 达到 `76.3%`。该模型以成本效率著称，运行成本显著低于 **Opus**、**Gemini 3 Pro** 和 **GPT-5** 等竞争对手。在 `每秒输出 100 个 token` 时，成本为 `每小时 1 美元`；在 `50 TPS` 时，成本降至 `$0.3`，这使得 4 个实例全年持续运行的成本仅为 `$10,000`。更多详情请访问 [Minimax 官方页面](https://www.minimax.io/news/minimax-m25)。** 评论者强调了 MiniMax M2.5 由于其相对于其他模型的成本效率而具有改变游戏规则的潜力，并期待在 Hugging Face 等平台上发布开放权重。
+  - **[MiniMax M2.5 正式发布](https://www.reddit.com/r/LocalLLaMA/comments/1r2xotu/minimax_m25_officially_out/)** (热度: 664): ****Minimax M2.5** 已正式发布，展示了令人印象深刻的基准测试结果：`SWE-Bench Verified` 达到 `80.2%`，`Multi-SWE-Bench` 达到 `51.3%`，`BrowseComp` 达到 `76.3%`。该模型以成本效率著称，运行成本显著低于 **Opus**、**Gemini 3 Pro** 和 **GPT-5** 等竞争对手。在 `每秒输出 100 个 token` 时，成本为 `每小时 1 美元`；在 `50 TPS` 时，成本降至 `$0.3`，这使得 4 个实例全年持续运行的成本仅为 `$10,000`。更多详情请访问 [Minimax 官方页面](https://www.minimax.io/news/minimax-m25)。** 评论者强调了 MiniMax M2.5 由于其相对于其他模型的成本效率而具有改变游戏规则的潜力，并期待在 Hugging Face 等平台上发布开放权重。
 
 - MiniMax M2.5 因其成本效益而备受关注，其运行成本显著低于 Opus、Gemini 3 Pro 和 GPT-5 等竞争对手。具体而言，以每秒 100 个 token 的速度运行 M2.5 的成本为每小时 1 美元，而以每秒 50 个 token 运行的成本为每小时 0.3 美元。这意味着 4 个实例持续运行一年的成本为 10,000 美元，与其它模型相比大幅降低。
 - 社区对在 Hugging Face 上发布开放权重充满期待，这将允许更广泛的实验并集成到各种应用中。这是 AI 社区对新模型的普遍期望，旨在促进透明度和可复现性。
 - 讨论了 MiniMax M2.5 对现有模型（如 GLM 5.0 和 Kimi 2.5）的潜在影响。一些用户认为，如果基准测试准确，M2.5 可能会因其易用性和成本优势而在受欢迎程度方面超越这些模型。这可能会改变首选本地模型的格局，因为目前用户倾向于使用 Kimi 2.5 和 DeepSeekv3.2 等模型。
 
-- **[GLM 5.0 &amp; MiniMax 2.5 Just Dropped, Are We Entering China's Agent War Era?](https://www.reddit.com/r/LocalLLaMA/comments/1r1x0qi/glm_50_minimax_25_just_dropped_are_we_entering/)** (热度: 465): ****GLM 5.0** 和 **MiniMax 2.5** 已经发布，标志着 AI 开发向 Agent 风格工作流的转变。**GLM 5.0** 专注于增强推理和代码能力，而 **MiniMax 2.5** 则专为任务分解和延长执行时间而设计。这一进化表明竞争格局正在从生成更好的回复转向完成复杂的任务。测试计划包括 API 基准测试、使用 Verdent 进行多 Agent 编排、类似于 Cursor 的 IDE 工作流，以及使用 ZenMux 进行基础设施路由，以评估它们在长时间任务和仓库级更改方面的性能。** 评论强调了中国 AI 开发的更广泛背景，提到了最近发布的其他模型，如 Seedance 2.0 和 Qwen-image 2.0，表明了一个充满活力且竞争激烈的 AI 生态系统。还有观点认为，这种竞争通过推动创新使最终用户受益。
+- **[GLM 5.0 和 MiniMax 2.5 刚刚发布，我们是否正进入中国的 Agent 战争时代？](https://www.reddit.com/r/LocalLLaMA/comments/1r1x0qi/glm_50_minimax_25_just_dropped_are_we_entering/)** (热度: 465): ****GLM 5.0** 和 **MiniMax 2.5** 已经发布，标志着 AI 开发向 Agent 风格工作流的转变。**GLM 5.0** 专注于增强推理和代码能力，而 **MiniMax 2.5** 则专为任务分解和延长执行时间而设计。这一进化表明竞争格局正在从生成更好的回复转向完成复杂的任务。测试计划包括 API 基准测试、使用 Verdent 进行多 Agent 编排、类似于 Cursor 的 IDE 工作流，以及使用 ZenMux 进行基础设施路由，以评估它们在长时间任务和仓库级更改方面的性能。** 评论强调了中国 AI 开发的更广泛背景，提到了最近发布的其他模型，如 Seedance 2.0 和 Qwen-image 2.0，表明了一个充满活力且竞争激烈的 AI 生态系统。还有观点认为，这种竞争通过推动创新使最终用户受益。
 
 ### 3. AI 模型身份与社区关注点
 
@@ -184,16 +184,16 @@ https://www.youtube.com/watch?v=F_1oDPWxpFQ
 
 ### 1. AI 模型发布与性能对比
 
-- **[Anthropic raises $30B, Elon crashes out](https://www.reddit.com/r/singularity/comments/1r37ydd/anthropic_raises_30b_elon_crashes_out/)** (Activity: 4819): **这张图片是一个梗图，展示了一条虚构的 **Anthropic** 推文，宣布完成了 300 亿美元的融资，公司估值达到 3800 亿美元。这是一个讽刺作品，因为此类融资和估值并非真实。推文幽默地暗示这些资金将用于研究、产品创新和基础设施扩建。**Elon Musk** 被描绘成给出了批判性的回应，指责 Anthropic 的 AI 存在偏见，并将其标记为“厌世且邪恶（misanthropic and evil）”，这是对其公司名称的一个双关语。这张梗图可能是对 AI 开发和融资领域竞争激烈且有时充满争议的现状的评论，同时也反映了 Musk 对 AI 伦理和偏见的直言不讳。** 评论反映了困惑与幽默的交织，一位用户质疑了对奇幻小说《Name of the Wind》的引用，认为其与主题无关。另一条评论认为 Musk 的反应是他自身不安全感的投射，而第三条评论则暗示了 Musk 的嫉妒。
+- **[Anthropic 融资 300 亿美元，Elon 破防了](https://www.reddit.com/r/singularity/comments/1r37ydd/anthropic_raises_30b_elon_crashes_out/)** (Activity: 4819): **这张图片是一个梗图，展示了一条虚构的 **Anthropic** 推文，宣布完成了 300 亿美元的融资，公司估值达到 3800 亿美元。这是一个讽刺作品，因为此类融资和估值并非真实。推文幽默地暗示这些资金将用于研究、产品创新和基础设施扩建。**Elon Musk** 被描绘成给出了批判性的回应，指责 Anthropic 的 AI 存在偏见，并将其标记为“厌世且邪恶（misanthropic and evil）”，这是对其公司名称的一个双关语。这张梗图可能是对 AI 开发和融资领域竞争激烈且有时充满争议的现状的评论，同时也反映了 Musk 对 AI 伦理和偏见的直言不讳。** 评论反映了困惑与幽默的交织，一位用户质疑了对奇幻小说《Name of the Wind》的引用，认为其与主题无关。另一条评论认为 Musk 的反应是他自身不安全感的投射，而第三条评论则暗示了 Musk 的嫉妒。
 
 
-  - **[Introducing Simile - The Simulation Company](https://www.reddit.com/r/singularity/comments/1r34xd9/introducing_simile_the_simulation_company/)** (Activity: 504): ****Simile** 推出了一个基于 AI 的模拟平台，旨在模拟社会行为并大规模预测人类行为。该公司开发了一个基础模型，利用生成式 Agent 高精度地模拟真实人类，允许组织在实施决策前进行测试。这种方法已被公司用于财报电话会议演练和政策测试等应用。**Simile** 获得了来自 **Index Ventures**、**Andrej Karpathy** 和 **Fei-Fei Li** 等知名投资者的 1 亿美元资金支持。** 评论者强调了 Simile 技术彻底改变决策过程的潜力，并将其与 Asimov 的“心理史学（Psychohistory）”概念相类比。**Andrej Karpathy** 和 **Fei-Fei Li** 等知名人物的参与为该项目增添了可信度，表明它不仅仅是投机。
+  - **[Simile 登场：这是一家“模拟公司”](https://www.reddit.com/r/singularity/comments/1r34xd9/introducing_simile_the_simulation_company/)** (Activity: 504): ****Simile** 推出了一个基于 AI 的模拟平台，旨在模拟社会行为并大规模预测人类行为。该公司开发了一个基础模型，利用生成式 Agent 高精度地模拟真实人类，允许组织在实施决策前进行测试。这种方法已被公司用于财报电话会议演练和政策测试等应用。**Simile** 获得了来自 **Index Ventures**、**Andrej Karpathy** 和 **Fei-Fei Li** 等知名投资者的 1 亿美元资金支持。** 评论者强调了 Simile 技术彻底改变决策过程的潜力，并将其与 Asimov 的“心理史学（Psychohistory）”概念相类比。**Andrej Karpathy** 和 **Fei-Fei Li** 等知名人物的参与为该项目增添了可信度，表明它不仅仅是投机。
 
     - Rare-Site 强调了软件开发中严谨测试（如 UI 元素的 A/B testing）与经济政策中通常凭直觉决策之间的对比。他们强调了 Simile 通过模拟现实来彻底改变决策的潜力，尤其是在 **Andrej Karpathy** 和 **Fei-Fei Li** 等大咖支持下。这可能代表了 AI 能力的一个重大进步。
     - EmbarrassedRing7806 对竞争格局表示担忧，质疑 Simile 维持竞争优势或“护城河（moat）”的能力。他们提到了一个类似的项目 Aaru，暗示模拟技术领域可能非常拥挤或发展迅速，这可能会影响 Simile 的独特地位。
     - The_Scout1255 对今年模拟技术的出现表示惊讶，指出在目前的时间线上，如此先进的模拟能力的开发是出人意料的。这表明该领域的创新速度极快，可能是由 AI 和计算能力的最新进展所推动的。
 
-  - **[Lead product + design at Google AI Studio promises "something even better" than Gemini 3 Pro GA this week](https://www.reddit.com/r/singularity/comments/1r288o1/lead_product_design_at_google_ai_studio_promises/)** (Activity: 626): **这张图片捕捉到了一次社交媒体交流，**Google AI Studio** 的一位负责人暗示即将发布的一个版本预计将超越备受期待的 **Gemini 3 Pro GA**。这表明 Google 可能正准备推出一个新产品或功能，正如用户所猜测的那样，可能包括先进的能力，或许与代码 Agent 有关。讨论反映了社区对 Google 在 AI 开发领域下一步动作的高度期待和兴奋。** 一条评论建议 Google 需要一个类似于 Codex 的产品，因为据报道 Gemini 3 Pro 缺乏有效的 Agent 功能。这表明用户对 Google 提供更先进 AI 功能的需求。
+  - **[Google AI Studio 的产品与设计负责人承诺，本周会有“比 Gemini 3 Pro GA 更好的东西”](https://www.reddit.com/r/singularity/comments/1r288o1/lead_product_design_at_google_ai_studio_promises/)** (Activity: 626): **这张图片捕捉到了一次社交媒体交流，**Google AI Studio** 的一位负责人暗示即将发布的一个版本预计将超越备受期待的 **Gemini 3 Pro GA**。这表明 Google 可能正准备推出一个新产品或功能，正如用户所猜测的那样，可能包括先进的能力，或许与代码 Agent 有关。讨论反映了社区对 Google 在 AI 开发领域下一步动作的高度期待和兴奋。** 一条评论建议 Google 需要一个类似于 Codex 的产品，因为据报道 Gemini 3 Pro 缺乏有效的 Agent 功能。这表明用户对 Google 提供更先进 AI 功能的需求。
 
 - Impressive-Zebra1505 指出了 Google 在 AI 能力方面的关键差距，指出“Google 迫切需要类似 Codex 的东西”，因为 Gemini 3 Pro 在 Agentic 特性方面表现挣扎。这表明 Google 的 AI 产品在提升模型自主处理任务的能力方面（类似于 OpenAI 的 Codex）存在潜在的改进或创新空间。
 - Hemingbird 讨论了《纽约客》的一篇文章，该文章深入介绍了 Anthropic 及其 AI 模型 Claude。文章因其对 AI 的细致理解而受到赞誉，特别是在区分 next-token 预测与简单自动补全方面。它还探讨了“AI 精神宇航员”（AI psychonauts）在模型可解释性（interpretability）中的作用，强调了理解 AI 行为的多种且有时是非传统的途径。
@@ -253,7 +253,7 @@ https://www.youtube.com/watch?v=F_1oDPWxpFQ
 
 ---
 
-# AI Discord Recap
+# AI Discord 摘要
 
 > 由 gpt-5.2 生成的摘要之摘要的总结
 

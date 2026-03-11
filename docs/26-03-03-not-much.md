@@ -45,7 +45,7 @@ topics:
 - leadership-exit
 ---
 
-**a quiet day**
+**平静的一天**
 
 > 2026年3月2日至3月3日的 AI 新闻。我们为您查阅了 12 个 Reddit 子板块、[544 个 Twitter 账号](https://twitter.com/i/lists/1585430245762441216) 和 24 个 Discord（**264** 个频道，**12765** 条消息）。为您节省了约 **1137** 分钟的阅读时间（按每分钟 200 字计算）。[AINews 网站](https://news.smol.ai/) 允许您搜索所有往期内容。提醒一下，[AINews 现已成为 Latent Space 的一个板块](https://www.latent.space/p/2026)。您可以[选择加入/退出](https://support.substack.com/hc/en-us/articles/8914938285204-How-do-I-subscribe-to-or-unsubscribe-from-a-section-on-Substack) 邮件接收频率！
 
@@ -135,7 +135,7 @@ topics:
     - 报告了一个技术问题，即“开始”按钮无响应，导致用户无法启动进程。这可能表明用户界面存在 Bug 或应用程序的初始化序列有问题。
 
 
-### 2. Qwen 3.5 Model Performance and Applications
+### 2. Qwen 3.5 模型性能与应用
 
 - **[Unsloth 修复版的 Qwen3.5-35B-A3B 在研究任务中表现惊人](https://www.reddit.com/r/LocalLLaMA/comments/1rjh5wg/unsloth_fixed_version_of_qwen3535ba3b_is/)** (Activity: 417): **Unsloth** 更新版的 **Qwen3.5-35B-A3B** 在处理研究任务方面表现出显著改进，特别是在修复了 tool calling 问题之后。该模型拥有 `35 billion parameters`，并采用了 hybrid linear attention，在不增加内存占用的情况下使原生 context length 翻倍。它在 **Ryzen AI Max+ 395 系统**上使用 `llama.cpp-rocm` 进行了测试，参数包括 `--ctx-size 262144` 和 `--n-gpu-layers 999`，实现了 `600+ tokens/second` 的 Prompt 处理速度和 `25-30 tokens/second` 的 Token 生成速度。该模型有效地执行了 `14 web searches` 和 `4 full page fetches`，在 tool usage 上保持了平衡，相比于 **GLM-4.7-Flash** 等之前的模型有显著改进。该模型在为 Linux Fedora 43 系统提供远程桌面解决方案方面的表现可与 frontier models 相媲美，尽管有人指出它本可以更强烈地推荐 **Sunshine+Moonlight**。一位评论者指出 **RustDesk** 是更优的远程桌面解决方案，特别是对于所述的配置，尽管原帖关注的是 KRdp 和其他选项。另一条评论提到了 **LM Studio** 无法在 system prompts 中解析 `{{CURRENT_DATE}}` 的潜在问题，表明需要修复。
 
@@ -172,7 +172,7 @@ topics:
 
 > /r/Singularity, /r/Oobabooga, /r/MachineLearning, /r/OpenAI, /r/ClaudeAI, /r/StableDiffusion, /r/ChatGPT, /r/ChatGPTCoding, /r/aivideo, /r/aivideo
 
-### 1. Claude and Claude Code 流量与功能
+### 1. Claude 与 Claude Code 流量与功能
 
   - **[我们知道原因了！](https://www.reddit.com/r/singularity/comments/1rjyy3f/we_know_why/)** (活跃度: 994): **该图片是一张来自名为 Thariq 的用户的推文，讨论了 Claude and Claude Code 流量出现超乎预期的增长。推文中对用户的耐心表示感谢，并表示他们正在进行扩容。这表明这项可能与 AI 或编程相关的服务正在经历快速增长，并在满足需求方面面临扩展挑战。评论暗示了更广泛的行业动态，如影响科技公司的竞争和政治因素。** 一条评论指出，很少有公司愿意反对美国政府，暗示了科技行业动态中的政治因素。另一条评论幽默地建议，扩展问题可能是顶级 AI 公司的战略弱点。
 
@@ -224,11 +224,11 @@ topics:
 
 ---
 
-# AI Discord Recap
+# AI Discord 摘要
 
 > 由 Gemini 3.0 Pro Preview Nov-18 生成的总结之总结
 
-**主题 1. Frontier Models：GPT-5.3 余波、Gemini CoT 以及 Qwen 的不确定性**
+**主题 1. 前沿模型：GPT-5.3 余波、Gemini CoT 以及 Qwen 的不确定性**
 
 - **GPT-5.3 "安全脑叶切除"与 5.4 预告**：OpenAI 发布了 [GPT-5.3 Instant](https://openai.com/index/gpt-5-3-instant/)，评价褒贬不一，**LMArena** 用户将其贴上“安全脑叶切除 (safety lobotomy)”的标签，认为其在健康基准测试上的表现逊于 5.2-chat。虽然 **Nous Research** 成员传闻即将推出的 **GPT-5.4** 具备*军事能力*，但 **OpenAI** Discord 用户期待其能快速推出集成 **Sora** 的后续版本。
 - **Gemini 3.1 Pro vs. Claude Opus 4.6 编程对决**：关于编程霸主地位的争论在 **LMArena** 中持续进行，**Claude Opus 4.6** 虽然因 **Anthropic** 服务停机受到赞誉，但其推理能力仍受好评；而 **Gemini 3.1 Pro** 被认为速度更快，但更容易产生幻觉 (hallucination-prone)。**Unsloth** 工程师注意到，通过 `<think>` 标签提取 Gemini *真实*的 **Chain of Thought (CoT)** 比其标准总结效果更好，正如[这张截图](https://cdn.discordapp.com/attachments/1179779344894263297/1478209505404784650/Screenshot_20260203-015813_Firefox.png?ex=69a8e2e1&is=69a79161&hm=c61029735f4655d6d5e4f03137673befc563c3417393f4dd014b71c6795fb35c)所示。
@@ -240,7 +240,7 @@ topics:
 - **NVIDIA Blackwell 架构分立**：**GPU MODE** 工程师发现 **NVIDIA Blackwell** 代际在 Data Center (**CC 10.0**) 和 Consumer (**CC 12.0**) 线路之间存在重大分立。由于某些功能现在需要 **sm_100a** 或 **sm_100f** 目标，预计会出现兼容性断层，详见 [NVIDIA 博客](https://developer.nvidia.com/blog/nvidia-blackwell-and-nvidia-cuda-12-9-introduce-family-specific-architecture-features/)。
 - **Taalas 与 Apple Silicon 突破极限**：**Unsloth** 成员讨论了 **Taalas HC1** 芯片，该芯片为硬连线模型提供高达 **17,000 tokens/s** 的吞吐量，尽管其仅锁定于特定架构。同时，**Latent Space** 用户报告 **Apple M5 Neural Engine** 运行 **Llama2 110M** 的效率比 A100 高出 **80 倍**，而 **OpenClaw** 成员正在利用 **M5 Pro** 芯片进行本地 Agent 托管。
 
-**主题 3. Agentic Frameworks：C 语言编写的二进制文件、RLM 与 Kimi**
+**主题 3. Agent 框架：C 语言编写的二进制文件、RLM 与 Kimi**
 
 - **ShadowClaw 作为极简 C 语言 Agent 崭露头角**：**OpenClaw** 和 **HuggingFace** 社区正在关注 **ShadowClaw v1.1**。这是一个用 **C** 语言编写的单二进制个人 AI Agent，通过 `curl` 与 **Ollama** 等本地 LLM 进行通信。该工具已在 [GitHub](https://github.com/webxos/webxos/tree/main/shadowclaw) 上开源，强调低开销，具备 Shell 执行、文件操作和持久状态保存等功能。
 - **递归语言建模 (RLM) 范式**：**DSPy** 用户正在讨论 Agent 范式向 **RLM** 收敛的趋势，即 LLM 访问 **REPL** 而非静态工具，并认为这可能优于用户定义的 Python 函数。这种递归方法涉及子 Agent 生成并运行自己的代码，与标准的 **ReAct** 循环有所不同。
@@ -261,7 +261,7 @@ topics:
 
 ---
 
-# Discord: 高层级 Discord 摘要
+# Discord：高层级 Discord 摘要
 
 ## [OpenClaw](https://discord.com/channels/1456350064065904867) Discord
 
@@ -1834,16 +1834,16 @@ ee.dd: https://arxiv.org/abs/2602.20021
 > `Real-time evaluation for LLM fine-tuning, Shadowclaw v1.1 released, easytranscriber: Faster Speech Recognition, Core Rth: Multi-model agent orchestration, MCP Integration Security deep dive` 
 
 
-- ****TrainTrackLabs** offers real-time evaluation for LLM fine-tuning**: A team is building a real-time evaluation and observability layer for **LLM training**, plugging directly into **PyTorch / Hugging Face** to continuously track reasoning, safety, hallucination, and coding ability using **LLM-as-a-judge** scoring; they are looking for early pilot teams.
-   - The goal is to catch regressions early and prevent wasted GPU spend. More information is available at [traintracklabs.com](https://traintracklabs.com/).
-- ****Shadowclaw** gets an upgrade to v1.1**: The single-binary personal AI agent written in C, **Shadowclaw v1.1**, builds upon the original by adding built-in commands and a native tool.
-   - This version includes commands such as **/help**, **/tools**, **/state**, **/clear**, **/chat**, and **/exit**, and is available on [GitHub](https://github.com/webxos/webXOS/tree/main/shadowclaw).
-- ****easytranscriber** is released, transcribes faster than WhisperX**: A developer has released `easytranscriber`, a library for **automatic speech recognition** with accurate timestamps that is simlar to WhisperX, but runs **35% to 102% faster**, depending on your hardware.
-   - It also supports HF models as a backend, available on the [Hugging Face blog](https://huggingface.co/blog/KBLab/easytranscriber).
-- ****Core Rth** orchestrates multi-model agents with governance**: **Core Rth** is presented as a full agent platform with governance, where every action is a governed proposal and multiple agents debate in parallel on a Knowledge Graph.
-   - It includes features like a **Model Router** for compositing models and an **AES-256-GCM Vault** for API keys, available on [GitHub](https://github.com/rthgit/CORE-RTH).
-- ****MCP Integration Security** is a mess!**: A deep dive into **Model Context Protocol (MCP)** attack vectors was shared, detailing 5 trivially exploitable patterns that every MCP developer should understand.
-   - The exploration of attack vectors is documented in a [Medium article](https://medium.com/@nainia_ayoub/mcp-security-is-a-mess-5-ways-i-broke-my-own-ai-agent-76379a46ca90?sk=0daa66d4fc2a68fbb02a56e803336ce2).
+- ****TrainTrackLabs** 为 LLM 微调提供实时评估**：一个团队正在构建面向 **LLM training** 的实时评估与可观测性层，可直接接入 **PyTorch / Hugging Face**，持续追踪推理、安全、幻觉和编码能力，并通过 **LLM-as-a-judge** 打分；他们目前正在寻找首批试点团队。
+   - 目标是尽早发现回归问题，避免浪费 GPU 成本。更多信息见 [traintracklabs.com](https://traintracklabs.com/)。
+- ****Shadowclaw** 升级到 v1.1**：这个用 C 编写的单二进制个人 AI Agent **Shadowclaw v1.1** 在原版基础上增加了内置命令和原生工具。
+   - 新版本包含 **/help**、**/tools**、**/state**、**/clear**、**/chat** 和 **/exit** 等命令，可在 [GitHub](https://github.com/webxos/webXOS/tree/main/shadowclaw) 获取。
+- ****easytranscriber** 发布，转录速度快于 WhisperX**：一位开发者发布了 `easytranscriber`，这是一个带精确时间戳的**自动语音识别**库，功能类似 WhisperX，但根据硬件不同，运行速度可快 **35% 到 102%**。
+   - 它也支持以 HF 模型作为后端，详见 [Hugging Face 博客](https://huggingface.co/blog/KBLab/easytranscriber)。
+- ****Core Rth** 以治理机制编排多模型 Agent**：**Core Rth** 被介绍为一个带治理能力的完整 Agent 平台，其中每个动作都以受治理的提案形式出现，多个 Agent 会在 Knowledge Graph 上并行辩论。
+   - 它包含用于组合模型的 **Model Router** 和用于存放 API key 的 **AES-256-GCM Vault** 等功能，项目地址在 [GitHub](https://github.com/rthgit/CORE-RTH)。
+- ****MCP Integration Security** 一团糟！**：有人分享了一篇针对 **Model Context Protocol (MCP)** 攻击面的深度分析，梳理了 5 种每个 MCP 开发者都应该了解的、几乎可以被直接利用的模式。
+   - 这篇关于攻击向量的分析记录在一篇 [Medium 文章](https://medium.com/@nainia_ayoub/mcp-security-is-a-mess-5-ways-i-broke-my-own-ai-agent-76379a46ca90?sk=0daa66d4fc2a68fbb02a56e803336ce2) 中。
 
 
   
@@ -1856,9 +1856,9 @@ ee.dd: https://arxiv.org/abs/2602.20021
 > `HuggingFace Agents Course, Image Generation Issue, DuckDuckGo Search Tool Error, Visit Webpage Tool Error, AI Automation` 
 
 
-- **Image Generation Display Glitch During Agents Course**: A user reported an issue during the [HuggingFace Agents Course Unit 1 Tutorial](https://huggingface.co/learn/agents-course/unit1/tutorial) where the generated image was not visible, providing a [screenshot](https://cdn.discordapp.com/attachments/1329142738440028273/1478173799634436378/Screenshot_2026-03-02_at_3.34.35_PM.png?ex=69a8c1a0&is=69a77020&hm=232fdfbaf8ca6549c4631f968141318a7aeaea5fc0ec55533fb0f3cd0e0edf44&).
-- **DuckDuckGoing Nowhere: Search Tool Troubles**: A user encountered a persistent error with the **DuckDuckGo search tool** returning *'No results found! Try a less restrictive/shorter query'*, with a [screenshot](https://cdn.discordapp.com/attachments/1329142738440028273/1478181129809957076/Screenshot_2026-03-02_at_4.03.43_PM.png?ex=69a8c874&is=69a776f4&hm=629dfcba8384587508e9f7b2c50bb97c9ebda123c89b4af6bfcff01686025a2f&).
-- **Visiting Webpages Leads to Error Page**: A user reported errors when using the *visit webpage tool*, also providing a [screenshot](https://cdn.discordapp.com/attachments/1329142738440028273/1478182368811552878/Screenshot_2026-03-02_at_4.08.45_PM.png?ex=69a8c99c&is=69a7781c&hm=2d064867f1070bcf48a604aee894ebb40101b6859147209b23be30a2be717f0f&).
+- **Agents 课程中图像显示异常**：一位用户在 [HuggingFace Agents Course Unit 1 Tutorial](https://huggingface.co/learn/agents-course/unit1/tutorial) 中反馈，生成的图片无法显示，并附上了一张[截图](https://cdn.discordapp.com/attachments/1329142738440028273/1478173799634436378/Screenshot_2026-03-02_at_3.34.35_PM.png?ex=69a8c1a0&is=69a77020&hm=232fdfbaf8ca6549c4631f968141318a7aeaea5fc0ec55533fb0f3cd0e0edf44&)。
+- **DuckDuckGo 搜索工具频繁报错**：一位用户遇到了 **DuckDuckGo search tool** 持续报错的问题，返回的信息是 *'No results found! Try a less restrictive/shorter query'*，并提供了一张[截图](https://cdn.discordapp.com/attachments/1329142738440028273/1478181129809957076/Screenshot_2026-03-02_at_4.03.43_PM.png?ex=69a8c874&is=69a776f4&hm=629dfcba8384587508e9f7b2c50bb97c9ebda123c89b4af6bfcff01686025a2f&)。
+- **访问网页工具跳转到错误页**：一位用户报告称，在使用 *visit webpage tool* 时会出现报错页面，并同样附上了一张[截图](https://cdn.discordapp.com/attachments/1329142738440028273/1478182368811552878/Screenshot_2026-03-02_at_4.08.45_PM.png?ex=69a8c99c&is=69a7781c&hm=2d064867f1070bcf48a604aee894ebb40101b6859147209b23be30a2be717f0f&)。
 
 
   

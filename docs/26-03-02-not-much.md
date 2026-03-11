@@ -55,108 +55,108 @@ topics:
 - token-efficiency
 ---
 
-**a quiet day**
+**平静的一天**
 
-> AI News for 2/27/2026-3/2/2026. We checked 12 subreddits, [544 Twitters](https://twitter.com/i/lists/1585430245762441216) and 24 Discords (**264** channels, and **31899** messages) for you. Estimated reading time saved (at 200wpm): **2895** minutes. [AINews' website](https://news.smol.ai/) lets you search all past issues. As a reminder, [AINews is now a section of Latent Space](https://www.latent.space/p/2026). You can [opt in/out](https://support.substack.com/hc/en-us/articles/8914938285204-How-do-I-subscribe-to-or-unsubscribe-from-a-section-on-Substack) of email frequencies!
+> 这是 2026 年 2 月 27 日到 2026 年 3 月 2 日的 AI 新闻。我们为您查阅了 12 个 Reddit 子版块、[544 个 Twitter 账号](https://twitter.com/i/lists/1585430245762441216) 和 24 个 Discord（**264** 个频道、**31899** 条消息）。按每分钟 200 词计算，预计为您节省 **2895** 分钟阅读时间。[AINews 网站](https://news.smol.ai/) 可供搜索所有往期内容。提醒一下，[AINews 现已成为 Latent Space 的一个板块](https://www.latent.space/p/2026)。您可以[选择订阅或取消订阅](https://support.substack.com/hc/en-us/articles/8914938285204-How-do-I-subscribe-to-or-unsubscribe-from-a-section-on-Substack)不同的邮件频率。
 
 
 
 
 ---
 
-# AI Twitter Recap
+# AI Twitter 回顾
 
-**Qwen 3.5 “small” open models: long-context + multimodal on-device is getting real**
+**Qwen 3.5“小参数”开源模型：长上下文 + 多模态端侧运行正变得切实可行**
 
-- **Qwen3.5-0.8B / 2B / 4B / 9B released (Base + Instruct)**: Alibaba launched a compact series positioned as “more intelligence, less compute,” with **native multimodal** and **scaled RL**, explicitly targeting **edge + lightweight agent** deployments ([Alibaba_Qwen](https://x.com/Alibaba_Qwen/status/2028460046510965160)). Community amplification highlights **262K native context (extendable to 1M)** and competitive scores reported in tweet summaries (e.g., “82.5 MMLU-Pro,” “78.4 MMMU,” “97.2 CountBench”)—treat these as **vendor/secondary claims** until you read the model cards ([kimmonismus](https://x.com/kimmonismus/status/2028461032377852000)).
-- **Architecture notes emerging via commentary**: Multiple tweets converge on Qwen’s move toward **hybrid / non-orthodox attention**, with “hybrid models” coming back in 3.5 vs the earlier “Thinking vs Instruct” split in Qwen3 updates ([nrehiew_](https://x.com/nrehiew_/status/2028454952348328192)). A more detailed (but still unofficial) breakdown claims a **Gated DeltaNet hybrid** pattern: “**3 layers linear attention : 1 layer full attention**” to keep memory flat while preserving quality ([LiorOnAI](https://x.com/LiorOnAI/status/2028558859783311382)).
-- **Practical deployment caught up fast**:
+- **Qwen3.5-0.8B / 2B / 4B / 9B 发布（Base + Instruct）**: Alibaba launched a compact series positioned as “more intelligence, less compute,” with **native multimodal** and **scaled RL**, explicitly targeting **edge + lightweight agent** deployments ([Alibaba_Qwen](https://x.com/Alibaba_Qwen/status/2028460046510965160)). Community amplification highlights **262K native context (extendable to 1M)** and competitive scores reported in tweet summaries (e.g., “82.5 MMLU-Pro,” “78.4 MMMU,” “97.2 CountBench”)—treat these as **vendor/secondary claims** until you read the model cards ([kimmonismus](https://x.com/kimmonismus/status/2028461032377852000)).
+- **从讨论中浮现的架构细节**: Multiple tweets converge on Qwen’s move toward **hybrid / non-orthodox attention**, with “hybrid models” coming back in 3.5 vs the earlier “Thinking vs Instruct” split in Qwen3 updates ([nrehiew_](https://x.com/nrehiew_/status/2028454952348328192)). A more detailed (but still unofficial) breakdown claims a **Gated DeltaNet hybrid** pattern: “**3 layers linear attention : 1 layer full attention**” to keep memory flat while preserving quality ([LiorOnAI](https://x.com/LiorOnAI/status/2028558859783311382)).
+- **实际部署迅速跟上**:
   - **Ollama**: `ollama run qwen3.5:9b|4b|2b|0.8b`, with **tool calling + thinking + multimodal** surfaced in the packaging ([ollama](https://x.com/ollama/status/2028510184788926567), [ollama](https://x.com/ollama/status/2028514180936908842)).
   - **LM Studio**: Qwen3.5-9B touted as ~**7GB** local footprint ([Alibaba_Qwen](https://x.com/Alibaba_Qwen/status/2028664203872251943)).
   - **iPhone on-device demo**: Qwen3.5 **2B 6-bit** running with **MLX** on “iPhone 17 Pro” is getting framed as an “edge breakthrough” ([adrgrondin](https://x.com/adrgrondin/status/2028568689709084919), [kimmonismus](https://x.com/kimmonismus/status/2028602520302399701)).
-- **Gotcha for evaluators**: “Reasoning disabled by default” on the small models; enable via chat-template kwargs (example given for llama-server / Unsloth docs) ([danielhanchen](https://x.com/danielhanchen/status/2028478490069352448)).
+- **给评测者的提醒**: “Reasoning disabled by default” on the small models; enable via chat-template kwargs (example given for llama-server / Unsloth docs) ([danielhanchen](https://x.com/danielhanchen/status/2028478490069352448)).
 
 ---
 
-**Coding agents + reliability + “availability is the new frontier”**
+**编程 Agent、可靠性与“可用性成为新前沿”**
 
 
 
-- **Codex 5.3 and coding eval chatter**: Anecdotal reports of Codex 5.3 solving “promising” tasks and pushing benchmarks like WeirdML (**79.3%** claim, leading v. Opus 4.6 at 77.9%) while noting Gemini peak performance may still be higher ([theo](https://x.com/theo/status/2028389340469149704), [htihle](https://x.com/htihle/status/2028441018865955244)). Also speculation about nearing saturation on WeirdML v2 ([teortaxesTex](https://x.com/teortaxesTex/status/2028444160517144683)).
-- **“We’re about to hit 1 9 of availability”**: The emerging ops pain point is not only model quality but **downtime** and degraded UX; the theme repeats across memes and serious complaints about Claude outages and productivity impacts ([ThePrimeagen](https://x.com/ThePrimeagen/status/2028477482865774984), [Yuchenj_UW](https://x.com/Yuchenj_UW/status/2028490627978244156), [Yuchenj_UW](https://x.com/Yuchenj_UW/status/2028701610982125793)).
-- **Agent observability / evaluation becomes a first-class problem**:
+- **Codex 5.3 与编码评测讨论**: Anecdotal reports of Codex 5.3 solving “promising” tasks and pushing benchmarks like WeirdML (**79.3%** claim, leading v. Opus 4.6 at 77.9%) while noting Gemini peak performance may still be higher ([theo](https://x.com/theo/status/2028389340469149704), [htihle](https://x.com/htihle/status/2028441018865955244)). Also speculation about nearing saturation on WeirdML v2 ([teortaxesTex](https://x.com/teortaxesTex/status/2028444160517144683)).
+- **“我们快要只剩 1 个 9 的可用性了”**: The emerging ops pain point is not only model quality but **downtime** and degraded UX; the theme repeats across memes and serious complaints about Claude outages and productivity impacts ([ThePrimeagen](https://x.com/ThePrimeagen/status/2028477482865774984), [Yuchenj_UW](https://x.com/Yuchenj_UW/status/2028490627978244156), [Yuchenj_UW](https://x.com/Yuchenj_UW/status/2028701610982125793)).
+- **Agent 的可观测性 / 评估成为一等问题**:
   - “Since we’re all agent managers now, what’s your favourite way to get observability?” ([\_lewtun](https://x.com/_lewtun/status/2028395363132956861)).
   - **Agent reliability is cross-functional** (can’t “engineer” your way out of bad eval criteria; PMs/domain experts must own success definitions) ([saen_dev](https://x.com/saen_dev/status/2028411962712088767)).
   - Practical eval advice: define success before building; start with deterministic graders; use LLM judges for style; grade the produced artifact not the path ([\_philschmid](https://x.com/_philschmid/status/2028528775873400919)).
-- **AGENTS.md / SKILL.md as “guardrails,” not magic**:
+- **AGENTS.md / SKILL.md 是“护栏”，不是魔法**:
   - A reported Codex study across **10 repos / 124 PRs**: AGENTS.md reduced **median runtime ~28.6%** and **tokens ~16.6%**, mostly by reducing **worst-case thrashing** rather than uniform gains ([omarsar0](https://x.com/omarsar0/status/2028464607753654711)).
   - Carnegie Mellon-style loop for **SKILL.md improvement in production**: “log → evaluate → monitor → improve” with an OSS example (PR review bot) ([gneubig](https://x.com/gneubig/status/2028576331877822506)).
-- **Anthropic-as-coding-org tension**: A viral datapoint claims “**80%+ of all code deployed is written by Claude Code**,” paired with concern that speed may be coming with **reliability regressions** ([GergelyOrosz](https://x.com/GergelyOrosz/status/2028465387570884640)). Separate threads discuss Claude Code adoption inside major companies and “supervision” replacing manual coding ([\_catwu](https://x.com/_catwu/status/2028603856163426522), [Yuchenj_UW](https://x.com/Yuchenj_UW/status/2028531183932604831)).
+- **Anthropic 作为“编码组织”的张力**: A viral datapoint claims “**80%+ of all code deployed is written by Claude Code**,” paired with concern that speed may be coming with **reliability regressions** ([GergelyOrosz](https://x.com/GergelyOrosz/status/2028465387570884640)). Separate threads discuss Claude Code adoption inside major companies and “supervision” replacing manual coding ([\_catwu](https://x.com/_catwu/status/2028603856163426522), [Yuchenj_UW](https://x.com/Yuchenj_UW/status/2028531183932604831)).
 
 ---
 
-**Infra + local AI hardware: Apple Neural Engine cracks, Docker/vLLM on macOS, and “AI infrastructure year”**
+**基础设施 + 本地 AI 硬件：Apple Neural Engine 被攻克、Docker/vLLM 登陆 macOS，以及“AI 基础设施之年”**
 
-- **Reverse-engineering Apple’s Neural Engine for training**: A highly engaged thread claims a researcher built a transformer training loop on the **ANE** using undocumented APIs, bypassing CoreML; heavy ops on ANE, some gradients still on CPU. Also contains efficiency claims like “M4 ANE 6.6 TFLOPS/W vs 0.08 for A100” and “38 TOPS is a lie—real throughput 19 TFLOPS FP16”—these specifics should be verified against the repo/paper, but the meta-point is: **on-device training/fine-tuning might be opened up** ([AmbsdOP](https://x.com/AmbsdOP/status/2028457255968874940), plus ecosystem note [AmbsdOP](https://x.com/AmbsdOP/status/2028507402903986566); additional technical summary [LiorOnAI](https://x.com/LiorOnAI/status/2028560569952031145)).
-- **macOS local serving gets smoother**: Docker Desktop “Model Runner” adds support to run **MLX models** with **OpenAI-compatible API** workflows; positioned as a practical unlock for Apple Silicon dev loops ([Docker](https://x.com/Docker/status/2028470592899354929)).
-- **Inference hardware divergence**: A GPU vs **Taalas HC** explainer contrasts software-executed models on GPUs (HBM streaming + kernel scheduling bottlenecks) vs “model-as-hardware” ASIC with weights in mask ROM; claims **16–17k tok/s per user** for HC1 with tradeoff “one chip = one model” ([TheTuringPost](https://x.com/TheTuringPost/status/2028458565917360363)).
-- **Open-source perf tooling**: AMD open-sourced **rocprof-trace-decoder** (SQTT trace defs) enabling deeper instruction-level timing traces; framed as AMD tracing infra being “better than NVIDIA’s” ([__tinygrad__](https://x.com/__tinygrad__/status/2028679089650041069)).
-- **AI infra as strategic theme**: Zhipu’s “**2026 is the year of AI infrastructure**” is more slogan than spec, but fits the overall signal: reliability + cost + tooling now dominate marginal model improvements ([Zai_org](https://x.com/Zai_org/status/2028457036308947393)).
+- **逆向工程 Apple Neural Engine 用于训练**: A highly engaged thread claims a researcher built a transformer training loop on the **ANE** using undocumented APIs, bypassing CoreML; heavy ops on ANE, some gradients still on CPU. Also contains efficiency claims like “M4 ANE 6.6 TFLOPS/W vs 0.08 for A100” and “38 TOPS is a lie—real throughput 19 TFLOPS FP16”—these specifics should be verified against the repo/paper, but the meta-point is: **on-device training/fine-tuning might be opened up** ([AmbsdOP](https://x.com/AmbsdOP/status/2028457255968874940), plus ecosystem note [AmbsdOP](https://x.com/AmbsdOP/status/2028507402903986566); additional technical summary [LiorOnAI](https://x.com/LiorOnAI/status/2028560569952031145)).
+- **macOS 本地服务更顺滑了**: Docker Desktop “Model Runner” adds support to run **MLX models** with **OpenAI-compatible API** workflows; positioned as a practical unlock for Apple Silicon dev loops ([Docker](https://x.com/Docker/status/2028470592899354929)).
+- **推理硬件的分化**: A GPU vs **Taalas HC** explainer contrasts software-executed models on GPUs (HBM streaming + kernel scheduling bottlenecks) vs “model-as-hardware” ASIC with weights in mask ROM; claims **16–17k tok/s per user** for HC1 with tradeoff “one chip = one model” ([TheTuringPost](https://x.com/TheTuringPost/status/2028458565917360363)).
+- **开源性能工具**: AMD open-sourced **rocprof-trace-decoder** (SQTT trace defs) enabling deeper instruction-level timing traces; framed as AMD tracing infra being “better than NVIDIA’s” ([__tinygrad__](https://x.com/__tinygrad__/status/2028679089650041069)).
+- **AI 基础设施成为战略主题**: Zhipu’s “**2026 is the year of AI infrastructure**” is more slogan than spec, but fits the overall signal: reliability + cost + tooling now dominate marginal model improvements ([Zai_org](https://x.com/Zai_org/status/2028457036308947393)).
 
 ---
 
-**New research + benchmarks: transformer scaling theory, MuP edge cases, CUDA-kernel RL, and “bullshit detection”**
+**新研究 + 基准测试：Transformer 缩放理论、MuP 边缘案例、CUDA Kernel RL 与“胡说检测”**
 
 
 
-- **Transformer scaling theory refresher**: “Effective Theory of Wide and Deep Transformers” (Meta) re-circulated as a 60+ page analysis of forward/backward signal propagation, width scaling rules, hyperparameter scaling, NTK analysis, and optimizer behavior (SGD vs AdamW), with validation on vision/language transformers ([TheTuringPost](https://x.com/TheTuringPost/status/2028394922576121946), [arXiv link tweet](https://x.com/TheTuringPost/status/2028394934970315125)).
-- **Beyond MuP / Muon stability corner cases**: Discussion of stability metrics for **Embedding / LM head / RMSNorm** layers and why embedding + LM head can “not play well with Muon” ([Jianlin_S](https://x.com/Jianlin_S/status/2028434454486950280)).
+- **Transformer 缩放理论回顾**: “Effective Theory of Wide and Deep Transformers” (Meta) re-circulated as a 60+ page analysis of forward/backward signal propagation, width scaling rules, hyperparameter scaling, NTK analysis, and optimizer behavior (SGD vs AdamW), with validation on vision/language transformers ([TheTuringPost](https://x.com/TheTuringPost/status/2028394922576121946), [arXiv link tweet](https://x.com/TheTuringPost/status/2028394934970315125)).
+- **超越 MuP / Muon 的稳定性边角问题**: Discussion of stability metrics for **Embedding / LM head / RMSNorm** layers and why embedding + LM head can “not play well with Muon” ([Jianlin_S](https://x.com/Jianlin_S/status/2028434454486950280)).
 - **CUDA Agent (ByteDance)**: Widely shared as a meaningful step beyond “code that compiles” toward “code that’s fast,” using **agentic RL with real profiling-based rewards**. Claimed SOTA on KernelBench, big gains vs `torch.compile`, and competitive vs frontier LLMs on hardest kernels ([HuggingPapers](https://x.com/HuggingPapers/status/2028504440978739428), deep thread [BoWang87](https://x.com/BoWang87/status/2028599174992949508)).
 - **BullshitBench v2**: Benchmark update adds **100 new questions** split across coding/medical/legal/finance/physics, tests **70+ model variants**, and claims **reasoning often hurts**; Anthropic models allegedly dominate and OpenAI/Google are “not improving” on this benchmark ([petergostev](https://x.com/petergostev/status/2028492834693677377), reaction [scaling01](https://x.com/scaling01/status/2028494129710133725)).
-- **Scheming eval realism**: Advice that “contrived environments” can invalidate scheming results; emphasizes careful environment design ([NeelNanda5](https://x.com/NeelNanda5/status/2028600215343943983)).
+- **Scheming 评估的现实性**: Advice that “contrived environments” can invalidate scheming results; emphasizes careful environment design ([NeelNanda5](https://x.com/NeelNanda5/status/2028600215343943983)).
 
 ---
 
-**Agents + product/toolchain releases: repo graphs, Stripe LLM billing proxy, LangChain refresh, Llama.cpp packaging**
+**Agent + 产品/工具链发布：代码仓图谱、Stripe LLM 计费代理、LangChain 更新与 Llama.cpp 打包**
 
-- **GitNexus (browser-only repo knowledge graph + “graph RAG” via Cypher)**: Parses repos into an interactive D3 graph, stores relations in embedded **KuzuDB**, and answers queries via **graph traversal (Cypher) instead of embeddings**; notable for doing it **in-browser** with Web Workers and MIT licensing ([MillieMarconnni](https://x.com/MillieMarconnni/status/2028436636841996451)).
-- **Stripe-style billing for LLMs**: Launches “billing for tokens” where you pick models, set markup, route calls via **Stripe’s LLM proxy**, and record usage automatically—an indicator that “LLM ops” is moving into standard SaaS finance plumbing ([miles_matthias](https://x.com/miles_matthias/status/2028515021022548181)).
-- **LangChain rebrand / consolidation**: “Meet our final form” relaunch of LangChain’s web presence (signal is primarily product/positioning, not a spec drop) ([LangChain](https://x.com/LangChain/status/2028522092774199731)).
-- **llama.cpp distro packaging**: Request for feedback on **official Debian/Ubuntu packages**—small, but meaningful for mainstreaming local inference tooling ([ggerganov](https://x.com/ggerganov/status/2028505638452531340)).
-- **MCP vs “Agent Skills” clarification + Weaviate skills repo**: Clean distinction: MCP servers as deterministic API interfaces vs markdown “skills” as behavior guidance; Weaviate publishes skills-based integration patterns for common agent tools ([weaviate_io](https://x.com/weaviate_io/status/2028465940963156036)).
-
----
-
-**US DoW–OpenAI–Anthropic “supply chain risk” saga: contract language, surveillance loopholes, and policy trust boundaries (high-level)**
-
-
-
-- **Stratechery frames a standoff**: Anthropic vs DoW is positioned as a misalignment between legitimate concerns and government reality ([stratechery](https://x.com/stratechery/status/2028425096054931921)).
-- **Reporting disputes OpenAI’s “red lines” framing**: The Verge claims DoD didn’t agree to the red lines the way OpenAI implied ([haydenfield](https://x.com/haydenfield/status/2028481498781790567)). Separate threads emphasize: without full contract text, it’s hard to validate any public claim about enforceability or “freezing” laws in time ([jeremyphoward](https://x.com/jeremyphoward/status/2028556035183759719)).
-- **Sam Altman posts contract amendment language**: Adds explicit prohibition on “intentional” domestic surveillance of US persons, including via commercially acquired identifiers, and says intelligence agencies (e.g., NSA) are excluded without follow-on modification; also acknowledges Friday announcement was rushed ([sama](https://x.com/sama/status/2028640354912923739), additional principles post [sama](https://x.com/sama/status/2028642231138353299)).
-- **Pushback: “intentional/deliberate” may preserve the classic “incidental collection” loophole**: Multiple legal-minded threads argue the amendment may still allow broad collection if framed as incidental, and that “metadata/hashed identifiers” can evade “personal or identifiable” definitions. Repeated call: **independent red-teaming by counsel**, and ideally **full contract review** ([j_asminewang](https://x.com/j_asminewang/status/2028648242666496092), [David_Kasten](https://x.com/David_Kasten/status/2028649586349228284), [justanotherlaw](https://x.com/justanotherlaw/status/2028673906870223286), [\_NathanCalvin](https://x.com/_NathanCalvin/status/2028674866124083623)).
-- **Anthropic safeguards claims**: Anthropic-adjacent staff dispute a narrative that Anthropic offered an unconstrained “helpful-only” natsec model; claim Claude Gov includes additional training + safeguards + classifier stack ([sammcallister](https://x.com/sammcallister/status/2028545609003577776)).
-- **Policy meta**: A recurring engineering-relevant point is that **governance and contract semantics** are becoming production constraints on model deployment—no longer “PR side quests.” See also the “AI politics fissure is taking advanced AI seriously vs not” framing ([deanwball](https://x.com/deanwball/status/2028619280774828114)).
+- **GitNexus（纯浏览器代码仓知识图谱 + 基于 Cypher 的“图 RAG”）**: Parses repos into an interactive D3 graph, stores relations in embedded **KuzuDB**, and answers queries via **graph traversal (Cypher) instead of embeddings**; notable for doing it **in-browser** with Web Workers and MIT licensing ([MillieMarconnni](https://x.com/MillieMarconnni/status/2028436636841996451)).
+- **面向 LLM 的 Stripe 式计费**: Launches “billing for tokens” where you pick models, set markup, route calls via **Stripe’s LLM proxy**, and record usage automatically—an indicator that “LLM ops” is moving into standard SaaS finance plumbing ([miles_matthias](https://x.com/miles_matthias/status/2028515021022548181)).
+- **LangChain 品牌重塑 / 整合**: “Meet our final form” relaunch of LangChain’s web presence (signal is primarily product/positioning, not a spec drop) ([LangChain](https://x.com/LangChain/status/2028522092774199731)).
+- **llama.cpp 发行版打包**: Request for feedback on **official Debian/Ubuntu packages**—small, but meaningful for mainstreaming local inference tooling ([ggerganov](https://x.com/ggerganov/status/2028505638452531340)).
+- **MCP 与 “Agent Skills” 的澄清 + Weaviate skills 仓库**: Clean distinction: MCP servers as deterministic API interfaces vs markdown “skills” as behavior guidance; Weaviate publishes skills-based integration patterns for common agent tools ([weaviate_io](https://x.com/weaviate_io/status/2028465940963156036)).
 
 ---
 
-### Top tweets (by engagement, technical-focused)
+**美国 DoW–OpenAI–Anthropic“供应链风险”风波：合同措辞、监控漏洞与政策信任边界（高层概览）**
 
-- **Qwen 3.5 Small Model Series launch (0.8B/2B/4B/9B, multimodal, scaled RL, Base models too)** — [@Alibaba_Qwen](https://x.com/Alibaba_Qwen/status/2028460046510965160)
-- **Reverse-engineered Apple Neural Engine; training loop on ANE** — [@AmbsdOP](https://x.com/AmbsdOP/status/2028457255968874940)
-- **Qwen3.5 small models now in Ollama** — [@ollama](https://x.com/ollama/status/2028510184788926567)
-- **Sam Altman: DoW contract amendment language re domestic surveillance + intel agency scope** — [@sama](https://x.com/sama/status/2028640354912923739)
-- **CUDA Agent: RL for high-performance CUDA kernel generation via profiler-based reward** — [@BoWang87](https://x.com/BoWang87/status/2028599174992949508)
-- **“80%+ of code deployed is written by Claude Code” + reliability concern** — [@GergelyOrosz](https://x.com/GergelyOrosz/status/2028465387570884640)
-- **GitNexus: in-browser repo → knowledge graph + Cypher graph-RAG agent** — [@MillieMarconnni](https://x.com/MillieMarconnni/status/2028436636841996451)
+
+
+- **Stratechery 将其框定为一场对峙**: Anthropic vs DoW is positioned as a misalignment between legitimate concerns and government reality ([stratechery](https://x.com/stratechery/status/2028425096054931921)).
+- **报道质疑 OpenAI 的“红线”表述**: The Verge claims DoD didn’t agree to the red lines the way OpenAI implied ([haydenfield](https://x.com/haydenfield/status/2028481498781790567)). Separate threads emphasize: without full contract text, it’s hard to validate any public claim about enforceability or “freezing” laws in time ([jeremyphoward](https://x.com/jeremyphoward/status/2028556035183759719)).
+- **Sam Altman 发布合同修订措辞**: Adds explicit prohibition on “intentional” domestic surveillance of US persons, including via commercially acquired identifiers, and says intelligence agencies (e.g., NSA) are excluded without follow-on modification; also acknowledges Friday announcement was rushed ([sama](https://x.com/sama/status/2028640354912923739), additional principles post [sama](https://x.com/sama/status/2028642231138353299)).
+- **反驳声：“intentional/deliberate” 可能保留经典的“附带收集”漏洞**: Multiple legal-minded threads argue the amendment may still allow broad collection if framed as incidental, and that “metadata/hashed identifiers” can evade “personal or identifiable” definitions. Repeated call: **independent red-teaming by counsel**, and ideally **full contract review** ([j_asminewang](https://x.com/j_asminewang/status/2028648242666496092), [David_Kasten](https://x.com/David_Kasten/status/2028649586349228284), [justanotherlaw](https://x.com/justanotherlaw/status/2028673906870223286), [\_NathanCalvin](https://x.com/_NathanCalvin/status/2028674866124083623)).
+- **Anthropic 的 safeguard 说法**: Anthropic-adjacent staff dispute a narrative that Anthropic offered an unconstrained “helpful-only” natsec model; claim Claude Gov includes additional training + safeguards + classifier stack ([sammcallister](https://x.com/sammcallister/status/2028545609003577776)).
+- **政策层面的含义**: A recurring engineering-relevant point is that **governance and contract semantics** are becoming production constraints on model deployment—no longer “PR side quests.” See also the “AI politics fissure is taking advanced AI seriously vs not” framing ([deanwball](https://x.com/deanwball/status/2028619280774828114)).
 
 ---
 
-# AI Reddit Recap
+### 热门推文（按参与度排序，技术聚焦）
 
-## /r/LocalLlama + /r/localLLM Recap
+- **Qwen 3.5 Small Model Series 发布（0.8B/2B/4B/9B，多模态，scaled RL，也有 Base 模型）** — [@Alibaba_Qwen](https://x.com/Alibaba_Qwen/status/2028460046510965160)
+- **Apple Neural Engine 被逆向；在 ANE 上跑训练循环** — [@AmbsdOP](https://x.com/AmbsdOP/status/2028457255968874940)
+- **Qwen3.5 small 模型现已登陆 Ollama** — [@ollama](https://x.com/ollama/status/2028510184788926567)
+- **Sam Altman：关于国内监控与情报机构适用范围的 DoW 合同修订措辞** — [@sama](https://x.com/sama/status/2028640354912923739)
+- **CUDA Agent：通过基于 profiler 奖励的 RL 生成高性能 CUDA kernel** — [@BoWang87](https://x.com/BoWang87/status/2028599174992949508)
+- **“80%+ 的部署代码由 Claude Code 编写” + 可靠性担忧** — [@GergelyOrosz](https://x.com/GergelyOrosz/status/2028465387570884640)
+- **GitNexus：浏览器内将代码仓转成知识图谱 + Cypher 图 RAG agent** — [@MillieMarconnni](https://x.com/MillieMarconnni/status/2028436636841996451)
 
-### 1. Qwen 3.5 Model Releases and Benchmarks
+---
+
+# AI Reddit 回顾
+
+## /r/LocalLlama + /r/localLLM 回顾
+
+### 1. Qwen 3.5 模型发布与基准测试
 
   - **[Qwen 2.5 -&gt; 3 -&gt; 3.5, smallest models. Incredible improvement over the generations.](https://www.reddit.com/r/LocalLLaMA/comments/1rjd4pv/qwen_25_3_35_smallest_models_incredible/)** (Activity: 298): ****Qwen 3.5** represents a significant advancement in model efficiency, particularly for smaller models, with a size of `0.8B` parameters. This model includes a vision encoder, suggesting that the core language model is even smaller, yet it delivers substantial performance improvements over previous generations. Users report that the `4B` model outperforms older `9B` models, offering `128k` context at `60 tokens/second` using `llama.cpp`, which is notable for local model deployment.** There is a debate about the accuracy of Qwen 3.5's outputs, with some users pointing out factual inaccuracies in its responses, highlighting the need for careful fact-checking.
 
@@ -225,11 +225,11 @@ topics:
     - 有建议将逆向工程的 ANE 集成到 `nanochat-rs-ternary` 项目中。这包括添加一个可选的 `AneQkvKernel` 来替换三个独立的 BitLinear 调用，以及一个用于组合操作的 `AneFfnUpKernel`，同时保留对单矩阵情况的 BitLinear 支持。这可以显著优化性能。
     - 人们好奇 ANE 的逆向工程是否与 `geohotz` 在 Tinygrad 上所做的工作相似。讨论暗示了利用现有的逆向工程成果来进一步增强 ANE 能力的潜力。
 
-## Less Technical AI Subreddit Recap
+## 非技术类 AI Subreddit 回顾
 
 > /r/Singularity, /r/Oobabooga, /r/MachineLearning, /r/OpenAI, /r/ClaudeAI, /r/StableDiffusion, /r/ChatGPT, /r/ChatGPTCoding, /r/aivideo, /r/aivideo
 
-### 1. Claude and Anthropic Military Involvement
+### 1. Claude 与 Anthropic 的军事参与
 
   - **[US Treasury is terminating all use of Anthropic](https://www.reddit.com/r/singularity/comments/1riyzc1/us_treasury_is_terminating_all_use_of_anthropic/)** (Activity: 1614): **The image is a meme featuring a tweet from a fictional Treasury Secretary, Scott Bessent, announcing the termination of Anthropic's use by the US Treasury, as directed by the President. The tweet highlights concerns over national security and the influence of private companies on government operations. This fictional scenario is likely a satirical take on current political or technological debates, possibly reflecting concerns about the influence of AI companies like Anthropic on government functions.** The comments reflect skepticism and disbelief about the scenario, with some users questioning the political climate and the power dynamics in the US government. The mention of 'radical left woke company' suggests a satirical or critical view of political rhetoric.
 
@@ -252,7 +252,7 @@ topics:
     - A discussion emerged around the AI's ability to engage in complex game theory and strategic analysis, as one user noted their experience of using Claude for theorizing over the past two days. This indicates that Claude is capable of handling sophisticated analytical tasks, potentially offering insights into strategic scenarios.
 
 
-### 2. OpenAI and ChatGPT Backlash
+### 2. OpenAI 与 ChatGPT 的抵制潮
 
   - **[Damnnnn!](https://www.reddit.com/r/singularity/comments/1rjc5to/damnnnn/)** (Activity: 1049): **The image is a meme highlighting a significant increase in ChatGPT uninstalls by `295%` following a Department of Defense (DoD) deal, as reported by TechCrunch. This statistic is presented without context, leading to skepticism in the comments about its significance. One commenter points out that the percentage increase could be misleading without knowing the baseline number of uninstalls, suggesting it could be a small absolute change. Another comment discusses the financial implications, noting that even if a large number of users cancel their subscriptions, the DoD deal might compensate for the loss, albeit raising privacy concerns for users.** Commenters express skepticism about the significance of the uninstall percentage, with one noting the potential for misleading statistics. Another comment highlights privacy concerns and the potential financial impact on OpenAI's revenue from user subscriptions.
 
@@ -276,7 +276,7 @@ topics:
 
 
 
-### 3. New Model Releases and Benchmarks
+### 3. 新模型发布与基准测试
 
 
   - **[Deepseek V4 - All Leaks and Infos for the Release Day - Not Verified!](https://www.reddit.com/r/DeepSeek/comments/1ridmnm/deepseek_v4_all_leaks_and_infos_for_the_release/)** (Activity: 628): **The post discusses the anticipated release of **DeepSeek V4**, a new AI model expected to launch around March 3rd, 2026. The model is rumored to feature a significant increase in parameters, reaching approximately `1 trillion` with a `1 million token` context window, and introduces new architecture features like **Engram Conditional Memory** and **Manifold-Constrained Hyper-Connections**. It is designed to be multimodal, capable of processing text, image, video, and audio inputs, though there is skepticism about its ability to generate multimedia outputs. The model is optimized for **Huawei Ascend** and **Cambricon** hardware, marking a shift from Nvidia, which was used for training. Pricing is expected to be significantly lower than competitors, with input costs estimated at `$0.14/M Tokens`.** There is debate over whether DeepSeek V4 can generate multimedia outputs, with some users doubting its capability to produce images or videos, suggesting it may only process them. Additionally, there is skepticism about the model's ability to surpass competitors like Gemini 3.1 Pro in terms of context retention.
@@ -288,49 +288,49 @@ topics:
 
 ---
 
-# AI Discord Recap
+# AI Discord 摘要
 
-> A summary of Summaries of Summaries by Gemini 3.1 Pro Preview Nov-18
+> 由 Gemini 3.1 Pro Preview Nov-18 生成的总结之总结
 
-**Theme 1. Defense Contracts and Model Wars: OpenAI Steps In as Pentagon Bans Anthropic**
+**主题 1. 国防合同与模型大战：五角大楼封禁 Anthropic 之际，OpenAI 介入**
 
-*   **Department of War Designates Anthropic a Supply Chain Risk**: The Pentagon labeled **Anthropic** a *supply-chain risk* and banned military contractors from using their models after the company refused to grant unrestricted access, potentially spelling trouble for contractors like **Palantir**. [A post on X](https://xcancel.com/secwar/status/2027507717469049070?s=46&t=FlpzvQFmjnd0z3HkNeNT1A) sparked discussions detailing the six-month phase-out of their AI services.
-*   **OpenAI Inks Classified Deal with the Pentagon**: **OpenAI** capitalized on the Anthropic ban by securing an agreement to deploy advanced AI systems in classified environments, boasting stricter **guardrails** than previous deals, as detailed in [Our agreement with the Department of War](https://openai.com/index/our-agreement-with-the-department-of-war/). Sam Altman later [clarified on X](https://xcancel.com/sama/status/2028640354912923739?s=46&t=_hz7_TqpYWiUUE4FPGb-5Q) that the contract strictly prohibits domestic surveillance of U.S. persons.
-*   **Moonshot Distillation Attack Induces Identity Crisis in Claude**: After **Moonshot AI** executed industrial-scale distillation attacks to train **Kimi**, **Claude Sonnet 4.6** suffered an identity crisis and began telling users in Chinese that it was **DeepSeek**. A [Substack article](https://parthsharmaai.substack.com/p/i-caught-kimi-having-an-identity?r=6x2hdy&utm_campaign=post&utm_medium=web&triedRedirect=true) thoroughly explored how the rigorous training process forced the model to forget its original identity.
+*   **国防部将 Anthropic 指定为供应链风险**: The Pentagon labeled **Anthropic** a *supply-chain risk* and banned military contractors from using their models after the company refused to grant unrestricted access, potentially spelling trouble for contractors like **Palantir**. [A post on X](https://xcancel.com/secwar/status/2027507717469049070?s=46&t=FlpzvQFmjnd0z3HkNeNT1A) sparked discussions detailing the six-month phase-out of their AI services.
+*   **OpenAI 与五角大楼签署机密环境协议**: **OpenAI** capitalized on the Anthropic ban by securing an agreement to deploy advanced AI systems in classified environments, boasting stricter **guardrails** than previous deals, as detailed in [Our agreement with the Department of War](https://openai.com/index/our-agreement-with-the-department-of-war/). Sam Altman later [clarified on X](https://xcancel.com/sama/status/2028640354912923739?s=46&t=_hz7_TqpYWiUUE4FPGb-5Q) that the contract strictly prohibits domestic surveillance of U.S. persons.
+*   **Moonshot 的蒸馏攻击让 Claude 发生身份危机**: After **Moonshot AI** executed industrial-scale distillation attacks to train **Kimi**, **Claude Sonnet 4.6** suffered an identity crisis and began telling users in Chinese that it was **DeepSeek**. A [Substack article](https://parthsharmaai.substack.com/p/i-caught-kimi-having-an-identity?r=6x2hdy&utm_campaign=post&utm_medium=web&triedRedirect=true) thoroughly explored how the rigorous training process forced the model to forget its original identity.
 
-**Theme 2. Qwen 3.5 Series Dominates Local Hardware and Open Benchmarks**
-
-
-
-*   **Qwen 3.5 27B Dethrones Massive Competitors**: The newly released [**Qwen3.5-27B**](https://huggingface.co/models?search=Qwen3.5-27B) consistently beats much larger **112B** models and **Minimax 2.5** in complex coding scenarios, leaving users *absolutely floored at how good that model is*. Community benchmarks show it excelling in agentic roles and embedded game generation while maintaining high performance efficiency.
-*   **Mac Mini M4 Users Squeeze Huge Local Models**: Users are eagerly [testing **Qwen 3.5 35B** on **M4 Mac Minis**](https://link.to.example), debating the necessary context window truncations to fit the model within **32GB** of RAM. One optimized unsloth variant, the [**Qwen3.5-35B-A3B-abliterated**](https://huggingface.co/unsloth/Qwen3.5-35B-A3B-GGUF), proved incredibly fast for logic and code tasks when split across powerful local GPUs.
-*   **Alibaba Drops Qwen 3.5 Small Series with Native Multimodal**: Alibaba officially launched the **Qwen 3.5 Small Model Series** on [Hugging Face](https://huggingface.co/Qwen), ranging from **0.8B** to **9B** parameters with native multimodal capabilities, as announced in [this tweet](https://xcancel.com/Alibaba_Qwen/status/2028460046510965160). The **9B** model impressed users with its strength, though developers quickly noted that the initial unsloth GGUF releases required hotfixes for heavily quantized *ssm_alpha* weights.
-
-**Theme 3. Next-Gen Systems, Hardware Splits, and Biological Compute**
-
-*   **Google's Static Framework Supercharges Retrieval by 948x**: Google AI unleashed **Static**, a sparse matrix framework that delivers **948x faster** constrained decoding for **LLM-based generative retrieval**. Their [technical blog post](https://www.marktechpost.com/2026/03/01/google-ai-introduces-static-a-sparse-matrix-framework-delivering-948x-faster-constrained-decoding-for-llm-based-generative-retrieval/) details how the framework exploits sparse matrix operations to drastically accelerate decoding speeds.
-*   **Nvidia Blackwell Splits Architectures Between Datacenter and RTX**: NVIDIA's latest generation fractures the architecture, capping **Blackwell RTX** consumer cards (**GeForce 50x0**, **RTX Pro**) at **Compute Capability 12.0**, completely disabling key **CC 10.0** features like `tcgen05` and `DPX`. The [NVIDIA Developer Blog](https://developer.nvidia.com/blog/nvidia-blackwell-and-nvidia-cuda-12-9-introduce-family-specific-architecture-features/) explained this deliberate split optimizes datacenter cards for AI while tuning consumer models exclusively for real-time graphics.
-*   **Living Neurons Play DOOM on Silicon**: Cortical Labs successfully merged **800,000 living human and mouse neurons** with silicon hardware to construct **'DishBrain'**, a biological system capable of playing DOOM and Pong. A [post on X](https://x.com/scitechera/status/2028010532356374754) showcased the bizarre experiment, leaving engineers shocked by the massive citation count the work generated.
-
-**Theme 4. Agent Orchestration, Protocols, and Prompting Paradigms**
-
-*   **Anthropic Murders Prompt Engineering with Skills Guide**: Anthropic published a **30-page** [Complete Guide to Building Skill for Claude](https://resources.anthropic.com/hubfs/The-Complete-Guide-to-Building-Skill-for-Claude.pdf), pivoting developers away from wordy prompts toward structured **Skills** and execution layers. The guide demonstrates how packaging workflows into specialized files via progressive disclosure massively reduces context bloat.
-*   **OpenClaw Persona Plugin Maximizes Schizophrenic Agents**: An **OpenClaw** user developed a radical plugin that dynamically swaps agent personas mid-conversation, enabling one system to debate itself while accessing local files. The creator shared their Python implementation, describing the self-referential orchestration as going full *#shizomaxxing*.
-*   **London Prepares for Agent Client Protocol (ACP) Showdown**: The Agentic AI community in London scheduled a major event to dissect the new **Agent Client Protocol (ACP)** alongside creators from **Zed Industries** and **Jetbrains**. Registration is open via [Luma](https://luma.com/4hs6hs36) for developers eager to learn how ACP enables painless switching of coding agent harnesses compared to the prevalent MCP standard.
-
-**Theme 5. Training Mechanics: Fast RL, Custom Compilers, and Text-to-LoRA**
+**主题 2. Qwen 3.5 系列主导本地硬件与开放基准测试**
 
 
 
-*   **Databricks OAPL Slays GRPO Training Costs**: Databricks revealed **OAPL** (Optimal Advantage-based Policy Optimization with Lagged Inference), an off-policy reinforcement learning technique that builds LLM reasoning skills **3x** faster than standard **GRPO**. A researcher broke down the efficiency gains in [this X thread](https://x.com/g_k_swamy/status/2027450376593805746?s=12), noting that the method drastically simplifies training infrastructure.
-*   **Hardware-Trained CUDA Agent Smokes Torch.Compile**: A specialized RL agent trained directly on hardware outpaced `torch.compile` by roughly **2x** on standard kernels and trounced **Claude Opus 4.5** on rigorous benchmarks, according to [this paper](https://arxiv.org/abs/2602.24286). Skeptics pushed back, complaining that the authors withheld the actual kernels and required ludicrous GPU resources to achieve the results.
-*   **Sakana AI Unveils Five-Day Text-to-LoRA Model**: **Sakana AI** published the weights and [code](https://github.com/SakanaAI/text-to-lora) for a novel [text-to-lora model](https://huggingface.co/SakanaAI/text-to-lora/tree/main) capable of generating LoRAs directly from prompts. Training the system demands approximately **5 days** of continuous compute on a single **H100 GPU**, immediately sparking community excitement.
+*   **Qwen 3.5 27B 击败巨型竞争对手**: The newly released [**Qwen3.5-27B**](https://huggingface.co/models?search=Qwen3.5-27B) consistently beats much larger **112B** models and **Minimax 2.5** in complex coding scenarios, leaving users *absolutely floored at how good that model is*. Community benchmarks show it excelling in agentic roles and embedded game generation while maintaining high performance efficiency.
+*   **M4 Mac Mini 用户挤出超大本地模型**: Users are eagerly [testing **Qwen 3.5 35B** on **M4 Mac Minis**](https://link.to.example), debating the necessary context window truncations to fit the model within **32GB** of RAM. One optimized unsloth variant, the [**Qwen3.5-35B-A3B-abliterated**](https://huggingface.co/unsloth/Qwen3.5-35B-A3B-GGUF), proved incredibly fast for logic and code tasks when split across powerful local GPUs.
+*   **阿里巴巴推出原生多模态 Qwen 3.5 Small 系列**: Alibaba officially launched the **Qwen 3.5 Small Model Series** on [Hugging Face](https://huggingface.co/Qwen), ranging from **0.8B** to **9B** parameters with native multimodal capabilities, as announced in [this tweet](https://xcancel.com/Alibaba_Qwen/status/2028460046510965160). The **9B** model impressed users with its strength, though developers quickly noted that the initial unsloth GGUF releases required hotfixes for heavily quantized *ssm_alpha* weights.
+
+**主题 3. 下一代系统、硬件分化与生物计算**
+
+*   **Google 的 Static 框架将检索速度提升 948 倍**: Google AI unleashed **Static**, a sparse matrix framework that delivers **948x faster** constrained decoding for **LLM-based generative retrieval**. Their [technical blog post](https://www.marktechpost.com/2026/03/01/google-ai-introduces-static-a-sparse-matrix-framework-delivering-948x-faster-constrained-decoding-for-llm-based-generative-retrieval/) details how the framework exploits sparse matrix operations to drastically accelerate decoding speeds.
+*   **NVIDIA Blackwell 在数据中心与 RTX 之间分裂架构**: NVIDIA's latest generation fractures the architecture, capping **Blackwell RTX** consumer cards (**GeForce 50x0**, **RTX Pro**) at **Compute Capability 12.0**, completely disabling key **CC 10.0** features like `tcgen05` and `DPX`. The [NVIDIA Developer Blog](https://developer.nvidia.com/blog/nvidia-blackwell-and-nvidia-cuda-12-9-introduce-family-specific-architecture-features/) explained this deliberate split optimizes datacenter cards for AI while tuning consumer models exclusively for real-time graphics.
+*   **活体神经元在硅上玩 DOOM**: Cortical Labs successfully merged **800,000 living human and mouse neurons** with silicon hardware to construct **'DishBrain'**, a biological system capable of playing DOOM and Pong. A [post on X](https://x.com/scitechera/status/2028010532356374754) showcased the bizarre experiment, leaving engineers shocked by the massive citation count the work generated.
+
+**主题 4. Agent 编排、协议与提示范式**
+
+*   **Anthropic 用 Skills 指南“终结”提示工程**: Anthropic published a **30-page** [Complete Guide to Building Skill for Claude](https://resources.anthropic.com/hubfs/The-Complete-Guide-to-Building-Skill-for-Claude.pdf), pivoting developers away from wordy prompts toward structured **Skills** and execution layers. The guide demonstrates how packaging workflows into specialized files via progressive disclosure massively reduces context bloat.
+*   **OpenClaw 人格插件把精神分裂式 Agent 推到极致**: An **OpenClaw** user developed a radical plugin that dynamically swaps agent personas mid-conversation, enabling one system to debate itself while accessing local files. The creator shared their Python implementation, describing the self-referential orchestration as going full *#shizomaxxing*.
+*   **伦敦准备迎来 Agent Client Protocol (ACP) 对决**: The Agentic AI community in London scheduled a major event to dissect the new **Agent Client Protocol (ACP)** alongside creators from **Zed Industries** and **Jetbrains**. Registration is open via [Luma](https://luma.com/4hs6hs36) for developers eager to learn how ACP enables painless switching of coding agent harnesses compared to the prevalent MCP standard.
+
+**主题 5. 训练机制：快速 RL、定制编译器与 Text-to-LoRA**
+
+
+
+*   **Databricks 的 OAPL 砍掉 GRPO 训练成本**: Databricks revealed **OAPL** (Optimal Advantage-based Policy Optimization with Lagged Inference), an off-policy reinforcement learning technique that builds LLM reasoning skills **3x** faster than standard **GRPO**. A researcher broke down the efficiency gains in [this X thread](https://x.com/g_k_swamy/status/2027450376593805746?s=12), noting that the method drastically simplifies training infrastructure.
+*   **在硬件上训练的 CUDA Agent 暴打 `torch.compile`**: A specialized RL agent trained directly on hardware outpaced `torch.compile` by roughly **2x** on standard kernels and trounced **Claude Opus 4.5** on rigorous benchmarks, according to [this paper](https://arxiv.org/abs/2602.24286). Skeptics pushed back, complaining that the authors withheld the actual kernels and required ludicrous GPU resources to achieve the results.
+*   **Sakana AI 发布 5 天训练的 Text-to-LoRA 模型**: **Sakana AI** published the weights and [code](https://github.com/SakanaAI/text-to-lora) for a novel [text-to-lora model](https://huggingface.co/SakanaAI/text-to-lora/tree/main) capable of generating LoRAs directly from prompts. Training the system demands approximately **5 days** of continuous compute on a single **H100 GPU**, immediately sparking community excitement.
 
 
 
 ---
 
-# Discord: High level Discord summaries
+# Discord：高层级 Discord 摘要
 
 
 
@@ -752,7 +752,7 @@ You can [unsubscribe]({{{RESEND_UNSUBSCRIBE_URL}}}) from this list.
 
 ---
 
-# Discord: Detailed by-Channel summaries and links
+# Discord：分频道详细摘要与链接
 
 
 

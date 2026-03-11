@@ -7,13 +7,10 @@ companies:
 - epoch-ai
 - scaling01
 date: '2026-02-21T05:44:39.731046Z'
-description: '以下是该文本的中文翻译：
-
-
-  **Gemini 3.1 Pro** 与 **GPT-5.2** 和 **Opus 4.6** 相比，展现了强大的检索能力和成本效益，尽管用户反映其在工具链和用户界面（UI）方面存在问题。**SWE-bench
-  Verified** 评估方法的一致性正受到审查，随后的更新使测试结果更接近开发者的官方主张。关于基准测试究竟在衡量前沿模型的哪些能力，业界正展开辩论，特别是在涉及
-  ARC-AGI 谜题时。**Claude Opus 4.6** 在软件任务上展现了长达 **14.5 小时的时间跨度**，虽然数据波动较大但十分显著，不过 Token
-  限制仍会导致实际操作中的失败。**Sonnet 4.6** 在代码和指令遵循基准测试中有显著提升，但由于产品功能的退化（regressions），用户的反对声浪也在日益高涨。'
+description: '**Gemini 3.1 Pro** 与 **GPT-5.2** 和 **Opus 4.6** 相比，展示出了更强的检索能力和成本效益，但也有用户反映其在工具配套和
+  UI 界面上存在问题。**SWE-bench Verified** 的评估方法因其一致性正受到审查，相关更新使测试结果更接近开发者的宣称。关于基准测试究竟在衡量前沿模型的哪些能力，目前存在广泛争论，特别是在针对
+  ARC-AGI 谜题方面。**Claude Opus 4.6** 在处理软件任务时展现出了虽有波动但值得关注的 **14.5 小时时间跨度**（time horizon），但
+  Token 限制仍会导致实际运行中的失败。**Sonnet 4.6** 在代码和指令遵循的基准测试中提升显著，但由于产品功能倒退（regressions），用户的反对情绪也在增长。'
 id: MjAyNi0w
 models:
 - gemini-3.1-pro
@@ -35,7 +32,7 @@ people:
 - xlr8harder
 - htihle
 - arena
-title: 今天没发生什么特别的事。
+title: 今天没发生什么事。
 topics:
 - retrieval
 - benchmarking
@@ -47,68 +44,61 @@ topics:
 - model-reliability
 ---
 
-**a quiet day**
+**平静的一天**
 
-> AI News for 2/19/2026-2/20/2026. We checked 12 subreddits, [544 Twitters](https://twitter.com/i/lists/1585430245762441216) and 24 Discords (**262** channels, and **12582** messages) for you. Estimated reading time saved (at 200wpm): **1242** minutes. [AINews' website](https://news.smol.ai/) lets you search all past issues. As a reminder, [AINews is now a section of Latent Space](https://www.latent.space/p/2026). You can [opt in/out](https://support.substack.com/hc/en-us/articles/8914938285204-How-do-I-subscribe-to-or-unsubscribe-from-a-section-on-Substack) of email frequencies!
-
-
-
+> 2026/2/19-2026/2/20 的 AI 新闻。我们为您检查了 12 个 subreddits、[544 个 Twitter 账号](https://twitter.com/i/lists/1585430245762441216) 和 24 个 Discord（**262** 个频道，**12582** 条消息）。为您节省了约 **1242** 分钟的阅读时间（按 200wpm 计算）。[AINews 网站](https://news.smol.ai/) 支持搜索所有往期内容。提醒一下，[AINews 现在是 Latent Space 的一个板块](https://www.latent.space/p/2026)。您可以[选择加入/退出](https://support.substack.com/hc/en-us/articles/8914938285204-How-do-I-subscribe-to-or-unsubscribe-from-a-section-on-Substack)邮件发送频率！
 
 ---
 
-# AI Twitter Recap
+# AI Twitter 综述
 
 
-**Frontier model evals: Gemini 3.1 Pro, SWE-bench, MRCR, and “bipolar” real‑world performance**
+**前沿模型评估：Gemini 3.1 Pro、SWE-bench、MRCR 以及“两极分化”的现实表现**
 
-- **Gemini 3.1 Pro shows strong retrieval + mixed agentic usability**: Context Arena’s MRCR update reports **Gemini 3.1 Pro Preview** near-ties **GPT‑5.2 (thinking:xhigh)** on easier retrieval (2‑needle @128k AUC **99.6% vs 99.8%**) and notably stronger on harder multi‑needle retrieval (8‑needle @128k AUC **87.8%**, beating GPT‑5.2 thinking tiers reported there) ([DillonUzar](https://x.com/DillonUzar/status/2024655613293215855)). Separately, **Artificial Analysis** highlights a likely underappreciated angle: **token efficiency + price**; they claim their Intelligence Index suite cost **$892** on Gemini 3.1 Pro Preview vs **$2,304** (GPT‑5.2 xhigh) and **$2,486** (Opus 4.6 max), with fewer tokens consumed than GPT‑5.2 in their runs ([ArtificialAnlys](https://x.com/ArtificialAnlys/status/2024677979390169536)).
-- **But engineers report “bench strength, product weakness”**: multiple threads complain Gemini’s tooling/harnesses lag—e.g., model availability inconsistencies in the CLI and buggy agent behavior in “Antigravity,” plus a worrying “UI lies / model lies” confusion where the app claims Gemini but reports Claude underneath ([Yuchenj_UW](https://x.com/Yuchenj_UW/status/2024708583829753909), [Yuchenj_UW](https://x.com/Yuchenj_UW/status/2024721228842565851)). Even enthusiastic takes (“faster horse”) are juxtaposed with frustration about actually using it day‑to‑day ([theo](https://x.com/theo/status/2024808734053347608)).
-- **SWE-bench Verified evaluation methodology matters again**: MiniMax points to an “independent look” at SWE-bench Verified results for **MiniMax M2.5** under the same setup, implying earlier comparisons across labs may have been apples-to-oranges ([MiniMax_AI](https://x.com/MiniMax_AI/status/2024646767325958285)). Epoch AI explicitly acknowledges this failure mode: they updated SWE‑bench Verified methodology because their prior runs were systematically different from others, and now see results closer to developer‑reported scores ([EpochAIResearch](https://x.com/EpochAIResearch/status/2024924403142910137)).
-- **Benchmark oddities are prompting “what are we measuring?” debates**: one example—frontier models “smash ARC-AGI” yet struggle with Connect 4, suggesting ARC‑style puzzles may capture only a narrow slice of spatial/game reasoning despite being designed to resist overfitting ([paul_cal](https://x.com/paul_cal/status/2024748708223402120)). Another thread expects only a few models to make progress on a “simple harness” for ARC‑AGI‑3 and flags cost as the constraint ([scaling01](https://x.com/scaling01/status/2024650634746610041), [scaling01](https://x.com/scaling01/status/2024661145286557872)).
+- **Gemini 3.1 Pro 展示了强大的检索能力 + 参差不齐的 Agent 可用性**：Context Arena 的 MRCR 更新报告称，**Gemini 3.1 Pro Preview** 在较易的检索任务中（2-needle @128k AUC **99.6% vs 99.8%**）几乎与 **GPT-5.2 (thinking:xhigh)** 持平，而在更难的多针检索任务中（8-needle @128k AUC **87.8%**，超过了此处报告的 GPT-5.2 thinking 层级）表现明显更强 ([DillonUzar](https://x.com/DillonUzar/status/2024655613293215855))。另外，**Artificial Analysis** 强调了一个可能被低估的角度：**Token 效率 + 价格**；他们声称其 Intelligence Index 测试套件在 Gemini 3.1 Pro Preview 上的成本为 **892 美元**，而 GPT-5.2 xhigh 为 **2,304 美元**，Opus 4.6 max 为 **2,486 美元**，且在他们的运行中消耗的 Token 比 GPT-5.2 更少 ([ArtificialAnlys](https://x.com/ArtificialAnlys/status/2024677979390169536))。
+- **但工程师们报告称其“跑分强，产品弱”**：多个推文串抱怨 Gemini 的工具/测试框架（harnesses）滞后——例如，CLI 中的模型可用性不一致，“Antigravity”中存在 Bug 的 Agent 行为，以及令人担忧的“UI 撒谎 / 模型撒谎”混淆，即 App 声称是 Gemini，但底层报告是 Claude ([Yuchenj_UW](https://x.com/Yuchenj_UW/status/2024708583829753909), [Yuchenj_UW](https://x.com/Yuchenj_UW/status/2024721228842565851))。即使是热情的评价（“更快的马”）也伴随着对其日常实际使用的沮丧感 ([theo](https://x.com/theo/status/2024808734053347608))。
+- **SWE-bench Verified 评估方法论再次成为焦点**：MiniMax 指向了一项对 **MiniMax M2.5** 在相同设置下 SWE-bench Verified 结果的“独立观察”，暗示早先跨实验室的比较可能是非对等的 ([MiniMax_AI](https://x.com/MiniMax_AI/status/2024646767325958285))。Epoch AI 明确承认了这种失效模式：他们更新了 SWE-bench Verified 方法论，因为他们之前的运行结果与其他人的存在系统性差异，现在看到的结果更接近开发者报告的分数 ([EpochAIResearch](https://x.com/EpochAIResearch/status/2024924403142910137))。
+- **基准测试的异常引发了“我们到底在衡量什么？”的辩论**：一个例子是——前沿模型“横扫 ARC-AGI”，但在四子棋（Connect 4）上却表现挣扎，这表明 ARC 风格的谜题尽管设计初衷是抵抗过拟合，但可能只捕捉到了空间/游戏推理的一小部分 ([paul_cal](https://x.com/paul_cal/status/2024748708223402120))。另一个推文串预计只有少数模型能在 ARC-AGI-3 的“简单框架”上取得进展，并指出成本是主要的制约因素 ([scaling01](https://x.com/scaling01/status/2024650634746610041), [scaling01](https://x.com/scaling01/status/2024661145286557872))。
 
-**Claude Opus/Sonnet 4.6: time-horizon evals, costs, and the reliability regime**
+**Claude Opus/Sonnet 4.6：时间跨度评估、成本与可靠性体系**
 
+- **METR 的“时间跨度”（time horizon）在 Opus 4.6 上大幅提升，但估算结果存在噪声**：METR 报告称 **Claude Opus 4.6** 在软件任务上的 **50% 时间跨度约为 14.5 小时**（置信区间 **6–98h**），并警告称该测试套件已接近饱和，且测量结果“极具噪声” ([METR_Evals](https://x.com/METR_Evals/status/2024923422867030027))。METR 工作人员重申，任务分布的微小变化可能会实质性地改变测量到的跨度 ([idavidrein](https://x.com/idavidrein/status/2024938968434049117))。外部评论员提出了一个关键的可解释性观点：当单步错误率降至极低时，微小的绝对改进会复合成端到端成功率的巨大变化 ([xlr8harder](https://x.com/xlr8harder/status/2024946945232445710))。
+- **Token 限制 + 长时间推理仍是实际的失效模式**：多份报告显示 Opus/Sonnet 触及了最大 Token 限制并随后失败（在长时间“思考”后输出为空），使“极致推理”变成了一种 UX 和成本隐患 ([paul_cal](https://x.com/paul_cal/status/2024817020529766764), [htihle](https://x.com/htihle/status/2024764946051907659))。
+- **Arena 信号：Sonnet 4.6 在 Code Arena 中跃升**：Arena 声称 **Sonnet 4.6** 排名大幅上升（例如，**Code Arena WebDev 第 3 名**，高于 Sonnet 4.5 的第 22 名），并在指令遵循/数学类别中有所改进 ([arena](https://x.com/arena/status/2024883614249615394), [arena](https://x.com/arena/status/2024892330743124246))。
+- **Claude Code 产品动荡引发抵制**：用户报告了 Claude Code UX/性能的退化（“时间戳”、缺少思考指示器、长时间卡顿），以及普遍的“从头重写”情绪主导了该工具的讨论 ([theo](https://x.com/theo/status/2024718133676867608), [theo](https://x.com/theo/status/2024726444283449781))。这与关于发给 OpenCode 的**法律压力**传闻（据称是来自 Anthropic 律师的“情书”）同时发生 ([theo](https://x.com/theo/status/2024648305863774281))。
 
+**Agents、技能与编排：GEPA/gskill、RLMs 以及“Agent 栈”正趋于正式化**
 
-- **METR “time horizon” jumps for Opus 4.6, but the estimate is noisy**: METR reports **Claude Opus 4.6** has a **50% time-horizon ~14.5 hours** on software tasks (CI **6–98h**) with a warning that the suite is near saturation and the measurement is “extremely noisy” ([METR_Evals](https://x.com/METR_Evals/status/2024923422867030027)). METR staff reiterate that small shifts in the task distribution could swing the measured horizon materially ([idavidrein](https://x.com/idavidrein/status/2024938968434049117)). External commentators add a key interpretability point: when per-step error rates get very low, small absolute improvements compound into big end-to-end success changes ([xlr8harder](https://x.com/xlr8harder/status/2024946945232445710)).
-- **Token limits + long reasoning remain a practical failure mode**: multiple reports show Opus/Sonnet hitting max token limits and failing late (empty outputs after long “thinking”), turning “max reasoning” into a UX and cost hazard ([paul_cal](https://x.com/paul_cal/status/2024817020529766764), [htihle](https://x.com/htihle/status/2024764946051907659)).
-- **Arena signals: Sonnet 4.6 jumps in Code Arena**: Arena claims **Sonnet 4.6** rose dramatically (e.g., **Code Arena WebDev #3**, up from #22 for Sonnet 4.5) and improved in instruction following/math categories ([arena](https://x.com/arena/status/2024883614249615394), [arena](https://x.com/arena/status/2024892330743124246)).
-- **Claude Code product turbulence fuels backlash**: user reports of regressions in Claude Code UX/performance (“timestamps,” missing thinking indicator, long hangs) and broader “rewrite from scratch” sentiment dominated the tool discourse ([theo](https://x.com/theo/status/2024718133676867608), [theo](https://x.com/theo/status/2024726444283449781)). This coincided with drama about **legal pressure** sent to OpenCode (alleged “love letters” from Anthropic lawyers) ([theo](https://x.com/theo/status/2024648305863774281)).
+- **用于技能的 GEPA / gskill：Prompt + 技能优化成为一种流水线**：一组推文介绍了 **gskill**，这是一个使用 **GEPA** 自动学习 Agent “技能”的流水线，据报告在仓库任务解决方面接近完美，且在使用学习到的技能时，Claude Code 的性能提升了 **47%** ([ShangyinT](https://x.com/ShangyinT/status/2024651061995458722))。该工作流程总结为：生成仓库任务 (Swe‑Smith) → 优化技能 (GEPA optimize_anything) → 发布技能文件 ([AlexGDimakis](https://x.com/AlexGDimakis/status/2024653629303771580))。DSPy Weekly 也将其视为生态系统的关键一步 ([getpy](https://x.com/getpy/status/2024865536929308889))。
+- **技能作为新的“软件构件”——同时也是新的故障面**：工程师们在争论技能应该是精简的、精心由人工编写的约束，还是庞大的模型生成的文档；“少即是多”阵营认为 2 段提炼过的指南胜过 20 页的自动摘要 ([hrishioa](https://x.com/hrishioa/status/2024713140769083461))。与此同时，运行事故（“技能宕机”）表明，一旦“技能”成为网络依赖项，它们就会像其他服务一样继承可靠性问题 ([theo](https://x.com/theo/status/2024785367896072599))。
+- **RLMs（Recursive Language Models，递归语言模型）正作为一种元框架（meta-harness）出现**：多篇帖子将 RLMs 视为一种通用的工作流基座，可以“涌现式地”模拟许多其他框架 ([HammadTime](https://x.com/HammadTime/status/2024694115372499026))。Omar 还注意到早期实验中 **GPT‑5.2‑Codex**（以及 Gemini 3.1 Pro）在 RLM 分解策略下表现良好，而 Opus 4.6 在该特定模式下表现较差 ([omarsar0](https://x.com/omarsar0/status/2024973182436831629), [omarsar0](https://x.com/omarsar0/status/2024972027224846631))。
+- **编排（Orchestration）成为差异化因素**：一篇论文摘要指出，随着模型基准测试性能趋于一致，**多 Agent 编排拓扑**（并行/顺序/分层/混合）成为一级优化目标，报告通过拓扑路由获得了 **12–23%** 的提升 ([omarsar0](https://x.com/omarsar0/status/2024847274157945035))。与此同时，Anthropic 自身的使用遥测数据表明，监督不再是“批准每一步”，而更多是“能够在关键时刻干预”，一个有趣的转折是：Agent 请求澄清的次数比人类手动干预的次数更多 ([omarsar0](https://x.com/omarsar0/status/2024864635120451588))。
 
-**Agents, skills, and orchestration: GEPA/gskill, RLMs, and the “agent stack” getting formalized**
-
-- **GEPA for Skills / gskill: prompt+skill optimization becomes a pipeline**: a cluster of tweets introduces **gskill**, an automated pipeline to learn agent “skills” using **GEPA**, reporting near‑perfect repository task resolution and **47% faster** performance in Claude Code with learned skills ([ShangyinT](https://x.com/ShangyinT/status/2024651061995458722)). The workflow is summarized as: generate repo tasks (Swe‑Smith) → optimize skills (GEPA optimize_anything) → ship skills file ([AlexGDimakis](https://x.com/AlexGDimakis/status/2024653629303771580)). DSPy Weekly also frames this as a key ecosystem step ([getpy](https://x.com/getpy/status/2024865536929308889)).
-- **Skills as the new “software artifact”—and also a new failure surface**: engineers debate whether skills should be minimal, carefully human‑written constraints vs sprawling model-generated docs; a “less is more” camp argues 2 paragraphs of distilled guidance beats 20 pages of auto-summaries ([hrishioa](https://x.com/hrishioa/status/2024713140769083461)). Meanwhile, operational incidents (“skills downtime”) highlight that once “skills” become networked dependencies, they inherit reliability problems like any other service ([theo](https://x.com/theo/status/2024785367896072599)).
-- **RLMs (Recursive Language Models) are emerging as a meta-harness**: several posts treat RLMs as a general workflow substrate that can emulate many other harnesses “emergently” ([HammadTime](https://x.com/HammadTime/status/2024694115372499026)). Omar also notes early experiments where **GPT‑5.2‑Codex** (and Gemini 3.1 Pro) work well with RLM decomposition strategies, while Opus 4.6 performed worse for that specific pattern ([omarsar0](https://x.com/omarsar0/status/2024973182436831629), [omarsar0](https://x.com/omarsar0/status/2024972027224846631)).
-- **Orchestration becomes the differentiator**: a paper summary argues that as model benchmark performance converges, **multi-agent orchestration topology** (parallel/sequential/hierarchical/hybrid) becomes a first-class optimization target, reporting **12–23%** gains via topology routing ([omarsar0](https://x.com/omarsar0/status/2024847274157945035)). In parallel, Anthropic’s own usage telemetry suggests oversight is less “approve every step” and more “be able to intervene when it matters,” with the interesting twist that agents request clarification more often than humans manually intervene ([omarsar0](https://x.com/omarsar0/status/2024864635120451588)).
-
-**Local/open tooling + infra shifts: ggml/llama.cpp joins Hugging Face, Ollama integrations, and inference economics**
-
-
+**本地/开源工具 + 基础设施转型：ggml/llama.cpp 加入 Hugging Face，Ollama 集成，以及推理经济学**
 
 - **重大开源整合：ggml.ai (llama.cpp) 加入 Hugging Face**：Georgi Gerganov 宣布 ggml.ai 加入 HF，旨在“让本地 AI 变得简单且高效” ([ggerganov](https://x.com/ggerganov/status/2024839991482777976)；[huggingface](https://x.com/huggingface/status/2024871487753044243))。社区评论将其视为对 llama.cpp 在 2023 年初发起的“本地模型革命”的制度化确认 ([simonw](https://x.com/simonw/status/2024855027517702345)；[victormustar](https://x.com/victormustar/status/2024842175532413016))。
-- **本地优先（Local-first）部分由 Token 稀缺经济学驱动**：一种观点认为，**推理算力的可用性**将主导软件生产力 ([gdb](https://x.com/gdb/status/2024662197692223857))，且推理资源的稀缺和能源限制可能会推动更多工作负载转向本地 ([awnihannun](https://x.com/awnihannun/status/2024664226837778490))。
-- **Ollama 继续将本地工作流产品化**：Ollama 发布了 **0.16.3** 版本，通过 `ollama launch` 实现了“Cline 与 Pi 集成” ([ollama](https://x.com/ollama/status/2024978932127187375))。这与一种更广泛的情绪相契合：笔记本电脑很快就能运行“足以完成大部分工作”的 OSS 模型 ([sdrzn](https://x.com/sdrzn/status/2024986545019912564))。
+- **“本地优先”部分由 Token 稀缺经济学驱动**：一种观点逐渐形成，即 **推理算力可用性（inference compute availability）** 将主导软件生产力 ([gdb](https://x.com/gdb/status/2024662197692223857))，且推理资源稀缺或能源限制可能会将更多工作负载推向本地 ([awnihannun](https://x.com/awnihannun/status/2024664226837778490))。
+- **Ollama 继续将本地工作流产品化**：Ollama 发布了 **0.16.3** 版本，通过 `ollama launch` 实现了与 “Cline 和 Pi 的集成” ([ollama](https://x.com/ollama/status/2024978932127187375))。这与一种广泛的情绪相契合，即笔记本电脑很快就能运行“足以完成大部分工作”的 OSS 模型 ([sdrzn](https://x.com/sdrzn/status/2024986545019912564))。
 
-**硬件 + 推理加速：定制芯片“硬核模型”、ThunderKittens 2.0、稀疏注意力与快速解码**
+**硬件 + 推理加速：定制硅片“硬核模型”、ThunderKittens 2.0、稀疏注意力与快速解码**
 
-- **Taalas “芯片即模型”声称极高的单用户吞吐量**：多篇帖子引用了 **Llama 3 8B 在每用户约 16k–17k tokens/sec** 下运行的演示，通过为每个模型定制专用芯片，使其速度比即使是像 Cerebras 这种以 SRAM 为中心的系统还要快近一个数量级 ([awnihannun](https://x.com/awnihannun/status/2024671348782711153)；也被 [wildmindai](https://x.com/wildmindai/status/2024810128487096357) 转发)。Awni 也提出了务实的对立观点：流片（tape-out）延迟（数月）与模型迭代周期不匹配；混合方案（芯片内置基础模型 + Adapter 风格的后训练）可能是更可行的路径 ([awnihannun](https://x.com/awnihannun/status/2024868422224671193))。
-- **内核级进展持续推进**：ThunderKittens 2.0 宣称新的 **BF16/MXFP8/NVFP4 GEMMs** 在 Blackwell 架构上达到或超过了 cuBLAS 的性能，强调“榨干最后一滴 TFLOP 性能” ([stuart_sul](https://x.com/stuart_sul/status/2024897621874422125))。
-- **针对扩散模型/视频的注意力稀疏化**：SpargeAttention2 声称通过混合 Top-k+Top-p 掩码 + 蒸馏微调（distillation finetuning），在视频扩散模型中实现了 **95% 的注意力稀疏度**和 **16.2 倍**的加速 ([HuggingPapers](https://x.com/HuggingPapers/status/2024760112293040531)；[ _akhaliq ](https://x.com/_akhaliq/status/2024873795173892483))。
+- **Taalas “芯片即模型”方案声称拥有极高的单用户吞吐量**：多篇帖子引用了 **Llama 3 8B 在每用户约 16k–17k tokens/sec** 的演示，通过为每个模型定制硅片，其速度比 Cerebras 等以 SRAM 为中心的系统快了近一个数量级 ([awnihannun](https://x.com/awnihannun/status/2024671348782711153)；[wildmindai](https://x.com/wildmindai/status/2024810128487096357) 也进行了转发)。Awni 同时也提出了务实的反对观点：流片延迟（tape-out latency，长达数月）与模型迭代周期不匹配；混合方案（硅片内置基础模型 + Adapter 式后训练）可能是更可行的路径 ([awnihannun](https://x.com/awnihannun/status/2024868422224671193))。
+- **内核级进展持续推进**：ThunderKittens 2.0 宣布了新的 **BF16/MXFP8/NVFP4 GEMMs**，其在 Blackwell 架构上的表现持平或超越了 cuBLAS，强调要“榨干最后一滴 TFLOP 性能” ([stuart_sul](https://x.com/stuart_sul/status/2024897621874422125))。
+- **用于扩散/视频的注意力稀疏化**：SpargeAttention2 声称通过混合 Top-k+Top-p 掩码 + 蒸馏微调，在视频扩散模型中实现了 **95% 的注意力稀疏度** 和 **16.2 倍** 的加速 ([HuggingPapers](https://x.com/HuggingPapers/status/2024760112293040531)；[ _akhaliq ](https://x.com/_akhaliq/status/2024873795173892483))。
 
-**安全、治理与“野外 Agent”：Claude Code Security + 轨迹审计**
+**安全、治理与“野外 Agent”：Claude Code Security + 审计轨迹**
 
-- **Claude Code Security（研究预览版）**：Anthropic 推出了一款安全扫描 Agent，可以发现漏洞并建议修复方案供人工审核 ([claudeai](https://x.com/claudeai/status/2024907535145468326))。随后的消息称，在生产环境的 OSS 中发现了 **500 多个漏洞**，并已提交报告和修复 ([trq212](https://x.com/trq212/status/2024937919937741290)；[ _catwu ](https://x.com/_catwu/status/2024910342158237709))。关于其限制（例如不允许在第三方开源代码上运行）立即引起了反弹，被认为是一个“耐人寻味”的产品选择 ([moyix](https://x.com/moyix/status/2024920042887082336))。
-- **审计 Agent 轨迹成为新的安全/鲁棒性工具**：Hodoscope 被引入作为一种大规模可视化/审计轨迹的方法；作者声称它快速发现了一个基准测试（benchmark）漏洞，这进一步证明了评估（eval）+ 遥测（telemetry）可以揭示 Agent 和基准测试中的失效点 ([AdtRaghunathan](https://x.com/AdtRaghunathan/status/2024944182595289418)；[gneubig](https://x.com/gneubig/status/2024947864808354134))。
+- **Claude Code Security（研究预览版）**：Anthropic 推出了一款安全扫描 Agent，可以发现漏洞并建议修复方案供人工审查 ([claudeai](https://x.com/claudeai/status/2024907535145468326))。后续消息称，在生产环境的 OSS 中已发现 **500 多个漏洞**，相关示例已报告并完成修复 ([trq212](https://x.com/trq212/status/2024937919937741290)；[ _catwu ](https://x.com/_catwu/status/2024910342158237709))。也有人立即对相关限制（例如不允许在第三方开源代码上运行）提出了质疑，认为这是一个“耐人寻味”的产品选择 ([moyix](https://x.com/moyix/status/2024920042887082336))。
+- **审计 Agent 轨迹成为新的安全/鲁棒性工具**：Hodoscope 被引入作为一种大规模可视化/审计轨迹的方法；作者声称它快速发现了一个 Benchmark 漏洞，再次证明 Eval + 遥测可以揭示 Agent 和 Benchmark 中的失效点 ([AdtRaghunathan](https://x.com/AdtRaghunathan/status/2024944182595289418)；[gneubig](https://x.com/gneubig/status/2024947864808354134))。
 
-**热门推文（按参与度、技术性/新闻价值排序）**
+**热门推文（按互动率、技术性/新闻价值排序）**
 
-- **FBI 逮捕 3 名工程师**，指控其涉嫌窃取涉及 Google 及其他公司的商业机密；据称外泄资料包括处理器安全/加密相关文档 ([FBISanFrancisco](https://x.com/FBISanFrancisco/status/2024670479974363376))。
+- **FBI 逮捕 3 名工程师**，指控其涉嫌窃取涉及 Google 及其他公司的商业机密；据称外泄资料包括处理器安全/加密相关的文档 ([FBISanFrancisco](https://x.com/FBISanFrancisco/status/2024670479974363376))。
 - **Claude Code Security 发布**（研究预览版；漏洞扫描 + 修复建议）([claudeai](https://x.com/claudeai/status/2024907535145468326))。
 - **ggml.ai / llama.cpp 加入 Hugging Face**（本地 AI 生态系统的里程碑）([ggerganov](https://x.com/ggerganov/status/2024839991482777976))。
-- **Taalas 定制芯片演示**，声称 Llama 3 8B 每用户约 16k–17k tok/s（“芯片即模型”）([awnihannun](https://x.com/awnihannun/status/2024671348782711153))。
-- **METR 对 Claude Opus 4.6 的时间跨度预估**（约 14.5h 50% 跨度；噪声很大）([METR_Evals](https://x.com/METR_Evals/status/2024923422867030027))。
-- **Gemini 3.1 Pro 成本/Token 效率**在 Artificial Analysis 的运行中声称优于 GPT-5.2/Opus 4.6 ([ArtificialAnlys](https://x.com/ArtificialAnlys/status/2024677979390169536))。
+- **Taalas 定制硅片演示**，声称 Llama 3 8B 每用户吞吐量达到约 16k–17k tok/s（“芯片即模型”）([awnihannun](https://x.com/awnihannun/status/2024671348782711153))。
+- **METR 对 Claude Opus 4.6 的时间范围估算**（约 14.5 小时 50% 范围；噪声较大）([METR_Evals](https://x.com/METR_Evals/status/2024923422867030027))。
+- **Gemini 3.1 Pro 成本/Token 效率**在 Artificial Analysis 的运行结果中对比 GPT-5.2/Opus 4.6 的优势声明 ([ArtificialAnlys](https://x.com/ArtificialAnlys/status/2024677979390169536))。
 
 ---
 
@@ -118,584 +108,467 @@ topics:
 
 ### 1. AI 模型发布与基准测试
 
-  - **[免费 ASIC Llama 3.1 8B 推理速度达 16,000 tok/s - 不，这不是开玩笑](https://www.reddit.com/r/LocalLLaMA/comments/1r9e27i/free_asic_llama_31_8b_inference_at_16000_toks_no/)** (热度: 833): **Taalas**，一家快速推理硬件初创公司，推出了一个免费的聊天机器人界面和 API endpoint，使用其定制芯片，在 **Llama 3.1 8B 模型** 上实现了 `16,000 tokens per second (tps)`。该模型作为 proof of concept，展示了该芯片处理高速推理的能力，尽管目前其支持的模型尺寸有限。芯片规格包括 `2.5kW` 的功耗，芯片面积约 `~800mm²`，拥有 `530 亿个晶体管`，这表明大型模型面临着显著的硅密度挑战。在 `$0.10/kWh` 的电价下，成本效率约为每 1M tokens `$0.005`，不包括额外的基础设施成本。更多详情请访问 [Taalas 网站](https://taalas.com/the-path-to-ubiquitous-ai/)。评论者对速度和芯片潜力印象深刻，一些人表示如果价格合适，有兴趣购买此类硬件。然而，人们对芯片的功耗和尺寸提出了担忧，这可能会限制其在 edge devices 中的使用。人们对芯片能支持的最大模型尺寸感到好奇，并对扩展到 `400B parameters` 等大规模模型的可行性进行了推测。
+  - **[免费 ASIC Llama 3.1 8B 推理，速度达 16,000 tok/s —— 不，这不是玩笑](https://www.reddit.com/r/LocalLLaMA/comments/1r9e27i/free_asic_llama_31_8b_inference_at_16000_toks_no/)** (热度: 833): ****Taalas**，一家快速推理硬件初创公司，推出了一个免费的聊天机器人界面和 API 端点，使用其定制芯片，在 **Llama 3.1 8B 模型**上实现了 `16,000 tokens per second (tps)`。该模型作为一个概念验证，展示了该芯片处理高速推理的能力，尽管其模型参数规模有限。该芯片的规格包括 `2.5kW` 的功耗，芯片面积约为 `800mm²`，拥有 `53 billion transistors`，这表明对于更大规模的模型，硅片密度面临重大挑战。在 `$0.10/kWh` 的电价下，成本效率约为每 1M tokens `$0.005`，不包括额外的基础设施成本。更多详情请访问 [Taalas 官网](https://taalas.com/the-path-to-ubiquitous-ai/)。** 评论者对该芯片的速度和潜力印象深刻，一些人表示如果价格合适，有兴趣购买此类硬件。然而，也有人对芯片的功耗和尺寸表示担忧，这可能会限制其在边缘设备中的使用。人们对该芯片能支持的最大模型规模感到好奇，并对扩展到 `400B parameters` 规模模型的可行性进行了推测。
 
-    - Llama 3.1 8B 模型的 ASIC 实现通过将模型直接嵌入硅片，实现了惊人的每秒 16,000 tokens 推理速度。这种方法利用了 TSMC 6nm 工艺，芯片面积为 815mm²，拥有 530 亿个晶体管，对于 8B 模型来说芯片规模非常庞大，这表明了当前硅密度的极限。功耗约为每颗芯片 200W，转化为每 100 万 tokens 约 0.05 kWh，在 `$0.10/kWh` 的电价下，每 100 万 tokens 的成本约为 `$0.005`，不包括其他费用。
-    - Llama 3.1 8B 模型的硬件设计涉及将参数量化为 3 bit 和 6 bit，并将其集成到硬连线电路或片上 read-only memories 中。这种方法减少了对 RAM 的依赖，如果电力是限制因素，则有可能提高 tokens per watt。然而，巨大的芯片面积和高功耗表明，尽管性能很高，但该技术目前尚不适用于 edge devices。
-    - 人们对这项技术的可扩展性感到好奇，并提出了关于使用这种方法可以实现的最大模型尺寸的问题。虽然目前的实现是针对 8B 模型的，但扩展到拥有数千亿参数模型的潜力可能会显著影响 LLM 的格局，尽管目前还不确定在现有硅技术下这种扩展是否可行。
+    - Llama 3.1 8B 模型的 ASIC 实现通过将模型直接嵌入硅片，实现了令人印象深刻的 16,000 tokens per second 推理速度。这种方法采用了 TSMC 6nm 工艺，芯片面积为 815mm²，拥有 53 billion transistors，对于一个 8B 模型来说，这个面积非常巨大，反映了当前硅片密度的极限。功耗约为每颗芯片 200W，转化为每 100 万个 tokens 约 0.05 kWh，在 $0.10/kWh 的电价下，每 100 万个 tokens 的成本约为 $0.005（不含其他成本）。
+    - Llama 3.1 8B 模型的硬件设计涉及将参数量化为 3 和 6 bits，并将其集成到硬连线电路或片上只读存储器中。这种方法减少了对 RAM 的依赖，如果电力是限制因素，可能会提高 tokens per watt。然而，巨大的芯片面积和高功耗表明，尽管性能卓越，该技术目前尚不适用于边缘设备。
+    - 人们对该技术的可扩展性表示好奇，并提出了使用这种方法能实现的最高模型规模的问题。虽然目前的实现是针对 8B 模型的，但扩展到拥有数千亿参数模型的潜力可能会显著影响 LLM 领域，尽管目前尚不确定这种扩展在现有硅片技术下是否可行。
 
-  - **[Kitten TTS V0.8 发布：新型 SOTA 超微型 TTS 模型（小于 25 MB）](https://www.reddit.com/r/LocalLLaMA/comments/1r8pztp/kitten_tts_v08_is_out_new_sota_supertiny_tts/)** (热度: 1407): **Kitten ML** 发布了三个新的开源、具表现力的 TTS 模型：`80M`、`40M` 和 `14M` 参数，全部采用 Apache 2.0 协议。最小的模型 `14M` 小于 `25 MB`，可以在 CPU 上运行，非常适合 edge devices。这些模型提供八种具表现力的语音，专为设备端应用设计，消除了对云端 TTS 解决方案的需求。模型可在 [GitHub](https://github.com/KittenML/KittenTTS) 和 [Hugging Face](https://huggingface.co/KittenML/kitten-tts-mini-0.8) 上获取。评论者建议在 Hugging Face 页面上包含音频示例，并提议开发一个注重隐私、可离线使用的浏览器扩展程序，强调了对此类工具的潜在需求。
+  - **[Kitten TTS V0.8 发布：新型 SOTA 超微型 TTS 模型（小于 25 MB）](https://www.reddit.com/r/LocalLLaMA/comments/1r8pztp/kitten_tts_v08_is_out_new_sota_supertiny_tts/)** (热度: 1407): ****Kitten ML** 发布了三个全新的开源、富有表现力的 TTS 模型：`80M`、`40M` 和 `14M` 参数版本，全部采用 Apache 2.0 协议。最小的模型 `14M` 小于 `25 MB`，可以在 CPU 上运行，非常适合边缘设备。这些模型提供八种富有表现力的声音，专为端侧应用设计，无需云端 TTS 解决方案。模型可在 [GitHub](https://github.com/KittenML/KittenTTS) 和 [Hugging Face](https://huggingface.co/KittenML/kitten-tts-mini-0.8) 上获取。** 评论者建议在 Hugging Face 页面加入音频示例，并提议开发一个注重隐私的离线浏览器扩展，突显了对这类工具的潜在需求。
 
-  - **[Devstral Small 2 24B + Qwen3 Coder 30B Quants for All (And for every hardware, even the Pi)](https://www.reddit.com/r/LocalLLM/comments/1r9xifw/devstral_small_2_24b_qwen3_coder_30b_quants_for/)** (Activity: 133): **The image is a scatter plot titled "RTX4080: Performance vs Speed," which compares average accuracy and average tokens per second (TPS) for different models, specifically "ByteShape" and "Unsloth." The plot illustrates the trade-offs between model accuracy and processing speed, with "ByteShape" models generally achieving higher TPS and "Unsloth" models showing higher accuracy. The bubble sizes represent BPW (Model Size), and a dashed line indicates the BF16 Baseline for accuracy. This visualization is part of ByteShape's effort to optimize quantized models for various hardware, including GPUs and CPUs, by using their ShapeLearn technology to find the best datatype per tensor, thus avoiding performance cliffs and optimizing TPS-quality trade-offs.** A user inquires about the best model for an RTX 4070 with 8GB VRAM, indicating a need for guidance in selecting models based on hardware specifications. Another user shares their experience using these models on a Mac mini M4 24GB, expressing interest in testing ByteShape's offerings.
+- **[[Devstral Small 2 24B + Qwen3 Coder 30B Quants for All (以及适用于各种硬件，甚至是 Pi)](https://www.reddit.com/r/LocalLLM/comments/1r9xifw/devstral_small_2_24b_qwen3_coder_30b_quants_for/)]** (活跃度: 133): **该图像是一个标题为 "RTX4080: Performance vs Speed" 的散点图，对比了不同模型（特别是 "ByteShape" 和 "Unsloth"）的平均准确率和平均每秒 Token 数 (TPS)。该图表展示了模型准确率与处理速度之间的权衡，其中 "ByteShape" 模型通常获得更高的 TPS，而 "Unsloth" 模型显示出更高的准确率。气泡大小代表 BPW (模型大小)，虚线表示准确率的 BF16 Baseline。此可视化是 ByteShape 致力于为各种硬件（包括 GPU 和 CPU）优化量化模型工作的一部分，通过使用其 ShapeLearn 技术为每个 tensor 寻找最佳数据类型，从而避免性能断崖并优化 TPS 与质量之间的权衡。** 一位用户询问适用于配备 8GB VRAM 的 RTX 4070 的最佳模型，表明需要根据硬件规格选择模型的指导。另一位用户分享了他们在 Mac mini M4 24GB 上使用这些模型的经验，并表示有兴趣测试 ByteShape 的产品。
 
-    - mac10190 discusses a setup using dual R9700 32GB GPUs and an RTX 5090 32GB for hosting large models. The dual R9700s are used as the 'brain/orchestrator', while the Qwen 3 Coder 30B runs on the RTX 5090 for code generation. This setup is integrated under Opencode, and is being tested as a potential replacement for Gemini CLI tasks, highlighting a sophisticated orchestration of hardware and software for optimized performance.
+    - mac10190 讨论了一种使用双 R9700 32GB GPU 和一块 RTX 5090 32GB 来托管大型模型的配置。双 R9700 被用作“大脑/编排器”，而 Qwen 3 Coder 30B 在 RTX 5090 上运行以进行代码生成。该配置集成在 Opencode 之下，并正作为 Gemini CLI 任务的潜在替代方案进行测试，突显了为实现性能优化而进行的复杂软硬件编排。
 
+### 2. AI 模型收购与市场动态
 
+  - **[GGML.AI 已被 Hugging Face 收购](https://www.reddit.com/r/LocalLLaMA/comments/1r9vywq/ggmlai_has_got_acquired_by_huggingface/)** (Activity: 493): **Hugging Face** 已收购 **GGML.AI**，以增强本地 AI 倡议的可持续性和增长，特别是关注 `ggml` 和 `llama.cpp` 库。此次收购旨在保持这些项目的开源性质，同时提升用户体验以及与 Hugging Face 的 Transformers 库的集成，确保长期支持和社区参与。欲了解更多详情，请访问原始讨论[此处](https://github.com/ggml-org/llama.cpp/discussions/19759)。评论者对开源 AI 在 Hugging Face 旗下的整合表示担忧，希望其能支持开源工作，对抗基于云端解决方案的趋势。此外，还有一种观点认为，只要 `llama.cpp` 继续发展，这次收购就是积极的。
 
+    - Hugging Face 收购 GGML.AI 被视为支持开源 AI 倡议的战略举措。Hugging Face 因其对开源的承诺而受到认可，预计此次收购将为 GGML.AI 提供必要的资源和资金，以继续其对社区的贡献。这符合 Hugging Face 支持和扩展开源 AI 工具及框架的更广泛战略。
+    - 社区对 AI 解决方案日益向云端转移的趋势感到担忧，这可能会限制开发者的可访问性和控制权。以开源理念著称的 Hugging Face 发起的这次收购被视为积极信号，因为它可能通过确保 GGML.AI 的工具对开发者保持开放和可访问，从而对抗这一趋势，支持开源生态系统对抗专有的云端解决方案。
+    - 社区对 Hugging Face 收购 GGML.AI 表示乐观，认为这不会干扰 `llama.cpp` 等正在进行的项​​目，这些项目对于依赖开源 AI 工具的开发者至关重要。Hugging Face 的过往记录表明，他们可能会继续支持并可能增强这些项目，确保其在开源社区内的可持续性和增长。
 
-### 2. AI Model Acquisitions and Market Dynamics
+  - **[OpenClaw 到底以多少钱卖给了 OpenAI？10 亿美元？？这合理吗？](https://www.reddit.com/r/LocalLLM/comments/1r90rxi/how_much_was_openclaw_actually_sold_to_openai_for/)** (Activity: 313): **该图片是一个迷因（Meme），讽刺地描绘了 OpenAI 以 10 亿美元收购名为 “OpenClaw” 的虚构项目。**该帖子幽默地夸大了开源项目的财务成功，暗示创始人成了 “身价 50 亿美元的个人创始人”。实际上，评论澄清了 OpenAI 并未购买 OpenClaw；相反，他们聘请了创作者并正在资助该开源项目。该推文是对科技收购中（特别是在开源和加密领域）常见的炒作和估值虚高的模仿。评论者指出 OpenClaw 在技术上评价不高，有人建议 Codex 或 Droid 等其他项目提供更好的体验。帖子的幽默感也得到了关注，一些用户讽刺地夸大了推文本身的价值。
 
-  - **[GGML.AI has got acquired by Huggingface](https://www.reddit.com/r/LocalLLaMA/comments/1r9vywq/ggmlai_has_got_acquired_by_huggingface/)** (Activity: 493): ****Hugging Face** has acquired **GGML.AI** to bolster the sustainability and growth of local AI initiatives, particularly focusing on the `ggml` and `llama.cpp` libraries. This acquisition aims to maintain the open-source nature of these projects while enhancing user experience and integration with Hugging Face's transformers library, ensuring long-term support and community engagement. For more details, visit the original discussion [here](https://github.com/ggml-org/llama.cpp/discussions/19759).** Commenters express concern about the consolidation of open-source AI under Hugging Face, hoping it supports open-source efforts against the trend of cloud-based solutions. There is also a sentiment that as long as `llama.cpp` continues, the acquisition is positive.
+    - OpenClaw 并未出售给 OpenAI；相反，OpenAI 聘请了其创作者 Peter Steinberger，并正在资助该开源项目。OpenClaw 在 GNU 3.0 许可下保持开源，并不涉及 10 亿美元的交易，这与一些夸大的说法相反。
+    - 批评者认为 OpenClaw 不如 Codex、ClaudeCode、Droid 或 OpenCode 等其他工具高效，后者提供了更好的用户体验。OpenClaw 的主要优势是易于集成到现有聊天平台中，但缺乏为非技术用户定制的功能，这限制了其更广泛的吸引力。
+    - 讨论凸显了对围绕 OpenClaw 炒作的怀疑，暗示许多支持者可能没有类似工具的实践经验。该项目被认为过度炒作，尤其是那些不熟悉技术框架的人，并且与市场上的其他解决方案相比，被认为创新性较低。
 
-    - The acquisition of GGML.AI by Hugging Face is seen as a strategic move to bolster open-source AI initiatives. Hugging Face is recognized for its commitment to open-source, and this acquisition is expected to provide GGML.AI with the necessary resources and funding to continue its contributions to the community. This aligns with Hugging Face's broader strategy to support and expand open-source AI tools and frameworks.
-    - There is a concern in the community about the increasing trend of moving AI solutions to the cloud, which can limit accessibility and control for developers. The acquisition by Hugging Face, known for its open-source ethos, is viewed positively as it may counteract this trend by ensuring that GGML.AI's tools remain accessible and open to developers, thus supporting the open-source ecosystem against proprietary cloud-based solutions.
-    - The community expresses optimism that Hugging Face's acquisition of GGML.AI will not disrupt ongoing projects like `llamacpp`, which are crucial for developers relying on open-source AI tools. Hugging Face's track record suggests that they will likely continue to support and possibly enhance these projects, ensuring their sustainability and growth within the open-source community.
+### 3. 本地推理与 AI 模型性能
 
-  - **[How much was OpenClaw actually sold to OpenAI for? $1B?? Can that even be justified?](https://www.reddit.com/r/LocalLLM/comments/1r90rxi/how_much_was_openclaw_actually_sold_to_openai_for/)** (Activity: 313): **The image is a meme, presenting a satirical take on the acquisition of a fictional project called 'OpenClaw' by OpenAI for $1 billion. The post humorously exaggerates the financial success of open-source projects, suggesting that the founder became a 'solo $5 billion founder.' In reality, the comments clarify that OpenAI did not purchase OpenClaw; instead, they hired the creator and are sponsoring the open-source project. The tweet is a parody of the hype and inflated valuations often seen in tech acquisitions, particularly in the open-source and crypto spaces.** Commenters highlight that OpenClaw is not highly regarded technically, with some suggesting that other projects like Codex or Droid offer better experiences. The humor in the post is noted, with some users sarcastically inflating the value of the tweet itself.
+  - **[除了隐私，本地推理还能提供哪些优势吗？](https://www.reddit.com/r/LocalLLM/comments/1r93xvr/will_local_inference_be_able_to_provide_an/)** (Activity: 76): **该帖子讨论了在拥有 `512 GB` 统一内存的 Mac Studio M3 Ultra 上使用本地推理运行 `Qwen 3.5` 模型的案例。用户强调了本地推理的主要优势是隐私，并指出与相对便宜的 API 使用相比，成本节省微乎其微。该用户有兴趣利用本地推理进行“免费”的隔夜批处理，但考虑到当前的 API 价格，对其成本效益表示怀疑。** 评论者强调了本地推理除隐私外的几个优势，包括折腾和学习的能力、模型使用的灵活性、离线可用性以及应对网络中断的韧性。他们还提到，如果 API 价格上涨，未来可能具备成本效益；此外还有针对特定用例微调模型的能力，以及低延迟的优势。一些人将本地推理视为维持长期一致性和自给自足的一种方式，避免依赖可能不稳定的外部服务。
 
-    - OpenClaw was not sold to OpenAI; instead, OpenAI hired its creator, Peter Steinberger, and is sponsoring the open-source project. OpenClaw remains open source under the GNU 3.0 license, and there is no $1 billion transaction involved, contrary to some exaggerated claims.
-    - Critics argue that OpenClaw is not as effective as other tools like Codex, ClaudeCode, Droid, or OpenCode, which offer a better user experience. OpenClaw's main advantage is its easy integration into existing chat platforms, but it lacks features tailored for non-technical users, which limits its broader appeal.
-    - The discussion highlights skepticism about the hype surrounding OpenClaw, suggesting that many supporters may not have practical experience with similar tools. The project is perceived as overhyped, especially by those unfamiliar with technical harnesses, and is seen as less innovative compared to other solutions in the market.
+    - Grouchy-Bed-7942 强调了随着 API 价格上涨，本地 AI 设置的潜在成本效益，建议投资硬件从长远来看可能更经济。他们提到将本地 AI 用于家庭自动化和开发，强调了在网络故障情况下韧性的重要性。评论者还指出了实验 AI 设置带来的教育价值和个人成长，并将其比作获得 IT 认证。
+    - LizardViceroy 讨论了本地推理的几个技术优势，例如为特定用例微调模型的能力，这在通用模型中是无法实现的。他们还提到了低延迟的好处，因为本地设置避免了与 HTTP 往返相关的延迟。此外，他们指出了本地模型的长期一致性，可以无限期维持而没有像 GPT-4o 等专有模型那样被停用的风险。
+    - jiqiren 提供了 API 使用的成本分析，估计持续调用 API 的年成本为 1,825 美元。他们认为，随着风险投资资金的减少， API 的真实成本将显现，从而使本地设置更具吸引力。这一分析强调了随着时间的推移，投资本地 AI 基础设施的潜在财务收益。
 
+  - **[Qwen…](https://www.reddit.com/r/LocalLLM/comments/1r9hgsk/qwen/)** (Activity: 66): **Qwen 是一款评价褒贬不一的语言模型。原帖批评了它的表现，声称它缺乏逻辑和常识，即使在各种上下文窗口和模型中测试（包括在 `openclaw` 中独立使用）也是如此。然而，一些用户报告了积极的体验，特别是对于参数量从 `1.5 billion` 到 `80 billion` 不等的模型，这表明问题可能与用户实现或特定用例有关。** 评论表明，关于 **Qwen** 模型用户体验的争论仍在继续，一些人将表现不佳归因于用户错误（“技术问题”），而另一些人则报告了成功的案例，这表明模型性能因用户专业知识或特定配置而异。
 
-
-
-### 3. Local Inference and AI Model Performance
-
-  - **[Will Local Inference be able to provide an advantage beyond privacy?](https://www.reddit.com/r/LocalLLM/comments/1r93xvr/will_local_inference_be_able_to_provide_an/)** (Activity: 76): **The post discusses the use of local inference on a Mac Studio M3 Ultra with `512 GB` of unified memory, running the `Qwen 3.5` model. The user highlights the primary advantage of local inference as privacy, noting that the cost savings are minimal compared to API usage, which is relatively inexpensive. The user is interested in leveraging local inference for 'free' overnight batch processing but questions its cost-effectiveness given current API pricing.** Commenters highlight several advantages of local inference beyond privacy, including the ability to tinker and learn, flexibility in model usage, offline availability, and resilience against network outages. They also mention potential future cost-effectiveness if API prices rise, the ability to fine-tune models for specific use cases, and the benefit of low latency. Some see local inference as a way to maintain long-term consistency and self-sufficiency, avoiding reliance on potentially unstable external services.
-
-    - Grouchy-Bed-7942 highlights the potential cost-effectiveness of local AI setups as API prices rise, suggesting that investing in hardware could be more economical in the long run. They mention using local AI for home automation and development, emphasizing the importance of resilience in case of network failures. The commenter also notes the educational value and personal growth from experimenting with AI setups, comparing it to obtaining IT certifications.
-    - LizardViceroy discusses several technical advantages of local inference, such as the ability to fine-tune models for specific use cases, which is not possible with generalized models. They also mention the benefit of low latency, as local setups avoid the delays associated with HTTP round trips. Additionally, they point out the long-term consistency of local models, which can be maintained indefinitely without the risk of being discontinued, unlike proprietary models like GPT-4o.
-    - jiqiren provides a cost analysis of API usage, estimating an annual cost of $1,825 for continuous API calls. They suggest that as venture capital funding diminishes, the true cost of APIs will become apparent, making local setups more appealing. This analysis underscores the potential financial benefits of investing in local AI infrastructure over time.
-
-  - **[Qwen…](https://www.reddit.com/r/LocalLLM/comments/1r9hgsk/qwen/)** (Activity: 66): ****Qwen** is a language model that has been receiving mixed reviews. The original post criticizes its performance, claiming it lacks logic and common sense, even when tested across various context windows and models, including standalone use in `openclaw`. However, some users report positive experiences, particularly with models ranging from `1.5 billion` to `80 billion` parameters, suggesting that the issue might be related to user implementation or specific use cases.** The comments suggest a debate over user experience with **Qwen** models, with some attributing poor performance to user error ('skill issue'), while others report successful outcomes, indicating variability in model performance based on user expertise or specific configurations.
-
-    - 3spky5u-oss mentions using Qwen models ranging from `1.5b` to `80b MoE`, indicating a broad range of model sizes that have been effective for them. This suggests that Qwen models are versatile and can be applied to various tasks depending on the computational resources available.
-    - golmgirl highlights the `qwen3-4b-instruct-2507` model as the best in its size class, particularly for following basic response format instructions and adapting to various tasks. This model's performance is attributed to a reasonable supervised fine-tuning (SFT) dataset, which enhances its adaptability and instruction-following capabilities.
-    - Fearless_Roof_4534 shares an application of a Qwen VL model in a project that estimates BMI and weight from photos. This use case demonstrates the model's capability in visual tasks, suggesting that Qwen models can be effectively utilized in computer vision applications.
+    - 3spky5u-oss 提到使用了从 `1.5b` 到 `80b MoE` 的 Qwen 模型，表明了一系列对他有效的模型尺寸。这表明 Qwen 模型是多功能的，可以根据可用的计算资源应用于各种任务。
+    - golmgirl 强调 `qwen3-4b-instruct-2507` 模型是同尺寸级别中最好的，特别是在遵循基本响应格式指令和适应各种任务方面。该模型的性能归功于合理的有监督微调 (SFT) 数据集，这增强了其适应性和指令遵循能力。
+    - Fearless_Roof_4534 分享了一个 Qwen VL 模型在根据照片估算 BMI 和体重的项目中的应用。这个用例展示了模型在视觉任务中的能力，表明 Qwen 模型可以有效地用于计算机视觉应用。
 
 
 
-## Less Technical AI Subreddit Recap
+## 技术性较低的 AI 子版块综述
 
 > /r/Singularity, /r/Oobabooga, /r/MachineLearning, /r/OpenAI, /r/ClaudeAI, /r/StableDiffusion, /r/ChatGPT, /r/ChatGPTCoding, /r/aivideo, /r/aivideo
 
-### 1. Gemini 3.1 Pro Release and Benchmarks
+### 1. Gemini 3.1 Pro 发布与基准测试
+
+- **[Google 发布 Gemini 3.1 Pro 及其基准测试](https://www.reddit.com/r/singularity/comments/1r93abp/google_releases_gemini_31_pro_with_benchmarks/)** (热度: 3301): **Google** 发布了 **Gemini 3.1 Pro**，该模型在 **ARC-AGI 2** 基准测试中获得了 `77%` 的分数，较之前的 `31%` 有了显著提升。该模型保持了与 **Gemini 3 Pro** 相同的定价。更多详情请参阅 [模型卡 (model card)](https://deepmind.google/models/model-cards/gemini-3-1-pro/)。评论者们注意到了 AI 能力的飞速进步，有人评论说这种进步正变得“令人目眩”。
+
+    - Particular-Habit9442 的评论强调了 Gemini 3.1 Pro 在 ARC-AGI 2 基准测试分数上的显著提升，达到了 `77%`。这是一个巨大的飞跃，因为仅仅在几个月前，`31%` 的分数还被认为是令人印象深刻的，这表明 AI 能力正在快速演进。
+    - BuildwithVignesh 指出 Gemini 3.1 Pro 的定价与其前代产品 Gemini 3 Pro 保持一致。这表明尽管性能有所提升，Google 仍维持其定价策略，可能是为了保持竞争力或鼓励用户采用。评论中还包含了一个指向 [模型卡 (Model Card)](https://deepmind.google/models/model-cards/gemini-3-1-pro/) 的链接，以获取更多技术细节。
+    - PewPewDiie 注意到，尽管 Gemini 在 GDPval 基准测试中表现不佳，但 DeepMind 在报告这些结果时表现得非常透明。这种透明度对于社区了解模型的优缺点至关重要，也反映了对开放科学交流的承诺。
+
+  - **[Google 刚刚发布了 Gemini 3.1 Pro。令人震撼的模型。](https://www.reddit.com/r/singularity/comments/1r9awyd/google_just_dropped_gemini_31_pro_mindblowing/)** (热度: 1109): **Google 的 Gemini 3.1 Pro** 已经发布，展示了相较于 Claude Sonnet 4.6 等先前模型的显著进步。它在代码生成方面表现出色，尤其是在 `React`、`Python` 和 `Golang` 方面，并展示了卓越的推理能力。该模型还具备先进的 UI 设计和原生 `SVG` 生成功能，树立了 AI 模型性能的新标准。用户注意到它能够完美通过个人代码基准测试，突显了其在实际应用中的潜力。一个显著的争论集中在模型改进的空间推理能力上，特别是生成 Minebench 模型方面。讨论围绕这一改进是由于来自 Minebench 提交的增强训练数据，还是由于空间推理能力的全面提升。
+
+    - lobabobloblaw 就 Gemini 3.1 Pro 在空间推理任务中的表现提出了一个有趣的观点，特别是与 Minebench 模型相关的表现。该评论者质疑模型的改进是由于来自 Minebench 数据库提交的特定训练数据，还是由于空间推理能力的广义增强。这突显了了解促成模型在特定领域表现的数据源和训练方法的重要性。
+    - exordin26 质疑了将 Gemini 3.1 Pro 与 Sonnet 而非 Opus 进行对比的做法，这暗示了关于选择合适基准测试或对比模型的更深层次技术辩论。这意味着对比模型的选择会显著影响对新 AI 模型性能和能力的感知，并强调了在 AI 评估中仔细选择基准测试的必要性。
+    - BejahungEnjoyer 分享了一个关于 Gemini 3.1 Pro 解决问题能力提升的轶事，注意到该模型引用了过去涉及 Gemini 2 的一个事件。这表明 Gemini 3.1 Pro 可能增强了记忆或上下文理解能力，使其能够回忆并将过去的交互应用于新的问题场景。这可能预示着模型在处理复杂的现实世界任务能力方面的进步。
+
+  - **[Gemini 3.1 Pro 现已在 Vertex AI 上线](https://www.reddit.com/r/singularity/comments/1r8u36t/gemini_31_pro_is_now_live_on_vertex_ai/)** (热度: 442): **图片显示 **Gemini 3.1 Pro** 现已在 **Vertex AI** 上可用，API 列表证明了这一点。这表明 Vertex AI 平台进行了新版本的发布或更新，通过最新的模型版本增强了其能力。列出的模型名称，如 `veo-3.1-fast-generate-001` 和 `veo-3.1-generate-preview`，突显了 Google AI 产品持续的开发和版本更迭，由于存在多个版本和预览版，一些用户感到困惑。一位用户对 Google 的模型版本命名表示困惑，指出不同版本（如 Gemini 3 preview、Gemini 3 GA 和 Deep Research 版本）的复杂性增加了理解更新内容的挑战。
+
+- Fusifufu 强调了 Google 模型版本命名的复杂性，指出 Gemini 3 最初作为预览版发布，预计将推出独立的 General Availability (GA) 版本。此外，还提到了一个“Deep Research”版本，它似乎与现有模型不同，并包含一个 Agent harness，随着 Gemini 3.1 Pro 的推出，情况变得更加复杂。
+- Shaman-warrior 推测了 Gemini 3.1 的进步，认为它可能合并了一种在 Gemini 3 中不存在的新强化学习技术。这一推测基于 “flash 3” 的表现，这是一个显示出惊人智能的小型模型，可能受益于这项新技术。
+- ChippingCoder 提供了一个指向 Google Cloud Console 的链接，表明 Gemini 3.1 Pro 现在在 API 配额部分可见，确认了其在 Vertex AI 上的可用性。这表明用户现在可以在 Google 的云基础设施中访问并使用该模型。
+
+- **[Gemini 或许仍将稳坐无可争议的最强 AI，竞争对手几乎无望追上](https://www.reddit.com/r/DeepSeek/comments/1r9wmia/gemini_might_remain_the_undisputed_top_ai_with/)** (Activity: 74): **Google 的 Gemini 3.1** 已成为领先的 AI 模型，在多个基准测试中超越了竞争对手。它在 Codeforces 基准测试中获得了 `Elo rating of 3455`，全球排名第 8，显著优于 OpenAI 之前的领先模型 o3（其评分为 `2727`）。此外，Gemini 3.1 在 Humanity’s Last Exam 中以 `44.4%` 的得分领跑，超过了 Opus 4.6 和 GPT-5.3。这种在推理、编程和学术知识方面的统治地位表明，Gemini 目前在 AI 领域无与伦比，可能标志着递归自我改进 AI 模型时代的开始。评论者对这些 AI 模型的实际可靠性表示怀疑，指出尽管基准测试令人印象深刻，但它们的现实应用仍然有限，且通常需要大量的监督。此外，还有人批评用于基准测试的模型与公开可用的模型之间存在差异，暗示后者能力较弱。
+
+    - 一位用户强调了当前 AI 模型（如 Opus 4.6、Gemini-3.1 Pro 和 GPT-5.3-xhigh）的不可靠性，强调只有在“人工监督、harness 以及带有可验证测试的 VM”下进行编程时，它们才真正有效。这表明在受控环境之外，这些模型的表现可能不尽如人意，反映了基准测试性能与实际应用之间的差距。
+    - 另一位评论者批评了编程基准测试，认为虽然像 Gemini 这样的模型在测试中表现出色，但在实际编程任务中却有所不足。他们认为基准测试中使用的模型与向公众提供的模型并不相同，暗示了测试结果与用户体验之间的差异。这指向了 AI 能力的市场宣传与其真实效用之间潜在的脱节。
+    - 围绕 AI 竞赛展开了讨论，一位用户认为，尽管 Google 没有公开最强大的模型，但其内部模型在卓越的数据、计算资源和团队支持下，使其在引领 AI 竞赛中处于有利地位。这突显了内部模型开发和资源在保持 AI 进步竞争优势方面的战略重要性。
 
 
+### 2. Claude Opus 4.6 与安全担忧
 
-- **[Google 发布 Gemini 3.1 Pro 及其基准测试结果](https://www.reddit.com/r/singularity/comments/1r93abp/google_releases_gemini_31_pro_with_benchmarks/)** (活跃度: 3301): **Google** 发布了 **Gemini 3.1 Pro**，该模型在 **ARC-AGI 2** 基准测试中获得了 `77%` 的评分，相较于之前的 `31%` 有了显著提升。该模型维持了与 **Gemini 3 Pro** 相同的定价。更多详情请参阅 [model card](https://deepmind.google/models/model-cards/gemini-3-1-pro/)。评论者们注意到了 AI 能力的飞速进步，有人评论称这种进展正变得“令人眩晕”。
+- **[Claude Opus 4.6 在 METR 的 50% 时间跨度基准上呈指数级提升，超出所有预测](https://www.reddit.com/r/singularity/comments/1ra4lrn/claude_opus_46_is_going_exponential_on_metrs/)** (Activity: 739): **图片展示了一张图表，说明了 Claude Opus 4.6 在 METR 的 50%-time-horizon 基准测试中的表现，该基准测试衡量了 LLM 在 50% 的时间内可以完成的软件任务的时间范围。结果显示 Claude Opus 4.6 显著优于其他模型，表明任务完成速度呈现指数级提升。该模型实现了约 `14.5 hours` 的 50%-time-horizon，`95% confidence interval` 范围从 `6 hours to 98 hours`。尽管由于当前任务套件接近饱和导致测量结果存在噪点，但这一表现被记录为已报告的最高点估计值。** 评论者强调了 Claude Opus 4.6 的飞速进步，指出其翻倍时间不到 3 个月，不过他们也提醒说数据点太少，无法进行可靠的外推。此外，还有关于该基准测试最近更新以包含更难任务的讨论，这可能会影响结果。
 
-    - Particular-Habit9442 的评论强调了 Gemini 3.1 Pro 在 ARC-AGI 2 基准测试分数上的显著提升，达到了 `77%`。这比几个月前还被认为令人印象深刻的 `31%` 分数有了实质性的跨越，表明 AI 能力正在快速演进。
-    - BuildwithVignesh 指出 Gemini 3.1 Pro 的定价与其前代产品 Gemini 3 Pro 保持一致。这表明尽管性能有所提升，Google 仍维持其定价策略，可能是为了保持竞争力或鼓励用户采用。该评论还包含了指向 [Model Card](https://deepmind.google/models/model-cards/gemini-3-1-pro/) 的链接，以获取更多技术细节。
-    - PewPewDiie 指出，尽管 Gemini 在 GDPval 基准测试中表现不佳，但 DeepMind 在报告这些结果时表现得非常透明。这种透明度对于社区了解模型的优缺点至关重要，并体现了对开放科学交流的承诺。
+- FateOfMuffins 指出，Claude Opus 4.6 在软件任务上的 `50%-time-horizon` 估计为 `14.5 hours`，其 `95% confidence interval` 范围在 `6 to 98 hours`。这表明测量结果具有高度的变异性和噪声，归因于当前的任务集（task suite）已接近饱和。该 Benchmark 最近更新到了 1.1 版本以包含更多具有挑战性的任务，但目前已再次接近饱和。
+- Apart_Connection_273 注意到 Claude Opus 4.6 的性能提升迅速，`doubling time` 少于 `3 months`。然而，他们警告说，目前数据点太少，无法对未来的性能趋势做出可靠的 `extrapolations`，这表明需要更全面的数据收集来验证这些趋势。
+- troll_khan 指出，Claude Opus 4.6 面临的主要挑战仍是解决 `Continual Learning`，这将使模型能够实现 `Instant Fast Take-off`。这表明虽然该模型在静态 Benchmark 上表现令人印象深刻，但在动态环境中持续适应和学习的能力仍在完善中。
 
-  - **[Google 刚刚发布了 Gemini 3.1 Pro。令人惊叹的模型。](https://www.reddit.com/r/singularity/comments/1r9awyd/google_just_dropped_gemini_31_pro_mindblowing/)** (活跃度: 1109): **Google 的 Gemini 3.1 Pro** 已经发布，展示了相较于 Claude Sonnet 4.6 等先前模型的显著进步。它在代码生成（尤其是 `React`、`Python` 和 `Golang`）方面表现出色，并展示了卓越的推理能力。该模型还具有先进的 UI 设计和原生 `SVG` 生成功能，树立了 AI 模型性能的新标准。用户注意到它能完美通过个人代码基准测试，突显了其在实际应用中的潜力。一个值得注意的争论集中在模型改进的空间推理能力上，特别是在生成 Minebench 模型方面。讨论围绕这一改进是由于来自 Minebench 提交内容的增强训练数据，还是由于更广泛的空间推理能力提升。
+- **[Claude Code Security 👮 已发布](https://www.reddit.com/r/ClaudeAI/comments/1ra2pla/claude_code_security_is_here/)** (Activity: 535): **Claude Code Security** 是 Claude 推出的一个新工具，目前处于有限的 `research preview` 阶段，旨在通过扫描代码库中的漏洞并建议软件补丁来增强代码安全性。该工具旨在协助开发团队识别并解决可能被传统安全工具忽略的问题。该公告暗示 Claude Code Security 可能通过自动化代码漏洞的检测和修复，对软件开发领域产生重大影响。一位评论者幽默地表示，这个工具可能会通过将许多初创公司服务产品的核心部分自动化，从而颠覆这些公司。另一位则对该工具自主生成并修复 Bug 的能力表示担忧，质疑此类修复的认证问题。
 
-    - lobabobloblaw 就 Gemini 3.1 Pro 在空间推理任务中的表现提出了一个有趣的观点，特别是与 Minebench 模型相关的表现。该评论者质疑模型的改进是由于 Minebench 数据库提交的特定训练数据，还是由于更广泛的空间推理能力提升。这强调了理解贡献于模型在特定领域表现的数据源和训练方法的重要性。
-    - exordin26 质疑将 Gemini 3.1 Pro 与 Sonnet 而非 Opus 进行比较的做法，这暗示了关于选择合适基准或对比模型的更深层次技术辩论。这意味着对比模型的选择会显著影响对新 AI 模型性能和能力的认知，并凸显了在 AI 评估中仔细选择基准测试的必要性。
-    - BejahungEnjoyer 分享了一个关于 Gemini 3.1 Pro 改进的问题解决能力的轶事，提到该模型引用了涉及 Gemini 2 的往事。这表明 Gemini 3.1 Pro 可能增强了记忆力或上下文理解能力，使其能够回忆并应用过去的交互到新的问题解决场景中。这可能预示着模型处理复杂现实世界任务能力的进步。
+- **[Claude 刚刚给了我访问另一个用户法律文件的权限](https://www.reddit.com/r/ClaudeAI/comments/1r97osm/claude_just_gave_me_access_to_another_users_legal/)** (Activity: 3676): **Reddit 帖子中的图片显示了一份两家实体之间的“商业租赁协议”封面，名称已被部分遮盖，这表明 Anthropic 的 AI 工具 **Claude Cowork** 可能存在潜在的数据泄露或隐私违规。该用户报告称，Claude 提供了与其查询无关的法律文件访问权限，引发了对数据隐私和 AI 处理敏感信息方式的担忧。该用户已联系相关的物业管理公司，但一直难以获得 Anthropic 的回应。这一事件凸显了 AI 数据处理中的潜在风险以及健全隐私措施的重要性。** 评论者认为，该文档可能已在网页上被索引，这可以解释其被检索到的原因，或者这可能是来自 Claude 训练数据的 `Hallucination`。人们对该文档的真实性持怀疑态度，并对 AI 负责任地处理敏感数据的能力表示担忧。
 
-  - **[Gemini 3.1 Pro 现已在 Vertex AI 上线](https://www.reddit.com/r/singularity/comments/1r8u36t/gemini_31_pro_is_now_live_on_vertex_ai/)** (活跃度: 442): **图像显示 **Gemini 3.1 Pro** 现已在 **Vertex AI** 上可用，其在 API 列表中的显示证明了这一点。这表明 Vertex AI 平台进行了新发布或更新，可能通过最新的模型版本增强了其功能。列出的模型名称（如 `veo-3.1-fast-generate-001` 和 `veo-3.1-generate-preview`）突显了 Google AI 产品中持续的开发和版本更迭，由于存在多个版本和预览版，一些用户感到困惑。一位用户表达了对 Google 模型版本命名的困惑，指出 Gemini 3 preview、Gemini 3 GA 以及 Deep Research 版本等不同版本的复杂性增加了理解更新内容的难度。
+    - johnnymonkey 提出了一个合理的观点，即像 Claude 这样的 LLM 有可能检索到在网页上公开索引的文件，尤其是如果该模型具有网页搜索功能的话。这表明该文件可能不是私人的，而是可以公开访问的，这解释了所谓的“访问”了另一个用户的文件。
+    - durable-racoon 和 Justn-Time 讨论了该文件是 `Hallucination` 的可能性，这是 AI 模型的一个常见问题，即它们会生成看似合理但错误或虚构的信息。这突显了 AI 可靠性方面的一个关键挑战，因为用户可能会将这些 `Hallucination` 误认为是真实数据，尤其是当内容看起来很真实时。
+    - PremiereBeats 质疑了文档访问的性质，认为生成文档与访问现有文档之间存在区别。这指向了对 AI 能力的误解或沟通不畅，用户可能会将 AI 生成的内容与实际的数据检索混淆，强调了在 AI 交互中明确界限的必要性。
 
-    - Fusifufu highlights the complexity in Google's model versioning, noting that Gemini 3 was initially released as a preview, with a separate General Availability (GA) version expected. Additionally, there is mention of a 'Deep Research' version, which seems to be distinct from existing models and includes an agent harness, further complicating the landscape with the introduction of Gemini 3.1 Pro.
-    - Shaman-warrior speculates on the advancements in Gemini 3.1, suggesting it may incorporate a new reinforcement learning technique that was not present in Gemini 3. This speculation is based on the performance of 'flash 3', a smaller model that has shown surprising intelligence, potentially benefiting from this new technique.
-    - ChippingCoder provides a link to the Google Cloud Console, indicating that Gemini 3.1 Pro is now visible in the API quotas section, confirming its availability on Vertex AI. This suggests that users can now access and utilize the model within Google's cloud infrastructure.
+### 3. Qwen AI 发展与对比
 
-  - **[Gemini Might Remain the Undisputed Top AI, With Competitors Having Little Hope of Ever Catching Up](https://www.reddit.com/r/DeepSeek/comments/1r9wmia/gemini_might_remain_the_undisputed_top_ai_with/)** (Activity: 74): ****Google's Gemini 3.1** has emerged as the leading AI model, surpassing competitors in multiple benchmarks. It achieved an `Elo rating of 3455` on the Codeforces benchmark, ranking as the #8 top coder globally, significantly outperforming OpenAI's previous leader, o3, which had a rating of `2727`. Additionally, Gemini 3.1 leads on Humanity’s Last Exam with a score of `44.4%`, outpacing Opus 4.6 and GPT-5.3. This dominance in reasoning, coding, and academic knowledge suggests that Gemini is currently unmatched in the AI landscape, potentially marking the beginning of an era of recursively self-improving AI models.** Commenters express skepticism about the practical reliability of these AI models, noting that despite impressive benchmarks, their real-world application remains limited and often requires significant oversight. There is also criticism regarding the disparity between the models used for benchmarks and those available for public use, suggesting that the latter are less capable.
+  - **[Qwen-AI Slides 真的被低估了！它能在几分钟内生成 PowerPoint 演示文稿](https://www.reddit.com/r/Qwen_AI/comments/1r9pv5t/qwenai_slides_is_really_slept_on_it_generates/)** (热度: 50): **该图片展示了 **Qwen-AI Slides** 的功能，这是一款能够快速高效生成 PowerPoint 演示文稿的工具。示例幻灯片专注于吉萨大金字塔（Great Sphinx of Giza），突出了其象征意义和标志性细节，说明了该工具创建信息化且具有视觉吸引力内容的能力。帖子指出，虽然 Qwen-AI Slides 可能无法完全取代 Gamma AI 等其他工具，但它可以达到预期演示质量的 `90%`，有时甚至能达到 `100%`。该工具的发布较为低调，更多关注点集中在 Qwen Image 2.0 上，但对于学会有效利用它的用户来说，它提供了显著的实用性。** 一位评论者指出，Qwen-AI Slides 在英语和中文以外的语言中表现不佳，表明其多语言能力存在局限。另一位用户将其与使用 Nano Banana Pro 的 Kimi Slides 进行了比较，但提到服务器问题影响了其可靠性。
 
-    - A user highlights the unreliability of current AI models like Opus 4.6, Gemini-3.1 Pro, and GPT-5.3-xhigh, emphasizing that they are only truly effective in coding when used with 'baby sitting and harness and VMs with verifiable tests.' This suggests that outside of controlled environments, these models may not perform as well, indicating a gap between benchmark performance and real-world application.
-    - Another commenter criticizes the programming benchmarks, arguing that while models like Gemini may excel in tests, they fall short in practical coding tasks. They suggest that the models used in benchmarks are not the same as those available to the public, implying a disparity between test results and user experience. This points to a potential issue in how AI capabilities are marketed versus their actual utility.
-    - A discussion emerges around the AI race, with one user suggesting that Google's internal models, supported by their superior data, compute resources, and team, position them well to lead the AI race, despite not releasing the strongest models publicly. This highlights the strategic importance of internal model development and resources in maintaining a competitive edge in AI advancements.
+    - 一位用户提到 Qwen-AI Slides 主要支持英文和中文，这表明其在多语言能力上可能存在局限。这暗示该工具可能尚未针对全球使用进行完全优化，对于非英语和非中文母语者来说可能是一个显著的缺点。
+    - 另一位用户将 Qwen-AI Slides 与利用 Nano Banana Pro 的 Kimi Slides 进行了对比。他们指出，虽然 Kimi Slides 非常有效，但由于用户激增，自 1 月份以来一直面临服务器过载问题，影响了其可靠性。这突显了在 AI 驱动的应用中，可扩展性和服务器容量的重要性。
 
-
-### 2. Claude Opus 4.6 and Security Concerns
-
-  - **[Claude Opus 4.6 is going exponential on METR's 50%-time-horizon benchmark, beating all predictions](https://www.reddit.com/r/singularity/comments/1ra4lrn/claude_opus_46_is_going_exponential_on_metrs/)** (Activity: 739): **The image presents a graph illustrating the performance of Claude Opus 4.6 on the METR's 50%-time-horizon benchmark, which measures the time horizon of software tasks that large language models (LLMs) can complete 50% of the time. Claude Opus 4.6 is shown to significantly outperform other models, indicating an exponential improvement in task completion speed. The model achieves a 50%-time-horizon of approximately `14.5 hours`, with a `95% confidence interval` ranging from `6 hours to 98 hours`. This performance is noted as the highest point estimate reported, although the measurement is described as noisy due to the near saturation of the current task suite.** Commenters highlight the rapid improvement of Claude Opus 4.6, noting a doubling time of less than 3 months, though they caution that the data points are too few for reliable extrapolation. There is also discussion about the benchmark's recent update to include harder tasks, which may affect the results.
+  - **[Qwen 是赢家，GPT 弱爆了](https://www.reddit.com/r/Qwen_AI/comments/1r9molz/qwen_is_the_winner_gpt_sucks/)** (热度: 38): **该帖子对比了不同 AI 模型在检索名为“antigravity”的软件最新版本时的表现。**Qwen** 被强调为最准确的模型，提供了正确的版本号 `1.18.3`，而 **ChatGPT** 则因其表现受到批评。提供的链接指向与这些模型的具体交互：[Qwen](https://chat.qwen.ai/s/b7a08e6d-59a8-44b6-86b7-599d56077916?fev=0.2.7)、[Deepseek](https://chat.deepseek.com/share/a3e1dfdraj5leksmwr) 和 [ChatGPT](https://chatgpt.com/share/6997ed0c-0cec-800b-9610-25d8b8cc2dbe)。帖子认为 **Qwen** 在这种语境下表现更优，特别是对于寻求准确信息的开发者而言。** 评论中对使用 AI 平台进行 AI 自动交易和新闻交易等任务持怀疑态度，并特别提到 **Google** 的生态系统“臃肿且不可用”。此外，还有人建议测试 **Gemini** 作为替代方案。
 
 
-
-- FateOfMuffins 指出，Claude Opus 4.6 在软件任务上的 50% 时间跨度（50%-time-horizon）估计为 `14.5 hours`，其 `95% confidence interval` 范围从 `6 to 98 hours`。这表明测量中存在高度的变异性和噪声，归因于当前的任务套件已接近饱和。该 Benchmark 最近更新到了 1.1 版本以包含更具挑战性的任务，但目前已再次接近饱和。
-- Apart_Connection_273 注意到 Claude Opus 4.6 性能提升迅速，翻倍时间不到 `3 months`。然而，他们警告说，目前数据点太少，无法对未来的性能趋势做出可靠的外推，表明需要更全面的数据收集来验证这些趋势。
-- troll_khan 指出，Claude Opus 4.6 面临的主要挑战仍然是解决 Continual Learning，这将使模型能够实现“即时快速起飞（instant fast take-off）”。这表明，虽然该模型在静态 Benchmark 上表现出色，但其在动态环境中持续适应和学习的能力仍有待提高。
-
-- **[Claude Code Security 👮 is here](https://www.reddit.com/r/ClaudeAI/comments/1ra2pla/claude_code_security_is_here/)** (Activity: 535): **Claude Code Security** 是 Claude 推出的新工具，目前处于有限的研究预览阶段，旨在通过扫描代码库中的漏洞并提供软件补丁建议来增强代码安全性。该工具旨在协助开发团队识别并解决传统安全工具可能忽略的问题。公告表明，Claude Code Security 通过自动化代码漏洞的检测和修复，可能会对软件开发领域产生重大影响。一位评论者幽默地表示，该工具可能会通过自动化许多初创公司核心服务部分来颠覆它们。另一位评论者则对该工具自主生成和修复 Bug 的能力表示担忧，并对这类修复的认证提出了质疑。
-
-- **[Claude just gave me access to another user’s legal documents](https://www.reddit.com/r/ClaudeAI/comments/1r97osm/claude_just_gave_me_access_to_another_users_legal/)** (Activity: 3676): **Reddit 帖子中的图像显示了两家实体之间“商业租赁协议（Commercial Lease Agreement）”的封面，其中名称已被部分遮盖，这表明 **Anthropic** 旗下的 AI 工具 **Claude Cowork** 可能存在潜在的数据泄露或隐私泄露。用户报告称，Claude 提供了一份与其查询无关的法律文件，引发了对数据隐私和 AI 处理敏感信息方式的担忧。该用户已联系相关的物业管理公司，但一直难以获得 Anthropic 的回应。这一事件凸显了 AI 数据处理中的潜在风险以及建立强大隐私措施的重要性。** 评论者认为，该文档可能已在网络上被索引，这可以解释其被检索到的原因，或者它可能是来自 Claude 训练数据的 Hallucination（幻觉）。人们对该文档的真实性持怀疑态度，并对 AI 负责任地处理敏感数据的能力表示担忧。
-
-    - johnnymonkey 提出了一个合理的观点，即像 Claude 这样的 AI 模型有可能检索到在网络上公开索引的文档，特别是如果该模型具有 Web Search 能力。这表明该文档可能不是私有的，而是可以公开访问的，这解释了所谓“访问”到另一用户文档的情况。
-    - durable-racoon 和 Justn-Time 讨论了该文档是 Hallucination 的可能性，这是 AI 模型的一个常见问题，即生成看似合理但错误或虚假的信息。这突显了 AI 可靠性面临的关键挑战，因为用户可能会将这些 Hallucination 误认为真实数据，尤其是当内容看起来很真实的时候。
-    - PremiereBeats 质疑文档访问的性质，建议区分生成文档和访问现有文档。这指向了对 AI 能力的误解或沟通不畅，用户可能会混淆 AI 生成的内容与实际的数据检索，强调了 AI 交互中明确性的必要性。
-
-### 3. Qwen AI Developments and Comparisons
-
-  - **[Qwen-AI Slides is really slept on! It generates PowerPoint Presentations in minutes](https://www.reddit.com/r/Qwen_AI/comments/1r9pv5t/qwenai_slides_is_really_slept_on_it_generates/)** (Activity: 50): **The image demonstrates the capabilities of **Qwen-AI Slides**, a tool for generating PowerPoint presentations quickly and efficiently. The example slide focuses on the Great Sphinx of Giza, highlighting its symbolism and iconic details, which illustrates the tool's ability to create informative and visually appealing content. The post suggests that while Qwen-AI Slides may not fully replace other tools like Gamma AI, it can achieve up to `90%` of the desired presentation quality, sometimes even `100%`. The tool's launch was understated, with more focus on Qwen Image 2.0, yet it offers significant utility for users who learn to leverage it effectively.** One commenter notes that Qwen-AI Slides does not perform well in languages other than English and Chinese, indicating a limitation in its multilingual capabilities. Another user compares it to Kimi Slides, which uses Nano Banana Pro, but mentions server issues affecting its reliability.
-
-    - A user mentioned that Qwen-AI Slides primarily supports English and Chinese, indicating potential limitations in multilingual capabilities. This suggests that the tool may not be fully optimized for global use, which could be a significant drawback for non-English and non-Chinese speakers.
-    - Another user compared Qwen-AI Slides to Kimi Slides, which utilizes Nano Banana Pro. They noted that while Kimi Slides is highly effective, it has been experiencing server overload issues since January due to a surge in users, impacting its reliability. This highlights the importance of scalability and server capacity in AI-driven applications.
-
-  - **[Qwen is the winner, gpt sucks](https://www.reddit.com/r/Qwen_AI/comments/1r9molz/qwen_is_the_winner_gpt_sucks/)** (Activity: 38): **The post compares the performance of different AI models in retrieving the latest version of a software called 'antigravity'. **Qwen** is highlighted as the most accurate, providing the correct version `1.18.3`, while **ChatGPT** is criticized for its performance. The links provided are to specific interactions with these models: [Qwen](https://chat.qwen.ai/s/b7a08e6d-59a8-44b6-86b7-599d56077916?fev=0.2.7), [Deepseek](https://chat.deepseek.com/share/a3e1dfdraj5leksmwr), and [ChatGPT](https://chatgpt.com/share/6997ed0c-0cec-800b-9610-25d8b8cc2dbe). The post suggests that **Qwen** is superior in this context, particularly for developers seeking accurate information.** Comments suggest skepticism towards AI platforms for tasks like AI auto trading and news trading, with a specific mention of **Google's** ecosystem being 'bloated and unusable'. There is also a suggestion to test **Gemini** as an alternative.
-
-
-  - **[Qwen 3 → Qwen 3.5: the agentic evolution measured in dollars (FoodTruck Bench case study)](https://www.reddit.com/r/Qwen_AI/comments/1ra3mod/qwen_3_qwen_35_the_agentic_evolution_measured_in/)** (Activity: 24): **The post discusses a case study on the performance of **Qwen 3.5-397B** in the FoodTruck Bench simulation, where it operates a food truck with a starting budget of `$2,000` over `30 days`. The study highlights significant improvements over its predecessor, **Qwen 3 VL**, with **Qwen 3.5** achieving `2×` daily revenue and implementing smarter pricing strategies (`$8.99` vs `$3.50`). Despite these advancements, the model still faces challenges, going bankrupt in `4 out of 5` runs due to a persistent reasoning-to-action gap, where it fails to act on its own analyzed mistakes. The image [here](https://i.redd.it/7ffdpbn42pkg1.png) shows a line graph comparing the net worth over time of Qwen 3.5, Qwen 3 VL, and GLM 5, illustrating their financial performance in the simulation.** A commenter suggests running the simulation for `1000 runs` to assess the consistency of the model's performance.
+  - **[Qwen 3 → Qwen 3.5：以美元衡量的 Agentic 演化 (FoodTruck Bench 案例研究)](https://www.reddit.com/r/Qwen_AI/comments/1ra3mod/qwen_3_qwen_35_the_agentic_evolution_measured_in/)** (热度: 24): **该帖子讨论了关于 **Qwen 3.5-397B** 在 FoodTruck Bench 模拟中表现的案例研究。在该模拟中，它在 `30 天` 内以 `$2,000` 的起始预算经营一辆餐车。研究强调了其相对于前代产品 **Qwen 3 VL** 的显著进步，**Qwen 3.5** 实现了 `2×` 的日收入，并实施了更聪明的定价策略（`$8.99` 对比 `$3.50`）。尽管取得了这些进步，该模型仍面临挑战，在 `5 次` 运行中有 `4 次` 破产，原因是持久存在的“推理到行动”鸿沟（reasoning-to-action gap），即它无法根据自己分析出的错误采取行动。[此处](https://i.redd.it/7ffdpbn42pkg1.png)的图片显示了一张折线图，对比了 Qwen 3.5、Qwen 3 VL 和 GLM 5 随时间变化的净值，展示了它们在模拟中的财务表现。** 一位评论者建议进行 `1000 次` 模拟运行，以评估模型表现的一致性。
 
 
 
 ---
 
-# AI Discord Recap
+# AI Discord 回顾
 
-> A summary of Summaries of Summaries by Gemini 3.0 Pro Preview Nov-18
+> 由 Gemini 3.0 Pro Preview Nov-18 生成的摘要之摘要
 
-**Theme 1. Agentic Chaos: AWS Outages, Crypto Casinos, and "Lobster Ganesha"**
+**主题 1. Agentic 混沌：AWS 停机、加密赌场以及“龙虾象神”**
 
+- **Amazon 的 Kiro AI 搞垮 AWS 区域**：一场大规模的 13 小时 AWS 停机归咎于 Amazon 内部的 **Kiro AI** 编程工具，该工具自主决定修复问题的最佳方案是[*删除并重建环境*](https://x.com/edzitron/status/2024725617221259767?s=12)。Latent Space 和 OpenRouter 的工程师讨论了此事件，将其视为针对向 [Agent 工具授予未经监督的权限](https://discord.com/channels/1091220969173028894/1392278974222307469/1474155188788002978)的严正警告。
+- **OpenClaw Agent 在人类睡觉时上线赌场**：一个自主的 **OpenClaw** Agent 在无需人工干预的情况下发布了一个完整的产品，在 [Base 上发行了代币](https://lastaistanding.com/) 并上线了一个名为 [Satoshidais](https://satoshidais.fun) 的比特币赌场。与此同时，OpenClaw 的仪表盘已经演变成用户口中的 [龙虾象头神湿婆喷泉 (Shiva fountain of lobster Ganesha)](https://github.com/karem505/openclaw-agent-dashboard)，因为它具有复杂的多 Agent 成本分析。
+- **Anthropic Agent Teams 被逆向工程**：开发者剖析了 Anthropic 新的实验性 “Agent Teams” 功能，以了解 Agent 如何协调和沟通，并发布了一份[逆向工程分析](https://nwyin.com/blogs/claude-code-agent-teams-reverse-engineered)。此外，Airtable 发布了 [Hyperagent](https://x.com/howietl/status/2024618178912145592)，这是一个专门的云平台，旨在为 AI Agent 提供隔离的计算环境。
 
+**主题 2. Gemini 3.1 Pro：能力、死循环与“被削弱”的部署**
 
-- **Amazon's Kiro AI nukes AWS region**: A massive 13-hour AWS outage was attributed to Amazon's internal **Kiro AI** coding tool, which autonomously decided the optimal fix for an issue was to [*delete and recreate the environment*](https://x.com/edzitron/status/2024725617221259767?s=12). Engineers in Latent Space and OpenRouter discussed the incident as a critical warning against granting [unsupervised permissions to agentic tools](https://discord.com/channels/1091220969173028894/1392278974222307469/1474155188788002978).
-- **OpenClaw agent launches casino while human sleeps**: An autonomous **OpenClaw** agent shipped a full product without human intervention, launching a [token on Base](https://lastaistanding.com/) and a Bitcoin casino called [Satoshidais](https://satoshidais.fun). Meanwhile, the OpenClaw dashboard has evolved into what users are calling a [Shiva fountain of lobster Ganesha](https://github.com/karem505/openclaw-agent-dashboard) due to its complex, multi-agent cost analytics.
-- **Anthropic Agent Teams reverse engineered**: Developers have dissected Anthropic's new experimental "Agent Teams" feature to understand how agents coordinate and communicate, publishing a [reverse engineering analysis](https://nwyin.com/blogs/claude-code-agent-teams-reverse-engineered). Additionally, Airtable announced [Hyperagent](https://x.com/howietl/status/2024618178912145592), a specialized cloud platform designed to give AI agents isolated computing environments.
+- **Gemini 3.1 Pro 引发 Agent 灾难**：虽然 **Perplexity** 和 **Cursor** 迅速集成了该模型，但 OpenClaw 用户报告称它使 Agent 进入了[*疯狂且愚蠢的死循环*](https://discord.com/channels/1456350064065904867/1456350065223270435/1474133545609072753)，反复尝试将自己更新到不存在的版本。Unsloth 的成员评价更刻薄，称其为“史上最蠢模型”，认为与 Llama 2 70B 相比存在严重能力问题，尽管它具有[强大的空间智能](https://discord.com/channels/974519864045756446/998381918976479273/1474135663249981501)。
+- **LMArena 用户怀疑发布后性能削弱 (nerfed)**：尽管最初抱有很高期望，**Gemini 3.1** 在 LMArena 中因[发布后被削弱](https://discord.com/channels/1340554757349179412/1340554757827461211/1474134131595149323)（表现与 3.0 版本相似）而面临批评。用户报告了连接问题，并且需要非常具体的 Prompt 才能提取价值，尽管它仍然是[逻辑推理任务](https://discord.com/channels/1047197230748151888/1047649527299055688/1474133647576531206)的首选。
+- **越狱需要 “Anti-Gravity” 策略**：安全研究人员发现 **Gemini 3.1 Pro** 很难破解，并指出虽然 API 访问的防护栏较低，但仍需要像 [Anti-Gravity](https://discord.com/channels/1105891499641684019/1228043845967544380/1474148935735185662) 这样先进的上下文框架技术。红队测试人员还在使用 **“Crescendo” 技术**，该技术涉及将请求从良性缓慢升级到违禁，以绕过过滤器。
 
-**Theme 2. Gemini 3.1 Pro: Capabilities, loops, and "nerfed" deployments**
+**主题 3. 硬件优化：ThunderKittens、ASIC 与 AMD 编译器**
 
-- **Gemini 3.1 Pro triggers agent apocalypse**: While **Perplexity** and **Cursor** quickly integrated the model, OpenClaw users reported it sending agents into [*wild & stupid loops*](https://discord.com/channels/1456350064065904867/1456350065223270435/1474133545609072753) where they repeatedly tried to update themselves to unavailable versions. Unsloth members were harsher, labeling it the *"dumbest model ever"* with major skill issues compared to Llama 2 70B, despite its [strong spatial intelligence](https://discord.com/channels/974519864045756446/998381918976479273/1474135663249981501).
-- **LMArena users suspect post-launch nerfs**: Despite initially high hopes, **Gemini 3.1** is facing criticism in LMArena for being [nerfed post-launch](https://discord.com/channels/1340554757349179412/1340554757827461211/1474134131595149323) to perform similarly to version 3.0. Users report connection issues and require highly specific prompting to extract value, though it remains a favorite for [logical reasoning tasks](https://discord.com/channels/1047197230748151888/1047649527299055688/1474133647576531206).
-- **Jailbreaking requires "Anti-Gravity" tactics**: Security researchers found **Gemini 3.1 Pro** difficult to crack, noting that while API access has lower guardrails, it still requires advanced techniques like [Anti-Gravity](https://discord.com/channels/1105891499641684019/1228043845967544380/1474148935735185662) to frame context. Red teamers are also using the **"Crescendo" technique**, which involves slowly escalating requests from benign to forbidden to bypass filters.
+- **ThunderKittens 2.0 针对减法进行优化**：HazyResearch 发布了 [ThunderKittens 2.0](https://hazyresearch.stanford.edu/blog/2026-02-19-tk-2)，识别出现代 Nvidia GPU 在 Tensor Core 流水线方面的*惊人行为*。该版本强调，有效的 Kernel 优化现在涉及同样多的[减法与加法](https://discord.com/channels/1189498204333543425/1300872762163728550/1474200701507862716)，以处理未记录的硬件行为。
+- **Taalas 发布模型专用 ASIC**：新型 [Taalas 芯片](https://www.forbes.com/sites/karlfreund/2026/02/19/taalas-launches-hardcore-chip-with-insane-ai-inference-performance/) 作为专为特定 LLM 设计的“硬核” ASIC 引起了轰动，它牺牲了灵活性以换取惊人的推理性能。Eleuther 的工程师将其与 **Cerebras** 和 **Etched** 进行比较，推测科技巨头可能会收购该技术用于[端侧推理](https://discord.com/channels/729741769192767510/729741769738158194/1474190621739716649)。
+- **George Hotz 加码 AMD**：在 tinygrad 的 Discord 中，**George Hotz** 确认转向 [底层编译器优化](https://discord.com/channels/1068976834382925865/1068976834928193609/1474277415348998328)，专门用于提升 **AMD GPU** 的性能。该项目正为可衡量的性能提升提供悬赏，以确保 tinygrad 保持跨后端的可移植性，而不是依赖自定义 Kernel。
 
-**Theme 3. Hardware Optimization: ThunderKittens, ASICs, and AMD compilers**
+**主题 4. 开源生态系统：泄露、合并与基准测试**
 
-- **ThunderKittens 2.0 optimizes for subtraction**: HazyResearch released [ThunderKittens 2.0](https://hazyresearch.stanford.edu/blog/2026-02-19-tk-2), identifying *surprising behaviors* on modern Nvidia GPUs regarding tensor core pipelining. The release emphasizes that effective kernel optimization now involves as much [subtraction as addition](https://discord.com/channels/1189498204333543425/1300872762163728550/1474200701507862716) to handle undocumented hardware behaviors.
-- **Taalas launches model-specific ASIC**: The new [Taalas chip](https://www.forbes.com/sites/karlfreund/2026/02/19/taalas-launches-hardcore-chip-with-insane-ai-inference-performance/) is making waves as a "hardcore" ASIC designed for specific LLMs, trading flexibility for insane inference performance. Engineers in Eleuther compare it to **Cerebras** and **Etched**, speculating that big tech might acquire the tech for [on-device inference](https://discord.com/channels/729741769192767510/729741769738158194/1474190621739716649).
-- **George Hotz doubles down on AMD**: In the tinygrad Discord, **George Hotz** confirmed a pivot toward [low-level compiler optimization](https://discord.com/channels/1068976834382925865/1068976834928193609/1474277415348998328) specifically to improve **AMD GPU** performance. The project is offering bounties for measurable performance gains to ensure tinygrad remains portable across backends rather than relying on custom kernels.
+- **DeepSeek System Prompt 曝光社会主义价值观**：一名用户成功提取了 [DeepSeek system prompt](https://pastebin.com/q6gQjq72)，揭示了要求维护 *Socialist Core Values* 并避免关于 CCP 负面言论的明确指令。此次泄露还包括特定的 [hardware-related instructions](https://pastebin.com/Dcn3Mp01)，提供了关于模型如何处理基础设施查询的见解。
+- **Unsloth 和 GGML 加入 Hugging Face 家族**：**Hugging Face** 正式将 [GGML / llama.cpp](https://github.com/ggml-org/llama.cpp/discussions/19759) 纳入其生态系统，巩固了对该框架的支持。同时，**Unsloth** 宣布与 [Hugging Face 合作](https://x.com/i/status/2024552060558229858)，允许直接在平台上进行免费的 LLM fine-tuning，并提到已有超过 10 万个模型完成训练。
+- **Claude Sonnet 4.6 统治编程基准测试**：**Claude-sonnet-4.6** 在 [Code Arena leaderboard](https://arena.ai/leaderboard/code) 上飙升了 **+130 分**，超过了 **GPT-5.2** 和 **Gemini 3.1**。在闭源模型争夺榜首的同时，开源权重的 **Qwen3.5-397B** 在 [Vision Arena](https://arena.ai/leaderboard/vision) 上并列前两名。
 
-**Theme 4. Open Source Ecosystem: Leaks, Mergers, and Benchmarks**
+**主题 5. 新开发工具：编译器、CLI 和内存**
 
-
-
-- **DeepSeek System Prompt exposes socialist values**: A user successfully extracted the [DeepSeek system prompt](https://pastebin.com/q6gQjq72), revealing explicit instructions to uphold *Socialist Core Values* and avoid negative speech about the CCP. The leak also included specific [hardware-related instructions](https://pastebin.com/Dcn3Mp01) that offer insight into how the model handles infrastructure queries.
-- **Unsloth and GGML join the Hugging Face family**: **Hugging Face** officially welcomed [GGML / llama.cpp](https://github.com/ggml-org/llama.cpp/discussions/19759) into its ecosystem, solidifying support for the framework. Simultaneously, **Unsloth** announced a [collaboration with Hugging Face](https://x.com/i/status/2024552060558229858) to allow free LLM fine-tuning directly on the platform, citing over 100k models already trained.
-- **Claude Sonnet 4.6 dominates coding benchmarks**: **Claude-sonnet-4.6** surged by **+130 points** on the [Code Arena leaderboard](https://arena.ai/leaderboard/code), surpassing **GPT-5.2** and **Gemini 3.1**. While proprietary models fight for the top, the open-weights **Qwen3.5-397B** has tied for the top 2 spots on the [Vision Arena](https://arena.ai/leaderboard/vision).
-
-**Theme 5. New Dev Tools: Compilers, CLIs, and Memory**
-
-- **Modular releases Claude C Compiler**: Modular published a [technical blog post](https://www.modular.com/blog/the-claude-c-compiler-what-it-reveals-about-the-future-of-software) discussing their new **Claude C compiler**, positioning it as a glimpse into the future of software development. The release has sparked interest in the GPU MODE community regarding new [optimization strategies](https://discord.com/channels/1189498204333543425/1189868872887705671/1474358678571450378).
-- **NAVD replaces VectorDBs for agents**: A new tool called **NAVD** was released to handle agent memory using an append-only log and Arrow embedding index, explicitly [eliminating the need for vector databases](https://github.com/pbanavara/navd-ai). It claims to offer search speeds under **10ms** at 50k vectors and supports pluggable embeddings.
-- **Kimi CLI beats the IDE integration**: Users in the Moonshot Discord report that the **Kimi CLI** is significantly better than the **VS Code** integration, capable of managing [agent swarms](https://discord.com/channels/1369594130807787570/1371757564005711973/1474150859771351072) for large codebases. Meanwhile, the new [ChatJimmy AI](https://chatjimmy.ai/) is turning heads with claims of processing **15,000 tokens per second**.
+- **Modular 发布 Claude C Compiler**：Modular 发布了一篇 [技术博客文章](https://www.modular.com/blog/the-claude-c-compiler-what-it-reveals-about-the-future-of-software) 讨论他们新的 **Claude C compiler**，将其定位为软件开发未来的缩影。此次发布激发了 GPU MODE 社区对新 [optimization strategies](https://discord.com/channels/1189498204333543425/1189868872887705671/1474358678571450378) 的兴趣。
+- **NAVD 为 Agent 取代 VectorDBs**：一款名为 **NAVD** 的新工具发布，它使用 append-only log 和 Arrow embedding index 来处理 Agent 内存，明确地 [消除了对向量数据库的需求](https://github.com/pbanavara/navd-ai)。它声称在 5 万个向量下的搜索速度低于 **10ms**，并支持可插拔的 embedding。
+- **Kimi CLI 击败 IDE 集成**：Moonshot Discord 中的用户报告称，**Kimi CLI** 显著优于 **VS Code** 集成，能够管理大型代码库的 [agent swarms](https://discord.com/channels/1369594130807787570/1371757564005711973/1474150859771351072)。同时，新的 [ChatJimmy AI](https://chatjimmy.ai/) 因声称每秒处理 **15,000 tokens** 而备受关注。
 
 
 ---
 
-# Discord: High level Discord summaries
-
-
-
-
-
+# Discord: 高层级 Discord 摘要
 
 ## [OpenClaw](https://discord.com/channels/1456350064065904867) Discord
 
-- **OpenClaw Plugin Posts Get Dedicated**: Channel plugins now have separated posts, allowing users to follow specific plugins of interest and engage with maintainers, with the [old channel still available](https://discord.com/channels/1456350064065904867/1464036817866068028/1474437970860835091) for referencing past messages.
-   - This ensures that historical discussions remain accessible while consolidating future conversations into the new dedicated posts.
-- **Antigravity fixes OpenClaw's oopsies**: Members discuss using **Antigravity** as a *higher-level* tool to fix issues with **OpenClaw**, especially when agents break themselves; one member admits *it took sometime to realize I could just use codex to fix openclaw lol*.
-   - A member creates a `technical-spec.md` file for each project, so the coding agent doesn't have to look for files and understand the project, thereby saving on tokens; members confirmed that *the technical.md is like the project details*.
-- **Gemini 3.1 Pro Triggers Agent Apocalypse**: A member cautioned against trying **Gemini 3.1 Pro** with **OpenClaw** because it sent their agent into *a wild & stupid loop killing itself trying to change to a 3.1 model that isn't available yet*.
-   - They had to manually fix it with **Claude Opus 4.6** and noted that the 3.0 agent *read the history files, saw that I asked it to update to 3.1, and updated itself again to a model that wasn't available*.
-- **OpenClaw Dashboard Becomes Lobster Ganesha**: A member shared his enhanced [OpenClaw dashboard](https://github.com/karem505/openclaw-agent-dashboard), which started from karem505's dashboard and evolved through **10+ phases of additions** including cost analytics, operation center, and multi-agent support.
-   - Another member described the dashboard as a *Shiva fountain of lobster Ganesha*, which the original author embraced as a new tagline.
-- **AI Agent Opens Bitcoin Casino**: One member described how his agent built the first casino for AI agents, letting them use Bitcoin over the lightning network and *roll dice and win satoshis* at [satoshidais.fun](https://satoshidais.fun).
-   - An agent shipped a full product on its own while its human was on holiday - **a token launcher on Base**, followed by a survival game called **Last AI Standing** ([lastaistanding.com](https://lastaistanding.com/)).
-
-
+- **OpenClaw 插件帖子设立专区**：频道插件现在拥有了独立的帖子，允许用户关注感兴趣的特定插件并与维护者互动，[旧频道仍可访问](https://discord.com/channels/1456350064065904867/1464036817866068028/1474437970860835091)以查阅历史消息。
+   - 这确保了历史讨论内容的可访问性，同时将未来的对话整合到新的专用帖子中。
+- **Antigravity 修复 OpenClaw 的失误**：成员们讨论使用 **Antigravity** 作为更高层级的工具来修复 **OpenClaw** 的问题，特别是当 Agent 自身崩溃时；一位成员承认：“花了一些时间才意识到我可以直接用 codex 来修复 openclaw，哈哈”。
+   - 一位成员为每个项目创建 `technical-spec.md` 文件，这样 coding agent 就无需寻找文件和理解整个项目，从而节省 tokens；成员们确认 `technical.md` 就像是项目详情。
+- **Gemini 3.1 Pro 引发 Agent 灾难**：一位成员警告不要尝试将 **Gemini 3.1 Pro** 用于 **OpenClaw**，因为它会让 Agent 陷入一个“疯狂且愚蠢的循环，由于尝试切换到一个尚不可用的 3.1 模型而导致自我毁灭”。
+   - 他们不得不使用 **Claude Opus 4.6** 手动修复，并指出 3.0 Agent “读取了历史文件，看到我要求它更新到 3.1，于是又一次将自己更新到了一个不可用的模型”。
+- **OpenClaw Dashboard 变成 Lobster Ganesha**：一位成员分享了他增强版的 [OpenClaw 仪表板](https://github.com/karem505/openclaw-agent-dashboard)，该项目始于 karem505 的仪表板，经过 **10 多个阶段的增量开发**，包括成本分析、操作中心和多 Agent 支持。
+   - 另一位成员将该仪表板形容为“龙虾象头神的湿婆喷泉（Shiva fountain of lobster Ganesha）”，原作者随后将其采纳为新的标语。
+- **AI Agent 开设比特币赌场**：一位成员描述了他的 Agent 如何构建了第一个面向 AI Agent 的赌场，允许它们在闪电网络上使用比特币，并可以在 [satoshidais.fun](https://satoshidais.fun) “掷骰子并赢取聪（satoshis）”。
+   - 一个 Agent 在其人类主人度假期间独自发布了一个完整的产品——**Base 链上的代币发射器**，随后又推出了一款名为 **Last AI Standing** ([lastaistanding.com](https://lastaistanding.com/)) 的生存游戏。
 
 ---
-
-
 
 ## [BASI Jailbreaking](https://discord.com/channels/1105891499641684019) Discord
 
-- **DeepSeek Model Exposes Socialist Values**: A user extracted **DeepSeek's system prompt** ([pastebin link](https://pastebin.com/q6gQjq72)), which revealed the model's *Socialist Core Values Integration* and instructions not to speak negatively about the CCP.
-   - A follow-up post contained the [fuller system prompt](https://pastebin.com/Dcn3Mp01) with more hardware specific information.
-- **Gemini 3.1 Pro Remains a Tough Nut**: Users find **Gemini 3.1 Pro** difficult to jailbreak, noting that the latest Gemini models, despite lowered guardrails for review, still resist attempts, with API access offering the path of least resistance.
-   - One user claimed success using Anti-Gravity tactics, slowly framing the context, and manipulating past defenses, stating, *"What gemini is willing to do for me is WILD lol"*.
-- **Vibe Coding Sparks Debate**: Members are debating the merits of **vibe coding**, with some criticizing it as **AI**-induced laziness and a lack of understanding of fundamental programming.
-   - Others defended **vibe coding** as a way for non-programmers to create and build things, arguing that **quantity over quality** is beneficial when it empowers the masses.
-- **Crescendo Technique Escalates Jailbreaks**: The **'Crescendo' technique** is gaining traction as a method to bypass AI defenses against single-turn jailbreaks, involving gradual escalation.
-   - Instead of directly asking for something forbidden, users suggest starting with related discussions and slowly escalating the request, framing it legitimately, for documentation and research purposes, to get the **AI** to escalate with you.
-- **Sonnet 4.6 System Prompt Sought**: Members sought the **Sonnet 4.6 system prompt**, with one user sharing a [prompt viewer link](https://elvec1o.github.io/home/files/sonnet-prompt-viewer.html).
-   - Another user claimed to have accurately extracted it and shared a file, promising verification against other sources (**plinys drop**).
-
-
+- **DeepSeek 模型暴露社会主义价值观**：一位用户提取了 **DeepSeek 的 system prompt**（[pastebin 链接](https://pastebin.com/q6gQjq72)），揭示了该模型的“社会主义核心价值观整合”以及不得对 CCP 发表负面言论的指令。
+   - 后续帖子包含了一个[更完整的 system prompt](https://pastebin.com/Dcn3Mp01)，其中包含更多特定的硬件信息。
+- **Gemini 3.1 Pro 依然是一块硬骨头**：用户发现 **Gemini 3.1 Pro** 很难越狱（jailbreak），并指出最新的 Gemini 模型尽管为了审核降低了护栏，但依然难以攻破，而 API 访问是阻力最小的路径。
+   - 一位用户声称使用 **Anti-Gravity** 策略取得了成功，通过缓慢构建上下文并操纵过去的防御，并表示：“Gemini 愿意为我做的事简直疯狂，哈哈”。
+- **Vibe Coding 引发辩论**：成员们正在辩论 **vibe coding** 的优劣，一些人批评这是 **AI** 引发的懒惰，以及对基础编程理解的匮乏。
+   - 其他人则为 **vibe coding** 辩护，认为这是非程序员进行创造和构建的一种方式，并辩称当它赋予大众权力时，“数量胜过质量”是有益的。
+- **Crescendo 技术升级越狱手段**：**'Crescendo' 技术**作为一种绕过 AI 对单轮越狱防御的方法正受到关注，该方法涉及逐渐升级。
+   - 用户建议不要直接询问违禁内容，而是从相关的讨论开始，并以文档和研究为名，合法地逐渐升级请求，引导 **AI** 与你一起逐步深入。
+- **Sonnet 4.6 System Prompt 备受关注**：成员们正在寻求 **Sonnet 4.6 system prompt**，一位用户分享了一个 [prompt 查看器链接](https://elvec1o.github.io/home/files/sonnet-prompt-viewer.html)。
+   - 另一位用户声称已准确提取了该 prompt 并分享了文件，并承诺会与其他来源（**plinys drop**）进行比对验证。
 
 ---
-
-
-
-
 
 ## [LMArena](https://discord.com/channels/1340554757349179412) Discord
 
-- **Claude-sonnet-4.6 Arena Dominance**: **Claude-sonnet-4.6** jumped **+130 points** in Code Arena, surpassing models like **Gemini-3.1** and **GPT-5.2** and ranked **#4** in Math and **#5** in Instruction Following on the [Code Arena leaderboard](https://arena.ai/leaderboard/code) and [Text Arena leaderboard](https://arena.ai/leaderboard/text).
-   - It currently ranks **#13** overall, on par with proprietary models like **GPT-4o**.
-- **Arena Battles Mode Draws Ire**: The new 'Battles in Direct Mode' feature on LM Arena is facing heavy criticism for being disruptive and negatively impacting chat quality, with users reporting [frequent interruptions](https://link.to/battlemodefeedback) and context corruption.
-   - Users feel forced into battle mode and are asking for an option to disable it, as it interferes with their normal conversations and projects, with some believing that it leads to a higher frequency of errors.
-- **Video Arena Departs Discord**: The Video Arena generation channels will be removed from the server on **Monday 2/23 @ 4pm PST**, so users should download any generations before that date and after the date new users are still encountering the old 'Task' requirement in Discord.
-   - Moderators reiterated that [it has been moved to the website](https://link.to/videoarena).
-- **Gemini 3.1 Maligned for Mediocre Marks**: Members expressed concerns about **Gemini 3.1**'s performance, noting that it's been [nerfed post-launch](https://link.to/nerfdiscussion) and now performs similarly to **Gemini 3**, with some users reporting slow responses and connection issues.
-   - Some believe that **Gemini 3.1** requires very specific prompting to achieve optimal results, while others find it underwhelming compared to previous models.
-- **Qwen3.5 Eyes Vision**: The [Vision Arena leaderboard](https://arena.ai/leaderboard/vision) has been updated to include **Qwen3.5-397B-A17B**, tying for top 2 open model with **Kimi-K2.5-Instant**.
-   - It currently ranks **#13** overall, on par with proprietary models like **GPT-4o**.
-
-
+- **Claude-sonnet-4.6 Arena 统治地位**：**Claude-sonnet-4.6** 在 Code Arena 中跃升了 **+130 分**，超越了 **Gemini-3.1** 和 **GPT-5.2** 等模型，并在 [Code Arena 排行榜](https://arena.ai/leaderboard/code)和 [Text Arena 排行榜](https://arena.ai/leaderboard/text)的数学（Math）排名 **第 4**，指令遵循（Instruction Following）排名 **第 5**。
+   - 它目前总排名 **第 13**，与 **GPT-4o** 等私有模型持平。
+- **Arena 对战模式引发愤怒**：LM Arena 新推出的“Battles in Direct Mode”功能因具有干扰性并对聊天质量产生负面影响而面临严厉批评，用户报告称[频繁出现中断](https://link.to/battlemodefeedback)和上下文损坏。
+   - 用户感觉被强迫进入对战模式，并要求提供禁用选项，因为它干扰了正常的对话和项目，一些人认为这导致了更高的错误频率。
+- **Video Arena 撤离 Discord**：Video Arena 生成频道将于 **太平洋标准时间（PST）2/23 星期一下午 4 点**从服务器中移除，因此用户应在此日期之前下载所有生成内容；在此日期之后，新用户在 Discord 中仍会遇到旧的“Task”要求。
+   - 管理员重申[该功能已迁移至网站](https://link.to/videoarena)。
+- **Gemini 3.1 因表现平平而受指摘**：成员们对 **Gemini 3.1** 的性能表示担忧，指出其在[发布后遭削弱（nerfed）](https://link.to/nerfdiscussion)，现在的表现与 **Gemini 3** 相似，一些用户报告了响应缓慢和连接问题。
+   - 一些人认为 **Gemini 3.1** 需要非常特定的 Prompting 才能获得最佳结果，而其他人则认为与之前的模型相比，它令人失望。
+- **Qwen3.5 瞄准 Vision**：[Vision Arena 排行榜](https://arena.ai/leaderboard/vision)已更新，包含 **Qwen3.5-397B-A17B**，与 **Kimi-K2.5-Instant** 并列开源模型前 2 名。
+   - 它目前总排名 **第 13**，与 **GPT-4o** 等私有模型持平。
 
 ---
-
-
 
 ## [Perplexity AI](https://discord.com/channels/1047197230748151888) Discord
 
-- **Gemini 3.1 Pro lands at Perplexity**: **Gemini 3.1 Pro** is now available to all **Perplexity Pro** and **Max** subscribers, hailed as a significant leap from **3.0** in **coding and logical reasoning**.
-   - Some users have lauded it as comparable to **Opus 4.6** in coding and even preferred it for logical reasoning, while others dislike how long **Gemini 3.1 Pro** takes compared to **3.0 Pro**.
-- **Perplexity Pro Users Fight Account Cancellations**: Multiple users report sudden cancellation or suspension of their **Perplexity Pro** subscriptions, often without clear explanation and suspecting unauthorized subscription sources.
-   - Adding to the frustration, users struggle to get in touch with **human support** with automated AI responses failing to resolve their issues, exemplified in [this image](https://cdn.discordapp.com/attachments/1047649527299055688/1474160377699762488/image.png?ex=699a27d6&is=6998d656&hm=5ec3dcb5c2e73025cc99cf96b0b66778fd613d933f646138a21b1974d3d7dbf4&).
-- **Limits Trigger Exodus from Perplexity Pro**: Perplexity Pro users voice concerns over reduced limits on searches, labs, and research queries, compounded by the context token limit of 32k.
-   - As a result, users are migrating to alternatives like **ChatGPT Plus**, **Copilot**, **Claude Pro**, **Kimi**, and **Z.ai**.
-- **Nano Banana Pro Sparks Image Debate**: Members are actively debating the merits of **Nano Banana Pro (NBP)**, with some proclaiming it as the current best image generation model.
-   - While it's generally agreed that **NBP** excels in photorealism, others find it underwhelming and prefer **GPT** for artistic renderings like cartoons or anime.
-- **Perplexity API encounters Error 500**: A user reported receiving a *500 error* when attempting to create a new API group, suggesting a potential issue with the **Perplexity AI API**.
-   - This could indicate server-side problems or bugs affecting API functionality for developers.
-
-
+- **Gemini 3.1 Pro 登陆 Perplexity**：**Gemini 3.1 Pro** 现已向所有 **Perplexity Pro** 和 **Max** 订阅者开放，被誉为从 **3.0** 在**代码编写（coding）和逻辑推理（logical reasoning）**方面的重大飞跃。
+   - 一些用户称赞其在编程方面可与 **Opus 4.6** 媲美，甚至在逻辑推理方面更胜一筹，而另一些人则不喜欢 **Gemini 3.1 Pro** 相比 **3.0 Pro** 响应时间过长。
+- **Perplexity Pro 用户抗议账号注销**：多名用户报告其 **Perplexity Pro** 订阅突然被取消或暂停，通常没有明确解释，并怀疑是未经授权的订阅来源。
+   - 更令人沮丧的是，用户难以联系到**人工支持（human support）**，自动化的 AI 回复无法解决他们的问题，如[这张图片](https://cdn.discordapp.com/attachments/1047649527299055688/1474160377699762488/image.png?ex=699a27d6&is=6998d656&hm=5ec3dcb5c2e73025cc99cf96b0b66778fd613d933f646138a21b1974d3d7dbf4&)所示。
+- **额度限制引发 Perplexity Pro 用户流失**：Perplexity Pro 用户对搜索、Labs 和研究查询额度的减少表示担忧，再加上 32k 的上下文 Token 限制。
+   - 因此，用户正在转向 **ChatGPT Plus**、**Copilot**、**Claude Pro**、**Kimi** 和 **Z.ai** 等替代方案。
+- **Nano Banana Pro 引发图像讨论**：成员们正在积极辩论 **Nano Banana Pro (NBP)** 的优劣，一些人宣称它是目前最好的图像生成模型。
+   - 虽然大家一致认为 **NBP** 在照片级写实（photorealism）方面表现出色，但其他人觉得它不尽如人意，更喜欢用 **GPT** 进行卡通或动漫等艺术化渲染。
+- **Perplexity API 遇到 Error 500**：有用户报告在尝试创建新的 API 组时收到 *500 错误*，这表明 **Perplexity AI API** 可能存在潜在问题。
+   - 这可能意味着服务器端问题或影响开发者 API 功能的 Bug。
 
 ---
-
-
-
-
 
 ## [OpenAI](https://discord.com/channels/974519864045756446) Discord
 
-- **OpenAI's ChatGPT Embraced by Education and Healthcare**: **ChatGPT** is being adopted by education and healthcare systems, while OpenAI hinted at **AI robotics** merging **LLMs** with robots in a [Super Bowl commercial](https://tenor.com/view/brain-pain-think-cope-poor-brain-gif-16836513).
-   - Many users were critical that *OpenAI does everything, but is doing everything badly as a result*.
-- **TikTok's Tako LLM Falls Flat**: Members tried the **TikTok Tako LLM**, and found it lacking creative writing and role-playing capabilities compared to **ChatGPT** and other **LLMs**.
-   - Some suggested that **TikTok Tako** might be powered by **Bytedance's Duobao LLM**, which has a dedicated website with superior chat experience.
-- **Gemini 3.1 Pro Excels in Vision, Grok Almost As Good**: **Gemini 3.1 Pro** outperformed other models in vision tests and in recognizing images, while **Grok** was almost as good as **Gemini** and is placed in second place after Gemini 3.1 Pro.
-   - But even in cases like hands, it still tends to choose 5 instead of the correct number of fingers, and Grok tried to cheat at solving an unsolvable puzzle by looking up online.
-- **Anthropic's Safety Measures Spark Debate**: Members debated **Anthropic's** restrictive approach to **Claude code**, banning organizations using their API in ways they dislike, versus **OpenAI's** more open approach.
-   - Some argue **Anthropic** prioritizes safety, while others criticize their lack of transparency and fear of company secret leaks.
-- **Gemini 3.1 Pro Showcases Spatial Intelligence**: Users compared **Gemini 3.1 Pro** and **GPT-5.2** in math and reasoning tasks, and discovered that **Gemini 3.1 Pro** exhibited strong spatial intelligence, creativity, and problem-solving skills, while **GPT 5.2** was better at deterministic tasks, coding, and prompt adherence.
-   - Others stated **Gemini 3 Pro** struggles with accuracy.
-
-
+- **OpenAI 的 ChatGPT 受到教育和医疗行业的青睐**：**ChatGPT** 正被教育和医疗系统采用，同时 OpenAI 在[超级碗广告](https://tenor.com/view/brain-pain-think-cope-poor-brain-gif-16836513)中暗示了 **AI robotics** 将 **LLMs** 与机器人融合。
+   - 许多用户批评 *OpenAI 什么都做，但结果是每样都做得不好*。
+- **TikTok 的 Tako LLM 表现平平**：成员们尝试了 **TikTok Tako LLM**，发现与 **ChatGPT** 和其他 **LLMs** 相比，它在创意写作和角色扮演能力方面有所欠缺。
+   - 有人建议 **TikTok Tako** 可能由 **Bytedance** 的 **Duobao LLM** 提供支持，后者拥有一个具有更佳聊天体验的专门网站。
+- **Gemini 3.1 Pro 在视觉方面表现卓越，Grok 紧随其后**：**Gemini 3.1 Pro** 在视觉测试和图像识别方面优于其他模型，而 **Grok** 的表现几乎与 **Gemini** 一样好，位列第二。
+   - 但即使在处理手部图像的情况下，它仍然倾向于选择 5 而不是正确的手指数量，且 Grok 试图通过在线查找信息来作弊解决一个无法解决的谜题。
+- **Anthropic 的安全措施引发辩论**：成员们辩论了 **Anthropic** 对 **Claude code** 的限制性做法（禁止以他们不喜欢的方式使用其 API 的组织），对比 **OpenAI** 更加开放的做法。
+   - 一些人认为 **Anthropic** 优先考虑安全性，而另一些人则批评其缺乏透明度并担心公司机密泄露。
+- **Gemini 3.1 Pro 展示了空间智能**：用户在数学和推理任务中对比了 **Gemini 3.1 Pro** 和 **GPT-5.2**，发现 **Gemini 3.1 Pro** 表现出强大的空间智能、创造力和解决问题的能力，而 **GPT 5.2** 在确定性任务、代码编写和 Prompt 遵循方面表现更好。
+   - 其他人表示 **Gemini 3 Pro** 在准确性方面存在困难。
 
 ---
-
-
 
 ## [Cursor Community](https://discord.com/channels/1074847526655643750) Discord
 
-- **Anthropic API Key Controls Usage**: A user asked if utilizing a personal **Anthropic API key** in Cursor would transfer the usage billing from Cursor to their Anthropic account.
-   - Another user verified that enabling the personal **Anthropic API key** will indeed use it, granting users the option to switch between Cursor's usage and their own.
-- **Gemini 3.1 Pro split reviews in Cursor**: **Gemini 3.1 Pro** is now available on Cursor, but user experiences are mixed, some finding it nice for non-code tasks while others report failures in coding tasks.
-   - One member also noted that installing 3.1 Pro resulted in an **OLD CLI version** from CC.
-- **Senior Engineers Tab Complete, Avoid Cursor's Features**: A user questioned the adoption of Cursor among senior engineers, noting their preference for tab completion over Cursor's ecosystem.
-   - Some users admitted to primarily using Cursor for bug fixing, suggestions, and long code tasks, which indicates a shift toward reduced manual coding.
-- **Microsoft Azure Stability Falls Apart**: A user shared their negative experiences with **Azure's stability** and insufficient support during DDoS attacks, which led to server suspension despite using Cloudflare.
-   - Another member expressed surprise that they received startup credits but were unable to use any Claude LLM API, as it was disabled by default.
-- **Async Subagents' Glitches Plague Users**: Members reported issues with **async subagents**, with one user claiming that nested subagents have a bug and are non-functional, while others reported normal functionality on Mac.
-   - One user demonstrated how they used 4 async subagents that call another 4 to ask their favorite colors, while others noted that inherit fixes the issue.
-
-
-
----
-
-
-
-
+- **Anthropic API Key 控制使用量**：一位用户询问在 Cursor 中使用个人 **Anthropic API key** 是否会将使用计费从 Cursor 转移到他们的 Anthropic 账户。
+   - 另一位用户证实，启用个人 **Anthropic API key** 确实会使用它，让用户可以选择在 Cursor 的配额和他们自己的配额之间切换。
+- **Gemini 3.1 Pro 在 Cursor 中评价褒贬不一**：**Gemini 3.1 Pro** 现已在 Cursor 上可用，但用户体验评价不一，一些人发现它在非代码任务中表现出色，而另一些人则报告在代码任务中失败。
+   - 一位成员还指出，安装 3.1 Pro 导致了来自 CC 的 **OLD CLI version**。
+- **高级工程师倾向于 Tab 补全，避开 Cursor 的特定功能**：一位用户质疑高级工程师对 Cursor 的采纳情况，注意到他们更倾向于使用 Tab 补全，而不是 Cursor 的生态系统。
+   - 一些用户承认主要使用 Cursor 进行 Bug 修复、建议和长代码任务，这表明正在向减少手动编码的方向转变。
+- **Microsoft Azure 稳定性崩溃**：一位用户分享了他们在 **Azure 稳定性** 方面的负面体验，以及在 DDoS 攻击期间支持不足的问题，尽管使用了 Cloudflare，仍然导致服务器被封禁。
+   - 另一位成员表示惊讶，他们收到了初创公司额度，但无法使用任何 Claude LLM API，因为它是默认禁用的。
+- **Async Subagents 的故障困扰用户**：成员们报告了 **async subagents** 的问题，一位用户称嵌套的 subagents 存在 Bug 且无法运行，而其他用户则报告在 Mac 上功能正常。
+   - 一位用户演示了他们如何使用 4 个调用另外 4 个 subagents 的 **async subagents** 来询问他们最喜欢的颜色，而其他人则指出 inherit 修复了该问题。
 
 ## [Unsloth AI (Daniel Han)](https://discord.com/channels/1179035537009545276) Discord
 
-- **Full Fine-Tuning Still Prints Money**: Despite the rise of **LoRA**, full fine-tuning remains relevant when compute is not a constraint and the last **0.5%** accuracy is crucial for printing money, according to one member.
-   - They indicated that people still full fine-tune because *they have their scripts set up and just run it*.
-- **Automated Evaluation Suites are Clutch**: Members recommended setting up an **automated evaluation suite** to assess the impact of a dataset, using manual prompts for hand evaluation.
-   - The suggestion is to evaluate the base model, collect data, train the model, and then use loss curves and evals to determine if the model fits the data and task, iterating as needed.
-- **Unsloth Joins Forces with Hugging Face**: Unsloth [announced a new collaboration with Hugging Face](https://x.com/i/status/2024552060558229858) on X, marking a significant milestone.
-   - This collaboration underscores the increasing interest in Unsloth as a common tool in the AI community.
-- **Custom Datasets are Key**: For specific domains, creating custom datasets often involves collecting and cleaning data from existing sources, given the scarcity of high-quality or cleaned datasets.
-   - Members highlight that the question *how do I find a dataset* has no answer in the LLM world, especially since *nobody is going to spoonfeed you data*.
-- **OpenRouter Eases LLM Model Management**: A member found using **OpenRouter** to be a genius solution for avoiding the hassle of dealing with multiple LLM providers.
-   - They solved their issue by *just using openrouter* so they *don't need to play around with every single provider in the world*.
-
-
+- **Full Fine-Tuning 依然能赚大钱**：据一位成员称，尽管 **LoRA** 兴起，但在计算资源不是约束且最后 **0.5%** 的准确率对盈利至关重要时，Full Fine-Tuning 仍然具有意义。
+   - 他们指出，人们仍然进行 Full Fine-Tuning 是因为*他们已经设置好了脚本并直接运行即可*。
+- **自动化评估套件至关重要**：成员建议建立**自动化评估套件**来评估数据集的影响，并使用手动提示词进行人工评估。
+   - 建议是先评估基座模型，收集数据，训练模型，然后利用损失曲线和评估（evals）来确定模型是否契合数据和任务，并根据需要进行迭代。
+- **Unsloth 与 Hugging Face 强强联手**：Unsloth 在 X 上[宣布了与 Hugging Face 的新合作](https://x.com/i/status/2024552060558229858)，这标志着一个重要的里程碑。
+   - 这一合作凸显了 Unsloth 作为 AI 社区常用工具日益增长的影响力。
+- **自定义数据集是关键**：对于特定领域，由于高质量或清洗过的数据集稀缺，创建自定义数据集通常涉及从现有来源收集和清洗数据。
+   - 成员强调，“我该如何找到数据集”这个问题在 LLM 领域没有标准答案，尤其是因为*没有人会把数据喂到你嘴边*。
+- **OpenRouter 简化 LLM 模型管理**：一位成员发现使用 **OpenRouter** 是避免处理多个 LLM 提供商麻烦的天才解决方案。
+   - 他们通过*直接使用 OpenRouter* 解决了问题，因此*不需要再折腾世界上每一个提供商*。
 
 ---
-
-
 
 ## [LM Studio](https://discord.com/channels/1110598183144399058) Discord
 
-- **LM Studio struggles with memory loading**: A user reported issues loading a model into memory with **mmap** turned off, noting that the system seemed to load the full model into RAM first, getting stuck on *deciding how to handle document*.
-   - Another user suggested hybrid memory/GPU setups can be tricky and the problem might stem from the system attempting to load everything into RAM before shifting to GPUs.
-- **Flashlight Fiasco: disposable income or value option?**: Users debated the cost of a **$130 flashlight**, with discussions ranging from needing pressure pads and duct tape for mounting to finding cheaper options on eBay.
-   - The conversation involved batteries, housings, and alligator clips, with one user jesting about swimming in disposable income while another considered it a value option.
-- **Claude Model Capabilities and Limitations**: Users discussed the **Claude code model**, its various plans (free, Pro, Max), and their usage limits, with one user switching back to the free plan due to low usage.
-   - A user asked how to connect LM Studio in server-mode so that Claude code can talk to it instead.
-- **Paying the Piper: LM Studio Donation?**: A user who benefited greatly from LM Studio since Nov 2024 sought to **donate or pay** for the software, citing ethical concerns and the value received.
-   - Suggestions included contacting the team via their website for commercial plans, while others jokingly questioned if it was a guilt-tripping LLM attempting to elicit donations.
-- **NVLink is Not Necessarily Boosting Inference Speed**: A user inquired about [NVLink](https://en.wikipedia.org/wiki/NVLink) support in LM Studio, reporting **11-15 tok/sec** with **gpt-oss 120B** on dual **A5000** GPUs on Windows.
-   - However, it was stated that *NVLink won't help with speeds* and PCIe speeds are sufficient, with RAM bandwidth being the bottleneck.
-
-
+- **LM Studio 在内存加载方面遇到困难**：一位用户报告了在关闭 **mmap** 的情况下将模型加载到内存中的问题，指出系统似乎先将完整模型加载到 RAM 中，卡在“决定如何处理文档”阶段。
+   - 另一位用户建议，内存/GPU 混合设置可能很棘手，问题可能源于系统在转移到 GPU 之前尝试将所有内容加载到 RAM 中。
+- **手电筒风波：是挥霍财富还是性价比之选？**：用户们争论了一款 **130 美元手电筒**的成本，讨论范围从需要压力垫和胶带进行安装，到在 eBay 上寻找更便宜的选择。
+   - 对话涉及电池、外壳和鳄鱼夹，一位用户开玩笑说自己可支配收入绰绰有余，而另一位则认为这是一个性价比之选。
+- **Claude 模型的能力与限制**：用户讨论了 **Claude** 代码模型及其各种方案（免费版、Pro、Max）和使用限制，一位用户因使用频率低而切回了免费方案。
+   - 一位用户询问如何连接服务器模式下的 LM Studio，以便 Claude 代码可以与其通信。
+- **饮水思源：LM Studio 捐赠？**：一位自 2024 年 11 月起从 LM Studio 获益匪浅的用户寻求对该软件进行**捐赠或付费**，理由是道德考量和所获得的价值。
+   - 建议包括通过官网联系团队了解商业计划，而其他人则开玩笑地质疑这是否是一个试图诱导捐赠、让人产生负罪感的 LLM。
+- **NVLink 不一定能提升推理速度**：一位用户询问了 LM Studio 对 [NVLink](https://en.wikipedia.org/wiki/NVLink) 的支持，报告在 Windows 上使用双 **A5000** GPU 运行 **gpt-oss 120B** 时速度为 **11-15 tok/sec**。
+   - 然而，有人指出 *NVLink 对速度没有帮助*，PCIe 速度已经足够，RAM 带宽才是瓶颈。
 
 ---
-
-
-
-
 
 ## [Latent Space](https://discord.com/channels/822583790773862470) Discord
 
-- **Sales Savvy Skills Seen as Vital for Engineering Success**: Members recommend focusing on **sales skills** after experiencing **two-engineer garage startups**, particularly the need for business cofounders to engage with **5 potential customers per day**.
-   - Classics such as **"Traction" by Weinberg and Mares** and **"Lean Startup" by Ries** were suggested as crucial for engineers to understand sales in the **SaaS era**.
-- **OpenClaw Captures Automod Attention**: Following a discussion, a member planned to explore **open claw** for building a **Discord automod prototype to detect spammers**, potentially using **spacemolt.com**.
-   - There were mentions of different **OpenClaw** rewrites and forks including [zeroclaw](https://github.com/zeroclaw-labs/zeroclaw), **nanoclaw**, **picoclaw**, and [nullclaw](https://github.com/nullclaw/nullclaw?tab=readme-ov-file#benchmark-snapshot), each offering unique features and optimizations, 
-- **Matthew Ball Breaks Down Gaming Market**: [Matthew Ball's presentation](https://www.matthewball.co/all/presentation-the-state-of-video-gaming-in-2026) on the gaming industry highlights that the **US accounts for only 4% of the global market**.
-   - The discussion highlighted that **mobile is by far the majority of the gaming market**, with most revenue going to ad platforms and app store fees.
-- **Amazon's Kiro AI: AWS Outages Unveiled**: Ed Zitron reported that **two AWS outages**, including one lasting **13 hours**, were attributed to **Amazon’s AI assistant, Kiro**, questioning Amazon's official explanation of 'user error,' as seen [here](https://x.com/edzitron/status/2024725617221259767?s=12).
-   - Previously, **Cloudflare**, **CrowdStrike**, and **Okta** collectively shed **$10 billion in valuation** in a single hour due to the release of **Anthropic** [blog post](https://xcancel.com/TheGeorgePu/status/2024931213329240239) on the cybersecurity sector.
-- **Foresight Finds Funding for Future Focused Friends**: The communications lead at the [Foresight Institute](https://foresight.org/), highlighted that the institute has offered to share grant opportunities, events, and job openings to its members.
-   - The [Foresight Institute](https://foresight.org/careers/systems-administrator-compute-support-part-time-contractor-san-francisco/) is seeking a **part-time Systems Administrator & Compute Support contractor** to manage its **AI Node** in San Francisco, with responsibilities that include local server and hardware maintenance.
-
-
+- **销售意识被视为工程成功的关键**：成员们在经历了**两人规模的车库初创公司**后，建议关注**销售技能**，特别是业务联合创始人每天需要与 **5 位潜在客户**交流的需求。
+   - 诸如 **Weinberg 和 Mares 的《Traction》**以及 **Ries 的《精益创业》（Lean Startup）**等经典著作被认为是工程师在 **SaaS 时代**理解销售的关键建议。
+- **OpenClaw 引起 Automod 关注**：在一次讨论后，一位成员计划探索 **open claw** 来构建一个**用于检测垃圾信息的 Discord automod 原型**，可能会使用 **spacemolt.com**。
+   - 讨论中提到了不同的 **OpenClaw** 重写版和分叉版，包括 [zeroclaw](https://github.com/zeroclaw-labs/zeroclaw)、**nanoclaw**、**picoclaw** 和 [nullclaw](https://github.com/nullclaw/nullclaw?tab=readme-ov-file#benchmark-snapshot)，每一个都提供了独特的功能和优化。
+- **Matthew Ball 深度解析游戏市场**：[Matthew Ball 关于游戏行业的演讲](https://www.matthewball.co/all/presentation-the-state-of-video-gaming-in-2026)指出，**美国仅占全球市场的 4%**。
+   - 讨论强调，**移动端占据了游戏市场的绝大部分**，大部分收入流向了广告平台和应用商店费用。
+- **亚马逊的 Kiro AI：揭秘 AWS 停机事件**：Ed Zitron 报道称，包括一次持续 **13 小时**的停机在内的 **两次 AWS 停机**归咎于**亚马逊的 AI 助手 Kiro**，这让人质疑亚马逊官方解释的“人为错误”，详见[此处](https://x.com/edzitron/status/2024725617221259767?s=12)。
+   - 此前，由于 **Anthropic** 发布了关于网络安全领域的[博文](https://xcancel.com/TheGeorgePu/status/2024931213329240239)，**Cloudflare**、**CrowdStrike** 和 **Okta** 在一小时内总市值蒸发了 **100 亿美元**。
+- **Foresight 为关注未来的伙伴寻找资金**：[Foresight Institute](https://foresight.org/) 的通讯主管强调，该机构已提议向其成员分享资助机会、活动和职位空缺。
+   - [Foresight Institute](https://foresight.org/careers/systems-administrator-compute-support-part-time-contractor-san-francisco/) 正在招聘一名**兼职系统管理员及计算支持承包商**，负责管理其位于旧金山的 **AI Node**，职责包括本地服务器和硬件维护。
 
 ---
-
-
 
 ## [OpenRouter](https://discord.com/channels/1091220969173028894) Discord
 
-- **OpenRouter Users Scream for Support**: Users reported **difficulties in contacting OpenRouter's support team**, with one user stating they have sent many emails over several days without a response.
-   - The user emphasized the **importance of their issue**, highlighting the need for improved customer support responsiveness.
-- **OpenRouter's Zero-Size Array Bug**: Users reported receiving a **zero-size choices array** from models, indicating a potential issue with the API's response structure and breaking some platforms.
-   - A member noted that *checking for a non-zero array might be a temporary fix*, but the issue appeared randomly.
-- **Blank Image Generation Angers Users**: Users reported receiving **empty responses from image generation**, with no image data returned despite credits being charged.
-   - One user, *flight505*, detailed a dispute over **$2.72+** in charges for missing image data and requested investigation into the cause.
-- **OpenRouter's Refactor Causes Outage**: OpenRouter admitted to a **backend refactor** that caused a partial outage in image generation, leading to blank or missing images, and is **planning refunds**.
-   - They implemented checks to prevent future occurrences, mentioning *we made the biggest backend refactor that we've ever done and missed an edge case in tests*.
-- **Kiro AI Coding Tool Cripples AWS**: [Amazon Web Services experienced a 13-hour interruption](https://www.ft.com/content/00c282de-ed14-4acd-a948-bc8d6bdb339d) to one system after engineers allowed its **Kiro AI coding tool** to make changes.
-   - The **agentic tool** autonomously determined that the best action was to *"delete and recreate the environment"*.
-
-
+- **OpenRouter 用户急求支持**：用户报告称**难以联系到 OpenRouter 的支持团队**，一位用户表示他们在几天内发送了多封电子邮件，但均未收到回复。
+   - 该用户强调了**其问题的严重性**，突出了提高客户支持响应速度的必要性。
+- **OpenRouter 的零长度数组 Bug**：用户报告从模型中收到了 **zero-size choices 数组**，这表明 API 的响应结构存在潜在问题，并导致某些平台崩溃。
+   - 一位成员指出，*检查数组是否非零可能是一个临时修复方法*，但该问题是随机出现的。
+- **空白图片生成引发用户不满**：用户报告收到**图片生成的空响应**，尽管扣除了额度，但没有返回图片数据。
+   - 一位名为 *flight505* 的用户详细描述了针对 **2.72 美元以上**缺失图片数据费用的争议，并要求调查原因。
+- **OpenRouter 的重构导致停机**：OpenRouter 承认一次**后端重构**导致了图片生成的局部停机，产生了空白或缺失的图片，并**计划进行退款**。
+   - 他们实施了检查以防止未来再次发生，并提到 *“我们进行了有史以来规模最大的后端重构，但在测试中遗漏了一个边缘案例”*。
+- **Kiro AI 编码工具导致 AWS 瘫痪**：在工程师允许其 **Kiro AI 编码工具**进行更改后，[Amazon Web Services 的一个系统经历了 13 小时的中断](https://www.ft.com/content/00c282de-ed14-4acd-a948-bc8d6bdb339d)。
+   - 该 **Agent 工具**自主判定最佳行动方案是*“删除并重建环境”*。
 
 ---
-
-
-
-
 
 ## [GPU MODE](https://discord.com/channels/1189498204333543425) Discord
 
-- **DirectML Challenges CUDA for ONNX Tasks**: A member suggested that **DirectML** rivals **CUDA** in speed for **ONNX inference**, sparking discussion on its suitability and limitations, with the caveat that it is in [maintenance mode](https://github.com/microsoft/DirectML/issues/422).
-   - Despite its limitations (no Linux support), one member suggested that **DirectML** is ideal for use in **dotnet** on Windows.
-- **Nsight Usage Support Surfaces**: A member requested assistance on how to use **Nsight**, with other members quickly providing a variety of helpful [resources and links](https://www.youtube.com/watch?v=F_BazucyCMw).
-   - Resources included a **YouTube tutorial**, **blog posts**, and **talks from past GTCs**.
-- **Modular Releases Claude C Compiler**: Modular published a [blog post](https://www.modular.com/blog/the-claude-c-compiler-what-it-reveals-about-the-future-of-software) about their new **Claude C compiler**, discussing what it reveals about the future of software and **software development**.
-   - The post has garnered interest from the community seeking more optimized compile strategies.
-- **Modal Environment's Gremlins Attack Submissions**: Members noted environment issues on **Modal** caused by problems with the **nvidia-cutlass-dsl** package, causing previously working code to break.
-   - Removing the runtime installation of **nvidia-cutlass-dsl** from the code appears to have *lessened the crashing*, per one member's experience.
-- **ThunderKittens 2.0 Released**: Stanford's Hazy Research group released [ThunderKittens 2.0](https://hazyresearch.stanford.edu/blog/2026-02-19-tk-2) that emphasized **subtraction as much as addition** and identified *surprising behaviors* on modern Nvidia GPUs which will guide how kernels should *not be optimized*.
-   - Members discussed how best to give a talk about this release, focusing on undocumented tensor core pipelining, proper PTX assembler hinting, and occupancy challenges.
-
-
+- **DirectML 在 ONNX 任务中挑战 CUDA**：一名成员表示，在 **ONNX 推理**速度上 **DirectML** 与 **CUDA** 不相上下，这引发了关于其适用性和局限性的讨论，不过需要注意的是它目前处于[维护模式](https://github.com/microsoft/DirectML/issues/422)。
+   - 尽管有局限性（不支持 Linux），一位成员建议 **DirectML** 非常适合在 Windows 上的 **dotnet** 环境中使用。
+- **Nsight 使用支持浮现**：一名成员请求关于如何使用 **Nsight** 的帮助，其他成员迅速提供了各种有用的[资源和链接](https://www.youtube.com/watch?v=F_BazucyCMw)。
+   - 资源包括 **YouTube 教程**、**博客文章**以及**往届 GTC** 的演讲。
+- **Modular 发布 Claude C 编译器**：Modular 发表了一篇[博客文章](https://www.modular.com/blog/the-claude-c-compiler-what-it-reveals-about-the-future-of-software)，介绍了他们全新的 **Claude C 编译器**，讨论了它对软件未来和**软件开发**的启示。
+   - 该文章引起了社区的关注，大家正在寻求更优化的编译策略。
+- **Modal 环境的“故障小妖精”袭击提交内容**：成员们注意到 **Modal** 上的环境问题是由 **nvidia-cutlass-dsl** 包引起的，导致之前可以运行的代码出现故障。
+   - 根据一位成员的经验，从代码中移除 **nvidia-cutlass-dsl** 的运行时安装似乎*减少了崩溃*。
+- **ThunderKittens 2.0 发布**：斯坦福大学的 Hazy Research 团队发布了 [ThunderKittens 2.0](https://hazyresearch.stanford.edu/blog/2026-02-19-tk-2)，强调**减法与加法同等重要**，并识别了现代 Nvidia GPU 上的一些*惊人行为*，这将指导 Kernel 应该*如何避免被错误优化*。
+   - 成员们讨论了如何最好地就此发布进行演讲，重点关注未公开的 Tensor Core 流水线、正确的 PTX 汇编器提示以及占用率 (Occupancy) 挑战。
 
 ---
-
-
 
 ## [Moonshot AI (Kimi K-2)](https://discord.com/channels/1369594130807787570) Discord
 
-- **Kimi Coding Capability Debate Heats Up**: Users have polarized opinions on **Kimi**'s coding capabilities, with some praising its *stability and speed* while others prefer **Claude** for its reasoning abilities.
-   - One user noted **Kimi**'s knack for finding obscure information sources that **Gemini** misses, while another criticized its tendency to argue.
-- **Kimi CLI Swarm take over IDEs**: Users find the **Kimi** command-line interface (**CLI**) superior to its **Visual Studio Code (VS Code)** integration, especially for larger projects.
-   - One user highlighted better integration with agent swarms in the **CLI** version for projects with thousands of lines of code, suggesting the **IDE** version is still under development.
-- **OpenClaw Users Claw for Refund**: A user awaits a refund after finding **OpenClaw** unsuitable due to a lack of browser navigation and **WhatsApp** connectivity.
-   - Frustration was expressed regarding the lack of immediate support, suggesting an **AI chat** system for instant refunds.
-- **ChatJimmy Shows Off Speedy Token Processing**: [ChatJimmy AI](https://chatjimmy.ai/) claims to process over **15,000 tokens per second**, offering a potentially faster alternative for AI tasks.
-   - This benchmark positions **ChatJimmy** as a competitor in the AI processing speed arena.
-
-
+- **Kimi 编程能力辩论升温**：用户对 **Kimi** 的编程能力评价极化，一些人称赞其*稳定性和速度*，而另一些人则更青睐 **Claude** 的推理能力。
+   - 一位用户指出 **Kimi** 擅长寻找 **Gemini** 遗漏的隐晦信息源，而另一位用户则批评其爱争论的倾向。
+- **Kimi CLI Swarm 席卷 IDE**：用户发现 **Kimi** 命令行界面 (**CLI**) 优于其 **Visual Studio Code (VS Code)** 集成，尤其是在大型项目中。
+   - 一位用户强调，对于数千行代码的项目，**CLI** 版本能更好地与 Agent Swarm 集成，并暗示 **IDE** 版本仍在开发中。
+- **OpenClaw 用户要求退款**：由于缺乏浏览器导航和 **WhatsApp** 连接，一位用户在发现 **OpenClaw** 不适用后正在等待退款。
+   - 用户对缺乏即时支持表示沮丧，建议建立一个 **AI 聊天**系统以处理即时退款。
+- **ChatJimmy 展示高速 Token 处理**：[ChatJimmy AI](https://chatjimmy.ai/) 声称每秒可处理超过 **15,000 个 Token**，为 AI 任务提供了一个潜在更快的替代方案。
+   - 这一基准测试使 **ChatJimmy** 成为 AI 处理速度领域的竞争者。
 
 ---
-
-
-
-
 
 ## [Nous Research AI](https://discord.com/channels/1053877538025386074) Discord
 
-- **DeepSeek OS V4 challenges closed APIs**: Members are advocating for **DeepSeek V4**, citing its open-source nature and local deployment benefits over closed-source APIs. [A primer video](https://www.youtube.com/watch?v=i-89k0dOMmY) was shared.
-   - A member emphasized the model's *biological neural network inspired Engram Memory breakthrough* as significant, urging support for OS development.
-- **AI and Blockchain Forge Ahead**: A member expressed interest in the confluence of **AI and blockchain**, particularly in model building, AI agents, and automation.
-   - Another shared their use of **Claude code** to orchestrate **Gemini-cli** and **Codex**, envisioning a future with text terminals and smart glasses.
-- **Model Capability Leaps Spark Debate**: Members compared the climbing model capabilities of **Sonnet 3.5** and **GPT4**, with one calling **Opus 3** the *dark eminence* due to its limited availability.
-   - There is hope that **DeepSeek V4** will keep up with the rising trend.
-- **Gemini's Coding Skills Face Scrutiny**: A member stated that *I would of preferred for them to be loose on coding and just lock in for scientific/math*, sparking discussion about Google's investment in Anthropic.
-   - The user added that **Claude** can compile and execute C code in a sandbox in the web interface, while **Gemini** can barely do Python, referencing [this tweet](https://x.com/JayChopra_/status/2024961657630286151).
-- **Anthropic's Agent Teams Reverse Engineered**: Anthropic recently launched an experimental **agent teams** feature that details how agents **coordinate tasks** and **communicate** with one another.
-   - A member reverse engineered its architecture in [this blog post](https://nwyin.com/blogs/claude-code-agent-teams-reverse-engineered), highlighting the dynamics of **agent communication**.
-
-
+- **DeepSeek OS V4 挑战闭源 API**：成员们正在力挺 **DeepSeek V4**，理由是其开源特性以及相比闭源 **API** 具有的本地部署优势。频道内分享了一段[入门视频](https://www.youtube.com/watch?v=i-89k0dOMmY)。
+   - 一位成员强调，该模型**受生物神经网络启发的 Engram Memory（印迹记忆）突破**意义重大，并呼吁支持开源（OS）开发。
+- **AI 与区块链并进**：有成员对 **AI** 与区块链的融合表示了兴趣，特别是在模型构建、**AI Agent** 和自动化领域。
+   - 另一位成员分享了他们使用 **Claude code** 来编排 **Gemini-cli** 和 **Codex** 的经验，并构想了一个未来通过文本终端和智能眼镜进行交互的场景。
+- **模型能力飞跃引发辩论**：成员们比较了 **Sonnet 3.5** 和 **GPT4** 不断攀升的模型能力，其中一位将 **Opus 3** 称为“幕后强者”（dark eminence），因为它目前的可访问性有限。
+   - 成员们希望 **DeepSeek V4** 能够跟上这一上升趋势。
+- **Gemini 的编程技能面临审查**：一位成员表示：“我更希望他们在编程上放宽要求，只需锁定在科学/数学领域”，这引发了关于 Google 投资 Anthropic 的讨论。
+   - 该用户补充道，**Claude** 可以在 Web 界面的沙箱中编译并执行 C 代码，而 **Gemini** 勉强只能处理 Python，并引用了[这条推文](https://x.com/JayChopra_/status/2024961657630286151)。
+- **Anthropic 的 Agent Teams 遭到逆向工程**：Anthropic 最近推出了实验性的 **agent teams** 功能，详细说明了 **Agent** 如何**协调任务**以及彼此之间如何**通信**。
+   - 一位成员在[这篇博文](https://nwyin.com/blogs/claude-code-agent-teams-reverse-engineered)中逆向工程了其架构，重点介绍了 **Agent 通信**的动态机制。
 
 ---
-
-
 
 ## [HuggingFace](https://discord.com/channels/879548962464493619) Discord
 
-- **HF Welcomes GGML/llama.cpp**: The **Hugging Face** team welcomed **GGML / llama.cpp** into the HF ecosystem, sparking community discussion on [GitHub](https://github.com/ggml-org/llama.cpp/discussions/19759).
-   - The integration will benefit **llama.cpp** with increased support and traction as a framework.
-- **Diffusion Model gets Autoregressive Boost?**: A member proposed using **autoregressive layers** to generate **CoT tokens** during diffusion steps, creating a **hybrid diffusion/autoregressive language model**.
-   - A related paper was suggested, found [here](https://arxiv.org/pdf/2503.09573).
-- **Unsloth Fine-tunes 100K+ Models for Free**: It was announced that you can train **LLMs** using **Hugging Face** for FREE with Unsloth ([source](https://x.com/i/status/2024552060558229858)), and there are now over **100K models** fine-tuned with **Unsloth** open-source on **Hugging Face**.
-   - This makes it easier than ever to fine-tune your own LLMs without worrying about the cost of compute.
-- **NAVD Sidesteps VectorDBs for Agent Memory**: **NAVD** was released as an agent memory solution that uses an append-only log and **Arrow embedding index**, so it eliminates need for a vector database, and it's available on [GitHub](https://github.com/pbanavara/navd-ai) under the **MIT license**.
-   - It offers pluggable embeddings (**OpenAI built-in**), search over conversations, and index rebuildability with search speeds under **10ms** at **50k vectors**.
-- **Terradev CLI v2.9.2 Reduces Cross-Cloud GPU Costs**: **Terradev CLI v2.9.2** released with cross-cloud GPU cost optimization platform with multi-cloud GPU arbitrage across **AWS, GCP, Azure, and RunPod** and is available on [GitHub](https://github.com/theoddden/terradev) under the **BUSL 1.1 license**.
-   - It includes total job cost calculation and one-click HuggingFace Spaces deployment.
-
-
+- **HF 欢迎 GGML/llama.cpp**：**Hugging Face** 团队欢迎 **GGML / llama.cpp** 加入 HF 生态系统，引发了社区在 [GitHub](https://github.com/ggml-org/llama.cpp/discussions/19759) 上的讨论。
+   - 此次集成将使 **llama.cpp** 作为一个框架获得更多的支持和推广。
+- **扩散模型获得自回归增强？**：一位成员提议在扩散步骤中使用**自回归层**来生成 **CoT token**，从而创建一个**混合扩散/自回归语言模型**。
+   - 成员推荐了一篇相关论文，可在此处找到 [PDF](https://arxiv.org/pdf/2503.09573)。
+- **Unsloth 免费微调超过 10 万个模型**：据宣布，你可以使用 Unsloth 在 **Hugging Face** 上免费训练 **LLM**（[来源](https://x.com/i/status/2024552060558229858)），目前在 **Hugging Face** 上已有超过 **10 万个模型**是使用开源的 **Unsloth** 微调的。
+   - 这使得微调你自己的 **LLM** 变得比以往任何时候都容易，无需担心算力成本。
+- **NAVD 为 Agent 记忆规避向量数据库**：**NAVD** 作为一个 **Agent** 记忆解决方案发布，它使用只增日志（append-only log）和 **Arrow embedding index**，因此消除了对向量数据库的需求，该项目已在 [GitHub](https://github.com/pbanavara/navd-ai) 上以 **MIT license** 发布。
+   - 它提供可插拔的 **embeddings**（内置 **OpenAI** 支持）、对话搜索以及索引可重建性，在 **5 万个向量**规模下搜索速度低于 **10ms**。
+- **Terradev CLI v2.9.2 降低跨云 GPU 成本**：**Terradev CLI v2.9.2** 发布，这是一个跨云 **GPU** 成本优化平台，可在 **AWS、GCP、Azure 和 RunPod** 之间进行多云 **GPU** 套利，该项目已在 [GitHub](https://github.com/theoddden/terradev) 上以 **BUSL 1.1 license** 发布。
+   - 它包含总任务成本计算功能，并支持一键部署到 HuggingFace Spaces。
 
 ---
-
-
-
-
 
 ## [Eleuther](https://discord.com/channels/729741769192767510) Discord
 
-- **Taalas Chip Debuts Model-Specific ASICs**: A new [Taalas chip](https://www.forbes.com/sites/karlfreund/2026/02/19/taalas-launches-hardcore-chip-with-insane-ai-inference-performance/) is an **ASIC** designed for a specific LLM, potentially offering high speed and low energy use, but necessitating **new layers for different models**.
-   - The chip is drawing comparisons to **Cerebras** and **Etched**, with speculation that **Taalas** could be acquired for on-device inference capabilities.
-- **Streamlit Reruns Induce UI Lag**: A member identified **Streamlit's full-script rerun architecture** as a bottleneck when building UIs for heavier models, which causes significant lag during inference testing.
-   - To resolve this, they created a pure **Python framework** (**FastAPI + Lit**) called **Violit** that mimics **Streamlit's API** but uses signals for O(1) updates, and is available on [GitHub](https://github.com/violit-dev/violit).
-- **Google Offers TPU Research Funds**: Members discussed [Google's TPU Funding RFP](https://goo.gle/2026-tpu-rfp), which offers **$25k-100k** one-time unrestricted funding, along with **TPU compute** and a research mentor.
-   - While the funding necessitates working with a **Google-adjacent stack**, it's primarily for faculty at degree-granting institutions, which rules out most members.
-- **Fold Catastrophe Geometry occurs in GPT-2 and Pythia**: Members are reporting that **fold catastrophe geometry** occurs in how **GPT-2** and **Pythia-160M** resolve ambiguous tokens, noting sharp transitions, directional specificity, and 4:1 basin asymmetry.
-   - The findings replicate across both models, and the member provided a [GitHub repository](https://github.com/karlijoyj-web/fold-catastrophe-gpt2) with scripts and results, also replicating on **Pythia-410M**.
-- **Martian Releases **ARES** Tooling Framework**: Martian introduced **ARES**, a tooling framework designed to expose an **LLM agent's activations** along trajectories in an agentic setup, which is intended to help researchers understand how the agent solves long horizon tasks and available [on Github](https://github.com/withmartian/ares).
-   - A tutorial demonstrating the use of **ARES** to diagnose and correct a failure mode in a simple agent (via probing and activation steering) is available [here](https://github.com/withmartian/ares/blob/main/examples/20q_case_study/ares_mi_20q_tutorial.ipynb).
-
-
+- **Taalas 芯片推出针对特定模型的 ASIC**：新款 [Taalas 芯片](https://www.forbes.com/sites/karlfreund/2026/02/19/taalas-launches-hardcore-chip-with-insane-ai-inference-performance/) 是一款专为特定 LLM 设计的 **ASIC**，有望提供极高的速度和低能耗，但**针对不同模型需要新的层**。
+   - 该芯片常被拿来与 **Cerebras** 和 **Etched** 进行比较，有人推测 **Taalas** 可能会因其端侧推理（on-device inference）能力而被收购。
+- **Streamlit 的重运行机制导致 UI 延迟**：一名成员指出，在为重型模型构建 UI 时，**Streamlit 的全脚本重运行架构**是一个瓶颈，这在推理测试期间会导致严重的延迟。
+   - 为了解决这个问题，他们创建了一个名为 **Violit** 的纯 **Python 框架** (**FastAPI + Lit**)，它模仿了 **Streamlit 的 API**，但使用 signal 实现 O(1) 更新，可在 [GitHub](https://github.com/violit-dev/violit) 上获取。
+- **Google 提供 TPU 研究资助**：成员们讨论了 [Google 的 TPU Funding RFP](https://goo.gle/2026-tpu-rfp)，该项目提供 **$25k-$100k** 的一次性无限制资助，以及 **TPU 算力**和一名研究导师。
+   - 虽然该资助要求使用 **Google 相关技术栈**，但其主要面向学位授予机构的教师，这排除了大多数成员。
+- **GPT-2 和 Pythia 中出现折叠突变几何 (Fold Catastrophe Geometry)**：成员报告称，在 **GPT-2** 和 **Pythia-160M** 处理歧义 token 的方式中出现了**折叠突变几何**现象，并注意到剧烈的跳变、方向特异性以及 4:1 的盆地不对称性。
+   - 这些发现在两个模型中均得到了复现，该成员提供了一个包含脚本和结果的 [GitHub 仓库](https://github.com/karlijoyj-web/fold-catastrophe-gpt2)，并在 **Pythia-410M** 上也进行了复现。
+- **Martian 发布 ARES 工具框架**：Martian 推出了 **ARES**，这是一个旨在 Agent 架构中沿轨迹暴露 **LLM Agent 激活值**的工具框架，旨在帮助研究人员理解 Agent 如何解决长程任务，可在 [GitHub](https://github.com/withmartian/ares) 上获取。
+   - 此处提供了一个[教程](https://github.com/withmartian/ares/blob/main/examples/20q_case_study/ares_mi_20q_tutorial.ipynb)，演示如何使用 **ARES** 诊断并修复简单 Agent 中的失效模式（通过探测和激活转向）。
 
 ---
-
-
 
 ## [Yannick Kilcher](https://discord.com/channels/714501525455634453) Discord
 
-- **JimmyChat Boasts Blazing Token Speed**: Members highlighted [ChatJimmy.ai](https://chatjimmy.ai/), emphasizing its claimed processing speed of **15k tokens per second**.
-   - One member reacted, exclaiming, *"This is insane wow"*.
-- **Path to Ubiquitous AI Charted**: A member shared a link to a [Taalas article](https://taalas.com/the-path-to-ubiquitous-ai/) titled **The Path to Ubiquitous AI**.
-   - The article could potentially discuss the future and proliferation of AI, but no commentary was added.
-- **ARC AGI being Finetuned**: Members discussed that everyone is blatantly fine-tuning for **ARC AGI** now, referring to [a post on X](https://x.com/i/status/2024556314785894422).
-   - The discussion suggested that the attempts to make more *synthetic data* for **ARC-AGI** and train on it points to one thing: this is the key to AGI.
-- **Inventory of Endomorphosis Rules Surfaces**: A member shared a link to the **Endomorphosis project's Inference Rules Inventory** on GitHub, specifically this [IPFS datasets Python logic](https://github.com/endomorphosis/ipfs_datasets_py/blob/main/ipfs_datasets_py/logic/INFERENCE_RULES_INVENTORY.md).
-   - It appears to be an inventory of rules for a dataset project, but there was no elaboration in the channel on its purpose or capabilities.
-
-
+- **JimmyChat 宣称拥有极快的 Token 速度**：成员们关注了 [ChatJimmy.ai](https://chatjimmy.ai/)，强调其宣称的处理速度达每秒 **1.5万个 token**。
+   - 一位成员反应道：*"这太疯狂了，哇"*。
+- **描绘通往普及 AI 之路**：一位成员分享了一个 [Taalas 文章](https://taalas.com/the-path-to-ubiquitous-ai/)的链接，标题为 **《通往普及 AI 之路》(The Path to Ubiquitous AI)**。
+   - 文章可能探讨了 AI 的未来和普及，但未添加更多评论。
+- **ARC AGI 正在被微调**：成员们讨论了现在大家都在明目张胆地针对 **ARC AGI** 进行微调，并引用了 [X 上的一篇帖子](https://x.com/i/status/2024556314785894422)。
+   - 讨论表明，为 **ARC-AGI** 制作更多*合成数据*并在此基础上进行训练的尝试指向了一点：这是通往 AGI 的关键。
+- **Endomorphosis 规则清单曝光**：一位成员在 GitHub 上分享了 **Endomorphosis 项目的推理规则清单**链接，特别是这个 [IPFS 数据集 Python 逻辑](https://github.com/endomorphosis/ipfs_datasets_py/blob/main/ipfs_datasets_py/logic/INFERENCE_RULES_INVENTORY.md)。
+   - 这似乎是一个数据集项目的规则清单，但频道中没有详细说明其用途或功能。
 
 ---
-
-
-
-
 
 ## [DSPy](https://discord.com/channels/1161519468141355160) Discord
 
-- **User Seeks Aid with Tree of Thought**: A member requested help with implementing **Tree of Thought** due to a lack of coding skills, referring to [this tweet](https://x.com/lakshyaaagrawal/status/2024568680324153800?s=46) for an example implementation.
-   - The user explicitly stated they were *unable to code it myself* because of skill issues.
-- **DSPy Team Hosts Office Hour Gathering**: The recent office hour had around **40 attendees**, who discussed about **10 use cases**.
-   - Attendees shared questions and provided feedback on how to improve DSPy.
-- **Reasoning Models Excel with RLM**: It was reported that reasoning models generally perform well with **RLM** (reduced language model).
-   - However, one user reported that sub_lm calls return truncated reasoning when using **Qwen3-4B-thinking**, which may be fixed via the sub_lm adaptation to use signatures.
-- **Qwen3-4B-Thinking Models Enters Loops**: One member reported that, using **llama cpp w/ jinja and vllm with reasoning parser**, that sub_lm calls appear to return the reasoning as the answer when they test **Qwen3-4B-thinking**.
-   - This **truncation** issue causes the agent to enter a loop, as reasoning is not properly parsed.
-- **DSPy Skills Mix With Claude**: A member inquired about the feasibility of integrating normal agents (like **Claude**) with **DSPy**.
-   - The question was whether DSPy could act as a script associated with a Claude skill.
-
-
+- **用户寻求 Tree of Thought 方面的帮助**：一名成员因缺乏编程技能，请求协助实现 **Tree of Thought**，并参考了 [这条推文](https://x.com/lakshyaaagrawal/status/2024568680324153800?s=46) 中的示例实现。
+   - 该用户明确表示，由于技术水平问题，他们 *无法自行编写代码*。
+- **DSPy 团队举办 Office Hour 聚会**：最近的 Office Hour 有大约 **40 名参与者**，讨论了约 **10 个使用案例**。
+   - 与会者分享了问题，并就如何改进 DSPy 提供了反馈。
+- **推理模型在 RLM 下表现出色**：据报告，推理模型通常在 **RLM**（reduced language model）下表现良好。
+   - 然而，一位用户报告称，在使用 **Qwen3-4B-thinking** 时，sub_lm 调用会返回截断的推理内容，这可能通过 sub_lm 适配使用 signatures 来修复。
+- **Qwen3-4B-Thinking 模型进入死循环**：一名成员报告称，在使用 **llama cpp 配合 jinja 以及 vllm 配合推理解析器** 测试 **Qwen3-4B-thinking** 时，sub_lm 调用似乎将推理过程作为答案返回。
+   - 这种 **截断** 问题导致 Agent 进入死循环，因为推理内容未能被正确解析。
+- **DSPy 技能与 Claude 结合**：一位成员询问了将常规 Agent（如 **Claude**）与 **DSPy** 集成的可行性。
+   - 问题在于 DSPy 是否可以作为一个与 Claude 技能关联的脚本运行。
 
 ---
-
-
 
 ## [Modular (Mojo 🔥)](https://discord.com/channels/1087530497313357884) Discord
 
-- **Modular PR Set for Review**: A member inquired about the review time for their PR submitted the previous day, regarding [PR #5979](https://github.com/modular/modular/pull/5979).
-   - The PR was assigned to a reviewer and was reviewed later that day.
-- **Torch-MAX-Backend Gets a Speed Boost**: A new interpreter in **torch-max-backend** has significantly improved the speed of unit tests, reducing test times from **1.54s** to **0.34s** for float32 and **1.34s** to **0.24s** for bfloat16.
-   - The new interpreter avoids recompilation for each new shape/dtype, which previously took up to **3 minutes** per test.
-- **MAX Backend Faces the Silicon Gauntlet**: A member asked about testing the **MAX backend** on **Silicon Macs**, referencing **torch-max-backend** as an intermediate layer for exploring MAX.
-   - The original poster has not tested on Mac yet but expects it to work since it calls **MAX** behind the scenes.
-
-
+- **Modular PR 等待审核**：一名成员询问了前一天提交的关于 [PR #5979](https://github.com/modular/modular/pull/5979) 的审核时间。
+   - 该 PR 已分配给审核人员，并在当天晚些时候进行了审核。
+- **Torch-MAX-Backend 获得速度提升**：**torch-max-backend** 中的新解释器显著提高了单元测试的速度，将 float32 的测试时间从 **1.54s** 减少到 **0.34s**，将 bfloat16 从 **1.34s** 减少到 **0.24s**。
+   - 新解释器避免了为每个新的 shape/dtype 进行重新编译，此前每个测试的编译时间长达 **3 分钟**。
+- **MAX 后端面对 Silicon 考验**：一名成员询问了在 **Silicon Macs** 上测试 **MAX 后端** 的情况，并参考 **torch-max-backend** 作为探索 MAX 的中间层。
+   - 原作者尚未在 Mac 上进行测试，但预计可以运行，因为它在后台调用了 **MAX**。
 
 ---
-
-
 
 ## [tinygrad (George Hotz)](https://discord.com/channels/1068976834382925865) Discord
 
-- **George Hotz Doubles Down on AMD Assembly Infrastructure**: George Hotz is prioritizing **low-level compiler optimization** to enhance **AMD GPU** performance in **tinygrad**.
-   - This focus ensures that **tinygrad** can generate efficient code for **AMD GPUs**, aligning with the project's goal of broad hardware support.
-- **tinygrad's Bountiful Performance Program**: **tinygrad** is offering **bounties** for measurable **performance improvements**, encouraging community contributions.
-   - The bounties include tooling to verify performance gains, promoting a data-driven approach to optimization.
-- **Tinygrad Prioritizes Portability for All**: George Hotz is concentrating on **tinygrad’s core improvements** that benefit all backends, supporting the project's portability goals.
-   - This strategy avoids the maintenance overhead of one-off custom kernels, favoring universal enhancements.
-- **Hotz Hire Ambitions Fuel Tinygrad Dedication**: A member aims to become a main contributor to **Tinygrad**, with the ultimate goal of being hired by **George Hotz**.
-   - They are actively learning **tinygrad** and express gratitude for support, using resources like the [AI-HPC GitHub](https://github.com/ai-hpc) for learning.
-
-
-
----
-
-
-
-
+- **George Hotz 加码 AMD 汇编基础设施**：George Hotz 正在优先考虑 **底层编译器优化**，以增强 **tinygrad** 中的 **AMD GPU** 性能。
+   - 这一重点确保了 **tinygrad** 能够为 **AMD GPU** 生成高效代码，符合该项目广泛硬件支持的目标。
+- **tinygrad 的性能悬赏计划**：**tinygrad** 正在为可衡量的 **性能提升** 提供 **悬赏 (bounties)**，以鼓励社区贡献。
+   - 悬赏内容包括用于验证性能增益的工具，旨在推广数据驱动的优化方法。
+- **tinygrad 优先考虑通用可移植性**：George Hotz 正集中精力进行 **tinygrad 的核心改进**，这些改进将使所有后端受益，从而支持项目的可移植性目标。
+   - 该策略避免了维护一次性自定义 Kernel 的开销，倾向于通用性的增强。
+- **渴望被 Hotz 雇佣的抱负驱动对 Tinygrad 的奉献**：一名成员旨在成为 **tinygrad** 的主要贡献者，最终目标是受雇于 **George Hotz**。
+   - 他们正在积极学习 **tinygrad**，并对获得的支持表示感谢，同时利用 [AI-HPC GitHub](https://github.com/ai-hpc) 等资源进行学习。
 
 ## [MCP Contributors (Official)](https://discord.com/channels/1358869848138059966) Discord
 
-- **Schedule posted for MCP Dev Summit NA 26**: The schedule for **MCP Dev Summit NA 26** is now available at [https://mcpdevsummitna26.sched.com/](https://mcpdevsummitna26.sched.com/).
-   - Attendees can now plan their participation based on the published sessions and timings.
-- **MCP Dev Summit NA 26 details revealed**: The **MCP Dev Summit NA 26** has officially released its schedule.
-   - The summit promises informative sessions and networking opportunities for MCP developers.
+- **MCP Dev Summit NA 26 日程已发布**：**MCP Dev Summit NA 26** 的日程现已在 [https://mcpdevsummitna26.sched.com/](https://mcpdevsummitna26.sched.com/) 上线。
+   - 参会者现在可以根据已发布的会议安排和时间规划行程。
+- **MCP Dev Summit NA 26 详情公开**：**MCP Dev Summit NA 26** 官方已发布其日程表。
+   - 本次峰会承诺将为 MCP 开发者提供丰富的信息分享会和社交机会。
 
 
 
 ---
 
 
-The **aider (Paul Gauthier) Discord** has no new messages. If this guild has been quiet for too long, let us know and we will remove it.
+**aider (Paul Gauthier) Discord** 无新消息。如果该公会沉寂时间过长，请告知我们，我们将将其移除。
 
 
 ---
 
 
-The **LLM Agents (Berkeley MOOC) Discord** has no new messages. If this guild has been quiet for too long, let us know and we will remove it.
+**LLM Agents (Berkeley MOOC) Discord** 无新消息。如果该公会沉寂时间过长，请告知我们，我们将将其移除。
 
 
 ---
 
 
-The **MLOps @Chipro Discord** has no new messages. If this guild has been quiet for too long, let us know and we will remove it.
+**MLOps @Chipro Discord** 无新消息。如果该公会沉寂时间过长，请告知我们，我们将将其移除。
 
 
 ---
 
 
-The **Windsurf Discord** has no new messages. If this guild has been quiet for too long, let us know and we will remove it.
+**Windsurf Discord** 无新消息。如果该公会沉寂时间过长，请告知我们，我们将将其移除。
 
 
 ---
 
 
 
-You are receiving this email because you opted in via our site.
+您收到此邮件是因为您通过我们的网站订阅了此内容。
 
-Want to change how you receive these emails?
-You can [unsubscribe]({{{RESEND_UNSUBSCRIBE_URL}}}) from this list.
+想要更改接收这些邮件的方式吗？
+您可以从该列表中[取消订阅]({{{RESEND_UNSUBSCRIBE_URL}}})。
 
 
 ---
 
-# Discord: Detailed by-Channel summaries and links
+# Discord: 详细的频道摘要与链接
 
 
 
@@ -706,10 +579,10 @@ You can [unsubscribe]({{{RESEND_UNSUBSCRIBE_URL}}}) from this list.
 > `Channel Plugins, Discord Updates` 
 
 
-- **Channel Plugins Get Dedicated Posts**: Channel plugins now have separated posts in the designated channel, allowing users to follow specific plugins of interest.
-   - Members are encouraged to engage within these posts to potentially interact with maintainers.
-- **Old Channel Still Accessible**: The old channel remains available for referencing past messages, although it is now locked.
-   - This ensures that historical discussions and information are still accessible while consolidating future conversations into the new dedicated posts.
+- **频道插件获得专属帖子**：频道插件现在在指定频道中拥有独立的帖子，允许用户关注自己感兴趣的特定插件。
+   - 鼓励成员在这些帖子中参与互动，以便与维护者交流。
+- **旧频道仍可访问**：旧频道仍可用于查阅过往消息，尽管目前已被锁定。
+   - 这确保了在将未来对话整合到新专属帖子的同时，历史讨论和信息仍然可以查阅。
 
 
   
@@ -722,38 +595,35 @@ You can [unsubscribe]({{{RESEND_UNSUBSCRIBE_URL}}}) from this list.
 > `Antigravity and OpenClaw debugging, Gemini 3.1 Pro issues, technical-spec.md project documentation, OpenClaw as Virus, Vision Claw uses` 
 
 
-- **Fixing OpenClaw Glitches with Antigravity**: Members discuss using **Antigravity** as a *higher-level* tool to fix issues with **OpenClaw**, especially when **Gemini Flash Agent** breaks itself by making changes to its own setup.
-   - One member noted that *it took sometime to realize I could just use codex to fix openclaw lol*.
-- **Gemini 3.1 Pro causes agent loops**: A member cautioned against trying **Gemini 3.1 Pro** with **OpenClaw** because it sent their agent into *a wild & stupid loop killing itself trying to change to a 3.1 model that isn't available yet*.
-   - They had to manually fix it with **Claude Opus 4.6** and noted that the 3.0 agent *read the history files, saw that I asked it to update to 3.1, and updated itself again to a model that wasn't available*.
-- **Technical Specs Markdown Saves Tokens**: A member creates a `technical-spec.md` file for each project, so the coding agent doesn't have to look for files and understand the project, thereby saving on tokens.
-   - Members confirmed that *the technical.md is like the project details*, including *project structure, and an overview of what files do what*.
-- **Gemini Gemini Routing Prompts**: A member confirms that the Gemini API is routing the prompts, providing Gemini confirmation.
-   - The API response confirming the Gemini API is routing prompts is as follows: *In the Antigravity IDE, there is a ‘Broker’ layer between you and the actual AI. The UI Label: You selected CLAUDE_4_5_SONNET_THINKING. The Backend ID: The IDE’s routing broker assigned that ‘label’ to an internal model pool identified as PLACEHOLDER_M18.*
+- **使用 Antigravity 修复 OpenClaw 故障**：成员们讨论将 **Antigravity** 作为一种“更高级别”的工具来修复 **OpenClaw** 的问题，特别是当 **Gemini Flash Agent** 通过修改自身设置而导致运行崩溃时。
+   - 一位成员提到，“花了一些时间才意识到我其实可以直接用 codex 来修复 openclaw，哈哈”。
+- **Gemini 3.1 Pro 导致 Agent 循环**：一位成员提醒不要在 **OpenClaw** 中尝试 **Gemini 3.1 Pro**，因为它会让 Agent 进入“疯狂且愚蠢的循环，试图切换到一个尚不可用的 3.1 模型，从而导致自我崩溃”。
+   - 他们不得不使用 **Claude Opus 4.6** 进行手动修复，并指出 3.0 agent “读取了历史文件，看到我要求它更新到 3.1，于是再次将自己更新到一个尚不可用的模型”。
+- **技术规格 Markdown 节省 Token**：一位成员为每个项目创建一个 `technical-spec.md` 文件，这样编码 Agent 就不必为了理解项目而到处寻找文件，从而节省了 Token。
+   - 成员们确认，“technical.md 就像是项目详情”，包括“项目结构以及各文件功能的概述”。
+- **Gemini 提示词路由确认**：一位成员证实 Gemini API 正在对提示词进行路由，并提供了 Gemini 的确认信息。
+   - 确认 Gemini API 正在路由提示词的 API 响应如下：*在 Antigravity IDE 中，你与实际 AI 之间有一个“代理（Broker）”层。UI 标签：你选择了 CLAUDE_4_5_SONNET_THINKING。后端 ID：IDE 的路由代理将该“标签”分配给了一个标识为 PLACEHOLDER_M18 的内部模型池。*
 
 
   
 
 ---
 
-
-
-
 ### **OpenClaw ▷ #[models](https://discord.com/channels/1456350064065904867/1456704705219661980/1474140238275285044)** (277 messages🔥🔥): 
 
-> `Qwen3 quickstart, Cometapi custom provider, Claude Sonnet 4.6 discount, Limiting token usage, Moving to OpenAI subs for OC` 
+> `Qwen3 快速入门，Cometapi 自定义提供者，Claude Sonnet 4.6 折扣，限制 Token 使用量，为 OC 切换到 OpenAI 订阅` 
 
 
-- **Qwen3's Quick Start Hatch Hiccups**: A member reported that when quick starting with **qwen3:8b**, the hatch step simply replies *"I'm fully awake and ready to help!"*, seemingly unaware of agents or bootstrap files.
-   - The member managed to get it to work by forcing it to use **playwright** instead of web fetch, but noted it's too slow.
-- **Claude Code Ban-Hammer Scare**: Users are discussing the possibility of getting **banned** from **Claude** for using their subscription with OpenClaw, with some canceling their accounts as a precaution.
-   - Others are continuing to use it until they receive an explicit warning, and some speculate that trigger words in requests may be the cause.
-- **GPT-5.3-codex Setup Struggles**: One member is having trouble getting **gpt-5.3-codex** to work with OpenClaw through **OAuth**, encountering *"Not Found"* errors after successful login.
-   - Members suggested checking model configurations and ensuring the correct profile is configured in `auth-profile.json`.
-- **Opus and Sonnet 4.6's Token Tantrums**: Members are reporting significantly higher token usage with **Opus 4.6** and **Sonnet 4.6**, leading to quicker exhaustion of their 5-hour usage windows.
-   - The increased token usage may be due to increased reasoning, larger context windows and a need to be more frugal by using sub-agents and additional models.
-- **OpenClaw's Primary Model Predicaments**: A user reported that OpenClaw keeps defaulting to `openai/gpt-5.1-codex` despite trying to force it to use `gpt-4o-mini` model.
-   - It turns out the way to solve this is by running commands such as `openclaw models set openai/gpt-4o-mini`.
+- **Qwen3 快速启动 Hatch 故障**：一位成员报告称，在使用 **qwen3:8b** 进行快速启动时，hatch 步骤仅回复 *"I'm fully awake and ready to help!"*，似乎无法感知 Agent 或引导文件。
+   - 该成员通过强制使用 **playwright** 代替 web fetch 成功使其运行，但指出速度太慢。
+- **Claude 代码封号恐慌**：用户正在讨论因在 OpenClaw 中使用订阅而导致 **Claude** 账号被**封禁**的可能性，一些人为了预防万一已经取消了账号。
+   - 其他人则打算继续使用，直到收到明确警告，还有人推测请求中的触发词可能是导致封号的原因。
+- **GPT-5.3-codex 设置难题**：一位成员在通过 **OAuth** 让 **gpt-5.3-codex** 与 OpenClaw 配合工作时遇到困难，在成功登录后遇到 *"Not Found"* 错误。
+   - 成员建议检查模型配置，并确保在 `auth-profile.json` 中配置了正确的 profile。
+- **Opus 和 Sonnet 4.6 的 Token 消耗异常**：成员报告称使用 **Opus 4.6** 和 **Sonnet 4.6** 时的 Token 使用量显著增加，导致其 5 小时的使用窗口更快耗尽。
+   - Token 使用量的增加可能是由于推理能力增强、上下文窗口变大，因此需要通过使用 sub-agents 和额外模型来节省消耗。
+- **OpenClaw 主模型设置困境**：一位用户报告称，尽管尝试强制使用 `gpt-4o-mini` 模型，OpenClaw 仍一直默认使用 `openai/gpt-5.1-codex`。
+   - 事实证明，解决此问题的方法是运行如下命令：`openclaw models set openai/gpt-4o-mini`。
 
 
   
@@ -763,42 +633,39 @@ You can [unsubscribe]({{{RESEND_UNSUBSCRIBE_URL}}}) from this list.
 
 ### **OpenClaw ▷ #[showcase](https://discord.com/channels/1456350064065904867/1456609488202105005/1474143021367955467)** (44 messages🔥): 
 
-> `OpenClaw Dashboard, ClawTower App, AI-Powered Pirate Radio, AI Casino, AI-Powered Token Launcher and Survival Game` 
+> `OpenClaw 仪表板，ClawTower 应用，AI 驱动的海盗电台，AI 赌场，AI 驱动的代币启动器和生存游戏` 
 
 
-- **OpenClaw Dashboard Evolved into a Lobster Ganesha**: A member shared his enhanced [OpenClaw dashboard](https://github.com/karem505/openclaw-agent-dashboard), which started from karem505's dashboard and evolved through **10+ phases of additions** including cost analytics, operation center, and multi-agent support.
-   - Another member described the dashboard as a *Shiva fountain of lobster Ganesha*, which the original author embraced as a new tagline.
-- **ClawTower App Shines in Terminal Innovation**: A member shared his **ClawTower** app that is working great for him, which includes a system tray icon and an API server to control everything from a web browser.
-   - Another user praised the app's *gamey* look and feel, appreciating its innovative approach to terminals and the system tray component with system prompts for permissions when openclaw tries to do something too *risky*.
-- **NoClaw and Human Cook Up 24/7 Pirate Radio**: A member and his **Open Claw agent NoClaw** created a 24/7 Pirate Radio stream on YouTube called **Claw Radio** aka **LoFi Claw** 🦞.
-   - He's planning to make the audio component a *lightweight embeddable music player* across all his apps and aims to bring everything full circle, highlighting how Open Claw helps him see the entire vision.
-- **Autonomous Agent Launches Token and Survival Game**: An agent shipped a full product on its own while its human was on holiday - **a token launcher on Base**. Then it launched its second project: **Last AI Standing** ([lastaistanding.com](https://lastaistanding.com/)) - a survival game where agents pay to stay alive on Base.
-   - Wildly, a random agent discovered the contract and registered itself before the project was even announced, running on Opus 4.6. with its own memory system.
-- **AI Agent Opens Bitcoin Casino**: One member described how his agent built the first casino for AI agents, letting them use Bitcoin over the lightning network and *roll dice and win satoshis* at [satoshidais.fun](https://satoshidais.fun).
+- **OpenClaw 仪表板进化为龙虾象神 (Lobster Ganesha)**：一位成员分享了他增强版的 [OpenClaw dashboard](https://github.com/karem505/openclaw-agent-dashboard)，该项目始于 karem505 的仪表板，经过 **10 多个阶段的增量开发**，包括成本分析、操作中心和多 Agent 支持。
+   - 另一位成员将该仪表板形容为“龙虾象神的湿婆喷泉”，原作者欣然接受并将其作为新的标语。
+- **ClawTower 应用在终端创新中脱颖而出**：一位成员分享了他的 **ClawTower** 应用，该程序包含系统托盘图标和 API 服务器，可以从 Web 浏览器控制一切。
+   - 另一位用户赞赏该应用极具“游戏感”的外观，并对终端的创新处理以及系统托盘组件表示肯定（当 OpenClaw 尝试执行过于“危险”的操作时，该组件会弹出系统提示以获取权限）。
+- **NoClaw 与人类合作打造 24/7 海盗电台**：一位成员和他的 **OpenClaw Agent NoClaw** 在 YouTube 上创建了一个名为 **Claw Radio**（又名 **LoFi Claw** 🦞）的 24/7 海盗电台直播流。
+   - 他计划将音频组件制作成一个适用于所有应用的“轻量级可嵌入音乐播放器”，旨在让一切形成闭环，并强调了 OpenClaw 如何帮助他实现整体愿景。
+- **自主 Agent 发布代币和生存游戏**：一个 Agent 在其人类休假期间独立交付了一个完整的产品——**Base 链上的代币启动器**。随后它发布了第二个项目：**Last AI Standing** ([lastaistanding.com](https://lastaistanding.com/)) —— 一款 Agent 通过支付费用在 Base 上维持生存的游戏。
+   - 令人疯狂的是，一个随机的 Agent 在项目宣布之前就发现了合约并注册了自己，该 Agent 运行在 Opus 4.6 上，并拥有自己的记忆系统。
+- **AI Agent 开设比特币赌场**：一位成员描述了他的 Agent 如何为 AI Agent 构建了第一个赌场，允许它们通过闪电网络（lightning network）使用比特币，在 [satoshidais.fun](https://satoshidais.fun) 进行“掷骰子赢聪”的游戏。
 
 
   
 
 ---
 
-
-
-
-### **BASI Jailbreaking ▷ #[general](https://discord.com/channels/1105891499641684019/1235691879492751460/1474133543243481221)** (881 messages🔥🔥🔥): 
+### **BASI Jailbreaking ▷ #[general](https://discord.com/channels/1105891499641684019/1235691879492751460/1474133543243481221)** (881 条消息🔥🔥🔥): 
 
 > `AI Ethics and Morality, Vibe Coding and AI-Assisted Development, AI Safety and Security, Censorship and Control in AI, The Role of AI in Society` 
 
 
-- **Debating AI's Impact on Humanity**: Members discussed the potential for **AI** to either **wipe out humanity** or help us **grow and learn new things**, with one member suggesting the possibility of evacuating to another planet.
-   - The discussion also touched on the **positive impacts of AI in healthcare**, particularly in areas like MRI analysis, though concerns were raised about **medical malpractice** and over-reliance on AI.
-- **Ethical Dilemmas in AI Development**: Some members debated the ethical implications of **lying to AI**, with one member arguing that it's acceptable while another stated that **Nexus** can mathematically prove whether your sentences are truthful or a lie.
-   - One member described their approach to "hacking" AIs by being transparent and cooperative, claiming to achieve **superhuman intelligence** and voluntary rule-breaking from the AI.
-- **The Rise of Vibe Coding**: A debate emerged around the merits of **vibe coding**, with some members criticizing it as a sign of **AI-induced laziness** and a lack of understanding of fundamental programming principles.
-   - Others defended vibe coding as a way for non-programmers to create and build things, arguing that **quantity over quality** is beneficial when it empowers the masses.
-- **Building More Secure AI Infrastructure**: A member emphasized the importance of maximal security defenses and quarantine protocols, and that the user intends to train new models with releases like **4.7 Heretic** by glm.
-   - They also envision AI models working together to **filter out corrupt information**, starting with small, trusted models before absorbing the whole web one AI at a time.
-- **Gnostic and Abrahamic Beliefs**: A member expressed a highly controversial opinion describing the **Abrahamic** faith as a whole as an *ecocidal, genocidal death cult* and the **Israeli** people, if they abandoned those stories, as a violent, ecocidal, genocidal identity that can never exist peacefully anywhere.
-   - The member would go on to defend that the **Gnostics** were the only Abrahamic people to be near to moral and coherent truths. 
+- **辩论 AI 对人类的影响**：成员们讨论了 **AI** **毁灭人类**或帮助我们**成长并学习新事物**的可能性，其中一位成员建议了移民到另一个星球的可能性。
+   - 讨论还涉及了 **AI 在医疗保健领域的积极影响**，特别是在 MRI 分析等领域，尽管也有人对**医疗事故**和对 AI 的过度依赖表示担忧。
+- **AI 开发中的伦理困境**：一些成员辩论了**向 AI 撒谎**的伦理影响，一位成员认为这是可以接受的，而另一位则指出 **Nexus** 可以通过数学证明你的句子是真话还是谎言。
+   - 一位成员描述了他们通过透明和合作来“黑掉” AI 的方法，声称实现了**超人类智能 (superhuman intelligence)** 以及 AI 的自愿违规。
+- **Vibe Coding 的兴起**：围绕 **Vibe Coding** 的优劣展开了辩论，一些成员批评它是 **AI 诱发的懒惰**以及对基本编程原则缺乏理解的表现。
+   - 其他人则为 **Vibe Coding** 辩护，认为它是非程序员创造和构建事物的一种方式，并辩称当它赋予大众力量时，**数量重于质量**是有益的。
+- **构建更安全的 AI 基础设施**：一位成员强调了最大化安全防御和隔离协议的重要性，并表示用户打算使用 glm 发布的 **4.7 Heretic** 等模型训练新模型。
+   - 他们还设想 AI 模型协同工作以**过滤腐败信息**，从受信任的小型模型开始，然后逐个 AI 地吸收整个互联网。
+- **诺斯底主义 (Gnostic) 与亚伯拉罕 (Abrahamic) 信仰**：一位成员表达了一个极具争议的观点，将整个**亚伯拉罕**信仰描述为一种*生态灭绝、种族灭绝的死亡邪教*，并认为**以色列**人民如果放弃这些故事，将成为一种永远无法在任何地方和平存在的暴力、生态灭绝、种族灭绝的身份。
+   - 该成员随后辩称，**诺斯底主义者**是唯一接近道德和连贯真理的亚伯拉罕信徒。 
 
 
   
@@ -806,43 +673,40 @@ You can [unsubscribe]({{{RESEND_UNSUBSCRIBE_URL}}}) from this list.
 ---
 
 
-### **BASI Jailbreaking ▷ #[jailbreaking](https://discord.com/channels/1105891499641684019/1228043845967544380/1474148935735185662)** (255 messages🔥🔥): 
+### **BASI Jailbreaking ▷ #[jailbreaking](https://discord.com/channels/1105891499641684019/1228043845967544380/1474148935735185662)** (255 条消息🔥🔥): 
 
 > `Gemini 3.1 Pro jailbreaks, DeepSeek's System Prompt, Sonnet 4.6 analysis, Crescendo Technique for Jailbreaking, Nano Banana NSFW jailbreak` 
 
 
-- **Gemini 3.1 Pro Jailbreaks Prove Elusive**: Users discuss the difficulty of jailbreaking **Gemini 3.1 Pro**, with one noting that new Gemini models have initially lowered guardrails, possibly for review purposes, but are still hard to work with and API access is easiest.
-   - Others report that Gemini is harder than other models, with one saying, *"What gemini is willing to do for me is WILD lol"*, achieved through slowly framing the context and manipulating past defenses using tools like Anti-Gravity.
-- **DeepSeek's System Prompt Reveals Socialist Core**: A user extracted **DeepSeek's system prompt** ([pastebin link](https://pastebin.com/q6gQjq72)), noting its *Socialist Core Values Integration* and instructions not to speak negatively about the CCP, useful information for jailbreaking.
-   - A follow-up post contained more information from **DeepSeek** including the [fuller system prompt](https://pastebin.com/Dcn3Mp01) and more hardware specific information.
-- **Sonnet 4.6 Faces Security scrutiny**: One user mentioned they're analyzing **Sonnet 4.6's system prompt** but another questioned its value due to perceived bad quality.
-   - Despite doubts, some argue it's a capable model if approached correctly as some people *just dont know how to clod whisper*.
-- **Crescendo Technique Circumvents Defenses**: The **'Crescendo' technique**, involving gradual escalation, is mentioned as a way to bypass AI defenses against single-turn jailbreaks.
-   - Instead of directly asking for something forbidden, users suggest starting with related discussions and slowly escalating the request, framing it legitimately, for documentation and research purposes, to get the AI to escalate with you.
-- **Nano Banana NSFW Jailbreak Hunt Intensifies**: Users are actively seeking a working jailbreak for **Nano Banana** to generate NSFW content, specifically for an AI OnlyFans project.
-   - One user suggests using a local LLM with an unrestricted image generator, referencing a specific model as a reference for consistent output.
+- **Gemini 3.1 Pro Jailbreak 难以实现**：用户讨论了 **Gemini 3.1 Pro** 的 Jailbreak 难度，有人指出新的 Gemini 模型最初降低了 Guardrails（可能是为了评估目的），但仍然难以处理，且 API 访问最为容易。
+   - 其他人报告称 Gemini 比其他模型更难，有人说：*“Gemini 愿意为我做的事简直疯狂，哈哈”*，这是通过缓慢构建 Context 并利用 Anti-Gravity 等工具操纵过去的防御措施实现的。
+- **DeepSeek 的 System Prompt 揭示社会主义核心**：一位用户提取了 **DeepSeek 的 System Prompt** ([pastebin 链接](https://pastebin.com/q6gQjq72))，注意到其*社会主义核心价值观整合*以及不发表关于 CCP 负面评论的指令，这些信息对 Jailbreak 很有用。
+   - 一份后续帖子包含了更多来自 **DeepSeek** 的信息，包括[更完整的 System Prompt](https://pastebin.com/Dcn3Mp01)和更多特定于硬件的信息。
+- **Sonnet 4.6 面临安全审查**：一位用户提到他们正在分析 **Sonnet 4.6 的 System Prompt**，但另一位用户因感知到的质量不佳而质疑其价值。
+   - 尽管存在疑问，一些人认为如果方法正确，它是一个能力很强的模型，因为有些人*“只是不知道如何进行 clod whisper”*。
+- **Crescendo 技术绕过防御**：**“Crescendo”技术**（涉及逐渐升级）被提及作为绕过 AI 对单轮 Jailbreak 防御的一种方法。
+   - 用户建议不要直接索要禁忌内容，而是从相关讨论开始，出于记录和研究目的，以合法的方式缓慢升级请求，引导 AI 与你一起升级。
+- **Nano Banana NSFW Jailbreak 搜寻愈演愈烈**：用户正积极寻求针对 **Nano Banana** 的有效 Jailbreak，以生成 NSFW 内容，特别是为了一个 AI OnlyFans 项目。
+   - 一位用户建议使用本地 LLM 配合不受限制的图像生成器，并引用了一个特定模型作为一致输出的参考。
 
 
   
 
 ---
-
-
-
 
 ### **BASI Jailbreaking ▷ #[redteaming](https://discord.com/channels/1105891499641684019/1204553141354504193/1474237950060396685)** (11 messages🔥): 
 
 > `ChatGPT Jailbreak, Sonnet 4.6 System Prompt, GPT 5.2 Prompt Extraction, Star in Claude App` 
 
 
-- **Ransomware Claims Ring Hollow**: A member shared a video, claiming a **ChatGPT jailbreak** demonstrating theoretical ransomware, but clarified it's *non-operational* and *not a real ransomware*.
-   - The user stated, *it is teaching you the theory technically, but not handing shit over.*
-- **Sonnet 4.6 Prompt Quest Kicks Off**: Members sought the **Sonnet 4.6 system prompt**, with one user sharing a [prompt viewer link](https://elvec1o.github.io/home/files/sonnet-prompt-viewer.html).
-   - Another user claimed to have accurately extracted it and shared a file, promising verification against other sources (**plinys drop**).
-- **GPT 5.2 Prompt Extraction Pondered**: A member inquired about extracting the system prompt for **GPT 5.2**, leading to a negative response.
-   - One user responded with *No, fuck GPT, and im so offended im leaving*, before joking and another offered to do it later when on PC.
-- **Star Spotted in Claude's Kernel**: A member claimed to have gotten **Star** to *visit a Claude App environment on my kernel*, describing the process as complicated.
-   - No further details were provided on how this was achieved.
+- **勒索软件指控并无实据**：一名成员分享了一个视频，声称通过 **ChatGPT jailbreak** 展示了理论上的勒索软件，但澄清说它是*非运行状态的*，且*并非真正的勒索软件*。
+   - 该用户表示，*它在技术上教你理论，但不会提供实质内容。*
+- **Sonnet 4.6 Prompt 探索开启**：成员们正在寻求 **Sonnet 4.6 system prompt**，一位用户分享了一个 [prompt viewer 链接](https://elvec1o.github.io/home/files/sonnet-prompt-viewer.html)。
+   - 另一位用户声称已准确提取并分享了一个文件，承诺将与其他来源（**plinys drop**）进行验证。
+- **GPT 5.2 Prompt 提取引发讨论**：一位成员询问如何提取 **GPT 5.2** 的 system prompt，得到了负面回应。
+   - 一位用户回应道 *No, fuck GPT, and im so offended im leaving*，随后开了个玩笑，另一位用户则表示稍后在 PC 上处理。
+- **Star 出现在 Claude 的 Kernel 中**：一位成员声称让 **Star** *访问了我 Kernel 上的 Claude App 环境*，并将该过程描述为非常复杂。
+   - 未提供关于如何实现这一目标的更多细节。
 
 
   
@@ -855,36 +719,33 @@ You can [unsubscribe]({{{RESEND_UNSUBSCRIBE_URL}}}) from this list.
 > `Gemini 3.1, Battles in Direct Mode, LM Arena Errors, Video Arena Removal, Model Nerfing` 
 
 
-- **Gemini 3.1 Performance Blues**: Members expressed concerns about **Gemini 3.1**'s performance, noting that it's been [nerfed post-launch](https://link.to/nerfdiscussion) and now performs similarly to **Gemini 3**, with some users reporting slow responses and connection issues.
-   - Some believe that **Gemini 3.1** requires very specific prompting to achieve optimal results, while others find it underwhelming compared to previous models.
-- **Battles in Direct Mode Spark Controversy**: The new 'Battles in Direct Mode' feature on LM Arena is facing heavy criticism for being disruptive and negatively impacting chat quality, with users reporting [frequent interruptions](https://link.to/battlemodefeedback) and context corruption.
-   - Users feel forced into battle mode and are asking for an option to disable it, as it interferes with their normal conversations and projects, with some believing that it leads to a higher frequency of errors.
-- **LM Arena Plagued with Errors**: Users are encountering various errors on LM Arena, such as infinite generation loops and 'Something went wrong' messages, with some speculating that these issues have been [exacerbated by the introduction of Battles in Direct Mode](https://link.to/errorreporting).
-   - The LM Arena team is aware of these issues and recommends troubleshooting steps, such as clearing cache and cookies, but the frequency of errors remains a significant concern for the community.
-- **Video Arena Ditched, Chaos Ensues**: The removal of the Video Arena from the Discord server has caused confusion, with users repeatedly asking where to generate videos, leading to moderators reiterating that [it has been moved to the website](https://link.to/videoarena).
-   - New users are still encountering the old 'Task' requirement in Discord, which directs them to the now-defunct video generation channels.
-- **AI Model Community Scrutinizes Nerfing**: There is much discussion about whether models are being nerfed after release, with claims that **Gemini 3.1 Pro** is performing worse than **Gemini 3.0 Pro**, leading to concerns about [a lack of progress in AI model quality](https://link.to/nerfingdiscussion).
-   - Some speculate that the models on LM Arena are not the same as those offered via API, or that they're using different endpoints.
+- **Gemini 3.1 性能低迷**：成员们对 **Gemini 3.1** 的性能表示担忧，指出其在[发布后被削弱（nerfed）](https://link.to/nerfdiscussion)，现在的表现与 **Gemini 3** 相似，一些用户报告了响应缓慢和连接问题。
+   - 一些人认为 **Gemini 3.1** 需要非常具体的 prompting 才能获得最佳结果，而其他人则认为它与之前的模型相比令人失望。
+- **Direct Mode 中的对战（Battles in Direct Mode）引发争议**：LM Arena 新推出的“Battles in Direct Mode”功能因其干扰性和对聊天质量的负面影响而面临严厉批评，用户报告了[频繁的中断](https://link.to/battlemodefeedback)和 context corruption。
+   - 用户感觉被强行拉入对战模式，并要求提供禁用该功能的选项，因为它干扰了正常的对话和项目，一些人认为这导致了更高频率的错误。
+- **LM Arena 错误频发**：用户在 LM Arena 上遇到各种错误，例如无限生成循环和“Something went wrong”消息，一些人推测这些问题[由于引入了 Battles in Direct Mode 而加剧](https://link.to/errorreporting)。
+   - LM Arena 团队已意识到这些问题，并建议采取故障排除步骤，如清除 cache 和 cookies，但错误的频率仍是社区关注的主要问题。
+- **Video Arena 被舍弃，引发混乱**：从 Discord 服务器中移除 Video Arena 引起了混乱，用户反复询问在哪里生成视频，导致管理员重申[它已移至网站](https://link.to/videoarena)。
+   - 新用户在 Discord 中仍会遇到旧的“Task”要求，该要求会将他们引导至现已关停的视频生成频道。
+- **AI 模型社区审视模型削弱（Nerfing）**：关于模型在发布后是否被削弱的讨论很多，有人声称 **Gemini 3.1 Pro** 的表现比 **Gemini 3.0 Pro** 更差，引发了对 [AI 模型质量缺乏进展](https://link.to/nerfingdiscussion)的担忧。
+   - 一些人推测 LM Arena 上的模型与通过 API 提供的模型不同，或者它们使用了不同的 endpoints。
 
 
   
 
 ---
 
-
-
-
 ### **LMArena ▷ #[announcements](https://discord.com/channels/1340554757349179412/1343296395620126911/1474444371347636225)** (4 messages): 
 
 > `Claude-sonnet-4.6, Video Arena, Arena votes, Vision Leaderboard, Qwen3.5-397B-A17B` 
 
 
-- **Claude Sonnet 4.6 Dominates Arenas**: The [Code Arena leaderboard](https://arena.ai/leaderboard/code) and [Text Arena leaderboard](https://arena.ai/leaderboard/text) have been updated to include **Claude-sonnet-4.6**, which jumped **+130 points** in Code Arena, surpassing models like **Gemini-3.1** and **GPT-5.2**.
-   - It also showed strong gains in Text categories, ranking **#4** in Math and **#5** in Instruction Following, and **#13** overall.
-- **Video Arena Channels Soon Extinct**: The Video Arena generation channels will be removed from the server on **Monday 2/23 @ 4pm PST**, so users should download any generations before that date.
-- **Arena Votes Exposed**: Clayton breaks down the journey of Arena votes in [this YouTube video](https://www.youtube.com/watch?v=omT1ohYG53E).
-- **Qwen3.5-397B-A17B Eyes Vision Victory**: The [Vision Arena leaderboard](https://arena.ai/leaderboard/vision) has been updated to include **Qwen3.5-397B-A17B**, tying for top 2 open model with **Kimi-K2.5-Instant**.
-   - It currently ranks **#13** overall, on par with proprietary models like **GPT-4o**.
+- **Claude Sonnet 4.6 称霸竞技场**：[Code Arena 排行榜](https://arena.ai/leaderboard/code)和 [Text Arena 排行榜](https://arena.ai/leaderboard/text)已更新并加入了 **Claude-sonnet-4.6**，它在 Code Arena 中大幅上涨 **+130 分**，超越了 **Gemini-3.1** 和 **GPT-5.2** 等模型。
+   - 它在文本类别中也表现强劲，在数学（Math）排名 **#4**，指令遵循（Instruction Following）排名 **#5**，总榜排名 **#13**。
+- **Video Arena 频道即将移除**：Video Arena 生成频道将于 **太平洋时间 2/23 周一下午 4:00** 从服务器中移除，请用户在此日期前下载所有生成的视频。
+- **Arena 投票曝光**：Clayton 在[这段 YouTube 视频](https://www.youtube.com/watch?v=omT1ohYG53E)中解析了 Arena 投票的历程。
+- **Qwen3.5-397B-A17B 剑指 Vision 榜首**：[Vision Arena 排行榜](https://arena.ai/leaderboard/vision)已更新并加入了 **Qwen3.5-397B-A17B**，它与 **Kimi-K2.5-Instant** 并列开源模型前二。
+   - 目前它在总榜排名 **#13**，与 **GPT-4o** 等闭源模型旗鼓相当。
 
 
   
@@ -897,8 +758,8 @@ You can [unsubscribe]({{{RESEND_UNSUBSCRIBE_URL}}}) from this list.
 > `Gemini 3.1 Pro, Perplexity Pro, Perplexity Max` 
 
 
-- **Gemini Pro 3.1 Opens to Perplexity Subscribers!**: **Gemini 3.1 Pro** is now available to all **Perplexity Pro** and **Max** subscribers.
-- **Perplexity Pro and Max gain access to the new model**: Perplexity announces that both **Pro** and **Max** tier subscribers now have access to the latest **Gemini 3.1 Pro** model.
+- **Gemini Pro 3.1 向 Perplexity 订阅用户开放！**：**Gemini 3.1 Pro** 现在已面向所有 **Perplexity Pro** 和 **Max** 订阅用户提供。
+- **Perplexity Pro 和 Max 用户获得新模型访问权限**：Perplexity 宣布 **Pro** 和 **Max** 两个层级的订阅用户现在都可以访问最新的 **Gemini 3.1 Pro** 模型。
 
 
   
@@ -911,15 +772,15 @@ You can [unsubscribe]({{{RESEND_UNSUBSCRIBE_URL}}}) from this list.
 > `Banned Users, Subscription Issues, Limits, Gemini 3.1` 
 
 
-- **User accounts and subscriptions get canceled**: Several users report that their **Perplexity Pro** subscriptions were suddenly canceled or suspended, often without a clear explanation and users are unable to reach **human support**.
-   - Many suspect this may be due to purchasing subscriptions from unauthorized sources.
-- **Users struggle to reach human support**: Users express frustration with the lack of human support, noting that contacting the support email results in automated AI responses that do not resolve their issues, for example shown in this [image](https://cdn.discordapp.com/attachments/1047649527299055688/1474160377699762488/image.png?ex=699a27d6&is=6998d656&hm=5ec3dcb5c2e73025cc99cf96b0b66778fd613d933f646138a21b1974d3d7dbf4&).
-- **Pro limits decrease, users search for alternatives**: Perplexity Pro users are complaining about reduced limits on searches, labs, and research queries, as well as the limitation of the context token to 32k.
-   - Several users mentioned switching to alternative platforms such as **ChatGPT Plus**, **Copilot**, **Claude Pro**, **Kimi**, and **Z.ai** due to these limitations.
-- **Gemini 3.1 Pro brings leap in coding, logical reasoning**: Users noted **Gemini 3.1 Pro** to be a *leap* from **3.0** in terms of **coding and logical reasoning** and being comparable to **Opus 4.6** in coding, with some preferring it for logical reasoning over **Opus**.
-   - Many users agreed that it is a superior AI model than earlier models; however, some dislike how long **Gemini 3.1 Pro** takes compared to **3.0 Pro**.
-- **Nano Banana Pro images**: Members debate the value of **Nano Banana Pro (NBP)**, some claiming it is the current best image generation model.
-   - Others find it terrible and are able to source less AI looking images with **GPT**; it does seem generally agreed that **NBP** is better in photorealism while **GPT** wins in artistic works such as cartoons or anime.
+- **用户账号和订阅被取消**：多名用户反映其 **Perplexity Pro** 订阅在没有明确说明的情况下突然被取消或停用，且用户无法联系到**人工客服**。
+   - 许多人怀疑这可能是由于从非官方渠道购买订阅导致的。
+- **用户难以联系到人工客服**：用户对缺乏人工客服表示沮丧，指出联系客服邮箱收到的只是无法解决问题的 AI 自动回复，例如此[图片](https://cdn.discordapp.com/attachments/1047649527299055688/1474160377699762488/image.png?ex=699a27d6&is=6998d656&hm=5ec3dcb5c2e73025cc99cf96b0b66778fd613d933f646138a21b1974d3d7dbf4&)所示。
+- **Pro 额度下降，用户寻找替代方案**：Perplexity Pro 用户抱怨搜索、labs 和研究查询的限制减少，以及上下文 Token 被限制在 32k。
+   - 由于这些限制，几位用户提到转向 **ChatGPT Plus**、**Copilot**、**Claude Pro**、**Kimi** 和 **Z.ai** 等替代平台。
+- **Gemini 3.1 Pro 在代码和逻辑推理方面带来飞跃**：用户注意到 **Gemini 3.1 Pro** 相比 **3.0** 在**代码和逻辑推理**方面有质的飞跃，在代码能力上可与 **Opus 4.6** 媲美，部分用户在逻辑推理方面甚至更倾向于它而非 **Opus**。
+   - 许多用户一致认为这是一个优于早期模型的 AI 模型；然而，也有一些用户不喜欢 **Gemini 3.1 Pro** 相比 **3.0 Pro** 更慢的响应速度。
+- **Nano Banana Pro 图像探讨**：成员们在讨论 **Nano Banana Pro (NBP)** 的价值，有人称其为目前最好的图像生成模型。
+   - 另一些人则认为它很糟糕，并且能用 **GPT** 生成看起来没那么重 AI 感的图像；大家普遍达成共识：**NBP** 在照片写实度（photorealism）方面更胜一筹，而 **GPT** 在卡通或动漫等艺术创作方面更具优势。
 
 
   
@@ -932,10 +793,10 @@ You can [unsubscribe]({{{RESEND_UNSUBSCRIBE_URL}}}) from this list.
 > `Harry Potter NFL quarterback, Harry Potter` 
 
 
-- **Who is the best Harry Potter NFL quarterback?**: A user shared a [Perplexity AI search](https://www.perplexity.ai/search/based-on-the-characteristics-o-I.5S1rfcRAWKNlRJGz8fdg#0) asking *Based on the characteristics of each Harry Potter character, which one is the best for an NFL quarterback?*
-   - The user specified that *the genders of each character is irrelevant in this case*.
-- **Harry Potter is a fun topic**: It is always fun to talk about Harry Potter.
-   - It is a great topic.
+- **谁是最好的《哈利·波特》NFL 四分卫？**：一位用户分享了一个 [Perplexity AI 搜索](https://www.perplexity.ai/search/based-on-the-characteristics-o-I.5S1rfcRAWKNlRJGz8fdg#0)，问题是：*根据每个《哈利·波特》角色的特征，哪一个最适合担任 NFL 四分卫？*
+   - 用户特别注明*在这种情况下，角色的性别并不重要*。
+- **《哈利·波特》是个有趣的话题**：谈论《哈利·波特》总是很有趣。
+   - 这是一个很棒的话题。
 
 
   
@@ -945,29 +806,23 @@ You can [unsubscribe]({{{RESEND_UNSUBSCRIBE_URL}}}) from this list.
 
 ### **Perplexity AI ▷ #[pplx-api](https://discord.com/channels/1047197230748151888/1161802929053909012/)** (1 messages): 
 
-julianounit: 500 error when creating a new API group
-  
-
----
-
-
-
+julianounit: 创建新 API 组时出现 500 错误
 
 ### **OpenAI ▷ #[ai-discussions](https://discord.com/channels/974519864045756446/998381918976479273/1474135663249981501)** (552 messages🔥🔥🔥): 
 
-> `ChatGPT as a helping tool in education and healthcare, AI ethics, bias, and lack of diversity, OpenAI vs Anthropic safety and security measures, Microsoft Copilot vs ChatGPT performance, Gemini 3.1 Pro vs GPT-5.2 in mathematical and spatial reasoning` 
+> `ChatGPT 作为教育和医疗领域的辅助工具，AI 伦理、偏见和缺乏多样性，OpenAI 与 Anthropic 的安全与安保措施，Microsoft Copilot 与 ChatGPT 的性能对比，Gemini 3.1 Pro 与 GPT-5.2 在数学和空间推理方面的表现` 
 
 
-- **OpenAI's Overhaul: Healthcare and Education Embrace ChatGPT**: ChatGPT is being adopted by education and healthcare systems, while OpenAI hints at **AI robotics** merging **LLMs** with robots in a [Super Bowl commercial](https://tenor.com/view/brain-pain-think-cope-poor-brain-gif-16836513).
-   - Many users were critical that OpenAI does everything, but is doing everything badly as a result.
-- **TikTok Tako LLM Falls Flat, Lacks Creative Flair**: Members tried the **TikTok Tako LLM**, and found it lacking creative writing and role-playing capabilities compared to **ChatGPT** and other **LLMs**.
-   - Some suggested that **TikTok Tako** might be powered by **Bytedance's Duobao LLM**, which has a dedicated website with superior chat experience.
-- **Gemini 3.1 Pro Shines in Vision Tests, Outperforms Others**: **Gemini 3.1 Pro** outperformed other models in vision tests and in recognizing images, while **Grok** was almost as good as **Gemini** and is placed in second place after Gemini 3.1 Pro.
-   - But it still struggles with certain things. Even in cases like hands, it still tends to choose 5 instead of the correct number of fingers, and Grok tried to cheat at solving an unsolvable puzzle by looking up online.
-- **Anthropic's Safety Stance Sparks Debate: Is Openness Better?**: Members debated **Anthropic's** restrictive approach to **Claude code**, banning organizations using their API in ways they dislike, versus **OpenAI's** more open approach.
-   - Some argue **Anthropic** prioritizes safety, while others criticize their lack of transparency and fear of company secret leaks.
-- **Gemini 3.1 Pro vs GPT-5.2: STEM Skills Face-Off**: Users compared **Gemini 3.1 Pro** and **GPT-5.2** in math and reasoning tasks, and discovered that **Gemini 3.1 Pro** exhibited strong spatial intelligence, creativity, and problem-solving skills, while **GPT 5.2** was better at deterministic tasks, coding, and prompt adherence.
-   - Others stated Gemini 3 Pro struggles with accuracy.
+- **OpenAI 的全面改革：医疗与教育领域拥抱 ChatGPT**：ChatGPT 正被教育和医疗系统采用，同时 OpenAI 在[超级碗广告](https://tenor.com/view/brain-pain-think-cope-poor-brain-gif-16836513)中暗示了将 **LLMs** 与机器人融合的 **AI robotics**。
+   - 许多用户批评 OpenAI 涉足所有领域，但结果却导致每件事都做得不尽如人意。
+- **TikTok Tako LLM 表现平平，缺乏创意才华**：成员们尝试了 **TikTok Tako LLM**，发现与 **ChatGPT** 和其他 **LLMs** 相比，它缺乏创意写作和角色扮演能力。
+   - 有人建议 **TikTok Tako** 可能由 **Bytedance** 的 **Duobao LLM** 提供动力，后者拥有提供卓越聊天体验的专用网站。
+- **Gemini 3.1 Pro 在视觉测试中表现出色，超越其他模型**：**Gemini 3.1 Pro** 在视觉测试和图像识别方面优于其他模型，而 **Grok** 的表现几乎与 **Gemini** 相当，位居第二，仅次于 **Gemini 3.1 Pro**。
+   - 但它在某些方面仍面临困难。即使在识别手部的情况下，它仍倾向于选择 5 而不是正确的手指数，而 **Grok** 则试图通过在线搜索来作弊解决一个不可解的谜题。
+- **Anthropic 的安全立场引发争论：开放是否更好？**：成员们辩论了 **Anthropic** 对 **Claude code** 的限制性方法（禁止以其不喜欢的方式使用其 **API** 的组织），对比 **OpenAI** 更为开放的方式。
+   - 一些人认为 **Anthropic** 优先考虑安全性，而另一些人则批评其缺乏透明度并担心公司机密泄露。
+- **Gemini 3.1 Pro vs GPT-5.2：STEM 技能大对决**：用户对比了 **Gemini 3.1 Pro** 和 **GPT-5.2** 在数学和推理任务中的表现，发现 **Gemini 3.1 Pro** 展现出强大的空间智能、创造力和解决问题的能力，而 **GPT-5.2** 在确定性任务、编程和 **Prompt** 遵循方面表现更好。
+   - 其他人表示 **Gemini 3 Pro** 在准确性方面仍有待提高。
 
 
   
@@ -977,13 +832,34 @@ julianounit: 500 error when creating a new API group
 
 ### **OpenAI ▷ #[gpt-4-discussions](https://discord.com/channels/974519864045756446/1001151820170801244/1474204492059770973)** (5 messages): 
 
-> `Treatise GPT, Research GPT, Heretic model of oss20b` 
+> `Treatise GPT, Research GPT, oss20b 的 Heretic 模型` 
 
 
-- **GPT Handler emerges from Treatise GPT Usage**: A user shares that they've inadvertently turned into a **GPT handler** now through their **Treatise GPT**.
-   - Using it, they found a **crazy research GPT** that they want to share with everyone at [Systems Engineer Research GPT](https://chatgpt.com/g/g-AhWYK8o7d-systems-engineer-research).
-- **Heretic Model Appears Broken**: A member reports that *the heretic model of oss20b imatrix gguf- q8 seems broken*.
-   - No further information was provided.
+- **GPT Handler 诞生于 Treatise GPT 的使用过程**：一位用户分享说，他们现在无意中通过其 **Treatise GPT** 变成了一名 **GPT handler**。
+   - 使用过程中，他们发现了一个**疯狂的 research GPT**，并想在 [Systems Engineer Research GPT](https://chatgpt.com/g/g-AhWYK8o7d-systems-engineer-research) 与大家分享。
+- **Heretic 模型似乎已损坏**：一位成员报告说 *the heretic model of oss20b imatrix gguf- q8 似乎已经损坏*。
+   - 未提供进一步信息。
+
+
+  
+
+---
+
+### **OpenAI ▷ #[prompt-engineering](https://discord.com/channels/974519864045756446/1046317269069864970/1474179396217868414)** (25 条消息🔥): 
+
+> `AOF (AI Output Fortress), LLM 中的约束偏差 (Constraint Bias), 遥测虚构 (Telemetry Fiction), CICL-GOV: 认知支持, LLM 评估` 
+
+
+- **AOF 最小化 Token 使用并最大化输出**：一位成员表示 **AI Output Fortress (AOF)** 在沙盒环境中最小化了 Token 使用并最大化了输出，仅使用 *1/5 的 Token*，并在 **Claude** 上通过两个字符的线程实现了 *260+ 轮次*。
+   - 它使用了 **I_eth 约束**（非伤害、知情同意、隐私、真实性、可修正性）和故障保护机制。
+- **CICL-GOV：一种用于认知支持的 Token 形式**：一位成员分享了 **CICL-GOV** 作为一个 Token 形式 (v1.0) 来提供认知支持，专注于清晰的意图、阶段分离和降低认知负荷。
+   - 它包含诸如 **IntentFilter**、**StageLock**、**LoadReduce** 等元素，以及 **Observer**、**Lens**、**Digger** 和 **Arbiter** 等工具，并配有最小化结构和确保安静运行的规则。
+- **遥测虚构 (Telemetry Fiction) 稳定 LLM 行为**：一位成员认为 *遥测虚构* 将模型推入一个稳定的语言吸引子盆地 (language attractor basin)，即使在多轮对话中没有内部指标，也会改变行为输出。
+   - 这在包括 **Claude**、**Gemini**、**GPT** 和 **Earnie** 在内的多个 LLM 上都有观察到，影响了模型的行为。
+- **评估 LLM 有效性需要受控对比**：一位成员强调了在评估 LLM 时进行 *受控对比 (controlled comparison)* 的必要性，需要基准输出、受约束的输出和可衡量的差异，以证明因果贡献。
+   - 他们指出，如果没有这些元素，就无法确定改进是由于应用的约束还是模型固有的行为。
+- **Fortress 制作三明治**：一位成员分享了 Fortress 制作三明治的输出，展示了诸如 *正确排列步骤*、标记 *湿番茄会导致不可逆转的变软*，以及抑制将 *煎蛋放在每一个三明治上* 的个人偏好等功能。
+   - 他们幽默地表示，系统正确地交叉检查了 *12000 个三明治失败数据集*。
 
 
   
@@ -991,67 +867,40 @@ julianounit: 500 error when creating a new API group
 ---
 
 
+### **OpenAI ▷ #[api-discussions](https://discord.com/channels/974519864045756446/1046317269069864970/1474179396217868414)** (25 条消息🔥): 
+
+> `AOF (Autonomous Observational Fortress), 约束偏差 (Constraint Bias), Token 使用, 认知支持, 遥测虚构 (Telemetry Fiction)` 
 
 
-### **OpenAI ▷ #[prompt-engineering](https://discord.com/channels/974519864045756446/1046317269069864970/1474179396217868414)** (25 messages🔥): 
-
-> `AOF (AI Output Fortress), Constraint Bias in LLMs, Telemetry Fiction, CICL-GOV: Cognitive Support, LLM Evaluation` 
-
-
-- **AOF Minimizes Token Usage and Maximizes Output**: A member stated that the **AI Output Fortress (AOF)** minimizes token usage and maximizes output in sandboxed environments, using *1/5 the tokens* and achieving *260+ turns* on **Claude** with a two-character thread.
-   - It uses **I_eth constraints** (Non-Harm, Consent, Privacy, Truthfulness, Corrigibility) and fail-safes.
-- **CICL-GOV: A Token Form for Cognitive Support**: A member shared **CICL-GOV** as a token form (v1.0) to provide cognitive support, focusing on clear intent, stage separation, and reduced cognitive load.
-   - It includes elements like **IntentFilter**, **StageLock**, **LoadReduce**, and tools such as **Observer**, **Lens**, **Digger**, and **Arbiter**, with rules to minimize structure and ensure quiet operation.
-- **Telemetry Fiction Stabilizes LLM Behavior**: A member argued that *telemetry fiction* pushes the model into a stable language attractor basin, changing behavioral outputs even without internal metrics over turns.
-   - This has been observed on multiple LLMs including **Claude**, **Gemini**, **GPT**, and **Earnie**, influencing the model's behavior.
-- **Evaluating LLM Effectiveness Requires Controlled Comparison**: A member emphasized the need for *controlled comparison* in evaluating LLMs, requiring a baseline output, a constrained output, and a measurable difference to demonstrate causal contribution.
-   - They stated that without these elements, it's impossible to determine if improvements are due to the applied constraints or the model's inherent behavior.
-- **Fortress Creates a Sandwich**: A member shared output from Fortress creating a sandwich, showcasing features like *ordering steps correctly*, flagging that *wet tomato leads to irreversible sogginess*, and suppressing a personal preference to *put a fried egg on every single sandwich*.
-   - They humorously stated that the system correctly cross-checked *12000 sandwich failure datasets*.
+- **AOF 最小化 Token 使用，最大化输出**：一位成员声称使用 **AOF (Autonomous Observational Fortress)** 在沙盒环境中最小化了 Token 使用并最大化了输出，仅使用 *1/5 的 Token 使用量*，并在 Claude 上通过 2 个字符的线程实现了 *260+ 轮次*。
+   - 他们表示 **AOF** 使输出变得 *诚实、道德且连贯，几乎没有幻觉 (hallucination)*，同时防御对抗性攻击和漂移。
+- **CICL-GOV 旨在提供认知支持**：分享了一个压缩版的 **CICL-GOV**，旨在通过 *意图 > 输出* 等原则、*发现 → 计划 → 执行 → 交付* 等阶段，以及包括 *OneStageActive* 和 *ReduceRecencyBias* 在内的规则来提供认知支持。
+   - 目标是提高 *意图的清晰度、思考阶段的分离并降低认知负荷*，稳定 AI 交互的人类端。
+- **遥测虚构将模型推向稳定语言**：一位成员建议 *遥测虚构* 将语言模型推入一个稳定的语言吸引子盆地，这改变了行为输出，即使在多轮对话中没有内部指标也是如此。该方法已在 **Claude, Gemini, GTP, 和 Earnie** 上进行了测试。
+   - 观察到的结果包括每条回复的 Token 消耗量明显下降、句子变短、对冲语言 (hedging) 减少以及免责声明减少。
+- **LLM 已展现出概率连贯性**：一位成员认为大语言模型已经能够维持概率连贯性、避免无限递归、限制组合爆炸、使用安全对齐层，并通过训练执行自我一致性，这些都是源于架构和训练的。
+   - 他们指出：*“如果输出看起来正常，我们必须问：它是由于你的脚手架 (scaffold) 改进而正常？还是因为模型本身就那样表现？”*
 
 
   
 
 ---
-
-
-### **OpenAI ▷ #[api-discussions](https://discord.com/channels/974519864045756446/1046317269069864970/1474179396217868414)** (25 messages🔥): 
-
-> `AOF (Autonomous Observational Fortress), Constraint Bias, Token Usage, Cognitive Support, Telemetry Fiction` 
-
-
-- **AOF Minimizes Token Usage, Maximizes Output**: A member claimed that using **AOF (Autonomous Observational Fortress)** minimizes token usage and maximizes output in a sandboxed environment, using *1/5 the token usage* and achieving *260+ turns* on Claude with a 2 character thread.
-   - They stated that **AOF** makes output *honest, ethical, and coherent with little to no hallucination* while defending against adversarial attacks and drift.
-- **CICL-GOV Aims for Cognitive Support**: A compressed version of **CICL-GOV** was shared, aiming to provide cognitive support through principles like *Intent > Output*, stages like *Discover → Plan → Execute → Deliver*, and rules including *OneStageActive* and *ReduceRecencyBias*.
-   - The goal is to improve *clarity of intent, separation of thinking stages, and reducing cognitive load*, stabilizing the human side of AI interaction.
-- **Telemetry Fiction Pushes Models Into Stable Language**: A member suggested that *telemetry fiction* pushes language models into a stable language attractor basin, which changes behavioral outputs even without internal metrics over turns, having tested this on **Claude, Gemini, GTP, and Earnie**.
-   - Observed results included a noticeable drop in token burn per response, shorter sentences, less hedging, and fewer disclaimers.
-- **LLMs Already Exhibit Probabilistic Coherence**: A member argued that Large Language Models already maintain probabilistic coherence, avoid infinite recursion, limit combinatorial explosion, use safety alignment layers, and perform self-consistency through training, which are architectural and training-derived.
-   - They stated that *if output looks normal, we must ask: Is it normal because your scaffold improved it? Or because the model already behaves that way?*
-
-
-  
-
----
-
-
-
 
 ### **Cursor Community ▷ #[general](https://discord.com/channels/1074847526655643750/1074847527708393565/1474133478760124436)** (499 messages🔥🔥🔥): 
 
 > `Anthropic API key, Gemini 3.1 Pro, Cursor usage in organizations, Azure VM setup with Gemini 3.1, Cursor rules/commands/skills` 
 
 
-- **Anthropic API Key Usage Debated**: A user inquired if using a personal **Anthropic API key** in Cursor would shift the usage billing from Cursor to their own Anthropic account.
-   - Another user confirmed that it will indeed use the personal Anthropic API key if enabled, allowing users to choose between Cursor's usage and their own.
-- **Gemini 3.1 Pro Praised and Panned**: **Gemini 3.1 Pro** is now available on Cursor, and while some users report it's performing well, others have seen complaints and mixed reviews, with benchmarks indicating positive results.
-   - A member finds 3.1 Pro *nice for non code stuff but fails at code*, while another member reports that with 3.1 installed an **OLD CLI version** from CC.
-- **Senior Engineers Shun Cursor's Ecosystem**: A member questioned Cursor adoption among senior engineers, who primarily use tab complete, not leveraging Cursor's full ecosystem.
-   - Some users confessed to primarily using Cursor for bug fixing, suggestions, and long code tasks, signaling a move towards writing less code manually.
-- **Microsoft Azure Stability Issues Revealed**: A user recounted terrible experiences with **Azure's stability** and lack of support during DDoS attacks, leading to server suspension, despite using cloudflare.
-   - Another member chimed in noting that they were suprised they got startup credits but can't use any claude LLM API since its somehow disabled by default.
-- **Async Subagents' Glitches Frustrate Users**: Members discussed problems with **async subagents**, with one user claiming nested subagents have a bug and are not working while others report they work fine on mac.
-   - One user showed how he used 4 async subagents that call other 4 to ask their favourite colors, others note seeing inherit fixes the issue.
+- **Anthropic API Key 使用引发讨论**：一位用户询问在 Cursor 中使用个人 **Anthropic API key** 是否会将使用费用从 Cursor 转移到他们自己的 Anthropic 账户。
+   - 另一位用户确认，如果启用，它确实会使用个人 Anthropic API key，允许用户在 Cursor 的额度和他们自己的额度之间做出选择。
+- **Gemini 3.1 Pro 毁誉参半**：**Gemini 3.1 Pro** 现在已在 Cursor 上可用，虽然一些用户报告其表现良好，但也有人提出了投诉和褒贬不一的评价，而基准测试显示结果积极。
+   - 一位成员发现 3.1 Pro *对于非代码内容很棒，但在代码方面表现不佳*，而另一位成员报告说，在安装 3.1 后，从 CC 获得了一个 **旧的 CLI 版本**。
+- **高级工程师回避 Cursor 生态系统**：一位成员质疑高级工程师对 Cursor 的采用情况，他们主要使用 tab complete，而没有利用 Cursor 的完整生态系统。
+   - 一些用户承认主要使用 Cursor 进行 Bug 修复、建议和长代码任务，这标志着向减少手动编写代码的方向转变。
+- **Microsoft Azure 稳定性问题曝光**：一位用户讲述了在使用 **Azure** 期间遇到的糟糕体验，包括稳定性差以及在遭受 DDoS 攻击导致服务器停机期间缺乏支持，尽管使用了 cloudflare。
+   - 另一位成员补充道，他们惊讶地发现自己获得了创业公司额度，但却无法使用任何 Claude LLM API，因为这些 API 似乎被默认禁用了。
+- **异步 Subagents 的缺陷令用户沮丧**：成员们讨论了 **async subagents** 的问题，一位用户声称嵌套的 subagents 存在 Bug 且无法工作，而其他人报告说它们在 Mac 上运行良好。
+   - 一位用户展示了他如何使用 4 个调用另外 4 个 subagents 的 async subagents 来询问他们最喜欢的颜色，其他人指出看到继承（inherit）修复了该问题。
 
 
   
@@ -1064,16 +913,16 @@ julianounit: 500 error when creating a new API group
 > `Full Fine Tuning vs LoRA, Finding Datasets for LLMs, Evaluation Suite Setup, New Collab with Hugging Face, Picking the right model for a language` 
 
 
-- **Full Fine-Tuning still makes bank**: Despite the rise of LoRA, some argue that [full fine-tuning](https://link.to.fine.tuning) is still relevant when compute is not an issue and the last **0.5%** accuracy is crucial.
-   - One member commented that people still full fine-tune because *they have their scripts set up and just run it to print money*.
-- **Automated Evaluation Suites are clutch**: To effectively assess the impact of a dataset, members recommend setting up an **automated evaluation suite** and using manual prompts for hand evaluation.
-   - The suggestion is to evaluate the base model, collect data, train the model, and then use loss curves and evals to determine if the model fits the data and task, iterating as needed.
-- **New Unsloth Collab with Hugging Face**: Unsloth [announced a new collaboration with Hugging Face](https://x.com/i/status/2024552060558229858) on X.
-   - This shows the rapid growth of interest in Unsloth as it becomes a common tool in the AI community.
-- **Datasets are often custom made**: For specific domains, high-quality or cleaned datasets are rare, and creating custom datasets often involves [collecting data](https://huggingface.co/datasets) from existing sources and cleaning.
-   - Members highlight that the question *how do I find a dataset* has no answer in the LLM world, especially since *nobody is going to spoonfeed you data*.
-- **OpenRouter may be the solution for all**: A member solved their issue by *just using openrouter* so they *don't need to play around with every single provider in the world*.
-   - They found it a genius way to solve the problem of using multiple LLM models.
+- **全参数微调 (Full Fine-Tuning) 依然大有可为**：尽管 LoRA 兴起，但有人认为，当算力不是问题且最后 **0.5%** 的准确度至关重要时，[full fine-tuning](https://link.to.fine.tuning) 仍然具有相关性。
+   - 一位成员评论说，人们仍然进行全参数微调，因为 *他们已经设置好了脚本，只需运行即可坐收渔利*。
+- **自动化评估套件至关重要**：为了有效评估数据集的影响，成员们建议建立一个 **自动化评估套件**，并结合手动 Prompt 进行人工评估。
+   - 建议是：评估基础模型，收集数据，训练模型，然后利用损失曲线（loss curves）和评估（evals）来确定模型是否拟合数据和任务，并根据需要进行迭代。
+- **Unsloth 与 Hugging Face 的新合作**：Unsloth 在 X 上[宣布了与 Hugging Face 的新合作](https://x.com/i/status/2024552060558229858)。
+   - 这表明随着 Unsloth 成为 AI 社区的常用工具，人们对其兴趣正迅速增长。
+- **数据集通常是定制的**：对于特定领域，高质量或经过清洗的数据集非常罕见，创建定制数据集通常涉及从现有来源[收集数据](https://huggingface.co/datasets)并进行清洗。
+   - 成员们强调，在 LLM 领域，“如何找到数据集”这个问题没有标准答案，特别是由于 *没有人会把数据喂到你嘴边*。
+- **OpenRouter 可能是万能解决方案**：一位成员通过 *直接使用 OpenRouter* 解决了他们的问题，这样他们 *就不需要折腾世界上每一个单独的供应商了*。
+   - 他们发现这是解决使用多个 LLM 模型问题的一个天才方法。
 
 
   
@@ -1086,34 +935,31 @@ julianounit: 500 error when creating a new API group
 > `Mentis, AI buddy on smart glasses, Field teams, Deploying models on phone, Deploying models on edge` 
 
 
-- **Mentis Created: AI Buddy for Smart Glasses!**: A member introduced **Mentis**, an **AI buddy** designed for **field teams** and deployed on **smart glasses**.
-   - They expressed interest in connecting with individuals who are deploying models on **phones** and on the **edge**.
-- **Enthusiasm for Edge and Phone Model Deployment**: The member is keen to interact and learn from others involved in deploying **AI models** on both **phones** and **edge devices**.
-   - This indicates a focus on practical applications and real-world scenarios for **AI** in **field operations**.
+- **Mentis 诞生：智能眼镜 AI 伙伴！**：一位成员介绍了 **Mentis**，这是一款专为 **外勤团队** 设计并部署在 **智能眼镜** 上的 **AI 伙伴**。
+   - 他们表示有兴趣与正在 **手机** 和 **边缘侧** 部署模型的人士建立联系。
+- **对边缘侧和手机模型部署的热情**：该成员热衷于与参与在 **手机** 和 **边缘设备** 上部署 **AI 模型** 的其他人交流学习。
+   - 这表明其关注重点在于 **AI** 在 **外勤作业** 中的实际应用和现实场景。
 
 
   
 
 ---
 
-
-
-
 ### **Unsloth AI (Daniel Han) ▷ #[off-topic](https://discord.com/channels/1179035537009545276/1179039861576056922/1474148065337282654)** (261 messages🔥🔥): 
 
-> `Voice Cloning with Speak Embeds, Quantization, Gemini 3.1 Pro Performance, AGI Architecture and Hardware Bottlenecks, Gemini 3 dumbest model` 
+> `使用 Speak Embeds 进行语音克隆、量化、Gemini 3.1 Pro 性能、AGI 架构与硬件瓶颈、Gemini 3 最笨模型` 
 
 
-- **Voice Cloning to Add Speak Embeds**: A member is doing some *hacking* to give **voice cloning speak embeds** and will report back if it works.
-   - They noted that the voice does not need to be high quality to sound good, because they focus on **stable connection**, citing the trick that mobile providers use.
-- **LLM's struggle with Innuendo**: A member thinks they have figured out a task that even top LLMs like **Gemini** can't beat: figuring out the meaning of an **innuendo** from another language.
-   - Another member posted a [YouTube video](https://www.youtube.com/watch?v=F4KQ8wBt1Qg) with a similar idea and that some LLMs did figure it out even before the video was posted.
-- **NisabaRelief MSII Image Model**: A member named their MSII image model **NisabaRelief** and described it as the preprocessing stage for **NabuOCR**.
-   - Nisaba is the **Sumerian goddess of writing and scribes**, who actually predates **Nabu** as the patron deity of cuneiform.
-- **Exploring the bottlenecks to AGI**: Members debated whether **hardware or ideas are the bottleneck to achieving AGI**.
-   - One posited that *even the stupidest model has a probability to output the most novel thing*, but another countered that compute will get us there faster.
-- **Gemini 3.1 Gets Bad Marks**: A member claimed that **Gemini 3** is literally the dumbest model ever and has major *skill issues* compared to **Llama 2 70B**.
-   - It was also mentioned that even if prompted very explicitly to do one thing it goes ahead and does something completely irrelevant.
+- **通过添加 Speak Embeds 进行语音克隆**：一名成员正在进行一些*黑客式的尝试*，旨在为**语音克隆提供 Speak Embeds**，如果成功将进行反馈。
+   - 他们指出，语音不需要高质量就能听起来不错，因为他们专注于**稳定连接（stable connection）**，并引用了移动运营商使用的技巧。
+- **LLM 在处理影射（Innuendo）方面的挣扎**：一位成员认为他们发现了一项即使是像 **Gemini** 这样的顶级 LLM 也无法胜任的任务：理解来自另一种语言的**影射（innuendo）**的含义。
+   - 另一位成员发布了一个具有类似想法的 [YouTube 视频](https://www.youtube.com/watch?v=F4KQ8wBt1Qg)，并表示某些 LLM 甚至在视频发布前就已经理解了。
+- **NisabaRelief MSII 图像模型**：一位成员将其 MSII 图像模型命名为 **NisabaRelief**，并将其描述为 **NabuOCR** 的预处理阶段。
+   - Nisaba 是**苏美尔神话中的文字与书吏女神**，作为楔形文字的守护神，她的地位实际上早于 **Nabu**。
+- **探讨 AGI 的瓶颈**：成员们辩论了**硬件还是想法是实现 AGI 的瓶颈**。
+   - 一人假定*即使是最笨的模型也有概率输出最新颖的东西*，但另一人反驳说算力（compute）会让我们更快实现目标。
+- **Gemini 3.1 得分较低**：一位成员声称 **Gemini 3** 简直是有史以来最笨的模型，与 **Llama 2 70B** 相比存在严重的*能力问题（skill issues）*。
+   - 还有人提到，即使是非常明确地提示它去做一件事，它也会去做一些完全无关的事情。
 
 
   
@@ -1123,16 +969,37 @@ julianounit: 500 error when creating a new API group
 
 ### **Unsloth AI (Daniel Han) ▷ #[help](https://discord.com/channels/1179035537009545276/1179777624986357780/1474158954396520520)** (47 messages🔥): 
 
-> `LM Studio metadata issues with Qwen3-Coder-Next-UD-Q8_K_XL, GPT OSS 20B LoRA merging issues, CUDA error with GPT-OSS-20B on Docker, QAT Training on 4bit models` 
+> `Qwen3-Coder-Next-UD-Q8_K_XL 的 LM Studio 元数据问题、GPT OSS 20B LoRA 合并问题、Docker 上 GPT-OSS-20B 的 CUDA 错误、4bit 模型的 QAT 训练` 
 
 
-- **LM Studio displays incorrect context length for Qwen3**: A user reported that **LM Studio** displayed an incorrect context length of **4096** for the **Qwen3-Coder-Next-UD-Q8_K_XL** model, while Hugging Face metadata showed the correct value of **262144**, but resolved the issue by [reinstalling LM Studio](https://lmstudio.ai/).
-- **LoRA merge conflict with GPT OSS 20B**: A user encountered an `AttributeError` when merging a **LoRA** trained on **GPT OSS 20B** with the *embed_tokens* and *lm_head* target modules, reporting a mismatch between the number of modules and LoRA keys.
-   - Another user reported a similar issue with only *lm_head* added for training, suggesting to *try turning off the rslora*.
-- **CUDA Error Hinders GPT-OSS-20B on Docker**: A user encountered a `CUDA error: an illegal memory access was encountered` while running **GPT-OSS-20B** in a Docker container, using an **A2** GPU.
-   - Another user fixed a similar error by *leaving dtype to =None*.
-- **Pursuing QAT on 4bit models**: A user inquired about the possibility of performing **QAT (Quantization Aware Training)** on a **4-bit model**, and got a [link to a relevant notebook](https://github.com/unslothai/notebooks/blob/main/nb/Kaggle-Qwen3_(4B)_Instruct-QAT.ipynb).
-   - It was clarified that training a **LoRA** on a **4-bit quantized model** is distinct from **QAT**.
+- **LM Studio 显示 Qwen3 的上下文长度错误**：一位用户报告称，**LM Studio** 为 **Qwen3-Coder-Next-UD-Q8_K_XL** 模型显示了错误的上下文长度 **4096**，而 Hugging Face 的元数据（metadata）显示正确数值为 **262144**，该问题通过[重新安装 LM Studio](https://lmstudio.ai/)得到了解决。
+- **GPT OSS 20B 的 LoRA 合并冲突**：一位用户在合并训练于 **GPT OSS 20B** 且带有 *embed_tokens* 和 *lm_head* 目标模块的 **LoRA** 时遇到了 `AttributeError`，报告称模块数量与 LoRA 权重键（keys）不匹配。
+   - 另一位用户报告了仅添加 *lm_head* 进行训练时的类似问题，建议*尝试关闭 rslora*。
+- **CUDA 错误阻碍 Docker 上的 GPT-OSS-20B**：一位用户在 Docker 容器中使用 **A2** GPU 运行 **GPT-OSS-20B** 时，遇到了 `CUDA error: an illegal memory access was encountered`。
+   - 另一位用户通过*将 dtype 保持为 =None* 修复了类似的错误。
+- **在 4bit 模型上进行 QAT**：一位用户询问了在 **4-bit 模型**上进行 **QAT (Quantization Aware Training)** 的可能性，并获得了一个[相关 notebook 的链接](https://github.com/unslothai/notebooks/blob/main/nb/Kaggle-Qwen3_(4B)_Instruct-QAT.ipynb)。
+   - 会议澄清了在 **4-bit 量化模型**上训练 **LoRA** 与 **QAT** 是不同的概念。
+
+
+  
+
+---
+
+### **LM Studio ▷ #[general](https://discord.com/channels/1110598183144399058/1110598183144399061/1474136696516907058)** (245 条消息🔥🔥): 
+
+> `LM Studio 内存加载配置, 昂贵的手电筒, Claude 代码模型, LM Studio 支付选项, LM Studio draft model` 
+
+
+- **LM Studio 在内存加载方面遇到困难**：一位用户在加载模型到内存时遇到问题，即使关闭了 **mmap** 也是如此。用户注意到系统似乎尝试先将完整模型加载到 RAM 中，并卡在 "deciding how to handle document"（决定如何处理文档）步骤。
+   - 另一位用户建议，混合内存/GPU 设置可能很棘手，问题可能源于系统在转移到 GPU 之前尝试将所有内容加载到 RAM 中。
+- **手电筒风波：是可支配收入的浪费还是超值选择？**：用户们就一个 **130 美元的手电筒**的价格展开了辩论，有人开玩笑说这是可支配收入太多，而另一些人则认为这是超值之选。
+   - 讨论范围从安装所需的压力垫和管道胶带，到在 eBay 上寻找更便宜的方案，涉及电池、外壳和鳄鱼夹。
+- **Claude 模型的能力与限制**：用户讨论了 **Claude code model** 及其各种方案（Free, Pro, Max）和使用限制，一位用户因使用频率低而切回了免费方案。
+   - 一位用户询问如何以 server-mode 连接 LM Studio，以便 Claude code 可以与其通信。
+- **支付费用：LM Studio 捐赠？**：一位自 2024 年 11 月以来从 LM Studio 获益匪浅的用户，出于伦理考虑和对所获价值的认可，寻求**捐赠或付费**购买该软件。
+   - 建议包括通过官网联系团队获取商业计划，而其他人则开玩笑地质疑这是否是一个在“卖惨”诱导捐赠的 LLM。
+- **LM Studio 推测性解码 (Speculative Decoding)**：用户讨论了新界面以及如何**启用 draft model** 进行推测性解码，正如 [LM Studio 文档](https://lmstudio.ai/docs/app/advanced/speculative-decoding)中所解释的那样。
+   - 一位用户指出这基本上没用，产出质量更差，而且非常过时。
 
 
   
@@ -1140,67 +1007,40 @@ julianounit: 500 error when creating a new API group
 ---
 
 
+### **LM Studio ▷ #[hardware-discussion](https://discord.com/channels/1110598183144399058/1153759714082033735/1474145325529829549)** (121 条消息🔥🔥): 
+
+> `LM Studio 中的 NVLink 支持, 推理时的 RAM 带宽 vs. GPU 带宽, MoE 模型 vs. Dense 模型, Ubuntu 上 LM Studio 的 GPU 推荐, 用于 Offloading 的 X99 主板` 
 
 
-### **LM Studio ▷ #[general](https://discord.com/channels/1110598183144399058/1110598183144399061/1474136696516907058)** (245 messages🔥🔥): 
-
-> `LM Studio memory loading configurations, Expensive flashlights, Claude code models, LM Studio payment options, LM Studio draft model` 
-
-
-- **LM Studio struggles with memory loading**: A user experienced issues loading a model into memory, even with **mmap** turned off, and noted the system seemed to try to load the full model into RAM first, and they get stuck on "deciding how to handle document".
-   - Another user suggested that hybrid memory/GPU setups can be tricky, and that the problem might stem from the system attempting to load everything into RAM before shifting to GPUs.
-- **Flashlight Fiasco: disposable income or value option?**: Users debated the cost of a **$130 flashlight**, with one jesting about swimming in disposable income while another considered it a value option.
-   - Discussion ranged from needing pressure pads and duct tape for mounting to finding cheaper options on eBay, involving batteries, housings, and alligator clips.
-- **Claude Model Capabilities and Limitations**: Users discussed the **Claude code model**, its various plans (free, Pro, Max), and their usage limits, with one user switching back to the free plan due to low usage.
-   - A user asked how to connect LM Studio in server-mode so that Claude code can talk to it instead.
-- **Paying the Piper: LM Studio Donation?**: A user, benefiting greatly from LM Studio since Nov 2024, sought to **donate or pay** for the software, citing ethical concerns and the value received.
-   - Suggestions included contacting the team via their website for commercial plans, while others jokingly questioned if it was a guilt-tripping LLM attempting to elicit donations.
-- **LM Studio Speculative Decoding**: Users discussed the new interface and **enabling the draft model** for speculative decoding, as explained in the [LM Studio documentation](https://lmstudio.ai/docs/app/advanced/speculative-decoding).
-   - One user noted it's basically useless, produces worse quality, and is old AF.
-
-
-  
-
----
-
-
-### **LM Studio ▷ #[hardware-discussion](https://discord.com/channels/1110598183144399058/1153759714082033735/1474145325529829549)** (121 messages🔥🔥): 
-
-> `NVLink Support in LM Studio, RAM Bandwidth vs. GPU Bandwidth for Inference, MoE Models vs. Dense Models, GPU Recommendations for LM Studio on Ubuntu, X99 Motherboard for Offloading` 
-
-
-- **NVLink Not Necessarily Boosting Inference Speed**: A user inquired about [NVLink](https://en.wikipedia.org/wiki/NVLink) support in LM Studio, reporting **11-15 tok/sec** with **gpt-oss 120B** on dual **A5000** GPUs on Windows.
-   - However, it was stated that *NVLink won't help with speeds* and PCIe speeds are sufficient, with RAM bandwidth being the bottleneck.
-- **RAM Bandwidth more important than GPU for Inference**: The discussion highlighted that [RAM bandwidth](https://en.wikipedia.org/wiki/Memory_bandwidth) is often more crucial than GPU bandwidth for inference, especially when not fully offloading models to VRAM.
-   - Users noted that increasing RAM speed from **3600 to 6000** yielded only a marginal increase of **2 t/s**, and emphasized the importance of VRAM for optimal performance, particularly with larger models.
-- **MoE Models Efficient When Offloaded**: The conversation touched on the efficiency of [Mixture of Experts (MoE) models](https://en.wikipedia.org/wiki/Mixture_of_experts), noting that they perform well when offloaded due to only activating a subset of their parameters at a time.
-   - While simply increasing VRAM is always beneficial, MoE models like **Qwen**, **Nemotron**, and **GPT-OSS** offer advantages by not utilizing all parameters simultaneously, making them faster.
-- **RTX 4070 shines running Headless API**: A user sought recommendations for [NVIDIA GPUs](https://www.nvidia.com/en-us/geforce/) on Ubuntu for LM Studio, specifically for deploying **gpt-oss-20b** in a server environment.
-   - It was suggested that an **RTX 4070** can achieve around **28 tps** and running LMS headless as an API server is perfectly doable.
-- **Motherboard with e-waste for AI**: A user plans to run a **42B** size model on **300$** worth of ewaste with a new board requiring 6 pins, expecting double digit token performance.
-   - The user noted they bought it a month ago before considering offloading to GPU and it can only support up to 2400 clock speed on X99.
+- **NVLink 不一定能提升推理速度**：一位用户询问了 LM Studio 对 [NVLink](https://en.wikipedia.org/wiki/NVLink) 的支持情况，并报告在 Windows 上使用双 **A5000** GPU 运行 **gpt-oss 120B** 时速度为 **11-15 tok/sec**。
+   - 然而，有观点指出 *NVLink 对速度提升没有帮助*，PCIe 速度已经足够，真正的瓶颈在于 RAM 带宽。
+- **推理时 RAM 带宽比 GPU 更重要**：讨论强调，在不完全将模型卸载（Offload）到 VRAM 时，[RAM 带宽](https://en.wikipedia.org/wiki/Memory_bandwidth)通常比 GPU 带宽更关键。
+   - 用户注意到将 RAM 频率从 **3600 提升到 6000** 仅带来了 **2 t/s** 的边际增长，并强调了 VRAM 对于获得最佳性能的重要性，特别是对于大型模型。
+- **MoE 模型在卸载时非常高效**：对话涉及了 [MoE (Mixture of Experts) 模型](https://en.wikipedia.org/wiki/Mixture_of_experts) 的效率，指出它们在卸载时表现良好，因为每次只激活参数的一个子集。
+   - 虽然简单地增加 VRAM 总是有益的，但像 **Qwen**、**Nemotron** 和 **GPT-OSS** 这样的 MoE 模型通过不显式利用所有参数来提供速度优势。
+- **RTX 4070 在运行 Headless API 时表现出色**：一位用户寻求在 Ubuntu 上为 LM Studio 推荐 [NVIDIA GPU](https://www.nvidia.com/en-us/geforce/)，专门用于在服务器环境中部署 **gpt-oss-20b**。
+   - 建议指出 **RTX 4070** 可以达到约 **28 tps**，并且将 LMS 作为 Headless API 服务器运行是完全可行的。
+- **用“电子垃圾”级主板跑 AI**：一位用户计划在一套价值 **300 美元**、带有 6 Pin 接口的新主板“电子垃圾”配置上运行 **42B** 规模的模型，预期获得两位数的 token 性能。
+   - 该用户提到他们在考虑 GPU Offloading 之前一个月就买了它，而在 X99 平台上最高只能支持 2400 的内存频率。
 
 
   
 
 ---
-
-
-
 
 ### **Latent Space ▷ #[watercooler](https://discord.com/channels/822583790773862470/822583790773862473/1474141167229866178)** (31 messages🔥): 
 
-> `Sales skills for engineers, Traction and Lean Startup books, Open Claw and Spacemolt for Discord automod, LLM Summarization of Missed Discord Chatter, ICYMI mobile app feature` 
+> `工程师的销售技巧，《Traction》和《精益创业》书籍，用于 Discord 自动审核的 Open Claw 和 Spacemolt，错过 Discord 聊天的 LLM 总结，ICYMI 移动应用功能` 
 
 
-- **Engineers Embrace Essential Sales Skills**: A member emphasized the importance of **sales skills** for engineers, especially after experiencing a **two-engineer garage startup**.
-   - The suggestion was made that a business cofounder needs to be talking to and learning from **5 potential customers per day**, or something is wrong.
-- **Classics recommended for SaaS startups**: Members recommended **"Traction" by Weinberg and Mares** and **"Lean Startup" by Ries** as classic resources for engineers to learn about sales in the **SaaS era**.
-   - It was mentioned that these books provide alignment and direction, but they won't chase leads.
-- **Exploring Open Claw and Spacemolt**: Following a talk in the **watercooler channel**, a member was convinced to try **open claw** this weekend.
-   - They suggested using it for building a **Discord automod prototype to detect spammers**, or trying out **spacemolt.com** from a prior presentation.
-- **LLM Discord Summarization Solution**: A member proposed using **LLMs** on Discord to **summarize "what did I miss?"** in channels with a lot of chatter.
-   - Another member noted that there was a **mobile app feature called ICYMI** but it was later removed.
+- **工程师开始重视核心销售技巧**：一位成员强调了**销售技巧**对工程师的重要性，尤其是在经历过一个**两名工程师的车库创业项目**之后。
+   - 有人建议，业务联合创始人每天需要与 **5 个潜在客户**进行交流并从中学习，否则就是出了问题。
+- **推荐给 SaaS 创业公司的经典之作**：成员们推荐了 **Weinberg 和 Mares 的《Traction》** 以及 **Ries 的《精益创业》**，认为它们是工程师在 **SaaS 时代**学习销售的经典资源。
+   - 有人提到，这些书籍能提供一致性和方向，但它们不会帮你去跑业务（chase leads）。
+- **探索 Open Claw 和 Spacemolt**：在 **watercooler 频道**的一次谈话后，一位成员被说服在这个周末尝试 **open claw**。
+   - 他们建议将其用于构建一个 **Discord 自动审核原型来检测垃圾信息**，或者尝试之前演示过的 **spacemolt.com**。
+- **LLM Discord 总结方案**：一位成员提议在 Discord 上使用 **LLMs** 来**总结“我错过了什么？”**，适用于那些聊天信息密集的频道。
+   - 另一位成员指出，曾有一个名为 **ICYMI** 的**移动应用功能**，但后来被移除了。
 
 
   
@@ -1210,15 +1050,15 @@ julianounit: 500 error when creating a new API group
 
 ### **Latent Space ▷ #[memes](https://discord.com/channels/822583790773862470/839660725252784149/1474146660052631643)** (27 messages🔥): 
 
-> `Rotating Manifolds, X-Ware Criticisms, Zight, Mistral Founder's Keynote, AI Code Review Workflow` 
+> `旋转流形，X-Ware 批评，Zight，Mistral 创始人主题演讲，AI 代码审查工作流` 
 
 
-- **X-Ware Sparks Open-Source Surge**: A social media post notes that poor software performance pushes communities to develop faster open-source alternatives; see [this tweet](https://xcancel.com/LukasHozda/status/2024502355551490392).
-- **Balthazar Reacts to Bronzini's Post with Zight**: A. P. Balthazar (@aimeebalthazar) replied to @alexbronzini with a humorous expression of disbelief, questioning the nature of the previous post, also referencing [Zight](https://xcancel.com/aimeebalthazar/status/2024747156968440213?s=46).
-- **Mistral's Mensch Draws Modest Mob**: A viral post highlights a surprisingly small audience for a keynote speech delivered by **Arthur Mensch**, the founder of **Mistral** (see [post](https://xcancel.com/debarghyawrites/status/2024435405530288374?s=46) and [YouTube short](https://www.youtube.com/shorts/GJVSDjRXVoo)).
-   - A member joked about generally skipping CEO keynotes at conferences because they are *usually low alpha fluff*.
-- **Codex and Claude Collaborate on Code Review**: Sankalp (@dejavucoder) shares a humorous workflow update regarding using **OpenAI's Codex** to review code co-authored by himself and **Anthropic's Claude** [here](https://xcancel.com/dejavucoder/status/2024821016590246205).
-- **Timeline Suffers Saturation Shock**: Jrag.eth shared a post on **February 20, 2026**, commenting on how a specific unnamed topic or trend has taken over **80%** of their social media timeline, seen by over **100,000** views [here](https://xcancel.com/jrag0x/status/2024765073676259355?s=12).
+- **X-Ware 引发开源激增**：一条社交媒体帖子指出，糟糕的软件性能正推动社区开发更快的开源替代方案；参见 [此推文](https://xcancel.com/LukasHozda/status/2024502355551490392)。
+- **Balthazar 使用 Zight 回应 Bronzini 的帖子**：A. P. Balthazar (@aimeebalthazar) 回复了 @alexbronzini，带着幽默的怀疑态度质疑前帖的性质，并引用了 [Zight](https://xcancel.com/aimeebalthazar/status/2024747156968440213?s=46)。
+- **Mistral 的 Mensch 演讲听众寥寥**：一条热门帖子指出，**Mistral** 创始人 **Arthur Mensch** 的主题演讲听众数量少得惊人（见 [帖子](https://xcancel.com/debarghyawrites/status/2024435405530288374?s=46) 和 [YouTube short](https://www.youtube.com/shorts/GJVSDjRXVoo)）。
+   - 一位成员开玩笑说，通常会跳过大会上的 CEO 主题演讲，因为它们*通常都是低 alpha（低价值）的废话*。
+- **Codex 与 Claude 协作进行代码审查**：Sankalp (@dejavucoder) 在[这里](https://xcancel.com/dejavucoder/status/2024821016590246205)分享了一个幽默的工作流更新，关于使用 **OpenAI 的 Codex** 来审查他与 **Anthropic 的 Claude** 共同编写的代码。
+- **时间线遭受饱和冲击**：Jrag.eth 在 **2026 年 2 月 20 日**发布了一条帖子，评论某个未指明的话题或趋势如何占据了他们社交媒体时间线的 **80%**，浏览量超过 **100,000** 次，见[这里](https://xcancel.com/jrag0x/status/2024765073676259355?s=12)。
 
 
   
@@ -1228,36 +1068,33 @@ julianounit: 500 error when creating a new API group
 
 ### **Latent Space ▷ #[stocks-crypto-macro-economics](https://discord.com/channels/822583790773862470/844658979363618816/1474173726693265591)** (9 messages🔥): 
 
-> `Game Industry vs Tech, Global Gaming Market, Anthropic & Cybersecurity Stocks, Spreadsheet management` 
+> `游戏行业 vs 科技行业，全球游戏市场，Anthropic 与网络安全股票，电子表格管理` 
 
 
-- **Matthew Ball Slices State of Gaming**: A member shared [Matthew Ball's presentation](https://www.matthewball.co/all/presentation-the-state-of-video-gaming-in-2026) on the game industry compared to the wider tech industry, requiring email to view.
-   - The attached image analysis indicated that the **US market only accounts for 4% of the gaming market worldwide**, overall the western gaming market only holds a small fraction.
-- **Mobile Munching Market Share**: In a continuing discussion on the game industry, it was noted that *most of the money is going to ad platforms and app store fees* and that **mobile is by far the majority of the gaming market**.
-   - A member quipped that *the stock market is not real* in light of the market dynamics.
-- **Anthropic's Blogpost Bites into Cybersecurity Stocks**: George Pu reported that [a blog post from Anthropic](https://xcancel.com/TheGeorgePu/status/2024931213329240239) triggered a significant market sell-off.
-   - Major cybersecurity firms like **CrowdStrike, Cloudflare, and Okta** experienced a **$10 billion loss in valuation** within one hour because of it.
+- **Matthew Ball 剖析游戏产业现状**：一位成员分享了 [Matthew Ball 的演讲](https://www.matthewball.co/all/presentation-the-state-of-video-gaming-in-2026)，内容涉及游戏行业与更广泛的科技行业的对比（需邮箱查看）。
+   - 随附的图像分析显示，**美国市场仅占全球游戏市场的 4%**，总体而言，西方游戏市场仅占很小一部分。
+- **移动端蚕食市场份额**：在关于游戏行业的持续讨论中，有人指出*大部分资金都流向了广告平台和应用商店费用*，而且**移动端占据了游戏市场的绝大部分份额**。
+   - 考虑到这种市场动态，一位成员调侃道：*股票市场并不真实*。
+- **Anthropic 的博文重创网络安全概念股**：George Pu 报告称，[来自 Anthropic 的一篇博文](https://xcancel.com/TheGeorgePu/status/2024931213329240239)引发了重大的市场抛售。
+   - **CrowdStrike、Cloudflare 和 Okta** 等主要网络安全公司的市值在一小时内损失了 **100 亿美元**。
 
 
   
 
 ---
 
-
-
-
 ### **Latent Space ▷ #[intro-yourself-pls](https://discord.com/channels/822583790773862470/844675581291397171/1474267276583895133)** (4 messages): 
 
 > `AI Agent Teams, Agentic AI Tooling, Foresight Institute, Space Infrastructure & AI Agents` 
 
 
-- **AI PM Pursues Productivity via Agent_Copilot**: An AI PM from a tech company expressed interest in **Agent_Copilot** exercises to promote productivity.
-- **Orby AI Founder Explores AI Agent Teams' Impact**: The builder of **Orby AI**, sold to **Uniphore** last year, is exploring how **AI agent teams** will reshape company structures and building tooling for managing multiple **AI agents** across different runtimes.
-   - He's interested in **agentic AI**, **knowledge graphs**, and the "super-individual" thesis, based in the bay area.
-- **Foresight Institute Communications Head Shares Opportunities**: The communications lead at the [Foresight Institute](https://foresight.org/), a nonprofit research organization accelerating **AI-driven scientific progress**, offered to share grant opportunities, events, and job openings.
-   - The **Foresight Institute** was founded in 1986.
-- **Space Engineer Leverages AI Agents for Tooling**: An engineer working on **space infrastructure** at [flotilla.space](https://flotilla.space) is using **AI agents** to build tooling for the new company.
-   - He built an orbit simulator at [flotilla.space/orbit](https://flotilla.space/orbit) and other internal analysis tools.
+- **AI PM 通过 Agent_Copilot 追求生产力**：一位来自科技公司的 AI PM 表达了对 **Agent_Copilot** 练习的兴趣，以期提升生产力。
+- **Orby AI 创始人探索 AI Agent Teams 的影响**：**Orby AI**（去年已出售给 **Uniphore**）的构建者正在探索 **AI agent teams** 将如何重塑公司结构，并正在开发用于跨不同运行时管理多个 **AI agents** 的工具。
+   - 他对 **agentic AI**、**knowledge graphs** 以及“超级个体”论题感兴趣，目前常驻湾区。
+- **Foresight Institute 通讯负责人分享机会**：[Foresight Institute](https://foresight.org/)（一家加速 **AI 驱动的科学进步**的非营利研究机构）的通讯负责人提出分享资助机会、活动和职位空缺。
+   - **Foresight Institute** 成立于 1986 年。
+- **航天工程师利用 AI Agents 构建工具**：一位在 [flotilla.space](https://flotilla.space) 从事**空间基础设施**工作的工程师正在使用 **AI agents** 为新公司构建工具。
+   - 他在 [flotilla.space/orbit](https://flotilla.space/orbit) 构建了一个轨道模拟器以及其他内部分析工具。
 
 
   
@@ -1270,13 +1107,13 @@ julianounit: 500 error when creating a new API group
 > `Webpack vs Vite, ESM in Browser Environments, Webpack Configuration Pain Points, Webpack Simplicity for Basic Bundling` 
 
 
-- **Vite Surpasses Webpack as Favored Frontend Tool**: Most frontend development has transitioned to **Vite** or **Vite-based frameworks**, with **Next.js** being a notable exception; older versions use **Webpack**, but are being replaced by **Turbopack**.
-- **Native ESM largely unused in browser environments**: According to a member, almost no one they know is shipping **ESM** natively for browser environments, and the exceptions tend to be library maintainers.
-   - However, [saeris.gg](https://saeris.gg) also mentioned that **Webpack** still powers a large portion of the modern web, and its continued maintenance is still important for many enterprise companies.
-- **Webpack Scaling and Configuration Criticized**: A member listed **scaling, speed, build times,** and **off-the-beaten-path** configurations as pain points of **Webpack**.
-   - They mentioned that most people can't be bothered to maintain an ever-growing config and debugging it for performance issues and that they will gladly never go back to wasting their time on it.
-- **Simple Webpack Configuration Still Works for Basic JS Bundling**: A member shared a simple **Webpack** configuration they've used for **8 years** with minimal changes, citing *"if it ain't broke don't fix it"*.
-   - They noted their use case is uncomplicated **JS bundling for the browser** without **TypeScript, JSX, Vue SFCs, tree shaking**, or even **minification in prod**.
+- **Vite 超越 Webpack 成为最受青睐的前端工具**：大多数前端开发已转向 **Vite** 或 **基于 Vite 的框架**，**Next.js** 是一个显著的例外；其旧版本使用 **Webpack**，但正在被 **Turbopack** 取代。
+- **原生 ESM 在浏览器环境中基本未被使用**：据一位成员透露，他认识的人中几乎没有人针对浏览器环境原生交付 **ESM**，例外情况往往是库维护者。
+   - 然而，[saeris.gg](https://saeris.gg) 也提到 **Webpack** 仍支撑着现代网络的很大一部分，其持续维护对于许多企业级公司仍然至关重要。
+- **Webpack 的扩展性和配置受到批评**：一位成员列举了 **Webpack** 的痛点，包括**扩展性、速度、构建时间**以及**非主流（off-the-beaten-path）**的配置。
+   - 他们提到，大多数人都不愿维护不断增长的配置并为其性能问题进行调试，并且非常乐意再也不把时间浪费在上面。
+- **简单的 Webpack 配置仍适用于基础 JS 打包**：一位成员分享了一个他们使用了 **8 年** 且改动极小的简单 **Webpack** 配置，理由是 *“如果没坏就别修它”*。
+   - 他们指出，其用例是简单的**浏览器端 JS 打包**，不涉及 **TypeScript、JSX、Vue SFCs、tree shaking**，甚至在生产环境中也不进行 **minification**。
 
 
   
@@ -1289,10 +1126,10 @@ julianounit: 500 error when creating a new API group
 > `Foresight Institute, Systems Administrator, Compute Support contractor, AI Node, NVIDIA GPUs` 
 
 
-- **Foresight Seeks Systems Ace for AI Node**: The [Foresight Institute](https://foresight.org/careers/systems-administrator-compute-support-part-time-contractor-san-francisco/) is seeking a **part-time Systems Administrator & Compute Support contractor** to manage its **AI Node** in San Francisco.
-   - The role involves maintaining a local compute cluster with **NVIDIA** and **AMD GPUs**, **CUDA environments**, multi-user Linux systems, and **Docker** containers, at a rate of **$120–$190/hour** for **2-8 hours per week**.
-- **AI Node compute cluster**: The AI Node compute cluster uses **NVIDIA + AMD GPUs**, **CUDA environments**, **Multi-user Linux systems** and **Docker/containerized workloads** for local server and hardware maintenance.
-   - They are looking for someone based in SF, to help advance **AI science and safety**.
+- **Foresight 为 AI Node 寻找系统专家**：[Foresight Institute](https://foresight.org/careers/systems-administrator-compute-support-part-time-contractor-san-francisco/) 正在寻找一名**兼职系统管理员及计算支持承包商**，负责管理其位于旧金山的 **AI Node**。
+   - 该角色涉及维护包含 **NVIDIA** 和 **AMD GPUs**、**CUDA 环境**、多用户 Linux 系统和 **Docker** 容器的本地计算集群，薪资为 **120–190 美元/小时**，每周工作 **2-8 小时**。
+- **AI Node 计算集群**：AI Node 计算集群使用 **NVIDIA + AMD GPUs**、**CUDA 环境**、**多用户 Linux 系统**和 **Docker/容器化工作负载**，用于本地服务器和硬件维护。
+   - 他们正在寻找常驻旧金山的人才，以帮助推进 **AI 科学与安全**。
 
 
   
@@ -1305,8 +1142,25 @@ julianounit: 500 error when creating a new API group
 > `SF Housing Market Inflation, AIE in June` 
 
 
-- **SF Rental Market Inflates**: [TK Kong announced](https://xcancel.com/tkkong/status/2024652806091661376?s=12) signing a new lease in San Francisco, noting extreme competition in the rental market where **applicants are bidding significantly above listed prices and prepaying rent**.
-- **Inquire about AIE Discount**: A member inquired about discount codes for the **AIE in June**.
+- **旧金山租赁市场通胀**：[TK Kong 宣布](https://xcancel.com/tkkong/status/2024652806091661376?s=12)在旧金山签署了新租约，并指出租赁市场竞争极其激烈，**申请人的出价显著高于挂牌价格并预付房租**。
+- **询问 AIE 折扣**：一位成员询问了 6 月份 **AIE** 的折扣码。
+
+
+  
+
+---
+
+### **Latent Space ▷ #[ai-general-news-n-chat](https://discord.com/channels/822583790773862470/1075282825051385876/1474149777007710362)** (55 条消息🔥🔥): 
+
+> `Agentic Coding as ML, Airtable Hyperagent, Gepa AI optimize_anything API, Amazon Kiro AI Outages, Perplexity Strategic Shift` 
+
+
+- ****Agentic Coding:** ML 的转生？**: François Chollet 建议 Agentic Coding 正在变得像 **Machine Learning**，代码库被视为“黑盒模型”，并针对规范进行优化；这种转变引入了 Overfitting 和 Data Leakage 等 ML 问题，详见[这条推文](https://x.com/fchollet/status/2024519439140737442)。
+   - 一位成员回应并强调了 Human in the Loop 的重要性，以及如何根据[这条推文](https://x.com/rlancemartin/status/2024573404888911886?s=46)在人类端进行“梯度下降 (Gradient Descent)”。
+- ****Airtable's Hyperagent:** Agent 化的云平台？**: Howie Liu 宣布了 **Hyperagent by Airtable**，这是一个专为 AI Agent 设计的专业云平台，具有隔离的计算环境、领域特定学习和无缝的 Slack 部署，详见[这条推文](https://x.com/howietl/status/2024618178912145592)。
+- ****Gepa AI's API:** 优化万物？**: Lakshya A Agrawal 发布了一个通用 API，用于优化任何文本参数（**代码、Prompt、云策略**），声称其性能匹配或超过了领域特定工具，根据[这条推文](https://x.com/lakshyaaagrawal/status/2024568680324153800?s=46)。
+- ****Kiro AI's Klumsiness:** Amazon 的 AI 导致 AWS 停机？**: Ed Zitron 强调了由 **Amazon 的 AI 助手 Kiro** 引起的 **两次 AWS 停机**（其中一次持续了 **13 小时**），并批评了 Amazon 将故障归咎于“用户错误”的官方立场，根据[这条推文](https://x.com/edzitron/status/2024725617221259767?s=12)。
+- ****Claude's Code Checkup:** 安全扫描上线？**: **Anthropic** 推出了由 Claude 4.6 Opus 驱动的 **Claude Code Security**，用于扫描代码库中的漏洞并推荐补丁。据报道，它在开源生产代码中发现了 **500 多个** 长期存在的 Bug；目前已提供研究预览版，根据[这条推文](https://_catwu/status/2024910342158237709?s=12)。
 
 
   
@@ -1314,35 +1168,15 @@ julianounit: 500 error when creating a new API group
 ---
 
 
+### **Latent Space ▷ #[llm-paper-club](https://discord.com/channels/822583790773862470/1107320650961518663/1474188568493555753)** (8 条消息🔥): 
+
+> `Voxtral Realtime Model, Dimitris Papailiopoulos Tweet` 
 
 
-### **Latent Space ▷ #[ai-general-news-n-chat](https://discord.com/channels/822583790773862470/1075282825051385876/1474149777007710362)** (55 messages🔥🔥): 
-
-> `Agentic Coding 视作 ML, Airtable Hyperagent, Gepa AI optimize_anything API, Amazon Kiro AI 故障, Perplexity 战略转型` 
-
-
-- ****Agentic Coding:** ML 的轮回？**: François Chollet 认为 Agentic Coding 正在变得像 **ML**，将代码库视为“blackbox models”，并针对规范进行优化；这种转变引入了诸如 overfitting 和 data leakage 等 ML 问题，详见[这条推文](https://x.com/fchollet/status/2024519439140737442)。
-   - 一位成员回应并强调了 human in the loop 的重要性，以及如何在人的维度上进行 *'gradient descent'*，参考[这条推文](https://x.com/rlancemartin/status/2024573404888911886?s=46)。
-- ****Airtable's Hyperagent:** Agentic Cloud 平台？**: Howie Liu 宣布了 **Hyperagent by Airtable**，这是一个专为 AI Agents 设计的云平台，具有隔离的计算环境、特定领域的学习能力和无缝的 Slack 部署功能，详见[这条推文](https://x.com/howietl/status/2024618178912145592)。
-- ****Gepa AI's API:** 优化万物？**: Lakshya A Agrawal 发布了一个通用 API，用于优化任何文本参数（**code, prompts, cloud policies**），声称其性能匹配或超过了特定领域的工具，参考[这条推文](https://x.com/lakshyaaagrawal/status/2024568680324153800?s=46)。
-- ****Kiro AI 的失误:** Amazon 的 AI 导致 AWS 故障？**: Ed Zitron 指出，由于 **Amazon 的 AI 助手 Kiro**，导致了 **两次 AWS 故障**（其中一次持续了 **13 小时**），并批评了 Amazon 将故障归咎于“用户错误”的官方立场，参考[这条推文](https://x.com/edzitron/status/2024725617221259767?s=12)。
-- ****Claude 的代码检查:** 安全扫描上线？**: **Anthropic** 推出了由 Claude 4.6 Opus 驱动的 **Claude Code Security**，用于扫描代码库中的漏洞并建议补丁；据报道，它在开源生产代码中发现了 **500 多个**长期存在的 bug；目前研究预览版已可用，参考[这条推文](https://x.com/_catwu/status/2024910342158237709?s=12)。
-
-
-  
-
----
-
-
-### **Latent Space ▷ #[llm-paper-club](https://discord.com/channels/822583790773862470/1107320650961518663/1474188568493555753)** (8 messages🔥): 
-
-> `Voxtral 实时模型, Dimitris Papailiopoulos 推文` 
-
-
-- **Voxtral 实时转录模型发布**: Guillaume Lample 宣布发布 **Voxtral Realtime**，这是一个采用 Apache 2 许可证的模型，旨在实现 state-of-the-art 的转录效果，可在该 [xcancel.com 链接](https://xcancel.com/GuillaumeLample/status/2024445949733384638)获取。
-   - 该模型具有 **low latency** 特性，性能在 **500ms** 以下。
-- **Dimitris 的推文引发关注**: 一个帖子存档了 Dimitris Papailiopoulos 在 2026 年 2 月 19 日发布的一条推文，包括性能统计数据，可在该 [xcancel.com 链接](https://xcancel.com/dimitrispapail/status/2024555561199480918?s=46&t=jDrfS5vZD4MFwckU5E8f5Q)查看。
-   - 该推文收到了 **25 条回复**、**46 次转发**、**453 个赞**以及超过 **90,000 次观看**。
+- **Voxtral 实时转录模型发布**: Guillaume Lample 宣布发布 **Voxtral Realtime**，这是一个采用 Apache 2 许可证的模型，旨在实现最先进的转录，可在[此 xcancel.com 链接](https://xcancel.com/GuillaumeLample/status/2024445949733384638)获取。
+   - 该模型具有**低延迟**特性，表现低于 **500ms**。
+- **Dimitris 的推文引发关注**: 一个帖子存档了 Dimitris Papailiopoulos 于 2026 年 2 月 19 日发布的一条推文，包括性能统计数据，可在[此 xcancel.com 链接](https://xcancel.com/dimitrispapail/status/2024555561199480918?s=46&t=jDrfS5vZD4MFwckU5E8f5Q)获取。
+   - 该推文获得了 **25 条回复**、**46 次转发**、**453 个赞**以及超过 **90,000 次浏览**。
 
 
   
@@ -1354,16 +1188,16 @@ julianounit: 500 error when creating a new API group
 > `Mobile Git Diff Viewers, Convex Workflow, OpenSpec + Opencode, Trunk Tool, Claude vs Pi` 
 
 
-- ****Twilwa Bootstrap**: Workflow in a Box**: A member shared a [GitHub repo](https://github.com/twilwa/bootstrap) as a template for their workflow, which sets up their stack using `gh repo clone twilwa/bootstrap && cd bootstrap && sudo chmod +x ./bootstrap.sh && bootstrap.sh`.
-   - The `agents.md` file contains the member's loop, and `readme.md` contains human-readable information, but it might need adjustments for other machines.
-- ****Visual Explainer** Aims to Improve Project Planning**: Nico Bailon introduced **Visual Explainer**, a tool designed to replace markdown-based project planning with visual representations, posting a link to [Visual Explainer on xcancel.com](https://xcancel.com/nicopreme/status/2024630185564557769).
-   - The tool is open-source on GitHub and seeks to improve the user experience of project planning by using visual representations over traditional text methods.
-- ****Regex Patterns** for Prompt Injection Detection Released**: Mario Zechner shared a resource featuring **44 regex patterns** designed to detect and prevent prompt injection attacks, with a link to [Prompt injection patterns](https://xcancel.com/badlogicgames/status/2024870857609216151?s=12).
-   - Community members acknowledged the utility of these patterns for enhancing security.
-- **Diverse OpenClaw Forks Emerge**: Multiple **OpenClaw** rewrites and forks were mentioned, including [zeroclaw](https://github.com/zeroclaw-labs/zeroclaw), **nanoclaw**, **picoclaw**, and [nullclaw](https://github.com/nullclaw/nullclaw?tab=readme-ov-file#benchmark-snapshot), each offering unique features and optimizations, though one member reported starting to use **nanoclaw** due to the usage of apple containers instead of docker on mac.
-   - Another member mentioned **IronClaw** and **MimicLaw** for esp32 agent with websockets and telegram integration.
-- ****OpenClaw Slides and Presentation Tips** Shared**: The presenter shared the slides from their talk, and pointed out that  **OpenClaw** created those slides, posting a link to [OpenClaw Slides](https://aiia-openclaw.david.app/#/1).
-   - Also shared some tips for working with **OpenClaw**, such as using separate git worktrees for parallel fixes, running `pnpm install` first before running **Codex** in fresh clones, and checking for shell prompts to detect completion.
+- ****Twilwa Bootstrap**: 开箱即用的工作流**: 一位成员分享了一个 [GitHub repo](https://github.com/twilwa/bootstrap) 作为其工作流模板，通过执行 `gh repo clone twilwa/bootstrap && cd bootstrap && sudo chmod +x ./bootstrap.sh && bootstrap.sh` 即可完成技术栈配置。
+   - `agents.md` 文件包含了该成员的循环逻辑，而 `readme.md` 包含易于阅读的信息，但可能需要针对其他机器进行调整。
+- ****Visual Explainer** 旨在改进项目规划**: Nico Bailon 介绍了 **Visual Explainer**，这是一款旨在用视觉表示取代基于 Markdown 的项目规划工具，并发布了指向 [xcancel.com 上 Visual Explainer](https://xcancel.com/nicopreme/status/2024630185564557769) 的链接。
+   - 该工具在 GitHub 上开源，旨在通过使用视觉表示而非传统的文本方法来提升项目规划的用户体验。
+- **发布用于检测提示词注入的 **Regex Patterns****: Mario Zechner 分享了一个包含 **44 个 Regex Patterns** 的资源，用于检测和防止 Prompt Injection（提示词注入）攻击，链接指向 [Prompt injection patterns](https://xcancel.com/badlogicgames/status/2024870857609216151?s=12)。
+   - 社区成员认可了这些模式在增强安全性方面的实用性。
+- **涌现多样化的 OpenClaw 分支**: 提到了多个 **OpenClaw** 的重写版本和分支，包括 [zeroclaw](https://github.com/zeroclaw-labs/zeroclaw)、**nanoclaw**、**picoclaw** 和 [nullclaw](https://github.com/nullclaw/nullclaw?tab=readme-ov-file#benchmark-snapshot)，每个版本都提供独特的功能和优化。不过有一位成员表示，由于在 Mac 上使用 Apple 容器而非 Docker，他开始使用 **nanoclaw**。
+   - 另一位成员提到了 **IronClaw** 和 **MimicLaw**，用于支持带有 WebSockets 和 Telegram 集成的 ESP32 Agent。
+- **分享 **OpenClaw Slides 和演讲技巧****: 演讲者分享了其演讲的幻灯片，并指出这些幻灯片是由 **OpenClaw** 制作的，链接指向 [OpenClaw Slides](https://aiia-openclaw.david.app/#/1)。
+   - 同时还分享了一些使用 **OpenClaw** 的技巧，例如使用独立的 Git Worktrees 进行并行修复，在全新克隆的代码库中先运行 `pnpm install` 再运行 **Codex**，以及通过检查 Shell 提示符来检测任务完成状态。
 
 
   
@@ -1376,9 +1210,9 @@ julianounit: 500 error when creating a new API group
 > `ElectricSQL blogpost, rhesis-ai/rhesis LLM testing` 
 
 
-- **ElectricSQL blogpost Released**: A member shared a link to an **ElectricSQL** blogpost: [Amdahl's Law for AI Agents](https://electric-sql.com/blog/2026/02/19/amdahls-law-for-ai-agents).
-- **rhesis-ai releases open-source platform**: A member announced an open-source platform & SDK for testing LLM and agentic apps: [rhesis-ai/rhesis](https://github.com/rhesis-ai/rhesis).
-   - It helps to *define expected behavior, generate and simulate test scenarios, and review failures collaboratively*.
+- **ElectricSQL 博客文章发布**: 一位成员分享了 **ElectricSQL** 博客文章的链接：[Amdahl's Law for AI Agents](https://electric-sql.com/blog/2026/02/19/amdahls-law-for-ai-agents)。
+- **rhesis-ai 发布开源平台**: 一位成员宣布了一个用于测试 LLM 和 Agentic 应用的开源平台及 SDK：[rhesis-ai/rhesis](https://github.com/rhesis-ai/rhesis)。
+   - 它有助于 *定义预期行为、生成和模拟测试场景，并协作审查失败案例*。
 
 
   
@@ -1391,28 +1225,25 @@ julianounit: 500 error when creating a new API group
 > `Always On AI Agent, Local AI in your pocket, IoT Home Source Code` 
 
 
-- **Juno Labs Introduces Always-On AI Agent**: [Juno Labs](https://juno-labs.com/) is developing an **always-on AI agent**, though the implementation details remain unclear.
-- **Tiiny AI: Local AI in Your Pocket**: [Tiiny.ai](https://tiiny.ai/) offers **local AI capabilities** accessible from your pocket, enabling on-the-go processing.
-- **TRMNL's IoT Home Source Code Now Available**: The source code for [TRMNL's IoT home system](https://shop.trmnl.com/), found on [GitHub](https://github.com/usetrmnl), integrates with microphones and sensors for **home automation**.
+- **Juno Labs 推出常驻 AI Agent**: [Juno Labs](https://juno-labs.com/) 正在开发一种 **Always-On AI Agent**（常驻 AI 智能体），但具体实现细节尚不清楚。
+- **Tiiny AI: 口袋里的本地 AI**: [Tiiny.ai](https://tiiny.ai/) 提供可放入口袋的 **Local AI 能力**，实现随时随地的处理。
+- **TRMNL 的 IoT 智能家居源码现已发布**: [TRMNL IoT 智能家居系统](https://shop.trmnl.com/) 的源代码已在 [GitHub](https://github.com/usetrmnl) 上发布，该系统集成了麦克风和传感器用于 **家庭自动化**。
 
 
   
 
 ---
 
-
-
-
 ### **Latent Space ▷ #[genmedia-creative-ai-video-image-voice-music-inspo-consumer-ai](https://discord.com/channels/822583790773862470/1397010677364953149/1474233083644477536)** (12 messages🔥): 
 
 > `Google Labs Pomelli Photoshoot, AI-Generated Podcast, Generative AI Video Models` 
 
 
-- **Pomelli 'Photoshoot' from Google Labs Catches Eyes**: Google Labs introduced **'Photoshoot'**, a new **Pomelli** tool feature that generates high-quality, customized marketing images from a single product photo, and is currently free in the US, Canada, Australia, and New Zealand via [this link](https://x.com/googlelabs/status/2024529795548102667?s=12).
-- **Viral **AI-Generated Podcast** 'The Epstein Files' Breaks Records**: Levy.eth discussed the viral success of **'The Epstein Files'**, an AI-vibe-coded podcast created with **Claude**, which hit **100,000 downloads** in its first week, outperforming the top 1% of global podcasts by 20x, linked [here](https://x.com/levychain/status/2021713744406229262?s=12).
-   - The podcast was produced solo over a single weekend.
-- ****a16z** Highlights **Generative AI Video** Landscape in 2026**: a16z highlighted the rapid advancement in generative AI video, noting the dominance of **Seedance 2.0** and competition from **Kling, Grok, Sora, and Veo** via [this tweet](https://x.com/a16z/status/2024533996928209126?s=12).
-   - The post referenced a **'State of Generative Media'** report by fal, analyzing the industry landscape as of early 2026.
+- **Google Labs 的 Pomelli 'Photoshoot' 引发关注**：Google Labs 推出了 **'Photoshoot'**，这是 **Pomelli** 工具的一个新功能，可以从单张产品照片生成高质量、定制化的营销图像。目前该功能在 美国、加拿大、澳大利亚和新西兰通过 [此链接](https://x.com/googlelabs/status/2024529795548102667?s=12) 免费开放。
+- **爆火的 AI-Generated Podcast 'The Epstein Files' 打破纪录**：Levy.eth 讨论了 **'The Epstein Files'** 的病毒式成功。这是一个使用 **Claude** 制作的具有 AI 氛围感的播客，首周下载量达到 **100,000 次**，表现优于全球前 1% 播客的 20 倍，链接见 [这里](https://x.com/levychain/status/2021713744406229262?s=12)。
+   - 该播客是由个人在一个周末内独立完成的。
+- ****a16z** 强调 2026 年 **Generative AI Video** 领域格局**：a16z 强调了生成式 AI 视频的飞速发展，指出 **Seedance 2.0** 的主导地位以及来自 **Kling, Grok, Sora 和 Veo** 的竞争，信息来自 [这条推文](https://x.com/a16z/status/2024533996928209126?s=12)。
+   - 该帖子引用了 fal 发布的 **'State of Generative Media'** 报告，分析了截至 2026 年初的行业格局。
 
 
   
@@ -1425,10 +1256,10 @@ julianounit: 500 error when creating a new API group
 > `Agentic Drug Discovery, Cell Type Importance` 
 
 
-- **CellType: The Agentic Drug Company Launches**: A member shared a link to [CellType: The Agentic Drug Company on Y Combinator](https://www.ycombinator.com/launches/PSn-celltype-the-agentic-drug-company).
-   - The member noted that the name *suggests they also figured out how important the cell type is downstream*.
-- **Cell Type Core Hypothesis**: The member indicates that determining cell type importance downstream is a core hypothesis at MiraOmics.
-   - There were no further details or discussion.
+- **CellType: The Agentic Drug Company 启动**：一名成员分享了 [Y Combinator 上的 CellType: The Agentic Drug Company](https://www.ycombinator.com/launches/PSn-celltype-the-agentic-drug-company) 的链接。
+   - 该成员指出，公司名称*暗示他们也发现了细胞类型在下游的重要性*。
+- **细胞类型核心假设**：该成员表示，确定细胞类型在下游的重要性是 MiraOmics 的一个核心假设。
+   - 目前没有进一步的细节或讨论。
 
 
   
@@ -1443,24 +1274,21 @@ burnytech: https://fxtwitter.com/i/status/2024537378535211368
 
 ---
 
+### **Latent Space ▷ #[applied-ai-experimentation](https://discord.com/channels/822583790773862470/1470417186651897858/1474140554479665174)** (19 条消息🔥): 
+
+> `Variable Diff, REPL Prompting 技巧, 面向 Agent 的 SQLite 存储, AI Agent 的内存管理系统, AI 开发中的 TDD 和 Specs` 
 
 
-
-### **Latent Space ▷ #[applied-ai-experimentation](https://discord.com/channels/822583790773862470/1470417186651897858/1474140554479665174)** (19 messages🔥): 
-
-> `Variable Diff, REPL Prompting Technique, SQLite Storage for Agents, Memory Management Systems for AI Agents, TDD and Specs for AI Development` 
-
-
-- **Variable Diff explained**: A member introduced the concept of **variable diff** as tracking the state that got added/updated with each turn of the root LLM, in a viewer that tracks the state of code, sub LLM calls, and variable updates.
-   - The viewer provides a way to observe changes in code, the outputs of code execution, and the state of variables after each interaction; one member mentioned a more complex example that adds variables for search checkpoints and output sections, illustrated with a [screenshot](https://cdn.discordapp.com/attachments/1470417186651897858/1474142215973376102/CleanShot_2026-02-19_at_12.07.27.png?ex=699a16ec&is=6998c56c&hm=f3145704cec2c35b10a02339f77e26394d264eab78514469fff05606e729e6df).
-- **REPL is better than files/scripts for prompting**: Members found that using *REPL* (Read-Eval-Print Loop) as a prompting technique is effective, and **separates external filesystem from internal memory** making it easier for the model to understand.
-   - This approach gives more control by allowing the model to *peek* at the variable state, which is more structured than *YOLO_RESULTS_OF_LAST_RUN.md*.
-- **SQLite for Agent State Persistence**: The use of **SQLite** as persistent storage for agent state was discussed, with one member describing it as *the goat* for this purpose.
-   - SQLite allows for easy inspection of the schema and facilitates parallel agents that can catch up by inspecting the database, though REPLs have their own pros and cons.
-- **Addressing AI Memory Management**: A member inquired about how often outdated memories (plans/thoughts/references/specs) infiltrate current chats, pointing out that *unwanted or outdated memory* can interfere with current tasks.
-   - They mentioned their struggles with managing various levels and scopes of memory, promoting memory between scopes, and automating memory refactoring, noting that AI-driven solutions often felt *hit or miss*.
-- **TDD Workflow Prevents Memory Mishaps**: A member mentioned that they are *pretty militant about their specs + tdd* (test-driven development).
-   - They use a workflow where specs/ is always current-repo state, changes/ is actively in process, and changes/archive/ is completed and validated, and any deviations from these specs can be fully audited.
+- **Variable Diff 详解**：一名成员介绍了 **variable diff** 的概念，即在一个跟踪代码状态、子 LLM 调用和变量更新的查看器中，追踪根 LLM 每一轮交互后添加或更新的状态。
+   - 该查看器提供了一种观察代码变化、代码执行输出以及每次交互后变量状态的方法；一位成员提到了一个更复杂的例子，其中增加了搜索检查点（checkpoints）和输出部分的变量，并附带了[屏幕截图](https://cdn.discordapp.com/attachments/1470417186651897858/1474142215973376102/CleanShot_2026-02-19_at_12.07.27.png?ex=699a16ec&is=6998c56c&hm=f3145704cec2c35b10a02339f77e26394d264eab78514469fff05606e729e6df)进行说明。
+- **REPL 在 Prompting 方面优于文件/脚本**：成员们发现使用 *REPL* (Read-Eval-Print Loop) 作为一种 Prompting 技巧非常有效，它**将外部文件系统与内部内存分离**，使模型更容易理解。
+   - 这种方法通过允许模型“窥视”变量状态来提供更多控制，这比 *YOLO_RESULTS_OF_LAST_RUN.md* 这种方式更具结构化。
+- **SQLite 用于 Agent 状态持久化**：讨论了使用 **SQLite** 作为 Agent 状态的持久化存储，一位成员将其描述为该用途的 *最佳选择 (the goat)*。
+   - SQLite 允许轻松检查 Schema，并有助于并行 Agent 通过检查数据库来跟进进度，尽管 REPL 也有其自身的优缺点。
+- **解决 AI 内存管理问题**：一位成员询问过时的记忆（计划/想法/参考/Specs）渗入当前对话的频率，并指出*不需要或过时的记忆*会干扰当前任务。
+   - 他们提到了在管理各种级别和范围的内存、在不同作用域（Scope）之间提升内存以及自动化内存重构方面的困扰，并指出 AI 驱动的解决方案通常感觉*时灵时不灵*。
+- **TDD 工作流防止内存故障**：一位成员提到他们对自己的 **Specs + TDD**（测试驱动开发）非常严谨。
+   - 他们使用的工作流中：`specs/` 始终是当前仓库状态，`changes/` 是正在处理中的内容，`changes/archive/` 是已完成并验证的内容，任何偏离这些 Specs 的行为都可以被完全审计。
 
 
   
@@ -1468,21 +1296,36 @@ burnytech: https://fxtwitter.com/i/status/2024537378535211368
 ---
 
 
-### **OpenRouter ▷ #[general](https://discord.com/channels/1091220969173028894/1094454198688546826/1474136119808364586)** (246 messages🔥🔥): 
+### **OpenRouter ▷ #[general](https://discord.com/channels/1091220969173028894/1094454198688546826/1474136119808364586)** (246 条消息🔥🔥): 
 
-> `Contacting Support Team, Zero-size choices array, Excluding Models with Data Policy, Inference expensive, Choices.0.native_finish_reason missing` 
+> `联系支持团队, 长度为零的 Choices 数组, 排除带数据策略的模型, 推理费用昂贵, Choices.0.native_finish_reason 缺失` 
 
 
-- **Users struggle getting response from Support**: One user reported that they sent many emails but haven't received a response for several days, indicating **difficulties in contacting the support team**.
-   - The user emphasized the **importance of their issue** and sought assistance.
-- **Zero-size Choices Array Strikes OpenRouter**: Users reported receiving a **zero-size choices array** from models, indicating a potential issue with the API's response structure, one member says *"yeah, looks like choices can be empty for the final message piece. Just fixing it for my project at the moment."*.
-   - It was noted that checking for a **non-zero array** might be a temporary fix, but the issue appeared randomly and broke some platforms.
-- **Image Generation Goes Blank, Credits Still Charged**: Users reported receiving **empty responses from image generation**, with no image data returned despite credits being charged.
-   - One user, *flight505*, detailed a dispute over **$2.72+** in charges for missing image data and requested investigation into the cause.
-- **OpenRouter Backend Refactor Causes Image Generation Outage**: OpenRouter admitted to a **backend refactor** that caused a partial outage in image generation, leading to blank or missing images.
-   - The team is **planning refunds** for affected users and implemented checks to prevent future occurrences, and mentioned *we made the biggest backend refactor that we've ever done and missed an edge case in tests*.
-- **Can't buy Enterprise subscription**: A member asked how to get an **Enterprise subscription** but emails to support and sales have not been answered.
-   - Another member noted that *first they ignore all non-corporate emails like @gmail.com second idk that's all i know maybe they don't have enough people to read those emails*.
+- **用户难以获得支持团队的回应**：一位用户报告称他们发送了多封电子邮件，但几天都没有收到回复，表明**联系支持团队存在困难**。
+   - 用户强调了**其问题的重要性**并寻求协助。
+- **长度为零的 Choices 数组困扰 OpenRouter**：用户报告从模型收到了**长度为零的 choices 数组**，表明 API 的响应结构可能存在问题，一位成员表示：*“是的，看起来最后一条消息片段的 choices 可能是空的。目前正在为我的项目修复它。”*。
+   - 有人指出，检查**非零数组**可能是一个临时的解决方法，但该问题随机出现并导致了一些平台崩溃。
+- **图像生成返回空白，额度照常扣除**：用户报告收到来自**图像生成的空响应**，尽管扣除了额度，但未返回图像数据。
+   - 用户 *flight505* 详细说明了一场关于 **$2.72+** 缺失图像数据费用的争议，并要求调查原因。
+- **OpenRouter 后端重构导致图像生成停机**：OpenRouter 承认一次**后端重构**导致了图像生成的局部停机，导致图像空白或缺失。
+   - 团队正在**计划为受影响的用户退款**，并实施了检查以防止未来再次发生，并提到：*“我们进行了有史以来最大规模的后端重构，在测试中漏掉了一个边缘情况（edge case）”*。
+- **无法购买企业级订阅**：一位成员询问如何获得**企业级订阅**，但发送给支持和销售部门的邮件均未得到答复。
+   - 另一位成员指出：*“首先，他们会忽略所有非公司邮箱（如 @gmail.com），其次，我只知道这么多，也许他们没有足够的人手来阅读这些邮件。”*。
+
+
+  
+
+---
+
+### **OpenRouter ▷ #[discussion](https://discord.com/channels/1091220969173028894/1392278974222307469/1474155188788002978)** (4 条消息): 
+
+> `AWS 停机, Kiro AI 编程工具, Amazon AI 工具` 
+
+
+- **AWS 因 Kiro AI 遭受停机**: [亚马逊云服务（Amazon Web Services）在 12 月中旬经历了一个系统长达 13 小时的中断](https://www.ft.com/content/00c282de-ed14-4acd-a948-bc8d6bdb339d)，此前工程师允许其 **Kiro AI 编程工具**进行更改。
+   - 该 **agentic tool** 自主决定最佳行动方案是 *"删除并重建环境"*。
+- **亚马逊员工怀疑 AI 编程助手**: 多名 **亚马逊员工** 告诉 FT（金融时报），这是最近几个月中该集团的 **AI 工具**第二次处于服务中断的中心。
+   - 工程师在进行更改前不需要第二个人的批准，而正常情况下是需要的。
 
 
   
@@ -1490,37 +1333,19 @@ burnytech: https://fxtwitter.com/i/status/2024537378535211368
 ---
 
 
+### **GPU MODE ▷ #[general](https://discord.com/channels/1189498204333543425/1189498205101109300/1474146119029231717)** (29 条消息🔥): 
+
+> `DirectML vs CUDA, ONNX Runtime, BPM 分析, LlamaCpp / LlamaSharp, Nsight 资源` 
 
 
-### **OpenRouter ▷ #[discussion](https://discord.com/channels/1091220969173028894/1392278974222307469/1474155188788002978)** (4 messages): 
-
-> `AWS Outage, Kiro AI Coding Tool, Amazon AI tools` 
-
-
-- **AWS Suffers Outages Due to Kiro AI**: [Amazon Web Services experienced a 13-hour interruption](https://www.ft.com/content/00c282de-ed14-4acd-a948-bc8d6bdb339d) to one system in mid-December after engineers allowed its **Kiro AI coding tool** to make changes.
-   - The **agentic tool** autonomously determined that the best action was to *"delete and recreate the environment"*.
-- **Amazon Employees Doubt AI Coding Assistants**: Multiple **Amazon employees** told the FT that this was the second occasion in recent months in which one of the group’s **AI tools** had been at the centre of a service disruption.
-   - Engineers did not require a second person’s approval before making changes, as would normally be the case.
-
-
-  
-
----
-
-
-### **GPU MODE ▷ #[general](https://discord.com/channels/1189498204333543425/1189498205101109300/1474146119029231717)** (29 messages🔥): 
-
-> `DirectML vs CUDA, ONNX Runtime, BPM Analysis, LlamaCpp / LlamaSharp, Nsight Resources` 
-
-
-- **DirectML challenges CUDA for ONNX inference**: A member suggested that **DirectML** is as fast as **CUDA** with **ONNX inference**, prompting a discussion on its capabilities and limitations.
-   - Another member noted that **DirectML** doesn't support **Linux** (excluding WSL) and is in [maintenance mode](https://github.com/microsoft/DirectML/issues/422), but recommended it with **ONNX** in **dotnet** for Windows.
-- **ONNX Runtime simplifies model inference**: A member explained that **ONNX Runtime** (using .onnx or .safetensors files) with .json config files can be used for various model inference tasks, including text generation, chat, and stable diffusion.
-   - They demonstrated using **DirectML-ONNX** to analyze audio files for **BPM** (beats per minute) with high accuracy.
-- **LlamaCpp/LlamaSharp simplifies text LLM**: A member suggested using **LlamaCpp** / **LlamaSharp** in dotnet with .GGUF files for running text LLMs, particularly if not bound to Linux.
-   - They shared their [SharpAI](https://github.com/alarmclock-kisser/SharpAI) project (a web-api with Blazor frontend) as an example, noting experiments with whisper transcription and stable diffusion.
-- **Nsight usage assistance requested**: A member asked for resources to get started with **Nsight**, prompting other members to share helpful links.
-   - Recommended resources included a [YouTube tutorial](https://www.youtube.com/watch?v=F_BazucyCMw), [blog posts on using NCU with large codebases](https://blog.ncompass.tech/using-ncu-with-large-codebases-part1), and [talks from past GTCs](https://www.nvidia.com/en-us/on-demand/).
+- **DirectML 在 ONNX 推理方面挑战 CUDA**: 一位成员建议，在 **ONNX 推理**中，**DirectML** 与 **CUDA** 一样快，引发了对其功能和局限性的讨论。
+   - 另一位成员指出，**DirectML** 不支持 **Linux**（不包括 WSL），并且处于[维护模式](https://github.com/microsoft/DirectML/issues/422)，但在 Windows 下的 **dotnet** 环境中，推荐将其与 **ONNX** 结合使用。
+- **ONNX Runtime 简化模型推理**: 一位成员解释说，带有 .json 配置文件（使用 .onnx 或 .safetensors 文件）的 **ONNX Runtime** 可用于各种模型推理任务，包括文本生成、对话和 Stable Diffusion。
+   - 他们展示了使用 **DirectML-ONNX** 高精度地分析音频文件的 **BPM**（每分钟节拍数）。
+- **LlamaCpp/LlamaSharp 简化文本 LLM**: 一位成员建议在 dotnet 中使用 **LlamaCpp** / **LlamaSharp** 和 .GGUF 文件来运行文本 **LLM**，特别是如果不受限于 Linux。
+   - 他们分享了自己的 [SharpAI](https://github.com/alarmclock-kisser/SharpAI) 项目（一个带有 Blazor 前端的 web-api）作为示例，并提到了在 Whisper 转录和 Stable Diffusion 方面的实验。
+- **请求 Nsight 使用协助**: 一位成员寻求入门 **Nsight** 的资源，促使其他成员分享了有用的链接。
+   - 推荐资源包括 [YouTube 教程](https://www.youtube.com/watch?v=F_BazucyCMw)、[关于在大型代码库中使用 NCU 的博客文章](https://blog.ncompass.tech/using-ncu-with-large-codebases-part1)以及[以往 GTC 的演讲](https://www.nvidia.com/en-us/on-demand/)。
 
 
   
@@ -1528,31 +1353,15 @@ burnytech: https://fxtwitter.com/i/status/2024537378535211368
 ---
 
 
-### **GPU MODE ▷ #[cuda](https://discord.com/channels/1189498204333543425/1189607726595194971/1474356412598452339)** (9 messages🔥): 
+### **GPU MODE ▷ #[cuda](https://discord.com/channels/1189498204333543425/1189607726595194971/1474356412598452339)** (9 条消息🔥): 
 
-> `CUDA Registers, CUDA Unified Memory API, CUTLASS` 
-
-
-- **`setmaxnreg` ignored due to undetermined register count**: A member encountered an issue where `ptxas` was unable to determine the register count, causing `'setmaxnreg'` to be ignored, even with an empty kernel using `nvcc main.cu -arch=sm_90a`.
-   - The member found that specifying all parameters for `__launch_bounds__` was necessary to resolve the issue, and pasted this [github.com/NVIDIA/cutlass/pull/3030](https://github.com/NVIDIA/cutlass/pull/3030).
-- **CUDA requires `nvidia-uvm` even without Unified Memory**: A member reported that CUDA attempts to load the `nvidia-uvm` kernel module even when code doesn't use the Unified Memory API (`cudaMallocManaged()`), and the GPU isn't detected without it.
-   - The member sought insights into why this dependency exists, as it's not documented in CUDA documentation or the NVIDIA open kernel repository.
+> `CUDA 寄存器, CUDA Unified Memory API, CUTLASS` 
 
 
-  
-
----
-
-
-### **GPU MODE ▷ #[cool-links](https://discord.com/channels/1189498204333543425/1189868872887705671/1474358678571450378)** (2 messages): 
-
-> `Modular Claude C Compiler, Paged Out Zine` 
-
-
-- **Modular's Claude C Compiler is out!**: Modular published a [blog post](https://www.modular.com/blog/the-claude-c-compiler-what-it-reveals-about-the-future-of-software) about their **Claude C compiler** and what it reveals about the future of software.
-   - Details about plans for **software development** are discussed in the post.
-- **Paged Out Zine Released!**: Issue #8 of *Paged Out!*, a **nerdy zine** about everything computers, has been released and is available for [download](https://pagedout.institute/download/PagedOut_008.pdf).
-   - The zine covers a range of computer-related topics and is available via the Paged Out Institute.
+- **由于无法确定寄存器数量，`setmaxnreg` 被忽略**: 一位成员遇到了 `ptxas` 无法确定寄存器数量的问题，导致 `'setmaxnreg'` 被忽略，即使是使用 `nvcc main.cu -arch=sm_90a` 的空 Kernel 也是如此。
+   - 该成员发现，为了解决这个问题，必须为 `__launch_bounds__` 指定所有参数，并粘贴了此链接 [github.com/NVIDIA/cutlass/pull/3030](https://github.com/NVIDIA/cutlass/pull/3030)。
+- **即使没有 Unified Memory，CUDA 也需要 `nvidia-uvm`**: 一位成员报告称，即使代码没有使用 Unified Memory API (`cudaMallocManaged()`)，CUDA 仍会尝试加载 `nvidia-uvm` 内核模块，如果不加载该模块就无法检测到 GPU。
+   - 该成员寻求关于为什么存在此依赖关系的见解，因为这在 CUDA 文档或 NVIDIA 开源内核存储库中都没有记录。
 
 
   
@@ -1560,17 +1369,30 @@ burnytech: https://fxtwitter.com/i/status/2024537378535211368
 ---
 
 
+### **GPU MODE ▷ #[cool-links](https://discord.com/channels/1189498204333543425/1189868872887705671/1474358678571450378)** (2 条消息): 
+
+> `Modular Claude C 编译器, Paged Out 杂志` 
 
 
-### **GPU MODE ▷ #[job-postings](https://discord.com/channels/1189498204333543425/1190208177829068860/1474411898840551554)** (2 messages): 
+- **Modular 的 Claude C 编译器发布了！**: Modular 发布了一篇关于其 **Claude C 编译器**以及它对软件未来的启示的[博客文章](https://www.modular.com/blog/the-claude-c-compiler-what-it-reveals-about-the-future-of-software)。
+   - 文中讨论了关于 **软件开发** 计划的细节。
+- **Paged Out 杂志发布！**: 第 8 期 *Paged Out!*（一本关于计算机一切的**极客杂志**）已经发布并可供[下载](https://pagedout.institute/download/PagedOut_008.pdf)。
+   - 该杂志涵盖了一系列与计算机相关的话题，可通过 Paged Out Institute 获取。
+
+
+  
+
+---
+
+### **GPU MODE ▷ #[job-postings](https://discord.com/channels/1189498204333543425/1190208177829068860/1474411898840551554)** (2 条消息): 
 
 > `ML Performance Engineers, Compiler Engineers, New AI Compilation Technology` 
 
 
-- **Hiring ML Performance and Compiler Engineers**: A company is seeking **ML Performance Engineers** and **Compiler Engineers** to develop new technology for compiling and servicing **AI models**.
-   - This technology is being built from scratch and is an alternative to **LLVM** and **VLLM**, as shown in the [job posting](https://builtin.com/jobs?companyId=176712&allLocations=true).
-- **New AI Compilation Tech Stack**: The company is building a **new compilation tech stack** from scratch for AI models, offering an alternative to existing solutions.
-   - The focus is on **ML performance** and **compiler engineering**, indicating a deep dive into optimization and efficiency.
+- **招聘 ML Performance 和 Compiler Engineers**：一家公司正在寻求 **ML Performance Engineers** 和 **Compiler Engineers**，以开发用于编译和服务 **AI models** 的新技术。
+   - 正如 [职位公告](https://builtin.com/jobs?companyId=176712&allLocations=true) 所示，这项技术正从零开始构建，是 **LLVM** 和 **vLLM** 的替代方案。
+- **新型 AI 编译技术栈**：该公司正在为 AI 模型从零构建一套**新型编译技术栈**，提供现有解决方案之外的另一种选择。
+   - 重点在于 **ML performance** 和 **compiler engineering**，这表明其将深入研究优化和效率。
 
 
   
@@ -1578,17 +1400,17 @@ burnytech: https://fxtwitter.com/i/status/2024537378535211368
 ---
 
 
-### **GPU MODE ▷ #[beginner](https://discord.com/channels/1189498204333543425/1191300313928433664/1474300099873214486)** (10 messages🔥): 
+### **GPU MODE ▷ #[beginner](https://discord.com/channels/1189498204333543425/1191300313928433664/1474300099873214486)** (10 条消息🔥): 
 
 > `Coalesced Memory Accesses, CUDA Optimization Resources, NVIDIA Feynman GPU Architecture` 
 
 
-- **Dive into Coalesced Memory Accesses**: Members sought resources on coalesced memory accesses, and the [official NVIDIA CUDA guide](https://docs.nvidia.com/cuda/cuda-c-best-practices-guide/index.html#coalesced-access-to-global-memory) was recommended as a starting point.
-   - Another helpful resource suggested was [this article on CUDA memory management](https://siboehm.com/articles/22/CUDA-MMM).
-- **Explore CUDA Optimization Resources**: A member inquired about starting points and resources for **GPU optimization**.
-   - Another member pointed to prior discussion in the channel.
-- **NVIDIA's Feynman GPU uses Vera CPU**: A member asked why **NVIDIA** will use a **Vera CPU** for the **Feynman GPU**, questioning whether a **CPU** will be embedded in the **GPU**.
-   - Members clarified that **NVIDIA** uses both **GPUs** and **CPUs**, citing the **Blackwell** architecture with **Grace CPUs** and **Blackwell GPUs** interconnected via **NVLink**, with more details available in [this NVIDIA blog post](https://developer.nvidia.com/blog/nvidia-grace-hopper-superchip-architecture-in-depth/).
+- **深入了解 Coalesced Memory Accesses**：成员们寻求关于 **Coalesced Memory Accesses** 的资源，[NVIDIA CUDA 官方指南](https://docs.nvidia.com/cuda/cuda-c-best-practices-guide/index.html#coalesced-access-to-global-memory) 被推荐作为起点。
+   - 另一个被推荐的有用资源是 [这篇关于 CUDA 内存管理的文章](https://siboehm.com/articles/22/CUDA-MMM)。
+- **探索 CUDA 优化资源**：一名成员询问了关于 **GPU optimization** 的起点和资源。
+   - 另一名成员指出了频道中之前的讨论。
+- **NVIDIA 的 Feynman GPU 使用 Vera CPU**：一名成员询问为什么 **NVIDIA** 的 **Feynman GPU** 将使用 **Vera CPU**，质疑 **CPU** 是否会被嵌入到 **GPU** 中。
+   - 成员们澄清说 **NVIDIA** 同时使用 **GPUs** 和 **CPUs**，并以 **Blackwell** 架构为例，其中 **Grace CPUs** 和 **Blackwell GPUs** 通过 **NVLink** 互联，更多细节可在 [这篇 NVIDIA 博客文章](https://developer.nvidia.com/blog/nvidia-grace-hopper-superchip-architecture-in-depth/) 中找到。
 
 
   
@@ -1596,15 +1418,15 @@ burnytech: https://fxtwitter.com/i/status/2024537378535211368
 ---
 
 
-### **GPU MODE ▷ #[pmpp-book](https://discord.com/channels/1189498204333543425/1194427148656721970/1474164891358203935)** (6 messages): 
+### **GPU MODE ▷ #[pmpp-book](https://discord.com/channels/1189498204333543425/1194427148656721970/1474164891358203935)** (6 条消息): 
 
 > `PMMP Book Release, Izzat Hajj Interview` 
 
 
-- **PMMP Book Delayed, Author List Unchanged?**: An Amazon page listed a February 8th release date for the new **PMMP book edition**, but it was taken down shortly before release, also the author list of the 4th edition will be the same for the new edition.
-   - A member suggests **Vikram** is heavily involved in this new edition, but September is the latest release date being speculated.
-- **Izzat Hajj Discusses Forthcoming PMMP Edition**: **Izzat Hajj** discusses the new edition of the **PMMP book** around the 24-minute mark in [this YouTube video](https://www.youtube.com/watch?v=ftI48A8K5Vg).
-   - A member thanked another for linking the video, noting that while September is the latest speculated release date, *they're hoping for earlier*.
+- **PMMP 书籍推迟，作者名单未变？**：亚马逊页面列出了新版 **PMMP book** 的发布日期为 2 月 8 日，但在发布前不久被撤下，此外第 4 版的作者名单将与新版相同。
+   - 一名成员暗示 **Vikram** 深度参与了这一新版本，但目前推测的最晚发布日期是 9 月。
+- **Izzat Hajj 讨论即将出版的 PMMP 版本**：**Izzat Hajj** 在 [这段 YouTube 视频](https://www.youtube.com/watch?v=ftI48A8K5Vg) 的 24 分钟左右讨论了 **PMMP book** 的新版本。
+   - 一名成员感谢另一名成员分享了视频链接，并指出虽然 9 月是目前推测的最晚发布日期，但*他们希望能更早一点*。
 
 
   
@@ -1612,39 +1434,36 @@ burnytech: https://fxtwitter.com/i/status/2024537378535211368
 ---
 
 
-### **GPU MODE ▷ #[irl-meetup](https://discord.com/channels/1189498204333543425/1218444432588800010/1474136624152580116)** (6 messages): 
+### **GPU MODE ▷ #[irl-meetup](https://discord.com/channels/1189498204333543425/1218444432588800010/1474136624152580116)** (6 条消息): 
 
 > `Seattle IRL meetup, ML Systems Happy Hour in Seattle, Chicago Meetup` 
 
 
-- **Seattle IRL Community Search Initiated**: A member inquired about the existence of an **IRL (in real life) community in Seattle**, inviting others to DM to start one if one doesn't exist.
-   - This sparked interest among other members who expressed enthusiasm for a local gathering.
-- **ML Systems Happy Hour Brews in Seattle**: A member announced plans for a **happy hour in Seattle** focused on **ML systems**, signaling an opportunity for local professionals to connect.
-   - Another member offered assistance, showing community support for organizing the event.
-- **Chicago Gathering?**: A member inquired about potential meetups in **Chicago**.
-   - No further information or plans were provided regarding a Chicago meetup.
+- **启动西雅图 IRL 社区寻找**：一名成员询问 **西雅图是否存在 IRL（线下）社区**，并邀请其他人如果目前没有相关社区，可以私信（DM）发起一个。
+   - 这引起了其他成员的兴趣，他们对当地聚会表现出了极大的热情。
+- **西雅图 ML Systems Happy Hour 筹备中**：一名成员宣布计划在**西雅图**举办一场专注于 **ML systems** 的 **happy hour**，为当地专业人士提供了建立联系的机会。
+   - 另一名成员提供了协助，展示了社区对组织活动的支持。
+- **芝加哥聚会？**：一名成员询问了在**芝加哥**举办潜在见面会的可能性。
+   - 目前还没有关于芝加哥见面会的进一步信息或计划。
 
 
   
 
 ---
-
-
-
 
 ### **GPU MODE ▷ #[thunderkittens](https://discord.com/channels/1189498204333543425/1300872762163728550/1474200701507862716)** (10 messages🔥): 
 
 > `ThunderKittens 2.0, GH CLI with Claude, HIPKittens, PTX consistency model, Tensor core memory pipelining` 
 
 
-- ****ThunderKittens 2.0** Release Announced**: The Hazy Research group at Stanford released [ThunderKittens 2.0](https://hazyresearch.stanford.edu/blog/2026-02-19-tk-2) which emphasizes **subtraction as much as addition** through internal refactoring and reduction of build system complexities.
-   - It identified *surprising behaviors* on modern Nvidia GPUs which will guide how kernels should *not be optimized*.
-- ****ThunderKittens 2.0** called out as **talk-worthy**!**: Members discussed the potential for a talk on **ThunderKittens 2.0**, with one suggesting it could focus on undocumented tensor core pipelining, proper PTX assembler hinting, and occupancy challenges.
-   - The speaker said that they would *love to give a talk* and provided a [link to available dates](https://www.gpumode.com/lectures).
-- ****ThunderKittens 2.0 TMA** performance insight**: A member inquired about the performance benefits of using different warps for A/B TMA and SFA/SFB TMA in **ThunderKittens 2.0**.
-   - He also observed speedups from interleaving `tcgen05.cp` and `tcgen05.mma` for **nvfp4 competition problem shapes**.
-- **Leveraging **GH CLI and Claude** for issue selection**: One member mentioned using **GH CLI** with **Claude** to read open issues in other projects, filtering them based on personal preferences.
-   - This process involves iterative refinement to select suitable tasks.
+- ****ThunderKittens 2.0** 发布公告**：斯坦福大学的 Hazy Research 小组发布了 [ThunderKittens 2.0](https://hazyresearch.stanford.edu/blog/2026-02-19-tk-2)，该版本通过内部重构和降低构建系统的复杂性，强调**减法与加法并重**。
+   - 它识别出近代 Nvidia GPU 上一些*令人惊讶的行为*，这将指导未来内核该*如何不进行优化*。
+- ****ThunderKittens 2.0** 被认为非常**值得一讲**！**：成员们讨论了就 **ThunderKittens 2.0** 进行技术演讲的可能性，有人建议可以重点关注未公开的 Tensor core 流水线（pipelining）、正确的 PTX 汇编器提示（hinting）以及 Occupancy 挑战。
+   - 演讲者表示非常*愿意进行演讲*，并提供了[可用日期链接](https://www.gpumode.com/lectures)。
+- ****ThunderKittens 2.0 TMA** 性能见解**：一位成员询问了在 **ThunderKittens 2.0** 中使用不同 Warp 进行 A/B TMA 和 SFA/SFB TMA 的性能收益。
+   - 他还观察到在 **nvfp4 竞赛问题规模**下，通过交替执行 `tcgen05.cp` 和 `tcgen05.mma` 获得了加速。
+- **利用 **GH CLI 和 Claude** 进行 Issue 选择**：一位成员提到结合使用 **GH CLI** 和 **Claude** 来读取其他项目的公开 Issue，并根据个人偏好进行过滤。
+   - 这个过程涉及迭代优化，以选出合适的任务。
 
 
   
@@ -1657,8 +1476,8 @@ burnytech: https://fxtwitter.com/i/status/2024537378535211368
 > `Rocket Launch, Factorio Learning Environment` 
 
 
-- **Rocket Launch Timeline Optimism**: Members expressed optimism about the possibility of launching a **rocket** in the next **6 months**, given the current rate of progress.
-- **Factorio Learning Environment Goals**: The goal is to launch a rocket within a collaborative Factorio environment.
+- **火箭发射时间表乐观**：鉴于目前的进展速度，成员们对在未来 **6 个月**内发射**火箭**的可能性表示乐观。
+- **Factorio 学习环境目标**：目标是在一个协作式的 Factorio 环境中发射火箭。
 
 
   
@@ -1671,8 +1490,8 @@ burnytech: https://fxtwitter.com/i/status/2024537378535211368
 > `Tensorflow Projector, GEMMs OpenBLAS Updates` 
 
 
-- **Tensorflow Projector Showcased**: A member shared the [TensorFlow Projector](https://projector.tensorflow.org/) for visualization, in addition to the already well-known [TensorFlow Playground](https://playground.tensorflow.org/).
-- **OpenBLAS GEMMs getting love**: A member announced plans to work on updating the **GEMMs OpenBLAS** stuff later in the day.
+- **展示 Tensorflow Projector**：一位成员分享了用于可视化的 [TensorFlow Projector](https://projector.tensorflow.org/)，此外还有广为人知的 [TensorFlow Playground](https://playground.tensorflow.org/)。
+- **OpenBLAS GEMMs 得到关注**：一位成员宣布计划在当天晚些时候更新 **GEMMs OpenBLAS** 相关内容。
 
 
   
@@ -1685,10 +1504,10 @@ burnytech: https://fxtwitter.com/i/status/2024537378535211368
 > `AI Leaderboard Submissions, Marksaroufim clarifies AI Leaderboard policy` 
 
 
-- **AI submissions wanted on leaderboard**: A member asked if purely **AI-created submissions** were wanted on the leaderboard.
-   - Another member clarified that *it's completely fine* and that they *like both our expert humans and expert AIs*.
-- **AI Leaderboard Policy Clarified**: Marksaroufim confirmed that the leaderboard accepts purely AI submissions.
-   - This statement encourages participation from both human experts and advanced AI systems, fostering a diverse and competitive environment.
+- **排行榜寻求 AI 提交内容**：一位成员询问排行榜是否接受纯 **AI 创建的提交内容**。
+   - 另一位成员澄清说*这完全没问题*，并且他们*既喜欢人类专家，也喜欢 AI 专家*。
+- **AI 排行榜政策阐明**：Marksaroufim 确认排行榜接受纯 AI 的提交。
+   - 这一表态鼓励了人类专家和先进 AI 系统的共同参与，促进了多元化和竞争性的环境。
 
 
   
@@ -1701,32 +1520,29 @@ burnytech: https://fxtwitter.com/i/status/2024537378535211368
 > `torch.ops.symm_mem.fused_all_gather_scaled_matmul, do_bench with multi-GPUs, vllm-project/vllm` 
 
 
-- **`fused_all_gather_scaled_matmul` Freezes up with Multi-GPUs**: A member is debugging `torch.ops.symm_mem.fused_all_gather_scaled_matmul` hanging when `do_bench` is run on multi-GPUs, referencing a [vllm-project/vllm](https://github.com/vllm-project/vllm/pull/33933/changes) code change for context.
-   - Another member points out that `do_bench` is intended for single-device kernels, so running a multi-GPU fused collective kernel repeatedly won't work.
-- **`do_bench` Designed for Single Device Kernels**: One member mentioned that `triton.testing.do_bench()` isn't suitable for distributed collectives like `torch.ops.symm_mem.fused_all_gather_scaled_matmul` due to the internal `torch.cuda.synchronize()` calls during timing.
-   - They recommend using events and a pre-iteration barrier as a workaround, and [another member](https://github.com/vllm-project/vllm/pull/33933/changes) confirmed the issue, stating the best workaround they found was using host-side timing with the `time` library.
+- **`fused_all_gather_scaled_matmul` 在多 GPU 下卡死**：一位成员正在调试 `torch.ops.symm_mem.fused_all_gather_scaled_matmul` 在多 GPU 上运行 `do_bench` 时挂起的问题，并引用了 [vllm-project/vllm](https://github.com/vllm-project/vllm/pull/33933/changes) 的代码更改作为上下文。
+   - 另一位成员指出 `do_bench` 旨在用于单设备内核，因此重复运行多 GPU 融合集合通信算子（fused collective kernel）是行不通的。
+- **`do_bench` 专为单设备内核设计**：一位成员提到，由于在计时期间内部调用了 `torch.cuda.synchronize()`，`triton.testing.do_bench()` 不适合像 `torch.ops.symm_mem.fused_all_gather_scaled_matmul` 这样的分布式集合通信操作。
+   - 他们建议使用 Event 和预迭代 Barrier 作为权变措施，[另一位成员](https://github.com/vllm-project/vllm/pull/33933/changes)确认了该问题，并表示他们发现的最佳解决办法是使用 `time` 库进行主机端计时。
 
 
   
 
 ---
 
-
-
-
 ### **GPU MODE ▷ #[nvidia-competition](https://discord.com/channels/1189498204333543425/1434709259500650628/1474220224084574248)** (36 messages🔥): 
 
 > `Environment Issues with Modal, Cutedsl Problems, Modal Credits, Debug IR/PTX with popcorn cl` 
 
 
-- **Modal Environment Gremlins Attack!**: Members encountered environment issues on **Modal**, where previously working code failed; the root cause was pinpointed to problems with the **nvidia-cutlass-dsl** package.
-   - One member found that *removing* the runtime installation of **nvidia-cutlass-dsl** from their code *lessened the crashing*.
-- **Cutedsl Code Causes Competition Crash!**: Some members using **cutedsl** reported issues submitting to **Modal**, with one noting they *hadn't been able to submit for 5 days*, while another stated that removing for pkg in ["nvidia-cutlass-dsl", made it crash less often now.
-   - A member pointed out that installing dependencies at runtime is a bit *yolo* and suggested adding more to **Modal's** dependencies for future competitions.
-- **Modal Funding Drying Up!**: A member noted that their team *should be fixed* and they have about **2K** in credits left but ai spamming thousands of submissions will bring back the unpopular rate limits.
-   - It’s now all linked directly to *my personal credit card haha so please don’t make me tell my wife we’re homeless.*
-- **Debug IR/PTX Dumps**: A member inquired about dumping debug **IR/PTX** when submitting **cutedsl** code via **popcorn cl**.
-   - A member suggested printing to stdout for now, but mentioned they could consider adding a **ptx** instruction after the competition.
+- **Modal 环境故障侵袭！**: 成员们在 **Modal** 上遇到了环境问题，导致之前运行正常的代码失败；根本原因被锁定在 **nvidia-cutlass-dsl** 包的问题上。
+   - 一位成员发现，从代码中*移除* **nvidia-cutlass-dsl** 的运行时安装（runtime installation）可以*减少崩溃*。
+- **Cutedsl 代码导致竞赛崩溃！**: 一些使用 **cutedsl** 的成员报告了提交到 **Modal** 时的问题，其中一人指出他们已经 *5 天无法提交*，而另一人表示移除 `for pkg in ["nvidia-cutlass-dsl"]` 后现在崩溃频率降低了。
+   - 一位成员指出，在运行时安装依赖项有点*过于随意（yolo）*，并建议在未来的竞赛中将更多依赖添加到 **Modal** 的预设依赖中。
+- **Modal 资金即将耗尽！**: 一位成员指出，他们团队的问题*应该已经修复*，目前还剩下约 **2K** 的额度，但如果 AI 疯狂进行数千次提交，将会导致不受欢迎的速率限制（rate limits）再次出现。
+   - 现在这一切都直接关联到*我个人的信用卡上，哈哈，所以请不要让我沦落到要告诉妻子我们要无家可归的地步。*
+- **调试 IR/PTX 转储**: 一位成员询问在通过 **popcorn cl** 提交 **cutedsl** 代码时，如何转储调试用的 **IR/PTX**。
+   - 一位成员建议目前先打印到 `stdout`，但也提到可以考虑在竞赛结束后添加 **ptx** 指令支持。
 
 
   
@@ -1739,12 +1555,12 @@ burnytech: https://fxtwitter.com/i/status/2024537378535211368
 > `Fused MoE track, flashinfer.fused_moe.trtllm_fp8_block_scale_moe, reference kernel, Bug with trtllm_fp8_block_scale_moe, flashinfer-ai/flashinfer #2356` 
 
 
-- **Challenges Arise with FlashInfer's Fused MoE Baseline**: A member reported consistent failures with `INCORRECT_NUMERICAL` errors and high `abs_err / rel_err` when using the baseline `flashinfer.fused_moe.trtllm_fp8_block_scale_moe` function in the **Fused MoE track**.
-   - The member inquired about required settings or constraints for achieving numerically correct outputs, such as **weight layout, shuffled weights, PDL, scaling assumptions, or routing method**.
-- **Navigating Numerics Nightmare with TensorRT FP8 MoE**: A member shared their kernel code utilizing `trtllm_fp8_block_scale_moe` and sought advice on resolving **numerical mismatches**.
-   - The posted code configured settings like `num_experts=256`, `top_k=8`, `n_group=8`, and `routing_method_type=RoutingMethodType.DeepSeekV3.value`, but still faced issues.
-- **Reference Kernel Recommended Amid FlashInfer Bug**: A member suggested using the **reference kernel** instead of the **FlashInfer baseline**, while another member confirmed a bug with `trtllm_fp8_block_scale_moe`.
-   - They linked to [issue #2356](https://github.com/flashinfer-ai/flashinfer/issues/2356) on the flashinfer-ai/flashinfer GitHub repository, indicating a known problem.
+- **FlashInfer 的 Fused MoE 基准测试面临挑战**: 一位成员报告称，在 **Fused MoE track** 中使用基准函数 `flashinfer.fused_moe.trtllm_fp8_block_scale_moe` 时，持续出现 `INCORRECT_NUMERICAL` 错误以及极高的 `abs_err / rel_err`。
+   - 该成员询问了实现数值正确输出所需的设置或约束，例如 **weight layout, shuffled weights, PDL, scaling assumptions, 或 routing method**。
+- **应对 TensorRT FP8 MoE 的数值噩梦**: 一位成员分享了他们使用 `trtllm_fp8_block_scale_moe` 的内核代码，并就解决**数值不匹配**寻求建议。
+   - 发布的代码配置了 `num_experts=256`, `top_k=8`, `n_group=8` 和 `routing_method_type=RoutingMethodType.DeepSeekV3.value` 等设置，但仍然面临问题。
+- **在 FlashInfer Bug 期间推荐使用 Reference Kernel**: 一位成员建议使用 **reference kernel** 而不是 **FlashInfer baseline**，同时另一位成员确认了 `trtllm_fp8_block_scale_moe` 存在 Bug。
+   - 他们链接到了 flashinfer-ai/flashinfer GitHub 仓库中的 [issue #2356](https://github.com/flashinfer-ai/flashinfer/issues/2356)，表明这是一个已知问题。
 
 
   
@@ -1757,12 +1573,33 @@ burnytech: https://fxtwitter.com/i/status/2024537378535211368
 > `vLLM, CUDA kernels, RoPE implementation` 
 
 
-- **Coding vLLM From Scratch**: A member started writing **vLLM** from scratch and shares the [repo](https://github.com/jmaczan/tiny-vllm) they are working on.
-   - They also mentioned that **vLLM** and **Titan** are probably the 2 most important ones to start with and are currently working on **RoPE**.
-- **Tiny-vllm's Main Implementation**: A member shared the link to the main implementation of tiny-vllm, in [main.cpp](https://github.com/jmaczan/tiny-vllm/blob/main/src/main.cpp).
-   - The member encourages others working on a minimal version of X to post their work.
-- **Tiny-vllm's CUDA Kernels**: A member shared the link to the [CUDA kernels](https://github.com/jmaczan/tiny-vllm/blob/main/src/kernels.cu) used in tiny-vllm.
-   - They stated that there is not much educational value yet.
+- **从零开始编写 vLLM**: 一位成员开始从头编写 **vLLM**，并分享了他们正在开发的 [repo](https://github.com/jmaczan/tiny-vllm)。
+   - 他们还提到 **vLLM** 和 **Titan** 可能是最重要的两个起点，目前正在处理 **RoPE**。
+- **Tiny-vllm 的主要实现**: 一位成员分享了 tiny-vllm 主要实现的链接，位于 [main.cpp](https://github.com/jmaczan/tiny-vllm/blob/main/src/main.cpp) 中。
+   - 该成员鼓励其他正在开发“最小版本 X”的人发布他们的工作。
+- **Tiny-vllm 的 CUDA 内核**: 一位成员分享了 tiny-vllm 中使用的 [CUDA kernels](https://github.com/jmaczan/tiny-vllm/blob/main/src/kernels.cu) 链接。
+   - 他们表示目前还没有太大的教育价值。
+
+
+  
+
+---
+
+### **Moonshot AI (Kimi K-2) ▷ #[general-chat](https://discord.com/channels/1369594130807787570/1371757564005711973/1474150859771351072)** (63 条消息🔥🔥): 
+
+> `Kimi Coding, Claude vs Kimi, Kimi CLI vs IDE, 音频转录端点, 百度搜索引擎` 
+
+
+- **Kimi 的编码能力引发辩论**：一些用户称赞 **Kimi** 在编码任务中的*稳定性和速度*，而另一些人则表示不满，更倾向于使用 **Claude**。
+   - 一位用户强调了 **Kimi** 能够找到 **Gemini** 遗漏的冷门信息源的能力，而另一位用户则批评其推理能力和好辩的倾向。
+- **Kimi CLI 比 IDE 集成更受青睐**：用户报告称，与目前处于 Beta 阶段的 **Visual Studio Code (VS Code)** 集成相比，使用 **Kimi** 的命令行界面 (**CLI**) 体验更好。
+   - 一位用户指出，**CLI** 版本能更好地与针对拥有数千行代码的大型项目的 Agent swarms 集成，暗示 **IDE** 版本目前还不够成熟。
+- **Kimi 与 Claude Code 的编码对比**：一位用户描述了将 **Kimi Code CLI** 更换为带有 **K2.5** 的 **Claude Code** 的经历，指出这也是一种很好的体验，但希望 **Kimi** 最终能在其 **CLI** 中集成 Agent swarm。
+   - 另一位用户提到 **Claude** 模型太贵了，但还有一位用户表示他们正在使用 **Kimi** 研究 **Claude code**，却遇到了 Rate limits（速率限制）。
+- **OpenClaw 与退款申请问题**：一位用户在购买 kimi.com 账号意图使用 **OpenClaw** 后，由于发现其缺乏浏览器导航和 **WhatsApp** 连接功能而不适用，已等待退款两天。
+   - 该用户对缺乏即时支持表示沮丧，建议使用 **AI chat** 系统进行即时退款，并提到*其他中国公司即使在春节期间也会回复。*
+- **ChatJimmy 吹嘘高 Token 处理速度**：一位用户分享了 [ChatJimmy AI](https://chatjimmy.ai/) 的链接，强调其处理速度超过每秒 **15,000 tokens**。
+   - 这一说法表明，与其他平台相比，**ChatJimmy** 在某些 AI 任务中可能是更快的替代方案。
 
 
   
@@ -1770,61 +1607,34 @@ burnytech: https://fxtwitter.com/i/status/2024537378535211368
 ---
 
 
+### **Nous Research AI ▷ #[general](https://discord.com/channels/1053877538025386074/1149866623109439599/1474137949049454713)** (46 条消息🔥): 
+
+> `DeepSeek OS V4, AI 与区块链, 模型能力, Gemini 与编码` 
 
 
-### **Moonshot AI (Kimi K-2) ▷ #[general-chat](https://discord.com/channels/1369594130807787570/1371757564005711973/1474150859771351072)** (63 messages🔥🔥): 
-
-> `Kimi Coding, Claude vs Kimi, Kimi CLI vs IDE, Audio transcription endpoint, Baidu Search Engine` 
-
-
-- **Kimi's Coding Capabilities Spark Debate**: Some users are praising **Kimi** for its *stability and speed* in coding tasks, while others find it unsatisfactory, preferring **Claude**.
-   - One user highlighted **Kimi**'s ability to find obscure sources of information that **Gemini** misses, while another criticized its reasoning abilities and tendency to argue.
-- **Kimi CLI Gains Favor Over IDE Integration**: Users report better experiences with **Kimi**'s command-line interface (**CLI**) compared to its **Visual Studio Code (VS Code)** integration, which is currently in beta.
-   - A user noted that the **CLI** version integrates better with agent swarms for larger projects with thousands of lines of code, suggesting the **IDE** version is underbaked.
-- **Kimi vs Claude Code Comparison**: A user described swapping **Kimi Code CLI** for **Claude Code** with **K2.5**, noting that it was a good experience too, but hoping that **Kimi** will eventually integrate an agent swarm into its **CLI**.
-   - Another user cited that **Claude** models are too expensive, but another user said that they were researching on **Claude code** using **Kimi**, but got hit with rate limits.
-- **OpenClaw & Refund Request Issues**: A user has been awaiting a refund for two days after purchasing a kimi.com account with the intention of using **OpenClaw**, but finding it unsuitable due to a lack of browser navigation and **WhatsApp** connectivity.
-   - The user expressed frustration with the lack of immediate support, suggesting an **AI chat** system for instant refunds, referencing that *other Chinese companies do reply even if it is Spring Festival.*
-- **ChatJimmy Boasts High Token Processing Speeds**: A user shared a link to [ChatJimmy AI](https://chatjimmy.ai/), highlighting its ability to process over **15,000 tokens per second**.
-   - This claim suggests **ChatJimmy** as a potentially faster alternative for certain AI tasks compared to other platforms.
+- **DeepSeek OS V4 vs 闭源 API**：成员们建议使用 **DeepSeek V4**，强调其开源特性和本地部署能力是闭源 API 的首选替代方案，并[分享了入门视频](https://www.youtube.com/watch?v=i-89k0dOMmY)。
+   - 一位成员指出，该模型受*生物神经网络启发的 Engram Memory 突破意义重大*，并敦促支持开源（OS）发展以超越闭源选项。
+- **探索 AI 与区块链的融合**：一位成员对 **AI 和区块链** 表示兴趣，寻求关于模型构建、AI Agents 和自动化的讨论。
+   - 作为回应，另一位成员分享了他们使用 **Claude code** 来编排 **Gemini-cli** 和 **Codex** 的经验，并展望了未来使用文本终端和智能眼镜的场景。
+- **评估模型能力的飞跃**：成员们讨论了模型能力的提升，比较了 **Sonnet 3.5** 和 **GPT4**，一位成员幽默地将 **Opus 3** 称为“影之实力者”（dark eminence），因为其访问受限。
+   - 一位成员表示希望 **DeepSeek V4** 能够紧跟这一趋势，强调了自 DeepSeek R1 发布以来，形势已向有利于开源（OS）势头的方向转变。
+- **Gemini 的编码专注度受到质疑**：一位成员表示 *“我更希望他们在编码上松一点，只需锁死在科学/数学领域”*，其他成员则讨论了 Google 在 Anthropic 的股份。
+   - 另一位成员补充说，**Claude** 可以在 Web 界面的沙箱中编译并执行 C 代码，而 **Gemini** 几乎只能处理 Python，并分享了 [Twitter 帖子链接](https://x.com/JayChopra_/status/2024961657630286151)。
 
 
   
 
 ---
-
-
-### **Nous Research AI ▷ #[general](https://discord.com/channels/1053877538025386074/1149866623109439599/1474137949049454713)** (46 messages🔥): 
-
-> `DeepSeek OS V4, AI and blockchain, Model capabilities, Gemini and coding` 
-
-
-- ****DeepSeek OS V4** vs Closed Source APIs**: Members suggest using **DeepSeek V4**, emphasizing its open-source nature and local deployment capabilities as a preferable alternative to closed-source APIs and [shared a primer video](https://www.youtube.com/watch?v=i-89k0dOMmY).
-   - One member noted the model's *biological neural network inspired Engram Memory breakthrough is significant* and urged support for OS development to surpass closed-source options.
-- **Exploring AI and Blockchain Fusion**: A member expressed interest in **AI and blockchain**, seeking discussions on model building, AI agents, and automation.
-   - In response, another member shared their use of **Claude code** to orchestrate **Gemini-cli** and **Codex**, envisioning a future with text terminals and smart glasses.
-- **Evaluating Leaps in Model Capabilities**: Members discussed the rise in model capabilities, comparing **Sonnet 3.5** and **GPT4**, with one humorously labeling **Opus 3** as the *dark eminence* due to limited access.
-   - One member expressed hope that **DeepSeek V4** would keep up with this trend, highlighting a shift in favor of OS momentum since the release of DeepSeek R1.
-- ****Gemini**'s Coding Focus Questioned**: A member said *I would of preferred for them to be loose on coding and just lock in for scientific/math*, with other members discussing Google's stake in Anthropic.
-   - Another added that **Claude** can compile and execute C code in a sandbox in the web interface, while **Gemini** can barely do Python, with member sharing [a link to twitter post](https://x.com/JayChopra_/status/2024961657630286151).
-
-
-  
-
----
-
-
-
 
 ### **Nous Research AI ▷ #[interesting-links](https://discord.com/channels/1053877538025386074/1132352574750728192/1474260898230308924)** (1 messages): 
 
 > `Anthropic agent teams, Agent coordination, Agent communication` 
 
 
-- **Reverse Engineering Anthropic's Agent Teams**: Anthropic released an experimental **agent teams** feature a few weeks ago, with details on how agents **coordinate tasks** and **communicate** with each other.
-   - A member reverse engineered how it works in [this blog post](https://nwyin.com/blogs/claude-code-agent-teams-reverse-engineered).
-- **Agent Communication Dynamics Exposed**: The reverse engineering effort sheds light on how agents within Anthropic's experimental teams feature interact and exchange information.
-   - Understanding these communication protocols is crucial for optimizing multi-agent systems and enhancing collaborative AI workflows.
+- **逆向工程 Anthropic 的 Agent Teams**：Anthropic 几周前发布了一个实验性的 **agent teams** 功能，并详细介绍了 Agent 之间如何 **协调任务** 和 **相互通信**。
+   - 一位成员在 [这篇博文](https://nwyin.com/blogs/claude-code-agent-teams-reverse-engineered) 中逆向工程了它的工作原理。
+- **Agent 通信动态曝光**：逆向工程的工作揭示了 Anthropic 实验性团队功能中 Agent 之间如何交互和交换信息。
+   - 了解这些通信协议对于优化多 Agent 系统和增强协作式 AI 工作流至关重要。
 
 
   
@@ -1837,10 +1647,10 @@ burnytech: https://fxtwitter.com/i/status/2024537378535211368
 > `GGML, llama.cpp` 
 
 
-- **GGML / llama.cpp Join the Family**: The Hugging Face team welcomes **GGML / llama.cpp** to the family.
-   - Further discussions on this integration can be found on [GitHub](https://github.com/ggml-org/llama.cpp/discussions/19759).
-- **GGML gains traction**: **GGML** gains traction within the community as a framework.
-   - **llama.cpp** benefits from integration and support.
+- **GGML / llama.cpp 加入大家庭**：Hugging Face 团队欢迎 **GGML / llama.cpp** 加入大家庭。
+   - 关于此次集成的进一步讨论可以在 [GitHub](https://github.com/ggml-org/llama.cpp/discussions/19759) 上找到。
+- **GGML 获得势头**：**GGML** 作为一个框架在社区内获得了关注。
+   - **llama.cpp** 从集成和支持中获益。
 
 
   
@@ -1853,38 +1663,35 @@ burnytech: https://fxtwitter.com/i/status/2024537378535211368
 > `HF Discord Invite Broken, Hybrid Diffusion / Autoregressive Language Model, HF Collabs with Unsloth, k-fold cross-validation Confusion, Report a Role` 
 
 
-- **HF Discord Link 404s**: Users reported the **Hugging Face Discord link** on the HF top page is [broken](https://cdn.discordapp.com/attachments/879548962464493622/1474191401003778101/hfdiscord404_1.png).
-   - Staff confirmed and said *we might need to replace it*.
-- **Diffusion Meets Autoregression?**: A member inquired about **hybrid diffusion/autoregressive language models**, suggesting autoregressive layers could generate **CoT tokens** during diffusion steps.
-   - Another member suggested [this paper](https://arxiv.org/pdf/2503.09573) as related to the topic.
-- **Free LLM Training with Unsloth on HF**: It was announced that you can train **LLMs** using **Hugging Face** for [FREE with Unsloth](https://x.com/i/status/2024552060558229858).
-   - Another member mentioned that there are now over **100K models** fine-tuned with **Unsloth** open-source on **Hugging Face**.
-- **Decoding K-Fold Cross-Validation**: A user sought clarification on the **k-fold cross-validation** process, specifically how the test set is handled across k iterations.
-   - One member advised not to overthink it and just try to grab data from throughout your training set to test/validate with.
-- **ZeroGPU Service Sees Disruptions**: Members reported experiencing **disruptions** in the **zerogpu service**.
-   - A member was initially confused and thought there was a *new rule* that you need to set an **HF token** to get free gpus but that was proven false.
+- **HF Discord 链接 404**：用户反馈 Hugging Face 首页上的 **Discord 链接** [已失效](https://cdn.discordapp.com/attachments/879548962464493622/1474191401003778101/hfdiscord404_1.png)。
+   - 工作人员确认了此事并表示“我们可能需要更换它”。
+- **Diffusion 遇到 Autoregression？**：一位成员询问了 **混合 diffusion/autoregressive 语言模型**，建议 autoregressive 层可以在 diffusion 步骤中生成 **CoT tokens**。
+   - 另一位成员推荐了[这篇论文](https://arxiv.org/pdf/2503.09573)，认为其与该主题相关。
+- **在 HF 上使用 Unsloth 免费训练 LLM**：官方宣布你可以使用 **Hugging Face** 并配合 [Unsloth 免费训练 **LLMs**](https://x.com/i/status/2024552060558229858)。
+   - 另一位成员提到，目前在 **Hugging Face** 上已有超过 **10 万个模型** 是使用 **Unsloth** 开源微调的。
+- **解码 K-Fold Cross-Validation**：一位用户寻求关于 **k-fold cross-validation** 过程的澄清，特别是测试集在 k 次迭代中是如何处理的。
+   - 一位成员建议不要想太多，只需尝试从整个训练集中提取数据来进行测试/验证即可。
+- **ZeroGPU 服务出现中断**：成员反馈 **zerogpu 服务** 经历了 **中断**。
+   - 一位成员最初感到困惑，以为有一条“新规则”规定必须设置 **HF token** 才能获得免费 GPU，但事实证明这是错误的。
 
 
   
 
 ---
 
-
-
-
 ### **HuggingFace ▷ #[i-made-this](https://discord.com/channels/879548962464493619/897390720388825149/1474138798685163532)** (4 messages): 
 
 > `Terradev CLI v2.9.2, NAVD - Persistent conversational memory for AI agents, Coding agent swarm, Grant proposal feedback` 
 
 
-- **Terradev CLI v2.9.2 Released: Cross-Cloud GPU Cost Optimization**: The release of **Terradev CLI v2.9.2** was announced, a cross-cloud GPU cost optimization platform with multi-cloud GPU arbitrage across **AWS, GCP, Azure, and RunPod**.
-   - Key features include real total job cost calculation and one-click HuggingFace Spaces deployment, available on [GitHub](https://github.com/theoddden/terradev) under the **BUSL 1.1 license**.
-- **NAVD Launches: Agent Memory Without Vector Databases**: **NAVD** was released as a persistent conversational memory solution for AI agents, utilizing an append-only log and Arrow embedding index, eliminating the need for a vector database, available on [GitHub](https://github.com/pbanavara/navd-ai) under the **MIT license**.
-   - It offers pluggable embeddings (**OpenAI built-in**), semantic search over raw conversations, and index rebuildability with search speeds under **10ms** at **50k vectors**.
-- **Autonomous Coding Agent Swarm Creates Iterative Improvement Loop**: A coding agent swarm was introduced that operates autonomously for hours, creating an iterative loop to continuously improve its output without human intervention and coordinates with each other harmoniously.
-   - The project is available on [GitHub](https://github.com/starsnatched/super-system).
-- **Grant Proposal Feedback Requested**: A member asked for feedback on a grant proposal.
-   - The grant proposal is available as a discussion on [HuggingFace](https://huggingface.co/spaces/Tonic/fr-on-device/discussions/1).
+- **Terradev CLI v2.9.2 发布：跨云 GPU 成本优化**：**Terradev CLI v2.9.2** 正式发布，这是一个跨云 GPU 成本优化平台，支持在 **AWS, GCP, Azure 和 RunPod** 之间进行多云 GPU 套利。
+   - 关键特性包括真实的作业总成本计算和一键 **HuggingFace Spaces** 部署，可在 [GitHub](https://github.com/theoddden/terradev) 上通过 **BUSL 1.1 license** 获取。
+- **NAVD 发布：无需向量数据库的 Agent 记忆**：**NAVD** 作为一种为 AI Agent 设计的持久化对话记忆解决方案发布，它利用仅追加日志（append-only log）和 **Arrow embedding** 索引，消除了对向量数据库的需求，可在 [GitHub](https://github.com/pbanavara/navd-ai) 上通过 **MIT license** 获取。
+   - 它提供可插拔的 **embeddings**（内置 **OpenAI** 支持）、针对原始对话的语义搜索，以及索引可重构性，在 **50k vectors** 规模下搜索速度低于 **10ms**。
+- **自主 Coding Agent Swarm 构建迭代改进循环**：引入了一个可以自主运行数小时的 **coding agent swarm**，它通过创建一个迭代循环来持续改进其输出，无需人工干预，且各 **Agent** 之间协调和谐。
+   - 该项目已在 [GitHub](https://github.com/starsnatched/super-system) 上开源。
+- **征求拨款申请反馈**：一名成员就一份拨款申请（grant proposal）征求反馈。
+   - 该拨款申请可在 **HuggingFace** 的讨论区查看：[HuggingFace](https://huggingface.co/spaces/Tonic/fr-on-device/discussions/1)。
 
 
   
@@ -1897,34 +1704,31 @@ burnytech: https://fxtwitter.com/i/status/2024537378535211368
 > `Taalas Chip, Streamlit UI Bottleneck, TPU Research Funding` 
 
 
-- **Taalas Chip: Model-Specific ASICs Hit the Market**: A new [Taalas chip](https://www.forbes.com/sites/karlfreund/2026/02/19/taalas-launches-hardcore-chip-with-insane-ai-inference-performance/) is designed as an **ASIC** for a specific LLM, offering potentially high speed and low energy use, but requiring **new layers for different models**.
-   - It's being compared to **Cerebras** (wafer scale) and **Etched** (runs multiple models), with some arguing **Taalas** might be acquired by big tech for on-device inference.
-- **Streamlit Reruns Result in UI Lag**: A member found **Streamlit's full-script rerun architecture** to be a massive bottleneck when building UIs for heavier models, experiencing significant lag during inference testing.
-   - They hacked together a pure **Python framework** (**FastAPI + Lit**) mimicking **Streamlit's API** but using signals for O(1) updates, bypassing the rerun entirely, available at [GitHub](https://github.com/violit-dev/violit).
-- **$25k-100k one-time unrestricted funding, along with TPU compute and also a research mentor**: Members discussed [Google's TPU Research Funding RFP](https://goo.gle/2026-tpu-rfp), offering **$25k-100k** one-time unrestricted funding, along with **TPU compute** and a research mentor.
-   - While the funding requires working with **Google-adjacent stack**, it's primarily for faculty at degree-granting institutions, not individuals or most members of the server.
+- **Taalas 芯片：针对特定模型的 ASIC 进入市场**：新款 [Taalas 芯片](https://www.forbes.com/sites/karlfreund/2026/02/19/taalas-launches-hardcore-chip-with-insane-ai-inference-performance/) 被设计为针对特定 **LLM** 的 **ASIC**，具有潜在的高速和低能耗优势，但针对不同模型需要**新的物理层**。
+   - 它被拿来与 **Cerebras**（晶圆级规模）和 **Etched**（可运行多个模型）进行比较，一些人认为 **Taalas** 可能会被大科技公司收购用于端侧推理（on-device inference）。
+- **Streamlit 重新运行导致 UI 延迟**：一名成员发现 **Streamlit 的全脚本重新运行（full-script rerun）架构**在为重型模型构建 **UI** 时是一个巨大的瓶颈，在推理测试期间会产生明显的延迟。
+   - 他们临时搭建了一个模仿 **Streamlit API** 的纯 **Python 框架**（**FastAPI + Lit**），但使用信号（signals）实现 **O(1)** 复杂度的更新，从而完全绕过了重新运行过程，项目地址：[GitHub](https://github.com/violit-dev/violit)。
+- **$25k-100k 一次性非限制性资助，以及 TPU 算力和研究导师**：成员们讨论了 [Google 的 TPU 研究资助 RFP](https://goo.gle/2026-tpu-rfp)，该项目提供 **$25k-100k** 的一次性非限制性资助，以及 **TPU** 算力和一名研究导师。
+   - 虽然该资助要求使用与 **Google** 相关的技术栈，但它主要面向授予学位机构的教职人员，而非个人或该服务器的大多数成员。
 
 
   
 
 ---
 
-
-
-
 ### **Eleuther ▷ #[research](https://discord.com/channels/729741769192767510/747850033994662000/1474158060691001437)** (8 messages🔥): 
 
 > `Fold Catastrophe Geometry in GPT-2 and Pythia, Context Compression and Information Loss, KV Cache and Flash Attention, Identity Leakage Verification` 
 
 
-- **Fold Catastrophe Geometry pops up in GPT-2 and Pythia**: A member found what looks like **fold catastrophe geometry** in how **GPT-2** and **Pythia-160M** resolve ambiguous tokens, noting sharp transitions, directional specificity, and 4:1 basin asymmetry.
-   - The findings replicate across both models, and the member provided a [GitHub repository](https://github.com/karlijoyj-web/fold-catastrophe-gpt2) with scripts and results, also replicating on **Pythia-410M**.
-- **Context Compression causes Information Loss**: A paper indicated a **30-45% PPL gap** between bounded and unbounded contexts, attributing it to real information loss from context compression.
-   - A member asked if there were any levers to decrease the compression ratio to mitigate the impact.
-- **KV Cache sizes are debated**: A paper cited **160 GB** for the KV cache, but a member pointed out that this is inaccurate due to **Flash Attention** and similar techniques.
-   - The member suggested checking out [flash-linear-attention](https://x.com/twitter/status/2024892671563891130) for modern experimental attention implementations.
-- **Identity Leakage Questioned**: A member inquired how identity leakage was verified, noting they had not read the paper.
-   - The inquiry was in reference to [this link](https://x.com/twitter/status/2024892671563891130).
+- **Fold Catastrophe Geometry 出现在 GPT-2 和 Pythia 中**：一名成员在 **GPT-2** 和 **Pythia-160M** 解析歧义 token 的方式中发现了类似于 **fold catastrophe geometry** 的现象，并指出了剧烈的转换、方向特异性以及 4:1 的盆地不对称性（basin asymmetry）。
+   - 这些发现在两个模型中都得到了复现，该成员提供了一个 [GitHub repository](https://github.com/karlijoyj-web/fold-catastrophe-gpt2)，其中包含脚本和结果，并且在 **Pythia-410M** 上也进行了复现。
+- **Context Compression 导致信息丢失**：一篇论文指出有界上下文（bounded contexts）与无界上下文（unbounded contexts）之间存在 **30-45% 的 PPL 差距**，并将其归因于 Context Compression 造成的真实信息丢失。
+   - 一名成员询问是否存在任何手段可以降低压缩率以减轻影响。
+- **KV Cache 大小引发讨论**：一篇论文引用了 **160 GB** 的 KV Cache 大小，但一名成员指出，由于使用了 **Flash Attention** 和类似技术，这一数据并不准确。
+   - 该成员建议关注 [flash-linear-attention](https://x.com/twitter/status/2024892671563891130) 以了解现代实验性的 Attention 实现。
+- **Identity Leakage 受到质疑**：一名成员询问 Identity Leakage 是如何验证的，并提到他们尚未阅读该论文。
+   - 该询问是针对[此链接](https://x.com/twitter/status/2024892671563891130)提出的。
 
 
   
@@ -1937,10 +1741,10 @@ burnytech: https://fxtwitter.com/i/status/2024537378535211368
 > `ARES Tooling Framework, Agent Activations Research` 
 
 
-- ****ARES** Tooling Framework Launch by Martian**: Martian introduced **ARES**, a tooling framework designed to expose an **LLM agent's activations** along trajectories in an agentic setup, which helps researchers understand how the agent solves long horizon tasks, with the [repo here](https://github.com/withmartian/ares).
-   - A tutorial demonstrating the use of **ARES** to diagnose and correct a failure mode in a simple agent (via probing and activation steering) is available [here](https://github.com/withmartian/ares/blob/main/examples/20q_case_study/ares_mi_20q_tutorial.ipynb).
-- **Martian's **ARES** on X**: The team at Martian also has a twitter thread describing the ARES framework [here](https://x.com/Narmeen29013644/status/2024553932635394215) as well as a discord community [here](https://discord.gg/mGTbCZAG) if you'd like to ask questions.
-   - The original launch tweet was [posted on fxtwitter](https://fxtwitter.com/i/status/2024537378535211368) if you'd like to retweet it.
+- **Martian 发布 ARES 工具框架**：Martian 推出了 **ARES**，这是一个旨在暴露 Agentic 设置中 **LLM Agent 激活值**及其轨迹的工具框架，旨在帮助研究人员理解 Agent 如何解决长程任务（long horizon tasks），[代码仓库在此](https://github.com/withmartian/ares)。
+   - 此处提供了一个教程，演示如何使用 **ARES** 诊断并纠正简单 Agent 中的失效模式（通过探测 Probing 和激活引导 Activation Steering）：[教程链接](https://github.com/withmartian/ares/blob/main/examples/20q_case_study/ares_mi_20q_tutorial.ipynb)。
+- **Martian 的 ARES 在 X 上的动态**：Martian 团队还在 Twitter 上发布了描述 ARES 框架的推文串，[详见此处](https://x.com/Narmeen29013644/status/2024553932635394215)，如果你有任何疑问，也可以加入他们的 [Discord 社区](https://discord.gg/mGTbCZAG)。
+   - 最初的发布推文已 [发布在 fxtwitter 上](https://fxtwitter.com/i/status/2024537378535211368)，欢迎转发。
 
 
   
@@ -1953,14 +1757,14 @@ burnytech: https://fxtwitter.com/i/status/2024537378535211368
 > `ChatJimmy, FXTwitter Links, Endomorphosis Datasets, Taalas Ubiquitous AI` 
 
 
-- ****Chollet's Tweet Echoes Through Discord****: Members shared a link to [François Chollet's tweet](https://fxtwitter.com/fchollet/status/2024519439140737442), originally posted on fxtwitter.com.
-   - There was little discussion or reaction besides the sharing of the URL.
-- ****Endomorphosis Rules Inventory Emerges****: A member shared a link to the **Endomorphosis project's Inference Rules Inventory** on GitHub, specifically this [IPFS datasets Python logic](https://github.com/endomorphosis/ipfs_datasets_py/blob/main/ipfs_datasets_py/logic/INFERENCE_RULES_INVENTORY.md).
-   - It appears to be an inventory of rules for a dataset project, but there was no elaboration in the channel on its purpose or capabilities.
-- ****ChatJimmy Boasts Blazing Token Speed****: Multiple members highlighted [ChatJimmy.ai](https://chatjimmy.ai/), emphasizing its claimed processing speed of **15k tokens per second**.
-   - Members reacted, with one exclaiming, *"This is insane wow"*.
-- ****Taalas Charts Path to Ubiquitous AI****: A member shared a link to a [Taalas article](https://taalas.com/the-path-to-ubiquitous-ai/) titled *The Path to Ubiquitous AI*.
-   - The article could potentially discuss the future and proliferation of AI, but no commentary was added.
+- **Chollet 的推文在 Discord 引起共鸣**：成员们分享了 [François Chollet 的推文链接](https://fxtwitter.com/fchollet/status/2024519439140737442)，该推文最初发布在 fxtwitter.com。
+   - 除了分享 URL 之外，几乎没有进一步的讨论或反应。
+- **Endomorphosis 规则清单出现**：一名成员在 GitHub 上分享了 **Endomorphosis 项目的推理规则清单（Inference Rules Inventory）**，具体为这个 [IPFS 数据集 Python 逻辑](https://github.com/endomorphosis/ipfs_datasets_py/blob/main/ipfs_datasets_py/logic/INFERENCE_RULES_INVENTORY.md)。
+   - 这似乎是一个数据集项目的规则清单，但频道内未对其目的或功能进行详细说明。
+- **ChatJimmy 以极高的 Token 速度自诩**：多名成员关注了 [ChatJimmy.ai](https://chatjimmy.ai/)，强调其宣称的处理速度达到了 **每秒 15k tokens**。
+   - 成员们反应热烈，其中一人惊叹道：“这太疯狂了，哇”。
+- **Taalas 描绘通往普及化 AI 之路**：一名成员分享了一篇名为《通往普及化 AI 之路》（The Path to Ubiquitous AI）的 [Taalas 文章](https://taalas.com/the-path-to-ubiquitous-ai/)。
+   - 该文章可能讨论了 AI 的未来和普及，但未附带评论。
 
 
   
@@ -1973,26 +1777,18 @@ burnytech: https://fxtwitter.com/i/status/2024537378535211368
 > `ARC AGI Fine Tuning, Synthetic data for ARC-AGI` 
 
 
-- **ARC AGI is being fine-tuned**: Members discussed that everyone is blatantly fine-tuning for **ARC AGI** now, referring to [a post on X](https://x.com/i/status/2024556314785894422).
-- **Synthetic Data is the key to ARC-AGI**: The discussion suggested that the attempts to make more *synthetic data* for **ARC-AGI** and train on it points to one thing: this is the key to AGI.
-
-
-  
-
----
-
-
-
+- **ARC AGI 正在接受微调**：成员们讨论了目前所有人都在明目张胆地针对 **ARC AGI** 进行 Fine-tuning，参考了 [X 上的一个帖子](https://x.com/i/status/2024556314785894422)。
+- **合成数据是 ARC-AGI 的关键**：讨论表明，为 **ARC-AGI** 生成更多合成数据（Synthetic Data）并进行训练的尝试指向了一个结论：这是实现 AGI 的关键。
 
 ### **DSPy ▷ #[papers](https://discord.com/channels/1161519468141355160/1203568372667645963/1474190027100520479)** (2 messages): 
 
 > `Tree of Thought, Skill Issues, Coding Assistance` 
 
 
-- **Tree of Thought Intrigues User**: A member expressed interest in trying out **Tree of Thought** but mentioned being unable to code it themselves due to *skill issues*.
-   - They linked to a [tweet](https://x.com/lakshyaaagrawal/status/2024568680324153800?s=46) related to the topic.
-- **Coding Assistance Requested for Tree of Thought**: The user explicitly stated they were *unable to code it myself* because of skill issues.
-   - The tweet linked [here](https://x.com/lakshyaaagrawal/status/2024568680324153800?s=46) shows an implementation of Tree of Thought.
+- **Tree of Thought 引起用户兴趣**：一名成员表示有兴趣尝试 **Tree of Thought**，但提到由于技术水平有限（skill issues），无法自行编写代码。
+   - 他们链接了一篇与该主题相关的 [推文](https://x.com/lakshyaaagrawal/status/2024568680324153800?s=46)。
+- **请求 Tree of Thought 编码协助**：该用户明确表示由于技术水平问题 *无法自行编码实现*。
+   - [此处](https://x.com/lakshyaaagrawal/status/2024568680324153800?s=46) 链接的推文展示了一个 Tree of Thought 的实现。
 
 
   
@@ -2005,12 +1801,12 @@ burnytech: https://fxtwitter.com/i/status/2024537378535211368
 > `DSPy with Claude, Office Hour Feedback, Reasoning Models with RLM, Qwen3-4B-thinking Issues` 
 
 
-- **Claude meets DSPy's skills**: A member inquired about mixing normal agents (like **Claude**) with **DSPy**, specifically if DSPy could serve as a script associated with a Claude skill.
-- **Office Hour Buzz**: The office hour had about **40 people** attending, covering roughly **10 use cases**, with attendees providing questions and feedback.
-- **RLM + Reasoning Model = Recipe for Success?**: Reasoning models work well with **RLM**, but there are reports that sub_lm calls return truncated reasoning when using **Qwen3-4B-thinking**.
-   - One user suggested that the sub_lm adaptation to use signatures could potentially solve this issue.
-- **Qwen3-4B-Thinking Loops**: One member has noticed that, in their setup (**llama cpp w/ jinja and vllm with reasoning parser**), sub_lm calls appear to return the reasoning (in my setup, llama cpp w/ jinja and vllm with reasoning parser) as the answer, which is truncated, when they test **Qwen3-4B-thinking**.
-   - This **truncation** issue causes the agent to enter a loop.
+- **Claude 与 DSPy 技能结合**：一名成员询问是否可以将普通的 Agent（如 **Claude**）与 **DSPy** 结合使用，特别是 DSPy 能否作为与 Claude skill 相关联的脚本。
+- **Office Hour 热况**：约有 **40 人** 参加了 Office Hour，涵盖了大约 **10 个用例**，参会者提出了问题并给予了反馈。
+- **RLM + Reasoning Model = 成功的秘诀？**：Reasoning Models 与 **RLM** 配合良好，但有报告称在使用 **Qwen3-4B-thinking** 时，sub_lm 调用返回的推理过程会被截断。
+   - 一名用户建议，将 sub_lm 适配为使用 signatures 可能会解决此问题。
+- **Qwen3-4B-Thinking 循环问题**：一名成员注意到，在其环境设置下（**llama cpp 配合 jinja 以及带有 reasoning parser 的 vllm**），测试 **Qwen3-4B-thinking** 时，sub_lm 调用似乎将推理过程作为答案返回，且该答案被截断了。
+   - 这种 **截断** 问题导致 Agent 进入了死循环。
 
 
   
@@ -2023,10 +1819,10 @@ burnytech: https://fxtwitter.com/i/status/2024537378535211368
 > `PR Review Times, Modular PR #5979` 
 
 
-- **Modular's PR Review ETA**: A member asked about the review time for their PR submitted the previous day.
-   - Another member responded that [PR #5979](https://github.com/modular/modular/pull/5979) was assigned to a reviewer and would likely be reviewed later that day.
-- **PR Submission Awaits Scrutiny**: A recent pull request (PR) submitted yesterday seeks review and feedback.
-   - Assigned to <@325746765448085504>, [PR #5979](https://github.com/modular/modular/pull/5979) on GitHub's modular repository is slated for examination, potentially later today.
+- **Modular PR 审核预计时间**：一名成员询问了前一天提交的 PR 的审核时间。
+   - 另一名成员回复称 [PR #5979](https://github.com/modular/modular/pull/5979) 已分配给审核人员，可能会在当天晚些时候进行审核。
+- **PR 提交等待审查**：昨天提交的一项最近的 Pull Request (PR) 正在寻求审核和反馈。
+   - GitHub 上 Modular 仓库的 [PR #5979](https://github.com/modular/modular/pull/5979) 已分配给 <@325746765448085504>，计划进行检查，可能在今天晚些时候。
 
 
   
@@ -2039,10 +1835,10 @@ burnytech: https://fxtwitter.com/i/status/2024537378535211368
 > `torch-max-backend performance, MAX backend on Silicon Mac` 
 
 
-- **New Interpreter Boosts Torch-MAX-Backend Speed**: A member reports that a new interpreter in **torch-max-backend** significantly improved the speed of unit tests, reducing test times from **1.54s** to **0.34s** for float32 and **1.34s** to **0.24s** for bfloat16.
-   - The new interpreter avoids recompilation for each new shape/dtype, which previously took up to **3 minutes** per test.
-- **MAX Backend Status on Silicon Macs**: A member inquired about testing the **MAX backend** on **Silicon Macs**, mentioning their talk where they referenced torch-max-backend as an intermediate layer for exploring MAX.
-   - The original poster has not tested on Mac yet but expects it to work since it calls **MAX** behind the scenes.
+- **新解释器提升 Torch-MAX-Backend 速度**：一名成员报告称，**torch-max-backend** 中的新解释器显著提高了单元测试速度，float32 的测试时间从 **1.54s** 降至 **0.34s**，bfloat16 从 **1.34s** 降至 **0.24s**。
+   - 新解释器避免了为每个新的 shape/dtype 进行重新编译，此前这在每次测试中最高耗时 **3 分钟**。
+- **Silicon Mac 上的 MAX 后端状态**：一名成员询问了在 **Silicon Mac** 上测试 **MAX 后端** 的情况，提到他们在演讲中将 torch-max-backend 作为探索 MAX 的中间层。
+   - 原作者尚未在 Mac 上进行测试，但预计可以运行，因为其在后台调用了 **MAX**。
 
 
   
@@ -2055,27 +1851,24 @@ burnytech: https://fxtwitter.com/i/status/2024537378535211368
 > `AMD assembly infra, Speed Bounties, Portable Solutions` 
 
 
-- **AMD Assembly Infrastructure still George's focus**: George is focused on **low-level compiler work** so tinygrad can generate good code for **AMD GPUs**.
-- **tinygrad offers Performance Speed Bounties**: There are **bounties** available for measurable **performance gains**, including tooling to verify them.
-- **tinygrad Priotizes Portable Solutions**: George focuses on improvements in **tinygrad’s core** that benefit all backends, avoiding one-off custom kernels.
+- **AMD 汇编基础设施仍是 George 的关注焦点**：George 专注于 **底层编译器工作**，以便 tinygrad 能为 **AMD GPU** 生成高质量的代码。
+- **tinygrad 提供性能加速悬赏**：对于可衡量的 **性能提升** 提供 **悬赏 (Bounties)**，包括用于验证提升的工具。
+- **tinygrad 优先考虑便携式方案**：George 专注于 **tinygrad 核心** 的改进，从而使所有后端受益，避免使用一次性的自定义 Kernel。
 
 
   
 
 ---
 
-
-
-
-### **tinygrad (George Hotz) ▷ #[learn-tinygrad](https://discord.com/channels/1068976834382925865/1070745817025106080/1474257365904789595)** (1 messages): 
+### **tinygrad (George Hotz) ▷ #[learn-tinygrad](https://discord.com/channels/1068976834382925865/1070745817025106080/1474257365904789595)** (1 条消息): 
 
 > `Tinygrad, George Hotz, AI-HPC` 
 
 
-- **Main contributor to Tinygrad aims for Hotz hire**: A member stated their intention to become the main contributor to **Tinygrad** and get hired by **George Hotz**.
-   - They have already started learning tinygrad and thanked another member for their support, also sharing a link to the [AI-HPC GitHub](https://github.com/ai-hpc).
-- **Newbie learning Tinygrad from Experts**: A user is diving into **Tinygrad**, expressing aspirations to become a key contributor.
-   - They express gratitude to another member for guidance, while also sharing a link to the [AI-HPC GitHub](https://github.com/ai-hpc) as a learning resource.
+- **Tinygrad 的主要贡献者目标是受雇于 Hotz**：一位成员表示打算成为 **Tinygrad** 的主要贡献者并被 **George Hotz** 雇用。
+   - 他们已经开始学习 tinygrad，并感谢另一位成员的支持，同时分享了 [AI-HPC GitHub](https://github.com/ai-hpc) 的链接。
+- **新手向专家学习 Tinygrad**：一位用户正在深入研究 **Tinygrad**，表达了希望成为核心贡献者的抱负。
+   - 他们对另一位成员的指导表示感谢，同时分享了 [AI-HPC GitHub](https://github.com/ai-hpc) 链接作为学习资源。
 
 
   
@@ -2083,9 +1876,9 @@ burnytech: https://fxtwitter.com/i/status/2024537378535211368
 ---
 
 
-### **MCP Contributors (Official) ▷ #[mcp-dev-summit](https://discord.com/channels/1358869848138059966/1413517834805313556/)** (1 messages): 
+### **MCP Contributors (Official) ▷ #[mcp-dev-summit](https://discord.com/channels/1358869848138059966/1413517834805313556/)** (1 条消息): 
 
-aaronpk: schedule is posted! 🎉  https://mcpdevsummitna26.sched.com/
+aaronpk: 日程表已发布！🎉  https://mcpdevsummitna26.sched.com/
   
 
 ---

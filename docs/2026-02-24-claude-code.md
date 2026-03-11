@@ -130,13 +130,13 @@ topics:
 
 ### 1. Qwen3.5 模型发布与基准测试
 
-  - **[Qwen/Qwen3.5-122B-A10B · Hugging Face](https://www.reddit.com/r/LocalLLaMA/comments/1rdlc02/qwenqwen35122ba10b_hugging_face/)** (热度: 621): **Hugging Face 上的 Qwen3.5-122B-A10B 模型是一款尖端的因果语言模型 (Causal Language Model)，拥有 `1220 亿参数`，上下文长度为 `262,144 tokens`，可扩展至 `1,010,000 tokens`。它集成了视觉编码器，并采用 Gated Delta Networks 与 Mixture-of-Experts 的混合架构，增强了多模态学习和推理效率。该模型支持 `201 种语言`，并在不同环境的可扩展强化学习方面表现出色，标志着多模态 AI 应用的重大进步。** 评论者注意到该模型在 HLE 上的分数为 `25.3`，这在六个月前是 SOTA (State-of-the-art) 水平，并讨论了其作为 `gpt-oss-120b` 竞争对手的潜力。然而，令人失望的是缺乏原生的 4-bit 权重，这对于高效的模型推理服务至关重要，尤其是在 vLLM 等环境中。
+  - **[Qwen/Qwen3.5-122B-A10B（Hugging Face）](https://www.reddit.com/r/LocalLLaMA/comments/1rdlc02/qwenqwen35122ba10b_hugging_face/)** (热度: 621): **Hugging Face 上的 Qwen3.5-122B-A10B 模型是一款尖端的因果语言模型 (Causal Language Model)，拥有 `1220 亿参数`，上下文长度为 `262,144 tokens`，可扩展至 `1,010,000 tokens`。它集成了视觉编码器，并采用 Gated Delta Networks 与 Mixture-of-Experts 的混合架构，增强了多模态学习和推理效率。该模型支持 `201 种语言`，并在不同环境的可扩展强化学习方面表现出色，标志着多模态 AI 应用的重大进步。** 评论者注意到该模型在 HLE 上的分数为 `25.3`，这在六个月前是 SOTA (State-of-the-art) 水平，并讨论了其作为 `gpt-oss-120b` 竞争对手的潜力。然而，令人失望的是缺乏原生的 4-bit 权重，这对于高效的模型推理服务至关重要，尤其是在 vLLM 等环境中。
 
     - Qwen/Qwen3.5-122B-A10B 模型在 HLE 基准测试中获得了 `25.3` 分，这在约六个月前被认为是 SOTA。这表明该模型与之前的领先模型相比具有竞争力，尽管此后行业格局已发生变化。
     - 有关于 Qwen/Qwen3.5-122B-A10B 模型缺乏原生 4-bit 权重支持的讨论，这被视为与提供原生量化的 `gpt-oss-120b` 等模型相比的一个局限。这对于在 vLLM 上运行模型的用户尤为重要，因为原生量化模型可以带来性能优势。
     - 评论指出，由于封锁，中国实验室可能无法在 MXFP4/NVFP4 上进行训练，这可能会影响原生量化模型的可用性。这可能是 Qwen/Qwen3.5-122B-A10B 等模型开发和部署中的一个重要因素。
 
-  - **[Qwen/Qwen3.5-35B-A3B · Hugging Face](https://www.reddit.com/r/LocalLLaMA/comments/1rdlbvc/qwenqwen3535ba3b_hugging_face/)** (热度: 625): **Hugging Face 上的 Qwen3.5-35B-A3B 模型是一款尖端的因果语言模型，配有视觉编码器，拥有 `350 亿参数`。它具有统一的视觉-语言基础，并采用 Gated Delta Networks 与 Mixture-of-Experts 的混合架构以提升性能。该模型针对高吞吐量推理进行了优化，支持 `201 种语言`，使其在推理、代码编写和视觉理解等应用中具有多功能性。它还提供了超长上下文长度和可扩展的强化学习以增强适应性。** 一条评论强调，`35B` 模型的表现超过了前一代的 `235B` 模型，如 [Alibaba 的推文](https://x.com/Alibaba_Qwen/status/2026339351530188939) 所述。另一条评论提到了正在进行的模型量化版本转换工作，表明社区在优化其部署方面表现活跃。
+  - **[Qwen/Qwen3.5-35B-A3B（Hugging Face）](https://www.reddit.com/r/LocalLLaMA/comments/1rdlbvc/qwenqwen3535ba3b_hugging_face/)** (热度: 625): **Hugging Face 上的 Qwen3.5-35B-A3B 模型是一款尖端的因果语言模型，配有视觉编码器，拥有 `350 亿参数`。它具有统一的视觉-语言基础，并采用 Gated Delta Networks 与 Mixture-of-Experts 的混合架构以提升性能。该模型针对高吞吐量推理进行了优化，支持 `201 种语言`，使其在推理、代码编写和视觉理解等应用中具有多功能性。它还提供了超长上下文长度和可扩展的强化学习以增强适应性。** 一条评论强调，`35B` 模型的表现超过了前一代的 `235B` 模型，如 [Alibaba 的推文](https://x.com/Alibaba_Qwen/status/2026339351530188939) 所述。另一条评论提到了正在进行的模型量化版本转换工作，表明社区在优化其部署方面表现活跃。
 
 - 根据 [Alibaba 的推文](https://x.com/Alibaba_Qwen/status/2026339351530188939)，据报道 Qwen3.5-35B-A3B 模型的表现优于旧一代模型（如 235B）。这表明模型架构或训练技术有了显著改进，使得较小的模型能够超越体量大得多的前代产品。
 - Qwen3.5-35B 模型在特定 Benchmark 上达到了惊人的 40%，明显高于 GPT 120B 模型典型的 25%。这种性能跨越令人惊讶，尤其是与得分约 35% 的 Qwen3 80B Coder 模型相比。这表明模型的效率或能力有了实质性提升，引发了对其进一步测试和潜力探索的热潮。
@@ -154,7 +154,7 @@ topics:
 - 目前正在讨论对 GGUF 模型的 vLLM 支持需求，这表明需要能够处理这些新模型格式的更高效推理框架。随着更多 GGUF 模型的发布，这一点变得尤为重要，表明社区正在转向这些格式，以寻求潜在的更好性能或兼容性。
 - 一位用户正在考虑是否将用于编程任务的模型从 q6KL 格式的 Qwen Coder3 80B 更新为新的 35B-A3B 模型。这突显了模型选择中常见的决策过程，即用户在衡量新模型的优势与其特定用例（如编程）以及官方文档中缺乏直接比较的情况。
 
-### 2. Anthropic Distillation Controversy
+### 2. Anthropic 蒸馏争议
 
 - **[Anthropic 最近关于蒸馏的博客应该让所有人只想使用本地 open-weight 模型；这既可怕又反乌托邦](https://www.reddit.com/r/LocalLLaMA/comments/1rd8cfw/anthropics_recent_distillation_blog_should_make/)** (Activity: 949): **Anthropic** 关于[检测和预防蒸馏攻击](https://www.anthropic.com/news/detecting-and-preventing-distillation-attacks)的博客文章强调了他们对抗未经授权模型蒸馏的方法，其中包括毒化输出以误导蒸馏者。这引发了对模型响应可靠性的担忧，特别是对于提交被公司视为“有问题”的 Prompt 的用户。该博客讨论了使用请求元数据（如 API keys）来识别和抵御这些攻击，表明了其对未经授权使用的积极态度。评论者对 Anthropic 方法的有效性和道德性表示怀疑，一些人批评将“蒸馏攻击”作为专业术语的使用，并质疑使用元数据跟踪用户的透明度。
 
@@ -199,11 +199,11 @@ topics:
     - 'roxoholic' 提到的“工业级规模蒸馏攻击”是指一种将大模型蒸馏为小模型的方法，这可能会引发对知识产权和模型安全的担忧。这种技术可以用于在不直接访问原始模型的情况下复制模型，对专有 AI 技术构成了挑战。
 
 
-## Less Technical AI Subreddit Recap
+## 偏轻技术的 AI Subreddit 回顾
 
 > /r/Singularity, /r/Oobabooga, /r/MachineLearning, /r/OpenAI, /r/ClaudeAI, /r/StableDiffusion, /r/ChatGPT, /r/ChatGPTCoding, /r/aivideo, /r/aivideo
 
-### 1. Anthropic vs. DeepSeek Distillation Controversy
+### 1. Anthropic 与 DeepSeek 的蒸馏争议
 
   - **[Anthropic 指控 DeepSeek、Moonshot AI (Kimi) 和 MiniMax 创建了超过 24,000 个虚假 Claude 账号，并从 1600 万次交流中蒸馏训练信息。](https://www.reddit.com/r/singularity/comments/1rcpdwz/anthropic_is_accusing_deepseek_moonshot_ai_kimi/)** (Activity: 4142): **Anthropic** 指控 **DeepSeek、Moonshot AI (Kimi) 和 MiniMax** 对其 AI 模型 Claude 策划了一场大规模的数据提取行动。据 Anthropic 称，这些公司涉嫌创建了超过 `24,000` 个虚假账号，与 Claude 进行了 `1,600 万` 次交互，从而有效地窃取其训练数据以改进自家的 AI 模型。这一事件突显了 AI 开发中对数据安全和知识产权的重大担忧，因为它涉及未经授权的访问以及对专有 AI 能力的潜在滥用。评论者们强调了 AI 公司在抱怨数据被盗时的讽刺性，因为他们自己也经常在不支付报酬的情况下使用公开数据。这反映了当前关于数据所有权和伦理 AI 训练实践的持续争论。
 
@@ -292,7 +292,7 @@ topics:
 *   **Aider 开发者遭遇 Diff 格式限制**：流行的 **Aider** CLI 工具在处理复杂的多文件代码库编辑时遇到了困难，由于 Diff 格式损坏，迫使开发者不得不手动分块处理更改。工程师们通过提交 [Aider GitHub issue #3603](https://github.com/Aider-AI/aider/issues/3603) 升级了该工具的局限性反馈，恳求支持原生的 **git submodule**，而该框架目前完全忽略了这一点。
 *   **Tiny-GPU 编译器将 C 语言带入 Verilog**：硬件黑客发布了 [tiny-gpu-compiler project](https://github.com/gautam1858/tiny-gpu-compiler)，这是一个具有教育意义的**基于 MLIR 的编译器**，它将类 C 的内核语言直接翻译成 **16-bit binary instructions**。该流水线针对完全由 **Verilog** 编写的自定义开源 **GPU** 硬件，并附带一个分步可视化工具，用于精确的执行分析。
 
-**Theme 5. Benchmarking Turmoil and Evaluator Shakeups**
+**主题 5. 基准测试动荡与评测体系洗牌**
 
 *   **OpenAI 因数据污染弃用 SWE-Bench Verified**：**OpenAI** 在发现前沿模型经常纯粹基于记忆的测试 ID 复现出完全相同的任务解决方案后，正式弃用了流行的 **SWE-Bench Verified** 基准测试。根据其 [SWE-bench 弃用公告](https://x.com/OpenAIDevs/status/2026025368650690932)，工程师们证明，剩余未解决的问题中约有 **60%** 存在结构性缺陷，使得继续进行基准测试完全是算力浪费。
 *   **EleutherAI 紧急修复 Pythia HuggingFace 副本问题**：研究人员发现了一个严重漏洞，即 [EleutherAI's pythia-2.8b](https://arxiv.org/abs/2309.23024) 在 **Hugging Face Hub** 上无论选择哪个修订步骤，都提供相同的模型权重。在确认之前的上传被错误地去重（deduped）后，团队立即启动了重新训练，并部署了全新修正的 [Pythia-14m](https://huggingface.co/stellaathena/pythia-14m) 和 [Pythia-31m](https://huggingface.co/stellaathena/pythia-31m) 模型。
@@ -300,7 +300,7 @@ topics:
 
 ---
 
-# Discord: High level Discord summaries
+# Discord：高层摘要
 
 ## [BASI Jailbreaking](https://discord.com/channels/1105891499641684019) Discord
 

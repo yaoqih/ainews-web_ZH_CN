@@ -253,18 +253,23 @@ def translate_text_chunk(text, is_metadata=False):
         4. **只返回翻译结果**：不要包含"这是翻译"，”参考的翻译如下“等废话。
         """
 
-    try:
-        response = client.chat.completions.create(
-            model="gemini-3-flash-preview", # 建议使用 mini 或 deepseek-chat 以节省成本
-            messages=[
-                {"role": "system", "content": system_prompt},
-                {"role": "user", "content": text}
-            ],
-        )
-        return response.choices[0].message.content
-    except Exception as e:
-        print(f"Translation failed: {e}")
-        return text  # 失败则返回原文
+    last_error = None
+    for attempt in range(1, 4):
+        try:
+            response = client.chat.completions.create(
+                model="gemini-3-flash-preview", # 建议使用 mini 或 deepseek-chat 以节省成本
+                messages=[
+                    {"role": "system", "content": system_prompt},
+                    {"role": "user", "content": text}
+                ],
+            )
+            return response.choices[0].message.content
+        except Exception as e:
+            last_error = e
+            print(f"Translation failed (attempt {attempt}/3): {e}")
+
+    print(f"Translation failed after 3 attempts, fallback to source text: {last_error}")
+    return text  # 失败则返回原文
 
 def process_single_file(file_info):
     """

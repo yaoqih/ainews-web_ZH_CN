@@ -34,7 +34,7 @@ topics:
 - realtime-communication
 ---
 
-**Export controls take a big step up.**
+**出口管制显著升级。**
 
 > 2026/2/20-2026/2/23 的 AI 新闻。我们为您检查了 12 个 Reddit 子版块、[544 个 Twitter 账号](https://twitter.com/i/lists/1585430245762441216) 和 24 个 Discord（**262** 个频道，**28837** 条消息）。预计节省阅读时间（以 200wpm 计算）：**3003** 分钟。[AINews 网站](https://news.smol.ai/) 允许您搜索所有往期内容。提醒一下，[AINews 现在是 Latent Space 的一个板块](https://www.latent.space/p/2026)。您可以[选择加入/退出](https://support.substack.com/hc/en-us/articles/8914938285204-How-do-I-subscribe-to-or-unsubscribe-from-a-section-on-Substack) 邮件发送频率！
 
@@ -134,7 +134,7 @@ topics:
     - Samy_Horny 讨论了公司不愿开源模型的态度，并以 MCP 仅在流行后才开源为例。他们对 Gemma 或 GPT-OSS 等模型开源的可能性表示怀疑，因为这意味着会透露过多的专利信息或“秘方”。
 
 
-### 2. Qwen Model and Data Quality Issues
+### 2. Qwen 模型与数据质量问题
 
 - **[Qwen3 最被低估的功能：语音嵌入 (Voice embeddings)](https://www.reddit.com/r/LocalLLaMA/comments/1rc59ze/qwen3s_most_underrated_feature_voice_embeddings/)** (热度: 686): **该帖子讨论了 **Qwen3 TTS** 的语音嵌入功能，该功能将语音转换为高维向量（`1024` 或 `2048` 维），用于语音克隆和处理。这允许对语音进行数学运算，例如性别和音高转换、语音平均以及创建情感空间。语音嵌入模型是一个只有几百万参数的小型 Encoder，作者已将其提供给独立使用，包括用于 Web 推理的优化 ONNX 模型。图片展示了该嵌入空间的 2D t-SNE 投影，显示了如何组合和处理不同的语音特征。作者还提供了他们在 [Hugging Face](https://huggingface.co/collections/marksverdhei/qwen3-voice-embedding) 上的集合链接，以及一个用于其 `vllm-omni` fork 推理的 GitHub 仓库。** 一位评论者对转换语音嵌入并从中生成语音的能力感到好奇，表示对性别或机器人转换等实际应用感兴趣。另一位评论者认为这在扬声器识别方面具有潜力，并询问与性别或情感相关的参数是如何确定的。
 
