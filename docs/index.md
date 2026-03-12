@@ -4,31 +4,32 @@ title: AI News 中文同步版
 description: 自动同步自 smol-ai/ainews-web-2025，由 AI 并行翻译。
 ---
 
+- [Yann LeCun 的 AMI Labs 获 10.3 亿美元种子轮融资成立，旨在围绕 JEPA 构建世界模型。](./26-03-10-ami-labs.html) *2026-03-10*
 - [自动化研究：递归式自我提升的火花](./26-03-09-autoresearch.html) *2026-03-09*
 - [今天没发生什么特别的事。](./26-03-06-not-much.html) *2026-03-06*
 - [GPT 5.4](./26-03-05-gpt54.html) *2026-03-05*
-- [在此处填写标题](./26-03-04-not-much.html) *2026-03-04*
+- [今天也没什么大事。](./26-03-04-not-much.html) *2026-03-04*
 - [今天没什么事。](./26-03-03-not-much.html) *2026-03-03*
 - [今天没发生什么特别的事。](./26-03-02-not-much.html) *2026-03-02*
-- [OpenAI 完成了来自亚马逊（Amazon）、英伟达（NVIDIA）和软银（SoftBank）的 1100 亿美元融资。这是历史上规模最大的初创公司融资，投后估值高达 8400 亿美元。](./26-02-27-openai-g.html) *2026-02-27*
+- [OpenAI 完成了来自亚马逊、英伟达（NVIDIA）和软银（SoftBank）的 1100 亿美元融资，这是历史上规模最大的初创公司融资，投后估值达到 8400 亿美元。](./26-02-27-openai-g.html) *2026-02-27*
 - [OpenAI 完成了来自亚马逊、英伟达（NVIDIA）和软银（SoftBank）的 1100 亿美元融资，这是历史上规模最大的初创公司融资，投后估值达到 8400 亿美元。](./2026-02-27-openai-g.html) *2026-02-27*
-- [Nano Banana 2（又名 Gemini 3.1 Flash 图像预览版）：全新的 SOTA（最先进）图像生成模型。](./26-02-26-nanobanana2.html) *2026-02-26*
+- [Nano Banana 2（即 Gemini 3.1 Flash Image Preview）：新的 SOTA 图像生成模型](./26-02-26-nanobanana2.html) *2026-02-26*
 - [Gemini Nano 香蕉 2](./2026-02-26-note.html) *2026-02-26*
 - [Nano Banana 2（即 Gemini 3.1 Flash Image Preview）：新的 SOTA 图像生成模型](./2026-02-26-nanobanana2.html) *2026-02-26*
 - [智能体工程：2025年12月到底发生了什么？](./26-02-25-wtf-happened.html) *2026-02-25*
 - [智能体工程：2025年12月到底发生了什么？](./2026-02-25-wtf-happened.html) *2026-02-25*
 - [Claude Code 周年庆 + 新品发布：Qwen 3.5、Cursor 演示、Cognition Devin 2.2、Inception Mercury 2。](./26-02-24-claude-code.html) *2026-02-24*
-- [Anthropic 指控 DeepSeek、月之暗面（Moonshot）以及 MiniMax 进行了“工业级规模的蒸馏攻击”。](./26-02-23-anthropic-distillation.html) *2026-02-24*
+- [Anthropic 指控 DeepSeek、月之暗面（Moonshot AI）和 MiniMax 进行了“工业规模的蒸馏攻击”。](./26-02-23-anthropic-distillation.html) *2026-02-24*
 - [Claude Code 周年庆 + 新品发布：Qwen 3.5、Cursor 演示、Cognition Devin 2.2、Inception Mercury 2。](./2026-02-24-claude-code.html) *2026-02-24*
 - [Anthropic 指控 DeepSeek（深度求索）、Moonshot（月之暗面）和 MiniMax 进行了“工业级规模的蒸馏攻击”。](./2026-02-23-not-much.html) *2026-02-24*
 - [Anthropic 指控 DeepSeek、月之暗面（Moonshot AI）和 MiniMax 进行了“工业规模的蒸馏攻击”。](./2026-02-23-anthropic-distillation.html) *2026-02-24*
-- [今天没发生什么特别的事。](./26-02-20-not-much.html) *2026-02-21*
+- [今天没发生什么事。](./26-02-20-not-much.html) *2026-02-21*
 - [今天没发生什么事。](./2026-02-20-not-much.html) *2026-02-21*
-- [Gemini 3.1 Pro：在 ARC-AGI 2 测试中表现是 3.0 的两倍。](./26-02-19-gemini31.html) *2026-02-19*
+- [Gemini 3.1 Pro：在 ARC-AGI 2 测试中表现达到 3.0 的两倍。](./26-02-19-gemini31.html) *2026-02-19*
 - [Gemini 3.1 Pro：在 ARC-AGI 2 测试中表现达到 3.0 的两倍。](./2026-02-19-gemini31.html) *2026-02-19*
 - [今天没发生什么特别的事。](./26-02-18-not-much.html) *2026-02-18*
 - [今天没发生什么特别的事。](./2026-02-18-not-much.html) *2026-02-18*
-- [Claude Sonnet 4.6：4.5 版本的稳步升级，整体表现更佳，但仍有一些注意事项。](./26-02-17-sonnet-46.html) *2026-02-17*
+- [Claude Sonnet 4.6：4.5 版本的利落升级，整体表现更佳，但仍有一些注意事项。](./26-02-17-sonnet-46.html) *2026-02-17*
 - [Claude Sonnet 4.6：4.5 版本的利落升级，整体表现更佳，但仍有一些注意事项。](./2026-02-17-sonnet-46.html) *2026-02-17*
 - [Qwen3.5-397B-A17B：Open-Opus 级别中最小且非常高效的模型。](./26-02-16-qwen35.html) *2026-02-16*
 - [Qwen3.5-397B-A17B：Open-Opus 级别中最小且非常高效的模型。](./2026-02-16-qwen35.html) *2026-02-16*
@@ -121,7 +122,7 @@ description: 自动同步自 smol-ai/ainews-web-2025，由 AI 并行翻译。
 - [DeepSeek-OCR 发现，视觉模型的解码效率可提升 10 倍，准确率达到纯文本水平的约 97%，单张 A100 显卡每天可处理 20 万页（33/200k pages/day/A100）。](./25-10-20-deepseek-ocr.html) *2025-10-20*
 - [Karpathy 与 Dwarkesh 的这场访谈推迟了 AGI（通用人工智能）的时间表。](./25-10-17-not-much.html) *2025-10-17*
 - [Claude Agent Skills —— 是美化版的 AGENTS.md，还是 MCP 杀手？](./25-10-16-claude-skills.html) *2025-10-16*
-- [Claude Haiku 4.5（可译作 Claude 俳句 4.5）](./25-10-15-haiku-45.html) *2025-10-15*
+- [Claude Haiku 4.5](./25-10-15-haiku-45.html) *2025-10-15*
 - [今天没发生什么事。](./25-10-14-not-much.html) *2025-10-14*
 - [OpenAI Titan XPU：与博通（Broadcom）合作的 10GW 规模自研芯片。](./25-10-13-oai-broadcom.html) *2025-10-13*
 - [今天没发生什么事。](./25-10-10-not-much.html) *2025-10-10*
@@ -430,7 +431,7 @@ description: 自动同步自 smol-ai/ainews-web-2025，由 AI 并行翻译。
 - [Carlini 如何使用 AI 或 卡里尼如何使用人工智能](./24-08-05-ainews-how-carlini-uses-ai.html) *2024-08-05*
 - [Execuhires：挑战可汗之怒](./24-08-02-ainews-execuhires-tempting-the-wrath-of-khan.html) *2024-08-03*
 - [Rombach 等人：发布 FLUX.1 (pro / dev / schnell)，Black Forest Labs 获 3100 万美元种子轮融资。](./24-08-01-ainews-rombach-et-al-flux1-proordevorschnell-dollar31m-seed-for-black-forest-labs.html) *2024-08-02*
-- [Gemma 2 2B + Scope + Shield（范围与防护）](./24-07-31-ainews-gemma-2-2b-scope-shield.html) *2024-08-01*
+- [Gemma 2 2B + Scope + Shield](./24-07-31-ainews-gemma-2-2b-scope-shield.html) *2024-08-01*
 - [今天没发生什么特别的事。](./24-07-31-ainews-not-much-happened-today.html) *2024-07-31*
 - [Apple Intelligence 测试版 + Segment Anything Model 2 (分割一切模型 2)](./24-07-29-ainews-apple-intelligence-beta-segment-anything-model-2.html) *2024-07-30*
 - [AlphaProof + AlphaGeometry2 距离 IMO 金牌仅差 1 分。](./24-07-25-ainews-alphaproof-alphageometry2-reach-1-point-short-of-imo-gold.html) *2024-07-26*
@@ -481,7 +482,7 @@ description: 自动同步自 smol-ai/ainews-web-2025，由 AI 并行翻译。
 - [Clémentine Fourrier 谈 LLM 评估（LLM evals）](./24-05-23-ainews-clementine-fourrier-on-llm-evals.html) *2024-05-23*
 - [AI 工程全集，尽在此处](./24-05-22-ainews-all-of-ai-engineering-in-one-place.html) *2024-05-23*
 - [Anthropic 的“LLM 基因组计划”：在 Claude Sonnet 上学习与钳制 3400 万个特征。](./24-05-21-ainews-anthropics-llm-genome-project-learning-and-clamping-34m-features-on-claude-sonnet.html) *2024-05-21*
-- [Skyfall（天幕坠落）](./24-05-20-ainews-skyfall.html) *2024-05-20*
+- [Skyfall](./24-05-20-ainews-skyfall.html) *2024-05-20*
 - [Chameleon：Meta 的（尚未发布的）类 GPT-4o 全模态模型。](./24-05-17-ainews-chameleon-metas-unreleased-gpt4o-like-omnimodal-model.html) *2024-05-17*
 - [Cursor 通过微调 Llama3-70b，在快速文件编辑中实现了超过 1000 token/s 的速度。](./24-05-16-ainews-cursor-reaches-greater1000-toks-finetuning-llama3-70b-for-fast-file-editing.html) *2024-05-17*
 - [今天没什么事。](./24-05-15-ainews-not-much-happened-today.html) *2024-05-15*
@@ -504,12 +505,12 @@ description: 自动同步自 smol-ai/ainews-web-2025，由 AI 并行翻译。
 - [Perplexity，最新的人工智能独角兽。](./24-04-23-ainews-perplexity-the-newest-ai-unicorn.html) *2024-04-23*
 - [FineWeb：15万亿 Token，12年的 CommonCrawl 数据（已去重和过滤，不客气）](./24-04-22-ainews-fineweb-15t-tokens-12-years-of-commoncrawl-deduped-and-filtered-youre-welcome.html) *2024-04-23*
 - [Llama-3-70b 是 GPT-4 级别的开源模型。](./24-04-19-ainews-llama-3-70b-is-gpt-4-level-open-model.html) *2024-04-20*
-- [Meta Llama 3（8B、70B）](./24-04-18-ainews-meta-llama-3-8b-70b.html) *2024-04-19*
+- [Meta Llama 3 (8B, 70B)](./24-04-18-ainews-meta-llama-3-8b-70b.html) *2024-04-19*
 - [Mixtral 8x22B Instruct 引发了关于效率的梗。](./24-04-17-ainews-mixtral-8x22b-instruct-sparks-efficiency-memes.html) *2024-04-17*
 - [Lilian Weng 谈视频扩散模型](./24-04-16-ainews-lilian-weng-on-video-diffusion.html) *2024-04-17*
 - [多模态、多维度、多形态 AI](./24-04-15-ainews-multi-modal-multi-aspect-multi-form-factor-ai.html) *2024-04-15*
 - [从零到 GPT：一年进阶之路](./24-04-12-ainews-zero-to-gpt-in-1-year.html) *2024-04-12*
-- [Mergestral、Meta MTIAv2、Cohere Rerank 3、Google Infini-Attention 等更新](./24-04-11-ainews-mergestral-meta-mtiav2-cohere-rerank-3-google-infini-attention.html) *2024-04-11*
+- [Mergestral、Meta MTIAv2、Cohere Rerank 3、Google Infini-Attention](./24-04-11-ainews-mergestral-meta-mtiav2-cohere-rerank-3-google-infini-attention.html) *2024-04-11*
 - [音乐的 DALL-E 时刻](./24-04-10-ainews-musics-dall-e-moment.html) *2024-04-10*
 - [Gemini Pro 和 GPT4T Vision 在同一天正式发布（GA），纯属巧合。](./24-04-09-ainews-gemini-pro-and-gpt4t-vision-go-ga-on-the-same-day-by-complete-coincidence.html) *2024-04-10*
 - [一位动漫头像的匿名用户在 1 万美元的 A::B 提示词（prompting）挑战中刷新了纪录。](./24-04-08-ainews-anime-pfp-anon-eclipses-dollar10k-ab-prompting-challenge.html) *2024-04-09*
