@@ -4,6 +4,7 @@ title: AI News 中文同步版
 description: 自动同步自 smol-ai/ainews-web-2025，由 AI 并行翻译。
 ---
 
+- [今天没什么事。](./26-03-11-not-much.html) *2026-03-11*
 - [Yann LeCun 的 AMI Labs 获 10.3 亿美元种子轮融资成立，旨在围绕 JEPA 构建世界模型。](./26-03-10-ami-labs.html) *2026-03-10*
 - [自动化研究：递归式自我提升的火花](./26-03-09-autoresearch.html) *2026-03-09*
 - [今天没发生什么特别的事。](./26-03-06-not-much.html) *2026-03-06*
