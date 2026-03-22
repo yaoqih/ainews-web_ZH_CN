@@ -4,6 +4,7 @@ title: AI News 中文同步版
 description: 自动同步自 smol-ai/ainews-web-2025，由 AI 并行翻译。
 ---
 
+- [今天没什么事。](./26-03-20-not-much.html) *2026-03-20*
 - [今天没发生什么特别的事。](./26-03-19-not-much.html) *2026-03-19*
 - [MiniMax 2.7：以 1/3 的成本实现 GLM-5 级性能，SOTA 级开源模型。](./26-03-18-not-much.html) *2026-03-18*
 - [今天没发生什么事。](./26-03-17-not-much.html) *2026-03-16*
