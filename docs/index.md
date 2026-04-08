@@ -4,6 +4,7 @@ title: AI News 中文同步版
 description: 自动同步自 smol-ai/ainews-web-2025，由 AI 并行翻译。
 ---
 
+- [Anthropic” 这个词通常有以下几种含义和](./26-04-06-anthropic-mythos.html) *2026-04-07*
 - [今天没发生什么特别的事。](./26-04-06-not-much.html) *2026-04-06*
 - [今天没发生什么事。](./26-04-03-not-much.html) *2026-04-03*
 - [Gemma 4](./26-04-02-gemma-4.html) *2026-04-02*
