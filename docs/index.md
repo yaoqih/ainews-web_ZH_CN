@@ -4,6 +4,7 @@ title: AI News 中文同步版
 description: 自动同步自 smol-ai/ainews-web-2025，由 AI 并行翻译。
 ---
 
+- [今天没发生什么事。](./26-04-29-not-much.html) *2026-04-29*
 - [今天没发生什么特别的事。](./26-04-28-not-much.html) *2026-04-28*
 - [今天没发生什么特别的事。](./26-04-27-not-much.html) *2026-04-27*
 - [DeepSeek v4 (或者](./26-04-24-deepseek-v4.html) *2026-04-24*
