@@ -16,6 +16,7 @@ description: 自动同步自 smol-ai/ainews-web-2025，由 AI 并行翻译。
 - [GPT-Realtime-2、-Translate 和 -Whisper：新一代 SOTA（最先进）实时语音 API。](./26-05-07-gpt-realtime-2.html) *2026-05-07*
 - [今天没什么事。](./26-05-06-not-much.html) *2026-05-06*
 - [Anthropic 与 xAI 达成了关于 Colossus I 超级计算机的协议：规模达 300MW，每年价值 50 亿美元；其 ARR（年度经常性收入）年化增长率达 8000%。](./26-05-06-anthropic-xai.html) *2026-05-06*
+- [今天没发生什么特别的事。](./26-05-22-not-much.html) *2026-05-04*
 - [not much happened today](./26-05-20-not-much.html) *2026-05-04*
 - [今天没发生什么特别的事。](./26-05-05-not-much.html) *2026-05-04*
 - [今天没发生什么特别的事。](./26-05-04-not-much.html) *2026-05-04*
