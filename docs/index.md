@@ -4,6 +4,7 @@ title: AI News 中文同步版
 description: 自动同步自 smol-ai/ainews-web-2025，由 AI 并行翻译。
 ---
 
+- [今天没发生什么事。](./26-05-26-not-much.html) *2026-05-26*
 - [not much happened today](./26-05-21-not-much.html) *2026-05-21*
 - [Google I/O 2026：Gemini 3.5 Flash、Omni 以及谷歌智能体技术栈 (Agent Stack)](./26-05-19-not-much.html) *2026-05-18*
 - [今天没发生什么事。](./26-05-18-not-much.html) *2026-05-18*
