@@ -4,6 +4,7 @@ title: AI News 中文同步版
 description: 自动同步自 smol-ai/ainews-web-2025，由 AI 并行翻译。
 ---
 
+- [今天没发生什么特别的事。](./26-05-29-not-much.html) *2026-05-29*
 - [Anthropic 在 H 轮融资中筹集了 650 亿美元，投后估值达到 9650 亿美元，并发布了 Opus 4.8 和“动态工作流”（Dynamic Workflows）。](./26-05-28-anthropic-series-h.html) *2026-05-28*
 - [今天没发生什么特别的事。](./26-05-27-not-much.html) *2026-05-26*
 - [今天没发生什么事。](./26-05-26-not-much.html) *2026-05-26*
