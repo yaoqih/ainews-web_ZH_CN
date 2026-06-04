@@ -4,6 +4,7 @@ title: AI News 中文同步版
 description: 自动同步自 smol-ai/ainews-web-2025，由 AI 并行翻译。
 ---
 
+- [今天没发生什么特别的事。](./26-06-03-not-much.html) *2026-06-02*
 - [微软 Build 大会：MAI-Thinking-1 与 MAI 系列模型、Surface RTX Spark 开发机以及 Windows 中的 OpenClaw。](./26-06-02-msft-mai-2.html) *2026-06-02*
 - [今天没发生什么特别的事。](./26-06-01-not-much.html) *2026-06-01*
 - [今天没发生什么特别的事。](./26-05-29-not-much.html) *2026-05-29*
