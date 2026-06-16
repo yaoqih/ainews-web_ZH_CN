@@ -5,6 +5,7 @@ description: 自动同步自 smol-ai/ainews-web-2025，由 AI 并行翻译。
 ---
 
 - [今天没发生什么事。](./26-06-12-not-much.html) *2026-06-12*
+- [今天没发生什么事。](./26-06-15-not-much.html) *2026-06-11*
 - [今天没发生什么特别的事。](./26-06-11-not-much.html) *2026-06-11*
 - [今天没发生什么事。](./26-06-10-not-much.html) *2026-06-010T05:44:39.731046Z*
 - [Anthropic Claude Fable 5](./26-06-09-anthropic-claude-fable-5.html) *2026-06-09*
