@@ -4,6 +4,7 @@ title: AI News 中文同步版
 description: 自动同步自 smol-ai/ainews-web-2025，由 AI 并行翻译。
 ---
 
+- [今天没发生什么特别的事。](./26-06-18-not-much.html) *2026-06-18*
 - [GLM 5.2：全球顶尖的前端代码模型，IndexShare 助力降低成本。](./26-06-16-glm-52.html) *2026-06-16*
 - [今天没发生什么事。](./26-06-12-not-much.html) *2026-06-12*
 - [今天没发生什么特别的事。](./26-06-17-midjourney-medical.html) *2026-06-11*
