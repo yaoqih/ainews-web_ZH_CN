@@ -26,6 +26,7 @@ jobs:
           pip install -r requirements.txt  
 # --- 插入：先运行调试脚本 ---
       - name: Debug LLM Connection
+        continue-on-error: true
         env:
           LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
           LLM_BASE_URL: ${{ secrets.LLM_BASE_URL }}
