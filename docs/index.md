@@ -4,8 +4,8 @@ title: AI News 中文同步版
 description: 自动同步自 smol-ai/ainews-web-2025，由 AI 并行翻译。
 ---
 
-- [Opus 5](./26-07-24-opus-5.html) *2026-07-24*
-- [not much happened today](./26-07-23-not-much.html) *2026-07-23*
+- [请提供需要](./26-07-24-opus-5.html) *2026-07-24*
+- [今天没发生什么特别的事。](./26-07-23-not-much.html) *2026-07-23*
 - [今天没发生什么特别的事。](./26-07-22-not-much.html) *2026-07-22*
 - [今天没发生什么特别的事。](./26-07-21-not-much.html) *2026-07-21*
 - [今天没发生什么事。](./26-07-20-not-much.html) *2026-07-20*
@@ -14,22 +14,22 @@ description: 自动同步自 smol-ai/ainews-web-2025，由 AI 并行翻译。
 - [今天没发生什么特别的事。](./26-07-15-thinky-inkling.html) *2026-07-15*
 - [not much happened today](./26-07-14-not-much.html) *2026-07-14*
 - [not much happened today](./26-07-13-not-much.html) *2026-07-11*
-- [not much happened today](./26-07-10-not-much.html) *2026-07-10*
+- [今天没发生什么特别的事。](./26-07-10-not-much.html) *2026-07-10*
 - [not much happened today](./26-07-09-not-much.html) *2026-07-09*
-- [OpenAI launches GPT 5.6 Sol/Terra/Luna](./26-07-09-gpt-56.html) *2026-07-09*
-- [not much happened today](./26-07-08-grok-45.html) *2026-07-08*
-- [not much happened today](./26-07-07-not-much.html) *2026-07-07*
-- [not much happened today](./26-07-06-not-much.html) *2026-07-06*
-- [not much happened today](./26-07-02-not-much.html) *2026-07-02*
-- [not much happened today](./26-07-01-not-much.html) *2026-07-01*
-- [not much happened today](./26-06-30-sonnet5.html) *2026-06-30*
+- [OpenAI推出GPT 5.6 Sol/Terra/Luna](./26-07-09-gpt-56.html) *2026-07-09*
+- [今天没发生什么特别的事。](./26-07-08-grok-45.html) *2026-07-08*
+- [今天没发生什么特别的事。](./26-07-07-not-much.html) *2026-07-07*
+- [今天没发生什么特别的事。](./26-07-06-not-much.html) *2026-07-06*
+- [今天没发生什么特别的事。](./26-07-02-not-much.html) *2026-07-02*
+- [今天没发生什么特别的事。](./26-07-01-not-much.html) *2026-07-01*
+- [今天没发生什么特别的事。](./26-06-30-sonnet5.html) *2026-06-30*
 - [not much happened today](./26-06-30-not-much.html) *2026-06-30*
-- [not much happened today](./26-06-29-not-much.html) *2026-06-29*
+- [今天没发生什么特别的事。](./26-06-29-not-much.html) *2026-06-29*
 - [今天没发生什么事。](./26-06-26-gpt-56-preview.html) *2026-06-26*
-- [not much happened today](./26-06-25-not-much.html) *2026-06-25*
-- [not much happened today](./26-06-24-not-much.html) *2026-06-24*
-- [not much happened today](./26-06-23-not-much.html) *2026-06-23*
-- [not much happened today](./26-06-22-not-much.html) *2026-06-22*
+- [今天没发生什么特别的事。](./26-06-25-not-much.html) *2026-06-25*
+- [今天没发生什么特别的事。](./26-06-24-not-much.html) *2026-06-24*
+- [今天没发生什么特别的事。](./26-06-23-not-much.html) *2026-06-23*
+- [今天没发生什么特别的事。](./26-06-22-not-much.html) *2026-06-22*
 - [not much happened today](./26-06-19-not-much.html) *2026-06-19*
 - [今天没发生什么特别的事。](./26-06-18-not-much.html) *2026-06-18*
 - [GLM 5.2：全球顶尖的前端代码模型，IndexShare 助力降低成本。](./26-06-16-glm-52.html) *2026-06-16*
@@ -49,7 +49,7 @@ description: 自动同步自 smol-ai/ainews-web-2025，由 AI 并行翻译。
 - [Anthropic 在 H 轮融资中筹集了 650 亿美元，投后估值达到 9650 亿美元，并发布了 Opus 4.8 和“动态工作流”（Dynamic Workflows）。](./26-05-28-anthropic-series-h.html) *2026-05-28*
 - [今天没发生什么特别的事。](./26-05-27-not-much.html) *2026-05-26*
 - [今天没发生什么事。](./26-05-26-not-much.html) *2026-05-26*
-- [not much happened today](./26-05-21-not-much.html) *2026-05-21*
+- [今天没发生什么特别的事。](./26-05-21-not-much.html) *2026-05-21*
 - [Google I/O 2026：Gemini 3.5 Flash、Omni 以及谷歌智能体技术栈 (Agent Stack)](./26-05-19-not-much.html) *2026-05-18*
 - [今天没发生什么事。](./26-05-18-not-much.html) *2026-05-18*
 - [今天没发生什么特别的事。](./26-05-15-not-much.html) *2026-05-15*
@@ -62,7 +62,7 @@ description: 自动同步自 smol-ai/ainews-web-2025，由 AI 并行翻译。
 - [今天没什么事。](./26-05-06-not-much.html) *2026-05-06*
 - [Anthropic 与 xAI 达成了关于 Colossus I 超级计算机的协议：规模达 300MW，每年价值 50 亿美元；其 ARR（年度经常性收入）年化增长率达 8000%。](./26-05-06-anthropic-xai.html) *2026-05-06*
 - [今天没发生什么特别的事。](./26-05-22-not-much.html) *2026-05-04*
-- [not much happened today](./26-05-20-not-much.html) *2026-05-04*
+- [今天没发生什么特别的事。](./26-05-20-not-much.html) *2026-05-04*
 - [今天没发生什么特别的事。](./26-05-05-not-much.html) *2026-05-04*
 - [今天没发生什么特别的事。](./26-05-04-not-much.html) *2026-05-04*
 - [今天没发生什么事。](./26-05-01-not-much.html) *2026-05-01*
