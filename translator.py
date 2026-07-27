@@ -1,5 +1,7 @@
 import os
+import random
 import re
+import time
 from datetime import datetime, timezone
 import requests
 import frontmatter
@@ -13,11 +15,18 @@ TARGET_DIR = "src/content/issues"  # <--- 修改了这里，之前是 markdownsr
 OUTPUT_DIR = "docs"
 API_KEY = os.environ.get("LLM_API_KEY")
 BASE_URL = os.environ.get("LLM_BASE_URL", "https://yunwu.ai/v1")
-MAX_WORKERS = 32  # 并行线程数，根据你的 API Rate Limit 调整
+MODEL = os.environ.get("LLM_MODEL", "gpt-5.6-luna")
+MAX_WORKERS = max(1, int(os.environ.get("MAX_WORKERS", "4")))
 MAX_CHUNK_CHARS = 5000  # 每段必须 < 5000 个字符
-MAX_FILE_WORKERS = int(os.environ.get("MAX_FILE_WORKERS", "16"))  # 并行处理文章数量
+MAX_FILE_WORKERS = max(1, int(os.environ.get("MAX_FILE_WORKERS", "1")))
+MAX_RETRIES = max(1, int(os.environ.get("MAX_RETRIES", "6")))
+RETRY_BASE_SECONDS = max(0.0, float(os.environ.get("RETRY_BASE_SECONDS", "2")))
 
 client = OpenAI(api_key=API_KEY, base_url=BASE_URL)
+
+
+class TranslationError(RuntimeError):
+    pass
 
 _HAS_PYFM = hasattr(frontmatter, "loads") and hasattr(frontmatter, "dumps")
 _HAS_SIMPLE_FM = hasattr(frontmatter, "Frontmatter") and hasattr(frontmatter.Frontmatter, "read")
@@ -243,33 +252,57 @@ def translate_text_chunk(text, is_metadata=False):
 
     # 针对不同内容调整 Prompt
     if is_metadata:
-        system_prompt = "你是一个翻译助手。请将提供的文本翻译成中文，保留原意。"
+        system_prompt = (
+            "你是一个中文编辑。请将文本意译成自然、通俗易懂的简体中文，"
+            "保留专有名词和原意，只返回译文。"
+        )
     else:
         system_prompt = """
-        你是一个专业的技术翻译专家。请将以下 Markdown 片段翻译成中文。
+        你是一个专业的技术中文编辑。请将以下 Markdown 片段意译成自然、通俗易懂的简体中文，避免生硬直译。
         1. **必须保留 Markdown 格式**：不要修改标题层级、链接、加粗、代码块。
         2. **专有名词保留英文**：如 LLM, Transformer, Agent, GitHub, CUDA 等。
         3. **代码块内容不要翻译**：保留代码块内的原始代码。
-        4. **只返回翻译结果**：不要包含"这是翻译"，”参考的翻译如下“等废话。
+        4. **表达要符合中文阅读习惯**：可调整语序和措辞，但不得增删事实。
+        5. **只返回翻译结果**：不要包含"这是翻译"、"参考的翻译如下"等说明。
         """
 
     last_error = None
-    for attempt in range(1, 4):
+    for attempt in range(1, MAX_RETRIES + 1):
         try:
             response = client.chat.completions.create(
-                model="gemini-3-flash-preview", # 建议使用 mini 或 deepseek-chat 以节省成本
+                model=MODEL,
                 messages=[
                     {"role": "system", "content": system_prompt},
                     {"role": "user", "content": text}
                 ],
             )
-            return response.choices[0].message.content
+            content = response.choices[0].message.content
+            if not content or not content.strip():
+                raise TranslationError("模型返回了空内容")
+            return content
         except Exception as e:
             last_error = e
-            print(f"Translation failed (attempt {attempt}/3): {e}")
+            print(f"Translation failed (attempt {attempt}/{MAX_RETRIES}): {e}")
+            if attempt < MAX_RETRIES:
+                delay = min(RETRY_BASE_SECONDS * (2 ** (attempt - 1)), 30.0)
+                delay += random.uniform(0, min(1.0, delay / 4))
+                print(f"{delay:.1f} 秒后重试...")
+                time.sleep(delay)
 
-    print(f"Translation failed after 3 attempts, fallback to source text: {last_error}")
-    return text  # 失败则返回原文
+    raise TranslationError(f"翻译在 {MAX_RETRIES} 次尝试后仍失败: {last_error}")
+
+
+def _needs_translation(path):
+    """识别因旧版失败回退机制而保存的纯英文文章。"""
+    if not os.path.exists(path):
+        return True
+
+    with open(path, "r", encoding="utf-8") as f:
+        text = f.read()
+
+    chinese_chars = len(re.findall(r"[\u3400-\u9fff]", text))
+    latin_chars = len(re.findall(r"[A-Za-z]", text))
+    return chinese_chars == 0 and latin_chars >= 100
 
 def process_single_file(file_info):
     """
@@ -278,14 +311,19 @@ def process_single_file(file_info):
     filename = file_info['name']
     local_path = os.path.join(OUTPUT_DIR, filename)
 
-    if os.path.exists(local_path):
+    if not _needs_translation(local_path):
         print(f"跳过已存在: {filename}")
         return
+
+    if os.path.exists(local_path):
+        print(f"检测到未翻译的英文文件，重新处理: {filename}")
 
     print(f"开始处理: {filename} ...")
     
     # 1. 下载原始内容
-    raw_content = requests.get(file_info['download_url']).text
+    response = requests.get(file_info['download_url'], timeout=30)
+    response.raise_for_status()
+    raw_content = response.text
     
     # 2. 解析 Frontmatter (元数据)
     post = _load_frontmatter_from_string(raw_content)
@@ -312,18 +350,16 @@ def process_single_file(file_info):
         
         for future in as_completed(future_to_index):
             idx = future_to_index[future]
-            try:
-                translated_chunks[idx] = future.result()
-            except Exception as e:
-                print(f"片段 {idx} 翻译出错: {e}")
-                translated_chunks[idx] = body_chunks[idx] # 出错回退到原文
+            translated_chunks[idx] = future.result()
 
     # 6. 重新组装
     post.content = "\n\n".join(translated_chunks)
     
     # 7. 保存
-    with open(local_path, 'w', encoding='utf-8') as f:
+    temp_path = f"{local_path}.tmp"
+    with open(temp_path, 'w', encoding='utf-8') as f:
         f.write(_dump_frontmatter(post))
+    os.replace(temp_path, local_path)
     
     print(f"完成并保存: {filename}")
 
@@ -514,6 +550,7 @@ def main():
     upstream_files = get_upstream_files()
     
     # 文件级并行 + 文件内并行
+    failures = []
     with ThreadPoolExecutor(max_workers=MAX_FILE_WORKERS) as executor:
         future_to_name = {
             executor.submit(process_single_file, file_info): file_info.get('name', 'unknown')
@@ -526,8 +563,13 @@ def main():
                 future.result()
             except Exception as e:
                 print(f"文件处理失败: {name}: {e}")
+                failures.append((name, e))
 
     update_index()
+
+    if failures:
+        names = ", ".join(name for name, _error in failures)
+        raise TranslationError(f"有 {len(failures)} 个文件翻译失败: {names}")
 
 if __name__ == "__main__":
     main()

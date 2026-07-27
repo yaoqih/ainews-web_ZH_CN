@@ -2,6 +2,7 @@
 import os
 import requests
 import sys
+import time
 from openai import OpenAI
 
 # --- 1. 基础配置打印 ---
@@ -11,6 +12,7 @@ print("="*40)
 
 api_key = os.environ.get("LLM_API_KEY")
 base_url = os.environ.get("LLM_BASE_URL", "https://api.openai.com/v1")
+model = os.environ.get("LLM_MODEL", "gpt-5.6-luna")
 
 if not api_key:
     print("❌ 错误: 未找到 LLM_API_KEY 环境变量！")
@@ -56,15 +58,22 @@ print("="*40)
 client = OpenAI(api_key=api_key, base_url=base_url)
 
 try:
-    print("正在发送测试请求 (Model: gpt-4o-mini)...")
-    # 这里的 model 建议用你确定支持的模型，或者通用一点的 gpt-3.5-turbo / gpt-4o-mini
-    response = client.chat.completions.create(
-        model="gpt-4o-mini", # 如果你用的是 DeepSeek，记得改成 deepseek-chat
-        messages=[
-            {"role": "user", "content": "Say 'Connection Successful' if you can hear me."}
-        ],
-        max_tokens=20
-    )
+    print(f"正在发送测试请求 (Model: {model})...")
+    response = None
+    for attempt in range(1, 4):
+        try:
+            response = client.chat.completions.create(
+                model=model,
+                messages=[
+                    {"role": "user", "content": "Say 'Connection Successful' if you can hear me."}
+                ],
+                max_tokens=20
+            )
+            break
+        except Exception:
+            if attempt == 3:
+                raise
+            time.sleep(2 ** attempt)
     
     content = response.choices[0].message.content
     print(f"✅ API 调用成功!")
@@ -85,6 +94,7 @@ except Exception as e:
         print("💡 建议: 触发了速率限制 (Rate Limit) 或额度用尽。")
     elif "500" in err_str or "502" in err_str:
         print("💡 建议: 服务端崩溃，或者网关错误。")
+    sys.exit(1)
 
 print("\n" + "="*40)
 print("测试结束")

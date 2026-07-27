@@ -29,15 +29,20 @@ jobs:
         env:
           LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
           LLM_BASE_URL: ${{ secrets.LLM_BASE_URL }}
+          LLM_MODEL: gpt-5.6-luna
         run: python debug_llm.py
 
       - name: Run translation script
         env:
           LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
           LLM_BASE_URL: ${{ secrets.LLM_BASE_URL }}
+          LLM_MODEL: gpt-5.6-luna
+          MAX_WORKERS: '4'
+          MAX_FILE_WORKERS: '1'
         run: python translator.py
 
       - name: Commit and push changes
+        if: ${{ always() }}
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
