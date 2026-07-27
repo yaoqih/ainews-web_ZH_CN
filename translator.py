@@ -1,7 +1,5 @@
 import os
-import random
 import re
-import time
 from datetime import datetime, timezone
 import requests
 import frontmatter
@@ -16,11 +14,10 @@ OUTPUT_DIR = "docs"
 API_KEY = os.environ.get("LLM_API_KEY")
 BASE_URL = os.environ.get("LLM_BASE_URL", "https://yunwu.ai/v1")
 MODEL = os.environ.get("LLM_MODEL", "gpt-5.6-luna")
-MAX_WORKERS = max(1, int(os.environ.get("MAX_WORKERS", "4")))
+MAX_WORKERS = max(1, int(os.environ.get("MAX_WORKERS", "32")))
 MAX_CHUNK_CHARS = 5000  # 每段必须 < 5000 个字符
-MAX_FILE_WORKERS = max(1, int(os.environ.get("MAX_FILE_WORKERS", "1")))
-MAX_RETRIES = max(1, int(os.environ.get("MAX_RETRIES", "6")))
-RETRY_BASE_SECONDS = max(0.0, float(os.environ.get("RETRY_BASE_SECONDS", "2")))
+MAX_FILE_WORKERS = max(1, int(os.environ.get("MAX_FILE_WORKERS", "16")))
+MAX_RETRIES = max(1, int(os.environ.get("MAX_RETRIES", "3")))
 
 client = OpenAI(api_key=API_KEY, base_url=BASE_URL)
 
@@ -283,13 +280,9 @@ def translate_text_chunk(text, is_metadata=False):
         except Exception as e:
             last_error = e
             print(f"Translation failed (attempt {attempt}/{MAX_RETRIES}): {e}")
-            if attempt < MAX_RETRIES:
-                delay = min(RETRY_BASE_SECONDS * (2 ** (attempt - 1)), 30.0)
-                delay += random.uniform(0, min(1.0, delay / 4))
-                print(f"{delay:.1f} 秒后重试...")
-                time.sleep(delay)
 
-    raise TranslationError(f"翻译在 {MAX_RETRIES} 次尝试后仍失败: {last_error}")
+    print(f"翻译在 {MAX_RETRIES} 次尝试后仍失败，保留英文原文: {last_error}")
+    return text
 
 
 def _needs_translation(path):

@@ -31,14 +31,13 @@ class TranslateTextChunkRetryTests(unittest.TestCase):
             )
         )
 
-        with mock.patch.object(translator, "client", fake_client), \
-             mock.patch.object(translator.time, "sleep"):
+        with mock.patch.object(translator, "client", fake_client):
             result = translator.translate_text_chunk("hello world")
 
         self.assertEqual(result, "翻译成功")
         self.assertEqual(len(calls), 3)
 
-    def test_stops_after_max_attempts_and_raises(self):
+    def test_stops_after_max_attempts_and_keeps_source_text(self):
         calls = []
 
         def create(**_kwargs):
@@ -52,11 +51,10 @@ class TranslateTextChunkRetryTests(unittest.TestCase):
         )
 
         with mock.patch.object(translator, "client", fake_client), \
-             mock.patch.object(translator, "MAX_RETRIES", 3), \
-             mock.patch.object(translator.time, "sleep"):
-            with self.assertRaises(translator.TranslationError):
-                translator.translate_text_chunk("original text")
+             mock.patch.object(translator, "MAX_RETRIES", 3):
+            result = translator.translate_text_chunk("original text")
 
+        self.assertEqual(result, "original text")
         self.assertEqual(len(calls), 3)
 
     def test_detects_old_untranslated_file(self):
