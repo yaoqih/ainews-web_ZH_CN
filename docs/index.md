@@ -4,6 +4,7 @@ title: AI News 中文同步版
 description: 自动同步自 smol-ai/ainews-web-2025，由 AI 并行翻译。
 ---
 
+- [GDM领导层调整](./26-08-05-gdm-reset.html) *2026-08-05*
 - [今天没发生什么特别的事。](./26-08-04-not-much.html) *2026-08-04*
 - [通义千问 3.8 Max](./26-08-03-qwen-38.html) *2026-08-03*
 - [今天没发生什么事。](./26-07-31-not-much.html) *2026-07-31*
