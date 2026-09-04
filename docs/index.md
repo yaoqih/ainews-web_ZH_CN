@@ -4,6 +4,7 @@ title: AI News 中文同步版
 description: 自动同步自 smol-ai/ainews-web-2025，由 AI 并行翻译。
 ---
 
+- [OpenAI GPT-6 Astra](./26-09-03-gpt-6-astra.html) *2026-09-03*
 - [Claude Fable 5.1 and Claude Mythos 5.1](./26-09-01-claude-mythos-51.html) *2026-09-01*
 - [not much happened today](./26-08-31-not-much.html) *2026-08-31*
 - [not much happened today](./26-08-26-not-much.html) *2026-08-26*
