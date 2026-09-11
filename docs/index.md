@@ -4,6 +4,7 @@ title: AI News 中文同步版
 description: 自动同步自 smol-ai/ainews-web-2025，由 AI 并行翻译。
 ---
 
+- [not much happened today](./26-09-10-not-much.html) *2026-09-09*
 - [not much happened today](./26-09-09-not-much.html) *2026-09-09*
 - [OpenAI reports Navier-Stokes singularity find, a contender for second ever Millenium Prize awarded, overshadowing Cog...](./26-09-08-navier-stokes.html) *2026-09-08*
 - [collusion.wiki](./26-09-04-collusionwiki.html) *2026-09-04*
