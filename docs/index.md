@@ -4,7 +4,8 @@ title: AI News 中文同步版
 description: 自动同步自 smol-ai/ainews-web-2025，由 AI 并行翻译。
 ---
 
-- [not much happened today](./26-09-23-not-much.html) *2026-09-22*
+- [not much happened today](./26-09-24-not-much.html) *2026-09-24*
+- [not much happened today](./26-09-23-not-much.html) *2026-09-23*
 - [Claude Opus 5.5, the world's new best model](./26-09-22-opus-55.html) *2026-09-22*
 - [not much happened today](./26-09-21-not-much.html) *2026-09-21*
 - [not much happened today](./26-09-18-not-much.html) *2026-09-18*
