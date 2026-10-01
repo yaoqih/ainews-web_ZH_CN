@@ -4,6 +4,7 @@ title: AI News 中文同步版
 description: 自动同步自 smol-ai/ainews-web-2025，由 AI 并行翻译。
 ---
 
+- [not much happened today](./26-09-30-not-much.html) *2026-09-230T05:44:39.731046Z*
 - [OpenAI DevDay 2026](./26-09-29-devday.html) *2026-09-29*
 - [not much happened today](./26-09-28-sonnet-55.html) *2026-09-28*
 - [not much happened today](./26-09-25-not-much.html) *2026-09-25*
