@@ -4,6 +4,7 @@ title: AI News 中文同步版
 description: 自动同步自 smol-ai/ainews-web-2025，由 AI 并行翻译。
 ---
 
+- [not much happened today](./26-11-04-not-much.html) *2026-11-04*
 - [not much happened today](./26-11-03-not-much.html) *2026-11-03*
 - [Weight Space Programming - LLMs can natively read & write neural network weights](./26-11-02-weight-space-programming.html) *2026-11-02*
 - [not much happened today](./26-10-30-not-much.html) *2026-10-30*
