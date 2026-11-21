@@ -4,6 +4,7 @@ title: AI News 中文同步版
 description: 自动同步自 smol-ai/ainews-web-2025，由 AI 并行翻译。
 ---
 
+- [Anthropic Claims Riemann Hypothesis Proof with Claude](./26-11-20-anthropic-riemann-proof.html) *2026-11-20*
 - [not much happened today](./26-11-19-not-much.html) *2026-11-19*
 - [not much happened today](./26-11-18-not-much.html) *2026-11-18*
 - [not much happened today](./26-11-17-gpt-62-astra.html) *2026-11-17*
