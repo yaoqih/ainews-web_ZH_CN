@@ -4,6 +4,7 @@ title: AI News 中文同步版
 description: 自动同步自 smol-ai/ainews-web-2025，由 AI 并行翻译。
 ---
 
+- [OpenAI and Anthropic Clash on VP ≠ VNP Proofs, GPT-6 Advances](./26-11-24-openai-anthropic-vp-vnp-gpt6.html) *2026-11-24*
 - [OpenAI Publishes Pretraining Perplexity History and Proposes Shared Limits](./26-11-23-openai-pretraining-perplexity.html) *2026-11-23*
 - [Anthropic Claims Riemann Hypothesis Proof with Claude](./26-11-20-anthropic-riemann-proof.html) *2026-11-20*
 - [not much happened today](./26-11-19-not-much.html) *2026-11-19*
