@@ -4,6 +4,7 @@ title: AI News 中文同步版
 description: 自动同步自 smol-ai/ainews-web-2025，由 AI 并行翻译。
 ---
 
+- [Claude Sabotage Claims and Gemini Neon Evaluations](./26-11-26-claude-sabotage-gemini-neon.html) *2026-11-27*
 - [OpenAI and Anthropic Clash on VP ≠ VNP Proofs, GPT-6 Advances](./26-11-24-openai-anthropic-vp-vnp-gpt6.html) *2026-11-24*
 - [OpenAI and Gemini 4 Lead Breakthroughs in Math and Model Usage](./26-11-25-openai-gemini4-breakthroughs.html) *2026-11-23*
 - [OpenAI Publishes Pretraining Perplexity History and Proposes Shared Limits](./26-11-23-openai-pretraining-perplexity.html) *2026-11-23*
